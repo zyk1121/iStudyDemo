@@ -17,6 +17,9 @@
 		761931AB1C8BCC3F0022A311 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931AA1C8BCC3F0022A311 /* main.m */; };
 		761931B61C8BD5220022A311 /* OpenGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931B51C8BD5220022A311 /* OpenGLViewController.m */; };
 		761931BA1C8BD79A0022A311 /* MapSDKDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931B91C8BD79A0022A311 /* MapSDKDemoViewController.m */; };
+		761931BC1C8BDDA40022A311 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761931BB1C8BDDA40022A311 /* QuartzCore.framework */; };
+		761931BE1C8BDDAC0022A311 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761931BD1C8BDDAC0022A311 /* OpenGLES.framework */; };
+		761931C11C8BDDCF0022A311 /* OpenGLTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931C01C8BDDCF0022A311 /* OpenGLTestView.m */; };
 		BA0CE7C3F0C3D5D55BE25FD3 /* libPods-iStudyDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E46310862E13CE523DA12E07 /* libPods-iStudyDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +62,10 @@
 		761931B51C8BD5220022A311 /* OpenGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLViewController.m; sourceTree = "<group>"; };
 		761931B81C8BD79A0022A311 /* MapSDKDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSDKDemoViewController.h; sourceTree = "<group>"; };
 		761931B91C8BD79A0022A311 /* MapSDKDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSDKDemoViewController.m; sourceTree = "<group>"; };
+		761931BB1C8BDDA40022A311 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		761931BD1C8BDDAC0022A311 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		761931BF1C8BDDCF0022A311 /* OpenGLTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLTestView.h; sourceTree = "<group>"; };
+		761931C01C8BDDCF0022A311 /* OpenGLTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLTestView.m; sourceTree = "<group>"; };
 		7FCB39AC830876F184EF9700 /* libPods-iStudyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iStudyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A143A5F8268C343472EB18 /* Pods-iStudyDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemoTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemoTests/Pods-iStudyDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCBEED3EEE298D40EA18BCD8 /* Pods-iStudyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemo/Pods-iStudyDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				761931BE1C8BDDAC0022A311 /* OpenGLES.framework in Frameworks */,
+				761931BC1C8BDDA40022A311 /* QuartzCore.framework in Frameworks */,
 				2CC315F5FBCAE9FC2DFE0F87 /* libPods-iStudyDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +224,8 @@
 			children = (
 				761931B41C8BD5220022A311 /* OpenGLViewController.h */,
 				761931B51C8BD5220022A311 /* OpenGLViewController.m */,
+				761931BF1C8BDDCF0022A311 /* OpenGLTestView.h */,
+				761931C01C8BDDCF0022A311 /* OpenGLTestView.m */,
 			);
 			path = OpenGL;
 			sourceTree = "<group>";
@@ -231,6 +242,8 @@
 		DF399414AD08488BE365F5E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				761931BD1C8BDDAC0022A311 /* OpenGLES.framework */,
+				761931BB1C8BDDA40022A311 /* QuartzCore.framework */,
 				7FCB39AC830876F184EF9700 /* libPods-iStudyDemo.a */,
 				E46310862E13CE523DA12E07 /* libPods-iStudyDemoTests.a */,
 			);
@@ -438,6 +451,7 @@
 				761931BA1C8BD79A0022A311 /* MapSDKDemoViewController.m in Sources */,
 				761931A71C8BC8A20022A311 /* MainViewController.m in Sources */,
 				761931AB1C8BCC3F0022A311 /* main.m in Sources */,
+				761931C11C8BDDCF0022A311 /* OpenGLTestView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
