@@ -11,6 +11,7 @@
 #import "masonry.h"
 #import "UIKitMacros.h"
 #import "OpenGLViewController.h"
+#import "MapSDKDemoViewController.h"
 
 @interface MainViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -52,6 +53,7 @@
         UITableView *tableview = [[UITableView alloc] init];
         tableview.delegate = self;
         tableview.dataSource = self;
+        tableview.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
         tableview;
     });
     [self.view addSubview:_tableView];
@@ -66,6 +68,11 @@
     [_listData addObject:@"OpenGL学习"];
     OpenGLViewController *glViewController = [[OpenGLViewController alloc] init];
     [_listViewControllers addObject:glViewController];
+    
+    // 2.map SDK
+    [_listData addObject:@"地图SDK & 定位"];
+    MapSDKDemoViewController *mapSDKViewController = [[MapSDKDemoViewController alloc] init];
+    [_listViewControllers addObject:mapSDKViewController];
     
 }
 

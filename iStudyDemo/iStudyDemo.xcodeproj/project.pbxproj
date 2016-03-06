@@ -16,6 +16,7 @@
 		761931A71C8BC8A20022A311 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931A41C8BC8A20022A311 /* MainViewController.m */; };
 		761931AB1C8BCC3F0022A311 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931AA1C8BCC3F0022A311 /* main.m */; };
 		761931B61C8BD5220022A311 /* OpenGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931B51C8BD5220022A311 /* OpenGLViewController.m */; };
+		761931BA1C8BD79A0022A311 /* MapSDKDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931B91C8BD79A0022A311 /* MapSDKDemoViewController.m */; };
 		BA0CE7C3F0C3D5D55BE25FD3 /* libPods-iStudyDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E46310862E13CE523DA12E07 /* libPods-iStudyDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,8 @@
 		761931B01C8BD05C0022A311 /* UIKitMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKitMacros.h; sourceTree = "<group>"; };
 		761931B41C8BD5220022A311 /* OpenGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLViewController.h; sourceTree = "<group>"; };
 		761931B51C8BD5220022A311 /* OpenGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLViewController.m; sourceTree = "<group>"; };
+		761931B81C8BD79A0022A311 /* MapSDKDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSDKDemoViewController.h; sourceTree = "<group>"; };
+		761931B91C8BD79A0022A311 /* MapSDKDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSDKDemoViewController.m; sourceTree = "<group>"; };
 		7FCB39AC830876F184EF9700 /* libPods-iStudyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iStudyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A143A5F8268C343472EB18 /* Pods-iStudyDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemoTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemoTests/Pods-iStudyDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCBEED3EEE298D40EA18BCD8 /* Pods-iStudyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemo/Pods-iStudyDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -186,6 +189,7 @@
 		761931AD1C8BCD010022A311 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				761931B71C8BD7820022A311 /* MapDemo */,
 				761931B31C8BD4FF0022A311 /* OpenGL */,
 			);
 			path = Modules;
@@ -213,6 +217,15 @@
 				761931B51C8BD5220022A311 /* OpenGLViewController.m */,
 			);
 			path = OpenGL;
+			sourceTree = "<group>";
+		};
+		761931B71C8BD7820022A311 /* MapDemo */ = {
+			isa = PBXGroup;
+			children = (
+				761931B81C8BD79A0022A311 /* MapSDKDemoViewController.h */,
+				761931B91C8BD79A0022A311 /* MapSDKDemoViewController.m */,
+			);
+			path = MapDemo;
 			sourceTree = "<group>";
 		};
 		DF399414AD08488BE365F5E9 /* Frameworks */ = {
@@ -422,6 +435,7 @@
 			files = (
 				761931A51C8BC8A20022A311 /* AppDelegate.m in Sources */,
 				761931B61C8BD5220022A311 /* OpenGLViewController.m in Sources */,
+				761931BA1C8BD79A0022A311 /* MapSDKDemoViewController.m in Sources */,
 				761931A71C8BC8A20022A311 /* MainViewController.m in Sources */,
 				761931AB1C8BCC3F0022A311 /* main.m in Sources */,
 			);
