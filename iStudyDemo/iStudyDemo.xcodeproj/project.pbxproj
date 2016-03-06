@@ -20,6 +20,12 @@
 		761931BC1C8BDDA40022A311 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761931BB1C8BDDA40022A311 /* QuartzCore.framework */; };
 		761931BE1C8BDDAC0022A311 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761931BD1C8BDDAC0022A311 /* OpenGLES.framework */; };
 		761931C11C8BDDCF0022A311 /* OpenGLTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931C01C8BDDCF0022A311 /* OpenGLTestView.m */; };
+		761931C31C8BEF700022A311 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 761931C21C8BEF700022A311 /* SimpleVertex.glsl */; };
+		761931C51C8BEFD20022A311 /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 761931C41C8BEFD20022A311 /* SimpleFragment.glsl */; };
+		761931D11C8C5DF70022A311 /* CC3Foundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931C81C8C5DF70022A311 /* CC3Foundation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		761931D21C8C5DF70022A311 /* CC3GLMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931CA1C8C5DF70022A311 /* CC3GLMatrix.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		761931D31C8C5DF70022A311 /* CC3Kazmath.c in Sources */ = {isa = PBXBuildFile; fileRef = 761931CB1C8C5DF70022A311 /* CC3Kazmath.c */; };
+		761931D41C8C5DF70022A311 /* CC3Math.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931CF1C8C5DF70022A311 /* CC3Math.m */; };
 		BA0CE7C3F0C3D5D55BE25FD3 /* libPods-iStudyDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E46310862E13CE523DA12E07 /* libPods-iStudyDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +72,18 @@
 		761931BD1C8BDDAC0022A311 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		761931BF1C8BDDCF0022A311 /* OpenGLTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLTestView.h; sourceTree = "<group>"; };
 		761931C01C8BDDCF0022A311 /* OpenGLTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLTestView.m; sourceTree = "<group>"; };
+		761931C21C8BEF700022A311 /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleVertex.glsl; sourceTree = "<group>"; };
+		761931C41C8BEFD20022A311 /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleFragment.glsl; sourceTree = "<group>"; };
+		761931C71C8C5DF70022A311 /* CC3Foundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Foundation.h; sourceTree = "<group>"; };
+		761931C81C8C5DF70022A311 /* CC3Foundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3Foundation.m; sourceTree = "<group>"; };
+		761931C91C8C5DF70022A311 /* CC3GLMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3GLMatrix.h; sourceTree = "<group>"; };
+		761931CA1C8C5DF70022A311 /* CC3GLMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3GLMatrix.m; sourceTree = "<group>"; };
+		761931CB1C8C5DF70022A311 /* CC3Kazmath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CC3Kazmath.c; sourceTree = "<group>"; };
+		761931CC1C8C5DF70022A311 /* CC3Kazmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Kazmath.h; sourceTree = "<group>"; };
+		761931CD1C8C5DF70022A311 /* CC3Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Logging.h; sourceTree = "<group>"; };
+		761931CE1C8C5DF70022A311 /* CC3Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Math.h; sourceTree = "<group>"; };
+		761931CF1C8C5DF70022A311 /* CC3Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3Math.m; sourceTree = "<group>"; };
+		761931D01C8C5DF70022A311 /* ccTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccTypes.h; sourceTree = "<group>"; };
 		7FCB39AC830876F184EF9700 /* libPods-iStudyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iStudyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A143A5F8268C343472EB18 /* Pods-iStudyDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemoTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemoTests/Pods-iStudyDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCBEED3EEE298D40EA18BCD8 /* Pods-iStudyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemo/Pods-iStudyDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -226,6 +244,9 @@
 				761931B51C8BD5220022A311 /* OpenGLViewController.m */,
 				761931BF1C8BDDCF0022A311 /* OpenGLTestView.h */,
 				761931C01C8BDDCF0022A311 /* OpenGLTestView.m */,
+				761931C21C8BEF700022A311 /* SimpleVertex.glsl */,
+				761931C41C8BEFD20022A311 /* SimpleFragment.glsl */,
+				761931C61C8C5DF70022A311 /* Cocos3DMathLib */,
 			);
 			path = OpenGL;
 			sourceTree = "<group>";
@@ -237,6 +258,23 @@
 				761931B91C8BD79A0022A311 /* MapSDKDemoViewController.m */,
 			);
 			path = MapDemo;
+			sourceTree = "<group>";
+		};
+		761931C61C8C5DF70022A311 /* Cocos3DMathLib */ = {
+			isa = PBXGroup;
+			children = (
+				761931C71C8C5DF70022A311 /* CC3Foundation.h */,
+				761931C81C8C5DF70022A311 /* CC3Foundation.m */,
+				761931C91C8C5DF70022A311 /* CC3GLMatrix.h */,
+				761931CA1C8C5DF70022A311 /* CC3GLMatrix.m */,
+				761931CB1C8C5DF70022A311 /* CC3Kazmath.c */,
+				761931CC1C8C5DF70022A311 /* CC3Kazmath.h */,
+				761931CD1C8C5DF70022A311 /* CC3Logging.h */,
+				761931CE1C8C5DF70022A311 /* CC3Math.h */,
+				761931CF1C8C5DF70022A311 /* CC3Math.m */,
+				761931D01C8C5DF70022A311 /* ccTypes.h */,
+			);
+			path = Cocos3DMathLib;
 			sourceTree = "<group>";
 		};
 		DF399414AD08488BE365F5E9 /* Frameworks */ = {
@@ -358,7 +396,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7619317C1C8BC5120022A311 /* LaunchScreen.storyboard in Resources */,
+				761931C51C8BEFD20022A311 /* SimpleFragment.glsl in Resources */,
 				761931791C8BC5120022A311 /* Assets.xcassets in Resources */,
+				761931C31C8BEF700022A311 /* SimpleVertex.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,11 +487,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				761931A51C8BC8A20022A311 /* AppDelegate.m in Sources */,
+				761931D21C8C5DF70022A311 /* CC3GLMatrix.m in Sources */,
 				761931B61C8BD5220022A311 /* OpenGLViewController.m in Sources */,
+				761931D41C8C5DF70022A311 /* CC3Math.m in Sources */,
 				761931BA1C8BD79A0022A311 /* MapSDKDemoViewController.m in Sources */,
 				761931A71C8BC8A20022A311 /* MainViewController.m in Sources */,
 				761931AB1C8BCC3F0022A311 /* main.m in Sources */,
+				761931D31C8C5DF70022A311 /* CC3Kazmath.c in Sources */,
 				761931C11C8BDDCF0022A311 /* OpenGLTestView.m in Sources */,
+				761931D11C8C5DF70022A311 /* CC3Foundation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
