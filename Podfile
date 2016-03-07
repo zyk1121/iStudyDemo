@@ -7,7 +7,11 @@ xcodeproj 'iStudyDemo/iStudyDemo.xcodeproj'
 target "iStudyDemo" do
   pod 'ReactiveCocoa', '~> 2.5'
   pod 'Masonry', '~> 0.6.2'
-  pod 'Mantle', '~> 1.5'
+  pod 'Mantle', '~> 2.0'
+  pod 'JSONKit'
+  pod 'AFNetworking', '~> 2.5.0'
+  pod 'RPJSONValidator', '~> 0.2.0'
+  pod 'libextobjc', '~> 0.4.1'
 end
 
 target "iStudyDemoTests" do

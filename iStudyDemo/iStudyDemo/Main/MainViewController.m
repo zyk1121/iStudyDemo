@@ -12,6 +12,7 @@
 #import "UIKitMacros.h"
 #import "OpenGLViewController.h"
 #import "MapSDKDemoViewController.h"
+#import "HTTPTestViewController.h"
 
 @interface MainViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -73,6 +74,11 @@
     [_listData addObject:@"地图SDK & 定位"];
     MapSDKDemoViewController *mapSDKViewController = [[MapSDKDemoViewController alloc] init];
     [_listViewControllers addObject:mapSDKViewController];
+    
+    // 3.HTTP 网络
+    [_listData addObject:@"HTTP 网络"];
+    HTTPTestViewController *httpTestViewController = [[HTTPTestViewController alloc] init];
+    [_listViewControllers addObject:httpTestViewController];
     
 }
 

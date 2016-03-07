@@ -26,6 +26,10 @@
 		761931D21C8C5DF70022A311 /* CC3GLMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931CA1C8C5DF70022A311 /* CC3GLMatrix.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		761931D31C8C5DF70022A311 /* CC3Kazmath.c in Sources */ = {isa = PBXBuildFile; fileRef = 761931CB1C8C5DF70022A311 /* CC3Kazmath.c */; };
 		761931D41C8C5DF70022A311 /* CC3Math.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931CF1C8C5DF70022A311 /* CC3Math.m */; };
+		763FE3641C8D8BFA00CE67FF /* HTTPTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE3631C8D8BFA00CE67FF /* HTTPTestViewController.m */; };
+		763FE3871C8DC9AB00CE67FF /* LEDDomainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE3861C8DC9AB00CE67FF /* LEDDomainObject.m */; };
+		763FE38D1C8DCB6100CE67FF /* LEDDomainPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE38C1C8DCB6100CE67FF /* LEDDomainPredicate.m */; };
+		763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE38F1C8DD03000CE67FF /* TestDomainObject.m */; };
 		BA0CE7C3F0C3D5D55BE25FD3 /* libPods-iStudyDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E46310862E13CE523DA12E07 /* libPods-iStudyDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +88,14 @@
 		761931CE1C8C5DF70022A311 /* CC3Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Math.h; sourceTree = "<group>"; };
 		761931CF1C8C5DF70022A311 /* CC3Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3Math.m; sourceTree = "<group>"; };
 		761931D01C8C5DF70022A311 /* ccTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccTypes.h; sourceTree = "<group>"; };
+		763FE3621C8D8BFA00CE67FF /* HTTPTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPTestViewController.h; sourceTree = "<group>"; };
+		763FE3631C8D8BFA00CE67FF /* HTTPTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPTestViewController.m; sourceTree = "<group>"; };
+		763FE3851C8DC9AB00CE67FF /* LEDDomainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDDomainObject.h; sourceTree = "<group>"; };
+		763FE3861C8DC9AB00CE67FF /* LEDDomainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDDomainObject.m; sourceTree = "<group>"; };
+		763FE38B1C8DCB6100CE67FF /* LEDDomainPredicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDDomainPredicate.h; sourceTree = "<group>"; };
+		763FE38C1C8DCB6100CE67FF /* LEDDomainPredicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDDomainPredicate.m; sourceTree = "<group>"; };
+		763FE38E1C8DD03000CE67FF /* TestDomainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDomainObject.h; sourceTree = "<group>"; };
+		763FE38F1C8DD03000CE67FF /* TestDomainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDomainObject.m; sourceTree = "<group>"; };
 		7FCB39AC830876F184EF9700 /* libPods-iStudyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iStudyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A143A5F8268C343472EB18 /* Pods-iStudyDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemoTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemoTests/Pods-iStudyDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCBEED3EEE298D40EA18BCD8 /* Pods-iStudyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemo/Pods-iStudyDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -216,6 +228,7 @@
 		761931AD1C8BCD010022A311 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				763FE3611C8D8BE100CE67FF /* HTTPTest */,
 				761931B71C8BD7820022A311 /* MapDemo */,
 				761931B31C8BD4FF0022A311 /* OpenGL */,
 			);
@@ -275,6 +288,29 @@
 				761931D01C8C5DF70022A311 /* ccTypes.h */,
 			);
 			path = Cocos3DMathLib;
+			sourceTree = "<group>";
+		};
+		763FE3611C8D8BE100CE67FF /* HTTPTest */ = {
+			isa = PBXGroup;
+			children = (
+				763FE3841C8DC97000CE67FF /* Mantle */,
+				763FE3621C8D8BFA00CE67FF /* HTTPTestViewController.h */,
+				763FE3631C8D8BFA00CE67FF /* HTTPTestViewController.m */,
+				763FE38E1C8DD03000CE67FF /* TestDomainObject.h */,
+				763FE38F1C8DD03000CE67FF /* TestDomainObject.m */,
+			);
+			path = HTTPTest;
+			sourceTree = "<group>";
+		};
+		763FE3841C8DC97000CE67FF /* Mantle */ = {
+			isa = PBXGroup;
+			children = (
+				763FE3851C8DC9AB00CE67FF /* LEDDomainObject.h */,
+				763FE3861C8DC9AB00CE67FF /* LEDDomainObject.m */,
+				763FE38B1C8DCB6100CE67FF /* LEDDomainPredicate.h */,
+				763FE38C1C8DCB6100CE67FF /* LEDDomainPredicate.m */,
+			);
+			path = Mantle;
 			sourceTree = "<group>";
 		};
 		DF399414AD08488BE365F5E9 /* Frameworks */ = {
@@ -486,7 +522,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				763FE3871C8DC9AB00CE67FF /* LEDDomainObject.m in Sources */,
 				761931A51C8BC8A20022A311 /* AppDelegate.m in Sources */,
+				763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */,
 				761931D21C8C5DF70022A311 /* CC3GLMatrix.m in Sources */,
 				761931B61C8BD5220022A311 /* OpenGLViewController.m in Sources */,
 				761931D41C8C5DF70022A311 /* CC3Math.m in Sources */,
@@ -494,7 +532,9 @@
 				761931A71C8BC8A20022A311 /* MainViewController.m in Sources */,
 				761931AB1C8BCC3F0022A311 /* main.m in Sources */,
 				761931D31C8C5DF70022A311 /* CC3Kazmath.c in Sources */,
+				763FE3641C8D8BFA00CE67FF /* HTTPTestViewController.m in Sources */,
 				761931C11C8BDDCF0022A311 /* OpenGLTestView.m in Sources */,
+				763FE38D1C8DCB6100CE67FF /* LEDDomainPredicate.m in Sources */,
 				761931D11C8C5DF70022A311 /* CC3Foundation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
