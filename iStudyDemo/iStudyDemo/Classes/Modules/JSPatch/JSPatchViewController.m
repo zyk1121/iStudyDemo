@@ -8,6 +8,9 @@
 
 #import "JSPatchViewController.h"
 
+// http://jspatch.com/Docs/intro 一个即将要可用的jspatch开放平台
+// https://github.com/bang590/JSPatch 
+
 @interface JSPatchViewController ()
 
 @end

@@ -13,6 +13,7 @@ target "iStudyDemo" do
   pod 'RPJSONValidator', '~> 0.2.0'
   pod 'libextobjc', '~> 0.4.1'
   pod 'JSPatch', '~> 0.1.5'
+  pod 'FMDB', '~> 2.6'
 end
 
 target "iStudyDemoTests" do

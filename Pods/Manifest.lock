@@ -21,6 +21,9 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Expecta (0.3.2)
+  - FMDB (2.6):
+    - FMDB/standard (= 2.6)
+  - FMDB/standard (2.6)
   - JSONKit (1.4)
   - JSPatch (0.1.5):
     - JSPatch/Core (= 0.1.5)
@@ -81,6 +84,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.5.0)
   - Expecta (~> 0.3.1)
+  - FMDB (~> 2.6)
   - JSONKit
   - JSPatch (~> 0.1.5)
   - libextobjc (~> 0.4.1)
@@ -95,6 +99,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   Expecta: 8c507baf13211207b1e9d0a741480600e6b4ed15
+  FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
   JSONKit: 5b69e804ea54d99293eed0fd2ce596c5703fefb0
   JSPatch: 405b5f5990643e6717dd6715ac60d6a2b582a6ba
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471

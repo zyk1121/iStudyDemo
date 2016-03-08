@@ -38,6 +38,10 @@
 		76C479951C8EF51600EAE07E /* DataStorageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C479941C8EF51600EAE07E /* DataStorageViewController.m */; };
 		76C479981C8EF5AF00EAE07E /* JSPatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C479971C8EF5AF00EAE07E /* JSPatchViewController.m */; };
 		76C4799C1C8EF67B00EAE07E /* QuartzCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C4799B1C8EF67B00EAE07E /* QuartzCoreViewController.m */; };
+		76C4799E1C8F205800EAE07E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4799D1C8F205800EAE07E /* libsqlite3.tbd */; };
+		76C479A11C8F248F00EAE07E /* coreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76C4799F1C8F248F00EAE07E /* coreData.xcdatamodeld */; };
+		76C479A61C8F264100EAE07E /* TestCoreData+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C479A31C8F264100EAE07E /* TestCoreData+CoreDataProperties.m */; };
+		76C479A71C8F264100EAE07E /* TestCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C479A51C8F264100EAE07E /* TestCoreData.m */; };
 		BA0CE7C3F0C3D5D55BE25FD3 /* libPods-iStudyDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E46310862E13CE523DA12E07 /* libPods-iStudyDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +119,12 @@
 		76C479971C8EF5AF00EAE07E /* JSPatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPatchViewController.m; sourceTree = "<group>"; };
 		76C4799A1C8EF67B00EAE07E /* QuartzCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzCoreViewController.h; sourceTree = "<group>"; };
 		76C4799B1C8EF67B00EAE07E /* QuartzCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzCoreViewController.m; sourceTree = "<group>"; };
+		76C4799D1C8F205800EAE07E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		76C479A01C8F248F00EAE07E /* coreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coreData.xcdatamodel; sourceTree = "<group>"; };
+		76C479A21C8F264100EAE07E /* TestCoreData+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestCoreData+CoreDataProperties.h"; sourceTree = "<group>"; };
+		76C479A31C8F264100EAE07E /* TestCoreData+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreData+CoreDataProperties.m"; sourceTree = "<group>"; };
+		76C479A41C8F264100EAE07E /* TestCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCoreData.h; sourceTree = "<group>"; };
+		76C479A51C8F264100EAE07E /* TestCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCoreData.m; sourceTree = "<group>"; };
 		7FCB39AC830876F184EF9700 /* libPods-iStudyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iStudyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A143A5F8268C343472EB18 /* Pods-iStudyDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemoTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemoTests/Pods-iStudyDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCBEED3EEE298D40EA18BCD8 /* Pods-iStudyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemo/Pods-iStudyDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C4799E1C8F205800EAE07E /* libsqlite3.tbd in Frameworks */,
 				76C4798E1C8ED50600EAE07E /* CoreTelephony.framework in Frameworks */,
 				76C4798C1C8ED4C700EAE07E /* CoreLocation.framework in Frameworks */,
 				76C4798A1C8ED4AA00EAE07E /* libz.tbd in Frameworks */,
@@ -344,8 +355,13 @@
 		76C479911C8EF4F400EAE07E /* DataStorage */ = {
 			isa = PBXGroup;
 			children = (
+				76C479A21C8F264100EAE07E /* TestCoreData+CoreDataProperties.h */,
+				76C479A31C8F264100EAE07E /* TestCoreData+CoreDataProperties.m */,
+				76C479A41C8F264100EAE07E /* TestCoreData.h */,
+				76C479A51C8F264100EAE07E /* TestCoreData.m */,
 				76C479931C8EF51600EAE07E /* DataStorageViewController.h */,
 				76C479941C8EF51600EAE07E /* DataStorageViewController.m */,
+				76C4799F1C8F248F00EAE07E /* coreData.xcdatamodeld */,
 			);
 			path = DataStorage;
 			sourceTree = "<group>";
@@ -371,6 +387,7 @@
 		DF399414AD08488BE365F5E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76C4799D1C8F205800EAE07E /* libsqlite3.tbd */,
 				76C4798D1C8ED50600EAE07E /* CoreTelephony.framework */,
 				76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */,
 				76C479891C8ED4AA00EAE07E /* libz.tbd */,
@@ -585,6 +602,7 @@
 				761931A51C8BC8A20022A311 /* AppDelegate.m in Sources */,
 				763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */,
 				761931D21C8C5DF70022A311 /* CC3GLMatrix.m in Sources */,
+				76C479A11C8F248F00EAE07E /* coreData.xcdatamodeld in Sources */,
 				761931B61C8BD5220022A311 /* OpenGLViewController.m in Sources */,
 				761931D41C8C5DF70022A311 /* CC3Math.m in Sources */,
 				761931BA1C8BD79A0022A311 /* MapSDKDemoViewController.m in Sources */,
@@ -594,7 +612,9 @@
 				761931D31C8C5DF70022A311 /* CC3Kazmath.c in Sources */,
 				763FE3641C8D8BFA00CE67FF /* HTTPTestViewController.m in Sources */,
 				76C479951C8EF51600EAE07E /* DataStorageViewController.m in Sources */,
+				76C479A61C8F264100EAE07E /* TestCoreData+CoreDataProperties.m in Sources */,
 				761931C11C8BDDCF0022A311 /* OpenGLTestView.m in Sources */,
+				76C479A71C8F264100EAE07E /* TestCoreData.m in Sources */,
 				763FE38D1C8DCB6100CE67FF /* LEDDomainPredicate.m in Sources */,
 				76C479981C8EF5AF00EAE07E /* JSPatchViewController.m in Sources */,
 				761931D11C8C5DF70022A311 /* CC3Foundation.m in Sources */,
@@ -854,6 +874,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		76C4799F1C8F248F00EAE07E /* coreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				76C479A01C8F248F00EAE07E /* coreData.xcdatamodel */,
+			);
+			currentVersion = 76C479A01C8F248F00EAE07E /* coreData.xcdatamodel */;
+			path = coreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 761931611C8BC5120022A311 /* Project object */;
 }
