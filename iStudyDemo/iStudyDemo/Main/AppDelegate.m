@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import <MAMapKit/MAMapKit.h>
 
 @interface AppDelegate ()
 
@@ -16,7 +17,15 @@
 @implementation AppDelegate
 
 
+- (void)configureMapAPIKey
+{
+    [MAMapServices sharedServices].apiKey = @"f6d92d3a67f7eecd0462f0df04526bf9";
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //
+    [self configureMapAPIKey];
+    //
     UINavigationController *mainNav = [[UINavigationController alloc] initWithRootViewController:[[MainViewController alloc] init]];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = mainNav;

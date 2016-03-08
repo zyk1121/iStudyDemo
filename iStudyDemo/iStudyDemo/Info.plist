@@ -29,6 +29,10 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>为了能让你更好的使用地图服务，请允许</string>
+	<key>NSLocationWhenInUseDescription</key>
+	<string>为了能让你更好的使用地图服务，请允许</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
