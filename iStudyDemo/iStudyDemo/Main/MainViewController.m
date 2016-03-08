@@ -13,6 +13,9 @@
 #import "OpenGLViewController.h"
 #import "MapSDKDemoViewController.h"
 #import "HTTPTestViewController.h"
+#import "DataStorageViewController.h"
+#import "JSPatchViewController.h"
+#import "QuartzCoreViewController.h"
 
 @interface MainViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -79,7 +82,21 @@
     [_listData addObject:@"HTTP 网络"];
     HTTPTestViewController *httpTestViewController = [[HTTPTestViewController alloc] init];
     [_listViewControllers addObject:httpTestViewController];
+
+    // 4.数据存取
+    [_listData addObject:@"数据存取"];
+    DataStorageViewController *dataStorageViewController = [[DataStorageViewController alloc] init];
+    [_listViewControllers addObject:dataStorageViewController];
     
+    // 5.JSPatch
+    [_listData addObject:@"JSPatch"];
+    JSPatchViewController *jsPatchViewController = [[JSPatchViewController alloc] init];
+    [_listViewControllers addObject:jsPatchViewController];
+    
+    // 6.QuartzCore
+    [_listData addObject:@"QuartzCore"];
+    QuartzCoreViewController *quartzCoreViewController = [[QuartzCoreViewController alloc] init];
+    [_listViewControllers addObject:quartzCoreViewController];
 }
 
 #pragma mark - UITableViewDelegate & UITableViewDataSource

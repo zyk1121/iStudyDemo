@@ -35,6 +35,9 @@
 		76C4798C1C8ED4C700EAE07E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */; };
 		76C4798E1C8ED50600EAE07E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798D1C8ED50600EAE07E /* CoreTelephony.framework */; };
 		76C479901C8ED8C800EAE07E /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 76C4798F1C8ED8C800EAE07E /* AMap.bundle */; };
+		76C479951C8EF51600EAE07E /* DataStorageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C479941C8EF51600EAE07E /* DataStorageViewController.m */; };
+		76C479981C8EF5AF00EAE07E /* JSPatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C479971C8EF5AF00EAE07E /* JSPatchViewController.m */; };
+		76C4799C1C8EF67B00EAE07E /* QuartzCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C4799B1C8EF67B00EAE07E /* QuartzCoreViewController.m */; };
 		BA0CE7C3F0C3D5D55BE25FD3 /* libPods-iStudyDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E46310862E13CE523DA12E07 /* libPods-iStudyDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +109,12 @@
 		76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		76C4798D1C8ED50600EAE07E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		76C4798F1C8ED8C800EAE07E /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
+		76C479931C8EF51600EAE07E /* DataStorageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStorageViewController.h; sourceTree = "<group>"; };
+		76C479941C8EF51600EAE07E /* DataStorageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStorageViewController.m; sourceTree = "<group>"; };
+		76C479961C8EF5AF00EAE07E /* JSPatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPatchViewController.h; sourceTree = "<group>"; };
+		76C479971C8EF5AF00EAE07E /* JSPatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPatchViewController.m; sourceTree = "<group>"; };
+		76C4799A1C8EF67B00EAE07E /* QuartzCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzCoreViewController.h; sourceTree = "<group>"; };
+		76C4799B1C8EF67B00EAE07E /* QuartzCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzCoreViewController.m; sourceTree = "<group>"; };
 		7FCB39AC830876F184EF9700 /* libPods-iStudyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iStudyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A143A5F8268C343472EB18 /* Pods-iStudyDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemoTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemoTests/Pods-iStudyDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCBEED3EEE298D40EA18BCD8 /* Pods-iStudyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemo/Pods-iStudyDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -242,6 +251,9 @@
 		761931AD1C8BCD010022A311 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				76C479991C8EF66B00EAE07E /* QuartzCore */,
+				76C479911C8EF4F400EAE07E /* DataStorage */,
+				76C479921C8EF4F400EAE07E /* JSPatch */,
 				763FE3611C8D8BE100CE67FF /* HTTPTest */,
 				761931B71C8BD7820022A311 /* MapDemo */,
 				761931B31C8BD4FF0022A311 /* OpenGL */,
@@ -327,6 +339,33 @@
 				763FE38C1C8DCB6100CE67FF /* LEDDomainPredicate.m */,
 			);
 			path = Mantle;
+			sourceTree = "<group>";
+		};
+		76C479911C8EF4F400EAE07E /* DataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				76C479931C8EF51600EAE07E /* DataStorageViewController.h */,
+				76C479941C8EF51600EAE07E /* DataStorageViewController.m */,
+			);
+			path = DataStorage;
+			sourceTree = "<group>";
+		};
+		76C479921C8EF4F400EAE07E /* JSPatch */ = {
+			isa = PBXGroup;
+			children = (
+				76C479961C8EF5AF00EAE07E /* JSPatchViewController.h */,
+				76C479971C8EF5AF00EAE07E /* JSPatchViewController.m */,
+			);
+			path = JSPatch;
+			sourceTree = "<group>";
+		};
+		76C479991C8EF66B00EAE07E /* QuartzCore */ = {
+			isa = PBXGroup;
+			children = (
+				76C4799A1C8EF67B00EAE07E /* QuartzCoreViewController.h */,
+				76C4799B1C8EF67B00EAE07E /* QuartzCoreViewController.m */,
+			);
+			path = QuartzCore;
 			sourceTree = "<group>";
 		};
 		DF399414AD08488BE365F5E9 /* Frameworks */ = {
@@ -551,10 +590,13 @@
 				761931BA1C8BD79A0022A311 /* MapSDKDemoViewController.m in Sources */,
 				761931A71C8BC8A20022A311 /* MainViewController.m in Sources */,
 				761931AB1C8BCC3F0022A311 /* main.mm in Sources */,
+				76C4799C1C8EF67B00EAE07E /* QuartzCoreViewController.m in Sources */,
 				761931D31C8C5DF70022A311 /* CC3Kazmath.c in Sources */,
 				763FE3641C8D8BFA00CE67FF /* HTTPTestViewController.m in Sources */,
+				76C479951C8EF51600EAE07E /* DataStorageViewController.m in Sources */,
 				761931C11C8BDDCF0022A311 /* OpenGLTestView.m in Sources */,
 				763FE38D1C8DCB6100CE67FF /* LEDDomainPredicate.m in Sources */,
+				76C479981C8EF5AF00EAE07E /* JSPatchViewController.m in Sources */,
 				761931D11C8C5DF70022A311 /* CC3Foundation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
