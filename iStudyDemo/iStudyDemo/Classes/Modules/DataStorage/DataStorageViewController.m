@@ -15,13 +15,23 @@
 #import <sqlite3.h>
 #import "FMDB.h"
 #import <CoreData/CoreData.h>
+#import "User.h"
+#import "ObjectManager/ObjectStorageManager.h"
 
 @interface DataStorageViewController ()
+
+@property(strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property(strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+@property(strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 
 @property (nonatomic, strong) UIButton *button1;
 @property (nonatomic, strong) UIButton *button2;
 @property (nonatomic, strong) UIButton *button3;
 @property (nonatomic, strong) UIButton *button4;
+@property (nonatomic, strong) UIButton *button5;
+
+
 
 @end
 
@@ -58,6 +68,11 @@
     [self.button4 mas_updateConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.view);
         make.top.equalTo(self.button3.mas_bottom).offset(20);
+    }];
+    
+    [self.button5 mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.top.equalTo(self.button4.mas_bottom).offset(20);
     }];
 }
 
@@ -112,6 +127,18 @@
         button;
     });
     [self.view addSubview:self.button4];
+    
+    self.button5 = ({
+        UIButton *button = [[UIButton alloc] init];
+        [button setTitle:@"自定义操作" forState:UIControlStateNormal];
+        [button setTitle:@"自定义操作" forState:UIControlStateHighlighted];
+        [button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
+        [button setBackgroundColor:[UIColor grayColor]];
+        [button addTarget:self action:@selector(button5Clicked) forControlEvents:UIControlEventTouchUpInside];
+        button;
+    });
+    [self.view addSubview:self.button5];
 }
 
 #pragma mark - event
@@ -315,6 +342,145 @@
     // http://blog.csdn.net/chen505358119/article/details/9334831
 }
 
+// coredata
+// http://blog.csdn.net/chen505358119/article/details/9334831
+/*
+ （1）NSManagedObjectModel(被管理的对象模型)
+ 相当于实体，不过它包含 了实体间的关系
+ (2)NSManagedObjectContext(被管理的对象上下文)
+ 操作实际内容
+ 作用：插入数据  查询  更新  删除
+ （3）NSPersistentStoreCoordinator(持久化存储助理)
+ 相当于数据库的连接器
+ (4)NSFetchRequest(获取数据的请求)
+ 相当于查询语句
+ (5)NSPredicate(相当于查询条件)
+ (6)NSEntityDescription(实体结构)
+ (7)后缀名为.xcdatamodel的包
+ 里面的.xcdatamodel文件，用数据模型编辑器编辑
+ 编译后为.momd或.mom文件，这就是为什么文件中没有这个东西，而我们的程序中用到这个东西而不会报错的原因
+ */
+#pragma mark - coredata
+//托管对象
+- (NSManagedObjectModel *)managedObjectModel
+{
+    if (_managedObjectModel != nil) {
+        return _managedObjectModel;
+    }
+    _managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
+    
+    return _managedObjectModel;
+}
+
+// 托管对象上下文
+- (NSManagedObjectContext *)managedObjectContext
+{
+    if (_managedObjectContext != nil) {
+        return _managedObjectContext;
+    }
+    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+    if (coordinator != nil) {
+        _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType
+        ];
+        [_managedObjectContext setPersistentStoreCoordinator:coordinator];
+    }
+    return _managedObjectContext;
+}
+
+// 持久化存储协调器
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator
+{
+    if (_persistentStoreCoordinator != nil) {
+        return _persistentStoreCoordinator;
+    }
+    NSString *docs = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSURL *storeURL = [NSURL fileURLWithPath:[docs stringByAppendingPathComponent:@"CoreDataUser.sqlite"]];
+    NSError *error = nil;
+    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {         NSLog(@"Error: %@,%@",error,[error userInfo]);
+    }
+    return _persistentStoreCoordinator;
+}
+
+// 插入数据
+- (void)addIntoDataSource
+{
+    User *user = (User *)[NSEntityDescription insertNewObjectForEntityForName:@"User" inManagedObjectContext:[self managedObjectContext]];
+    [user setName:@"cyy"];
+    [user setAge:@21];
+    [user setSex:@"girl"];
+    NSError *error = nil;
+    BOOL isSaveSuccess = [self.managedObjectContext save:&error];
+    if (!isSaveSuccess) {
+        NSLog(@"Error:%@",error);
+    } else {
+        NSLog(@"Save successful");
+    }
+}
+// 查询
+- (void)query
+{
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSEntityDescription *user = [NSEntityDescription entityForName:@"User" inManagedObjectContext:self.managedObjectContext];
+    [request setEntity:user];
+    NSError *error = nil;
+    NSMutableArray *mutableFetchRequest = [[self.managedObjectContext executeFetchRequest:request error:&error] mutableCopy];
+    if (mutableFetchRequest == nil) {
+        NSLog(@"ERror:%@",error);
+    }
+    for (User *user in mutableFetchRequest) {
+        NSLog(@"name:%@,age:%@,sex:%@",user.name,user.age,user.sex);
+    }
+}
+// 更新
+- (void)update
+{
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSEntityDescription *user = [NSEntityDescription entityForName:@"User" inManagedObjectContext:self.managedObjectContext];
+    [request setEntity:user];
+    // 查询条件
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name==%@",@"cyy"];
+    [request setPredicate:predicate];
+    NSError *error = nil;
+    NSMutableArray *arrayQequest = [[self.managedObjectContext executeFetchRequest:request error:&error] mutableCopy];
+    if (arrayQequest != nil) {
+        NSLog(@"error:%@",error);
+    }
+    // 更新age后要进行保存,否则更新失败
+    for (User *user in arrayQequest) {
+        [user setAge:[NSNumber numberWithInt:25]];
+    }
+    [self.managedObjectContext save:&error];
+}
+// 删除
+- (void)del
+{
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSEntityDescription *user = [NSEntityDescription entityForName:@"User" inManagedObjectContext:self.managedObjectContext];
+    [request setEntity:user];
+    // 查询条件
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name==%@",@"cyy"];
+    [request setPredicate:predicate];
+    NSError *error = nil;
+    NSMutableArray *arrayQequest = [[self.managedObjectContext executeFetchRequest:request error:&error] mutableCopy];
+    if (arrayQequest != nil) {
+        NSLog(@"error:%@",error);
+    }
+    // 删除后要进行保存,否则删除失败
+    for (User *user in arrayQequest) {
+        [self.managedObjectContext deleteObject:user];
+    }
+    [self.managedObjectContext save:&error];
+}
+
+- (void)CoreDataTest2
+{
+    [self addIntoDataSource];
+//    [self update];
+    [self del];
+    [self query];
+}
+
 // 数据库操作
 // http://www.cocoachina.com/bbs/read.php?tid=182227
 - (void)button4Clicked
@@ -325,7 +491,19 @@
     
 //    [self FMDBTest];
     // CoreData
-    [self CoreDataTest];
+//    [self CoreDataTest];
+    [self CoreDataTest2];
+    
+}
+
+// 自定义操作
+
+- (void)button5Clicked
+{
+    [[ObjectStorageManager sharedObjectManager] saveObject:@"23456bac" forKey:@"abc"];
+    id ddd = [[ObjectStorageManager sharedObjectManager] objectForKey:@"abc"];
+    NSLog(@"%@",ddd);
+    [[ObjectStorageManager sharedObjectManager] cleanCache];
 }
 
 @end

@@ -8,12 +8,14 @@
 
 #import "MapSDKDemoViewController.h"
 #import <MAMapKit/MAMapKit.h>
+#import <MapKit/MapKit.h>
 
 // http://lbs.amap.com/api/ios-sdk/guide/mapkit/ 开发文档
 
 @interface MapSDKDemoViewController () <MAMapViewDelegate>
 
 @property (nonatomic, strong) MAMapView *mapView;
+@property (nonatomic, strong) MAMapView *mapView2;
 @property (nonatomic, strong) CLLocationManager *locationManager;
 
 @end
@@ -36,9 +38,24 @@
         self.locationManager = [[CLLocationManager alloc] init];
         [self.locationManager requestAlwaysAuthorization];
     }
-    self.mapView.frame = self.view.frame;
+    self.mapView.frame = CGRectMake(0, 0, 200, 200);
+    //    self.mapView.frame = self.view.frame;
+
     self.mapView.delegate = self;
     [self.view addSubview:self.mapView];
+    
+    //
+    self.mapView.showsUserLocation = YES; // 显示位置
+    
+    
+    self.mapView2 = [[MAMapView alloc] initWithFrame:self.view.bounds];
+
+    self.mapView2.frame = CGRectMake(0, 250, 200, 200);
+    //    self.mapView.frame = self.view.frame;
+    
+    self.mapView2.delegate = self;
+    [self.mapView2 setVisibleMapRect:MAMapRectMake(220947791,101641847, 11312, 11815) animated:YES];
+    [self.view addSubview:self.mapView2];
     
     //
     self.mapView.showsUserLocation = YES; // 显示位置

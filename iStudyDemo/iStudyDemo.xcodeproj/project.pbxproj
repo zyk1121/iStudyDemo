@@ -30,6 +30,10 @@
 		763FE3871C8DC9AB00CE67FF /* LEDDomainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE3861C8DC9AB00CE67FF /* LEDDomainObject.m */; };
 		763FE38D1C8DCB6100CE67FF /* LEDDomainPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE38C1C8DCB6100CE67FF /* LEDDomainPredicate.m */; };
 		763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE38F1C8DD03000CE67FF /* TestDomainObject.m */; };
+		7681A80D1C9588ED00FC6843 /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7681A80B1C9588ED00FC6843 /* User.xcdatamodeld */; };
+		7681A81E1C958A1B00FC6843 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7681A81B1C958A1B00FC6843 /* User+CoreDataProperties.m */; };
+		7681A81F1C958A1B00FC6843 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 7681A81D1C958A1B00FC6843 /* User.m */; };
+		7681A8231C95A04500FC6843 /* ObjectStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7681A8221C95A04500FC6843 /* ObjectStorageManager.m */; };
 		76C479881C8ED41600EAE07E /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C479871C8ED41600EAE07E /* MAMapKit.framework */; };
 		76C4798A1C8ED4AA00EAE07E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C479891C8ED4AA00EAE07E /* libz.tbd */; };
 		76C4798C1C8ED4C700EAE07E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */; };
@@ -108,6 +112,13 @@
 		763FE38C1C8DCB6100CE67FF /* LEDDomainPredicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDDomainPredicate.m; sourceTree = "<group>"; };
 		763FE38E1C8DD03000CE67FF /* TestDomainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDomainObject.h; sourceTree = "<group>"; };
 		763FE38F1C8DD03000CE67FF /* TestDomainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDomainObject.m; sourceTree = "<group>"; };
+		7681A80C1C9588ED00FC6843 /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
+		7681A81A1C958A1B00FC6843 /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		7681A81B1C958A1B00FC6843 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
+		7681A81C1C958A1B00FC6843 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		7681A81D1C958A1B00FC6843 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		7681A8211C95A04500FC6843 /* ObjectStorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectStorageManager.h; sourceTree = "<group>"; };
+		7681A8221C95A04500FC6843 /* ObjectStorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectStorageManager.m; sourceTree = "<group>"; };
 		76C479871C8ED41600EAE07E /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		76C479891C8ED4AA00EAE07E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -352,9 +363,23 @@
 			path = Mantle;
 			sourceTree = "<group>";
 		};
+		7681A8201C959FFD00FC6843 /* ObjectManager */ = {
+			isa = PBXGroup;
+			children = (
+				7681A8211C95A04500FC6843 /* ObjectStorageManager.h */,
+				7681A8221C95A04500FC6843 /* ObjectStorageManager.m */,
+			);
+			path = ObjectManager;
+			sourceTree = "<group>";
+		};
 		76C479911C8EF4F400EAE07E /* DataStorage */ = {
 			isa = PBXGroup;
 			children = (
+				7681A8201C959FFD00FC6843 /* ObjectManager */,
+				7681A81A1C958A1B00FC6843 /* User+CoreDataProperties.h */,
+				7681A81B1C958A1B00FC6843 /* User+CoreDataProperties.m */,
+				7681A81C1C958A1B00FC6843 /* User.h */,
+				7681A81D1C958A1B00FC6843 /* User.m */,
 				76C479A21C8F264100EAE07E /* TestCoreData+CoreDataProperties.h */,
 				76C479A31C8F264100EAE07E /* TestCoreData+CoreDataProperties.m */,
 				76C479A41C8F264100EAE07E /* TestCoreData.h */,
@@ -362,6 +387,7 @@
 				76C479931C8EF51600EAE07E /* DataStorageViewController.h */,
 				76C479941C8EF51600EAE07E /* DataStorageViewController.m */,
 				76C4799F1C8F248F00EAE07E /* coreData.xcdatamodeld */,
+				7681A80B1C9588ED00FC6843 /* User.xcdatamodeld */,
 			);
 			path = DataStorage;
 			sourceTree = "<group>";
@@ -614,9 +640,13 @@
 				76C479951C8EF51600EAE07E /* DataStorageViewController.m in Sources */,
 				76C479A61C8F264100EAE07E /* TestCoreData+CoreDataProperties.m in Sources */,
 				761931C11C8BDDCF0022A311 /* OpenGLTestView.m in Sources */,
+				7681A8231C95A04500FC6843 /* ObjectStorageManager.m in Sources */,
 				76C479A71C8F264100EAE07E /* TestCoreData.m in Sources */,
 				763FE38D1C8DCB6100CE67FF /* LEDDomainPredicate.m in Sources */,
+				7681A80D1C9588ED00FC6843 /* User.xcdatamodeld in Sources */,
+				7681A81F1C958A1B00FC6843 /* User.m in Sources */,
 				76C479981C8EF5AF00EAE07E /* JSPatchViewController.m in Sources */,
+				7681A81E1C958A1B00FC6843 /* User+CoreDataProperties.m in Sources */,
 				761931D11C8C5DF70022A311 /* CC3Foundation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -876,6 +906,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		7681A80B1C9588ED00FC6843 /* User.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7681A80C1C9588ED00FC6843 /* User.xcdatamodel */,
+			);
+			currentVersion = 7681A80C1C9588ED00FC6843 /* User.xcdatamodel */;
+			path = User.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		76C4799F1C8F248F00EAE07E /* coreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
