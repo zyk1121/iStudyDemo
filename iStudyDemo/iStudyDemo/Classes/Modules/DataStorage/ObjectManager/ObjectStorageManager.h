@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@interface NSString (Hash)
+
+- (NSString*)sha1;
+- (NSString *)stringByComputingMD5;
+
+@end
+
 @interface ObjectStorageManager : NSObject
 
 + (instancetype)sharedObjectManager;

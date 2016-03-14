@@ -26,6 +26,7 @@
 		761931D21C8C5DF70022A311 /* CC3GLMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931CA1C8C5DF70022A311 /* CC3GLMatrix.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		761931D31C8C5DF70022A311 /* CC3Kazmath.c in Sources */ = {isa = PBXBuildFile; fileRef = 761931CB1C8C5DF70022A311 /* CC3Kazmath.c */; };
 		761931D41C8C5DF70022A311 /* CC3Math.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931CF1C8C5DF70022A311 /* CC3Math.m */; };
+		76213BD61C96BE42001DAA53 /* DeviceInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76213BD51C96BE42001DAA53 /* DeviceInfoViewController.m */; };
 		763FE3641C8D8BFA00CE67FF /* HTTPTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE3631C8D8BFA00CE67FF /* HTTPTestViewController.m */; };
 		763FE3871C8DC9AB00CE67FF /* LEDDomainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE3861C8DC9AB00CE67FF /* LEDDomainObject.m */; };
 		763FE38D1C8DCB6100CE67FF /* LEDDomainPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE38C1C8DCB6100CE67FF /* LEDDomainPredicate.m */; };
@@ -104,6 +105,8 @@
 		761931CE1C8C5DF70022A311 /* CC3Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Math.h; sourceTree = "<group>"; };
 		761931CF1C8C5DF70022A311 /* CC3Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3Math.m; sourceTree = "<group>"; };
 		761931D01C8C5DF70022A311 /* ccTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccTypes.h; sourceTree = "<group>"; };
+		76213BD41C96BE42001DAA53 /* DeviceInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfoViewController.h; sourceTree = "<group>"; };
+		76213BD51C96BE42001DAA53 /* DeviceInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfoViewController.m; sourceTree = "<group>"; };
 		763FE3621C8D8BFA00CE67FF /* HTTPTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPTestViewController.h; sourceTree = "<group>"; };
 		763FE3631C8D8BFA00CE67FF /* HTTPTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPTestViewController.m; sourceTree = "<group>"; };
 		763FE3851C8DC9AB00CE67FF /* LEDDomainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDDomainObject.h; sourceTree = "<group>"; };
@@ -273,6 +276,7 @@
 		761931AD1C8BCD010022A311 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				76213BD31C96BE31001DAA53 /* DeviceInfo */,
 				76C479991C8EF66B00EAE07E /* QuartzCore */,
 				76C479911C8EF4F400EAE07E /* DataStorage */,
 				76C479921C8EF4F400EAE07E /* JSPatch */,
@@ -338,6 +342,15 @@
 				761931D01C8C5DF70022A311 /* ccTypes.h */,
 			);
 			path = Cocos3DMathLib;
+			sourceTree = "<group>";
+		};
+		76213BD31C96BE31001DAA53 /* DeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				76213BD41C96BE42001DAA53 /* DeviceInfoViewController.h */,
+				76213BD51C96BE42001DAA53 /* DeviceInfoViewController.m */,
+			);
+			path = DeviceInfo;
 			sourceTree = "<group>";
 		};
 		763FE3611C8D8BE100CE67FF /* HTTPTest */ = {
@@ -628,6 +641,7 @@
 				761931A51C8BC8A20022A311 /* AppDelegate.m in Sources */,
 				763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */,
 				761931D21C8C5DF70022A311 /* CC3GLMatrix.m in Sources */,
+				76213BD61C96BE42001DAA53 /* DeviceInfoViewController.m in Sources */,
 				76C479A11C8F248F00EAE07E /* coreData.xcdatamodeld in Sources */,
 				761931B61C8BD5220022A311 /* OpenGLViewController.m in Sources */,
 				761931D41C8C5DF70022A311 /* CC3Math.m in Sources */,

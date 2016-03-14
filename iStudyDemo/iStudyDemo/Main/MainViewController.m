@@ -16,6 +16,7 @@
 #import "DataStorageViewController.h"
 #import "JSPatchViewController.h"
 #import "QuartzCoreViewController.h"
+#import "DeviceInfoViewController.h"
 
 @interface MainViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -97,6 +98,11 @@
     [_listData addObject:@"QuartzCore"];
     QuartzCoreViewController *quartzCoreViewController = [[QuartzCoreViewController alloc] init];
     [_listViewControllers addObject:quartzCoreViewController];
+    
+    // 7.设备信息
+    [_listData addObject:@"设备信息"];
+    DeviceInfoViewController *deviceinfoViewController = [[DeviceInfoViewController alloc] init];
+    [_listViewControllers addObject:deviceinfoViewController];
 }
 
 #pragma mark - UITableViewDelegate & UITableViewDataSource

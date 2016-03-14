@@ -10,6 +10,7 @@
 #import <AFNetworking.h>
 #import "TestDomainObject.h"
 #import "JSONKit.h"
+#import "ObjectStorageManager.h"
 
 @interface HTTPTestViewController ()
 
@@ -55,7 +56,95 @@
     
     //[self netWorkStatus];
 //    [self testjson];
-    [self testToDic];
+//    [self testToDic];
+    [self testLDAuth];
+    
+}
+
+// 鉴权
+- (void)testLDAuth
+{
+    
+    NSString *bundleID = @"com.kdtm.iStudyDemo";
+//    NSString *buid2 = [NSBundle mainBundle].bundleIdentifier;
+//    NSUInteger ts = [[[NSDate alloc] init] timeIntervalSince1970];
+    NSUInteger ts = 1457930192410;
+    NSString *keyTemp = @"f6d92d3a67f7eecd0462f0df04526bf9";
+    NSString *tsStr = [NSString stringWithFormat:@"%ld", ts];
+    tsStr = [NSString stringWithFormat:@"%@1%@",[tsStr substringToIndex:[tsStr length] - 2], [tsStr substringFromIndex:[tsStr length] - 1]];
+    
+    NSString *temp = [NSString stringWithFormat:@"%@:%@",[bundleID sha1],tsStr];
+    NSString *md5STr = [temp stringByComputingMD5];
+    
+//    md5([bundleID sha1]:ts)
+    
+    
+    
+    // 1.获得请求管理者
+    _mgr = [AFHTTPRequestOperationManager manager];
+//    _mgr.requestSerializer = [AFHTTPRequestSerializer serializer];// 请求
+//    _mgr.responseSerializer = [AFHTTPResponseSerializer serializer];// 响应
+    
+   
+_mgr.responseSerializer = [AFJSONResponseSerializer serializer];
+    
+    NSString *url = [NSString stringWithFormat:@"http://apiinit.amap.com/v3/log/init"];// http://www.baidu.com/
+    
+    // NSString *url = [NSString stringWithFormat:@"http://www.baidu.com/"];// http://www.baidu.com/
+    
+    
+    _mgr.requestSerializer = [AFJSONRequestSerializer serializer];
+    _mgr.responseSerializer = [AFJSONResponseSerializer serializer];
+    [_mgr.requestSerializer setValue:@"*/*" forHTTPHeaderField:@"Accept"];
+    [_mgr.requestSerializer setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    [_mgr.requestSerializer setValue:@"zh-cn" forHTTPHeaderField:@"Accept-Language"];
+    [_mgr.requestSerializer setValue:@"gzip, deflate" forHTTPHeaderField:@"Accept-Encoding"];
+    [_mgr.requestSerializer setValue:@"AMAP_SDK_iOS_3DMap_3.3.1" forHTTPHeaderField:@"User-Agent"];
+    [_mgr.requestSerializer setValue:@"keep-alive" forHTTPHeaderField:@"Connection"];
+    [_mgr.requestSerializer setValue:@"platform=iOS&sdkversion=3.3.1&product=3dmap" forHTTPHeaderField:@"platinfo"];
+    [_mgr.requestSerializer setValue:@"H4sIAAAAAAAAAwGwAU/+eUn2DWD62pxIjmBa3P2N7DVUEetsXVxbSuQlqfPZUUKpENzdDqlAT6pW1x/Az2Fh/VXM723iDU+zJWt7IMC5Jy1S9sCpfg+xqdYHMun/ODdoLdqCGqUDlI648WphgzjfJ5HVuNmvCb4UbQ/2j023oCvAhtgAqollGXdOew6ARMlbbOjKEtcfs+VDsQXLiuqDUDo692FDuqSnKafoegfOQSRq8RWV+XyEttjtmYvnStd0L3TA/p0rTj+yem0S0dtleaHgWGLdP/5KD4yluCbJgM6RflxK3ZnhRMBD4bgQm8LCADqPWMdQfSVr2jcDUiuy7XPmPx099Zr8Y9D2TnI7Xu7LDrVZ+NeRQGHXOjOrQafERYtE8wcAU2mdt+sB6QoYafpIwYpFDLNuBMurDsyxwgkXrE4BcQcYI+ArVIP5nmEOxdAAmvDJS1gJ4erkTQ6DSt5CE4lKmtEwTbDdzeAbMfBHSMGasJXvhScgqsrNhi49Tli7vTuE9RZlVd+EvOGV4AjGfrq56IwCfLS3/hmjz/reMegdD/vSuFbrT7ZOr6HkMYXIlD1M3R1ToWyIN3M66RqujLABAAA" forHTTPHeaderField:@"x-info"];
+    [_mgr.requestSerializer setValue:@"f6d92d3a67f7eecd0462f0df04526bf9" forHTTPHeaderField:@"key"];
+    [_mgr.requestSerializer setValue:@"9d0915e9a162f3b4428ed6e497c96d89" forHTTPHeaderField:@"scode"];
+    [_mgr.requestSerializer setValue:tsStr forHTTPHeaderField:@"ts"];
+    
+    
+    
+    // 2.封装请求参数
+//    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+//    [params setValue:@"platform=iOS&sdkversion=3.3.1&product=3dmap" forKey:@"platinfo"];
+//    [params setValue:@"H4sIAAAAAAAAAwGwAU/+eUn2DWD62pxIjmBa3P2N7DVUEetsXVxbSuQlqfPZUUKpENzdDqlAT6pW1x/Az2Fh/VXM723iDU+zJWt7IMC5Jy1S9sCpfg+xqdYHMun/ODdoLdqCGqUDlI648WphgzjfJ5HVuNmvCb4UbQ/2j023oCvAhtgAqollGXdOew6ARMlbbOjKEtcfs+VDsQXLiuqDUDo692FDuqSnKafoegfOQSRq8RWV+XyEttjtmYvnStd0L3TA/p0rTj+yem0S0dtleaHgWGLdP/5KD4yluCbJgM6RflxK3ZnhRMBD4bgQm8LCADqPWMdQfSVr2jcDUiuy7XPmPx099Zr8Y9D2TnI7Xu7LDrVZ+NeRQGHXOjOrQafERYtE8wcAU2mdt+sB6QoYafpIwYpFDLNuBMurDsyxwgkXrE4BcQcYI+ArVIP5nmEOxdAAmvDJS1gJ4erkTQ6DSt5CE4lKmtEwTbDdzeAbMfBHSMGasJXvhScgqsrNhi49Tli7vTuE9RZlVd+EvOGV4AjGfrq56IwCfLS3/hmjz/reMegdD/vSuFbrT7ZOr6HkMYXIlD1M3R1ToWyIN3M66RqujLABAAA=" forKey:@"x-info"];
+//    [params setValue:@"f6d92d3a67f7eecd0462f0df04526bf9" forKey:@"key"];
+////    [params setObject:@1 forKey:@"ia"];
+////    [params setObject:@2.0 forKey:@"logversion"];
+////    [params setObject:@1 forKey:@"ec"];
+////    [params setValue:@"9d0915e9a162f3b4428ed6e497c96d89" forKey:@"scode"];
+//    [params setValue:@"AMAP_SDK_iOS_3DMap_3.3.1" forKey:@"User-Agent"];
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params setValue:@"utf-8" forKey:@"encode"];
+    [params setValue:@"json" forKey:@"resType"];
+
+    /*
+ia: 1
+logversion: 2.0
+ec: 1
+key: f6d92d3a67f7eecd0462f0df04526bf9
+scode: 9d0915e9a162f3b4428ed6e497c96d89
+    Accept-Language: zh-cn
+    Accept-Encoding: gzip, deflate
+    Content-Length: 25
+    User-Agent: AMAP_SDK_iOS_3DMap_3.3.1
+Connection: keep-alive
+    Content-Type: application/x-www-form-urlencoded
+ts: 1457930192410
+     */
+    // 3.发送GET请求
+    [_mgr POST:url parameters:params
+       success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"%@",responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@",error);
+    }];
+
     
 }
 
