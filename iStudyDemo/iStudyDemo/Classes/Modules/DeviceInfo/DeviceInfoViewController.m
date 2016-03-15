@@ -142,9 +142,28 @@ extern NSString *CTSettingCopyMyPhoneNumber();
     }
 }
 
-- (NSArray*) getWiFiMac
+
+- (NSString *)currentWifiSSID {
+    // Does not work on the simulator.
+    NSString *ssid = nil;
+    NSArray *ifs = (id)CFBridgingRelease(CNCopySupportedInterfaces());
+    NSLog(@"ifs:%@",ifs);
+    for (NSString *ifnam in ifs) {
+        NSDictionary *info = (id)CFBridgingRelease(CNCopyCurrentNetworkInfo((CFStringRef)ifnam));
+        NSLog(@"dici：%@",[info  allKeys]);
+        if (info[@"SSID"]) {
+            ssid = info[@"SSID"];// kCNNetworkInfoKeyBSSID kCNNetworkInfoKeySSID
+            
+        }
+    }
+    return ssid;
+}
+
+- (NSArray*)getWiFiMac
 {
     NSMutableArray *array = [NSMutableArray array];
+    // 已连接的wifi信息
+    // 调用私有api，故无法提交appsotre审核
     CFArrayRef interfaces = CNCopySupportedInterfaces();
     if (interfaces) {
         CFIndex count = CFArrayGetCount(interfaces);
@@ -155,8 +174,9 @@ extern NSString *CTSettingCopyMyPhoneNumber();
             if (netinfo && CFDictionaryContainsKey(netinfo, kCNNetworkInfoKeySSID)) {
                 NSString *bssid = (__bridge NSString *)CFDictionaryGetValue(netinfo, kCNNetworkInfoKeyBSSID);
                 NSString *ssid = (__bridge NSString *)CFDictionaryGetValue(netinfo, kCNNetworkInfoKeySSID);
-                [array addObject:@{@"bssid" : bssid ? : @"",
-                                   @"ssid" : ssid ? : @""}];
+//                [array addObject:@{@"bssid" : bssid ? : @"",
+//                                   @"ssid" : ssid ? : @""}];
+                [array addObject:bssid];// wifi  mac  address
             }
             if (netinfo)
                 CFRelease(netinfo);
@@ -177,6 +197,7 @@ extern NSString *CTSettingCopyMyPhoneNumber();
     NSString *systemName = device.systemName;   //获取当前运行的系统  e.g. @"iOS"
     NSString *systemVersion = device.systemVersion;//获取当前系统的版本 e.g. @"4.0"
     NSString *identifier = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+//    NSString *udid = [[UIDevice currentDevice] uniqueIdentifier];// 废弃
     CGRect rect = [[UIScreen mainScreen] bounds];
     CGFloat scale = [UIScreen mainScreen].scale;
     CGFloat width = rect.size.width * scale;
@@ -258,6 +279,7 @@ extern NSString *CTSettingCopyMyPhoneNumber();
 //    }
     
     NSArray *wifiMacArray = [self getWiFiMac];
+    NSString *currentWifi = [self currentWifiSSID];
     
     [_listData setObject:name forKey:@"设备所有者名称 "];
     [_listData setObject:model forKey:@"手机型号"];
@@ -266,9 +288,15 @@ extern NSString *CTSettingCopyMyPhoneNumber();
     [_listData setObject:systemVersion forKey:@"系统版本"];
     [_listData setObject:identifier forKey:@"UUID"];
     [_listData setObject:[NSString stringWithFormat:@"%0.lf*%0.lf",width,height] forKey:@"分辨率"];
-    [_listData setObject:mCarrier forKey:@"运营商名称"];
-    [_listData setObject:[carrier mobileCountryCode] forKey:@"运营商所在国家编号"];
-    [_listData setObject:[carrier mobileNetworkCode] forKey:@"供应商网络编号"];
+    if (mCarrier) {
+         [_listData setObject:mCarrier forKey:@"运营商名称"];
+    }
+    if (carrier) {
+        [_listData setObject:[carrier mobileCountryCode] forKey:@"运营商所在国家编号"];
+        [_listData setObject:[carrier mobileNetworkCode] forKey:@"供应商网络编号"];
+    }
+   
+    
     [_listData setObject:appCurName forKey:@"应用名称"];
     [_listData setObject:appCurVersion forKey:@"应用版本"];
     [_listData setObject:appCurVersionNum forKey:@"应用版本build号"];

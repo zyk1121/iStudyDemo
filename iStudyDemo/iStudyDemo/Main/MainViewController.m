@@ -17,6 +17,7 @@
 #import "JSPatchViewController.h"
 #import "QuartzCoreViewController.h"
 #import "DeviceInfoViewController.h"
+#import "ThirdPartViewController.h"
 
 @interface MainViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -103,6 +104,10 @@
     [_listData addObject:@"设备信息"];
     DeviceInfoViewController *deviceinfoViewController = [[DeviceInfoViewController alloc] init];
     [_listViewControllers addObject:deviceinfoViewController];
+    // 8.第三方
+    [_listData addObject:@"第三方"];
+    ThirdPartViewController *thirdpartViewController = [[ThirdPartViewController alloc] init];
+    [_listViewControllers addObject:thirdpartViewController];
 }
 
 #pragma mark - UITableViewDelegate & UITableViewDataSource
