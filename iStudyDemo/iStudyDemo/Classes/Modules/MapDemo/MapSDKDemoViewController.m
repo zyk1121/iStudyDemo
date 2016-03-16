@@ -38,7 +38,8 @@
         self.locationManager = [[CLLocationManager alloc] init];
         [self.locationManager requestAlwaysAuthorization];
     }
-    self.mapView.frame = CGRectMake(0, 0, 200, 200);
+    self.mapView.frame = CGRectMake(0, 100, 300, 300);
+//    self.mapView.showsCompass = NO;
     //    self.mapView.frame = self.view.frame;
 
     self.mapView.delegate = self;
@@ -49,8 +50,8 @@
     
     
     self.mapView2 = [[MAMapView alloc] initWithFrame:self.view.bounds];
-
-    self.mapView2.frame = CGRectMake(0, 250, 200, 200);
+    self.mapView2.showsCompass = NO;
+    self.mapView2.frame = CGRectMake(0, 450, 200, 200);
     //    self.mapView.frame = self.view.frame;
     
     self.mapView2.delegate = self;

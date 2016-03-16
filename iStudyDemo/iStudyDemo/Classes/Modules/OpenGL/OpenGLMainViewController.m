@@ -1,18 +1,18 @@
 //
-//  ThirdPartViewController.m
+//  OpenGLMainViewController.m
 //  iStudyDemo
 //
-//  Created by zhangyuanke on 16/3/14.
+//  Created by zhangyuanke on 16/3/16.
 //  Copyright © 2016年 zhangyuanke. All rights reserved.
 //
 
-#import "ThirdPartViewController.h"
+#import "OpenGLMainViewController.h"
 #import "ReactiveCocoa/ReactiveCocoa.h"
 #import "masonry.h"
 #import "UIKitMacros.h"
-#import "ThirdShareViewController.h"
+#import "OpenGLViewController.h"
 
-@interface ThirdPartViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface OpenGLMainViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *listData;
@@ -20,11 +20,10 @@
 
 @end
 
-@implementation ThirdPartViewController
+@implementation OpenGLMainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     [self setupData];
     [self setupUI];
@@ -61,10 +60,10 @@
     _listData = [[NSMutableArray alloc] init];
     _listViewControllers = [[NSMutableArray alloc] init];
     
-    // 1.第三方分享
-    [_listData addObject:@"第三方分享&登录"];
-    ThirdShareViewController *thirdShareViewController = [[ThirdShareViewController alloc] init];
-    [_listViewControllers addObject:thirdShareViewController];
+    // 1.OpenGL入门
+    [_listData addObject:@"OpenGL入门"];
+    OpenGLViewController *glViewController = [[OpenGLViewController alloc] init];
+    [_listViewControllers addObject:glViewController];
 }
 
 
@@ -95,13 +94,13 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdetify];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdetify];
-                cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         cell.showsReorderControl = YES;
     }
     
     cell.textLabel.backgroundColor = [UIColor clearColor];
     cell.textLabel.text = [self.listData objectAtIndex:indexPath.row];
-//    cell.detailTextLabel.text = [self.listData objectForKey:[self.listData allKeys][indexPath.row]];
+    //    cell.detailTextLabel.text = [self.listData objectForKey:[self.listData allKeys][indexPath.row]];
     
     return cell;
 }
@@ -110,5 +109,4 @@
 {
     return 40;
 }
-
 @end

@@ -15,13 +15,9 @@
 		761931A51C8BC8A20022A311 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931A11C8BC8A20022A311 /* AppDelegate.m */; };
 		761931A71C8BC8A20022A311 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931A41C8BC8A20022A311 /* MainViewController.m */; };
 		761931AB1C8BCC3F0022A311 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 761931AA1C8BCC3F0022A311 /* main.mm */; };
-		761931B61C8BD5220022A311 /* OpenGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931B51C8BD5220022A311 /* OpenGLViewController.m */; };
 		761931BA1C8BD79A0022A311 /* MapSDKDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931B91C8BD79A0022A311 /* MapSDKDemoViewController.m */; };
 		761931BC1C8BDDA40022A311 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761931BB1C8BDDA40022A311 /* QuartzCore.framework */; };
 		761931BE1C8BDDAC0022A311 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761931BD1C8BDDAC0022A311 /* OpenGLES.framework */; };
-		761931C11C8BDDCF0022A311 /* OpenGLTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931C01C8BDDCF0022A311 /* OpenGLTestView.m */; };
-		761931C31C8BEF700022A311 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 761931C21C8BEF700022A311 /* SimpleVertex.glsl */; };
-		761931C51C8BEFD20022A311 /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 761931C41C8BEFD20022A311 /* SimpleFragment.glsl */; };
 		761931D11C8C5DF70022A311 /* CC3Foundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931C81C8C5DF70022A311 /* CC3Foundation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		761931D21C8C5DF70022A311 /* CC3GLMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931CA1C8C5DF70022A311 /* CC3GLMatrix.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		761931D31C8C5DF70022A311 /* CC3Kazmath.c in Sources */ = {isa = PBXBuildFile; fileRef = 761931CB1C8C5DF70022A311 /* CC3Kazmath.c */; };
@@ -68,6 +64,14 @@
 		7681A81F1C958A1B00FC6843 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 7681A81D1C958A1B00FC6843 /* User.m */; };
 		7681A8231C95A04500FC6843 /* ObjectStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7681A8221C95A04500FC6843 /* ObjectStorageManager.m */; };
 		769717D31C98609E00D0AC63 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 769717D21C98609E00D0AC63 /* test.png */; };
+		769717DB1C986A6B00D0AC63 /* OpenGLTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 769717D61C986A6B00D0AC63 /* OpenGLTestView.m */; };
+		769717DC1C986A6B00D0AC63 /* OpenGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 769717D81C986A6B00D0AC63 /* OpenGLViewController.m */; };
+		769717DD1C986A6B00D0AC63 /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 769717D91C986A6B00D0AC63 /* SimpleFragment.glsl */; };
+		769717DE1C986A6B00D0AC63 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 769717DA1C986A6B00D0AC63 /* SimpleVertex.glsl */; };
+		769717E11C986A7B00D0AC63 /* OpenGLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 769717E01C986A7B00D0AC63 /* OpenGLMainViewController.m */; };
+		769717E51C992AC600D0AC63 /* CustomUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 769717E41C992AC600D0AC63 /* CustomUIViewController.m */; };
+		769717E91C992C1B00D0AC63 /* QQMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 769717E81C992C1B00D0AC63 /* QQMainViewController.m */; };
+		769717EC1C99792C00D0AC63 /* JSPatchProcessKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 769717EB1C99792C00D0AC63 /* JSPatchProcessKit.m */; };
 		76C479881C8ED41600EAE07E /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C479871C8ED41600EAE07E /* MAMapKit.framework */; };
 		76C4798C1C8ED4C700EAE07E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */; };
 		76C4798E1C8ED50600EAE07E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798D1C8ED50600EAE07E /* CoreTelephony.framework */; };
@@ -117,16 +121,10 @@
 		761931A41C8BC8A20022A311 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		761931AA1C8BCC3F0022A311 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		761931B01C8BD05C0022A311 /* UIKitMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKitMacros.h; sourceTree = "<group>"; };
-		761931B41C8BD5220022A311 /* OpenGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLViewController.h; sourceTree = "<group>"; };
-		761931B51C8BD5220022A311 /* OpenGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLViewController.m; sourceTree = "<group>"; };
 		761931B81C8BD79A0022A311 /* MapSDKDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSDKDemoViewController.h; sourceTree = "<group>"; };
 		761931B91C8BD79A0022A311 /* MapSDKDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSDKDemoViewController.m; sourceTree = "<group>"; };
 		761931BB1C8BDDA40022A311 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		761931BD1C8BDDAC0022A311 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		761931BF1C8BDDCF0022A311 /* OpenGLTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLTestView.h; sourceTree = "<group>"; };
-		761931C01C8BDDCF0022A311 /* OpenGLTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLTestView.m; sourceTree = "<group>"; };
-		761931C21C8BEF700022A311 /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleVertex.glsl; sourceTree = "<group>"; };
-		761931C41C8BEFD20022A311 /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleFragment.glsl; sourceTree = "<group>"; };
 		761931C71C8C5DF70022A311 /* CC3Foundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Foundation.h; sourceTree = "<group>"; };
 		761931C81C8C5DF70022A311 /* CC3Foundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3Foundation.m; sourceTree = "<group>"; };
 		761931C91C8C5DF70022A311 /* CC3GLMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3GLMatrix.h; sourceTree = "<group>"; };
@@ -204,6 +202,20 @@
 		7681A8211C95A04500FC6843 /* ObjectStorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectStorageManager.h; sourceTree = "<group>"; };
 		7681A8221C95A04500FC6843 /* ObjectStorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectStorageManager.m; sourceTree = "<group>"; };
 		769717D21C98609E00D0AC63 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		769717D51C986A6B00D0AC63 /* OpenGLTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLTestView.h; sourceTree = "<group>"; };
+		769717D61C986A6B00D0AC63 /* OpenGLTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLTestView.m; sourceTree = "<group>"; };
+		769717D71C986A6B00D0AC63 /* OpenGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLViewController.h; sourceTree = "<group>"; };
+		769717D81C986A6B00D0AC63 /* OpenGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLViewController.m; sourceTree = "<group>"; };
+		769717D91C986A6B00D0AC63 /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleFragment.glsl; sourceTree = "<group>"; };
+		769717DA1C986A6B00D0AC63 /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleVertex.glsl; sourceTree = "<group>"; };
+		769717DF1C986A7B00D0AC63 /* OpenGLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLMainViewController.h; sourceTree = "<group>"; };
+		769717E01C986A7B00D0AC63 /* OpenGLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLMainViewController.m; sourceTree = "<group>"; };
+		769717E31C992AC600D0AC63 /* CustomUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUIViewController.h; sourceTree = "<group>"; };
+		769717E41C992AC600D0AC63 /* CustomUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUIViewController.m; sourceTree = "<group>"; };
+		769717E71C992C1B00D0AC63 /* QQMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQMainViewController.h; sourceTree = "<group>"; };
+		769717E81C992C1B00D0AC63 /* QQMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQMainViewController.m; sourceTree = "<group>"; };
+		769717EA1C99792C00D0AC63 /* JSPatchProcessKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPatchProcessKit.h; sourceTree = "<group>"; };
+		769717EB1C99792C00D0AC63 /* JSPatchProcessKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPatchProcessKit.m; sourceTree = "<group>"; };
 		76C479871C8ED41600EAE07E /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		76C479891C8ED4AA00EAE07E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -382,6 +394,7 @@
 		761931AD1C8BCD010022A311 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				769717E21C992A9900D0AC63 /* CustomUI */,
 				76213BD71C97028B001DAA53 /* ThirdPart */,
 				76213BD31C96BE31001DAA53 /* DeviceInfo */,
 				76C479991C8EF66B00EAE07E /* QuartzCore */,
@@ -412,13 +425,10 @@
 		761931B31C8BD4FF0022A311 /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
-				761931B41C8BD5220022A311 /* OpenGLViewController.h */,
-				761931B51C8BD5220022A311 /* OpenGLViewController.m */,
-				761931BF1C8BDDCF0022A311 /* OpenGLTestView.h */,
-				761931C01C8BDDCF0022A311 /* OpenGLTestView.m */,
-				761931C21C8BEF700022A311 /* SimpleVertex.glsl */,
-				761931C41C8BEFD20022A311 /* SimpleFragment.glsl */,
+				769717D41C986A6B00D0AC63 /* OpenGLFirst */,
 				761931C61C8C5DF70022A311 /* Cocos3DMathLib */,
+				769717DF1C986A7B00D0AC63 /* OpenGLMainViewController.h */,
+				769717E01C986A7B00D0AC63 /* OpenGLMainViewController.m */,
 			);
 			path = OpenGL;
 			sourceTree = "<group>";
@@ -610,6 +620,38 @@
 			path = ObjectManager;
 			sourceTree = "<group>";
 		};
+		769717D41C986A6B00D0AC63 /* OpenGLFirst */ = {
+			isa = PBXGroup;
+			children = (
+				769717D51C986A6B00D0AC63 /* OpenGLTestView.h */,
+				769717D61C986A6B00D0AC63 /* OpenGLTestView.m */,
+				769717D71C986A6B00D0AC63 /* OpenGLViewController.h */,
+				769717D81C986A6B00D0AC63 /* OpenGLViewController.m */,
+				769717D91C986A6B00D0AC63 /* SimpleFragment.glsl */,
+				769717DA1C986A6B00D0AC63 /* SimpleVertex.glsl */,
+			);
+			path = OpenGLFirst;
+			sourceTree = "<group>";
+		};
+		769717E21C992A9900D0AC63 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				769717E61C992C0400D0AC63 /* QQVC */,
+				769717E31C992AC600D0AC63 /* CustomUIViewController.h */,
+				769717E41C992AC600D0AC63 /* CustomUIViewController.m */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		769717E61C992C0400D0AC63 /* QQVC */ = {
+			isa = PBXGroup;
+			children = (
+				769717E71C992C1B00D0AC63 /* QQMainViewController.h */,
+				769717E81C992C1B00D0AC63 /* QQMainViewController.m */,
+			);
+			path = QQVC;
+			sourceTree = "<group>";
+		};
 		76C479911C8EF4F400EAE07E /* DataStorage */ = {
 			isa = PBXGroup;
 			children = (
@@ -635,6 +677,8 @@
 			children = (
 				76C479961C8EF5AF00EAE07E /* JSPatchViewController.h */,
 				76C479971C8EF5AF00EAE07E /* JSPatchViewController.m */,
+				769717EA1C99792C00D0AC63 /* JSPatchProcessKit.h */,
+				769717EB1C99792C00D0AC63 /* JSPatchProcessKit.m */,
 			);
 			path = JSPatch;
 			sourceTree = "<group>";
@@ -786,13 +830,13 @@
 				76C479901C8ED8C800EAE07E /* AMap.bundle in Resources */,
 				7619317C1C8BC5120022A311 /* LaunchScreen.storyboard in Resources */,
 				76213C1E1C970B0D001DAA53 /* ShareSDKFlatShareViewUI.bundle in Resources */,
+				769717DE1C986A6B00D0AC63 /* SimpleVertex.glsl in Resources */,
 				76213C1C1C970B0D001DAA53 /* read_me.txt in Resources */,
-				761931C51C8BEFD20022A311 /* SimpleFragment.glsl in Resources */,
 				761931791C8BC5120022A311 /* Assets.xcassets in Resources */,
 				76213C461C970C9F001DAA53 /* WeiboSDK.bundle in Resources */,
 				76213C151C970B0D001DAA53 /* Resource.bundle in Resources */,
-				761931C31C8BEF700022A311 /* SimpleVertex.glsl in Resources */,
 				769717D31C98609E00D0AC63 /* test.png in Resources */,
+				769717DD1C986A6B00D0AC63 /* SimpleFragment.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -887,25 +931,29 @@
 				76213BD61C96BE42001DAA53 /* DeviceInfoViewController.m in Sources */,
 				76213BDE1C97048C001DAA53 /* ThirdShareViewController.m in Sources */,
 				76C479A11C8F248F00EAE07E /* coreData.xcdatamodeld in Sources */,
-				761931B61C8BD5220022A311 /* OpenGLViewController.m in Sources */,
+				769717E91C992C1B00D0AC63 /* QQMainViewController.m in Sources */,
 				761931D41C8C5DF70022A311 /* CC3Math.m in Sources */,
 				761931BA1C8BD79A0022A311 /* MapSDKDemoViewController.m in Sources */,
+				769717E51C992AC600D0AC63 /* CustomUIViewController.m in Sources */,
 				761931A71C8BC8A20022A311 /* MainViewController.m in Sources */,
+				769717E11C986A7B00D0AC63 /* OpenGLMainViewController.m in Sources */,
 				761931AB1C8BCC3F0022A311 /* main.mm in Sources */,
 				76213BDA1C97029A001DAA53 /* ThirdPartViewController.m in Sources */,
 				76C4799C1C8EF67B00EAE07E /* QuartzCoreViewController.m in Sources */,
 				761931D31C8C5DF70022A311 /* CC3Kazmath.c in Sources */,
 				763FE3641C8D8BFA00CE67FF /* HTTPTestViewController.m in Sources */,
 				76C479951C8EF51600EAE07E /* DataStorageViewController.m in Sources */,
+				769717DC1C986A6B00D0AC63 /* OpenGLViewController.m in Sources */,
 				76C479A61C8F264100EAE07E /* TestCoreData+CoreDataProperties.m in Sources */,
-				761931C11C8BDDCF0022A311 /* OpenGLTestView.m in Sources */,
 				7681A8231C95A04500FC6843 /* ObjectStorageManager.m in Sources */,
 				76C479A71C8F264100EAE07E /* TestCoreData.m in Sources */,
+				769717DB1C986A6B00D0AC63 /* OpenGLTestView.m in Sources */,
 				763FE38D1C8DCB6100CE67FF /* LEDDomainPredicate.m in Sources */,
 				7681A80D1C9588ED00FC6843 /* User.xcdatamodeld in Sources */,
 				7681A81F1C958A1B00FC6843 /* User.m in Sources */,
 				76C479981C8EF5AF00EAE07E /* JSPatchViewController.m in Sources */,
 				7681A81E1C958A1B00FC6843 /* User+CoreDataProperties.m in Sources */,
+				769717EC1C99792C00D0AC63 /* JSPatchProcessKit.m in Sources */,
 				761931D11C8C5DF70022A311 /* CC3Foundation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
