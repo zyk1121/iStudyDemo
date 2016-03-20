@@ -138,6 +138,11 @@
 		76C479A11C8F248F00EAE07E /* coreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76C4799F1C8F248F00EAE07E /* coreData.xcdatamodeld */; };
 		76C479A61C8F264100EAE07E /* TestCoreData+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C479A31C8F264100EAE07E /* TestCoreData+CoreDataProperties.m */; };
 		76C479A71C8F264100EAE07E /* TestCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C479A51C8F264100EAE07E /* TestCoreData.m */; };
+		76E9037E1C9ED4B4003AC33A /* NaviMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9037D1C9ED4B4003AC33A /* NaviMenuViewController.m */; };
+		76E903891C9ED53E003AC33A /* NavMenuScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903811C9ED53E003AC33A /* NavMenuScrollView.m */; };
+		76E9038A1C9ED53E003AC33A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903831C9ED53E003AC33A /* UIView+Extension.m */; };
+		76E9038B1C9ED53E003AC33A /* YBNavMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903861C9ED53E003AC33A /* YBNavMenuController.m */; };
+		76E9038C1C9ED53E003AC33A /* YBTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903881C9ED53E003AC33A /* YBTableView.m */; };
 		BA0CE7C3F0C3D5D55BE25FD3 /* libPods-iStudyDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E46310862E13CE523DA12E07 /* libPods-iStudyDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -353,6 +358,17 @@
 		76C479A31C8F264100EAE07E /* TestCoreData+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreData+CoreDataProperties.m"; sourceTree = "<group>"; };
 		76C479A41C8F264100EAE07E /* TestCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCoreData.h; sourceTree = "<group>"; };
 		76C479A51C8F264100EAE07E /* TestCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCoreData.m; sourceTree = "<group>"; };
+		76E9037C1C9ED4B4003AC33A /* NaviMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaviMenuViewController.h; sourceTree = "<group>"; };
+		76E9037D1C9ED4B4003AC33A /* NaviMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaviMenuViewController.m; sourceTree = "<group>"; };
+		76E903801C9ED53E003AC33A /* NavMenuScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavMenuScrollView.h; sourceTree = "<group>"; };
+		76E903811C9ED53E003AC33A /* NavMenuScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavMenuScrollView.m; sourceTree = "<group>"; };
+		76E903821C9ED53E003AC33A /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		76E903831C9ED53E003AC33A /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		76E903841C9ED53E003AC33A /* YBDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBDefine.h; sourceTree = "<group>"; };
+		76E903851C9ED53E003AC33A /* YBNavMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBNavMenuController.h; sourceTree = "<group>"; };
+		76E903861C9ED53E003AC33A /* YBNavMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBNavMenuController.m; sourceTree = "<group>"; };
+		76E903871C9ED53E003AC33A /* YBTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBTableView.h; sourceTree = "<group>"; };
+		76E903881C9ED53E003AC33A /* YBTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBTableView.m; sourceTree = "<group>"; };
 		7FCB39AC830876F184EF9700 /* libPods-iStudyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iStudyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A143A5F8268C343472EB18 /* Pods-iStudyDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemoTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemoTests/Pods-iStudyDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCBEED3EEE298D40EA18BCD8 /* Pods-iStudyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemo/Pods-iStudyDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -756,6 +772,7 @@
 		769717E21C992A9900D0AC63 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				76E9037B1C9ED4A0003AC33A /* NavMenu */,
 				769717E61C992C0400D0AC63 /* QQVC */,
 				769717E31C992AC600D0AC63 /* CustomUIViewController.h */,
 				769717E41C992AC600D0AC63 /* CustomUIViewController.m */,
@@ -891,6 +908,32 @@
 				76C4799B1C8EF67B00EAE07E /* QuartzCoreViewController.m */,
 			);
 			path = QuartzCore;
+			sourceTree = "<group>";
+		};
+		76E9037B1C9ED4A0003AC33A /* NavMenu */ = {
+			isa = PBXGroup;
+			children = (
+				76E9037F1C9ED53E003AC33A /* YBNavMenuController */,
+				76E9037C1C9ED4B4003AC33A /* NaviMenuViewController.h */,
+				76E9037D1C9ED4B4003AC33A /* NaviMenuViewController.m */,
+			);
+			path = NavMenu;
+			sourceTree = "<group>";
+		};
+		76E9037F1C9ED53E003AC33A /* YBNavMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				76E903801C9ED53E003AC33A /* NavMenuScrollView.h */,
+				76E903811C9ED53E003AC33A /* NavMenuScrollView.m */,
+				76E903821C9ED53E003AC33A /* UIView+Extension.h */,
+				76E903831C9ED53E003AC33A /* UIView+Extension.m */,
+				76E903841C9ED53E003AC33A /* YBDefine.h */,
+				76E903851C9ED53E003AC33A /* YBNavMenuController.h */,
+				76E903861C9ED53E003AC33A /* YBNavMenuController.m */,
+				76E903871C9ED53E003AC33A /* YBTableView.h */,
+				76E903881C9ED53E003AC33A /* YBTableView.m */,
+			);
+			path = YBNavMenuController;
 			sourceTree = "<group>";
 		};
 		DF399414AD08488BE365F5E9 /* Frameworks */ = {
@@ -1172,6 +1215,7 @@
 			files = (
 				7697181B1C9AF63A00D0AC63 /* QQDynamicViewController.m in Sources */,
 				763FE3871C8DC9AB00CE67FF /* LEDDomainObject.m in Sources */,
+				76E9038A1C9ED53E003AC33A /* UIView+Extension.m in Sources */,
 				761931A51C8BC8A20022A311 /* AppDelegate.m in Sources */,
 				769718931C9D50D900D0AC63 /* QQTabbarViewController.m in Sources */,
 				763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */,
@@ -1183,6 +1227,7 @@
 				76213BDE1C97048C001DAA53 /* ThirdShareViewController.m in Sources */,
 				76C479A11C8F248F00EAE07E /* coreData.xcdatamodeld in Sources */,
 				769717E91C992C1B00D0AC63 /* QQMainViewController.m in Sources */,
+				76E9038C1C9ED53E003AC33A /* YBTableView.m in Sources */,
 				769718181C9AF62100D0AC63 /* QQContractViewController.m in Sources */,
 				761931D41C8C5DF70022A311 /* CC3Math.m in Sources */,
 				761931BA1C8BD79A0022A311 /* MapSDKDemoViewController.m in Sources */,
@@ -1193,6 +1238,7 @@
 				761931AB1C8BCC3F0022A311 /* main.mm in Sources */,
 				76213BDA1C97029A001DAA53 /* ThirdPartViewController.m in Sources */,
 				76C4799C1C8EF67B00EAE07E /* QuartzCoreViewController.m in Sources */,
+				76E9037E1C9ED4B4003AC33A /* NaviMenuViewController.m in Sources */,
 				761931D31C8C5DF70022A311 /* CC3Kazmath.c in Sources */,
 				763FE3641C8D8BFA00CE67FF /* HTTPTestViewController.m in Sources */,
 				76C479951C8EF51600EAE07E /* DataStorageViewController.m in Sources */,
@@ -1200,6 +1246,7 @@
 				76C479A61C8F264100EAE07E /* TestCoreData+CoreDataProperties.m in Sources */,
 				7681A8231C95A04500FC6843 /* ObjectStorageManager.m in Sources */,
 				76C479A71C8F264100EAE07E /* TestCoreData.m in Sources */,
+				76E9038B1C9ED53E003AC33A /* YBNavMenuController.m in Sources */,
 				769717DB1C986A6B00D0AC63 /* OpenGLTestView.m in Sources */,
 				769717F31C9A73E000D0AC63 /* UIView+SHCZExt.m in Sources */,
 				763FE38D1C8DCB6100CE67FF /* LEDDomainPredicate.m in Sources */,
@@ -1208,6 +1255,7 @@
 				76C479981C8EF5AF00EAE07E /* JSPatchViewController.m in Sources */,
 				769718381C9D440E00D0AC63 /* SHCZSideTableView.m in Sources */,
 				7681A81E1C958A1B00FC6843 /* User+CoreDataProperties.m in Sources */,
+				76E903891C9ED53E003AC33A /* NavMenuScrollView.m in Sources */,
 				769717EC1C99792C00D0AC63 /* JSPatchProcessKit.m in Sources */,
 				761931D11C8C5DF70022A311 /* CC3Foundation.m in Sources */,
 				7697189E1C9E994900D0AC63 /* QQSettingViewController.m in Sources */,

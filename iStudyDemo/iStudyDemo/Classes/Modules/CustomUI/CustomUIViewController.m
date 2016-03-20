@@ -18,6 +18,7 @@
 #import "QQTabbarViewController.h"
 #import <UIKit/UIKit.h>
 #import "QQSideBarViewController.h"
+#import "NaviMenuViewController.h"
 
 @interface CustomUIViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -77,6 +78,11 @@
 //    UITabBarController *tabVC = [self setupTabbarController];
     QQSideBarViewController *sideBarVC = [[QQSideBarViewController alloc] init];
     [_listViewControllers addObject:sideBarVC];
+    
+    // 2.导航菜单学习
+    [_listData addObject:@"导航菜单学习"];
+    NaviMenuViewController *navmenuVC = [[NaviMenuViewController alloc] init];
+    [_listViewControllers addObject:navmenuVC];
 }
 
 //- (UITabBarController *)setupTabbarController
@@ -108,8 +114,8 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UIViewController *vc = [self.listViewControllers objectAtIndex:indexPath.row];
     vc.title = [self.listData objectAtIndex:indexPath.row];
-    if (indexPath.row == 0) {
-        //UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    if (indexPath.row == 0 ) {
+//        QQSideBarViewController *sideBarVC = [[QQSideBarViewController alloc] init];
         [self.navigationController presentViewController:vc animated:YES completion:^{
             
         }];
