@@ -88,8 +88,8 @@
     id<ISSContent> publishContent = [ShareSDK content:@"分享内容"
                                        defaultContent:@"测试一下"
                                                 image:[ShareSDK imageWithPath:imagePath]
-                                                title:@"ShareSDK"
-                                                  url:@"http://www.mob.com"
+                                                title:@"我的title"
+                                                  url:@"http://www.baidu.com"
                                           description:@"这是一条测试信息"
                                             mediaType:SSPublishContentMediaTypeNews];
     //创建弹出菜单容器

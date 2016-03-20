@@ -36,6 +36,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"iStudyDemo";
+    UIBarButtonItem *returnButtonItem = [[UIBarButtonItem alloc] init];
+    returnButtonItem.title = @"返回";
+    // returnButtonItem.title = @"";
+    self.navigationItem.backBarButtonItem = returnButtonItem;
     self.view.backgroundColor = [UIColor whiteColor];
     [self setupData];
     [self setupUI];

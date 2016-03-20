@@ -1,15 +1,15 @@
 //
-//  QQMainViewController.h
+//  QQContractViewController.h
 //  iStudyDemo
 //
-//  Created by zhangyuanke on 16/3/16.
+//  Created by zhangyuanke on 16/3/17.
 //  Copyright © 2016年 zhangyuanke. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 @class QQTabbarViewController;
-@interface QQMainViewController : UIViewController
+@interface QQContractViewController : UIViewController
 
 @property (nonatomic,weak) QQTabbarViewController *tabbarVC;
 
