@@ -50,7 +50,7 @@
     _maskView = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     [self.tabVC.view addSubview:_maskView];
     _maskView.alpha = 0;
-    _maskView.backgroundColor = [UIColor redColor];
+//    _maskView.backgroundColor = [UIColor redColor];
     [_maskView addTarget:self action:@selector(maskViewClicked) forControlEvents:UIControlEventTouchUpInside];
     
     
@@ -119,15 +119,10 @@
                 recognizer.view.transform=rightScopeTransform;
                 self.leftView.ttx=recognizer.view.ttx/3;
                 self.maskView.alpha = 1;
-//                CGRect frame = self.maskView.frame;
-//                NSArray *arr = [self.view subviews];
-//                [self.view bringSubviewToFront:self.maskView];
-                
-//                [self.view bringSubviewToFront:self.maskView];
+                [self.tabVC.view bringSubviewToFront:self.maskView];
             }else{
                 self.maskView.alpha = 0;
                 recognizer.view.transform = CGAffineTransformIdentity;
-//                [self.view bringSubviewToFront:self.tabVC.view];
 
                 self.leftView.ttx=recognizer.view.ttx/3;
             }
@@ -154,7 +149,7 @@
             self.tabVC.view.transform=rightScopeTransform;
             self.leftView.ttx=self.tabVC.view.ttx/3;
             self.maskView.alpha = 1;
-//            [self.view bringSubviewToFront:self.maskView];
+            [self.tabVC.view bringSubviewToFront:self.maskView];
             
         }];
     }

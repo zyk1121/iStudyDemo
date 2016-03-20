@@ -110,7 +110,7 @@
 
 - (void)doClickBackAction:(UIButton *)button
 {
-    
+    [self.tabbarVC.sidebarVC maskViewClicked];
 }
 
 
