@@ -18,6 +18,8 @@
 #import "QuartzCoreViewController.h"
 #import "DeviceInfoViewController.h"
 #import "ThirdPartViewController.h"
+#import "OpenGLMainViewController.h"
+#import "CustomUIViewController.h"
 
 @interface MainViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -34,6 +36,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"iStudyDemo";
+    UIBarButtonItem *returnButtonItem = [[UIBarButtonItem alloc] init];
+    returnButtonItem.title = @"返回";
+    // returnButtonItem.title = @"";
+    self.navigationItem.backBarButtonItem = returnButtonItem;
     self.view.backgroundColor = [UIColor whiteColor];
     [self setupData];
     [self setupUI];
@@ -72,7 +78,7 @@
     
     // 1.opengl
     [_listData addObject:@"OpenGL学习"];
-    OpenGLViewController *glViewController = [[OpenGLViewController alloc] init];
+    OpenGLMainViewController *glViewController = [[OpenGLMainViewController alloc] init];
     [_listViewControllers addObject:glViewController];
     
     // 2.map SDK
@@ -108,6 +114,10 @@
     [_listData addObject:@"第三方"];
     ThirdPartViewController *thirdpartViewController = [[ThirdPartViewController alloc] init];
     [_listViewControllers addObject:thirdpartViewController];
+    // 9.经典界面设计
+    [_listData addObject:@"经典界面设计"];
+    CustomUIViewController *customUIViewController = [[CustomUIViewController alloc] init];
+    [_listViewControllers addObject:customUIViewController];
 }
 
 #pragma mark - UITableViewDelegate & UITableViewDataSource

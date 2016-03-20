@@ -27,7 +27,7 @@
 			<string>weixin</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>wx4868b35061f87885</string>
+				<string>wx98d0898bb18f694f</string>
 			</array>
 		</dict>
 	</array>
@@ -36,6 +36,7 @@
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>weixin</string>
+		<string>wechat</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>

@@ -1,30 +1,40 @@
 //
-//  ThirdPartViewController.m
+//  CustomUIViewController.m
 //  iStudyDemo
 //
-//  Created by zhangyuanke on 16/3/14.
+//  Created by zhangyuanke on 16/3/16.
 //  Copyright © 2016年 zhangyuanke. All rights reserved.
 //
 
-#import "ThirdPartViewController.h"
+#import "CustomUIViewController.h"
 #import "ReactiveCocoa/ReactiveCocoa.h"
 #import "masonry.h"
 #import "UIKitMacros.h"
-#import "ThirdShareViewController.h"
+#import "QQMainViewController.h"
+#import "QQContractViewController.h"
+#import "QQDynamicViewController.h"
+#import "UIImage+IPLImageKit.h"
+#import "UIView+SHCZExt.h"
+#import "QQTabbarViewController.h"
+#import <UIKit/UIKit.h>
+#import "QQSideBarViewController.h"
 
-@interface ThirdPartViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface CustomUIViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *listData;
 @property (nonatomic, strong) NSMutableArray *listViewControllers;
-
 @end
 
-@implementation ThirdPartViewController
-
+@implementation CustomUIViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+//    UIBarButtonItem *returnButtonItem = [[UIBarButtonItem alloc] init];
+////    returnButtonItem.title = @"返回";
+//    returnButtonItem.title = @"";
+//    self.navigationItem.backBarButtonItem = returnButtonItem;
+//    self.navigationItem.hidesBackButton = YES;
+    
     self.view.backgroundColor = [UIColor whiteColor];
     [self setupData];
     [self setupUI];
@@ -61,11 +71,24 @@
     _listData = [[NSMutableArray alloc] init];
     _listViewControllers = [[NSMutableArray alloc] init];
     
-    // 1.第三方分享
-    [_listData addObject:@"第三方分享&登录"];
-    ThirdShareViewController *thirdShareViewController = [[ThirdShareViewController alloc] init];
-    [_listViewControllers addObject:thirdShareViewController];
+    // 1.仿QQ界面
+    [_listData addObject:@"仿QQ界面"];
+    // QQMainViewController *qqMainViewController = [[QQMainViewController alloc] init];
+//    UITabBarController *tabVC = [self setupTabbarController];
+    QQSideBarViewController *sideBarVC = [[QQSideBarViewController alloc] init];
+    [_listViewControllers addObject:sideBarVC];
 }
+
+//- (UITabBarController *)setupTabbarController
+//{
+//     UITabBarController *tabVC = (UITabBarController *)[[QQTabbarViewController alloc] init];
+//    
+//
+//    
+// 
+//    return tabVC;
+//}
+
 
 
 #pragma mark - UITableViewDelegate & UITableViewDataSource
@@ -85,8 +108,14 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UIViewController *vc = [self.listViewControllers objectAtIndex:indexPath.row];
     vc.title = [self.listData objectAtIndex:indexPath.row];
-    
-    [self.navigationController pushViewController:vc animated:YES];
+    if (indexPath.row == 0) {
+        //UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+        [self.navigationController presentViewController:vc animated:YES completion:^{
+            
+        }];
+    } else {
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -95,13 +124,13 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdetify];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdetify];
-                cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         cell.showsReorderControl = YES;
     }
     
     cell.textLabel.backgroundColor = [UIColor clearColor];
     cell.textLabel.text = [self.listData objectAtIndex:indexPath.row];
-//    cell.detailTextLabel.text = [self.listData objectForKey:[self.listData allKeys][indexPath.row]];
+    //    cell.detailTextLabel.text = [self.listData objectForKey:[self.listData allKeys][indexPath.row]];
     
     return cell;
 }

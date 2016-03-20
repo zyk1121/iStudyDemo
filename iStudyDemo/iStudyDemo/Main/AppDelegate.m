@@ -21,10 +21,15 @@
 
 //新浪微博SDK头文件
 #import "WeiboSDK.h"
+
 //新浪微博SDK需要在项目Build Settings中的Other Linker Flags添加"-ObjC"
+#import "JSPatchProcessKit.h"
+//#import "JPEngine.h"
+#import "SHCZMainView.h"
 
 
-@interface AppDelegate ()
+@interface AppDelegate () <WXApiDelegate>
+
 
 @end
 
@@ -39,15 +44,30 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //
     [self configureMapAPIKey];
+    [[JSPatchProcessKit defaultJSPatchKit] execJSProcess];
     //
-    UINavigationController *mainNav = [[UINavigationController alloc] initWithRootViewController:[[MainViewController alloc] init]];
+//    _leftVC = [[QQLeftViewController alloc] init];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    //在window上创建一个透明的View
+//    SHCZMainView *mainView=[[SHCZMainView alloc]initWithFrame:CGRectMake(-self.window.frame.size.width*0.25,0,self.window.bounds.size.width,self.window.bounds.size.height)];
+    
+    //    设置冰川背景图
+//    UIImageView *img=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"sidebar_bg.jpg"]];
+//    img.frame=CGRectMake(0,0,self.window.frame.size.width,self.window.frame.size.height*0.4);
+    
+//    [self.window addSubview:img];
+//    
+//    //    添加
+//    [self.window addSubview:mainView];
+//    //
+    UINavigationController *mainNav = [[UINavigationController alloc] initWithRootViewController:[[MainViewController alloc] init]];
+    
     self.window.rootViewController = mainNav;
     [self.window makeKeyAndVisible];
     
     //1.初始化ShareSDK应用,字符串"iosv1101"是应该换成你申请的ShareSDK应用中的Appkey
-//    [ShareSDK registerApp:@"106bbd93e7498"];
-    [ShareSDK registerApp:@"4a88b2fb067c"]; // cn.sharesdk.CommentDemo
+    [ShareSDK registerApp:@"106bbd93e7498"];
+//    [ShareSDK registerApp:@"4a88b2fb067c"]; // cn.sharesdk.CommentDemo
     
     //2. 初始化社交平台
     //2.1 代码初始化社交平台的方法
@@ -64,8 +84,8 @@
 //    [ShareSDK connectWeChatWithAppId:@"wx4868b35061f87885"
 //                           appSecret:@"64020361b8ec4c99936c0e3999a9f249"
 //                           wechatCls:[WXApi class]];
-    [ShareSDK connectWeChatWithAppId:@"wx4868b35061f87885"
-                           appSecret:@"64020361b8ec4c99936c0e3999a9f249"
+    [ShareSDK connectWeChatWithAppId:@"wx98d0898bb18f694f"
+                           appSecret:@"88cc04ff9a0740de17ac64487d138e31"
                            wechatCls:[WXApi class]];
     
     /**
@@ -82,12 +102,39 @@
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
-    return [ShareSDK handleOpenURL:url wxDelegate:nil];
+    return [ShareSDK handleOpenURL:url wxDelegate:self];
+}
+
+#pragma mark - WXApiDelegate
+
+/*! @brief 收到一个来自微信的请求，第三方应用程序处理完后调用sendResp向微信发送结果
+ *
+ * 收到一个来自微信的请求，异步处理完成后必须调用sendResp发送处理结果给微信。
+ * 可能收到的请求有GetMessageFromWXReq、ShowMessageFromWXReq等。
+ * @param req 具体请求内容，是自动释放的
+ */
+-(void) onReq:(BaseReq*)req{
+    
+}
+
+/*! @brief 发送一个sendReq后，收到微信的回应
+ *
+ * 收到一个来自微信的处理结果。调用一次sendReq后会收到onResp。
+ * 可能收到的处理结果有SendMessageToWXResp、SendAuthResp等。
+ * @param resp具体的回应内容，是自动释放的
+ */
+-(void) onResp:(BaseResp*)resp{
+    
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
-    return [ShareSDK handleOpenURL:url sourceApplication:sourceApplication annotation:annotation wxDelegate:nil];
+    return [ShareSDK handleOpenURL:url sourceApplication:sourceApplication annotation:annotation wxDelegate:self];
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options
+{
+    return [ShareSDK handleOpenURL:url wxDelegate:self];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
