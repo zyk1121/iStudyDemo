@@ -136,6 +136,7 @@
         obj.height = self.height;
         [self.frames addObject:[NSValue valueWithCGRect:obj.frame]];
     }];
+    // 可以修改这个地方适应很多item时的情景， 自定义
     self.contentSize = CGSizeMake(self.width, self.height);
     
     CGRect currentRect = [self.frames[self.currentSelectIndex] CGRectValue];

@@ -86,6 +86,8 @@
         tableTitle2.text = @"Footer Label";
         tableView.tableFooterView = tableTitle2;
         
+//        tableView.scrollEnabled = NO;// 禁止滑动
+        
         [self.tableScrollView addSubview:tableView];
         [tableArr addObject:tableView];
     }

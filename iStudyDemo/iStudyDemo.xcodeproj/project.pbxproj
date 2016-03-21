@@ -143,6 +143,11 @@
 		76E9038A1C9ED53E003AC33A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903831C9ED53E003AC33A /* UIView+Extension.m */; };
 		76E9038B1C9ED53E003AC33A /* YBNavMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903861C9ED53E003AC33A /* YBNavMenuController.m */; };
 		76E9038C1C9ED53E003AC33A /* YBTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903881C9ED53E003AC33A /* YBTableView.m */; };
+		76E903901C9EFB5A003AC33A /* SinaWeiboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9038F1C9EFB5A003AC33A /* SinaWeiboViewController.m */; };
+		76E903941C9EFC2B003AC33A /* QQChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903931C9EFC2B003AC33A /* QQChatViewController.m */; };
+		76E903991C9F0089003AC33A /* AliPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903981C9F0089003AC33A /* AliPayViewController.m */; };
+		76E9039C1C9F009F003AC33A /* WeiChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9039B1C9F009F003AC33A /* WeiChatViewController.m */; };
+		76E903A01C9F018F003AC33A /* MeituanWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9039F1C9F018F003AC33A /* MeituanWalletViewController.m */; };
 		BA0CE7C3F0C3D5D55BE25FD3 /* libPods-iStudyDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E46310862E13CE523DA12E07 /* libPods-iStudyDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -369,6 +374,16 @@
 		76E903861C9ED53E003AC33A /* YBNavMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBNavMenuController.m; sourceTree = "<group>"; };
 		76E903871C9ED53E003AC33A /* YBTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBTableView.h; sourceTree = "<group>"; };
 		76E903881C9ED53E003AC33A /* YBTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBTableView.m; sourceTree = "<group>"; };
+		76E9038E1C9EFB5A003AC33A /* SinaWeiboViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaWeiboViewController.h; sourceTree = "<group>"; };
+		76E9038F1C9EFB5A003AC33A /* SinaWeiboViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaWeiboViewController.m; sourceTree = "<group>"; };
+		76E903921C9EFC2B003AC33A /* QQChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQChatViewController.h; sourceTree = "<group>"; };
+		76E903931C9EFC2B003AC33A /* QQChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQChatViewController.m; sourceTree = "<group>"; };
+		76E903971C9F0089003AC33A /* AliPayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliPayViewController.h; sourceTree = "<group>"; };
+		76E903981C9F0089003AC33A /* AliPayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliPayViewController.m; sourceTree = "<group>"; };
+		76E9039A1C9F009F003AC33A /* WeiChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiChatViewController.h; sourceTree = "<group>"; };
+		76E9039B1C9F009F003AC33A /* WeiChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiChatViewController.m; sourceTree = "<group>"; };
+		76E9039E1C9F018F003AC33A /* MeituanWalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeituanWalletViewController.h; sourceTree = "<group>"; };
+		76E9039F1C9F018F003AC33A /* MeituanWalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeituanWalletViewController.m; sourceTree = "<group>"; };
 		7FCB39AC830876F184EF9700 /* libPods-iStudyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iStudyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A143A5F8268C343472EB18 /* Pods-iStudyDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemoTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemoTests/Pods-iStudyDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCBEED3EEE298D40EA18BCD8 /* Pods-iStudyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemo/Pods-iStudyDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -772,6 +787,11 @@
 		769717E21C992A9900D0AC63 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				76E9039D1C9F017C003AC33A /* MeituanPay */,
+				76E903951C9F0079003AC33A /* AliPay */,
+				76E903961C9F0079003AC33A /* WeiChat */,
+				76E903911C9EFC1C003AC33A /* QQChat */,
+				76E9038D1C9EFB44003AC33A /* SinaWeiBo */,
 				76E9037B1C9ED4A0003AC33A /* NavMenu */,
 				769717E61C992C0400D0AC63 /* QQVC */,
 				769717E31C992AC600D0AC63 /* CustomUIViewController.h */,
@@ -934,6 +954,51 @@
 				76E903881C9ED53E003AC33A /* YBTableView.m */,
 			);
 			path = YBNavMenuController;
+			sourceTree = "<group>";
+		};
+		76E9038D1C9EFB44003AC33A /* SinaWeiBo */ = {
+			isa = PBXGroup;
+			children = (
+				76E9038E1C9EFB5A003AC33A /* SinaWeiboViewController.h */,
+				76E9038F1C9EFB5A003AC33A /* SinaWeiboViewController.m */,
+			);
+			path = SinaWeiBo;
+			sourceTree = "<group>";
+		};
+		76E903911C9EFC1C003AC33A /* QQChat */ = {
+			isa = PBXGroup;
+			children = (
+				76E903921C9EFC2B003AC33A /* QQChatViewController.h */,
+				76E903931C9EFC2B003AC33A /* QQChatViewController.m */,
+			);
+			path = QQChat;
+			sourceTree = "<group>";
+		};
+		76E903951C9F0079003AC33A /* AliPay */ = {
+			isa = PBXGroup;
+			children = (
+				76E903971C9F0089003AC33A /* AliPayViewController.h */,
+				76E903981C9F0089003AC33A /* AliPayViewController.m */,
+			);
+			path = AliPay;
+			sourceTree = "<group>";
+		};
+		76E903961C9F0079003AC33A /* WeiChat */ = {
+			isa = PBXGroup;
+			children = (
+				76E9039A1C9F009F003AC33A /* WeiChatViewController.h */,
+				76E9039B1C9F009F003AC33A /* WeiChatViewController.m */,
+			);
+			path = WeiChat;
+			sourceTree = "<group>";
+		};
+		76E9039D1C9F017C003AC33A /* MeituanPay */ = {
+			isa = PBXGroup;
+			children = (
+				76E9039E1C9F018F003AC33A /* MeituanWalletViewController.h */,
+				76E9039F1C9F018F003AC33A /* MeituanWalletViewController.m */,
+			);
+			path = MeituanPay;
 			sourceTree = "<group>";
 		};
 		DF399414AD08488BE365F5E9 /* Frameworks */ = {
@@ -1215,10 +1280,12 @@
 			files = (
 				7697181B1C9AF63A00D0AC63 /* QQDynamicViewController.m in Sources */,
 				763FE3871C8DC9AB00CE67FF /* LEDDomainObject.m in Sources */,
+				76E903941C9EFC2B003AC33A /* QQChatViewController.m in Sources */,
 				76E9038A1C9ED53E003AC33A /* UIView+Extension.m in Sources */,
 				761931A51C8BC8A20022A311 /* AppDelegate.m in Sources */,
 				769718931C9D50D900D0AC63 /* QQTabbarViewController.m in Sources */,
 				763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */,
+				76E903901C9EFB5A003AC33A /* SinaWeiboViewController.m in Sources */,
 				7697189B1C9E466C00D0AC63 /* QQSideBarViewController.m in Sources */,
 				7697181E1C9AFCC200D0AC63 /* UIImage+IPLImageKit.m in Sources */,
 				761931D21C8C5DF70022A311 /* CC3GLMatrix.m in Sources */,
@@ -1227,6 +1294,7 @@
 				76213BDE1C97048C001DAA53 /* ThirdShareViewController.m in Sources */,
 				76C479A11C8F248F00EAE07E /* coreData.xcdatamodeld in Sources */,
 				769717E91C992C1B00D0AC63 /* QQMainViewController.m in Sources */,
+				76E9039C1C9F009F003AC33A /* WeiChatViewController.m in Sources */,
 				76E9038C1C9ED53E003AC33A /* YBTableView.m in Sources */,
 				769718181C9AF62100D0AC63 /* QQContractViewController.m in Sources */,
 				761931D41C8C5DF70022A311 /* CC3Math.m in Sources */,
@@ -1240,10 +1308,12 @@
 				76C4799C1C8EF67B00EAE07E /* QuartzCoreViewController.m in Sources */,
 				76E9037E1C9ED4B4003AC33A /* NaviMenuViewController.m in Sources */,
 				761931D31C8C5DF70022A311 /* CC3Kazmath.c in Sources */,
+				76E903991C9F0089003AC33A /* AliPayViewController.m in Sources */,
 				763FE3641C8D8BFA00CE67FF /* HTTPTestViewController.m in Sources */,
 				76C479951C8EF51600EAE07E /* DataStorageViewController.m in Sources */,
 				769717DC1C986A6B00D0AC63 /* OpenGLViewController.m in Sources */,
 				76C479A61C8F264100EAE07E /* TestCoreData+CoreDataProperties.m in Sources */,
+				76E903A01C9F018F003AC33A /* MeituanWalletViewController.m in Sources */,
 				7681A8231C95A04500FC6843 /* ObjectStorageManager.m in Sources */,
 				76C479A71C8F264100EAE07E /* TestCoreData.m in Sources */,
 				76E9038B1C9ED53E003AC33A /* YBNavMenuController.m in Sources */,
