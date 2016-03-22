@@ -18,6 +18,12 @@
 #import "QQTabbarViewController.h"
 #import <UIKit/UIKit.h>
 #import "QQSideBarViewController.h"
+#import "NaviMenuViewController.h"
+#import "SinaWeiboViewController.h"
+#import "QQChatViewController.h"
+#import "WeiChatViewController.h"
+#import "AliPayViewController.h"
+#import "MeituanWalletViewController.h"
 
 @interface CustomUIViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -77,6 +83,37 @@
 //    UITabBarController *tabVC = [self setupTabbarController];
     QQSideBarViewController *sideBarVC = [[QQSideBarViewController alloc] init];
     [_listViewControllers addObject:sideBarVC];
+    
+    // 2.导航菜单学习
+    [_listData addObject:@"导航菜单学习"];
+    NaviMenuViewController *navmenuVC = [[NaviMenuViewController alloc] init];
+    [_listViewControllers addObject:navmenuVC];
+    
+    // 3.仿新浪微博
+    [_listData addObject:@"仿新浪微博"];
+    SinaWeiboViewController *sinaVC = [[SinaWeiboViewController alloc] init];
+    [_listViewControllers addObject:sinaVC];
+    
+    // 4.QQ聊天界面
+    [_listData addObject:@"QQ聊天界面"];
+    QQChatViewController *qqChatVC = [[QQChatViewController alloc] init];
+    [_listViewControllers addObject:qqChatVC];
+    
+    // 5.仿微信
+    [_listData addObject:@"仿微信"];
+     WeiChatViewController *weiChatVC = [[WeiChatViewController alloc] init];
+    [_listViewControllers addObject:weiChatVC];
+    
+    
+    // 6.仿支付宝
+    [_listData addObject:@"仿支付宝"];
+    AliPayViewController *alipayVC = [[AliPayViewController alloc] init];
+    [_listViewControllers addObject:alipayVC];
+    
+    // 6.仿美团钱包
+    [_listData addObject:@"仿美团钱包"];
+    MeituanWalletViewController *meituanWalletVC = [[MeituanWalletViewController alloc] init];
+    [_listViewControllers addObject:meituanWalletVC];
 }
 
 //- (UITabBarController *)setupTabbarController
@@ -108,8 +145,8 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UIViewController *vc = [self.listViewControllers objectAtIndex:indexPath.row];
     vc.title = [self.listData objectAtIndex:indexPath.row];
-    if (indexPath.row == 0) {
-        //UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    if (indexPath.row == 0 ) {
+//        QQSideBarViewController *sideBarVC = [[QQSideBarViewController alloc] init];
         [self.navigationController presentViewController:vc animated:YES completion:^{
             
         }];

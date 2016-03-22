@@ -155,5 +155,12 @@
     }
 }
 
+- (void)dissmissVC
+{
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
+
 
 @end

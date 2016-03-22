@@ -26,6 +26,7 @@
 #import "JSPatchProcessKit.h"
 //#import "JPEngine.h"
 #import "SHCZMainView.h"
+#import "NewfeatureViewController.h"
 
 
 @interface AppDelegate () <WXApiDelegate>
@@ -60,9 +61,28 @@
 //    //    添加
 //    [self.window addSubview:mainView];
 //    //
-    UINavigationController *mainNav = [[UINavigationController alloc] initWithRootViewController:[[MainViewController alloc] init]];
+//    UINavigationController *mainNav = [[UINavigationController alloc] initWithRootViewController:[[MainViewController alloc] init]];
+//    
+//    self.window.rootViewController = mainNav;
     
-    self.window.rootViewController = mainNav;
+    
+    NSString *versionKey = @"CFBundleVersion";
+    // 上一次的使用版本（存储在沙盒中的版本号）
+    NSString *lastVersion = [[NSUserDefaults standardUserDefaults] objectForKey:versionKey];
+    // 当前app的版本号（从Info.plist中获得）
+//    [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:versionKey];
+    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[versionKey];
+    if ([lastVersion isEqualToString:currentVersion]) {
+        UINavigationController *mainNav = [[UINavigationController alloc] initWithRootViewController:[[MainViewController alloc] init]];
+        
+        self.window.rootViewController = mainNav;
+    } else {
+        self.window.rootViewController = [[NewfeatureViewController alloc] init];
+        [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:versionKey];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+
+    
     [self.window makeKeyAndVisible];
     
     //1.初始化ShareSDK应用,字符串"iosv1101"是应该换成你申请的ShareSDK应用中的Appkey

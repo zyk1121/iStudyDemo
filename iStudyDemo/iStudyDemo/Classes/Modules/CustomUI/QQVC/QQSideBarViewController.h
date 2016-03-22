@@ -17,4 +17,6 @@
 - (void)maskViewClicked;
 - (void)addPanGesture;
 - (void)removePanGesture;
+- (void)dissmissVC;
+
 @end

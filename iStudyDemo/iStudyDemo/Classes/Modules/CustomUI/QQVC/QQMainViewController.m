@@ -143,10 +143,11 @@
 
 - (void)barcancelBtnClicked
 {
-//    NSLog(@"点击了取消");
-    [self dismissViewControllerAnimated:YES completion:^{
-        
-    }];
+////    NSLog(@"点击了取消");
+//    [self dismissViewControllerAnimated:YES completion:^{
+//        
+//    }];
+    [self.tabbarVC.sidebarVC dissmissVC];
 }
 
 - (void)doClickBackAction:(UIButton *)button
@@ -264,6 +265,11 @@
             }
         }];
     }
+}
+
+- (void)dealloc
+{
+    NSLog(@"QQMainViewController dealloc");
 }
 
 @end
