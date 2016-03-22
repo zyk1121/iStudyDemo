@@ -55,7 +55,7 @@
     //    self.mapView.frame = self.view.frame;
     
     self.mapView2.delegate = self;
-    [self.mapView2 setVisibleMapRect:MAMapRectMake(220947791,101641847, 11312, 11815) animated:YES];
+    [self.mapView2 setVisibleMapRect:MAMapRectMake(220947791,101641847, 1131, 1181) animated:YES];
     [self.view addSubview:self.mapView2];
     
     //
