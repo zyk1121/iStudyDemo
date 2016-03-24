@@ -23,7 +23,6 @@
 #import "QQChatViewController.h"
 #import "WeiChatViewController.h"
 #import "AliPayViewController.h"
-#import "MeituanWalletViewController.h"
 
 @interface CustomUIViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -109,22 +108,7 @@
     [_listData addObject:@"仿支付宝"];
     AliPayViewController *alipayVC = [[AliPayViewController alloc] init];
     [_listViewControllers addObject:alipayVC];
-    
-    // 6.仿美团钱包
-    [_listData addObject:@"仿美团钱包"];
-    MeituanWalletViewController *meituanWalletVC = [[MeituanWalletViewController alloc] init];
-    [_listViewControllers addObject:meituanWalletVC];
 }
-
-//- (UITabBarController *)setupTabbarController
-//{
-//     UITabBarController *tabVC = (UITabBarController *)[[QQTabbarViewController alloc] init];
-//    
-//
-//    
-// 
-//    return tabVC;
-//}
 
 
 
@@ -145,7 +129,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UIViewController *vc = [self.listViewControllers objectAtIndex:indexPath.row];
     vc.title = [self.listData objectAtIndex:indexPath.row];
-    if (indexPath.row == 0 ) {
+    if (indexPath.row == 0  || indexPath.row == 5) {
 //        QQSideBarViewController *sideBarVC = [[QQSideBarViewController alloc] init];
         [self.navigationController presentViewController:vc animated:YES completion:^{
             
