@@ -79,6 +79,9 @@ PODS:
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
   - RPJSONValidator (0.2.0)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
   - Specta (0.2.1)
 
 DEPENDENCIES:
@@ -94,6 +97,7 @@ DEPENDENCIES:
   - OHHTTPStubs (~> 3.1.1)
   - ReactiveCocoa (~> 2.5)
   - RPJSONValidator (~> 0.2.0)
+  - SDWebImage (~> 3.7.5)
   - Specta (~> 0.2.1)
 
 SPEC CHECKSUMS:
@@ -109,6 +113,7 @@ SPEC CHECKSUMS:
   OHHTTPStubs: 8cf0cfe6f34f13fc88fdf5b2a1b2c2536e8c0261
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RPJSONValidator: a079b234c0f87833b657708adb80531dc45dbe83
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   Specta: 15a276a6343867b426d5ed135d5aa4d04123a573
 
 COCOAPODS: 0.38.2

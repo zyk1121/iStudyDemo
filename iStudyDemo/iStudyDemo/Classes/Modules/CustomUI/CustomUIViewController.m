@@ -108,6 +108,35 @@
     [_listData addObject:@"仿支付宝"];
     AliPayViewController *alipayVC = [[AliPayViewController alloc] init];
     [_listViewControllers addObject:alipayVC];
+    
+    /*
+     自定义view
+     
+     init
+     {
+     self.translatesAutoresizingMaskIntoConstraints = NO;
+     }
+     
+     
+     - (void)updateConstraints
+     {
+     [self.moneyLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+     make.center.equalTo(self);
+     }];
+     
+     [self.backgroundView mas_updateConstraints:^(MASConstraintMaker *make) {
+     make.center.equalTo(self);
+     }];
+     
+     [super updateConstraints];
+     }
+     
+     + (BOOL)requiresConstraintBasedLayout
+     {
+     return YES;
+     }
+     
+     */
 }
 
 
