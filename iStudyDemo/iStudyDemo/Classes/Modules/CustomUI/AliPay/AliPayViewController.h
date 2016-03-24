@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AliPayViewController : UIViewController
+@interface AliPayViewController : UITabBarController
 
 @end
