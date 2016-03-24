@@ -11,10 +11,15 @@
 #import "masonry.h"
 #import "UIKitMacros.h"
 #import "ZFBTestViewController.h"
+#import "ZFBTableViewCell.h"
 
-@interface ZFBViewController ()
+@interface ZFBViewController () <UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UIView *view1;
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) ZFBTableViewCell *zfbCell1;
+@property (nonatomic, strong) ZFBTableViewCell *zfbCell2;
+@property (nonatomic, strong) NSMutableArray *cellData;
 
 
 @end
@@ -26,6 +31,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    self.view.backgroundColor = [UIColor lightGrayColor];
 //    self.view.backgroundColor = [UIColor colorWithRed:28/255.0 green:182/255.0 blue:165/255.0 alpha:1];
     _view1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 80)];
     _view1.backgroundColor = [UIColor colorWithRed:37/255.0 green:192/255.0 blue:180/255.0 alpha:1];
@@ -55,6 +61,10 @@
         button;
     });
     [_view1 addSubview:button3];
+    
+    
+    _cellData = [[NSMutableArray alloc] init];
+    [self setupUI];
 
 }
 
@@ -110,4 +120,66 @@
 {
     navBarHairlineImageView.hidden = NO;
 }
+
+
+#pragma mark - tableview
+
+- (void)setupUI
+{
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 80, SCREEN_WIDTH, SCREEN_HEIGHT - 49-80-64)];
+    _tableView.dataSource = self;
+    _tableView.delegate = self;
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    [self.view addSubview:_tableView];
+    
+    // 中间再加一个banner广告view即可
+    _zfbCell1 = [[ZFBTableViewCell alloc] initWithIcons:nil];
+    _zfbCell2 = [[ZFBTableViewCell alloc] initWithIcons:nil];
+    _zfbCell1.vc = self;
+    _zfbCell2.vc =  self;
+    [_cellData addObject:_zfbCell1];
+    [_cellData addObject:_zfbCell2];
+}
+
+#pragma mark - UITableViewDelegate & UITableViewDataSource
+
+- (NSInteger)numberOfSectionsInTableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return  _cellData.count;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+//    static NSString *reuseIdetify = @"tableViewCellIdetify";
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdetify];
+//    if (!cell) {
+//        cell = [[ZFBTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdetify];
+//        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+//        cell.showsReorderControl = YES;
+//    }
+    
+//    cell.textLabel.backgroundColor = [UIColor clearColor];
+    UITableViewCell *cell = _cellData[indexPath.row];
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // ZFBTableViewCell 是基类，另外两种，一种是collectionCell，一种是bannerCell（即可完成像支付宝一样的功能）
+    ZFBTableViewCell *cell = _cellData[indexPath.row];
+    return cell.cellHeight;
+}
+
 @end

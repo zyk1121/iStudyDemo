@@ -130,6 +130,8 @@
 		763E4E911CA2F61300470FCA /* backImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 763E4E8F1CA2F61300470FCA /* backImage.jpg */; };
 		763E4E921CA2F61300470FCA /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 763E4E901CA2F61300470FCA /* icon.jpg */; };
 		763E4E951CA2F6E600470FCA /* WD2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763E4E941CA2F6E600470FCA /* WD2ViewController.m */; };
+		763E4E991CA3B03F00470FCA /* ZFBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 763E4E981CA3B03F00470FCA /* ZFBTableViewCell.m */; };
+		763E4E9C1CA3B9B200470FCA /* ZFBCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 763E4E9B1CA3B9B200470FCA /* ZFBCollectionViewCell.m */; };
 		763FE3641C8D8BFA00CE67FF /* HTTPTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE3631C8D8BFA00CE67FF /* HTTPTestViewController.m */; };
 		763FE3871C8DC9AB00CE67FF /* LEDDomainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE3861C8DC9AB00CE67FF /* LEDDomainObject.m */; };
 		763FE38D1C8DCB6100CE67FF /* LEDDomainPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE38C1C8DCB6100CE67FF /* LEDDomainPredicate.m */; };
@@ -414,6 +416,10 @@
 		763E4E901CA2F61300470FCA /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpg; sourceTree = "<group>"; };
 		763E4E931CA2F6E600470FCA /* WD2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WD2ViewController.h; sourceTree = "<group>"; };
 		763E4E941CA2F6E600470FCA /* WD2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WD2ViewController.m; sourceTree = "<group>"; };
+		763E4E971CA3B03F00470FCA /* ZFBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBTableViewCell.h; sourceTree = "<group>"; };
+		763E4E981CA3B03F00470FCA /* ZFBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBTableViewCell.m; sourceTree = "<group>"; };
+		763E4E9A1CA3B9B200470FCA /* ZFBCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBCollectionViewCell.h; sourceTree = "<group>"; };
+		763E4E9B1CA3B9B200470FCA /* ZFBCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBCollectionViewCell.m; sourceTree = "<group>"; };
 		763FE3621C8D8BFA00CE67FF /* HTTPTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPTestViewController.h; sourceTree = "<group>"; };
 		763FE3631C8D8BFA00CE67FF /* HTTPTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPTestViewController.m; sourceTree = "<group>"; };
 		763FE3851C8DC9AB00CE67FF /* LEDDomainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDDomainObject.h; sourceTree = "<group>"; };
@@ -952,6 +958,7 @@
 		763E4DF31CA25DAF00470FCA /* ZFB */ = {
 			isa = PBXGroup;
 			children = (
+				763E4E961CA3B00500470FCA /* view */,
 				763E4DF41CA25E1D00470FCA /* ZFBViewController.h */,
 				763E4DF51CA25E1D00470FCA /* ZFBViewController.m */,
 				763E4E8C1CA2F25200470FCA /* ZFBTestViewController.h */,
@@ -1072,6 +1079,17 @@
 				763E4E501CA2B7F500470FCA /* Home_Shadow_Up@2x.png */,
 			);
 			path = RefreshHeader;
+			sourceTree = "<group>";
+		};
+		763E4E961CA3B00500470FCA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				763E4E971CA3B03F00470FCA /* ZFBTableViewCell.h */,
+				763E4E981CA3B03F00470FCA /* ZFBTableViewCell.m */,
+				763E4E9A1CA3B9B200470FCA /* ZFBCollectionViewCell.h */,
+				763E4E9B1CA3B9B200470FCA /* ZFBCollectionViewCell.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		763FE3611C8D8BE100CE67FF /* HTTPTest */ = {
@@ -1734,6 +1752,7 @@
 				76213BD61C96BE42001DAA53 /* DeviceInfoViewController.m in Sources */,
 				769718371C9D440E00D0AC63 /* SHCZMainView.m in Sources */,
 				763E4E8E1CA2F25200470FCA /* ZFBTestViewController.m in Sources */,
+				763E4E991CA3B03F00470FCA /* ZFBTableViewCell.m in Sources */,
 				76213BDE1C97048C001DAA53 /* ThirdShareViewController.m in Sources */,
 				76C479A11C8F248F00EAE07E /* coreData.xcdatamodeld in Sources */,
 				769717E91C992C1B00D0AC63 /* QQMainViewController.m in Sources */,
@@ -1761,6 +1780,7 @@
 				76C479951C8EF51600EAE07E /* DataStorageViewController.m in Sources */,
 				763E4E951CA2F6E600470FCA /* WD2ViewController.m in Sources */,
 				769717DC1C986A6B00D0AC63 /* OpenGLViewController.m in Sources */,
+				763E4E9C1CA3B9B200470FCA /* ZFBCollectionViewCell.m in Sources */,
 				763E4DF61CA25E1D00470FCA /* ZFBViewController.m in Sources */,
 				76C479A61C8F264100EAE07E /* TestCoreData+CoreDataProperties.m in Sources */,
 				763E4DF91CA25E2900470FCA /* WDViewController.m in Sources */,
