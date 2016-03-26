@@ -256,6 +256,10 @@
 		76C0350E1CA43103002241E5 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76C0350A1CA43103002241E5 /* 3.jpg */; };
 		76C0350F1CA43103002241E5 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76C0350B1CA43103002241E5 /* 4.jpg */; };
 		76C035131CA44337002241E5 /* UIScrollRollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035121CA44337002241E5 /* UIScrollRollView.m */; };
+		76C0351B1CA63C97002241E5 /* SimpleAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C0351A1CA63C97002241E5 /* SimpleAnimationViewController.m */; };
+		76C0351E1CA655F8002241E5 /* BasicAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C0351D1CA655F8002241E5 /* BasicAnimationViewController.m */; };
+		76C035211CA65D62002241E5 /* KeyFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035201CA65D62002241E5 /* KeyFrameViewController.m */; };
+		76C035241CA663E5002241E5 /* TransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035231CA663E5002241E5 /* TransitionViewController.m */; };
 		76C479881C8ED41600EAE07E /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C479871C8ED41600EAE07E /* MAMapKit.framework */; };
 		76C4798C1C8ED4C700EAE07E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */; };
 		76C4798E1C8ED50600EAE07E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798D1C8ED50600EAE07E /* CoreTelephony.framework */; };
@@ -627,6 +631,14 @@
 		76C0350B1CA43103002241E5 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 		76C035111CA44337002241E5 /* UIScrollRollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIScrollRollView.h; sourceTree = "<group>"; };
 		76C035121CA44337002241E5 /* UIScrollRollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIScrollRollView.m; sourceTree = "<group>"; };
+		76C035191CA63C97002241E5 /* SimpleAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAnimationViewController.h; sourceTree = "<group>"; };
+		76C0351A1CA63C97002241E5 /* SimpleAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAnimationViewController.m; sourceTree = "<group>"; };
+		76C0351C1CA655F8002241E5 /* BasicAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicAnimationViewController.h; sourceTree = "<group>"; };
+		76C0351D1CA655F8002241E5 /* BasicAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicAnimationViewController.m; sourceTree = "<group>"; };
+		76C0351F1CA65D62002241E5 /* KeyFrameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyFrameViewController.h; sourceTree = "<group>"; };
+		76C035201CA65D62002241E5 /* KeyFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyFrameViewController.m; sourceTree = "<group>"; };
+		76C035221CA663E5002241E5 /* TransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionViewController.h; sourceTree = "<group>"; };
+		76C035231CA663E5002241E5 /* TransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionViewController.m; sourceTree = "<group>"; };
 		76C479871C8ED41600EAE07E /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		76C479891C8ED4AA00EAE07E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -1452,6 +1464,49 @@
 			path = UIScrollRollView;
 			sourceTree = "<group>";
 		};
+		76C035141CA63C70002241E5 /* AnimationGroup */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AnimationGroup;
+			sourceTree = "<group>";
+		};
+		76C035151CA63C70002241E5 /* BasicAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				76C0351C1CA655F8002241E5 /* BasicAnimationViewController.h */,
+				76C0351D1CA655F8002241E5 /* BasicAnimationViewController.m */,
+			);
+			path = BasicAnimation;
+			sourceTree = "<group>";
+		};
+		76C035161CA63C70002241E5 /* KeyFrame */ = {
+			isa = PBXGroup;
+			children = (
+				76C0351F1CA65D62002241E5 /* KeyFrameViewController.h */,
+				76C035201CA65D62002241E5 /* KeyFrameViewController.m */,
+			);
+			path = KeyFrame;
+			sourceTree = "<group>";
+		};
+		76C035171CA63C70002241E5 /* SimpleAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				76C035191CA63C97002241E5 /* SimpleAnimationViewController.h */,
+				76C0351A1CA63C97002241E5 /* SimpleAnimationViewController.m */,
+			);
+			path = SimpleAnimation;
+			sourceTree = "<group>";
+		};
+		76C035181CA63C70002241E5 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				76C035221CA663E5002241E5 /* TransitionViewController.h */,
+				76C035231CA663E5002241E5 /* TransitionViewController.m */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
 		76C479911C8EF4F400EAE07E /* DataStorage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1486,6 +1541,11 @@
 		76C479991C8EF66B00EAE07E /* QuartzCore */ = {
 			isa = PBXGroup;
 			children = (
+				76C035141CA63C70002241E5 /* AnimationGroup */,
+				76C035151CA63C70002241E5 /* BasicAnimation */,
+				76C035161CA63C70002241E5 /* KeyFrame */,
+				76C035171CA63C70002241E5 /* SimpleAnimation */,
+				76C035181CA63C70002241E5 /* Transition */,
 				76C4799A1C8EF67B00EAE07E /* QuartzCoreViewController.h */,
 				76C4799B1C8EF67B00EAE07E /* QuartzCoreViewController.m */,
 			);
@@ -1958,6 +2018,7 @@
 				76BD6BCB1CA1118900708977 /* ZTTabBar.m in Sources */,
 				76BD6BDE1CA189A900708977 /* NewfeatureViewController.m in Sources */,
 				761931D21C8C5DF70022A311 /* CC3GLMatrix.m in Sources */,
+				76C035241CA663E5002241E5 /* TransitionViewController.m in Sources */,
 				76213BD61C96BE42001DAA53 /* DeviceInfoViewController.m in Sources */,
 				769718371C9D440E00D0AC63 /* SHCZMainView.m in Sources */,
 				763E4E8E1CA2F25200470FCA /* ZFBTestViewController.m in Sources */,
@@ -1977,6 +2038,7 @@
 				76BD6BD11CA1120E00708977 /* UIBarButtonItem+Extension.m in Sources */,
 				761931A71C8BC8A20022A311 /* MainViewController.m in Sources */,
 				769717E11C986A7B00D0AC63 /* OpenGLMainViewController.m in Sources */,
+				76C035211CA65D62002241E5 /* KeyFrameViewController.m in Sources */,
 				76C035131CA44337002241E5 /* UIScrollRollView.m in Sources */,
 				761931AB1C8BCC3F0022A311 /* main.mm in Sources */,
 				76213BDA1C97029A001DAA53 /* ThirdPartViewController.m in Sources */,
@@ -1994,6 +2056,7 @@
 				76C479951C8EF51600EAE07E /* DataStorageViewController.m in Sources */,
 				763E4E951CA2F6E600470FCA /* WD2ViewController.m in Sources */,
 				769717DC1C986A6B00D0AC63 /* OpenGLViewController.m in Sources */,
+				76C0351B1CA63C97002241E5 /* SimpleAnimationViewController.m in Sources */,
 				763E4E9C1CA3B9B200470FCA /* ZFBCollectionViewCell.m in Sources */,
 				763E4DF61CA25E1D00470FCA /* ZFBViewController.m in Sources */,
 				76C034BF1CA40EC7002241E5 /* SPKBanner.m in Sources */,
@@ -2014,6 +2077,7 @@
 				7681A81E1C958A1B00FC6843 /* User+CoreDataProperties.m in Sources */,
 				76E903891C9ED53E003AC33A /* NavMenuScrollView.m in Sources */,
 				769717EC1C99792C00D0AC63 /* JSPatchProcessKit.m in Sources */,
+				76C0351E1CA655F8002241E5 /* BasicAnimationViewController.m in Sources */,
 				761931D11C8C5DF70022A311 /* CC3Foundation.m in Sources */,
 				7697189E1C9E994900D0AC63 /* QQSettingViewController.m in Sources */,
 			);
