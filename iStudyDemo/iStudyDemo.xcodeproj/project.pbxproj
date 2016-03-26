@@ -156,7 +156,6 @@
 		769718211C9B0DDA00D0AC63 /* PopViewLikeQQView.m in Sources */ = {isa = PBXBuildFile; fileRef = 769718201C9B0DDA00D0AC63 /* PopViewLikeQQView.m */; };
 		769718371C9D440E00D0AC63 /* SHCZMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 769718341C9D440E00D0AC63 /* SHCZMainView.m */; };
 		769718381C9D440E00D0AC63 /* SHCZSideTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 769718361C9D440E00D0AC63 /* SHCZSideTableView.m */; };
-		769718641C9D466E00D0AC63 /* 123.png in Resources */ = {isa = PBXBuildFile; fileRef = 769718391C9D466E00D0AC63 /* 123.png */; };
 		769718651C9D466E00D0AC63 /* diannao.png in Resources */ = {isa = PBXBuildFile; fileRef = 7697183A1C9D466E00D0AC63 /* diannao.png */; };
 		769718661C9D466E00D0AC63 /* hand.png in Resources */ = {isa = PBXBuildFile; fileRef = 7697183B1C9D466E00D0AC63 /* hand.png */; };
 		769718671C9D466E00D0AC63 /* hcw.png in Resources */ = {isa = PBXBuildFile; fileRef = 7697183C1C9D466E00D0AC63 /* hcw.png */; };
@@ -260,6 +259,8 @@
 		76C0351E1CA655F8002241E5 /* BasicAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C0351D1CA655F8002241E5 /* BasicAnimationViewController.m */; };
 		76C035211CA65D62002241E5 /* KeyFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035201CA65D62002241E5 /* KeyFrameViewController.m */; };
 		76C035241CA663E5002241E5 /* TransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035231CA663E5002241E5 /* TransitionViewController.m */; };
+		76C035281CA6709F002241E5 /* TouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035271CA6709F002241E5 /* TouchIDViewController.m */; };
+		76C0352B1CA6713C002241E5 /* TouchIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C0352A1CA6713C002241E5 /* TouchIDManager.m */; };
 		76C479881C8ED41600EAE07E /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C479871C8ED41600EAE07E /* MAMapKit.framework */; };
 		76C4798C1C8ED4C700EAE07E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */; };
 		76C4798E1C8ED50600EAE07E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798D1C8ED50600EAE07E /* CoreTelephony.framework */; };
@@ -512,7 +513,6 @@
 		769718341C9D440E00D0AC63 /* SHCZMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCZMainView.m; sourceTree = "<group>"; };
 		769718351C9D440E00D0AC63 /* SHCZSideTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCZSideTableView.h; sourceTree = "<group>"; };
 		769718361C9D440E00D0AC63 /* SHCZSideTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCZSideTableView.m; sourceTree = "<group>"; };
-		769718391C9D466E00D0AC63 /* 123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 123.png; sourceTree = "<group>"; };
 		7697183A1C9D466E00D0AC63 /* diannao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diannao.png; sourceTree = "<group>"; };
 		7697183B1C9D466E00D0AC63 /* hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hand.png; sourceTree = "<group>"; };
 		7697183C1C9D466E00D0AC63 /* hcw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hcw.png; sourceTree = "<group>"; };
@@ -639,6 +639,10 @@
 		76C035201CA65D62002241E5 /* KeyFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyFrameViewController.m; sourceTree = "<group>"; };
 		76C035221CA663E5002241E5 /* TransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionViewController.h; sourceTree = "<group>"; };
 		76C035231CA663E5002241E5 /* TransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionViewController.m; sourceTree = "<group>"; };
+		76C035261CA6709F002241E5 /* TouchIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIDViewController.h; sourceTree = "<group>"; };
+		76C035271CA6709F002241E5 /* TouchIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIDViewController.m; sourceTree = "<group>"; };
+		76C035291CA6713C002241E5 /* TouchIDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIDManager.h; sourceTree = "<group>"; };
+		76C0352A1CA6713C002241E5 /* TouchIDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIDManager.m; sourceTree = "<group>"; };
 		76C479871C8ED41600EAE07E /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		76C479891C8ED4AA00EAE07E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -838,6 +842,7 @@
 		761931AD1C8BCD010022A311 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				76C035251CA6708F002241E5 /* TouchID */,
 				769717E21C992A9900D0AC63 /* CustomUI */,
 				76213BD71C97028B001DAA53 /* ThirdPart */,
 				76213BD31C96BE31001DAA53 /* DeviceInfo */,
@@ -1291,7 +1296,6 @@
 		769717ED1C9A715F00D0AC63 /* Icon */ = {
 			isa = PBXGroup;
 			children = (
-				769718391C9D466E00D0AC63 /* 123.png */,
 				7697183A1C9D466E00D0AC63 /* diannao.png */,
 				7697188F1C9D4A1600D0AC63 /* sidebar_bg.jpg */,
 				7697183B1C9D466E00D0AC63 /* hand.png */,
@@ -1505,6 +1509,17 @@
 				76C035231CA663E5002241E5 /* TransitionViewController.m */,
 			);
 			path = Transition;
+			sourceTree = "<group>";
+		};
+		76C035251CA6708F002241E5 /* TouchID */ = {
+			isa = PBXGroup;
+			children = (
+				76C035261CA6709F002241E5 /* TouchIDViewController.h */,
+				76C035271CA6709F002241E5 /* TouchIDViewController.m */,
+				76C035291CA6713C002241E5 /* TouchIDManager.h */,
+				76C0352A1CA6713C002241E5 /* TouchIDManager.m */,
+			);
+			path = TouchID;
 			sourceTree = "<group>";
 		};
 		76C479911C8EF4F400EAE07E /* DataStorage */ = {
@@ -1779,7 +1794,6 @@
 				7697186C1C9D466E00D0AC63 /* left.png in Resources */,
 				76C034F61CA41258002241E5 /* icon_accessory_view@2x.png in Resources */,
 				763E4E7C1CA2B7F500470FCA /* ppc_www_back_disable@2x.png in Resources */,
-				769718641C9D466E00D0AC63 /* 123.png in Resources */,
 				763E4E621CA2B7F500470FCA /* 10000006.png in Resources */,
 				76C034EA1CA41258002241E5 /* bg_keyboard_delete@2x.png in Resources */,
 				76C035021CA41258002241E5 /* icon_radio@2x.png in Resources */,
@@ -2039,6 +2053,7 @@
 				761931A71C8BC8A20022A311 /* MainViewController.m in Sources */,
 				769717E11C986A7B00D0AC63 /* OpenGLMainViewController.m in Sources */,
 				76C035211CA65D62002241E5 /* KeyFrameViewController.m in Sources */,
+				76C0352B1CA6713C002241E5 /* TouchIDManager.m in Sources */,
 				76C035131CA44337002241E5 /* UIScrollRollView.m in Sources */,
 				761931AB1C8BCC3F0022A311 /* main.mm in Sources */,
 				76213BDA1C97029A001DAA53 /* ThirdPartViewController.m in Sources */,
@@ -2066,6 +2081,7 @@
 				76C479A71C8F264100EAE07E /* TestCoreData.m in Sources */,
 				76E9038B1C9ED53E003AC33A /* YBNavMenuController.m in Sources */,
 				769717DB1C986A6B00D0AC63 /* OpenGLTestView.m in Sources */,
+				76C035281CA6709F002241E5 /* TouchIDViewController.m in Sources */,
 				769717F31C9A73E000D0AC63 /* UIView+SHCZExt.m in Sources */,
 				763FE38D1C8DCB6100CE67FF /* LEDDomainPredicate.m in Sources */,
 				7681A80D1C9588ED00FC6843 /* User.xcdatamodeld in Sources */,
