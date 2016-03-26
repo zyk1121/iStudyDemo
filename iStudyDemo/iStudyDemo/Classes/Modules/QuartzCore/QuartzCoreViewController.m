@@ -14,6 +14,7 @@
 #import "BasicAnimationViewController.h"
 #import "KeyFrameViewController.h"
 #import "TransitionViewController.h"
+#import "DrawLayerViewController.h"
 
 // 动画介绍：http://blog.sina.com.cn/s/blog_8d1bc23f0102vqpa.html
 /*
@@ -108,6 +109,11 @@
     [_listData addObject:@"Transition"];
     TransitionViewController *transitionVC = [[TransitionViewController alloc] init];
     [_listViewControllers addObject:transitionVC];
+    
+    // 6.DrawLayer
+    [_listData addObject:@"2D绘图"];
+    DrawLayerViewController *drawLayerVC = [[DrawLayerViewController alloc] init];
+    [_listViewControllers addObject:drawLayerVC];
     
 
     

@@ -21,6 +21,22 @@
 #import "OpenGLMainViewController.h"
 #import "CustomUIViewController.h"
 #import "TouchIDViewController.h"
+#import "MediaViewController.h"
+#import "SystemFunctionViewController.h"
+#import "WebJSViewController.h"
+#import "PortalViewController.h"
+#import "EncryptDecryptViewController.h"
+#import "CustomControlViewController.h"
+#import "ThreadViewController.h"
+#import "MVVMViewController.h"
+#import "UnitTestStubMockViewController.h"
+#import "RunLoopViewController.h"
+#import "RunTimeViewController.h"
+#import "SwiftViewController.h"
+#import "RACViewController.h"
+#import "ReactNativeViewController.h"
+
+// http://www.cocoachina.com/ios/20150825/13195.html
 
 @interface MainViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -77,10 +93,10 @@
     _listData = [[NSMutableArray alloc] init];
     _listViewControllers = [[NSMutableArray alloc] init];
     
-    // 1.opengl
-    [_listData addObject:@"OpenGL学习"];
-    OpenGLMainViewController *glViewController = [[OpenGLMainViewController alloc] init];
-    [_listViewControllers addObject:glViewController];
+    // 1.Thread
+    [_listData addObject:@"多线程"];
+    ThreadViewController *threadController = [[ThreadViewController alloc] init];
+    [_listViewControllers addObject:threadController];
     
     // 2.map SDK
     [_listData addObject:@"地图SDK & 定位"];
@@ -123,6 +139,67 @@
     [_listData addObject:@"TouchID"];
     TouchIDViewController *touchidController = [[TouchIDViewController alloc] init];
     [_listViewControllers addObject:touchidController];
+    // 11.multiMedia
+    [_listData addObject:@"多媒体"];
+    MediaViewController *mediaController = [[MediaViewController alloc] init];
+    [_listViewControllers addObject:mediaController];
+    // 12.System
+    [_listData addObject:@"系统服务"];
+    SystemFunctionViewController *systemController = [[SystemFunctionViewController alloc] init];
+    [_listViewControllers addObject:systemController];
+    // 13.Portal
+    [_listData addObject:@"Portal"];
+    PortalViewController *portalController = [[PortalViewController alloc] init];
+    [_listViewControllers addObject:portalController];
+    // 14.Web&JS
+    [_listData addObject:@"WebJS"];
+    WebJSViewController *webJSController = [[WebJSViewController alloc] init];
+    [_listViewControllers addObject:webJSController];
+    // 15.EncryptDecrypt
+    [_listData addObject:@"iOS加密解密"];
+    EncryptDecryptViewController *edController = [[EncryptDecryptViewController alloc] init];
+    [_listViewControllers addObject:edController];
+    // 16.CustomControl
+    [_listData addObject:@"自定义控件"];
+    CustomControlViewController *customControlController = [[CustomControlViewController alloc] init];
+    [_listViewControllers addObject:customControlController];
+    // 17.RAC
+    [_listData addObject:@"RAC"];
+    RACViewController *racController = [[RACViewController alloc] init];
+    [_listViewControllers addObject:racController];
+    // 17.MVVM
+    [_listData addObject:@"MVVM"];
+    MVVMViewController *mvvmController = [[MVVMViewController alloc] init];
+    [_listViewControllers addObject:mvvmController];
+    // 18.UntiTestStubMok
+    [_listData addObject:@"UnitTestStubMock"];
+    UnitTestStubMockViewController *unitController = [[UnitTestStubMockViewController alloc] init];
+    [_listViewControllers addObject:unitController];
+    // 19.RunLoop
+    [_listData addObject:@"RunLoop"];
+    RunLoopViewController *runloopController = [[RunLoopViewController alloc] init];
+    [_listViewControllers addObject:runloopController];
+    // 20.RunLoop
+    [_listData addObject:@"RunTime"];
+    RunTimeViewController *runtimeController = [[RunTimeViewController alloc] init];
+    [_listViewControllers addObject:runtimeController];
+    
+    // 0.opengl
+    [_listData addObject:@"OpenGL"];
+    OpenGLMainViewController *glViewController = [[OpenGLMainViewController alloc] init];
+    [_listViewControllers addObject:glViewController];
+    
+    // 21.Swift
+    [_listData addObject:@"Swift"];
+    SwiftViewController *swiftViewController = [[SwiftViewController alloc] init];
+    [_listViewControllers addObject:swiftViewController];
+    
+    // 22.ReactNative
+    [_listData addObject:@"ReactNative"];
+    ReactNativeViewController *reactnativeViewController = [[ReactNativeViewController alloc] init];
+    [_listViewControllers addObject:reactnativeViewController];
+    
+    
 }
 
 #pragma mark - UITableViewDelegate & UITableViewDataSource

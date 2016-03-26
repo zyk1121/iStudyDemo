@@ -281,6 +281,23 @@
 		76C0355A1CA6776E002241E5 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035551CA6776E002241E5 /* Message.m */; };
 		76C0355B1CA6776E002241E5 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035571CA6776E002241E5 /* MessageCell.m */; };
 		76C0355C1CA6776E002241E5 /* MessageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035591CA6776E002241E5 /* MessageFrame.m */; };
+		76C035611CA67FD9002241E5 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035601CA67FD9002241E5 /* MediaViewController.m */; };
+		76C035641CA67FF0002241E5 /* SystemFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035631CA67FF0002241E5 /* SystemFunctionViewController.m */; };
+		76C035691CA681C2002241E5 /* PortalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035681CA681C2002241E5 /* PortalViewController.m */; };
+		76C0356C1CA681D2002241E5 /* WebJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C0356B1CA681D2002241E5 /* WebJSViewController.m */; };
+		76C035701CA68288002241E5 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C0356F1CA68288002241E5 /* QRCodeViewController.m */; };
+		76C035741CA683A9002241E5 /* EncryptDecryptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035731CA683A9002241E5 /* EncryptDecryptViewController.m */; };
+		76C035781CA68507002241E5 /* CustomControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035771CA68507002241E5 /* CustomControlViewController.m */; };
+		76C0357C1CA68619002241E5 /* XMPPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C0357B1CA68619002241E5 /* XMPPViewController.m */; };
+		76C035801CA68792002241E5 /* DrawLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C0357F1CA68792002241E5 /* DrawLayerViewController.m */; };
+		76C035881CA68943002241E5 /* MVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035871CA68943002241E5 /* MVVMViewController.m */; };
+		76C0358B1CA68954002241E5 /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C0358A1CA68954002241E5 /* RunLoopViewController.m */; };
+		76C0358E1CA68964002241E5 /* RunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C0358D1CA68964002241E5 /* RunTimeViewController.m */; };
+		76C035911CA68973002241E5 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035901CA68973002241E5 /* ThreadViewController.m */; };
+		76C035941CA689A7002241E5 /* UnitTestStubMockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035931CA689A7002241E5 /* UnitTestStubMockViewController.m */; };
+		76C035981CA68CCC002241E5 /* SwiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035971CA68CCC002241E5 /* SwiftViewController.m */; };
+		76C0359D1CA68FD6002241E5 /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C0359C1CA68FD6002241E5 /* RACViewController.m */; };
+		76C035A01CA68FF0002241E5 /* ReactNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C0359F1CA68FF0002241E5 /* ReactNativeViewController.m */; };
 		76C479881C8ED41600EAE07E /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C479871C8ED41600EAE07E /* MAMapKit.framework */; };
 		76C4798C1C8ED4C700EAE07E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */; };
 		76C4798E1C8ED50600EAE07E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798D1C8ED50600EAE07E /* CoreTelephony.framework */; };
@@ -686,6 +703,40 @@
 		76C035571CA6776E002241E5 /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
 		76C035581CA6776E002241E5 /* MessageFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageFrame.h; sourceTree = "<group>"; };
 		76C035591CA6776E002241E5 /* MessageFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageFrame.m; sourceTree = "<group>"; };
+		76C0355F1CA67FD9002241E5 /* MediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
+		76C035601CA67FD9002241E5 /* MediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
+		76C035621CA67FF0002241E5 /* SystemFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemFunctionViewController.h; sourceTree = "<group>"; };
+		76C035631CA67FF0002241E5 /* SystemFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemFunctionViewController.m; sourceTree = "<group>"; };
+		76C035671CA681C2002241E5 /* PortalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortalViewController.h; sourceTree = "<group>"; };
+		76C035681CA681C2002241E5 /* PortalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortalViewController.m; sourceTree = "<group>"; };
+		76C0356A1CA681D2002241E5 /* WebJSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebJSViewController.h; sourceTree = "<group>"; };
+		76C0356B1CA681D2002241E5 /* WebJSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebJSViewController.m; sourceTree = "<group>"; };
+		76C0356E1CA68288002241E5 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		76C0356F1CA68288002241E5 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		76C035721CA683A9002241E5 /* EncryptDecryptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptDecryptViewController.h; sourceTree = "<group>"; };
+		76C035731CA683A9002241E5 /* EncryptDecryptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptDecryptViewController.m; sourceTree = "<group>"; };
+		76C035761CA68507002241E5 /* CustomControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomControlViewController.h; sourceTree = "<group>"; };
+		76C035771CA68507002241E5 /* CustomControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomControlViewController.m; sourceTree = "<group>"; };
+		76C0357A1CA68619002241E5 /* XMPPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPViewController.h; sourceTree = "<group>"; };
+		76C0357B1CA68619002241E5 /* XMPPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPViewController.m; sourceTree = "<group>"; };
+		76C0357E1CA68792002241E5 /* DrawLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawLayerViewController.h; sourceTree = "<group>"; };
+		76C0357F1CA68792002241E5 /* DrawLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLayerViewController.m; sourceTree = "<group>"; };
+		76C035861CA68943002241E5 /* MVVMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMViewController.h; sourceTree = "<group>"; };
+		76C035871CA68943002241E5 /* MVVMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMViewController.m; sourceTree = "<group>"; };
+		76C035891CA68954002241E5 /* RunLoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopViewController.h; sourceTree = "<group>"; };
+		76C0358A1CA68954002241E5 /* RunLoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopViewController.m; sourceTree = "<group>"; };
+		76C0358C1CA68964002241E5 /* RunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeViewController.h; sourceTree = "<group>"; };
+		76C0358D1CA68964002241E5 /* RunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeViewController.m; sourceTree = "<group>"; };
+		76C0358F1CA68973002241E5 /* ThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
+		76C035901CA68973002241E5 /* ThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
+		76C035921CA689A7002241E5 /* UnitTestStubMockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTestStubMockViewController.h; sourceTree = "<group>"; };
+		76C035931CA689A7002241E5 /* UnitTestStubMockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitTestStubMockViewController.m; sourceTree = "<group>"; };
+		76C035961CA68CCC002241E5 /* SwiftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftViewController.h; sourceTree = "<group>"; };
+		76C035971CA68CCC002241E5 /* SwiftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftViewController.m; sourceTree = "<group>"; };
+		76C0359B1CA68FD6002241E5 /* RACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACViewController.h; sourceTree = "<group>"; };
+		76C0359C1CA68FD6002241E5 /* RACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACViewController.m; sourceTree = "<group>"; };
+		76C0359E1CA68FF0002241E5 /* ReactNativeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactNativeViewController.h; sourceTree = "<group>"; };
+		76C0359F1CA68FF0002241E5 /* ReactNativeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactNativeViewController.m; sourceTree = "<group>"; };
 		76C479871C8ED41600EAE07E /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		76C479891C8ED4AA00EAE07E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -885,6 +936,20 @@
 		761931AD1C8BCD010022A311 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				76C035991CA68FC7002241E5 /* RAC */,
+				76C0359A1CA68FC7002241E5 /* ReactNative */,
+				76C035951CA68CBC002241E5 /* Swift */,
+				76C035811CA68923002241E5 /* MVVM */,
+				76C035821CA68923002241E5 /* RunLoop */,
+				76C035831CA68923002241E5 /* RunTime */,
+				76C035841CA68923002241E5 /* Thread */,
+				76C035851CA68923002241E5 /* UnitTestStub */,
+				76C035751CA684F2002241E5 /* CustomControl */,
+				76C035711CA68394002241E5 /* EncryptDecrypt */,
+				76C035651CA681AE002241E5 /* Portal */,
+				76C035661CA681AE002241E5 /* WebJS */,
+				76C0355D1CA67FC0002241E5 /* Media */,
+				76C0355E1CA67FC0002241E5 /* System */,
 				76C035251CA6708F002241E5 /* TouchID */,
 				769717E21C992A9900D0AC63 /* CustomUI */,
 				76213BD71C97028B001DAA53 /* ThirdPart */,
@@ -965,6 +1030,8 @@
 		76213BD71C97028B001DAA53 /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				76C035791CA68606002241E5 /* XMPP */,
+				76C0356D1CA68279002241E5 /* QRCode */,
 				76213BDB1C97047E001DAA53 /* ThirdShare */,
 				76213BD81C97029A001DAA53 /* ThirdPartViewController.h */,
 				76213BD91C97029A001DAA53 /* ThirdPartViewController.m */,
@@ -1603,6 +1670,159 @@
 			path = QQ;
 			sourceTree = "<group>";
 		};
+		76C0355D1CA67FC0002241E5 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				76C0355F1CA67FD9002241E5 /* MediaViewController.h */,
+				76C035601CA67FD9002241E5 /* MediaViewController.m */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		76C0355E1CA67FC0002241E5 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				76C035621CA67FF0002241E5 /* SystemFunctionViewController.h */,
+				76C035631CA67FF0002241E5 /* SystemFunctionViewController.m */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		76C035651CA681AE002241E5 /* Portal */ = {
+			isa = PBXGroup;
+			children = (
+				76C035671CA681C2002241E5 /* PortalViewController.h */,
+				76C035681CA681C2002241E5 /* PortalViewController.m */,
+			);
+			path = Portal;
+			sourceTree = "<group>";
+		};
+		76C035661CA681AE002241E5 /* WebJS */ = {
+			isa = PBXGroup;
+			children = (
+				76C0356A1CA681D2002241E5 /* WebJSViewController.h */,
+				76C0356B1CA681D2002241E5 /* WebJSViewController.m */,
+			);
+			path = WebJS;
+			sourceTree = "<group>";
+		};
+		76C0356D1CA68279002241E5 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				76C0356E1CA68288002241E5 /* QRCodeViewController.h */,
+				76C0356F1CA68288002241E5 /* QRCodeViewController.m */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		76C035711CA68394002241E5 /* EncryptDecrypt */ = {
+			isa = PBXGroup;
+			children = (
+				76C035721CA683A9002241E5 /* EncryptDecryptViewController.h */,
+				76C035731CA683A9002241E5 /* EncryptDecryptViewController.m */,
+			);
+			path = EncryptDecrypt;
+			sourceTree = "<group>";
+		};
+		76C035751CA684F2002241E5 /* CustomControl */ = {
+			isa = PBXGroup;
+			children = (
+				76C035761CA68507002241E5 /* CustomControlViewController.h */,
+				76C035771CA68507002241E5 /* CustomControlViewController.m */,
+			);
+			path = CustomControl;
+			sourceTree = "<group>";
+		};
+		76C035791CA68606002241E5 /* XMPP */ = {
+			isa = PBXGroup;
+			children = (
+				76C0357A1CA68619002241E5 /* XMPPViewController.h */,
+				76C0357B1CA68619002241E5 /* XMPPViewController.m */,
+			);
+			path = XMPP;
+			sourceTree = "<group>";
+		};
+		76C0357D1CA68780002241E5 /* DrawLayer */ = {
+			isa = PBXGroup;
+			children = (
+				76C0357E1CA68792002241E5 /* DrawLayerViewController.h */,
+				76C0357F1CA68792002241E5 /* DrawLayerViewController.m */,
+			);
+			path = DrawLayer;
+			sourceTree = "<group>";
+		};
+		76C035811CA68923002241E5 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				76C035861CA68943002241E5 /* MVVMViewController.h */,
+				76C035871CA68943002241E5 /* MVVMViewController.m */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		76C035821CA68923002241E5 /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				76C035891CA68954002241E5 /* RunLoopViewController.h */,
+				76C0358A1CA68954002241E5 /* RunLoopViewController.m */,
+			);
+			path = RunLoop;
+			sourceTree = "<group>";
+		};
+		76C035831CA68923002241E5 /* RunTime */ = {
+			isa = PBXGroup;
+			children = (
+				76C0358C1CA68964002241E5 /* RunTimeViewController.h */,
+				76C0358D1CA68964002241E5 /* RunTimeViewController.m */,
+			);
+			path = RunTime;
+			sourceTree = "<group>";
+		};
+		76C035841CA68923002241E5 /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				76C0358F1CA68973002241E5 /* ThreadViewController.h */,
+				76C035901CA68973002241E5 /* ThreadViewController.m */,
+			);
+			path = Thread;
+			sourceTree = "<group>";
+		};
+		76C035851CA68923002241E5 /* UnitTestStub */ = {
+			isa = PBXGroup;
+			children = (
+				76C035921CA689A7002241E5 /* UnitTestStubMockViewController.h */,
+				76C035931CA689A7002241E5 /* UnitTestStubMockViewController.m */,
+			);
+			path = UnitTestStub;
+			sourceTree = "<group>";
+		};
+		76C035951CA68CBC002241E5 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				76C035961CA68CCC002241E5 /* SwiftViewController.h */,
+				76C035971CA68CCC002241E5 /* SwiftViewController.m */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		76C035991CA68FC7002241E5 /* RAC */ = {
+			isa = PBXGroup;
+			children = (
+				76C0359B1CA68FD6002241E5 /* RACViewController.h */,
+				76C0359C1CA68FD6002241E5 /* RACViewController.m */,
+			);
+			path = RAC;
+			sourceTree = "<group>";
+		};
+		76C0359A1CA68FC7002241E5 /* ReactNative */ = {
+			isa = PBXGroup;
+			children = (
+				76C0359E1CA68FF0002241E5 /* ReactNativeViewController.h */,
+				76C0359F1CA68FF0002241E5 /* ReactNativeViewController.m */,
+			);
+			path = ReactNative;
+			sourceTree = "<group>";
+		};
 		76C479911C8EF4F400EAE07E /* DataStorage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1637,6 +1857,7 @@
 		76C479991C8EF66B00EAE07E /* QuartzCore */ = {
 			isa = PBXGroup;
 			children = (
+				76C0357D1CA68780002241E5 /* DrawLayer */,
 				76C035141CA63C70002241E5 /* AnimationGroup */,
 				76C035151CA63C70002241E5 /* BasicAnimation */,
 				76C035161CA63C70002241E5 /* KeyFrame */,
@@ -2132,24 +2353,33 @@
 				76BD6BDE1CA189A900708977 /* NewfeatureViewController.m in Sources */,
 				761931D21C8C5DF70022A311 /* CC3GLMatrix.m in Sources */,
 				76C0355B1CA6776E002241E5 /* MessageCell.m in Sources */,
+				76C035881CA68943002241E5 /* MVVMViewController.m in Sources */,
+				76C0359D1CA68FD6002241E5 /* RACViewController.m in Sources */,
 				76C035241CA663E5002241E5 /* TransitionViewController.m in Sources */,
 				76213BD61C96BE42001DAA53 /* DeviceInfoViewController.m in Sources */,
 				769718371C9D440E00D0AC63 /* SHCZMainView.m in Sources */,
 				763E4E8E1CA2F25200470FCA /* ZFBTestViewController.m in Sources */,
+				76C035701CA68288002241E5 /* QRCodeViewController.m in Sources */,
 				76C034C11CA40EC7002241E5 /* SPKBannerPagingView.m in Sources */,
 				763E4E991CA3B03F00470FCA /* ZFBTableViewCell.m in Sources */,
 				76C034C61CA411BF002241E5 /* UIViewAdditions.m in Sources */,
 				76213BDE1C97048C001DAA53 /* ThirdShareViewController.m in Sources */,
 				76C479A11C8F248F00EAE07E /* coreData.xcdatamodeld in Sources */,
+				76C0358E1CA68964002241E5 /* RunTimeViewController.m in Sources */,
 				769717E91C992C1B00D0AC63 /* QQMainViewController.m in Sources */,
 				76E9039C1C9F009F003AC33A /* WeiChatViewController.m in Sources */,
+				76C035641CA67FF0002241E5 /* SystemFunctionViewController.m in Sources */,
+				76C0357C1CA68619002241E5 /* XMPPViewController.m in Sources */,
 				76E9038C1C9ED53E003AC33A /* YBTableView.m in Sources */,
 				769718181C9AF62100D0AC63 /* QQContractViewController.m in Sources */,
 				761931D41C8C5DF70022A311 /* CC3Math.m in Sources */,
 				761931BA1C8BD79A0022A311 /* MapSDKDemoViewController.m in Sources */,
 				769717E51C992AC600D0AC63 /* CustomUIViewController.m in Sources */,
+				76C035911CA68973002241E5 /* ThreadViewController.m in Sources */,
 				769718211C9B0DDA00D0AC63 /* PopViewLikeQQView.m in Sources */,
+				76C035691CA681C2002241E5 /* PortalViewController.m in Sources */,
 				76C0355C1CA6776E002241E5 /* MessageFrame.m in Sources */,
+				76C035801CA68792002241E5 /* DrawLayerViewController.m in Sources */,
 				76BD6BD11CA1120E00708977 /* UIBarButtonItem+Extension.m in Sources */,
 				761931A71C8BC8A20022A311 /* MainViewController.m in Sources */,
 				769717E11C986A7B00D0AC63 /* OpenGLMainViewController.m in Sources */,
@@ -2169,16 +2399,20 @@
 				76E903991C9F0089003AC33A /* AliPayViewController.m in Sources */,
 				763FE3641C8D8BFA00CE67FF /* HTTPTestViewController.m in Sources */,
 				76BD6BD21CA1120E00708977 /* UIView+Extension.m in Sources */,
+				76C035741CA683A9002241E5 /* EncryptDecryptViewController.m in Sources */,
 				76C479951C8EF51600EAE07E /* DataStorageViewController.m in Sources */,
 				763E4E951CA2F6E600470FCA /* WD2ViewController.m in Sources */,
 				769717DC1C986A6B00D0AC63 /* OpenGLViewController.m in Sources */,
 				76C0351B1CA63C97002241E5 /* SimpleAnimationViewController.m in Sources */,
 				763E4E9C1CA3B9B200470FCA /* ZFBCollectionViewCell.m in Sources */,
 				763E4DF61CA25E1D00470FCA /* ZFBViewController.m in Sources */,
+				76C035941CA689A7002241E5 /* UnitTestStubMockViewController.m in Sources */,
 				76C0355A1CA6776E002241E5 /* Message.m in Sources */,
 				76C034BF1CA40EC7002241E5 /* SPKBanner.m in Sources */,
+				76C035611CA67FD9002241E5 /* MediaViewController.m in Sources */,
 				76C479A61C8F264100EAE07E /* TestCoreData+CoreDataProperties.m in Sources */,
 				763E4DF91CA25E2900470FCA /* WDViewController.m in Sources */,
+				76C035A01CA68FF0002241E5 /* ReactNativeViewController.m in Sources */,
 				7681A8231C95A04500FC6843 /* ObjectStorageManager.m in Sources */,
 				76C479A71C8F264100EAE07E /* TestCoreData.m in Sources */,
 				76E9038B1C9ED53E003AC33A /* YBNavMenuController.m in Sources */,
@@ -2193,8 +2427,12 @@
 				76C479981C8EF5AF00EAE07E /* JSPatchViewController.m in Sources */,
 				769718381C9D440E00D0AC63 /* SHCZSideTableView.m in Sources */,
 				7681A81E1C958A1B00FC6843 /* User+CoreDataProperties.m in Sources */,
+				76C035781CA68507002241E5 /* CustomControlViewController.m in Sources */,
+				76C0358B1CA68954002241E5 /* RunLoopViewController.m in Sources */,
 				76E903891C9ED53E003AC33A /* NavMenuScrollView.m in Sources */,
 				769717EC1C99792C00D0AC63 /* JSPatchProcessKit.m in Sources */,
+				76C0356C1CA681D2002241E5 /* WebJSViewController.m in Sources */,
+				76C035981CA68CCC002241E5 /* SwiftViewController.m in Sources */,
 				76C0351E1CA655F8002241E5 /* BasicAnimationViewController.m in Sources */,
 				761931D11C8C5DF70022A311 /* CC3Foundation.m in Sources */,
 				7697189E1C9E994900D0AC63 /* QQSettingViewController.m in Sources */,
