@@ -20,6 +20,7 @@
 #import "ThirdPartViewController.h"
 #import "OpenGLMainViewController.h"
 #import "CustomUIViewController.h"
+#import "TouchIDViewController.h"
 
 @interface MainViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -118,6 +119,10 @@
     [_listData addObject:@"经典界面设计"];
     CustomUIViewController *customUIViewController = [[CustomUIViewController alloc] init];
     [_listViewControllers addObject:customUIViewController];
+    // 10.touchID
+    [_listData addObject:@"TouchID"];
+    TouchIDViewController *touchidController = [[TouchIDViewController alloc] init];
+    [_listViewControllers addObject:touchidController];
 }
 
 #pragma mark - UITableViewDelegate & UITableViewDataSource

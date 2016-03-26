@@ -14,6 +14,7 @@ target "iStudyDemo" do
   pod 'libextobjc', '~> 0.4.1'
   pod 'JSPatch', '~> 0.1.5'
   pod 'FMDB', '~> 2.6'
+  pod 'SDWebImage', '~> 3.7.5'
 end
 
 target "iStudyDemoTests" do
