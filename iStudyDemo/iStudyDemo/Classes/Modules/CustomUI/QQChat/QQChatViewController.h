@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface QQChatViewController : UIViewController
+@property (strong, nonatomic) UITableView *tableView;
 
+@property (strong, nonatomic)  UITextField *messageField;
+@property (strong, nonatomic)  UIButton *speakBtn;
+- (void)voiceBtnClick:(UIButton *)sender;
 @end

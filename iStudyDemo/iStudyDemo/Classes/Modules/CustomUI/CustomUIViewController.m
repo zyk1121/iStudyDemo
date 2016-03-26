@@ -158,7 +158,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UIViewController *vc = [self.listViewControllers objectAtIndex:indexPath.row];
     vc.title = [self.listData objectAtIndex:indexPath.row];
-    if (indexPath.row == 0  || indexPath.row == 5) {
+    if (indexPath.row == 0  || indexPath.row == 3 || indexPath.row == 5) {
 //        QQSideBarViewController *sideBarVC = [[QQSideBarViewController alloc] init];
         [self.navigationController presentViewController:vc animated:YES completion:^{
             
