@@ -308,6 +308,8 @@
 		76C035B41CA79061002241E5 /* QRCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035B31CA79061002241E5 /* QRCodeScanViewController.m */; };
 		76C035B81CA79EFD002241E5 /* AddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035B71CA79EFD002241E5 /* AddressBookViewController.m */; };
 		76C035BA1CA7A021002241E5 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C035B91CA7A020002241E5 /* AddressBook.framework */; };
+		76C035BD1CA7E737002241E5 /* NSTimerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035BC1CA7E737002241E5 /* NSTimerTestViewController.m */; };
+		76C035C01CA7ECB8002241E5 /* LDKTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035BF1CA7ECB8002241E5 /* LDKTimer.m */; };
 		76C479881C8ED41600EAE07E /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C479871C8ED41600EAE07E /* MAMapKit.framework */; };
 		76C4798C1C8ED4C700EAE07E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */; };
 		76C4798E1C8ED50600EAE07E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798D1C8ED50600EAE07E /* CoreTelephony.framework */; };
@@ -760,6 +762,10 @@
 		76C035B61CA79EFD002241E5 /* AddressBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookViewController.h; sourceTree = "<group>"; };
 		76C035B71CA79EFD002241E5 /* AddressBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookViewController.m; sourceTree = "<group>"; };
 		76C035B91CA7A020002241E5 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		76C035BB1CA7E737002241E5 /* NSTimerTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTimerTestViewController.h; sourceTree = "<group>"; };
+		76C035BC1CA7E737002241E5 /* NSTimerTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTimerTestViewController.m; sourceTree = "<group>"; };
+		76C035BE1CA7ECB8002241E5 /* LDKTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDKTimer.h; sourceTree = "<group>"; };
+		76C035BF1CA7ECB8002241E5 /* LDKTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDKTimer.m; sourceTree = "<group>"; };
 		76C479871C8ED41600EAE07E /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		76C479891C8ED4AA00EAE07E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -1816,6 +1822,10 @@
 			children = (
 				76C0358F1CA68973002241E5 /* ThreadViewController.h */,
 				76C035901CA68973002241E5 /* ThreadViewController.m */,
+				76C035BB1CA7E737002241E5 /* NSTimerTestViewController.h */,
+				76C035BC1CA7E737002241E5 /* NSTimerTestViewController.m */,
+				76C035BE1CA7ECB8002241E5 /* LDKTimer.h */,
+				76C035BF1CA7ECB8002241E5 /* LDKTimer.m */,
 			);
 			path = Thread;
 			sourceTree = "<group>";
@@ -2413,6 +2423,7 @@
 				763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */,
 				76E903901C9EFB5A003AC33A /* SinaWeiboViewController.m in Sources */,
 				7697189B1C9E466C00D0AC63 /* QQSideBarViewController.m in Sources */,
+				76C035C01CA7ECB8002241E5 /* LDKTimer.m in Sources */,
 				76BD6BD71CA15C0A00708977 /* ZTSearchBar.m in Sources */,
 				7697181E1C9AFCC200D0AC63 /* UIImage+IPLImageKit.m in Sources */,
 				763E4DFF1CA25E4100470FCA /* KBViewController.m in Sources */,
@@ -2438,6 +2449,7 @@
 				76C035641CA67FF0002241E5 /* SystemFunctionViewController.m in Sources */,
 				76C0357C1CA68619002241E5 /* XMPPViewController.m in Sources */,
 				76E9038C1C9ED53E003AC33A /* YBTableView.m in Sources */,
+				76C035BD1CA7E737002241E5 /* NSTimerTestViewController.m in Sources */,
 				769718181C9AF62100D0AC63 /* QQContractViewController.m in Sources */,
 				761931D41C8C5DF70022A311 /* CC3Math.m in Sources */,
 				761931BA1C8BD79A0022A311 /* MapSDKDemoViewController.m in Sources */,
