@@ -298,6 +298,14 @@
 		76C035981CA68CCC002241E5 /* SwiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035971CA68CCC002241E5 /* SwiftViewController.m */; };
 		76C0359D1CA68FD6002241E5 /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C0359C1CA68FD6002241E5 /* RACViewController.m */; };
 		76C035A01CA68FF0002241E5 /* ReactNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C0359F1CA68FF0002241E5 /* ReactNativeViewController.m */; };
+		76C035A21CA77B45002241E5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C035A11CA77B45002241E5 /* AVFoundation.framework */; };
+		76C035A41CA77B56002241E5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C035A31CA77B56002241E5 /* CoreMedia.framework */; };
+		76C035A61CA77B68002241E5 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C035A51CA77B68002241E5 /* CoreVideo.framework */; };
+		76C035A81CA77B79002241E5 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C035A71CA77B79002241E5 /* libiconv.tbd */; };
+		76C035AB1CA78FEA002241E5 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C035A91CA78FEA002241E5 /* line@2x.png */; };
+		76C035AC1CA78FEA002241E5 /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C035AA1CA78FEA002241E5 /* pick_bg@2x.png */; };
+		76C035B11CA79051002241E5 /* QRCodeCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035B01CA79051002241E5 /* QRCodeCreateViewController.m */; };
+		76C035B41CA79061002241E5 /* QRCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035B31CA79061002241E5 /* QRCodeScanViewController.m */; };
 		76C479881C8ED41600EAE07E /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C479871C8ED41600EAE07E /* MAMapKit.framework */; };
 		76C4798C1C8ED4C700EAE07E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */; };
 		76C4798E1C8ED50600EAE07E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798D1C8ED50600EAE07E /* CoreTelephony.framework */; };
@@ -737,6 +745,16 @@
 		76C0359C1CA68FD6002241E5 /* RACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACViewController.m; sourceTree = "<group>"; };
 		76C0359E1CA68FF0002241E5 /* ReactNativeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactNativeViewController.h; sourceTree = "<group>"; };
 		76C0359F1CA68FF0002241E5 /* ReactNativeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactNativeViewController.m; sourceTree = "<group>"; };
+		76C035A11CA77B45002241E5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		76C035A31CA77B56002241E5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		76C035A51CA77B68002241E5 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		76C035A71CA77B79002241E5 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		76C035A91CA78FEA002241E5 /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
+		76C035AA1CA78FEA002241E5 /* pick_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pick_bg@2x.png"; sourceTree = "<group>"; };
+		76C035AF1CA79051002241E5 /* QRCodeCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeCreateViewController.h; sourceTree = "<group>"; };
+		76C035B01CA79051002241E5 /* QRCodeCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeCreateViewController.m; sourceTree = "<group>"; };
+		76C035B21CA79061002241E5 /* QRCodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeScanViewController.h; sourceTree = "<group>"; };
+		76C035B31CA79061002241E5 /* QRCodeScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeScanViewController.m; sourceTree = "<group>"; };
 		76C479871C8ED41600EAE07E /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		76C479891C8ED4AA00EAE07E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -785,6 +803,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C035A81CA77B79002241E5 /* libiconv.tbd in Frameworks */,
+				76C035A61CA77B68002241E5 /* CoreVideo.framework in Frameworks */,
+				76C035A41CA77B56002241E5 /* CoreMedia.framework in Frameworks */,
+				76C035A21CA77B45002241E5 /* AVFoundation.framework in Frameworks */,
 				76213C4E1C970D98001DAA53 /* ImageIO.framework in Frameworks */,
 				76213C4C1C970D14001DAA53 /* Social.framework in Frameworks */,
 				76213C4A1C970CEB001DAA53 /* Accounts.framework in Frameworks */,
@@ -1709,6 +1731,10 @@
 		76C0356D1CA68279002241E5 /* QRCode */ = {
 			isa = PBXGroup;
 			children = (
+				76C035AD1CA79040002241E5 /* QRCodeCreate */,
+				76C035AE1CA79040002241E5 /* QRCodeScan */,
+				76C035A91CA78FEA002241E5 /* line@2x.png */,
+				76C035AA1CA78FEA002241E5 /* pick_bg@2x.png */,
 				76C0356E1CA68288002241E5 /* QRCodeViewController.h */,
 				76C0356F1CA68288002241E5 /* QRCodeViewController.m */,
 			);
@@ -1821,6 +1847,24 @@
 				76C0359F1CA68FF0002241E5 /* ReactNativeViewController.m */,
 			);
 			path = ReactNative;
+			sourceTree = "<group>";
+		};
+		76C035AD1CA79040002241E5 /* QRCodeCreate */ = {
+			isa = PBXGroup;
+			children = (
+				76C035AF1CA79051002241E5 /* QRCodeCreateViewController.h */,
+				76C035B01CA79051002241E5 /* QRCodeCreateViewController.m */,
+			);
+			path = QRCodeCreate;
+			sourceTree = "<group>";
+		};
+		76C035AE1CA79040002241E5 /* QRCodeScan */ = {
+			isa = PBXGroup;
+			children = (
+				76C035B21CA79061002241E5 /* QRCodeScanViewController.h */,
+				76C035B31CA79061002241E5 /* QRCodeScanViewController.m */,
+			);
+			path = QRCodeScan;
 			sourceTree = "<group>";
 		};
 		76C479911C8EF4F400EAE07E /* DataStorage */ = {
@@ -1941,6 +1985,10 @@
 		DF399414AD08488BE365F5E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76C035A71CA77B79002241E5 /* libiconv.tbd */,
+				76C035A51CA77B68002241E5 /* CoreVideo.framework */,
+				76C035A31CA77B56002241E5 /* CoreMedia.framework */,
+				76C035A11CA77B45002241E5 /* AVFoundation.framework */,
 				76213C4D1C970D98001DAA53 /* ImageIO.framework */,
 				76213C4B1C970D14001DAA53 /* Social.framework */,
 				76213C491C970CEB001DAA53 /* Accounts.framework */,
@@ -2087,6 +2135,7 @@
 				763E4E641CA2B7F500470FCA /* 10000008.png in Resources */,
 				769718681C9D466E00D0AC63 /* header.png in Resources */,
 				763E4E711CA2B7F500470FCA /* Home_appfrag_credit.png in Resources */,
+				76C035AB1CA78FEA002241E5 /* line@2x.png in Resources */,
 				7697186E1C9D466E00D0AC63 /* qvip_ps_template_gray@2x.png in Resources */,
 				763E4E101CA2609A00470FCA /* zfb_sel@2x.png in Resources */,
 				76C034EC1CA41258002241E5 /* bg_keyboard_selected@2x.png in Resources */,
@@ -2121,6 +2170,7 @@
 				763E4E681CA2B7F500470FCA /* 20000032@2x.png in Resources */,
 				763E4E0A1CA2609A00470FCA /* kb_sel@2x.png in Resources */,
 				76C0350D1CA43103002241E5 /* 2.jpg in Resources */,
+				76C035AC1CA78FEA002241E5 /* pick_bg@2x.png in Resources */,
 				763E4E091CA2609A00470FCA /* kb@2x.png in Resources */,
 				763E4E751CA2B7F500470FCA /* Home_appfrag_recharge.png in Resources */,
 				763E4E911CA2F61300470FCA /* backImage.jpg in Resources */,
@@ -2381,6 +2431,7 @@
 				76C0355C1CA6776E002241E5 /* MessageFrame.m in Sources */,
 				76C035801CA68792002241E5 /* DrawLayerViewController.m in Sources */,
 				76BD6BD11CA1120E00708977 /* UIBarButtonItem+Extension.m in Sources */,
+				76C035B11CA79051002241E5 /* QRCodeCreateViewController.m in Sources */,
 				761931A71C8BC8A20022A311 /* MainViewController.m in Sources */,
 				769717E11C986A7B00D0AC63 /* OpenGLMainViewController.m in Sources */,
 				76C035211CA65D62002241E5 /* KeyFrameViewController.m in Sources */,
@@ -2405,6 +2456,7 @@
 				769717DC1C986A6B00D0AC63 /* OpenGLViewController.m in Sources */,
 				76C0351B1CA63C97002241E5 /* SimpleAnimationViewController.m in Sources */,
 				763E4E9C1CA3B9B200470FCA /* ZFBCollectionViewCell.m in Sources */,
+				76C035B41CA79061002241E5 /* QRCodeScanViewController.m in Sources */,
 				763E4DF61CA25E1D00470FCA /* ZFBViewController.m in Sources */,
 				76C035941CA689A7002241E5 /* UnitTestStubMockViewController.m in Sources */,
 				76C0355A1CA6776E002241E5 /* Message.m in Sources */,

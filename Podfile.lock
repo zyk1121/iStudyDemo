@@ -83,6 +83,7 @@ PODS:
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
   - Specta (0.2.1)
+  - ZBarSDK (1.3.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.0)
@@ -99,6 +100,7 @@ DEPENDENCIES:
   - RPJSONValidator (~> 0.2.0)
   - SDWebImage (~> 3.7.5)
   - Specta (~> 0.2.1)
+  - ZBarSDK (~> 1.3.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
@@ -115,5 +117,6 @@ SPEC CHECKSUMS:
   RPJSONValidator: a079b234c0f87833b657708adb80531dc45dbe83
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   Specta: 15a276a6343867b426d5ed135d5aa4d04123a573
+  ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
 
 COCOAPODS: 0.38.2

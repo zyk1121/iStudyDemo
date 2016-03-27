@@ -15,6 +15,7 @@ target "iStudyDemo" do
   pod 'JSPatch', '~> 0.1.5'
   pod 'FMDB', '~> 2.6'
   pod 'SDWebImage', '~> 3.7.5'
+  pod 'ZBarSDK', '~> 1.3.1'
 end
 
 target "iStudyDemoTests" do
