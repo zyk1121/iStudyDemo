@@ -306,6 +306,8 @@
 		76C035AC1CA78FEA002241E5 /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C035AA1CA78FEA002241E5 /* pick_bg@2x.png */; };
 		76C035B11CA79051002241E5 /* QRCodeCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035B01CA79051002241E5 /* QRCodeCreateViewController.m */; };
 		76C035B41CA79061002241E5 /* QRCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035B31CA79061002241E5 /* QRCodeScanViewController.m */; };
+		76C035B81CA79EFD002241E5 /* AddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035B71CA79EFD002241E5 /* AddressBookViewController.m */; };
+		76C035BA1CA7A021002241E5 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C035B91CA7A020002241E5 /* AddressBook.framework */; };
 		76C479881C8ED41600EAE07E /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C479871C8ED41600EAE07E /* MAMapKit.framework */; };
 		76C4798C1C8ED4C700EAE07E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */; };
 		76C4798E1C8ED50600EAE07E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798D1C8ED50600EAE07E /* CoreTelephony.framework */; };
@@ -755,6 +757,9 @@
 		76C035B01CA79051002241E5 /* QRCodeCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeCreateViewController.m; sourceTree = "<group>"; };
 		76C035B21CA79061002241E5 /* QRCodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeScanViewController.h; sourceTree = "<group>"; };
 		76C035B31CA79061002241E5 /* QRCodeScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeScanViewController.m; sourceTree = "<group>"; };
+		76C035B61CA79EFD002241E5 /* AddressBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookViewController.h; sourceTree = "<group>"; };
+		76C035B71CA79EFD002241E5 /* AddressBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookViewController.m; sourceTree = "<group>"; };
+		76C035B91CA7A020002241E5 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		76C479871C8ED41600EAE07E /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		76C479891C8ED4AA00EAE07E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -803,6 +808,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C035BA1CA7A021002241E5 /* AddressBook.framework in Frameworks */,
 				76C035A81CA77B79002241E5 /* libiconv.tbd in Frameworks */,
 				76C035A61CA77B68002241E5 /* CoreVideo.framework in Frameworks */,
 				76C035A41CA77B56002241E5 /* CoreMedia.framework in Frameworks */,
@@ -1704,6 +1710,7 @@
 		76C0355E1CA67FC0002241E5 /* System */ = {
 			isa = PBXGroup;
 			children = (
+				76C035B51CA79EEC002241E5 /* AddressBook */,
 				76C035621CA67FF0002241E5 /* SystemFunctionViewController.h */,
 				76C035631CA67FF0002241E5 /* SystemFunctionViewController.m */,
 			);
@@ -1867,6 +1874,15 @@
 			path = QRCodeScan;
 			sourceTree = "<group>";
 		};
+		76C035B51CA79EEC002241E5 /* AddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				76C035B61CA79EFD002241E5 /* AddressBookViewController.h */,
+				76C035B71CA79EFD002241E5 /* AddressBookViewController.m */,
+			);
+			path = AddressBook;
+			sourceTree = "<group>";
+		};
 		76C479911C8EF4F400EAE07E /* DataStorage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1985,6 +2001,7 @@
 		DF399414AD08488BE365F5E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76C035B91CA7A020002241E5 /* AddressBook.framework */,
 				76C035A71CA77B79002241E5 /* libiconv.tbd */,
 				76C035A51CA77B68002241E5 /* CoreVideo.framework */,
 				76C035A31CA77B56002241E5 /* CoreMedia.framework */,
@@ -2437,6 +2454,7 @@
 				76C035211CA65D62002241E5 /* KeyFrameViewController.m in Sources */,
 				76C0352B1CA6713C002241E5 /* TouchIDManager.m in Sources */,
 				76C035131CA44337002241E5 /* UIScrollRollView.m in Sources */,
+				76C035B81CA79EFD002241E5 /* AddressBookViewController.m in Sources */,
 				761931AB1C8BCC3F0022A311 /* main.mm in Sources */,
 				76213BDA1C97029A001DAA53 /* ThirdPartViewController.m in Sources */,
 				76C034BE1CA40EC7002241E5 /* SPKADViewController.m in Sources */,
