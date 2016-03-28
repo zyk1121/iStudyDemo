@@ -310,6 +310,7 @@
 		76C035BA1CA7A021002241E5 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C035B91CA7A020002241E5 /* AddressBook.framework */; };
 		76C035BD1CA7E737002241E5 /* NSTimerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035BC1CA7E737002241E5 /* NSTimerTestViewController.m */; };
 		76C035C01CA7ECB8002241E5 /* LDKTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035BF1CA7ECB8002241E5 /* LDKTimer.m */; };
+		76C035CD1CA9795A002241E5 /* XMPPTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035CC1CA9795A002241E5 /* XMPPTestViewController.m */; };
 		76C479881C8ED41600EAE07E /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C479871C8ED41600EAE07E /* MAMapKit.framework */; };
 		76C4798C1C8ED4C700EAE07E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */; };
 		76C4798E1C8ED50600EAE07E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798D1C8ED50600EAE07E /* CoreTelephony.framework */; };
@@ -766,6 +767,8 @@
 		76C035BC1CA7E737002241E5 /* NSTimerTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTimerTestViewController.m; sourceTree = "<group>"; };
 		76C035BE1CA7ECB8002241E5 /* LDKTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDKTimer.h; sourceTree = "<group>"; };
 		76C035BF1CA7ECB8002241E5 /* LDKTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDKTimer.m; sourceTree = "<group>"; };
+		76C035CB1CA9795A002241E5 /* XMPPTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPTestViewController.h; sourceTree = "<group>"; };
+		76C035CC1CA9795A002241E5 /* XMPPTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPTestViewController.m; sourceTree = "<group>"; };
 		76C479871C8ED41600EAE07E /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		76C479891C8ED4AA00EAE07E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -1777,6 +1780,7 @@
 			children = (
 				76C0357A1CA68619002241E5 /* XMPPViewController.h */,
 				76C0357B1CA68619002241E5 /* XMPPViewController.m */,
+				76C035CA1CA97944002241E5 /* XMPPTest */,
 			);
 			path = XMPP;
 			sourceTree = "<group>";
@@ -1891,6 +1895,15 @@
 				76C035B71CA79EFD002241E5 /* AddressBookViewController.m */,
 			);
 			path = AddressBook;
+			sourceTree = "<group>";
+		};
+		76C035CA1CA97944002241E5 /* XMPPTest */ = {
+			isa = PBXGroup;
+			children = (
+				76C035CB1CA9795A002241E5 /* XMPPTestViewController.h */,
+				76C035CC1CA9795A002241E5 /* XMPPTestViewController.m */,
+			);
+			path = XMPPTest;
 			sourceTree = "<group>";
 		};
 		76C479911C8EF4F400EAE07E /* DataStorage */ = {
@@ -2423,6 +2436,7 @@
 				763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */,
 				76E903901C9EFB5A003AC33A /* SinaWeiboViewController.m in Sources */,
 				7697189B1C9E466C00D0AC63 /* QQSideBarViewController.m in Sources */,
+				76C035CD1CA9795A002241E5 /* XMPPTestViewController.m in Sources */,
 				76C035C01CA7ECB8002241E5 /* LDKTimer.m in Sources */,
 				76BD6BD71CA15C0A00708977 /* ZTSearchBar.m in Sources */,
 				7697181E1C9AFCC200D0AC63 /* UIImage+IPLImageKit.m in Sources */,
