@@ -35,6 +35,17 @@
     tabBar.delegate = self;
     // KVC：如果要修系统的某些属性，但被设为readOnly，就是用KVC，即setValue：forKey：。
     [self setValue:tabBar forKey:@"tabBar"];
+
+    // 去除tab bar顶部黑线,完全透明了
+    [self.tabBar setBackgroundImage:[[UIImage alloc] init]];
+    [self.tabBar setShadowImage:[[UIImage alloc] init]];
+    
+    // tabbar 添加背景颜色
+    UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 49)];
+    backView.backgroundColor = [UIColor grayColor];
+    [self.tabBar insertSubview:backView atIndex:0];
+    self.tabBar.opaque = YES;
+//    [backView release];
 }
 
 /**
@@ -49,7 +60,7 @@
 {
     // 设置子控制器的文字(可以设置tabBar和navigationBar的文字)
     childVc.title = title;
-    childVc.view.backgroundColor = [UIColor whiteColor];
+//    childVc.view.backgroundColor = [UIColor whiteColor];
     
     // 设置子控制器的tabBarItem图片
     childVc.tabBarItem.image = [UIImage imageNamed:image];

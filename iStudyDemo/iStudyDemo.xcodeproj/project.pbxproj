@@ -311,6 +311,12 @@
 		76C035BD1CA7E737002241E5 /* NSTimerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035BC1CA7E737002241E5 /* NSTimerTestViewController.m */; };
 		76C035C01CA7ECB8002241E5 /* LDKTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035BF1CA7ECB8002241E5 /* LDKTimer.m */; };
 		76C035CD1CA9795A002241E5 /* XMPPTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035CC1CA9795A002241E5 /* XMPPTestViewController.m */; };
+		76C035D61CAA9969002241E5 /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035D51CAA9969002241E5 /* AlbumViewController.m */; };
+		76C035D91CAA997A002241E5 /* AudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035D81CAA997A002241E5 /* AudioViewController.m */; };
+		76C035DC1CAA998C002241E5 /* CustomPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035DB1CAA998C002241E5 /* CustomPhotoViewController.m */; };
+		76C035DF1CAA999D002241E5 /* CustomPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035DE1CAA999D002241E5 /* CustomPlayerViewController.m */; };
+		76C035E21CAA99AE002241E5 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035E11CAA99AE002241E5 /* PhotoViewController.m */; };
+		76C035E51CAA99BE002241E5 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035E41CAA99BE002241E5 /* VideoViewController.m */; };
 		76C479881C8ED41600EAE07E /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C479871C8ED41600EAE07E /* MAMapKit.framework */; };
 		76C4798C1C8ED4C700EAE07E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */; };
 		76C4798E1C8ED50600EAE07E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798D1C8ED50600EAE07E /* CoreTelephony.framework */; };
@@ -769,6 +775,18 @@
 		76C035BF1CA7ECB8002241E5 /* LDKTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDKTimer.m; sourceTree = "<group>"; };
 		76C035CB1CA9795A002241E5 /* XMPPTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPTestViewController.h; sourceTree = "<group>"; };
 		76C035CC1CA9795A002241E5 /* XMPPTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPTestViewController.m; sourceTree = "<group>"; };
+		76C035D41CAA9969002241E5 /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
+		76C035D51CAA9969002241E5 /* AlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
+		76C035D71CAA997A002241E5 /* AudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioViewController.h; sourceTree = "<group>"; };
+		76C035D81CAA997A002241E5 /* AudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioViewController.m; sourceTree = "<group>"; };
+		76C035DA1CAA998C002241E5 /* CustomPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPhotoViewController.h; sourceTree = "<group>"; };
+		76C035DB1CAA998C002241E5 /* CustomPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPhotoViewController.m; sourceTree = "<group>"; };
+		76C035DD1CAA999D002241E5 /* CustomPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPlayerViewController.h; sourceTree = "<group>"; };
+		76C035DE1CAA999D002241E5 /* CustomPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPlayerViewController.m; sourceTree = "<group>"; };
+		76C035E01CAA99AE002241E5 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		76C035E11CAA99AE002241E5 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		76C035E31CAA99BE002241E5 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		76C035E41CAA99BE002241E5 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		76C479871C8ED41600EAE07E /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		76C479891C8ED4AA00EAE07E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -1710,6 +1728,12 @@
 		76C0355D1CA67FC0002241E5 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				76C035CE1CAA53F1002241E5 /* Album */,
+				76C035CF1CAA53F1002241E5 /* Audio */,
+				76C035D01CAA53F1002241E5 /* CustomPhoto */,
+				76C035D11CAA53F1002241E5 /* CustomPlayer */,
+				76C035D21CAA53F1002241E5 /* Photo */,
+				76C035D31CAA53F1002241E5 /* Video */,
 				76C0355F1CA67FD9002241E5 /* MediaViewController.h */,
 				76C035601CA67FD9002241E5 /* MediaViewController.m */,
 			);
@@ -1904,6 +1928,60 @@
 				76C035CC1CA9795A002241E5 /* XMPPTestViewController.m */,
 			);
 			path = XMPPTest;
+			sourceTree = "<group>";
+		};
+		76C035CE1CAA53F1002241E5 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				76C035D41CAA9969002241E5 /* AlbumViewController.h */,
+				76C035D51CAA9969002241E5 /* AlbumViewController.m */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		76C035CF1CAA53F1002241E5 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				76C035D71CAA997A002241E5 /* AudioViewController.h */,
+				76C035D81CAA997A002241E5 /* AudioViewController.m */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		76C035D01CAA53F1002241E5 /* CustomPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				76C035DA1CAA998C002241E5 /* CustomPhotoViewController.h */,
+				76C035DB1CAA998C002241E5 /* CustomPhotoViewController.m */,
+			);
+			path = CustomPhoto;
+			sourceTree = "<group>";
+		};
+		76C035D11CAA53F1002241E5 /* CustomPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				76C035DD1CAA999D002241E5 /* CustomPlayerViewController.h */,
+				76C035DE1CAA999D002241E5 /* CustomPlayerViewController.m */,
+			);
+			path = CustomPlayer;
+			sourceTree = "<group>";
+		};
+		76C035D21CAA53F1002241E5 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				76C035E01CAA99AE002241E5 /* PhotoViewController.h */,
+				76C035E11CAA99AE002241E5 /* PhotoViewController.m */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		76C035D31CAA53F1002241E5 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				76C035E31CAA99BE002241E5 /* VideoViewController.h */,
+				76C035E41CAA99BE002241E5 /* VideoViewController.m */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 		76C479911C8EF4F400EAE07E /* DataStorage */ = {
@@ -2436,11 +2514,13 @@
 				763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */,
 				76E903901C9EFB5A003AC33A /* SinaWeiboViewController.m in Sources */,
 				7697189B1C9E466C00D0AC63 /* QQSideBarViewController.m in Sources */,
+				76C035E21CAA99AE002241E5 /* PhotoViewController.m in Sources */,
 				76C035CD1CA9795A002241E5 /* XMPPTestViewController.m in Sources */,
 				76C035C01CA7ECB8002241E5 /* LDKTimer.m in Sources */,
 				76BD6BD71CA15C0A00708977 /* ZTSearchBar.m in Sources */,
 				7697181E1C9AFCC200D0AC63 /* UIImage+IPLImageKit.m in Sources */,
 				763E4DFF1CA25E4100470FCA /* KBViewController.m in Sources */,
+				76C035D91CAA997A002241E5 /* AudioViewController.m in Sources */,
 				76BD6BCB1CA1118900708977 /* ZTTabBar.m in Sources */,
 				76BD6BDE1CA189A900708977 /* NewfeatureViewController.m in Sources */,
 				761931D21C8C5DF70022A311 /* CC3GLMatrix.m in Sources */,
@@ -2451,6 +2531,7 @@
 				76213BD61C96BE42001DAA53 /* DeviceInfoViewController.m in Sources */,
 				769718371C9D440E00D0AC63 /* SHCZMainView.m in Sources */,
 				763E4E8E1CA2F25200470FCA /* ZFBTestViewController.m in Sources */,
+				76C035DF1CAA999D002241E5 /* CustomPlayerViewController.m in Sources */,
 				76C035701CA68288002241E5 /* QRCodeViewController.m in Sources */,
 				76C034C11CA40EC7002241E5 /* SPKBannerPagingView.m in Sources */,
 				763E4E991CA3B03F00470FCA /* ZFBTableViewCell.m in Sources */,
@@ -2512,9 +2593,11 @@
 				7681A8231C95A04500FC6843 /* ObjectStorageManager.m in Sources */,
 				76C479A71C8F264100EAE07E /* TestCoreData.m in Sources */,
 				76E9038B1C9ED53E003AC33A /* YBNavMenuController.m in Sources */,
+				76C035DC1CAA998C002241E5 /* CustomPhotoViewController.m in Sources */,
 				769717DB1C986A6B00D0AC63 /* OpenGLTestView.m in Sources */,
 				76C035281CA6709F002241E5 /* TouchIDViewController.m in Sources */,
 				769717F31C9A73E000D0AC63 /* UIView+SHCZExt.m in Sources */,
+				76C035E51CAA99BE002241E5 /* VideoViewController.m in Sources */,
 				763FE38D1C8DCB6100CE67FF /* LEDDomainPredicate.m in Sources */,
 				7681A80D1C9588ED00FC6843 /* User.xcdatamodeld in Sources */,
 				76C034C01CA40EC7002241E5 /* SPKBannerPageControl.m in Sources */,
@@ -2523,6 +2606,7 @@
 				76C479981C8EF5AF00EAE07E /* JSPatchViewController.m in Sources */,
 				769718381C9D440E00D0AC63 /* SHCZSideTableView.m in Sources */,
 				7681A81E1C958A1B00FC6843 /* User+CoreDataProperties.m in Sources */,
+				76C035D61CAA9969002241E5 /* AlbumViewController.m in Sources */,
 				76C035781CA68507002241E5 /* CustomControlViewController.m in Sources */,
 				76C0358B1CA68954002241E5 /* RunLoopViewController.m in Sources */,
 				76E903891C9ED53E003AC33A /* NavMenuScrollView.m in Sources */,
