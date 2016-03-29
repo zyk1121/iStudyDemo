@@ -11,6 +11,8 @@
 #import "masonry.h"
 #import "UIKitMacros.h"
 #import "ThirdShareViewController.h"
+#import "QRCodeViewController.h"
+#import "XMPPViewController.h"
 
 @interface ThirdPartViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -65,6 +67,14 @@
     [_listData addObject:@"第三方分享&登录"];
     ThirdShareViewController *thirdShareViewController = [[ThirdShareViewController alloc] init];
     [_listViewControllers addObject:thirdShareViewController];
+    // 2.QRCode
+    [_listData addObject:@"二维码QRCode"];
+    QRCodeViewController *qrcodeViewController = [[QRCodeViewController alloc] init];
+    [_listViewControllers addObject:qrcodeViewController];
+    // 3.XMPP
+    [_listData addObject:@"XMPP"];
+    XMPPViewController *xmppViewController = [[XMPPViewController alloc] init];
+    [_listViewControllers addObject:xmppViewController];
 }
 
 
@@ -108,7 +118,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 40;
+    return 60;
 }
 
 @end
