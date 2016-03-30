@@ -317,6 +317,7 @@
 		76C035DF1CAA999D002241E5 /* CustomPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035DE1CAA999D002241E5 /* CustomPlayerViewController.m */; };
 		76C035E21CAA99AE002241E5 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035E11CAA99AE002241E5 /* PhotoViewController.m */; };
 		76C035E51CAA99BE002241E5 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035E41CAA99BE002241E5 /* VideoViewController.m */; };
+		76C035E81CAAD54A002241E5 /* CustomTakePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035E71CAAD54A002241E5 /* CustomTakePhotoViewController.m */; };
 		76C479881C8ED41600EAE07E /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C479871C8ED41600EAE07E /* MAMapKit.framework */; };
 		76C4798C1C8ED4C700EAE07E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */; };
 		76C4798E1C8ED50600EAE07E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798D1C8ED50600EAE07E /* CoreTelephony.framework */; };
@@ -787,6 +788,8 @@
 		76C035E11CAA99AE002241E5 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		76C035E31CAA99BE002241E5 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		76C035E41CAA99BE002241E5 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		76C035E61CAAD54A002241E5 /* CustomTakePhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTakePhotoViewController.h; sourceTree = "<group>"; };
+		76C035E71CAAD54A002241E5 /* CustomTakePhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTakePhotoViewController.m; sourceTree = "<group>"; };
 		76C479871C8ED41600EAE07E /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		76C479891C8ED4AA00EAE07E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -1953,6 +1956,8 @@
 			children = (
 				76C035DA1CAA998C002241E5 /* CustomPhotoViewController.h */,
 				76C035DB1CAA998C002241E5 /* CustomPhotoViewController.m */,
+				76C035E61CAAD54A002241E5 /* CustomTakePhotoViewController.h */,
+				76C035E71CAAD54A002241E5 /* CustomTakePhotoViewController.m */,
 			);
 			path = CustomPhoto;
 			sourceTree = "<group>";
@@ -2540,6 +2545,7 @@
 				76C479A11C8F248F00EAE07E /* coreData.xcdatamodeld in Sources */,
 				76C0358E1CA68964002241E5 /* RunTimeViewController.m in Sources */,
 				769717E91C992C1B00D0AC63 /* QQMainViewController.m in Sources */,
+				76C035E81CAAD54A002241E5 /* CustomTakePhotoViewController.m in Sources */,
 				76E9039C1C9F009F003AC33A /* WeiChatViewController.m in Sources */,
 				76C035641CA67FF0002241E5 /* SystemFunctionViewController.m in Sources */,
 				76C0357C1CA68619002241E5 /* XMPPViewController.m in Sources */,

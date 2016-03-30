@@ -16,6 +16,7 @@
 #import "CustomPlayerViewController.h"
 #import "VideoViewController.h"
 #import "PhotoViewController.h"
+#import "CustomTakePhotoViewController.h"
 
 
 @interface MediaViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -79,6 +80,10 @@
     [_listData addObject:@"自定义相机"];
     CustomPhotoViewController *customPhotoViewController = [[CustomPhotoViewController alloc] init];
     [_listViewControllers addObject:customPhotoViewController];
+    // 3.AVFoundation自定义相机
+    [_listData addObject:@"AVFoundation自定义相机(保存相册)"];
+    CustomTakePhotoViewController *customtakePhotoViewController = [[CustomTakePhotoViewController alloc] init];
+    [_listViewControllers addObject:customtakePhotoViewController];
     // 4.音频
     [_listData addObject:@"音频"];
     AudioViewController *audioViewController = [[AudioViewController alloc] init];
