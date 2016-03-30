@@ -318,6 +318,14 @@
 		76C035E21CAA99AE002241E5 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035E11CAA99AE002241E5 /* PhotoViewController.m */; };
 		76C035E51CAA99BE002241E5 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035E41CAA99BE002241E5 /* VideoViewController.m */; };
 		76C035E81CAAD54A002241E5 /* CustomTakePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C035E71CAAD54A002241E5 /* CustomTakePhotoViewController.m */; };
+		76C035F41CAB940B002241E5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C035F31CAB940B002241E5 /* MediaPlayer.framework */; };
+		76C035FD1CAB98F5002241E5 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 76C035F61CAB98F5002241E5 /* 1.jpeg */; };
+		76C035FE1CAB98F5002241E5 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C035F71CAB98F5002241E5 /* down.png */; };
+		76C035FF1CAB98F5002241E5 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C035F81CAB98F5002241E5 /* pause.png */; };
+		76C036001CAB98F5002241E5 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C035F91CAB98F5002241E5 /* play.png */; };
+		76C036011CAB98F5002241E5 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C035FA1CAB98F5002241E5 /* up.png */; };
+		76C036021CAB98F5002241E5 /* 情非得已.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 76C035FB1CAB98F5002241E5 /* 情非得已.lrc */; };
+		76C036031CAB98F5002241E5 /* 情非得已.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76C035FC1CAB98F5002241E5 /* 情非得已.mp3 */; };
 		76C479881C8ED41600EAE07E /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C479871C8ED41600EAE07E /* MAMapKit.framework */; };
 		76C4798C1C8ED4C700EAE07E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */; };
 		76C4798E1C8ED50600EAE07E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C4798D1C8ED50600EAE07E /* CoreTelephony.framework */; };
@@ -338,6 +346,7 @@
 		76E903941C9EFC2B003AC33A /* QQChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903931C9EFC2B003AC33A /* QQChatViewController.m */; };
 		76E903991C9F0089003AC33A /* AliPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903981C9F0089003AC33A /* AliPayViewController.m */; };
 		76E9039C1C9F009F003AC33A /* WeiChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9039B1C9F009F003AC33A /* WeiChatViewController.m */; };
+		76E916461CABE8D500C8C63A /* ScreenShotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E916451CABE8D500C8C63A /* ScreenShotViewController.m */; };
 		BA0CE7C3F0C3D5D55BE25FD3 /* libPods-iStudyDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E46310862E13CE523DA12E07 /* libPods-iStudyDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -790,6 +799,14 @@
 		76C035E41CAA99BE002241E5 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		76C035E61CAAD54A002241E5 /* CustomTakePhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTakePhotoViewController.h; sourceTree = "<group>"; };
 		76C035E71CAAD54A002241E5 /* CustomTakePhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTakePhotoViewController.m; sourceTree = "<group>"; };
+		76C035F31CAB940B002241E5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		76C035F61CAB98F5002241E5 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
+		76C035F71CAB98F5002241E5 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		76C035F81CAB98F5002241E5 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		76C035F91CAB98F5002241E5 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		76C035FA1CAB98F5002241E5 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
+		76C035FB1CAB98F5002241E5 /* 情非得已.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "情非得已.lrc"; sourceTree = "<group>"; };
+		76C035FC1CAB98F5002241E5 /* 情非得已.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "情非得已.mp3"; sourceTree = "<group>"; };
 		76C479871C8ED41600EAE07E /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		76C479891C8ED4AA00EAE07E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		76C4798B1C8ED4C700EAE07E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -826,6 +843,8 @@
 		76E903981C9F0089003AC33A /* AliPayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliPayViewController.m; sourceTree = "<group>"; };
 		76E9039A1C9F009F003AC33A /* WeiChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiChatViewController.h; sourceTree = "<group>"; };
 		76E9039B1C9F009F003AC33A /* WeiChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiChatViewController.m; sourceTree = "<group>"; };
+		76E916441CABE8D500C8C63A /* ScreenShotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenShotViewController.h; sourceTree = "<group>"; };
+		76E916451CABE8D500C8C63A /* ScreenShotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenShotViewController.m; sourceTree = "<group>"; };
 		7FCB39AC830876F184EF9700 /* libPods-iStudyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iStudyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A143A5F8268C343472EB18 /* Pods-iStudyDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemoTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemoTests/Pods-iStudyDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCBEED3EEE298D40EA18BCD8 /* Pods-iStudyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemo/Pods-iStudyDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -838,12 +857,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C035F41CAB940B002241E5 /* MediaPlayer.framework in Frameworks */,
+				76C035A41CA77B56002241E5 /* CoreMedia.framework in Frameworks */,
+				76C035A21CA77B45002241E5 /* AVFoundation.framework in Frameworks */,
 				76213C361C970C84001DAA53 /* MessageUI.framework in Frameworks */,
 				76C035BA1CA7A021002241E5 /* AddressBook.framework in Frameworks */,
 				76C035A81CA77B79002241E5 /* libiconv.tbd in Frameworks */,
 				76C035A61CA77B68002241E5 /* CoreVideo.framework in Frameworks */,
-				76C035A41CA77B56002241E5 /* CoreMedia.framework in Frameworks */,
-				76C035A21CA77B45002241E5 /* AVFoundation.framework in Frameworks */,
 				76213C4E1C970D98001DAA53 /* ImageIO.framework in Frameworks */,
 				76213C4C1C970D14001DAA53 /* Social.framework in Frameworks */,
 				76213C4A1C970CEB001DAA53 /* Accounts.framework in Frameworks */,
@@ -1731,6 +1751,7 @@
 		76C0355D1CA67FC0002241E5 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				76E916431CABE8C100C8C63A /* ScreenShot */,
 				76C035CE1CAA53F1002241E5 /* Album */,
 				76C035CF1CAA53F1002241E5 /* Audio */,
 				76C035D01CAA53F1002241E5 /* CustomPhoto */,
@@ -1945,6 +1966,7 @@
 		76C035CF1CAA53F1002241E5 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				76C035F51CAB98F5002241E5 /* mp3 */,
 				76C035D71CAA997A002241E5 /* AudioViewController.h */,
 				76C035D81CAA997A002241E5 /* AudioViewController.m */,
 			);
@@ -1987,6 +2009,20 @@
 				76C035E41CAA99BE002241E5 /* VideoViewController.m */,
 			);
 			path = Video;
+			sourceTree = "<group>";
+		};
+		76C035F51CAB98F5002241E5 /* mp3 */ = {
+			isa = PBXGroup;
+			children = (
+				76C035F61CAB98F5002241E5 /* 1.jpeg */,
+				76C035F71CAB98F5002241E5 /* down.png */,
+				76C035F81CAB98F5002241E5 /* pause.png */,
+				76C035F91CAB98F5002241E5 /* play.png */,
+				76C035FA1CAB98F5002241E5 /* up.png */,
+				76C035FB1CAB98F5002241E5 /* 情非得已.lrc */,
+				76C035FC1CAB98F5002241E5 /* 情非得已.mp3 */,
+			);
+			path = mp3;
 			sourceTree = "<group>";
 		};
 		76C479911C8EF4F400EAE07E /* DataStorage */ = {
@@ -2104,9 +2140,20 @@
 			path = WeiChat;
 			sourceTree = "<group>";
 		};
+		76E916431CABE8C100C8C63A /* ScreenShot */ = {
+			isa = PBXGroup;
+			children = (
+				76E916441CABE8D500C8C63A /* ScreenShotViewController.h */,
+				76E916451CABE8D500C8C63A /* ScreenShotViewController.m */,
+			);
+			name = ScreenShot;
+			path = Album/ScreenShot;
+			sourceTree = "<group>";
+		};
 		DF399414AD08488BE365F5E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76C035F31CAB940B002241E5 /* MediaPlayer.framework */,
 				76C035B91CA7A020002241E5 /* AddressBook.framework */,
 				76C035A71CA77B79002241E5 /* libiconv.tbd */,
 				76C035A51CA77B68002241E5 /* CoreVideo.framework */,
@@ -2252,6 +2299,7 @@
 				76C035001CA41258002241E5 /* icon_paypassword_background@2x.png in Resources */,
 				76213C131C970B0D001DAA53 /* ShareSDKLocalizable.strings in Resources */,
 				769718821C9D466E00D0AC63 /* sidebar_setting@2x.png in Resources */,
+				76C036031CAB98F5002241E5 /* 情非得已.mp3 in Resources */,
 				763E4E6D1CA2B7F500470FCA /* 2013112800002214@2x.png in Resources */,
 				763E4E861CA2B7F500470FCA /* USE_MOBILETRANSFER.png in Resources */,
 				763E4E7E1CA2B7F500470FCA /* Home_checkingRing@2x.png in Resources */,
@@ -2263,6 +2311,7 @@
 				763E4E101CA2609A00470FCA /* zfb_sel@2x.png in Resources */,
 				76C034EC1CA41258002241E5 /* bg_keyboard_selected@2x.png in Resources */,
 				763E4E7F1CA2B7F500470FCA /* Home_refresh_bg.jpg in Resources */,
+				76C036001CAB98F5002241E5 /* play.png in Resources */,
 				769718721C9D466E00D0AC63 /* sidebar_ QRcode_normal@2x.png in Resources */,
 				76C035431CA675F0002241E5 /* chat_bottom_keyboard_press.png in Resources */,
 				76C479901C8ED8C800EAE07E /* AMap.bundle in Resources */,
@@ -2333,6 +2382,7 @@
 				763E4E721CA2B7F500470FCA /* Home_appfrag_life.png in Resources */,
 				7697187A1C9D466E00D0AC63 /* sidebar_grey@2x.png in Resources */,
 				763E4E661CA2B7F500470FCA /* 10000011.png in Resources */,
+				76C035FD1CAB98F5002241E5 /* 1.jpeg in Resources */,
 				763E4E771CA2B7F500470FCA /* ap_home_top_icon_pay_new@2x.png in Resources */,
 				769718871C9D466E00D0AC63 /* skin_tab_icon_conversation_normal.png in Resources */,
 				7697188B1C9D466E00D0AC63 /* tab_buddy_nor@3x.png in Resources */,
@@ -2342,6 +2392,7 @@
 				769718751C9D466E00D0AC63 /* sidebar_decoration@3x.png in Resources */,
 				763E4E0B1CA2609A00470FCA /* py@2x.png in Resources */,
 				763E4E831CA2B7F500470FCA /* USE_CARDTRANSFER.png in Resources */,
+				76C036011CAB98F5002241E5 /* up.png in Resources */,
 				76213C461C970C9F001DAA53 /* WeiboSDK.bundle in Resources */,
 				763E4E1C1CA2B71800470FCA /* bg_barcode_middleseparateline@2x.png in Resources */,
 				76C034F21CA41258002241E5 /* btn_segmentedcontrol_left_normal@2x.png in Resources */,
@@ -2363,6 +2414,7 @@
 				763E4E731CA2B7F500470FCA /* Home_appfrag_phone.png in Resources */,
 				763E4E5D1CA2B7F500470FCA /* 09999998.png in Resources */,
 				763E4E0E1CA2609A00470FCA /* wd_sel@2x.png in Resources */,
+				76C035FE1CAB98F5002241E5 /* down.png in Resources */,
 				763E4E8A1CA2B7F500470FCA /* USE_WATER.png in Resources */,
 				763E4E8B1CA2B7F500470FCA /* USE_WIRE.png in Resources */,
 				769718661C9D466E00D0AC63 /* hand.png in Resources */,
@@ -2376,6 +2428,7 @@
 				7697188E1C9D466E00D0AC63 /* user.png in Resources */,
 				769718671C9D466E00D0AC63 /* hcw.png in Resources */,
 				763E4E741CA2B7F500470FCA /* Home_appfrag_place.png in Resources */,
+				76C036021CAB98F5002241E5 /* 情非得已.lrc in Resources */,
 				76213C151C970B0D001DAA53 /* Resource.bundle in Resources */,
 				769718901C9D4A1600D0AC63 /* sidebar_bg.jpg in Resources */,
 				769718801C9D466E00D0AC63 /* sidebar_purse@3x.png in Resources */,
@@ -2410,6 +2463,7 @@
 				763E4E251CA2B71800470FCA /* icon_paymentselected_selectedbutton@2x.png in Resources */,
 				7697186B1C9D466E00D0AC63 /* kov.png in Resources */,
 				769718851C9D466E00D0AC63 /* skin_tab_icon_contact_normal.png in Resources */,
+				76C035FF1CAB98F5002241E5 /* pause.png in Resources */,
 				76C035451CA675F0002241E5 /* chat_bottom_smile_press.png in Resources */,
 				7697187F1C9D466E00D0AC63 /* sidebar_nightmode_on@3x.png in Resources */,
 				7697186A1C9D466E00D0AC63 /* kou.png in Resources */,
@@ -2514,6 +2568,7 @@
 				763FE3871C8DC9AB00CE67FF /* LEDDomainObject.m in Sources */,
 				76E903941C9EFC2B003AC33A /* QQChatViewController.m in Sources */,
 				76E9038A1C9ED53E003AC33A /* UIView+Extension.m in Sources */,
+				76E916461CABE8D500C8C63A /* ScreenShotViewController.m in Sources */,
 				761931A51C8BC8A20022A311 /* AppDelegate.m in Sources */,
 				769718931C9D50D900D0AC63 /* QQTabbarViewController.m in Sources */,
 				763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */,
@@ -2784,7 +2839,7 @@
 					"$(PROJECT_DIR)/iStudyDemo/Classes/Modules/ThirdPart/ThirdShare/ShareSDK/Extend/SinaWeiboSDK",
 					"$(PROJECT_DIR)/iStudyDemo/Classes/Modules/ThirdPart/ThirdShare/ShareSDK/Extend/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kdtm.iStudyDemo1ax321;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kdtm.iStudyDemo1ax3213r;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -2815,7 +2870,7 @@
 					"$(PROJECT_DIR)/iStudyDemo/Classes/Modules/ThirdPart/ThirdShare/ShareSDK/Extend/SinaWeiboSDK",
 					"$(PROJECT_DIR)/iStudyDemo/Classes/Modules/ThirdPart/ThirdShare/ShareSDK/Extend/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kdtm.iStudyDemo1ax321;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kdtm.iStudyDemo1ax3213r;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
