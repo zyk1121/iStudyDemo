@@ -347,6 +347,8 @@
 		76E903991C9F0089003AC33A /* AliPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903981C9F0089003AC33A /* AliPayViewController.m */; };
 		76E9039C1C9F009F003AC33A /* WeiChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9039B1C9F009F003AC33A /* WeiChatViewController.m */; };
 		76E916461CABE8D500C8C63A /* ScreenShotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E916451CABE8D500C8C63A /* ScreenShotViewController.m */; };
+		76E916491CABFA9E00C8C63A /* LEDPortal.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E916481CABFA9E00C8C63A /* LEDPortal.m */; };
+		76E9164C1CAC219600C8C63A /* TestPortalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9164B1CAC219600C8C63A /* TestPortalViewController.m */; };
 		BA0CE7C3F0C3D5D55BE25FD3 /* libPods-iStudyDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E46310862E13CE523DA12E07 /* libPods-iStudyDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -845,6 +847,10 @@
 		76E9039B1C9F009F003AC33A /* WeiChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiChatViewController.m; sourceTree = "<group>"; };
 		76E916441CABE8D500C8C63A /* ScreenShotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenShotViewController.h; sourceTree = "<group>"; };
 		76E916451CABE8D500C8C63A /* ScreenShotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenShotViewController.m; sourceTree = "<group>"; };
+		76E916471CABFA9E00C8C63A /* LEDPortal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDPortal.h; sourceTree = "<group>"; };
+		76E916481CABFA9E00C8C63A /* LEDPortal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDPortal.m; sourceTree = "<group>"; };
+		76E9164A1CAC219600C8C63A /* TestPortalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPortalViewController.h; sourceTree = "<group>"; };
+		76E9164B1CAC219600C8C63A /* TestPortalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPortalViewController.m; sourceTree = "<group>"; };
 		7FCB39AC830876F184EF9700 /* libPods-iStudyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iStudyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A143A5F8268C343472EB18 /* Pods-iStudyDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemoTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemoTests/Pods-iStudyDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCBEED3EEE298D40EA18BCD8 /* Pods-iStudyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemo/Pods-iStudyDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1779,6 +1785,10 @@
 			children = (
 				76C035671CA681C2002241E5 /* PortalViewController.h */,
 				76C035681CA681C2002241E5 /* PortalViewController.m */,
+				76E916471CABFA9E00C8C63A /* LEDPortal.h */,
+				76E916481CABFA9E00C8C63A /* LEDPortal.m */,
+				76E9164A1CAC219600C8C63A /* TestPortalViewController.h */,
+				76E9164B1CAC219600C8C63A /* TestPortalViewController.m */,
 			);
 			path = Portal;
 			sourceTree = "<group>";
@@ -2573,6 +2583,7 @@
 				769718931C9D50D900D0AC63 /* QQTabbarViewController.m in Sources */,
 				763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */,
 				76E903901C9EFB5A003AC33A /* SinaWeiboViewController.m in Sources */,
+				76E9164C1CAC219600C8C63A /* TestPortalViewController.m in Sources */,
 				7697189B1C9E466C00D0AC63 /* QQSideBarViewController.m in Sources */,
 				76C035E21CAA99AE002241E5 /* PhotoViewController.m in Sources */,
 				76C035CD1CA9795A002241E5 /* XMPPTestViewController.m in Sources */,
@@ -2593,6 +2604,7 @@
 				763E4E8E1CA2F25200470FCA /* ZFBTestViewController.m in Sources */,
 				76C035DF1CAA999D002241E5 /* CustomPlayerViewController.m in Sources */,
 				76C035701CA68288002241E5 /* QRCodeViewController.m in Sources */,
+				76E916491CABFA9E00C8C63A /* LEDPortal.m in Sources */,
 				76C034C11CA40EC7002241E5 /* SPKBannerPagingView.m in Sources */,
 				763E4E991CA3B03F00470FCA /* ZFBTableViewCell.m in Sources */,
 				76C034C61CA411BF002241E5 /* UIViewAdditions.m in Sources */,
