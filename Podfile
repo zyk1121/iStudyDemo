@@ -19,6 +19,8 @@ target "iStudyDemo" do
   pod 'XMPPFramework', '~> 3.6.6'
   pod 'WebViewJavascriptBridge', :inhibit_warnings => true
   pod 'OpenSSL-Universal'
+  pod 'ASIHTTPRequest', '~> 1.8.2'
+  pod 'JSONModel', '~> 1.2.0'
 end
 
 target "iStudyDemoTests" do

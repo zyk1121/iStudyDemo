@@ -33,6 +33,7 @@
 		760AF1321CB13A4500A0D242 /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 760AF12C1CB13A4500A0D242 /* NSData+AES.m */; };
 		760AF1331CB13A4500A0D242 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 760AF12E1CB13A4500A0D242 /* NSString+MD5.m */; };
 		760AF1341CB13A4500A0D242 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 760AF1301CB13A4500A0D242 /* SecurityUtil.m */; };
+		760AF1381CB176E400A0D242 /* JsonModelDomainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 760AF1371CB176E400A0D242 /* JsonModelDomainObject.m */; };
 		761931791C8BC5120022A311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761931781C8BC5120022A311 /* Assets.xcassets */; };
 		7619317C1C8BC5120022A311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7619317A1C8BC5120022A311 /* LaunchScreen.storyboard */; };
 		761931871C8BC5120022A311 /* iStudyDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931861C8BC5120022A311 /* iStudyDemoTests.m */; };
@@ -442,6 +443,8 @@
 		760AF12E1CB13A4500A0D242 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		760AF12F1CB13A4500A0D242 /* SecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityUtil.h; sourceTree = "<group>"; };
 		760AF1301CB13A4500A0D242 /* SecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityUtil.m; sourceTree = "<group>"; };
+		760AF1361CB176E400A0D242 /* JsonModelDomainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonModelDomainObject.h; sourceTree = "<group>"; };
+		760AF1371CB176E400A0D242 /* JsonModelDomainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonModelDomainObject.m; sourceTree = "<group>"; };
 		761931691C8BC5120022A311 /* iStudyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iStudyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		761931781C8BC5120022A311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7619317B1C8BC5120022A311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -1061,6 +1064,15 @@
 			path = GTMBase64;
 			sourceTree = "<group>";
 		};
+		760AF1351CB176D100A0D242 /* JsonModel */ = {
+			isa = PBXGroup;
+			children = (
+				760AF1361CB176E400A0D242 /* JsonModelDomainObject.h */,
+				760AF1371CB176E400A0D242 /* JsonModelDomainObject.m */,
+			);
+			path = JsonModel;
+			sourceTree = "<group>";
+		};
 		761931601C8BC5120022A311 = {
 			isa = PBXGroup;
 			children = (
@@ -1539,6 +1551,7 @@
 		763FE3611C8D8BE100CE67FF /* HTTPTest */ = {
 			isa = PBXGroup;
 			children = (
+				760AF1351CB176D100A0D242 /* JsonModel */,
 				763FE3841C8DC97000CE67FF /* Mantle */,
 				763FE3621C8D8BFA00CE67FF /* HTTPTestViewController.h */,
 				763FE3631C8D8BFA00CE67FF /* HTTPTestViewController.m */,
@@ -2768,6 +2781,7 @@
 				760AF0EE1CB0E30800A0D242 /* NSStringAdditions.m in Sources */,
 				769718371C9D440E00D0AC63 /* SHCZMainView.m in Sources */,
 				763E4E8E1CA2F25200470FCA /* ZFBTestViewController.m in Sources */,
+				760AF1381CB176E400A0D242 /* JsonModelDomainObject.m in Sources */,
 				76C035DF1CAA999D002241E5 /* CustomPlayerViewController.m in Sources */,
 				76C035701CA68288002241E5 /* QRCodeViewController.m in Sources */,
 				76E916491CABFA9E00C8C63A /* LEDPortal.m in Sources */,
