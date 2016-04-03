@@ -11,6 +11,7 @@
 #import "masonry.h"
 #import "UIKitMacros.h"
 #import "LEDWebViewController.h"
+#import "LEDPortal.h"
 
 @interface WebJSViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -23,9 +24,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    UIBarButtonItem *returnButtonItem = [[UIBarButtonItem alloc] init];
-//    returnButtonItem.title = @"返回";
-//    self.navigationItem.leftBarButtonItem = returnButtonItem;
     self.view.backgroundColor = [UIColor whiteColor];
     [self setupData];
     [self setupUI];
@@ -62,6 +60,9 @@
     _listData = [[NSMutableArray alloc] init];
     
     [_listData addObject:@"LEDWebViewController"];
+    [_listData addObject:@"LED Portal WebView"];
+    [_listData addObject:@"i版本调起native页面"];
+    [_listData addObject:@"i版本调起i版页面"];
 }
 
 
@@ -83,6 +84,15 @@
     switch (indexPath.row) {
         case 0:
             [self testLEDWebViewController];
+            break;
+        case 1:
+            [self testLEDPortalWebViewController];
+            break;
+        case 2:
+            [self testiToNative];
+            break;
+        case 3:
+            [self testiToi];
             break;
         default:
             break;
@@ -114,7 +124,38 @@
 
 - (void)testLEDWebViewController
 {
+    // 直接打开web页面
     LEDWebViewController *ledVC = [[LEDWebViewController alloc] initWithURL:[NSURL URLWithString:@"http://www.baidu.com"]];
+    [self.navigationController pushViewController:ledVC animated:YES];
+}
+
+- (void)testLEDPortalWebViewController
+{
+    // 用portal打开web页面
+ // @"leador://www.ishowchina.com/web"
+    [LEDPortal transferFromViewController:self toURL:[NSURL URLWithString:@"leador://www.ishowchina.com/web?url=http://www.baidu.com"] completion:^(UIViewController * _Nullable viewController, NSError * _Nullable error) {
+        
+    }];
+//    [LEDPortal transferFromViewController:self toURL:[NSURL URLWithString:@"leador://www.ishowchina.com/web?url=ipuny://portal/launch"] completion:^(UIViewController * _Nullable viewController, NSError * _Nullable error) {
+//        
+//    }];
+}
+
+- (void)testiToNative
+{
+    // i版调起native
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"webtest" ofType:@"html"];
+    NSURL *url  = [NSURL fileURLWithPath:filePath];
+    LEDWebViewController *ledVC = [[LEDWebViewController alloc] initWithURL:url];
+    [self.navigationController pushViewController:ledVC animated:YES];
+}
+
+- (void)testiToi
+{
+        // // i版调起i版本
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"helloweb" ofType:@"html"];
+    NSURL *url  = [NSURL fileURLWithPath:filePath];
+    LEDWebViewController *ledVC = [[LEDWebViewController alloc] initWithURL:url];
     [self.navigationController pushViewController:ledVC animated:YES];
 }
 

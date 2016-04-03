@@ -11,6 +11,11 @@
 #import "UIView+Extension.h"
 #import "UIViewAdditions.h"
 #import "LEDWebViewController+Progress.h"
+#import "LEDPortal.h"
+#import "NSStringAdditions.h"
+#import "LEDURLChecker.h"
+
+static NSString *const kLEDMainURLString = @"leador://www.ishowchina.com/web";
 
 @interface LEDWebViewController ()<UIWebViewDelegate>
 
@@ -23,8 +28,48 @@
 {
     BOOL _webPageBacking;
     UIBarButtonItem *_backButtonItem;
-//    UIBarButtonItem *_backAndCloseButtonItem;
 }
+
++ (void)load
+{
+    [LEDPortal registerPortalWithHandler:^UIViewController *(NSURL *URL, BOOL shouldTransfer, UIViewController *sourceViewController) {
+        if ([URL hasSameTrunkWithURL:[NSURL URLWithString:kLEDMainURLString]]) {
+            return [LEDWebViewController instanceWithURL:URL
+                                          shouldTransfer:shouldTransfer
+                                      fromViewController:sourceViewController];
+        } else {
+            return nil;
+        }
+    } prefixURL:[NSURL URLWithString:kLEDMainURLString]];
+}
+
++ (UIViewController *)instanceWithURL:(NSURL *)URL
+                       shouldTransfer:(BOOL)shouldTransfer
+                   fromViewController:(UIViewController *)sourceViewController
+{
+    LEDWebViewController *viewController = [[LEDWebViewController alloc] initWithURL:URL];
+    [viewController setWithURL:URL];
+    if (sourceViewController.navigationController) {
+        [sourceViewController.navigationController pushViewController:viewController animated:YES];
+    }
+    return viewController;
+}
+
+//
+
+- (void)setWithURL:(NSURL *)URL
+{
+    NSDictionary *params = [[URL query] dictionaryByParseInURLParameterFormat];
+    if (params[@"url"]) {
+        NSString *URLString = [params[@"url"] URLDecodedString];
+        
+        NSURL *URLFromParameter = [NSURL URLWithString:URLString];
+        self.URL = URLFromParameter;
+    } else {
+        self.URL = [NSURL URLWithString:@"http://ishowchina.com"];
+    }
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -111,8 +156,7 @@
     
     UIView *customViewWithoutCloseButton = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 65 + offset, 44)];
     customViewWithoutCloseButton.hitTestEdgeInsets = UIEdgeInsetsMake(0, -21.5, 0, 0);
-//    UIView *customViewWithCloseButton    = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 105 + offset, 44)];
-//    customViewWithCloseButton.hitTestEdgeInsets = UIEdgeInsetsMake(0, -21.5, 0, 0);
+
     UIButton *singleBackButton = [UIButton buttonWithType:UIButtonTypeCustom];
     singleBackButton.frame = CGRectMake(-3 + offset, 8.5, 23, 23);
     singleBackButton.hitTestEdgeInsets = UIEdgeInsetsMake(-10.0f, -21.5f, -11.5f, -21.5f);
@@ -131,7 +175,7 @@
     
     _backButtonItem = [[UIBarButtonItem alloc] initWithCustomView:customViewWithoutCloseButton];
     self.navigationItem.leftBarButtonItem = _backButtonItem;
-//    _backAndCloseButtonItem = [[UIBarButtonItem alloc] initWithCustomView:customViewWithCloseButton];
+
 }
 
 
@@ -182,13 +226,40 @@
     }
 
     if (shouldLoad) {
-//        shouldLoad = [self handleURLRequest:request];
+        shouldLoad = [self handleURLRequest:request];
     }
     return shouldLoad;
 }
 
+- (BOOL)handleURLRequest:(NSURLRequest *)request
+{
+    NSString *URLString = [request.URL absoluteString];
+    NSString *scheme = [request.URL.scheme lowercaseString];
+    BOOL shouldLoad = YES;
+    
+    // 判断是否是内部协议
+    if([scheme isEqualToString:@"ipuny"])
+    {
+        [LEDPortal transferFromViewController:nil
+                                        toURL:request.URL
+                                   completion:nil];
+        return NO;
+    }
+    
+    // 排除由于设置iframe导致重新load的情况
+    if (![request.URL isEqual:request.mainDocumentURL]) {
+        return shouldLoad;
+    }
+
+    return shouldLoad;
+}
+
+
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
+    if (webView.isLoading) {
+        return;
+    }
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     
     if (!self.activityViewHidden) {
@@ -222,10 +293,7 @@
 //        }];
 //    }
 //
-//    
-//    if (self.silentMode) {
-//        [[NSNotificationCenter defaultCenter] postNotificationName:MTPageSientLoadedNotification object:nil userInfo:@{@"success":@(YES)}];
-//    }
+//
     if (_delegate && [_delegate respondsToSelector:@selector(webViewControllerDidFinishLoad:)]) {
         [_delegate webViewControllerDidFinishLoad:self];
     }
@@ -238,11 +306,6 @@
     if (!self.activityViewHidden) {
         [self stopActivity];
     }
-//
-//    if (self.silentMode) {
-//        [[NSNotificationCenter defaultCenter] postNotificationName:MTPageSientLoadedNotification object:nil userInfo:@{@"success":@(NO)}];
-//    }
-//    
     if (self.delegate && [self.delegate respondsToSelector:@selector(webViewController:didFailLoadWithError:)]) {
         [self.delegate webViewController:self didFailLoadWithError:error];
     }
