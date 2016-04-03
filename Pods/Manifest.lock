@@ -83,6 +83,7 @@ PODS:
   - OHHTTPStubs (3.1.12):
     - OHHTTPStubs/Core (= 3.1.12)
   - OHHTTPStubs/Core (3.1.12)
+  - OpenSSL-Universal (1.0.1.17)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -251,6 +252,7 @@ DEPENDENCIES:
   - Masonry (~> 0.6.2)
   - OCMock (~> 3.1.2)
   - OHHTTPStubs (~> 3.1.1)
+  - OpenSSL-Universal
   - ReactiveCocoa (~> 2.5)
   - RPJSONValidator (~> 0.2.0)
   - SDWebImage (~> 3.7.5)
@@ -272,6 +274,7 @@ SPEC CHECKSUMS:
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   OCMock: 4c2925291f80407c3738dd1db14d21d0cc278864
   OHHTTPStubs: 8cf0cfe6f34f13fc88fdf5b2a1b2c2536e8c0261
+  OpenSSL-Universal: b3c4ab9bbc3e4978caf9e838c8589f1f537244b4
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RPJSONValidator: a079b234c0f87833b657708adb80531dc45dbe83
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
