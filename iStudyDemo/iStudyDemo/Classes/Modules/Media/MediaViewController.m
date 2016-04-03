@@ -16,7 +16,8 @@
 #import "CustomPlayerViewController.h"
 #import "VideoViewController.h"
 #import "PhotoViewController.h"
-
+#import "CustomTakePhotoViewController.h"
+#import "ScreenShotViewController.h"
 
 @interface MediaViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -79,18 +80,26 @@
     [_listData addObject:@"自定义相机"];
     CustomPhotoViewController *customPhotoViewController = [[CustomPhotoViewController alloc] init];
     [_listViewControllers addObject:customPhotoViewController];
+    // 3.AVFoundation自定义相机
+    [_listData addObject:@"AVFoundation自定义相机(保存相册)"];
+    CustomTakePhotoViewController *customtakePhotoViewController = [[CustomTakePhotoViewController alloc] init];
+    [_listViewControllers addObject:customtakePhotoViewController];
     // 4.音频
     [_listData addObject:@"音频"];
     AudioViewController *audioViewController = [[AudioViewController alloc] init];
     [_listViewControllers addObject:audioViewController];
     // 5.视频
-    [_listData addObject:@"视频"];
+    [_listData addObject:@"视频(网络)"];
     VideoViewController *videoViewController = [[VideoViewController alloc] init];
     [_listViewControllers addObject:videoViewController];
     // 6.流媒体 http://blog.csdn.net/mad2man/article/details/12553873
-    [_listData addObject:@"流媒体"];
-    CustomPlayerViewController *customPlayerController = [[CustomPlayerViewController alloc] init];
-    [_listViewControllers addObject:customPlayerController];
+    //[_listData addObject:@"流媒体"];
+    //CustomPlayerViewController *customPlayerController = [[CustomPlayerViewController alloc] init];
+    //[_listViewControllers addObject:customPlayerController];
+    // 7.截图
+    [_listData addObject:@"截屏"];
+    ScreenShotViewController *screenShotViewController = [[ScreenShotViewController alloc] init];
+    [_listViewControllers addObject:screenShotViewController];
     
 }
 
@@ -112,7 +121,10 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UIViewController *vc = [self.listViewControllers objectAtIndex:indexPath.row];
     vc.title = [self.listData objectAtIndex:indexPath.row];
-    
+    if (indexPath.row == 5) {
+        VideoViewController *videoViewController = [[VideoViewController alloc] init];
+        [self.navigationController pushViewController:videoViewController animated:YES];
+    } else
     [self.navigationController pushViewController:vc animated:YES];
 }
 

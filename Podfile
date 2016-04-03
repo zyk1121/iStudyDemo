@@ -17,6 +17,8 @@ target "iStudyDemo" do
   pod 'SDWebImage', '~> 3.7.5'
   pod 'ZBarSDK', '~> 1.3.1'
   pod 'XMPPFramework', '~> 3.6.6'
+  pod 'WebViewJavascriptBridge', :inhibit_warnings => true
+  pod 'OpenSSL-Universal'
 end
 
 target "iStudyDemoTests" do
