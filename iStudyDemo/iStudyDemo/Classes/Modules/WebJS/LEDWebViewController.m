@@ -14,11 +14,27 @@
 #import "LEDPortal.h"
 #import "NSStringAdditions.h"
 #import "LEDURLChecker.h"
+#import <extobjc.h>
+
+/*
+ 如果本类的delegate不执行回调的话，考虑修改这个地方
+ WebViewJavascriptBridge.m
+ 
+ - (void) _platformSpecificSetup:(WVJB_WEBVIEW_TYPE*)webView {
+ _webView = webView;
+ _webViewDelegate = _webView.delegate;
+ _webView.delegate = self;
+ 
+ _base = [[WebViewJavascriptBridgeBase alloc] init];
+ _base.delegate = self;
+ }
+ */
 
 static NSString *const kLEDMainURLString = @"leador://www.ishowchina.com/web";
 
 @interface LEDWebViewController ()<UIWebViewDelegate>
 
+@property (nonatomic, strong) NSString *javascriptBridgeGoBackHandlerName;
 @property (nonatomic, strong) UIActivityIndicatorView *activityView;
 @property (nonatomic, strong) LEDWebViewControllerProgressProxy *progressProxy;
 
@@ -81,6 +97,16 @@ static NSString *const kLEDMainURLString = @"leador://www.ishowchina.com/web";
     _webView.frame = CGRectMake(0, 0, self.view.width, self.view.height);
     _webView.scalesPageToFit = YES;
     [self.view addSubview:_webView];
+    
+    
+    _enableWebViewJavascriptBridge = YES;
+    
+    if (self.enableWebViewJavascriptBridge) {
+        _webViewControllerJavascriptBridgeHelper = [[LEDWebViewControllerJavascriptBridgeHelper alloc] initWithWebViewController:self andWebView:_webView];
+        [_webViewControllerJavascriptBridgeHelper loadTraditionalHandlers];
+    }
+
+    
     
     self.activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     self.activityView.hidesWhenStopped = YES;
@@ -182,14 +208,14 @@ static NSString *const kLEDMainURLString = @"leador://www.ishowchina.com/web";
 
 - (void)didClickLeftBarButtonItem
 {
-    if (/*_enableWebViewJavascriptBridge && _javascriptBridgeGoBackHandlerName.length > 0*/0) {
-//        @weakify(self);
-//        [_webViewControllerJavascriptBridgeHelper callJavascriptHandlerName:_javascriptBridgeGoBackHandlerName withData:@"jsGoBack" andResponseCallback:^(id responseData) {
-//            @strongify(self);
-//            if (!responseData) {
-//                [self webViewGoBackAction];
-//            }
-//        }];
+    if (_enableWebViewJavascriptBridge && _javascriptBridgeGoBackHandlerName.length > 0) {
+        @weakify(self);
+        [_webViewControllerJavascriptBridgeHelper callJavascriptHandlerName:_javascriptBridgeGoBackHandlerName withData:@"jsGoBack" andResponseCallback:^(id responseData) {
+            @strongify(self);
+            if (!responseData) {
+                [self webViewGoBackAction];
+            }
+        }];
     } else {
         [self webViewGoBackAction];
     }
@@ -268,8 +294,8 @@ static NSString *const kLEDMainURLString = @"leador://www.ishowchina.com/web";
         [self.activityView startAnimating];
     }
     
-//    _javascriptBridgeGoBackHandlerName = @"";
-//    
+    _javascriptBridgeGoBackHandlerName = @"";
+
     if (self.delegate && [self.delegate respondsToSelector:@selector(webViewControllerDidStartLoad:)]) {
         [self.delegate webViewControllerDidStartLoad:self];
     }
@@ -282,18 +308,18 @@ static NSString *const kLEDMainURLString = @"leador://www.ishowchina.com/web";
     if (!self.activityViewHidden) {
         [self stopActivity];
     }
-//
-//    if (_webViewControllerJavascriptBridgeHelper) {
-//        @weakify(self);
-//        [_webViewControllerJavascriptBridgeHelper callJavascriptHandlerName:@"getRegisteredJsHandler" withData:@"jsGoBack" andResponseCallback:^(id responseData) {
-//            @strongify(self);
-//            if ([responseData isKindOfClass:[NSDictionary class]]) {
-//                self.javascriptBridgeGoBackHandlerName = responseData[@"goback"];
-//            }
-//        }];
-//    }
-//
-//
+
+    if (_webViewControllerJavascriptBridgeHelper) {
+        @weakify(self);
+        [_webViewControllerJavascriptBridgeHelper callJavascriptHandlerName:@"getRegisteredJsHandler" withData:@"jsGoBack" andResponseCallback:^(id responseData) {
+            @strongify(self);
+            if ([responseData isKindOfClass:[NSDictionary class]]) {
+                self.javascriptBridgeGoBackHandlerName = responseData[@"goback"];
+            }
+        }];
+    }
+
+
     if (_delegate && [_delegate respondsToSelector:@selector(webViewControllerDidFinishLoad:)]) {
         [_delegate webViewControllerDidFinishLoad:self];
     }

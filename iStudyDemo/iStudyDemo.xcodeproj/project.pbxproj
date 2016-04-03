@@ -16,6 +16,9 @@
 		760AF0F41CB0E43500A0D242 /* LEDURLChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 760AF0F31CB0E43500A0D242 /* LEDURLChecker.m */; };
 		760AF0F61CB0EA5200A0D242 /* webtest.html in Resources */ = {isa = PBXBuildFile; fileRef = 760AF0F51CB0EA5200A0D242 /* webtest.html */; };
 		760AF0F81CB0EBE600A0D242 /* helloweb.html in Resources */ = {isa = PBXBuildFile; fileRef = 760AF0F71CB0EBE600A0D242 /* helloweb.html */; };
+		760AF0FB1CB0F3ED00A0D242 /* LEDWebViewControllerJavascriptBridgeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 760AF0FA1CB0F3ED00A0D242 /* LEDWebViewControllerJavascriptBridgeHelper.m */; };
+		760AF0FD1CB0FB3200A0D242 /* webjs.html in Resources */ = {isa = PBXBuildFile; fileRef = 760AF0FC1CB0FB3200A0D242 /* webjs.html */; };
+		760AF0FF1CB1058900A0D242 /* jstest.html in Resources */ = {isa = PBXBuildFile; fileRef = 760AF0FE1CB1058900A0D242 /* jstest.html */; };
 		761931791C8BC5120022A311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761931781C8BC5120022A311 /* Assets.xcassets */; };
 		7619317C1C8BC5120022A311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7619317A1C8BC5120022A311 /* LaunchScreen.storyboard */; };
 		761931871C8BC5120022A311 /* iStudyDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931861C8BC5120022A311 /* iStudyDemoTests.m */; };
@@ -393,6 +396,10 @@
 		760AF0F31CB0E43500A0D242 /* LEDURLChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDURLChecker.m; sourceTree = "<group>"; };
 		760AF0F51CB0EA5200A0D242 /* webtest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = webtest.html; sourceTree = "<group>"; };
 		760AF0F71CB0EBE600A0D242 /* helloweb.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = helloweb.html; sourceTree = "<group>"; };
+		760AF0F91CB0F3ED00A0D242 /* LEDWebViewControllerJavascriptBridgeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDWebViewControllerJavascriptBridgeHelper.h; sourceTree = "<group>"; };
+		760AF0FA1CB0F3ED00A0D242 /* LEDWebViewControllerJavascriptBridgeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDWebViewControllerJavascriptBridgeHelper.m; sourceTree = "<group>"; };
+		760AF0FC1CB0FB3200A0D242 /* webjs.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = webjs.html; sourceTree = "<group>"; };
+		760AF0FE1CB1058900A0D242 /* jstest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jstest.html; sourceTree = "<group>"; };
 		761931691C8BC5120022A311 /* iStudyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iStudyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		761931781C8BC5120022A311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7619317B1C8BC5120022A311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -1827,6 +1834,8 @@
 				760AF0E61CB0330D00A0D242 /* btn_backItem.png */,
 				760AF0F51CB0EA5200A0D242 /* webtest.html */,
 				760AF0F71CB0EBE600A0D242 /* helloweb.html */,
+				760AF0FC1CB0FB3200A0D242 /* webjs.html */,
+				760AF0FE1CB1058900A0D242 /* jstest.html */,
 				760AF0F21CB0E43500A0D242 /* LEDURLChecker.h */,
 				760AF0F31CB0E43500A0D242 /* LEDURLChecker.m */,
 				760AF0EC1CB0E30800A0D242 /* NSStringAdditions.h */,
@@ -1839,6 +1848,8 @@
 				760AF0EA1CB0DA5500A0D242 /* LEDWebViewController+Progress.m */,
 				76E9164D1CAC2FA300C8C63A /* LEDWebViewController.h */,
 				76E9164E1CAC2FA300C8C63A /* LEDWebViewController.m */,
+				760AF0F91CB0F3ED00A0D242 /* LEDWebViewControllerJavascriptBridgeHelper.h */,
+				760AF0FA1CB0F3ED00A0D242 /* LEDWebViewControllerJavascriptBridgeHelper.m */,
 			);
 			path = WebJS;
 			sourceTree = "<group>";
@@ -2459,6 +2470,7 @@
 				763E4E1C1CA2B71800470FCA /* bg_barcode_middleseparateline@2x.png in Resources */,
 				760AF0E81CB0330D00A0D242 /* btn_backItem.png in Resources */,
 				76C034F21CA41258002241E5 /* btn_segmentedcontrol_left_normal@2x.png in Resources */,
+				760AF0FF1CB1058900A0D242 /* jstest.html in Resources */,
 				76C035061CA41258002241E5 /* icon_unfold@2x.png in Resources */,
 				763E4E611CA2B7F500470FCA /* 10000004.png in Resources */,
 				769718831C9D466E00D0AC63 /* sidebar_signature_nor@2x.png in Resources */,
@@ -2505,6 +2517,7 @@
 				769718741C9D466E00D0AC63 /* sidebar_business@3x.png in Resources */,
 				76C034F51CA41258002241E5 /* btn_segmentedcontrol_right_selected@2x.png in Resources */,
 				769718861C9D466E00D0AC63 /* skin_tab_icon_contact_selected.png in Resources */,
+				760AF0FD1CB0FB3200A0D242 /* webjs.html in Resources */,
 				76C034FF1CA41258002241E5 /* icon_password_recover@2x.png in Resources */,
 				76C034ED1CA41258002241E5 /* btn_disabled@2x.png in Resources */,
 				760AF0F61CB0EA5200A0D242 /* webtest.html in Resources */,
@@ -2648,6 +2661,7 @@
 				763E4DFF1CA25E4100470FCA /* KBViewController.m in Sources */,
 				76C035D91CAA997A002241E5 /* AudioViewController.m in Sources */,
 				76BD6BCB1CA1118900708977 /* ZTTabBar.m in Sources */,
+				760AF0FB1CB0F3ED00A0D242 /* LEDWebViewControllerJavascriptBridgeHelper.m in Sources */,
 				76BD6BDE1CA189A900708977 /* NewfeatureViewController.m in Sources */,
 				761931D21C8C5DF70022A311 /* CC3GLMatrix.m in Sources */,
 				76C0355B1CA6776E002241E5 /* MessageCell.m in Sources */,

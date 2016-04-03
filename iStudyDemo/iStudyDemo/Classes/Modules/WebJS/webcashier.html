@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>i版调起收银台</title>
+                <script type="text/javascript">
+                    
+                function getQueryString(name)
+                {
+                    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+                    var r = window.location.search.substr(1).match(reg);
+                    if(r!=null)return  unescape(r[2]); return null;
+                }
+                
+                function message()
+                {
+                    /* 注意：demo此处的做法是外部传入trade_number pay_token 和callback_url，实际开发的时候需要前端同学自己获取必要参数（trade_number，pay_token），此处
+                      主要是演示如何调起收银台
+                     */
+                    var trade_number = getQueryString('trade_number');
+                    var pay_token = getQueryString('pay_token');
+                    var callbackurl = getQueryString('callback_url');
+                    
+                    var callback_url = encodeURIComponent('imeituan://www.meituan.com/web/?url=' + callbackurl);
+                    // 前端同学拿到必要参数（trade_number，pay_token）后，直接使用下面的示例就可以调起收银台了，钱包的调用方式更为简单，不需要传入参数即可调起
+                    var url = 'meituanpayment://cashier/launch?pay_token=' + pay_token + '&trade_number=' + trade_number + '&callback_url=' + callback_url;
+                    window.location.href = url;
+                }
+                
+                    </script>
+                </head>
+    
+    <body>
+        <input type="button" value="调起收银台" onclick="message()" />
+    </body>
+</html>

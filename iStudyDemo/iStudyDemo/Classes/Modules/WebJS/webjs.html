@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>webjs</title>
+                <script type="text/javascript">
+<!--                    http://www.tuicool.com/articles/Q3AVnq2-->
+<!--https://github.com/CoderJackyHuang/WebViewJavascriptBridgeDemo-->
+                    function setupWebViewJavascriptBridge(callback) {
+                        if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+                        if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+                        window.WVJBCallbacks = [callback];
+                        var WVJBIframe = document.createElement('iframe');
+                        WVJBIframe.style.display = 'none';
+                        WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+                        document.documentElement.appendChild(WVJBIframe);
+                        setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+                    }
+                
+                setupWebViewJavascriptBridge(function(bridge) {
+                                             
+                          
+                                             /* Initialize your app here */
+                                             
+                                             bridge.registerHandler('JS Echo', function(data, responseCallback) {
+                                                                    console.log("JS Echo called with:", data)
+                                                                    responseCallback("1234");
+                                                                    })
+                                             bridge.callHandler('ObjC Echo', {'foo': 'cccccccccccc'}, function responseCallback(responseData) {
+                                                                console.log("JS received response:", responseData)
+                                                                })
+                                             document.getElementById('blogId1').onclick = function (e) {
+                                           
+                                             bridge.callHandler('closeWebViewHandler', {'blogURL': 'http://www.henishuo.com'}, function(response) {
+                                                        
+                                                                })
+                                             }
+                                             
+                                             })
+                    
+                function getQueryString(name)
+                {
+                    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+                    var r = window.location.search.substr(1).match(reg);
+                    if(r!=null)return  unescape(r[2]); return null;
+                }
+                
+
+                
+                </script>
+    </head>
+    
+<!--    <body>-->
+<!--        <input type="button" value="返回按钮" id="blogId1"/>-->
+<!--    </body>-->
+
+    <div>
+        <input type="button" value="返回按钮" id="blogId1"/>
+    </div>
+</html>

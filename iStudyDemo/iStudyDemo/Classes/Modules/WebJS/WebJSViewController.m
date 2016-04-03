@@ -63,6 +63,7 @@
     [_listData addObject:@"LED Portal WebView"];
     [_listData addObject:@"i版本调起native页面"];
     [_listData addObject:@"i版本调起i版页面"];
+    [_listData addObject:@"webjs"];
 }
 
 
@@ -93,6 +94,9 @@
             break;
         case 3:
             [self testiToi];
+            break;
+        case 4:
+            [self testwebjs];
             break;
         default:
             break;
@@ -154,6 +158,16 @@
 {
         // // i版调起i版本
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"helloweb" ofType:@"html"];
+    NSURL *url  = [NSURL fileURLWithPath:filePath];
+    LEDWebViewController *ledVC = [[LEDWebViewController alloc] initWithURL:url];
+    [self.navigationController pushViewController:ledVC animated:YES];
+}
+
+- (void)testwebjs
+{
+    // http://www.tuicool.com/articles/Q3AVnq2
+    // http://www.tuicool.com/articles/zuInEn
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"webjs" ofType:@"html"];
     NSURL *url  = [NSURL fileURLWithPath:filePath];
     LEDWebViewController *ledVC = [[LEDWebViewController alloc] initWithURL:url];
     [self.navigationController pushViewController:ledVC animated:YES];

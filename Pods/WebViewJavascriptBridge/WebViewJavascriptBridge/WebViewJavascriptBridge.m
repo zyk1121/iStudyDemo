@@ -123,7 +123,9 @@
 
 - (void) _platformSpecificSetup:(WVJB_WEBVIEW_TYPE*)webView {
     _webView = webView;
+        _webViewDelegate = _webView.delegate;
     _webView.delegate = self;
+
     _base = [[WebViewJavascriptBridgeBase alloc] init];
     _base.delegate = self;
 }
