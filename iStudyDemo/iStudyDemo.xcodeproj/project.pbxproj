@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2CC315F5FBCAE9FC2DFE0F87 /* libPods-iStudyDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FCB39AC830876F184EF9700 /* libPods-iStudyDemo.a */; };
+		760AF0E71CB0330D00A0D242 /* btn_backItem_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 760AF0E51CB0330D00A0D242 /* btn_backItem_highlighted.png */; };
+		760AF0E81CB0330D00A0D242 /* btn_backItem.png in Resources */ = {isa = PBXBuildFile; fileRef = 760AF0E61CB0330D00A0D242 /* btn_backItem.png */; };
+		760AF0EB1CB0DA5500A0D242 /* LEDWebViewController+Progress.m in Sources */ = {isa = PBXBuildFile; fileRef = 760AF0EA1CB0DA5500A0D242 /* LEDWebViewController+Progress.m */; };
 		761931791C8BC5120022A311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761931781C8BC5120022A311 /* Assets.xcassets */; };
 		7619317C1C8BC5120022A311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7619317A1C8BC5120022A311 /* LaunchScreen.storyboard */; };
 		761931871C8BC5120022A311 /* iStudyDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931861C8BC5120022A311 /* iStudyDemoTests.m */; };
@@ -349,6 +352,8 @@
 		76E916461CABE8D500C8C63A /* ScreenShotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E916451CABE8D500C8C63A /* ScreenShotViewController.m */; };
 		76E916491CABFA9E00C8C63A /* LEDPortal.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E916481CABFA9E00C8C63A /* LEDPortal.m */; };
 		76E9164C1CAC219600C8C63A /* TestPortalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9164B1CAC219600C8C63A /* TestPortalViewController.m */; };
+		76E9164F1CAC2FA300C8C63A /* LEDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9164E1CAC2FA300C8C63A /* LEDWebViewController.m */; };
+		76E916531CAC9DE900C8C63A /* PushNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E916521CAC9DE900C8C63A /* PushNotificationViewController.m */; };
 		BA0CE7C3F0C3D5D55BE25FD3 /* libPods-iStudyDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E46310862E13CE523DA12E07 /* libPods-iStudyDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -371,6 +376,10 @@
 
 /* Begin PBXFileReference section */
 		07C0384D7390C0AD733D2BFE /* Pods-iStudyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemo/Pods-iStudyDemo.release.xcconfig"; sourceTree = "<group>"; };
+		760AF0E51CB0330D00A0D242 /* btn_backItem_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_backItem_highlighted.png; sourceTree = "<group>"; };
+		760AF0E61CB0330D00A0D242 /* btn_backItem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_backItem.png; sourceTree = "<group>"; };
+		760AF0E91CB0DA5500A0D242 /* LEDWebViewController+Progress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LEDWebViewController+Progress.h"; sourceTree = "<group>"; };
+		760AF0EA1CB0DA5500A0D242 /* LEDWebViewController+Progress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LEDWebViewController+Progress.m"; sourceTree = "<group>"; };
 		761931691C8BC5120022A311 /* iStudyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iStudyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		761931781C8BC5120022A311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7619317B1C8BC5120022A311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -851,6 +860,10 @@
 		76E916481CABFA9E00C8C63A /* LEDPortal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDPortal.m; sourceTree = "<group>"; };
 		76E9164A1CAC219600C8C63A /* TestPortalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPortalViewController.h; sourceTree = "<group>"; };
 		76E9164B1CAC219600C8C63A /* TestPortalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPortalViewController.m; sourceTree = "<group>"; };
+		76E9164D1CAC2FA300C8C63A /* LEDWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDWebViewController.h; sourceTree = "<group>"; };
+		76E9164E1CAC2FA300C8C63A /* LEDWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDWebViewController.m; sourceTree = "<group>"; };
+		76E916511CAC9DE900C8C63A /* PushNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNotificationViewController.h; sourceTree = "<group>"; };
+		76E916521CAC9DE900C8C63A /* PushNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNotificationViewController.m; sourceTree = "<group>"; };
 		7FCB39AC830876F184EF9700 /* libPods-iStudyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iStudyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A143A5F8268C343472EB18 /* Pods-iStudyDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemoTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemoTests/Pods-iStudyDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCBEED3EEE298D40EA18BCD8 /* Pods-iStudyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemo/Pods-iStudyDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1029,6 +1042,7 @@
 				76C035841CA68923002241E5 /* Thread */,
 				76C035851CA68923002241E5 /* UnitTestStub */,
 				76C035751CA684F2002241E5 /* CustomControl */,
+				76E916501CAC9DC800C8C63A /* PushNotification */,
 				76C035711CA68394002241E5 /* EncryptDecrypt */,
 				76C035651CA681AE002241E5 /* Portal */,
 				76C035661CA681AE002241E5 /* WebJS */,
@@ -1796,8 +1810,14 @@
 		76C035661CA681AE002241E5 /* WebJS */ = {
 			isa = PBXGroup;
 			children = (
+				760AF0E51CB0330D00A0D242 /* btn_backItem_highlighted.png */,
+				760AF0E61CB0330D00A0D242 /* btn_backItem.png */,
 				76C0356A1CA681D2002241E5 /* WebJSViewController.h */,
 				76C0356B1CA681D2002241E5 /* WebJSViewController.m */,
+				760AF0E91CB0DA5500A0D242 /* LEDWebViewController+Progress.h */,
+				760AF0EA1CB0DA5500A0D242 /* LEDWebViewController+Progress.m */,
+				76E9164D1CAC2FA300C8C63A /* LEDWebViewController.h */,
+				76E9164E1CAC2FA300C8C63A /* LEDWebViewController.m */,
 			);
 			path = WebJS;
 			sourceTree = "<group>";
@@ -2160,6 +2180,16 @@
 			path = Album/ScreenShot;
 			sourceTree = "<group>";
 		};
+		76E916501CAC9DC800C8C63A /* PushNotification */ = {
+			isa = PBXGroup;
+			children = (
+				76E916511CAC9DE900C8C63A /* PushNotificationViewController.h */,
+				76E916521CAC9DE900C8C63A /* PushNotificationViewController.m */,
+			);
+			name = PushNotification;
+			path = EncryptDecrypt/PushNotification;
+			sourceTree = "<group>";
+		};
 		DF399414AD08488BE365F5E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2405,6 +2435,7 @@
 				76C036011CAB98F5002241E5 /* up.png in Resources */,
 				76213C461C970C9F001DAA53 /* WeiboSDK.bundle in Resources */,
 				763E4E1C1CA2B71800470FCA /* bg_barcode_middleseparateline@2x.png in Resources */,
+				760AF0E81CB0330D00A0D242 /* btn_backItem.png in Resources */,
 				76C034F21CA41258002241E5 /* btn_segmentedcontrol_left_normal@2x.png in Resources */,
 				76C035061CA41258002241E5 /* icon_unfold@2x.png in Resources */,
 				763E4E611CA2B7F500470FCA /* 10000004.png in Resources */,
@@ -2418,6 +2449,7 @@
 				76C035421CA675F0002241E5 /* chat_bottom_keyboard_nor.png in Resources */,
 				763E4E221CA2B71800470FCA /* icon_barcode_bank@2x.png in Resources */,
 				763E4E201CA2B71800470FCA /* btn_discount_submit@2x.png in Resources */,
+				760AF0E71CB0330D00A0D242 /* btn_backItem_highlighted.png in Resources */,
 				7697188A1C9D466E00D0AC63 /* skin_tab_icon_plugin_selected.png in Resources */,
 				76C034FC1CA41258002241E5 /* icon_pagecontrol_inactive@2x.png in Resources */,
 				763E4E631CA2B7F500470FCA /* 10000007.png in Resources */,
@@ -2640,6 +2672,7 @@
 				76C034BE1CA40EC7002241E5 /* SPKADViewController.m in Sources */,
 				76C4799C1C8EF67B00EAE07E /* QuartzCoreViewController.m in Sources */,
 				76E9037E1C9ED4B4003AC33A /* NaviMenuViewController.m in Sources */,
+				76E916531CAC9DE900C8C63A /* PushNotificationViewController.m in Sources */,
 				763E4DFC1CA25E3500470FCA /* PYViewController.m in Sources */,
 				76C034C21CA40EC7002241E5 /* SPKBannerView.m in Sources */,
 				761931D31C8C5DF70022A311 /* CC3Kazmath.c in Sources */,
@@ -2665,6 +2698,7 @@
 				76C035A01CA68FF0002241E5 /* ReactNativeViewController.m in Sources */,
 				7681A8231C95A04500FC6843 /* ObjectStorageManager.m in Sources */,
 				76C479A71C8F264100EAE07E /* TestCoreData.m in Sources */,
+				76E9164F1CAC2FA300C8C63A /* LEDWebViewController.m in Sources */,
 				76E9038B1C9ED53E003AC33A /* YBNavMenuController.m in Sources */,
 				76C035DC1CAA998C002241E5 /* CustomPhotoViewController.m in Sources */,
 				769717DB1C986A6B00D0AC63 /* OpenGLTestView.m in Sources */,
@@ -2674,6 +2708,7 @@
 				763FE38D1C8DCB6100CE67FF /* LEDDomainPredicate.m in Sources */,
 				7681A80D1C9588ED00FC6843 /* User.xcdatamodeld in Sources */,
 				76C034C01CA40EC7002241E5 /* SPKBannerPageControl.m in Sources */,
+				760AF0EB1CB0DA5500A0D242 /* LEDWebViewController+Progress.m in Sources */,
 				7681A81F1C958A1B00FC6843 /* User.m in Sources */,
 				76C034C31CA40EC7002241E5 /* SPKAlertView.m in Sources */,
 				76C479981C8EF5AF00EAE07E /* JSPatchViewController.m in Sources */,

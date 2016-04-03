@@ -35,6 +35,7 @@
 #import "SwiftViewController.h"
 #import "RACViewController.h"
 #import "ReactNativeViewController.h"
+#import "PushNotificationViewController.h"
 
 // http://www.cocoachina.com/ios/20150825/13195.html
 
@@ -156,13 +157,17 @@
     WebJSViewController *webJSController = [[WebJSViewController alloc] init];
     [_listViewControllers addObject:webJSController];
     // 15.EncryptDecrypt
-    [_listData addObject:@"iOS加密解密"];
+    [_listData addObject:@"加密解密(iOS)"];
     EncryptDecryptViewController *edController = [[EncryptDecryptViewController alloc] init];
     [_listViewControllers addObject:edController];
     // 16.CustomControl
     [_listData addObject:@"自定义控件"];
     CustomControlViewController *customControlController = [[CustomControlViewController alloc] init];
     [_listViewControllers addObject:customControlController];
+    // 16.1.推送&埋点
+    [_listData addObject:@"推送&埋点"];
+    PushNotificationViewController *pushViewController = [[PushNotificationViewController alloc] init];
+    [_listViewControllers addObject:pushViewController];
     // 17.RAC
     [_listData addObject:@"RAC"];
     RACViewController *racController = [[RACViewController alloc] init];
