@@ -27,9 +27,11 @@
 //#import "JPEngine.h"
 #import "SHCZMainView.h"
 #import "NewfeatureViewController.h"
+#import "LEDPortal.h"
+#import "PortalViewController.h"
 
 
-@interface AppDelegate () <WXApiDelegate>
+@interface AppDelegate () <WXApiDelegate, UIAlertViewDelegate>
 
 
 @end
@@ -43,7 +45,30 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    //
+    //  launchOptions 有当app未启动时候的推送消息,
+    NSDictionary *userInfo = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
+    if (userInfo) {
+        NSString *message = [[userInfo objectForKey:@"aps"]objectForKey:@"alert"];
+        NSString *msg = [NSString stringWithFormat:@"%@, 测试跳转到某一个页面",message];
+        // LEDPortal可以直接跳转到某个页面
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:msg delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+        [alert show];
+    }
+
+    
+    if ([application respondsToSelector:@selector(isRegisteredForRemoteNotifications)])
+    {
+        //IOS8
+        [[UIApplication sharedApplication]registerUserNotificationSettings:[UIUserNotificationSettings
+                                                                           settingsForTypes:(UIUserNotificationTypeSound |UIUserNotificationTypeAlert | UIUserNotificationTypeBadge)
+                                                                           categories:nil]];
+        [[UIApplication sharedApplication]registerForRemoteNotifications];
+    
+    }
+    
+//    // 本地推送通知
+//    [AppDelegate registerLocalNotification:5];
+    
     [self configureMapAPIKey];
     [[JSPatchProcessKit defaultJSPatchKit] execJSProcess];
     //
@@ -177,6 +202,153 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+// 推送
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)pToken{
+    NSString *token = [[pToken description] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
+    NSString *deviceToken = [token stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    NSLog(@"deviceToken:%@", deviceToken);
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
+    
+    //  userInfo 有当app启动时候的推送消息,
+    NSLog(@"userInfo == %@",userInfo);
+    NSString *message = [[userInfo objectForKey:@"aps"]objectForKey:@"alert"];
+    NSString *msg = [NSString stringWithFormat:@"%@, 测试跳转到某一个页面",message];
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:msg delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    
+    [alert show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    // 下面的这些操作可以放到主vc中去做
+    // http://www.cocoachina.com/bbs/read.php?tid=290239
+    /*
+     是这样的，如果你的程序在未启动的时候，如果用户点击通知，notification会通过didFinishLaunchingWithOptions:传递给您，如果用户未点击通知，则didFinishLaunchingWithOptions:的字典里不会有notification的信息，同理，如果你的程序正在后台运行，如果用户点击通知，则(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo会在你的程序进入前台后才会被调用（注意是通过点按通知启动才会被调用）如果用户收到了通知但是没有点按通知，而是点击屏幕上的App图标进入的app，则(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo不会被调用，里面的代码不会被执行。
+     */
+    
+    // 如果直接进行跳转的话这样子就ok，返回直接返回首页
+    // 如果返回不想返回首页，可以使用下面的方法，中间插入一个VC
+    // 使用的时候还要注意，当前的VC可能不是当前的导航控制器，但是，只要不是AlertView就可以直接transferFromViewController：nil
+    UINavigationController *nav = (UINavigationController *)self.window.rootViewController;
+    [LEDPortal transferFromViewController:nav.topViewController toURL:[NSURL URLWithString:@"ipuny://portal/launch"] completion:^(UIViewController * _Nullable viewController, NSError * _Nullable error) {
+        // 可以对VC做一些后续的操作
+//        NSLog(@"%@",[nav viewControllers]);
+        // 导航控制器的VCs增加一个页面
+        UINavigationController *currentNav = viewController.navigationController;
+        NSMutableArray *navs = [[NSMutableArray alloc] initWithArray:[currentNav.viewControllers mutableCopy]];
+        //
+        [navs removeObject:viewController];
+        //中间插入一个vc
+        PortalViewController *vc = [[PortalViewController alloc] init];
+        [navs addObject:vc];
+        //
+        [navs addObject:viewController];
+        currentNav.viewControllers = [navs copy];
+        
+        if (viewController && !error) {
+            viewController.title = @"远程跳转";
+            viewController.view.backgroundColor = [UIColor blueColor];
+        }
+        
+    }];
+
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error{
+    
+    NSLog(@"Regist fail%@",error);
+}
+
+// 本地推送通知
+// 设置本地通知
++ (void)registerLocalNotification:(NSInteger)alertTime {
+    UILocalNotification *notification = [[UILocalNotification alloc] init];
+    // 设置触发通知的时间
+    NSDate *fireDate = [NSDate dateWithTimeIntervalSinceNow:alertTime];
+    NSLog(@"fireDate=%@",fireDate);
+    
+    notification.fireDate = fireDate;
+    // 时区
+    notification.timeZone = [NSTimeZone defaultTimeZone];
+    // 设置重复的间隔
+    notification.repeatInterval = kCFCalendarUnitSecond;
+    
+    // 通知内容
+    notification.alertBody =  @"我是本地通知...";
+    notification.applicationIconBadgeNumber = 1;
+    // 通知被触发时播放的声音
+    notification.soundName = UILocalNotificationDefaultSoundName;
+    // 通知参数
+    NSDictionary *userDict = [NSDictionary dictionaryWithObject:@"今天天气还不错" forKey:@"key"];
+    notification.userInfo = userDict;
+    
+    // ios8后，需要添加这个注册，才能得到授权
+    if ([[UIApplication sharedApplication] respondsToSelector:@selector(registerUserNotificationSettings:)]) {
+        UIUserNotificationType type =  UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound;
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:type
+                                                                                 categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+        // 通知重复提示的单位，可以是天、周、月
+        notification.repeatInterval = NSCalendarUnitDay;
+    } else {
+        // 通知重复提示的单位，可以是天、周、月
+        notification.repeatInterval = NSDayCalendarUnit;
+    }
+    
+    // 执行通知注册
+    [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+}
+
+// 本地通知回调函数，当应用程序在前台时调用
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    NSLog(@"noti:%@",notification);
+    
+    // 这里真实需要处理交互的地方
+    // 获取通知所带的数据
+    NSString *notMess = [notification.userInfo objectForKey:@"key"];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"本地通知"
+                                                    message:notMess
+                                                   delegate:self
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+    
+    // 更新显示的徽章个数
+    NSInteger badge = [UIApplication sharedApplication].applicationIconBadgeNumber;
+    badge--;
+    badge = badge >= 0 ? badge : 0;
+    [UIApplication sharedApplication].applicationIconBadgeNumber = badge;
+    
+    // 在不需要再推送时，可以取消推送
+    [AppDelegate cancelLocalNotificationWithKey:@"key"];
+}
+
+// 取消某个本地推送通知
+// [[UIApplication sharedApplication] cancelAllLocalNotifications];
++ (void)cancelLocalNotificationWithKey:(NSString *)key {
+    // 获取所有本地通知数组
+    NSArray *localNotifications = [UIApplication sharedApplication].scheduledLocalNotifications;
+    
+    for (UILocalNotification *notification in localNotifications) {
+        NSDictionary *userInfo = notification.userInfo;
+        if (userInfo) {
+            // 根据设置通知参数时指定的key来获取通知参数
+            NSString *info = userInfo[key];
+            
+            // 如果找到需要取消的通知，则取消
+            if (info != nil) {
+                [[UIApplication sharedApplication] cancelLocalNotification:notification];
+                break;  
+            }  
+        }  
+    }  
 }
 
 @end

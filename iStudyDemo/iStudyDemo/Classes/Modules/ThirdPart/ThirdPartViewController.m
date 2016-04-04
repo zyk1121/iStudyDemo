@@ -75,6 +75,26 @@
     [_listData addObject:@"XMPP"];
     XMPPViewController *xmppViewController = [[XMPPViewController alloc] init];
     [_listViewControllers addObject:xmppViewController];
+    
+    // 4.融云 RC SDK(及时通讯和推送)
+    [_listData addObject:@"融云IM & Push通知"];
+    UIViewController *rciewController = [[UIViewController alloc] init];
+    rciewController.view.backgroundColor = [UIColor whiteColor];
+    /*
+     融云 SDK 根据 iOS App 运行的特性，主要有以下三种运行状态：
+     
+     1、 前台状态 如字面意思，App 前台可见时 SDK 处于前台状态。此时 App 使用融云的 socket 来收发消息.
+     
+     2、 后台活动状态 当 App 进入后台三分钟之内，SDK 处于后台活跃状态。此时 App 使用融云的 socket 接收消息。
+     
+     如果您使用 IMKit ，此时 SDK 收到消息会弹出本地通知（必须实现用户信息提供者和群组信息提供者，否则将不会有本地通知提示弹出）。
+     
+     如果您使用 IMLib ，此时 SDK 不会弹出本地通知，如果您需要可以自己弹出本地通知提示。
+     
+     3、 后台暂停状态 当 App 进入后台两分钟之后或被杀进程或被冻结，SDK 将处于后台暂停状态。此时融云的 socket 会断开，融云 Server 会通过 APNs 将消息以远程推送的形式下发到客户端。 此状态下如果有人给该用户发送消息，融云的服务器会根据 deviceToken 和推送证书将消息发送到苹果推送服务器，苹果服务器会将该消息推送到客户端。
+     */
+    rciewController.title = @"不需要搭建服务器";
+    [_listViewControllers addObject:rciewController];
 }
 
 
