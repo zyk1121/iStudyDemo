@@ -54,6 +54,16 @@
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:msg delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
         [alert show];
     }
+    
+    NSDictionary *localUserInfo = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+    if (localUserInfo) {
+//        NSString *message = [[localUserInfo objectForKey:@"aps"]objectForKey:@"alert"];
+//        NSString *msg = [NSString stringWithFormat:@"%@, 测试跳转到某一个页面",message];
+        // LEDPortal可以直接跳转到某个页面
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"本地推送通知" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+        [alert show];
+    }
+
 
     
     if ([application respondsToSelector:@selector(isRegisteredForRemoteNotifications)])
@@ -267,6 +277,35 @@
 }
 
 // 本地推送通知
+
+/*
+ 处理Local Notification
+ 在处理本地通知时，我们需要考虑三种情况：
+ 1. App没有启动，
+ 这种情况下，当点击通知时，会启动App，而在App中，开发人员可以通过实现*AppDelegate中的方法：- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions，然后从lauchOptions中获取App启动的原因，若是因为本地通知，则可以App启动时对App做对应的操作，比方说跳转到某个画面等等。栗子：
+ - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+ {
+ NSLog(@"Start App....");
+ ....
+ UILocalNotification *localNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+ if ([self isWelcomeNotification:localNotification]) {
+ NSLog(@"start with welcome notification");
+ [self.mainViewController showOfficeIntroduction];
+ }
+ return YES;
+ }
+ 2. App运行在后台
+ 3. App运行在前台
+ 上面的2种情况的处理基本一致， 不同点只有当运行再后台的时候，会有弹窗提示用户另外一个App有通知，对于本地通知单的处理都是通过*AppDelegate的方法：- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification来处理的。 栗子：
+ - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+ {
+ if ([self isWelcomeNotification:notification]) {
+ [self.mainViewController showOfficeIntroduction];
+ }if ([self isCustomerDataNotification:notification]) {
+ [self.mainViewController showCustomerDataIntroduction];
+ }
+ }
+ */
 // 设置本地通知
 + (void)registerLocalNotification:(NSInteger)alertTime {
     UILocalNotification *notification = [[UILocalNotification alloc] init];
@@ -282,7 +321,7 @@
     
     // 通知内容
     notification.alertBody =  @"我是本地通知...";
-    notification.applicationIconBadgeNumber = 1;
+//    notification.applicationIconBadgeNumber = 1;
     // 通知被触发时播放的声音
     notification.soundName = UILocalNotificationDefaultSoundName;
     // 通知参数
@@ -321,10 +360,10 @@
     [alert show];
     
     // 更新显示的徽章个数
-    NSInteger badge = [UIApplication sharedApplication].applicationIconBadgeNumber;
-    badge--;
-    badge = badge >= 0 ? badge : 0;
-    [UIApplication sharedApplication].applicationIconBadgeNumber = badge;
+//    NSInteger badge = [UIApplication sharedApplication].applicationIconBadgeNumber;
+//    badge--;
+//    badge = badge >= 0 ? badge : 0;
+//    [UIApplication sharedApplication].applicationIconBadgeNumber = badge;
     
     // 在不需要再推送时，可以取消推送
     [AppDelegate cancelLocalNotificationWithKey:@"key"];
