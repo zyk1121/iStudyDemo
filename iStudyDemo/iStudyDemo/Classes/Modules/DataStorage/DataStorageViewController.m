@@ -18,6 +18,60 @@
 #import "User.h"
 #import "ObjectManager/ObjectStorageManager.h"
 
+/*
+ 1.NSUserDefaults
+ NSUserDefaults非常适合非常轻量级的本地数据存储，常用于简单的用户名，密码等简单数据的存储，当然，使用起来非常的方便。
+ [[NSUserDefaults standardUserDefaults] setObject:number forKey:@"value”];
+ id value = [[NSUserDefaults standardUserDefaults] objectForKey:@"value"];
+ NSUserDefaults支持的数据格式有：NSNumber，NSString，NSDate，NSArray，NSDictionary类型。
+ 
+ 缺点：许多人不知道的是保存到NSUserDefaults的数据并没有加密，因此可以很容易的从应用的包中看到。NSUserDefaults被存在一个以应用的bundle id为名称的plist文件中。
+ 
+ 2.NSKeyedArchiver
+ 采用归档的形式来保存数据，该数据对象需要遵守NSCoding协议，并且该对象对应的类必须提供encodeWithCoder:和initWithCoder:方法。前一个方法告诉系统怎么对对象进行编码，而后一个方法则是告诉系统怎么对对象进行解码。
+ http://blog.csdn.net/tianyitianyi1/article/details/7713103
+ 缺点：归档的形式来保存数据，只能一次性归档保存以及一次性解压。所以只能针对小量数据，而且对数据操作比较笨拙，即如果想改动数据的某一小部分，还是需要解压整个数据或者归档整个数据。
+ 
+ 3.本地文件读写
+ 此方式类似C和C++的文件读写方式，可以创建一个文件，写入数据和读取数据。但是没有C，和C++文件读取方式灵活，iOS系统一般情况下会直接把NSData数据写入文件，而不是有一定组织的（C语言结构体）进行文件的读写。
+ 一般情况分四步：获取路径；生成文件；写入文件；读取文件。
+ 另一种保存数据普遍用的方法就是plist文件。Plist文件应该始终被用来保存那些非机密的文件，因为它们没有加密，因此即使在非越狱的设备上也非常容易被获取。已经有漏洞被爆出来，大公司把机密数据比如访问令牌，用户名和密码保存到plist文件中。
+ 
+ 4.SQLite
+ 采用SQLite数据库来存储数据。SQLite作为一中小型数据库，应用ios中，跟前三种保存方式相比，相对比较复杂一些；但是能够提供操作数据常用的增删改查等的功能。第三方库FMDB是比较常用的操作数据库的API库，使用起来比较简单。当然，也可以直接使用sql语句进行数据的增删改查，也比较容易实现。
+ 
+ 5.CoreData
+ Core Data 是 iOS 3.0 以后引入的数据持久化解决方案，其原理是对SQLite的封装，是开发者不需要接触SQL语句，就可以对数据库进行的操作。
+ 特点：默认的，保存在CoreData的数据都是没有加密的，因此可以轻易的被取出。因此，我们不应该用CoreData保存机密数据。
+ 
+ 6.Keychain
+ 有些开发者不太喜欢把数据保存到Keychain中，因为实现起来不那么直观。不过，把信息保存到Keychain中可能是非越狱设备上最安全的一种保存数据的方式了。而在越狱设备上，没有任何事情是安全的。参看：http://blog.csdn.net/yangzhen19900701/article/details/41043669
+ 操作方式参看：http://www.lvtao.net/ios/ios-keychain.html
+ 
+ 7.支付钱包中使用的本地数据缓存方式介绍
+ 
+ 使用类：SPKObjectCacheManager
+ 功能：根据自定义key写入和读取本地数据，计算本地缓存数据大小，和清空本地数据缓存。
+ 数据根据userid进行缓存，每个userid单独文件夹存放。
+ 清空是对整个/Library/Caches/com.meituan.ipayment/下的文件及文件夹进行清空。
+ /Library/Caches/com.meituan.ipayment/22345994/769af052f4926dc935779bb69ba2d2e0
+ 
+ 目前只对文件名进行了MD5加密，并没有对内部的数据进行加密，这是不合理的。
+ 
+ 底层使用的数据存储方式是NSKeyedArchiver，除了上面所述的缺点之外，也有数据没有加密的缺点，经过查看，是可以获得内部的私密数据信息的。oops。
+ 
+ 
+ 实现方案：字典转json，json加密存储。
+ 
+ 
+ 
+ 参看：
+ http://blog.csdn.net/tianyitianyi1/article/details/7713103
+ http://blog.csdn.net/yangzhen19900701/article/details/41043669
+ http://www.lvtao.net/ios/ios-keychain.html
+ 
+ */
+
 @interface DataStorageViewController ()
 
 @property(strong, nonatomic) NSManagedObjectContext *managedObjectContext;
