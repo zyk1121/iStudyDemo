@@ -19,6 +19,8 @@
 		7601D8E81CBA0A9700E6F6E7 /* TestSucessStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 7601D8E61CBA0A9700E6F6E7 /* TestSucessStub.json */; };
 		7601D8EC1CBA0B6300E6F6E7 /* STDTestViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8E91CBA0B6300E6F6E7 /* STDTestViewModelSpec.m */; };
 		7601D8ED1CBA0B6300E6F6E7 /* STDTestViewModelStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8EB1CBA0B6300E6F6E7 /* STDTestViewModelStub.m */; };
+		7601D8F01CBA4E1C00E6F6E7 /* LEDStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8EF1CBA4E1C00E6F6E7 /* LEDStudent.m */; };
+		7601D8F31CBA4E5600E6F6E7 /* LEDStudent+Other.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8F21CBA4E5600E6F6E7 /* LEDStudent+Other.m */; };
 		760AF0E71CB0330D00A0D242 /* btn_backItem_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 760AF0E51CB0330D00A0D242 /* btn_backItem_highlighted.png */; };
 		760AF0E81CB0330D00A0D242 /* btn_backItem.png in Resources */ = {isa = PBXBuildFile; fileRef = 760AF0E61CB0330D00A0D242 /* btn_backItem.png */; };
 		760AF0EB1CB0DA5500A0D242 /* LEDWebViewController+Progress.m in Sources */ = {isa = PBXBuildFile; fileRef = 760AF0EA1CB0DA5500A0D242 /* LEDWebViewController+Progress.m */; };
@@ -429,6 +431,10 @@
 		7601D8E91CBA0B6300E6F6E7 /* STDTestViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDTestViewModelSpec.m; sourceTree = "<group>"; };
 		7601D8EA1CBA0B6300E6F6E7 /* STDTestViewModelStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDTestViewModelStub.h; sourceTree = "<group>"; };
 		7601D8EB1CBA0B6300E6F6E7 /* STDTestViewModelStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDTestViewModelStub.m; sourceTree = "<group>"; };
+		7601D8EE1CBA4E1C00E6F6E7 /* LEDStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDStudent.h; sourceTree = "<group>"; };
+		7601D8EF1CBA4E1C00E6F6E7 /* LEDStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDStudent.m; sourceTree = "<group>"; };
+		7601D8F11CBA4E5600E6F6E7 /* LEDStudent+Other.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LEDStudent+Other.h"; sourceTree = "<group>"; };
+		7601D8F21CBA4E5600E6F6E7 /* LEDStudent+Other.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LEDStudent+Other.m"; sourceTree = "<group>"; };
 		760AF0E51CB0330D00A0D242 /* btn_backItem_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_backItem_highlighted.png; sourceTree = "<group>"; };
 		760AF0E61CB0330D00A0D242 /* btn_backItem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_backItem.png; sourceTree = "<group>"; };
 		760AF0E91CB0DA5500A0D242 /* LEDWebViewController+Progress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LEDWebViewController+Progress.h"; sourceTree = "<group>"; };
@@ -2125,6 +2131,10 @@
 			children = (
 				76C0358C1CA68964002241E5 /* RunTimeViewController.h */,
 				76C0358D1CA68964002241E5 /* RunTimeViewController.m */,
+				7601D8EE1CBA4E1C00E6F6E7 /* LEDStudent.h */,
+				7601D8EF1CBA4E1C00E6F6E7 /* LEDStudent.m */,
+				7601D8F11CBA4E5600E6F6E7 /* LEDStudent+Other.h */,
+				7601D8F21CBA4E5600E6F6E7 /* LEDStudent+Other.m */,
 			);
 			path = RunTime;
 			sourceTree = "<group>";
@@ -2898,6 +2908,7 @@
 				76BD6BD71CA15C0A00708977 /* ZTSearchBar.m in Sources */,
 				7697181E1C9AFCC200D0AC63 /* UIImage+IPLImageKit.m in Sources */,
 				763E4DFF1CA25E4100470FCA /* KBViewController.m in Sources */,
+				7601D8F31CBA4E5600E6F6E7 /* LEDStudent+Other.m in Sources */,
 				760AF1321CB13A4500A0D242 /* NSData+AES.m in Sources */,
 				76C035D91CAA997A002241E5 /* AudioViewController.m in Sources */,
 				76BD6BCB1CA1118900708977 /* ZTTabBar.m in Sources */,
@@ -2940,6 +2951,7 @@
 				760AF0F41CB0E43500A0D242 /* LEDURLChecker.m in Sources */,
 				769718211C9B0DDA00D0AC63 /* PopViewLikeQQView.m in Sources */,
 				7601D8D11CB9610A00E6F6E7 /* LEDProvince.m in Sources */,
+				7601D8F01CBA4E1C00E6F6E7 /* LEDStudent.m in Sources */,
 				76C035691CA681C2002241E5 /* PortalViewController.m in Sources */,
 				76C0355C1CA6776E002241E5 /* MessageFrame.m in Sources */,
 				76C035801CA68792002241E5 /* DrawLayerViewController.m in Sources */,
