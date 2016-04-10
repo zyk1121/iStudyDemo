@@ -11,7 +11,9 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+// 本地推送通知
+// 设置本地通知
++ (void)registerLocalNotification:(NSInteger)alertTime;
 
 @end
 

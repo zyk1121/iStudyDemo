@@ -222,9 +222,17 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
     
-    UIViewController *vc = [self.listViewControllers objectAtIndex:indexPath.row];
-    vc.title = [self.listData objectAtIndex:indexPath.row];
+    UIViewController *vc;
+    if ([[self.listData objectAtIndex:indexPath.row] isEqualToString:@"RAC"]) {
+        vc = [[RACViewController alloc] init];
+        vc.title = [self.listData objectAtIndex:indexPath.row];
+    } else {
+        vc = [self.listViewControllers objectAtIndex:indexPath.row];
+        vc.title = [self.listData objectAtIndex:indexPath.row];
+    }
+    
     
     [self.navigationController pushViewController:vc animated:YES];
     

@@ -20,6 +20,19 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - ASIHTTPRequest (1.8.2):
+    - ASIHTTPRequest/ASIWebPageRequest (= 1.8.2)
+    - ASIHTTPRequest/CloudFiles (= 1.8.2)
+    - ASIHTTPRequest/Core (= 1.8.2)
+    - ASIHTTPRequest/S3 (= 1.8.2)
+  - ASIHTTPRequest/ASIWebPageRequest (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/CloudFiles (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/Core (1.8.2):
+    - Reachability
+  - ASIHTTPRequest/S3 (1.8.2):
+    - ASIHTTPRequest/Core
   - CocoaAsyncSocket (7.4.3):
     - CocoaAsyncSocket/All (= 7.4.3)
   - CocoaAsyncSocket/All (7.4.3):
@@ -37,6 +50,7 @@ PODS:
     - FMDB/standard (= 2.6)
   - FMDB/standard (2.6)
   - JSONKit (1.4)
+  - JSONModel (1.2.0)
   - JSPatch (0.1.5):
     - JSPatch/Core (= 0.1.5)
   - JSPatch/Core (0.1.5)
@@ -84,6 +98,7 @@ PODS:
     - OHHTTPStubs/Core (= 3.1.12)
   - OHHTTPStubs/Core (3.1.12)
   - OpenSSL-Universal (1.0.1.17)
+  - Reachability (3.2)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -243,9 +258,11 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.0)
+  - ASIHTTPRequest (~> 1.8.2)
   - Expecta (~> 0.3.1)
   - FMDB (~> 2.6)
   - JSONKit
+  - JSONModel (~> 1.2.0)
   - JSPatch (~> 0.1.5)
   - libextobjc (~> 0.4.1)
   - Mantle (~> 2.0)
@@ -263,11 +280,13 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  ASIHTTPRequest: ec013992946676b7978dcbde6396d57312d21db4
   CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
   CocoaLumberjack: 628fca2e88ef06f7cf6817309aa405f325d9a6fa
   Expecta: 8c507baf13211207b1e9d0a741480600e6b4ed15
   FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
   JSONKit: 5b69e804ea54d99293eed0fd2ce596c5703fefb0
+  JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
   JSPatch: 405b5f5990643e6717dd6715ac60d6a2b582a6ba
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   Mantle: 299966b00759634931699f69cb6a30b9239b944d
@@ -275,6 +294,7 @@ SPEC CHECKSUMS:
   OCMock: 4c2925291f80407c3738dd1db14d21d0cc278864
   OHHTTPStubs: 8cf0cfe6f34f13fc88fdf5b2a1b2c2536e8c0261
   OpenSSL-Universal: b3c4ab9bbc3e4978caf9e838c8589f1f537244b4
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RPJSONValidator: a079b234c0f87833b657708adb80531dc45dbe83
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
