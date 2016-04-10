@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2CC315F5FBCAE9FC2DFE0F87 /* libPods-iStudyDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FCB39AC830876F184EF9700 /* libPods-iStudyDemo.a */; };
+		7601D8D11CB9610A00E6F6E7 /* LEDProvince.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8D01CB9610A00E6F6E7 /* LEDProvince.m */; };
+		7601D8D41CB9EA5100E6F6E7 /* LEDMVVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8D31CB9EA5100E6F6E7 /* LEDMVVMViewModel.m */; };
+		7601D8D71CB9EB2500E6F6E7 /* LEDMVVMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8D61CB9EB2500E6F6E7 /* LEDMVVMModel.m */; };
+		7601D8DA1CB9F2AF00E6F6E7 /* DSActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8D91CB9F2AF00E6F6E7 /* DSActivityView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		760AF0E71CB0330D00A0D242 /* btn_backItem_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 760AF0E51CB0330D00A0D242 /* btn_backItem_highlighted.png */; };
 		760AF0E81CB0330D00A0D242 /* btn_backItem.png in Resources */ = {isa = PBXBuildFile; fileRef = 760AF0E61CB0330D00A0D242 /* btn_backItem.png */; };
 		760AF0EB1CB0DA5500A0D242 /* LEDWebViewController+Progress.m in Sources */ = {isa = PBXBuildFile; fileRef = 760AF0EA1CB0DA5500A0D242 /* LEDWebViewController+Progress.m */; };
@@ -365,6 +369,8 @@
 		76C479A11C8F248F00EAE07E /* coreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76C4799F1C8F248F00EAE07E /* coreData.xcdatamodeld */; };
 		76C479A61C8F264100EAE07E /* TestCoreData+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C479A31C8F264100EAE07E /* TestCoreData+CoreDataProperties.m */; };
 		76C479A71C8F264100EAE07E /* TestCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C479A51C8F264100EAE07E /* TestCoreData.m */; };
+		76CDEB9A1CB95ABD00DFCB16 /* LEDProvincesDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CDEB991CB95ABD00DFCB16 /* LEDProvincesDomain.m */; };
+		76CDEB9D1CB95AE700DFCB16 /* LEDCities.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CDEB9C1CB95AE700DFCB16 /* LEDCities.m */; };
 		76E9037E1C9ED4B4003AC33A /* NaviMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9037D1C9ED4B4003AC33A /* NaviMenuViewController.m */; };
 		76E903891C9ED53E003AC33A /* NavMenuScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903811C9ED53E003AC33A /* NavMenuScrollView.m */; };
 		76E9038A1C9ED53E003AC33A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903831C9ED53E003AC33A /* UIView+Extension.m */; };
@@ -400,6 +406,14 @@
 
 /* Begin PBXFileReference section */
 		07C0384D7390C0AD733D2BFE /* Pods-iStudyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemo/Pods-iStudyDemo.release.xcconfig"; sourceTree = "<group>"; };
+		7601D8CF1CB9610A00E6F6E7 /* LEDProvince.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDProvince.h; sourceTree = "<group>"; };
+		7601D8D01CB9610A00E6F6E7 /* LEDProvince.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDProvince.m; sourceTree = "<group>"; };
+		7601D8D21CB9EA5100E6F6E7 /* LEDMVVMViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDMVVMViewModel.h; sourceTree = "<group>"; };
+		7601D8D31CB9EA5100E6F6E7 /* LEDMVVMViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDMVVMViewModel.m; sourceTree = "<group>"; };
+		7601D8D51CB9EB2500E6F6E7 /* LEDMVVMModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDMVVMModel.h; sourceTree = "<group>"; };
+		7601D8D61CB9EB2500E6F6E7 /* LEDMVVMModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDMVVMModel.m; sourceTree = "<group>"; };
+		7601D8D81CB9F2AF00E6F6E7 /* DSActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSActivityView.h; sourceTree = "<group>"; };
+		7601D8D91CB9F2AF00E6F6E7 /* DSActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSActivityView.m; sourceTree = "<group>"; };
 		760AF0E51CB0330D00A0D242 /* btn_backItem_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_backItem_highlighted.png; sourceTree = "<group>"; };
 		760AF0E61CB0330D00A0D242 /* btn_backItem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_backItem.png; sourceTree = "<group>"; };
 		760AF0E91CB0DA5500A0D242 /* LEDWebViewController+Progress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LEDWebViewController+Progress.h"; sourceTree = "<group>"; };
@@ -906,6 +920,10 @@
 		76C479A31C8F264100EAE07E /* TestCoreData+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestCoreData+CoreDataProperties.m"; sourceTree = "<group>"; };
 		76C479A41C8F264100EAE07E /* TestCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCoreData.h; sourceTree = "<group>"; };
 		76C479A51C8F264100EAE07E /* TestCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCoreData.m; sourceTree = "<group>"; };
+		76CDEB981CB95ABD00DFCB16 /* LEDProvincesDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDProvincesDomain.h; sourceTree = "<group>"; };
+		76CDEB991CB95ABD00DFCB16 /* LEDProvincesDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDProvincesDomain.m; sourceTree = "<group>"; };
+		76CDEB9B1CB95AE700DFCB16 /* LEDCities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDCities.h; sourceTree = "<group>"; };
+		76CDEB9C1CB95AE700DFCB16 /* LEDCities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDCities.m; sourceTree = "<group>"; };
 		76E9037C1C9ED4B4003AC33A /* NaviMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaviMenuViewController.h; sourceTree = "<group>"; };
 		76E9037D1C9ED4B4003AC33A /* NaviMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaviMenuViewController.m; sourceTree = "<group>"; };
 		76E903801C9ED53E003AC33A /* NavMenuScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavMenuScrollView.h; sourceTree = "<group>"; };
@@ -1271,6 +1289,8 @@
 		76213BD71C97028B001DAA53 /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				7601D8D81CB9F2AF00E6F6E7 /* DSActivityView.h */,
+				7601D8D91CB9F2AF00E6F6E7 /* DSActivityView.m */,
 				76C035791CA68606002241E5 /* XMPP */,
 				76C0356D1CA68279002241E5 /* QRCode */,
 				76213BDB1C97047E001DAA53 /* ThirdShare */,
@@ -2038,8 +2058,10 @@
 		76C035811CA68923002241E5 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				76C035861CA68943002241E5 /* MVVMViewController.h */,
-				76C035871CA68943002241E5 /* MVVMViewController.m */,
+				76CDEB971CB95A7300DFCB16 /* Domain */,
+				76C7A7501CB88F660004CFCA /* ViewModel */,
+				76C7A74F1CB88F5C0004CFCA /* Model */,
+				76C7A74E1CB88F4F0004CFCA /* ViewController */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -2262,6 +2284,46 @@
 				76C4799B1C8EF67B00EAE07E /* QuartzCoreViewController.m */,
 			);
 			path = QuartzCore;
+			sourceTree = "<group>";
+		};
+		76C7A74E1CB88F4F0004CFCA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				76C035861CA68943002241E5 /* MVVMViewController.h */,
+				76C035871CA68943002241E5 /* MVVMViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		76C7A74F1CB88F5C0004CFCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7601D8D51CB9EB2500E6F6E7 /* LEDMVVMModel.h */,
+				7601D8D61CB9EB2500E6F6E7 /* LEDMVVMModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		76C7A7501CB88F660004CFCA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7601D8D21CB9EA5100E6F6E7 /* LEDMVVMViewModel.h */,
+				7601D8D31CB9EA5100E6F6E7 /* LEDMVVMViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		76CDEB971CB95A7300DFCB16 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				76CDEB981CB95ABD00DFCB16 /* LEDProvincesDomain.h */,
+				76CDEB991CB95ABD00DFCB16 /* LEDProvincesDomain.m */,
+				76CDEB9B1CB95AE700DFCB16 /* LEDCities.h */,
+				76CDEB9C1CB95AE700DFCB16 /* LEDCities.m */,
+				7601D8CF1CB9610A00E6F6E7 /* LEDProvince.h */,
+				7601D8D01CB9610A00E6F6E7 /* LEDProvince.m */,
+			);
+			name = Domain;
 			sourceTree = "<group>";
 		};
 		76E9037B1C9ED4A0003AC33A /* NavMenu */ = {
@@ -2769,6 +2831,7 @@
 				76E903941C9EFC2B003AC33A /* QQChatViewController.m in Sources */,
 				760AF13F1CB23BB500A0D242 /* LEDModalView.m in Sources */,
 				76E9038A1C9ED53E003AC33A /* UIView+Extension.m in Sources */,
+				7601D8D41CB9EA5100E6F6E7 /* LEDMVVMViewModel.m in Sources */,
 				76E916461CABE8D500C8C63A /* ScreenShotViewController.m in Sources */,
 				760AF1221CB11A5D00A0D242 /* LEDDESCrypto.m in Sources */,
 				760AF1211CB11A5D00A0D242 /* LEDCrypto.m in Sources */,
@@ -2826,6 +2889,7 @@
 				76C035911CA68973002241E5 /* ThreadViewController.m in Sources */,
 				760AF0F41CB0E43500A0D242 /* LEDURLChecker.m in Sources */,
 				769718211C9B0DDA00D0AC63 /* PopViewLikeQQView.m in Sources */,
+				7601D8D11CB9610A00E6F6E7 /* LEDProvince.m in Sources */,
 				76C035691CA681C2002241E5 /* PortalViewController.m in Sources */,
 				76C0355C1CA6776E002241E5 /* MessageFrame.m in Sources */,
 				76C035801CA68792002241E5 /* DrawLayerViewController.m in Sources */,
@@ -2847,7 +2911,9 @@
 				76C034C21CA40EC7002241E5 /* SPKBannerView.m in Sources */,
 				760AF1091CB1142500A0D242 /* NSData+Base64.m in Sources */,
 				760AF1311CB13A4500A0D242 /* GTMBase64.m in Sources */,
+				76CDEB9D1CB95AE700DFCB16 /* LEDCities.m in Sources */,
 				761931D31C8C5DF70022A311 /* CC3Kazmath.c in Sources */,
+				7601D8D71CB9EB2500E6F6E7 /* LEDMVVMModel.m in Sources */,
 				76BD6BDA1CA15CAD00708977 /* WeiboSearchViewController.m in Sources */,
 				76BD6BC71CA1106100708977 /* WeiboMainViewController.m in Sources */,
 				76E903991C9F0089003AC33A /* AliPayViewController.m in Sources */,
@@ -2871,6 +2937,7 @@
 				763E4DF91CA25E2900470FCA /* WDViewController.m in Sources */,
 				76C035A01CA68FF0002241E5 /* ReactNativeViewController.m in Sources */,
 				760AF0F11CB0E35600A0D242 /* NSArray+LEDFoundation.m in Sources */,
+				76CDEB9A1CB95ABD00DFCB16 /* LEDProvincesDomain.m in Sources */,
 				7681A8231C95A04500FC6843 /* ObjectStorageManager.m in Sources */,
 				76C479A71C8F264100EAE07E /* TestCoreData.m in Sources */,
 				76E9164F1CAC2FA300C8C63A /* LEDWebViewController.m in Sources */,
@@ -2880,6 +2947,7 @@
 				76C035281CA6709F002241E5 /* TouchIDViewController.m in Sources */,
 				769717F31C9A73E000D0AC63 /* UIView+SHCZExt.m in Sources */,
 				76C035E51CAA99BE002241E5 /* VideoViewController.m in Sources */,
+				7601D8DA1CB9F2AF00E6F6E7 /* DSActivityView.m in Sources */,
 				763FE38D1C8DCB6100CE67FF /* LEDDomainPredicate.m in Sources */,
 				7681A80D1C9588ED00FC6843 /* User.xcdatamodeld in Sources */,
 				76C034C01CA40EC7002241E5 /* SPKBannerPageControl.m in Sources */,
