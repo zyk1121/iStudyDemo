@@ -587,4 +587,55 @@ void test(id self, SEL _cmd)
     NSLog(@"%@",self);
 }
 
+/*
+ 常用的CLang Warning
+ 
+ Wall
+ Wbad-function-cast
+ Wcast-align
+ Wconversion
+ Wdeclaration-after-statement
+ Wdeprecated-implementations
+ Wextra
+ Wfloat-equal
+ Wformat=2
+ Wformat-nonliteral
+ Wfour-char-constants
+ Wimplicit-atomic-properties
+ Wmissing-braces
+ Wmissing-declarations
+ Wmissing-field-initializers
+ Wmissing-format-attribute
+ Wmissing-noreturn
+ Wmissing-prototypes
+ Wnested-externs
+ Wnewline-eof
+ Wold-style-definition
+ Woverlength-strings
+ Wparentheses
+ Wpointer-arith
+ Wredundant-decls
+ Wreturn-type
+ Wsequence-point
+ Wshadow
+ Wshorten-64-to-32
+ Wsign-compare
+ Wsign-conversion
+ Wstrict-prototypes
+ Wstrict-selector-match
+ Wswitch
+ Wswitch-default
+ Wswitch-enum
+ Wundeclared-selector
+ Wuninitialized
+ Wunknown-pragmas
+ Wunreachable-code
+ Wunused-function
+ Wunused-label
+ Wunused-parameter
+ Wunused-value
+ Wunused-variable
+ Wwrite-strings
+ */
+
 @end
