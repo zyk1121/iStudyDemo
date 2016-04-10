@@ -94,9 +94,19 @@ PODS:
   - Mantle/extobjc (2.0.6)
   - Masonry (0.6.4)
   - OCMock (3.1.5)
-  - OHHTTPStubs (3.1.12):
-    - OHHTTPStubs/Core (= 3.1.12)
-  - OHHTTPStubs/Core (3.1.12)
+  - OHHTTPStubs (4.7.1):
+    - OHHTTPStubs/Default (= 4.7.1)
+  - OHHTTPStubs/Core (4.7.1)
+  - OHHTTPStubs/Default (4.7.1):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (4.7.1):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (4.7.1):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (4.7.1)
   - OpenSSL-Universal (1.0.1.17)
   - Reachability (3.2)
   - ReactiveCocoa (2.5):
@@ -268,7 +278,7 @@ DEPENDENCIES:
   - Mantle (~> 2.0)
   - Masonry (~> 0.6.2)
   - OCMock (~> 3.1.2)
-  - OHHTTPStubs (~> 3.1.1)
+  - OHHTTPStubs (~> 4.7.1)
   - OpenSSL-Universal
   - ReactiveCocoa (~> 2.5)
   - RPJSONValidator (~> 0.2.0)
@@ -292,7 +302,7 @@ SPEC CHECKSUMS:
   Mantle: 299966b00759634931699f69cb6a30b9239b944d
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   OCMock: 4c2925291f80407c3738dd1db14d21d0cc278864
-  OHHTTPStubs: 8cf0cfe6f34f13fc88fdf5b2a1b2c2536e8c0261
+  OHHTTPStubs: f7d1604d04d37d055460c0ef9af01bb249ded0fa
   OpenSSL-Universal: b3c4ab9bbc3e4978caf9e838c8589f1f537244b4
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a

@@ -29,6 +29,7 @@
 #import "NewfeatureViewController.h"
 #import "LEDPortal.h"
 #import "PortalViewController.h"
+#import "LEDStubManager.h"
 
 
 @interface AppDelegate () <WXApiDelegate, UIAlertViewDelegate>
@@ -78,6 +79,7 @@
     
 //    // 本地推送通知
 //    [AppDelegate registerLocalNotification:5];
+
     
     [self configureMapAPIKey];
     [[JSPatchProcessKit defaultJSPatchKit] execJSProcess];
@@ -127,6 +129,10 @@
     //2. 初始化社交平台
     //2.1 代码初始化社交平台的方法
     [self initializePlat];
+    
+    
+//      [[LEDStubManager defaultStubManager] setupHTTPStubs];
+    
     return YES;
 }
 

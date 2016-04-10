@@ -12,6 +12,13 @@
 		7601D8D41CB9EA5100E6F6E7 /* LEDMVVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8D31CB9EA5100E6F6E7 /* LEDMVVMViewModel.m */; };
 		7601D8D71CB9EB2500E6F6E7 /* LEDMVVMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8D61CB9EB2500E6F6E7 /* LEDMVVMModel.m */; };
 		7601D8DA1CB9F2AF00E6F6E7 /* DSActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8D91CB9F2AF00E6F6E7 /* DSActivityView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7601D8DE1CB9FC6300E6F6E7 /* LEDStubManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8DD1CB9FC6300E6F6E7 /* LEDStubManager.m */; };
+		7601D8E21CB9FD2400E6F6E7 /* accountBalanceStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 7601D8E01CB9FD2400E6F6E7 /* accountBalanceStub.json */; };
+		7601D8E31CB9FD2400E6F6E7 /* testStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 7601D8E11CB9FD2400E6F6E7 /* testStub.json */; };
+		7601D8E71CBA0A9700E6F6E7 /* TestFailStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 7601D8E51CBA0A9700E6F6E7 /* TestFailStub.json */; };
+		7601D8E81CBA0A9700E6F6E7 /* TestSucessStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 7601D8E61CBA0A9700E6F6E7 /* TestSucessStub.json */; };
+		7601D8EC1CBA0B6300E6F6E7 /* STDTestViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8E91CBA0B6300E6F6E7 /* STDTestViewModelSpec.m */; };
+		7601D8ED1CBA0B6300E6F6E7 /* STDTestViewModelStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8EB1CBA0B6300E6F6E7 /* STDTestViewModelStub.m */; };
 		760AF0E71CB0330D00A0D242 /* btn_backItem_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 760AF0E51CB0330D00A0D242 /* btn_backItem_highlighted.png */; };
 		760AF0E81CB0330D00A0D242 /* btn_backItem.png in Resources */ = {isa = PBXBuildFile; fileRef = 760AF0E61CB0330D00A0D242 /* btn_backItem.png */; };
 		760AF0EB1CB0DA5500A0D242 /* LEDWebViewController+Progress.m in Sources */ = {isa = PBXBuildFile; fileRef = 760AF0EA1CB0DA5500A0D242 /* LEDWebViewController+Progress.m */; };
@@ -42,7 +49,6 @@
 		760AF13F1CB23BB500A0D242 /* LEDModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 760AF13E1CB23BB500A0D242 /* LEDModalView.m */; };
 		761931791C8BC5120022A311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761931781C8BC5120022A311 /* Assets.xcassets */; };
 		7619317C1C8BC5120022A311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7619317A1C8BC5120022A311 /* LaunchScreen.storyboard */; };
-		761931871C8BC5120022A311 /* iStudyDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931861C8BC5120022A311 /* iStudyDemoTests.m */; };
 		761931921C8BC5120022A311 /* iStudyDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931911C8BC5120022A311 /* iStudyDemoUITests.m */; };
 		761931A51C8BC8A20022A311 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931A11C8BC8A20022A311 /* AppDelegate.m */; };
 		761931A71C8BC8A20022A311 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931A41C8BC8A20022A311 /* MainViewController.m */; };
@@ -414,6 +420,15 @@
 		7601D8D61CB9EB2500E6F6E7 /* LEDMVVMModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDMVVMModel.m; sourceTree = "<group>"; };
 		7601D8D81CB9F2AF00E6F6E7 /* DSActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSActivityView.h; sourceTree = "<group>"; };
 		7601D8D91CB9F2AF00E6F6E7 /* DSActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSActivityView.m; sourceTree = "<group>"; };
+		7601D8DC1CB9FC6300E6F6E7 /* LEDStubManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDStubManager.h; sourceTree = "<group>"; };
+		7601D8DD1CB9FC6300E6F6E7 /* LEDStubManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDStubManager.m; sourceTree = "<group>"; };
+		7601D8E01CB9FD2400E6F6E7 /* accountBalanceStub.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = accountBalanceStub.json; sourceTree = "<group>"; };
+		7601D8E11CB9FD2400E6F6E7 /* testStub.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testStub.json; sourceTree = "<group>"; };
+		7601D8E51CBA0A9700E6F6E7 /* TestFailStub.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestFailStub.json; sourceTree = "<group>"; };
+		7601D8E61CBA0A9700E6F6E7 /* TestSucessStub.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestSucessStub.json; sourceTree = "<group>"; };
+		7601D8E91CBA0B6300E6F6E7 /* STDTestViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDTestViewModelSpec.m; sourceTree = "<group>"; };
+		7601D8EA1CBA0B6300E6F6E7 /* STDTestViewModelStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDTestViewModelStub.h; sourceTree = "<group>"; };
+		7601D8EB1CBA0B6300E6F6E7 /* STDTestViewModelStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDTestViewModelStub.m; sourceTree = "<group>"; };
 		760AF0E51CB0330D00A0D242 /* btn_backItem_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_backItem_highlighted.png; sourceTree = "<group>"; };
 		760AF0E61CB0330D00A0D242 /* btn_backItem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_backItem.png; sourceTree = "<group>"; };
 		760AF0E91CB0DA5500A0D242 /* LEDWebViewController+Progress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LEDWebViewController+Progress.h"; sourceTree = "<group>"; };
@@ -470,7 +485,6 @@
 		7619317B1C8BC5120022A311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7619317D1C8BC5120022A311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		761931821C8BC5120022A311 /* iStudyDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iStudyDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		761931861C8BC5120022A311 /* iStudyDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iStudyDemoTests.m; sourceTree = "<group>"; };
 		761931881C8BC5120022A311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7619318D1C8BC5120022A311 /* iStudyDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iStudyDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		761931911C8BC5120022A311 /* iStudyDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iStudyDemoUITests.m; sourceTree = "<group>"; };
@@ -1032,6 +1046,34 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7601D8DB1CB9FC3F00E6F6E7 /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				7601D8DF1CB9FD2400E6F6E7 /* StubJson */,
+				7601D8DC1CB9FC6300E6F6E7 /* LEDStubManager.h */,
+				7601D8DD1CB9FC6300E6F6E7 /* LEDStubManager.m */,
+			);
+			path = Stub;
+			sourceTree = "<group>";
+		};
+		7601D8DF1CB9FD2400E6F6E7 /* StubJson */ = {
+			isa = PBXGroup;
+			children = (
+				7601D8E01CB9FD2400E6F6E7 /* accountBalanceStub.json */,
+				7601D8E11CB9FD2400E6F6E7 /* testStub.json */,
+			);
+			path = StubJson;
+			sourceTree = "<group>";
+		};
+		7601D8E41CBA0A9700E6F6E7 /* StubFiles */ = {
+			isa = PBXGroup;
+			children = (
+				7601D8E51CBA0A9700E6F6E7 /* TestFailStub.json */,
+				7601D8E61CBA0A9700E6F6E7 /* TestSucessStub.json */,
+			);
+			path = StubFiles;
+			sourceTree = "<group>";
+		};
 		760AF1031CB1141200A0D242 /* PushNotification */ = {
 			isa = PBXGroup;
 			children = (
@@ -1154,7 +1196,10 @@
 		761931851C8BC5120022A311 /* iStudyDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				761931861C8BC5120022A311 /* iStudyDemoTests.m */,
+				7601D8E91CBA0B6300E6F6E7 /* STDTestViewModelSpec.m */,
+				7601D8EA1CBA0B6300E6F6E7 /* STDTestViewModelStub.h */,
+				7601D8EB1CBA0B6300E6F6E7 /* STDTestViewModelStub.m */,
+				7601D8E41CBA0A9700E6F6E7 /* StubFiles */,
 				761931881C8BC5120022A311 /* Info.plist */,
 			);
 			path = iStudyDemoTests;
@@ -2100,6 +2145,7 @@
 		76C035851CA68923002241E5 /* UnitTestStub */ = {
 			isa = PBXGroup;
 			children = (
+				7601D8DB1CB9FC3F00E6F6E7 /* Stub */,
 				76C035921CA689A7002241E5 /* UnitTestStubMockViewController.h */,
 				76C035931CA689A7002241E5 /* UnitTestStubMockViewController.m */,
 			);
@@ -2596,6 +2642,7 @@
 				763E4E851CA2B7F500470FCA /* USE_GAS.png in Resources */,
 				763E4E681CA2B7F500470FCA /* 20000032@2x.png in Resources */,
 				763E4E0A1CA2609A00470FCA /* kb_sel@2x.png in Resources */,
+				7601D8E21CB9FD2400E6F6E7 /* accountBalanceStub.json in Resources */,
 				76C0350D1CA43103002241E5 /* 2.jpg in Resources */,
 				76C035AC1CA78FEA002241E5 /* pick_bg@2x.png in Resources */,
 				763E4E091CA2609A00470FCA /* kb@2x.png in Resources */,
@@ -2674,6 +2721,7 @@
 				763E4E5D1CA2B7F500470FCA /* 09999998.png in Resources */,
 				763E4E0E1CA2609A00470FCA /* wd_sel@2x.png in Resources */,
 				76C035FE1CAB98F5002241E5 /* down.png in Resources */,
+				7601D8E31CB9FD2400E6F6E7 /* testStub.json in Resources */,
 				763E4E8A1CA2B7F500470FCA /* USE_WATER.png in Resources */,
 				763E4E8B1CA2B7F500470FCA /* USE_WIRE.png in Resources */,
 				769718661C9D466E00D0AC63 /* hand.png in Resources */,
@@ -2745,6 +2793,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7601D8E71CBA0A9700E6F6E7 /* TestFailStub.json in Resources */,
+				7601D8E81CBA0A9700E6F6E7 /* TestSucessStub.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2900,6 +2950,7 @@
 				76C035211CA65D62002241E5 /* KeyFrameViewController.m in Sources */,
 				76C0352B1CA6713C002241E5 /* TouchIDManager.m in Sources */,
 				76C035131CA44337002241E5 /* UIScrollRollView.m in Sources */,
+				7601D8DE1CB9FC6300E6F6E7 /* LEDStubManager.m in Sources */,
 				76C035B81CA79EFD002241E5 /* AddressBookViewController.m in Sources */,
 				761931AB1C8BCC3F0022A311 /* main.mm in Sources */,
 				760AF1341CB13A4500A0D242 /* SecurityUtil.m in Sources */,
@@ -2976,7 +3027,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				761931871C8BC5120022A311 /* iStudyDemoTests.m in Sources */,
+				7601D8ED1CBA0B6300E6F6E7 /* STDTestViewModelStub.m in Sources */,
+				7601D8EC1CBA0B6300E6F6E7 /* STDTestViewModelSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

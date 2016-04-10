@@ -21,11 +21,12 @@ target "iStudyDemo" do
   pod 'OpenSSL-Universal'
   pod 'ASIHTTPRequest', '~> 1.8.2'
   pod 'JSONModel', '~> 1.2.0'
+  pod 'OHHTTPStubs', '~> 4.7.1'
 end
 
 target "iStudyDemoTests" do
     pod 'Specta', '~> 0.2.1', :inhibit_warnings => true
     pod 'Expecta', '~> 0.3.1', :inhibit_warnings => true
-    pod 'OHHTTPStubs', '~> 3.1.1', :inhibit_warnings => true
+    pod 'OHHTTPStubs', '~> 4.7.1'
     pod 'OCMock', '~>3.1.2', :inhibit_warnings => true
 end
