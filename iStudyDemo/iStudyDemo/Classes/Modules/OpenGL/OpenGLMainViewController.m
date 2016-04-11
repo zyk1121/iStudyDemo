@@ -12,6 +12,8 @@
 #import "UIKitMacros.h"
 #import "OpenGLViewController.h"
 
+//  http://www.cppblog.com/doing5552/archive/2009/01/08/71532.html
+
 @interface OpenGLMainViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
