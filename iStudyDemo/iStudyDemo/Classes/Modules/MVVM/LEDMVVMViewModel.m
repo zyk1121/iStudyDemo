@@ -51,10 +51,10 @@
         @strongify(self);
         if ([[dataDic objectForKey:@"status"] integerValue] == 1) {
             //  使用KVC解析Dic数据
-            self.provinces = [self kvcLEDProvincesDomainForFormDictionary:[dataDic objectForKey:@"result"]];
-//            self.provinces = [LEDProvincesDomain domainWithJSONDictionary:[dataDic objectForKey:@"result"]];
-            [self getPropertyNameList:[LEDProvince new]];
-            [self getPropertyNameList:[LEDCities new]];
+//            self.provinces = [self kvcLEDProvincesDomainForFormDictionary:[dataDic objectForKey:@"result"]];
+            self.provinces = [LEDProvincesDomain domainWithJSONDictionary:[dataDic objectForKey:@"result"]];
+//            [self getPropertyNameList:[LEDProvince new]];
+//            [self getPropertyNameList:[LEDCities new]];
         }
         else {
             self.provinces = nil;

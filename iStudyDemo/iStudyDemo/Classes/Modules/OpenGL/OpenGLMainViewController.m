@@ -11,8 +11,10 @@
 #import "masonry.h"
 #import "UIKitMacros.h"
 #import "OpenGLViewController.h"
+#import "XiMengViewController.h"
 
-//  http://www.cppblog.com/doing5552/archive/2009/01/08/71532.html
+// http://www.cppblog.com/doing5552/archive/2009/01/08/71532.html
+// http://blog.csdn.net/tangaowen/article/details/7981838
 
 @interface OpenGLMainViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -66,6 +68,11 @@
     [_listData addObject:@"OpenGL入门"];
     OpenGLViewController *glViewController = [[OpenGLViewController alloc] init];
     [_listViewControllers addObject:glViewController];
+    // 2.西蒙教程－三角形
+    // http://www.cocoachina.com/special/2010/0126/404.html
+    [_listData addObject:@"西蒙教程－三角形"];
+    XiMengViewController *ximengVC = [[XiMengViewController alloc] init];
+    [_listViewControllers addObject:ximengVC];
 }
 
 
@@ -85,6 +92,17 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UIViewController *vc = [self.listViewControllers objectAtIndex:indexPath.row];
+    
+    if (indexPath.row == 0) {
+        OpenGLViewController *glViewController = [[OpenGLViewController alloc] init];
+        vc = glViewController;
+    } else {
+        if (indexPath.row == 1) {
+            XiMengViewController *ximengVC = [[XiMengViewController alloc] init];
+            vc = ximengVC;
+        }
+    }
+    
     vc.title = [self.listData objectAtIndex:indexPath.row];
     
     [self.navigationController pushViewController:vc animated:YES];

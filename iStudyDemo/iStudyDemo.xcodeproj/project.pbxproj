@@ -21,6 +21,17 @@
 		7601D8ED1CBA0B6300E6F6E7 /* STDTestViewModelStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8EB1CBA0B6300E6F6E7 /* STDTestViewModelStub.m */; };
 		7601D8F01CBA4E1C00E6F6E7 /* LEDStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8EF1CBA4E1C00E6F6E7 /* LEDStudent.m */; };
 		7601D8F31CBA4E5600E6F6E7 /* LEDStudent+Other.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8F21CBA4E5600E6F6E7 /* LEDStudent+Other.m */; };
+		7601D9201CBD3CA400E6F6E7 /* XiMengViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D91F1CBD3CA400E6F6E7 /* XiMengViewController.m */; };
+		7601D9231CBD3E3200E6F6E7 /* XiMengGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D9221CBD3E3200E6F6E7 /* XiMengGLView.m */; };
+		7601D9261CBD42BD00E6F6E7 /* LEDGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D9251CBD42BD00E6F6E7 /* LEDGLView.m */; };
+		7601D9291CBE0CB800E6F6E7 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D9281CBE0CB800E6F6E7 /* EAGLView.m */; };
+		7601D9331CBEA56800E6F6E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7601D9321CBEA56800E6F6E7 /* CoreGraphics.framework */; };
+		7601D93E1CBFF5D000E6F6E7 /* bamboo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7601D9381CBFF5D000E6F6E7 /* bamboo.png */; };
+		7601D93F1CBFF5D000E6F6E7 /* flowers.png in Resources */ = {isa = PBXBuildFile; fileRef = 7601D9391CBFF5D000E6F6E7 /* flowers.png */; };
+		7601D9401CBFF5D000E6F6E7 /* grass.png in Resources */ = {isa = PBXBuildFile; fileRef = 7601D93A1CBFF5D000E6F6E7 /* grass.png */; };
+		7601D9411CBFF5D000E6F6E7 /* lino.png in Resources */ = {isa = PBXBuildFile; fileRef = 7601D93B1CBFF5D000E6F6E7 /* lino.png */; };
+		7601D9421CBFF5D000E6F6E7 /* metal.png in Resources */ = {isa = PBXBuildFile; fileRef = 7601D93C1CBFF5D000E6F6E7 /* metal.png */; };
+		7601D9431CBFF5D000E6F6E7 /* schematic.png in Resources */ = {isa = PBXBuildFile; fileRef = 7601D93D1CBFF5D000E6F6E7 /* schematic.png */; };
 		760AF0E71CB0330D00A0D242 /* btn_backItem_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 760AF0E51CB0330D00A0D242 /* btn_backItem_highlighted.png */; };
 		760AF0E81CB0330D00A0D242 /* btn_backItem.png in Resources */ = {isa = PBXBuildFile; fileRef = 760AF0E61CB0330D00A0D242 /* btn_backItem.png */; };
 		760AF0EB1CB0DA5500A0D242 /* LEDWebViewController+Progress.m in Sources */ = {isa = PBXBuildFile; fileRef = 760AF0EA1CB0DA5500A0D242 /* LEDWebViewController+Progress.m */; };
@@ -435,6 +446,21 @@
 		7601D8EF1CBA4E1C00E6F6E7 /* LEDStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDStudent.m; sourceTree = "<group>"; };
 		7601D8F11CBA4E5600E6F6E7 /* LEDStudent+Other.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LEDStudent+Other.h"; sourceTree = "<group>"; };
 		7601D8F21CBA4E5600E6F6E7 /* LEDStudent+Other.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LEDStudent+Other.m"; sourceTree = "<group>"; };
+		7601D91E1CBD3CA400E6F6E7 /* XiMengViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiMengViewController.h; sourceTree = "<group>"; };
+		7601D91F1CBD3CA400E6F6E7 /* XiMengViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiMengViewController.m; sourceTree = "<group>"; };
+		7601D9211CBD3E3200E6F6E7 /* XiMengGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiMengGLView.h; sourceTree = "<group>"; };
+		7601D9221CBD3E3200E6F6E7 /* XiMengGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiMengGLView.m; sourceTree = "<group>"; };
+		7601D9241CBD42BD00E6F6E7 /* LEDGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDGLView.h; sourceTree = "<group>"; };
+		7601D9251CBD42BD00E6F6E7 /* LEDGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDGLView.m; sourceTree = "<group>"; };
+		7601D9271CBE0CB800E6F6E7 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		7601D9281CBE0CB800E6F6E7 /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		7601D9321CBEA56800E6F6E7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7601D9381CBFF5D000E6F6E7 /* bamboo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bamboo.png; sourceTree = "<group>"; };
+		7601D9391CBFF5D000E6F6E7 /* flowers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flowers.png; sourceTree = "<group>"; };
+		7601D93A1CBFF5D000E6F6E7 /* grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass.png; sourceTree = "<group>"; };
+		7601D93B1CBFF5D000E6F6E7 /* lino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lino.png; sourceTree = "<group>"; };
+		7601D93C1CBFF5D000E6F6E7 /* metal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metal.png; sourceTree = "<group>"; };
+		7601D93D1CBFF5D000E6F6E7 /* schematic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = schematic.png; sourceTree = "<group>"; };
 		760AF0E51CB0330D00A0D242 /* btn_backItem_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_backItem_highlighted.png; sourceTree = "<group>"; };
 		760AF0E61CB0330D00A0D242 /* btn_backItem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_backItem.png; sourceTree = "<group>"; };
 		760AF0E91CB0DA5500A0D242 /* LEDWebViewController+Progress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LEDWebViewController+Progress.h"; sourceTree = "<group>"; };
@@ -983,6 +1009,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7601D9331CBEA56800E6F6E7 /* CoreGraphics.framework in Frameworks */,
 				76C035F41CAB940B002241E5 /* MediaPlayer.framework in Frameworks */,
 				76C035A41CA77B56002241E5 /* CoreMedia.framework in Frameworks */,
 				76C035A21CA77B45002241E5 /* AVFoundation.framework in Frameworks */,
@@ -1078,6 +1105,25 @@
 				7601D8E61CBA0A9700E6F6E7 /* TestSucessStub.json */,
 			);
 			path = StubFiles;
+			sourceTree = "<group>";
+		};
+		7601D91D1CBD3C8D00E6F6E7 /* XiMeng */ = {
+			isa = PBXGroup;
+			children = (
+				7601D9381CBFF5D000E6F6E7 /* bamboo.png */,
+				7601D9391CBFF5D000E6F6E7 /* flowers.png */,
+				7601D93A1CBFF5D000E6F6E7 /* grass.png */,
+				7601D93B1CBFF5D000E6F6E7 /* lino.png */,
+				7601D93C1CBFF5D000E6F6E7 /* metal.png */,
+				7601D93D1CBFF5D000E6F6E7 /* schematic.png */,
+				7601D9271CBE0CB800E6F6E7 /* EAGLView.h */,
+				7601D9281CBE0CB800E6F6E7 /* EAGLView.m */,
+				7601D91E1CBD3CA400E6F6E7 /* XiMengViewController.h */,
+				7601D91F1CBD3CA400E6F6E7 /* XiMengViewController.m */,
+				7601D9211CBD3E3200E6F6E7 /* XiMengGLView.h */,
+				7601D9221CBD3E3200E6F6E7 /* XiMengGLView.m */,
+			);
+			path = XiMeng;
 			sourceTree = "<group>";
 		};
 		760AF1031CB1141200A0D242 /* PushNotification */ = {
@@ -1292,10 +1338,13 @@
 		761931B31C8BD4FF0022A311 /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				7601D91D1CBD3C8D00E6F6E7 /* XiMeng */,
 				769717D41C986A6B00D0AC63 /* OpenGLFirst */,
 				761931C61C8C5DF70022A311 /* Cocos3DMathLib */,
 				769717DF1C986A7B00D0AC63 /* OpenGLMainViewController.h */,
 				769717E01C986A7B00D0AC63 /* OpenGLMainViewController.m */,
+				7601D9241CBD42BD00E6F6E7 /* LEDGLView.h */,
+				7601D9251CBD42BD00E6F6E7 /* LEDGLView.m */,
 			);
 			path = OpenGL;
 			sourceTree = "<group>";
@@ -2464,6 +2513,7 @@
 		DF399414AD08488BE365F5E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7601D9321CBEA56800E6F6E7 /* CoreGraphics.framework */,
 				76C035F31CAB940B002241E5 /* MediaPlayer.framework */,
 				76C035B91CA7A020002241E5 /* AddressBook.framework */,
 				76C035A71CA77B79002241E5 /* libiconv.tbd */,
@@ -2612,6 +2662,7 @@
 				769718821C9D466E00D0AC63 /* sidebar_setting@2x.png in Resources */,
 				76C036031CAB98F5002241E5 /* 情非得已.mp3 in Resources */,
 				763E4E6D1CA2B7F500470FCA /* 2013112800002214@2x.png in Resources */,
+				7601D9421CBFF5D000E6F6E7 /* metal.png in Resources */,
 				763E4E861CA2B7F500470FCA /* USE_MOBILETRANSFER.png in Resources */,
 				763E4E7E1CA2B7F500470FCA /* Home_checkingRing@2x.png in Resources */,
 				763E4E641CA2B7F500470FCA /* 10000008.png in Resources */,
@@ -2648,6 +2699,7 @@
 				76C035481CA675F0002241E5 /* chat_bottom_up_press.png in Resources */,
 				76C034F81CA41258002241E5 /* icon_checkbox_unchecked@2x.png in Resources */,
 				76C034F71CA41258002241E5 /* icon_checkbox_checked@2x.png in Resources */,
+				7601D9401CBFF5D000E6F6E7 /* grass.png in Resources */,
 				76C034F41CA41258002241E5 /* btn_segmentedcontrol_right_normal@2x.png in Resources */,
 				763E4E851CA2B7F500470FCA /* USE_GAS.png in Resources */,
 				763E4E681CA2B7F500470FCA /* 20000032@2x.png in Resources */,
@@ -2727,6 +2779,8 @@
 				7697188A1C9D466E00D0AC63 /* skin_tab_icon_plugin_selected.png in Resources */,
 				76C034FC1CA41258002241E5 /* icon_pagecontrol_inactive@2x.png in Resources */,
 				763E4E631CA2B7F500470FCA /* 10000007.png in Resources */,
+				7601D9431CBFF5D000E6F6E7 /* schematic.png in Resources */,
+				7601D93E1CBFF5D000E6F6E7 /* bamboo.png in Resources */,
 				763E4E731CA2B7F500470FCA /* Home_appfrag_phone.png in Resources */,
 				763E4E5D1CA2B7F500470FCA /* 09999998.png in Resources */,
 				763E4E0E1CA2609A00470FCA /* wd_sel@2x.png in Resources */,
@@ -2739,6 +2793,7 @@
 				76C035411CA675F0002241E5 /* chat_bg_default.jpg in Resources */,
 				763E4E871CA2B7F500470FCA /* USE_MONEYFUND.png in Resources */,
 				763E4E241CA2B71800470FCA /* icon_paymentselected_dismissbutton@2x.png in Resources */,
+				7601D9411CBFF5D000E6F6E7 /* lino.png in Resources */,
 				763E4E5F1CA2B7F500470FCA /* 10000002.png in Resources */,
 				763E4E601CA2B7F500470FCA /* 10000003.png in Resources */,
 				76C034EF1CA41258002241E5 /* btn_paypassword_cancel_highlight@2x.png in Resources */,
@@ -2773,6 +2828,7 @@
 				7697186D1C9D466E00D0AC63 /* pass.png in Resources */,
 				769718891C9D466E00D0AC63 /* skin_tab_icon_plugin_normal.png in Resources */,
 				76C034FB1CA41258002241E5 /* icon_pagecontrol_active@2x.png in Resources */,
+				7601D93F1CBFF5D000E6F6E7 /* flowers.png in Resources */,
 				769718761C9D466E00D0AC63 /* sidebar_favorit@3x.png in Resources */,
 				76C035491CA675F0002241E5 /* chat_bottom_voice_nor.png in Resources */,
 				769717DD1C986A6B00D0AC63 /* SimpleFragment.glsl in Resources */,
@@ -2938,6 +2994,7 @@
 				76C035E81CAAD54A002241E5 /* CustomTakePhotoViewController.m in Sources */,
 				760AF11F1CB11A5D00A0D242 /* LEDAESCrypto+File.m in Sources */,
 				76E9039C1C9F009F003AC33A /* WeiChatViewController.m in Sources */,
+				7601D9231CBD3E3200E6F6E7 /* XiMengGLView.m in Sources */,
 				76C035641CA67FF0002241E5 /* SystemFunctionViewController.m in Sources */,
 				76C0357C1CA68619002241E5 /* XMPPViewController.m in Sources */,
 				76E9038C1C9ED53E003AC33A /* YBTableView.m in Sources */,
@@ -2961,6 +3018,7 @@
 				769717E11C986A7B00D0AC63 /* OpenGLMainViewController.m in Sources */,
 				76C035211CA65D62002241E5 /* KeyFrameViewController.m in Sources */,
 				76C0352B1CA6713C002241E5 /* TouchIDManager.m in Sources */,
+				7601D9291CBE0CB800E6F6E7 /* EAGLView.m in Sources */,
 				76C035131CA44337002241E5 /* UIScrollRollView.m in Sources */,
 				7601D8DE1CB9FC6300E6F6E7 /* LEDStubManager.m in Sources */,
 				76C035B81CA79EFD002241E5 /* AddressBookViewController.m in Sources */,
@@ -2979,6 +3037,7 @@
 				7601D8D71CB9EB2500E6F6E7 /* LEDMVVMModel.m in Sources */,
 				76BD6BDA1CA15CAD00708977 /* WeiboSearchViewController.m in Sources */,
 				76BD6BC71CA1106100708977 /* WeiboMainViewController.m in Sources */,
+				7601D9261CBD42BD00E6F6E7 /* LEDGLView.m in Sources */,
 				76E903991C9F0089003AC33A /* AliPayViewController.m in Sources */,
 				763FE3641C8D8BFA00CE67FF /* HTTPTestViewController.m in Sources */,
 				76BD6BD21CA1120E00708977 /* UIView+Extension.m in Sources */,
@@ -3017,6 +3076,7 @@
 				760AF0EB1CB0DA5500A0D242 /* LEDWebViewController+Progress.m in Sources */,
 				7681A81F1C958A1B00FC6843 /* User.m in Sources */,
 				76C034C31CA40EC7002241E5 /* SPKAlertView.m in Sources */,
+				7601D9201CBD3CA400E6F6E7 /* XiMengViewController.m in Sources */,
 				76C479981C8EF5AF00EAE07E /* JSPatchViewController.m in Sources */,
 				769718381C9D440E00D0AC63 /* SHCZSideTableView.m in Sources */,
 				7681A81E1C958A1B00FC6843 /* User+CoreDataProperties.m in Sources */,
