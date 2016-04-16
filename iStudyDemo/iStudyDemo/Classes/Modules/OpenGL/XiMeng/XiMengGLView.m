@@ -94,7 +94,7 @@
 
 - (void)render:(CADisplayLink *)displayLink
 {
-    [self textureTest];
+    [self fiveStar];
     
     [self display];
 }
@@ -383,7 +383,7 @@
     glClear(GL_COLOR_BUFFER_BIT);
     glColor4f(1, 0, 0, 1);
     glVertexPointer(2, GL_FLOAT, 0, point);
-    glDrawArrays(GL_TRIANGLE_FAN, 0, 5);
+    glDrawArrays(GL_POINTS, 0, 5);
 //    glDrawArrays(GL_LINE_LOOP, 0, 5);
     glDisableClientState(GL_VERTEX_ARRAY);
 }

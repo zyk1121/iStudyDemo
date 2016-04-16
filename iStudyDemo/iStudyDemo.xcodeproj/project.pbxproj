@@ -60,6 +60,9 @@
 		760AF1381CB176E400A0D242 /* JsonModelDomainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 760AF1371CB176E400A0D242 /* JsonModelDomainObject.m */; };
 		760AF13B1CB238D200A0D242 /* CCModalViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 760AF13A1CB238D200A0D242 /* CCModalViewViewController.m */; };
 		760AF13F1CB23BB500A0D242 /* LEDModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 760AF13E1CB23BB500A0D242 /* LEDModalView.m */; };
+		760CBEB01CC1FF4B0087A9AA /* LEDNSURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 760CBEAF1CC1FF4B0087A9AA /* LEDNSURLSessionViewController.m */; };
+		760CBEB41CC1FF830087A9AA /* LEDDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 760CBEB31CC1FF830087A9AA /* LEDDownloadManager.m */; };
+		760CBEB71CC25C1F0087A9AA /* LEDDownloadManager2.m in Sources */ = {isa = PBXBuildFile; fileRef = 760CBEB61CC25C1F0087A9AA /* LEDDownloadManager2.m */; };
 		761931791C8BC5120022A311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761931781C8BC5120022A311 /* Assets.xcassets */; };
 		7619317C1C8BC5120022A311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7619317A1C8BC5120022A311 /* LaunchScreen.storyboard */; };
 		761931921C8BC5120022A311 /* iStudyDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931911C8BC5120022A311 /* iStudyDemoUITests.m */; };
@@ -512,6 +515,12 @@
 		760AF13A1CB238D200A0D242 /* CCModalViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCModalViewViewController.m; sourceTree = "<group>"; };
 		760AF13D1CB23BB500A0D242 /* LEDModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDModalView.h; sourceTree = "<group>"; };
 		760AF13E1CB23BB500A0D242 /* LEDModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDModalView.m; sourceTree = "<group>"; };
+		760CBEAE1CC1FF4B0087A9AA /* LEDNSURLSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDNSURLSessionViewController.h; sourceTree = "<group>"; };
+		760CBEAF1CC1FF4B0087A9AA /* LEDNSURLSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDNSURLSessionViewController.m; sourceTree = "<group>"; };
+		760CBEB21CC1FF830087A9AA /* LEDDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDDownloadManager.h; sourceTree = "<group>"; };
+		760CBEB31CC1FF830087A9AA /* LEDDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDDownloadManager.m; sourceTree = "<group>"; };
+		760CBEB51CC25C1F0087A9AA /* LEDDownloadManager2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDDownloadManager2.h; sourceTree = "<group>"; };
+		760CBEB61CC25C1F0087A9AA /* LEDDownloadManager2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDDownloadManager2.m; sourceTree = "<group>"; };
 		761931691C8BC5120022A311 /* iStudyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iStudyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		761931781C8BC5120022A311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7619317B1C8BC5120022A311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -1200,6 +1209,27 @@
 			path = ModalView;
 			sourceTree = "<group>";
 		};
+		760CBEAD1CC1FF4B0087A9AA /* LEDURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				760CBEB11CC1FF670087A9AA /* LEDDownload */,
+				760CBEAE1CC1FF4B0087A9AA /* LEDNSURLSessionViewController.h */,
+				760CBEAF1CC1FF4B0087A9AA /* LEDNSURLSessionViewController.m */,
+			);
+			path = LEDURLSession;
+			sourceTree = "<group>";
+		};
+		760CBEB11CC1FF670087A9AA /* LEDDownload */ = {
+			isa = PBXGroup;
+			children = (
+				760CBEB21CC1FF830087A9AA /* LEDDownloadManager.h */,
+				760CBEB31CC1FF830087A9AA /* LEDDownloadManager.m */,
+				760CBEB51CC25C1F0087A9AA /* LEDDownloadManager2.h */,
+				760CBEB61CC25C1F0087A9AA /* LEDDownloadManager2.m */,
+			);
+			path = LEDDownload;
+			sourceTree = "<group>";
+		};
 		761931601C8BC5120022A311 = {
 			isa = PBXGroup;
 			children = (
@@ -1686,6 +1716,7 @@
 		763FE3611C8D8BE100CE67FF /* HTTPTest */ = {
 			isa = PBXGroup;
 			children = (
+				760CBEAD1CC1FF4B0087A9AA /* LEDURLSession */,
 				760AF1351CB176D100A0D242 /* JsonModel */,
 				763FE3841C8DC97000CE67FF /* Mantle */,
 				763FE3621C8D8BFA00CE67FF /* HTTPTestViewController.h */,
@@ -2943,6 +2974,7 @@
 			files = (
 				7697181B1C9AF63A00D0AC63 /* QQDynamicViewController.m in Sources */,
 				763FE3871C8DC9AB00CE67FF /* LEDDomainObject.m in Sources */,
+				760CBEB71CC25C1F0087A9AA /* LEDDownloadManager2.m in Sources */,
 				760AF1201CB11A5D00A0D242 /* LEDAESCrypto.m in Sources */,
 				76E903941C9EFC2B003AC33A /* QQChatViewController.m in Sources */,
 				760AF13F1CB23BB500A0D242 /* LEDModalView.m in Sources */,
@@ -2986,6 +3018,7 @@
 				76E916491CABFA9E00C8C63A /* LEDPortal.m in Sources */,
 				76C034C11CA40EC7002241E5 /* SPKBannerPagingView.m in Sources */,
 				763E4E991CA3B03F00470FCA /* ZFBTableViewCell.m in Sources */,
+				760CBEB41CC1FF830087A9AA /* LEDDownloadManager.m in Sources */,
 				76C034C61CA411BF002241E5 /* UIViewAdditions.m in Sources */,
 				76213BDE1C97048C001DAA53 /* ThirdShareViewController.m in Sources */,
 				76C479A11C8F248F00EAE07E /* coreData.xcdatamodeld in Sources */,
@@ -3003,6 +3036,7 @@
 				761931D41C8C5DF70022A311 /* CC3Math.m in Sources */,
 				761931BA1C8BD79A0022A311 /* MapSDKDemoViewController.m in Sources */,
 				760AF1251CB11A5D00A0D242 /* LEDRSACrypto.m in Sources */,
+				760CBEB01CC1FF4B0087A9AA /* LEDNSURLSessionViewController.m in Sources */,
 				769717E51C992AC600D0AC63 /* CustomUIViewController.m in Sources */,
 				76C035911CA68973002241E5 /* ThreadViewController.m in Sources */,
 				760AF0F41CB0E43500A0D242 /* LEDURLChecker.m in Sources */,
