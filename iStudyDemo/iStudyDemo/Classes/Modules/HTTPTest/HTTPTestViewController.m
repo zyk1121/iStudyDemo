@@ -17,6 +17,7 @@
 #import "ASIHTTPRequest.h"
 #import "ASIFormDataRequest.h"
 #import "JsonModelDomainObject.h"
+#import "LEDNSURLSessionViewController.h"
 
 
 
@@ -80,6 +81,8 @@
     
     [_listData addObject:@"Mantle 数据校验解析"];
     [_listData addObject:@"JSONModel 数据校验解析"];
+    
+    [_listData addObject:@"NSURLSession"];
 }
 
 
@@ -126,6 +129,9 @@
             break;
         case 8:
             [self jsonModelTest];
+            break;
+        case 9:
+            [self urlsessionTest];
             break;
         default:
             break;
@@ -763,6 +769,57 @@ ts: 1457930192410
     
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"title" message:[obj description] delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
     [alertView show];
+}
+
+
+#pragma mark - NSURLSession
+// http://www.cocoachina.com/industry/20131106/7304.html
+/*
+ NSURLSession提供的功能：
+ 1.通过URL将数据下载到内存
+ 2.通过URL将数据下载到文件系统
+ 3.将数据上传到指定URL
+ 4.在后台完成上述功能
+ 
+ 工作流程
+ 如果我们需要利用NSURLSession进行数据传输我们需要：
+ 1.创建一个NSURLSessionConfiguration，用于第二步创建NSSession时设置工作模式和网络设置：
+ 工作模式分为：
+ 一般模式（default）：工作模式类似于原来的NSURLConnection，可以使用缓存的Cache，Cookie，鉴权。
+ 及时模式（ephemeral）：不使用缓存的Cache，Cookie，鉴权。
+ 后台模式（background）：在后台完成上传下载，创建Configuration对象的时候需要给一个NSString的ID用于追踪完成工作的Session是哪一个（后面会讲到）。
+ 
+ 网络设置：参考NSURLConnection中的设置项。
+ 1. 创建一个NSURLSession，系统提供了两个创建方法：
+ sessionWithConfiguration:
+ sessionWithConfiguration:delegate:delegateQueue:
+ 　　　　
+ 第一个粒度较低就是根据刚才创建的Configuration创建一个Session，系统默认创建一个新的OperationQueue处理Session的消息。
+ 
+ 第二个粒度比较高，可以设定回调的delegate（注意这个回调delegate会被强引用），并且可以设定delegate在哪个OperationQueue回调，如果我们将其设置为[NSOperationQueue mainQueue]就能在主线程进行回调非常的方便。
+ 
+ 2.创建一个NSURLRequest调用刚才的NSURLSession对象提供的Task函数，创建一个NSURLSessionTask。
+ 
+ 根据职能不同Task有三种子类：
+ NSURLSessionUploadTask：上传用的Task，传完以后不会再下载返回结果；
+ NSURLSessionDownloadTask：下载用的Task；
+ NSURLSessionDataTask：可以上传内容，上传完成后再进行下载。
+ 
+ 得到的Task，调用resume开始工作。
+ */
+
+- (void)urlsessionTest
+{
+    
+    LEDNSURLSessionViewController *vc = [[LEDNSURLSessionViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+//    [self fileDownload];
+}
+
+// 文件断点下载
+- (void)fileDownload
+{
+    NSLog(@"文件断点下载:http://my.oschina.net/iOSliuhui/blog/469276");
 }
 
 @end

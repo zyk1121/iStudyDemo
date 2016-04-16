@@ -1,0 +1,8 @@
+{
+    "status": "success",
+    "data": {
+        "balance": 101.11,
+        "balanceIcon": "http://img0.bdstatic.com/img/image/baikeyoujiang.PNG",
+        "isChargeButtonShown": true
+    }
+}

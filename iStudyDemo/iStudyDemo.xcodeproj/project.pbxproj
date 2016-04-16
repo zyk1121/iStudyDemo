@@ -12,6 +12,26 @@
 		7601D8D41CB9EA5100E6F6E7 /* LEDMVVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8D31CB9EA5100E6F6E7 /* LEDMVVMViewModel.m */; };
 		7601D8D71CB9EB2500E6F6E7 /* LEDMVVMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8D61CB9EB2500E6F6E7 /* LEDMVVMModel.m */; };
 		7601D8DA1CB9F2AF00E6F6E7 /* DSActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8D91CB9F2AF00E6F6E7 /* DSActivityView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7601D8DE1CB9FC6300E6F6E7 /* LEDStubManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8DD1CB9FC6300E6F6E7 /* LEDStubManager.m */; };
+		7601D8E21CB9FD2400E6F6E7 /* accountBalanceStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 7601D8E01CB9FD2400E6F6E7 /* accountBalanceStub.json */; };
+		7601D8E31CB9FD2400E6F6E7 /* testStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 7601D8E11CB9FD2400E6F6E7 /* testStub.json */; };
+		7601D8E71CBA0A9700E6F6E7 /* TestFailStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 7601D8E51CBA0A9700E6F6E7 /* TestFailStub.json */; };
+		7601D8E81CBA0A9700E6F6E7 /* TestSucessStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 7601D8E61CBA0A9700E6F6E7 /* TestSucessStub.json */; };
+		7601D8EC1CBA0B6300E6F6E7 /* STDTestViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8E91CBA0B6300E6F6E7 /* STDTestViewModelSpec.m */; };
+		7601D8ED1CBA0B6300E6F6E7 /* STDTestViewModelStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8EB1CBA0B6300E6F6E7 /* STDTestViewModelStub.m */; };
+		7601D8F01CBA4E1C00E6F6E7 /* LEDStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8EF1CBA4E1C00E6F6E7 /* LEDStudent.m */; };
+		7601D8F31CBA4E5600E6F6E7 /* LEDStudent+Other.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D8F21CBA4E5600E6F6E7 /* LEDStudent+Other.m */; };
+		7601D9201CBD3CA400E6F6E7 /* XiMengViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D91F1CBD3CA400E6F6E7 /* XiMengViewController.m */; };
+		7601D9231CBD3E3200E6F6E7 /* XiMengGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D9221CBD3E3200E6F6E7 /* XiMengGLView.m */; };
+		7601D9261CBD42BD00E6F6E7 /* LEDGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D9251CBD42BD00E6F6E7 /* LEDGLView.m */; };
+		7601D9291CBE0CB800E6F6E7 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7601D9281CBE0CB800E6F6E7 /* EAGLView.m */; };
+		7601D9331CBEA56800E6F6E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7601D9321CBEA56800E6F6E7 /* CoreGraphics.framework */; };
+		7601D93E1CBFF5D000E6F6E7 /* bamboo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7601D9381CBFF5D000E6F6E7 /* bamboo.png */; };
+		7601D93F1CBFF5D000E6F6E7 /* flowers.png in Resources */ = {isa = PBXBuildFile; fileRef = 7601D9391CBFF5D000E6F6E7 /* flowers.png */; };
+		7601D9401CBFF5D000E6F6E7 /* grass.png in Resources */ = {isa = PBXBuildFile; fileRef = 7601D93A1CBFF5D000E6F6E7 /* grass.png */; };
+		7601D9411CBFF5D000E6F6E7 /* lino.png in Resources */ = {isa = PBXBuildFile; fileRef = 7601D93B1CBFF5D000E6F6E7 /* lino.png */; };
+		7601D9421CBFF5D000E6F6E7 /* metal.png in Resources */ = {isa = PBXBuildFile; fileRef = 7601D93C1CBFF5D000E6F6E7 /* metal.png */; };
+		7601D9431CBFF5D000E6F6E7 /* schematic.png in Resources */ = {isa = PBXBuildFile; fileRef = 7601D93D1CBFF5D000E6F6E7 /* schematic.png */; };
 		760AF0E71CB0330D00A0D242 /* btn_backItem_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 760AF0E51CB0330D00A0D242 /* btn_backItem_highlighted.png */; };
 		760AF0E81CB0330D00A0D242 /* btn_backItem.png in Resources */ = {isa = PBXBuildFile; fileRef = 760AF0E61CB0330D00A0D242 /* btn_backItem.png */; };
 		760AF0EB1CB0DA5500A0D242 /* LEDWebViewController+Progress.m in Sources */ = {isa = PBXBuildFile; fileRef = 760AF0EA1CB0DA5500A0D242 /* LEDWebViewController+Progress.m */; };
@@ -40,9 +60,11 @@
 		760AF1381CB176E400A0D242 /* JsonModelDomainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 760AF1371CB176E400A0D242 /* JsonModelDomainObject.m */; };
 		760AF13B1CB238D200A0D242 /* CCModalViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 760AF13A1CB238D200A0D242 /* CCModalViewViewController.m */; };
 		760AF13F1CB23BB500A0D242 /* LEDModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 760AF13E1CB23BB500A0D242 /* LEDModalView.m */; };
+		760CBEB01CC1FF4B0087A9AA /* LEDNSURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 760CBEAF1CC1FF4B0087A9AA /* LEDNSURLSessionViewController.m */; };
+		760CBEB41CC1FF830087A9AA /* LEDDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 760CBEB31CC1FF830087A9AA /* LEDDownloadManager.m */; };
+		760CBEB71CC25C1F0087A9AA /* LEDDownloadManager2.m in Sources */ = {isa = PBXBuildFile; fileRef = 760CBEB61CC25C1F0087A9AA /* LEDDownloadManager2.m */; };
 		761931791C8BC5120022A311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761931781C8BC5120022A311 /* Assets.xcassets */; };
 		7619317C1C8BC5120022A311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7619317A1C8BC5120022A311 /* LaunchScreen.storyboard */; };
-		761931871C8BC5120022A311 /* iStudyDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931861C8BC5120022A311 /* iStudyDemoTests.m */; };
 		761931921C8BC5120022A311 /* iStudyDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931911C8BC5120022A311 /* iStudyDemoUITests.m */; };
 		761931A51C8BC8A20022A311 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931A11C8BC8A20022A311 /* AppDelegate.m */; };
 		761931A71C8BC8A20022A311 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931A41C8BC8A20022A311 /* MainViewController.m */; };
@@ -414,6 +436,34 @@
 		7601D8D61CB9EB2500E6F6E7 /* LEDMVVMModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDMVVMModel.m; sourceTree = "<group>"; };
 		7601D8D81CB9F2AF00E6F6E7 /* DSActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSActivityView.h; sourceTree = "<group>"; };
 		7601D8D91CB9F2AF00E6F6E7 /* DSActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSActivityView.m; sourceTree = "<group>"; };
+		7601D8DC1CB9FC6300E6F6E7 /* LEDStubManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDStubManager.h; sourceTree = "<group>"; };
+		7601D8DD1CB9FC6300E6F6E7 /* LEDStubManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDStubManager.m; sourceTree = "<group>"; };
+		7601D8E01CB9FD2400E6F6E7 /* accountBalanceStub.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = accountBalanceStub.json; sourceTree = "<group>"; };
+		7601D8E11CB9FD2400E6F6E7 /* testStub.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testStub.json; sourceTree = "<group>"; };
+		7601D8E51CBA0A9700E6F6E7 /* TestFailStub.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestFailStub.json; sourceTree = "<group>"; };
+		7601D8E61CBA0A9700E6F6E7 /* TestSucessStub.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestSucessStub.json; sourceTree = "<group>"; };
+		7601D8E91CBA0B6300E6F6E7 /* STDTestViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDTestViewModelSpec.m; sourceTree = "<group>"; };
+		7601D8EA1CBA0B6300E6F6E7 /* STDTestViewModelStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDTestViewModelStub.h; sourceTree = "<group>"; };
+		7601D8EB1CBA0B6300E6F6E7 /* STDTestViewModelStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDTestViewModelStub.m; sourceTree = "<group>"; };
+		7601D8EE1CBA4E1C00E6F6E7 /* LEDStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDStudent.h; sourceTree = "<group>"; };
+		7601D8EF1CBA4E1C00E6F6E7 /* LEDStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDStudent.m; sourceTree = "<group>"; };
+		7601D8F11CBA4E5600E6F6E7 /* LEDStudent+Other.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LEDStudent+Other.h"; sourceTree = "<group>"; };
+		7601D8F21CBA4E5600E6F6E7 /* LEDStudent+Other.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LEDStudent+Other.m"; sourceTree = "<group>"; };
+		7601D91E1CBD3CA400E6F6E7 /* XiMengViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiMengViewController.h; sourceTree = "<group>"; };
+		7601D91F1CBD3CA400E6F6E7 /* XiMengViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiMengViewController.m; sourceTree = "<group>"; };
+		7601D9211CBD3E3200E6F6E7 /* XiMengGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiMengGLView.h; sourceTree = "<group>"; };
+		7601D9221CBD3E3200E6F6E7 /* XiMengGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiMengGLView.m; sourceTree = "<group>"; };
+		7601D9241CBD42BD00E6F6E7 /* LEDGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDGLView.h; sourceTree = "<group>"; };
+		7601D9251CBD42BD00E6F6E7 /* LEDGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDGLView.m; sourceTree = "<group>"; };
+		7601D9271CBE0CB800E6F6E7 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		7601D9281CBE0CB800E6F6E7 /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		7601D9321CBEA56800E6F6E7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7601D9381CBFF5D000E6F6E7 /* bamboo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bamboo.png; sourceTree = "<group>"; };
+		7601D9391CBFF5D000E6F6E7 /* flowers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flowers.png; sourceTree = "<group>"; };
+		7601D93A1CBFF5D000E6F6E7 /* grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass.png; sourceTree = "<group>"; };
+		7601D93B1CBFF5D000E6F6E7 /* lino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lino.png; sourceTree = "<group>"; };
+		7601D93C1CBFF5D000E6F6E7 /* metal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metal.png; sourceTree = "<group>"; };
+		7601D93D1CBFF5D000E6F6E7 /* schematic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = schematic.png; sourceTree = "<group>"; };
 		760AF0E51CB0330D00A0D242 /* btn_backItem_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_backItem_highlighted.png; sourceTree = "<group>"; };
 		760AF0E61CB0330D00A0D242 /* btn_backItem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_backItem.png; sourceTree = "<group>"; };
 		760AF0E91CB0DA5500A0D242 /* LEDWebViewController+Progress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LEDWebViewController+Progress.h"; sourceTree = "<group>"; };
@@ -465,12 +515,17 @@
 		760AF13A1CB238D200A0D242 /* CCModalViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCModalViewViewController.m; sourceTree = "<group>"; };
 		760AF13D1CB23BB500A0D242 /* LEDModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDModalView.h; sourceTree = "<group>"; };
 		760AF13E1CB23BB500A0D242 /* LEDModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDModalView.m; sourceTree = "<group>"; };
+		760CBEAE1CC1FF4B0087A9AA /* LEDNSURLSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDNSURLSessionViewController.h; sourceTree = "<group>"; };
+		760CBEAF1CC1FF4B0087A9AA /* LEDNSURLSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDNSURLSessionViewController.m; sourceTree = "<group>"; };
+		760CBEB21CC1FF830087A9AA /* LEDDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDDownloadManager.h; sourceTree = "<group>"; };
+		760CBEB31CC1FF830087A9AA /* LEDDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDDownloadManager.m; sourceTree = "<group>"; };
+		760CBEB51CC25C1F0087A9AA /* LEDDownloadManager2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDDownloadManager2.h; sourceTree = "<group>"; };
+		760CBEB61CC25C1F0087A9AA /* LEDDownloadManager2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDDownloadManager2.m; sourceTree = "<group>"; };
 		761931691C8BC5120022A311 /* iStudyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iStudyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		761931781C8BC5120022A311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7619317B1C8BC5120022A311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7619317D1C8BC5120022A311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		761931821C8BC5120022A311 /* iStudyDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iStudyDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		761931861C8BC5120022A311 /* iStudyDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iStudyDemoTests.m; sourceTree = "<group>"; };
 		761931881C8BC5120022A311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7619318D1C8BC5120022A311 /* iStudyDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iStudyDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		761931911C8BC5120022A311 /* iStudyDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iStudyDemoUITests.m; sourceTree = "<group>"; };
@@ -963,6 +1018,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7601D9331CBEA56800E6F6E7 /* CoreGraphics.framework in Frameworks */,
 				76C035F41CAB940B002241E5 /* MediaPlayer.framework in Frameworks */,
 				76C035A41CA77B56002241E5 /* CoreMedia.framework in Frameworks */,
 				76C035A21CA77B45002241E5 /* AVFoundation.framework in Frameworks */,
@@ -1030,6 +1086,53 @@
 				E6D05E5071D44F6E0208EAFC /* Pods-iStudyDemoTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		7601D8DB1CB9FC3F00E6F6E7 /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				7601D8DF1CB9FD2400E6F6E7 /* StubJson */,
+				7601D8DC1CB9FC6300E6F6E7 /* LEDStubManager.h */,
+				7601D8DD1CB9FC6300E6F6E7 /* LEDStubManager.m */,
+			);
+			path = Stub;
+			sourceTree = "<group>";
+		};
+		7601D8DF1CB9FD2400E6F6E7 /* StubJson */ = {
+			isa = PBXGroup;
+			children = (
+				7601D8E01CB9FD2400E6F6E7 /* accountBalanceStub.json */,
+				7601D8E11CB9FD2400E6F6E7 /* testStub.json */,
+			);
+			path = StubJson;
+			sourceTree = "<group>";
+		};
+		7601D8E41CBA0A9700E6F6E7 /* StubFiles */ = {
+			isa = PBXGroup;
+			children = (
+				7601D8E51CBA0A9700E6F6E7 /* TestFailStub.json */,
+				7601D8E61CBA0A9700E6F6E7 /* TestSucessStub.json */,
+			);
+			path = StubFiles;
+			sourceTree = "<group>";
+		};
+		7601D91D1CBD3C8D00E6F6E7 /* XiMeng */ = {
+			isa = PBXGroup;
+			children = (
+				7601D9381CBFF5D000E6F6E7 /* bamboo.png */,
+				7601D9391CBFF5D000E6F6E7 /* flowers.png */,
+				7601D93A1CBFF5D000E6F6E7 /* grass.png */,
+				7601D93B1CBFF5D000E6F6E7 /* lino.png */,
+				7601D93C1CBFF5D000E6F6E7 /* metal.png */,
+				7601D93D1CBFF5D000E6F6E7 /* schematic.png */,
+				7601D9271CBE0CB800E6F6E7 /* EAGLView.h */,
+				7601D9281CBE0CB800E6F6E7 /* EAGLView.m */,
+				7601D91E1CBD3CA400E6F6E7 /* XiMengViewController.h */,
+				7601D91F1CBD3CA400E6F6E7 /* XiMengViewController.m */,
+				7601D9211CBD3E3200E6F6E7 /* XiMengGLView.h */,
+				7601D9221CBD3E3200E6F6E7 /* XiMengGLView.m */,
+			);
+			path = XiMeng;
 			sourceTree = "<group>";
 		};
 		760AF1031CB1141200A0D242 /* PushNotification */ = {
@@ -1106,6 +1209,27 @@
 			path = ModalView;
 			sourceTree = "<group>";
 		};
+		760CBEAD1CC1FF4B0087A9AA /* LEDURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				760CBEB11CC1FF670087A9AA /* LEDDownload */,
+				760CBEAE1CC1FF4B0087A9AA /* LEDNSURLSessionViewController.h */,
+				760CBEAF1CC1FF4B0087A9AA /* LEDNSURLSessionViewController.m */,
+			);
+			path = LEDURLSession;
+			sourceTree = "<group>";
+		};
+		760CBEB11CC1FF670087A9AA /* LEDDownload */ = {
+			isa = PBXGroup;
+			children = (
+				760CBEB21CC1FF830087A9AA /* LEDDownloadManager.h */,
+				760CBEB31CC1FF830087A9AA /* LEDDownloadManager.m */,
+				760CBEB51CC25C1F0087A9AA /* LEDDownloadManager2.h */,
+				760CBEB61CC25C1F0087A9AA /* LEDDownloadManager2.m */,
+			);
+			path = LEDDownload;
+			sourceTree = "<group>";
+		};
 		761931601C8BC5120022A311 = {
 			isa = PBXGroup;
 			children = (
@@ -1154,7 +1278,10 @@
 		761931851C8BC5120022A311 /* iStudyDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				761931861C8BC5120022A311 /* iStudyDemoTests.m */,
+				7601D8E91CBA0B6300E6F6E7 /* STDTestViewModelSpec.m */,
+				7601D8EA1CBA0B6300E6F6E7 /* STDTestViewModelStub.h */,
+				7601D8EB1CBA0B6300E6F6E7 /* STDTestViewModelStub.m */,
+				7601D8E41CBA0A9700E6F6E7 /* StubFiles */,
 				761931881C8BC5120022A311 /* Info.plist */,
 			);
 			path = iStudyDemoTests;
@@ -1196,8 +1323,6 @@
 			children = (
 				760AF1031CB1141200A0D242 /* PushNotification */,
 				76C035991CA68FC7002241E5 /* RAC */,
-				76C0359A1CA68FC7002241E5 /* ReactNative */,
-				76C035951CA68CBC002241E5 /* Swift */,
 				76C035811CA68923002241E5 /* MVVM */,
 				76C035821CA68923002241E5 /* RunLoop */,
 				76C035831CA68923002241E5 /* RunTime */,
@@ -1219,6 +1344,8 @@
 				763FE3611C8D8BE100CE67FF /* HTTPTest */,
 				761931B71C8BD7820022A311 /* MapDemo */,
 				761931B31C8BD4FF0022A311 /* OpenGL */,
+				76C035951CA68CBC002241E5 /* Swift */,
+				76C0359A1CA68FC7002241E5 /* ReactNative */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -1241,10 +1368,13 @@
 		761931B31C8BD4FF0022A311 /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				7601D91D1CBD3C8D00E6F6E7 /* XiMeng */,
 				769717D41C986A6B00D0AC63 /* OpenGLFirst */,
 				761931C61C8C5DF70022A311 /* Cocos3DMathLib */,
 				769717DF1C986A7B00D0AC63 /* OpenGLMainViewController.h */,
 				769717E01C986A7B00D0AC63 /* OpenGLMainViewController.m */,
+				7601D9241CBD42BD00E6F6E7 /* LEDGLView.h */,
+				7601D9251CBD42BD00E6F6E7 /* LEDGLView.m */,
 			);
 			path = OpenGL;
 			sourceTree = "<group>";
@@ -1586,6 +1716,7 @@
 		763FE3611C8D8BE100CE67FF /* HTTPTest */ = {
 			isa = PBXGroup;
 			children = (
+				760CBEAD1CC1FF4B0087A9AA /* LEDURLSession */,
 				760AF1351CB176D100A0D242 /* JsonModel */,
 				763FE3841C8DC97000CE67FF /* Mantle */,
 				763FE3621C8D8BFA00CE67FF /* HTTPTestViewController.h */,
@@ -2080,6 +2211,10 @@
 			children = (
 				76C0358C1CA68964002241E5 /* RunTimeViewController.h */,
 				76C0358D1CA68964002241E5 /* RunTimeViewController.m */,
+				7601D8EE1CBA4E1C00E6F6E7 /* LEDStudent.h */,
+				7601D8EF1CBA4E1C00E6F6E7 /* LEDStudent.m */,
+				7601D8F11CBA4E5600E6F6E7 /* LEDStudent+Other.h */,
+				7601D8F21CBA4E5600E6F6E7 /* LEDStudent+Other.m */,
 			);
 			path = RunTime;
 			sourceTree = "<group>";
@@ -2100,6 +2235,7 @@
 		76C035851CA68923002241E5 /* UnitTestStub */ = {
 			isa = PBXGroup;
 			children = (
+				7601D8DB1CB9FC3F00E6F6E7 /* Stub */,
 				76C035921CA689A7002241E5 /* UnitTestStubMockViewController.h */,
 				76C035931CA689A7002241E5 /* UnitTestStubMockViewController.m */,
 			);
@@ -2408,6 +2544,7 @@
 		DF399414AD08488BE365F5E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7601D9321CBEA56800E6F6E7 /* CoreGraphics.framework */,
 				76C035F31CAB940B002241E5 /* MediaPlayer.framework */,
 				76C035B91CA7A020002241E5 /* AddressBook.framework */,
 				76C035A71CA77B79002241E5 /* libiconv.tbd */,
@@ -2556,6 +2693,7 @@
 				769718821C9D466E00D0AC63 /* sidebar_setting@2x.png in Resources */,
 				76C036031CAB98F5002241E5 /* 情非得已.mp3 in Resources */,
 				763E4E6D1CA2B7F500470FCA /* 2013112800002214@2x.png in Resources */,
+				7601D9421CBFF5D000E6F6E7 /* metal.png in Resources */,
 				763E4E861CA2B7F500470FCA /* USE_MOBILETRANSFER.png in Resources */,
 				763E4E7E1CA2B7F500470FCA /* Home_checkingRing@2x.png in Resources */,
 				763E4E641CA2B7F500470FCA /* 10000008.png in Resources */,
@@ -2592,10 +2730,12 @@
 				76C035481CA675F0002241E5 /* chat_bottom_up_press.png in Resources */,
 				76C034F81CA41258002241E5 /* icon_checkbox_unchecked@2x.png in Resources */,
 				76C034F71CA41258002241E5 /* icon_checkbox_checked@2x.png in Resources */,
+				7601D9401CBFF5D000E6F6E7 /* grass.png in Resources */,
 				76C034F41CA41258002241E5 /* btn_segmentedcontrol_right_normal@2x.png in Resources */,
 				763E4E851CA2B7F500470FCA /* USE_GAS.png in Resources */,
 				763E4E681CA2B7F500470FCA /* 20000032@2x.png in Resources */,
 				763E4E0A1CA2609A00470FCA /* kb_sel@2x.png in Resources */,
+				7601D8E21CB9FD2400E6F6E7 /* accountBalanceStub.json in Resources */,
 				76C0350D1CA43103002241E5 /* 2.jpg in Resources */,
 				76C035AC1CA78FEA002241E5 /* pick_bg@2x.png in Resources */,
 				763E4E091CA2609A00470FCA /* kb@2x.png in Resources */,
@@ -2670,10 +2810,13 @@
 				7697188A1C9D466E00D0AC63 /* skin_tab_icon_plugin_selected.png in Resources */,
 				76C034FC1CA41258002241E5 /* icon_pagecontrol_inactive@2x.png in Resources */,
 				763E4E631CA2B7F500470FCA /* 10000007.png in Resources */,
+				7601D9431CBFF5D000E6F6E7 /* schematic.png in Resources */,
+				7601D93E1CBFF5D000E6F6E7 /* bamboo.png in Resources */,
 				763E4E731CA2B7F500470FCA /* Home_appfrag_phone.png in Resources */,
 				763E4E5D1CA2B7F500470FCA /* 09999998.png in Resources */,
 				763E4E0E1CA2609A00470FCA /* wd_sel@2x.png in Resources */,
 				76C035FE1CAB98F5002241E5 /* down.png in Resources */,
+				7601D8E31CB9FD2400E6F6E7 /* testStub.json in Resources */,
 				763E4E8A1CA2B7F500470FCA /* USE_WATER.png in Resources */,
 				763E4E8B1CA2B7F500470FCA /* USE_WIRE.png in Resources */,
 				769718661C9D466E00D0AC63 /* hand.png in Resources */,
@@ -2681,6 +2824,7 @@
 				76C035411CA675F0002241E5 /* chat_bg_default.jpg in Resources */,
 				763E4E871CA2B7F500470FCA /* USE_MONEYFUND.png in Resources */,
 				763E4E241CA2B71800470FCA /* icon_paymentselected_dismissbutton@2x.png in Resources */,
+				7601D9411CBFF5D000E6F6E7 /* lino.png in Resources */,
 				763E4E5F1CA2B7F500470FCA /* 10000002.png in Resources */,
 				763E4E601CA2B7F500470FCA /* 10000003.png in Resources */,
 				76C034EF1CA41258002241E5 /* btn_paypassword_cancel_highlight@2x.png in Resources */,
@@ -2715,6 +2859,7 @@
 				7697186D1C9D466E00D0AC63 /* pass.png in Resources */,
 				769718891C9D466E00D0AC63 /* skin_tab_icon_plugin_normal.png in Resources */,
 				76C034FB1CA41258002241E5 /* icon_pagecontrol_active@2x.png in Resources */,
+				7601D93F1CBFF5D000E6F6E7 /* flowers.png in Resources */,
 				769718761C9D466E00D0AC63 /* sidebar_favorit@3x.png in Resources */,
 				76C035491CA675F0002241E5 /* chat_bottom_voice_nor.png in Resources */,
 				769717DD1C986A6B00D0AC63 /* SimpleFragment.glsl in Resources */,
@@ -2745,6 +2890,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7601D8E71CBA0A9700E6F6E7 /* TestFailStub.json in Resources */,
+				7601D8E81CBA0A9700E6F6E7 /* TestSucessStub.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2827,6 +2974,7 @@
 			files = (
 				7697181B1C9AF63A00D0AC63 /* QQDynamicViewController.m in Sources */,
 				763FE3871C8DC9AB00CE67FF /* LEDDomainObject.m in Sources */,
+				760CBEB71CC25C1F0087A9AA /* LEDDownloadManager2.m in Sources */,
 				760AF1201CB11A5D00A0D242 /* LEDAESCrypto.m in Sources */,
 				76E903941C9EFC2B003AC33A /* QQChatViewController.m in Sources */,
 				760AF13F1CB23BB500A0D242 /* LEDModalView.m in Sources */,
@@ -2848,6 +2996,7 @@
 				76BD6BD71CA15C0A00708977 /* ZTSearchBar.m in Sources */,
 				7697181E1C9AFCC200D0AC63 /* UIImage+IPLImageKit.m in Sources */,
 				763E4DFF1CA25E4100470FCA /* KBViewController.m in Sources */,
+				7601D8F31CBA4E5600E6F6E7 /* LEDStudent+Other.m in Sources */,
 				760AF1321CB13A4500A0D242 /* NSData+AES.m in Sources */,
 				76C035D91CAA997A002241E5 /* AudioViewController.m in Sources */,
 				76BD6BCB1CA1118900708977 /* ZTTabBar.m in Sources */,
@@ -2869,6 +3018,7 @@
 				76E916491CABFA9E00C8C63A /* LEDPortal.m in Sources */,
 				76C034C11CA40EC7002241E5 /* SPKBannerPagingView.m in Sources */,
 				763E4E991CA3B03F00470FCA /* ZFBTableViewCell.m in Sources */,
+				760CBEB41CC1FF830087A9AA /* LEDDownloadManager.m in Sources */,
 				76C034C61CA411BF002241E5 /* UIViewAdditions.m in Sources */,
 				76213BDE1C97048C001DAA53 /* ThirdShareViewController.m in Sources */,
 				76C479A11C8F248F00EAE07E /* coreData.xcdatamodeld in Sources */,
@@ -2877,6 +3027,7 @@
 				76C035E81CAAD54A002241E5 /* CustomTakePhotoViewController.m in Sources */,
 				760AF11F1CB11A5D00A0D242 /* LEDAESCrypto+File.m in Sources */,
 				76E9039C1C9F009F003AC33A /* WeiChatViewController.m in Sources */,
+				7601D9231CBD3E3200E6F6E7 /* XiMengGLView.m in Sources */,
 				76C035641CA67FF0002241E5 /* SystemFunctionViewController.m in Sources */,
 				76C0357C1CA68619002241E5 /* XMPPViewController.m in Sources */,
 				76E9038C1C9ED53E003AC33A /* YBTableView.m in Sources */,
@@ -2885,11 +3036,13 @@
 				761931D41C8C5DF70022A311 /* CC3Math.m in Sources */,
 				761931BA1C8BD79A0022A311 /* MapSDKDemoViewController.m in Sources */,
 				760AF1251CB11A5D00A0D242 /* LEDRSACrypto.m in Sources */,
+				760CBEB01CC1FF4B0087A9AA /* LEDNSURLSessionViewController.m in Sources */,
 				769717E51C992AC600D0AC63 /* CustomUIViewController.m in Sources */,
 				76C035911CA68973002241E5 /* ThreadViewController.m in Sources */,
 				760AF0F41CB0E43500A0D242 /* LEDURLChecker.m in Sources */,
 				769718211C9B0DDA00D0AC63 /* PopViewLikeQQView.m in Sources */,
 				7601D8D11CB9610A00E6F6E7 /* LEDProvince.m in Sources */,
+				7601D8F01CBA4E1C00E6F6E7 /* LEDStudent.m in Sources */,
 				76C035691CA681C2002241E5 /* PortalViewController.m in Sources */,
 				76C0355C1CA6776E002241E5 /* MessageFrame.m in Sources */,
 				76C035801CA68792002241E5 /* DrawLayerViewController.m in Sources */,
@@ -2899,7 +3052,9 @@
 				769717E11C986A7B00D0AC63 /* OpenGLMainViewController.m in Sources */,
 				76C035211CA65D62002241E5 /* KeyFrameViewController.m in Sources */,
 				76C0352B1CA6713C002241E5 /* TouchIDManager.m in Sources */,
+				7601D9291CBE0CB800E6F6E7 /* EAGLView.m in Sources */,
 				76C035131CA44337002241E5 /* UIScrollRollView.m in Sources */,
+				7601D8DE1CB9FC6300E6F6E7 /* LEDStubManager.m in Sources */,
 				76C035B81CA79EFD002241E5 /* AddressBookViewController.m in Sources */,
 				761931AB1C8BCC3F0022A311 /* main.mm in Sources */,
 				760AF1341CB13A4500A0D242 /* SecurityUtil.m in Sources */,
@@ -2916,6 +3071,7 @@
 				7601D8D71CB9EB2500E6F6E7 /* LEDMVVMModel.m in Sources */,
 				76BD6BDA1CA15CAD00708977 /* WeiboSearchViewController.m in Sources */,
 				76BD6BC71CA1106100708977 /* WeiboMainViewController.m in Sources */,
+				7601D9261CBD42BD00E6F6E7 /* LEDGLView.m in Sources */,
 				76E903991C9F0089003AC33A /* AliPayViewController.m in Sources */,
 				763FE3641C8D8BFA00CE67FF /* HTTPTestViewController.m in Sources */,
 				76BD6BD21CA1120E00708977 /* UIView+Extension.m in Sources */,
@@ -2954,6 +3110,7 @@
 				760AF0EB1CB0DA5500A0D242 /* LEDWebViewController+Progress.m in Sources */,
 				7681A81F1C958A1B00FC6843 /* User.m in Sources */,
 				76C034C31CA40EC7002241E5 /* SPKAlertView.m in Sources */,
+				7601D9201CBD3CA400E6F6E7 /* XiMengViewController.m in Sources */,
 				76C479981C8EF5AF00EAE07E /* JSPatchViewController.m in Sources */,
 				769718381C9D440E00D0AC63 /* SHCZSideTableView.m in Sources */,
 				7681A81E1C958A1B00FC6843 /* User+CoreDataProperties.m in Sources */,
@@ -2976,7 +3133,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				761931871C8BC5120022A311 /* iStudyDemoTests.m in Sources */,
+				7601D8ED1CBA0B6300E6F6E7 /* STDTestViewModelStub.m in Sources */,
+				7601D8EC1CBA0B6300E6F6E7 /* STDTestViewModelSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

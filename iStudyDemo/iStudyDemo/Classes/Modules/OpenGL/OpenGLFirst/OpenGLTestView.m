@@ -90,6 +90,8 @@ const GLubyte Indices[] = {
 @property (nonatomic, assign) float currentRotation;
 @property (nonatomic, assign) GLuint depthRenderBuffer;
 
+@property (nonatomic, strong) CADisplayLink *displayLink;
+
 @end
 
 @implementation OpenGLTestView
@@ -111,7 +113,7 @@ const GLubyte Indices[] = {
         [self setupVBOs];
         //
 //        [self render];
-        [self setupDisplayLink];
+//        [self setupDisplayLink];
     }
     
 //    self.translatesAutoresizingMaskIntoConstraints = NO;
@@ -306,10 +308,25 @@ const GLubyte Indices[] = {
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(Indices), Indices, GL_STATIC_DRAW);
 }
 
-- (void)setupDisplayLink
+- (void)willMoveToSuperview:(UIView *)newSuperview
 {
-    CADisplayLink *displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(render:)];
-    [displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+    [super willMoveToSuperview:newSuperview];
+    
+    if (_displayLink) {
+        [_displayLink invalidate];
+        _displayLink = nil;
+    }
+    _displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(render:)];
+    [_displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+}
+
+- (void)removeFromSuperview
+{
+    [super removeFromSuperview];
+    if (_displayLink) {
+        [_displayLink invalidate];
+        _displayLink = nil;
+    }
 }
 
 // Add new method right after setupRenderBuffer

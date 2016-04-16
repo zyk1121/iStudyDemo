@@ -1,0 +1,712 @@
+{
+    "status": 1,
+    "result": {
+        "version": "20160314",
+        "provinces": [
+                      {
+                      "url": "",
+                      "name": "安徽省",
+                      "jianpin": "ahs",
+                      "pinyin": "anhuisheng",
+                      "adcode": "340000",
+                      "version": "20160314",
+                      "size": 72578309,
+                      "cities": [
+                                 {
+                                 "adcode": "340100",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/hefei.zip",
+                                 "name": "合肥市",
+                                 "citycode": "",
+                                 "pinyin": "hefei",
+                                 "jianpin": "hf",
+                                 "version": "20160314",
+                                 "size": 8707336,
+                                 "md5": "36143af8df85b9033d134e2d01eb211b"
+                                 },
+                                 {
+                                 "adcode": "340200",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/wuhu.zip",
+                                 "name": "芜湖市",
+                                 "citycode": "",
+                                 "pinyin": "wuhu",
+                                 "jianpin": "wh",
+                                 "version": "20160314",
+                                 "size": 5054186,
+                                 "md5": "da289f565055da5fa36d79edf406d4c0"
+                                 },
+                                 {
+                                 "adcode": "340300",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/bangbu.zip",
+                                 "name": "蚌埠市",
+                                 "citycode": "",
+                                 "pinyin": "bangbu",
+                                 "jianpin": "bb",
+                                 "version": "20160314",
+                                 "size": 2857271,
+                                 "md5": "bb91b75019e2cb6d461815dbbd7ee220"
+                                 },
+                                 {
+                                 "adcode": "340400",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/huainan.zip",
+                                 "name": "淮南市",
+                                 "citycode": "",
+                                 "pinyin": "huainan",
+                                 "jianpin": "hn",
+                                 "version": "20160314",
+                                 "size": 2053521,
+                                 "md5": "dea5e82844d19ba5b90fc7ea5f9369ad"
+                                 },
+                                 {
+                                 "adcode": "340500",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/maanshan.zip",
+                                 "name": "马鞍山市",
+                                 "citycode": "",
+                                 "pinyin": "maanshan",
+                                 "jianpin": "mas",
+                                 "version": "20160314",
+                                 "size": 3131922,
+                                 "md5": "41c0930b279552d08446b1dc5b96d509"
+                                 },
+                                 {
+                                 "adcode": "340600",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/huaibei.zip",
+                                 "name": "淮北市",
+                                 "citycode": "",
+                                 "pinyin": "huaibei",
+                                 "jianpin": "hb",
+                                 "version": "20160314",
+                                 "size": 1778933,
+                                 "md5": "1cbe18ac1dfc85127a46955346553f7b"
+                                 },
+                                 {
+                                 "adcode": "340700",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/tongling.zip",
+                                 "name": "铜陵市",
+                                 "citycode": "",
+                                 "pinyin": "tongling",
+                                 "jianpin": "tl",
+                                 "version": "20160314",
+                                 "size": 992360,
+                                 "md5": "a426e2a89eddbf6c3f662cb6b6e07dc9"
+                                 },
+                                 {
+                                 "adcode": "340800",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/anqing.zip",
+                                 "name": "安庆市",
+                                 "citycode": "",
+                                 "pinyin": "anqing",
+                                 "jianpin": "aq",
+                                 "version": "20160314",
+                                 "size": 6983080,
+                                 "md5": "598e91668e91339eee43911861575943"
+                                 },
+                                 {
+                                 "adcode": "341000",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/huangshan.zip",
+                                 "name": "黄山市",
+                                 "citycode": "",
+                                 "pinyin": "huangshan",
+                                 "jianpin": "hs",
+                                 "version": "20160314",
+                                 "size": 3441141,
+                                 "md5": "3e651424501e4c3c613875b12f867fea"
+                                 },
+                                 {
+                                 "adcode": "341100",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/chuzhou.zip",
+                                 "name": "滁州市",
+                                 "citycode": "",
+                                 "pinyin": "chuzhou",
+                                 "jianpin": "cz",
+                                 "version": "20160314",
+                                 "size": 6098621,
+                                 "md5": "0ac70d7738f8b78644f9126d44d79839"
+                                 },
+                                 {
+                                 "adcode": "341200",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/fuyang.zip",
+                                 "name": "阜阳市",
+                                 "citycode": "",
+                                 "pinyin": "fuyang",
+                                 "jianpin": "fy",
+                                 "version": "20160314",
+                                 "size": 6100682,
+                                 "md5": "6abb1c9ac0de92fd8cc6ff49758ff734"
+                                 },
+                                 {
+                                 "adcode": "341300",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/suzhou1.zip",
+                                 "name": "宿州市",
+                                 "citycode": "",
+                                 "pinyin": "suzhou1",
+                                 "jianpin": "sz",
+                                 "version": "20160314",
+                                 "size": 5045208,
+                                 "md5": "3a2962594b037ecd145a7774d9dfe342"
+                                 },
+                                 {
+                                 "adcode": "341500",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/liuan.zip",
+                                 "name": "六安市",
+                                 "citycode": "",
+                                 "pinyin": "liuan",
+                                 "jianpin": "la",
+                                 "version": "20160314",
+                                 "size": 8152348,
+                                 "md5": "a0d5a944062895295481ca03ba8a2303"
+                                 },
+                                 {
+                                 "adcode": "341600",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/bozhou.zip",
+                                 "name": "亳州市",
+                                 "citycode": "",
+                                 "pinyin": "bozhou",
+                                 "jianpin": "bz",
+                                 "version": "20160314",
+                                 "size": 4367255,
+                                 "md5": "b7e61a04b67f3ba28556bb01d816c3b6"
+                                 },
+                                 {
+                                 "adcode": "341700",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/chizhou.zip",
+                                 "name": "池州市",
+                                 "citycode": "",
+                                 "pinyin": "chizhou",
+                                 "jianpin": "cz",
+                                 "version": "20160314",
+                                 "size": 2670094,
+                                 "md5": "b2e757ca23af0eaf0a20908f2d1badad"
+                                 },
+                                 {
+                                 "adcode": "341800",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/xuancheng.zip",
+                                 "name": "宣城市",
+                                 "citycode": "",
+                                 "pinyin": "xuancheng",
+                                 "jianpin": "xc",
+                                 "version": "20160314",
+                                 "size": 5144351,
+                                 "md5": "79b10f0b1b8b4b8da2f32d0fab36eaf6"
+                                 }
+                                 ]
+                      },
+                      {
+                      "url": "",
+                      "name": "福建省",
+                      "jianpin": "fjs",
+                      "pinyin": "fujiansheng",
+                      "adcode": "350000",
+                      "version": "20160314",
+                      "size": 54089101,
+                      "cities": [
+                                 {
+                                 "adcode": "350100",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/fuzhou.zip",
+                                 "name": "福州市",
+                                 "citycode": "",
+                                 "pinyin": "fuzhou",
+                                 "jianpin": "fz",
+                                 "version": "20160314",
+                                 "size": 8352063,
+                                 "md5": "d2637d0f63c7eefd366263bf718b46de"
+                                 },
+                                 {
+                                 "adcode": "350200",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/xiamen.zip",
+                                 "name": "厦门市",
+                                 "citycode": "",
+                                 "pinyin": "xiamen",
+                                 "jianpin": "xm",
+                                 "version": "20160314",
+                                 "size": 5394804,
+                                 "md5": "53ca905fd52c2dac66b2dd68a40eee46"
+                                 },
+                                 {
+                                 "adcode": "350300",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/putian.zip",
+                                 "name": "莆田市",
+                                 "citycode": "",
+                                 "pinyin": "putian",
+                                 "jianpin": "pt",
+                                 "version": "20160314",
+                                 "size": 2805578,
+                                 "md5": "0e975f4440dcb9beaad6630aa61394c6"
+                                 },
+                                 {
+                                 "adcode": "350400",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/sanming.zip",
+                                 "name": "三明市",
+                                 "citycode": "",
+                                 "pinyin": "sanming",
+                                 "jianpin": "sm",
+                                 "version": "20160314",
+                                 "size": 6063813,
+                                 "md5": "0feb2ed121ae6ffb3c21e07a39c3541e"
+                                 },
+                                 {
+                                 "adcode": "350500",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/quanzhou.zip",
+                                 "name": "泉州市",
+                                 "citycode": "",
+                                 "pinyin": "quanzhou",
+                                 "jianpin": "qz",
+                                 "version": "20160314",
+                                 "size": 9335394,
+                                 "md5": "952aa611f7fc77dd8474b6632d69503b"
+                                 },
+                                 {
+                                 "adcode": "350600",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/zhangzhou.zip",
+                                 "name": "漳州市",
+                                 "citycode": "",
+                                 "pinyin": "zhangzhou",
+                                 "jianpin": "zz",
+                                 "version": "20160314",
+                                 "size": 5679849,
+                                 "md5": "f046261f80af05d376ffd1d5c54428d4"
+                                 },
+                                 {
+                                 "adcode": "350700",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/nanping.zip",
+                                 "name": "南平市",
+                                 "citycode": "",
+                                 "pinyin": "nanping",
+                                 "jianpin": "np",
+                                 "version": "20160314",
+                                 "size": 6041536,
+                                 "md5": "1cad730bc47f907bc56a4f756224fb34"
+                                 },
+                                 {
+                                 "adcode": "350800",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/longyan.zip",
+                                 "name": "龙岩市",
+                                 "citycode": "",
+                                 "pinyin": "longyan",
+                                 "jianpin": "ly",
+                                 "version": "20160314",
+                                 "size": 5124501,
+                                 "md5": "90a397924290db668b2d3288050e66ec"
+                                 },
+                                 {
+                                 "adcode": "350900",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/ningde.zip",
+                                 "name": "宁德市",
+                                 "citycode": "",
+                                 "pinyin": "ningde",
+                                 "jianpin": "nd",
+                                 "version": "20160314",
+                                 "size": 5291563,
+                                 "md5": "4369c57179d8b2a1516bcda81696531c"
+                                 }
+                                 ]
+                      },
+                      {
+                      "url": "",
+                      "name": "甘肃省",
+                      "jianpin": "gss",
+                      "pinyin": "gansusheng",
+                      "adcode": "620000",
+                      "version": "20160314",
+                      "size": 48608500,
+                      "cities": [
+                                 {
+                                 "adcode": "620100",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/lanzhou.zip",
+                                 "name": "兰州市",
+                                 "citycode": "",
+                                 "pinyin": "lanzhou",
+                                 "jianpin": "lz",
+                                 "version": "20160314",
+                                 "size": 4841851,
+                                 "md5": "410363dd2e38b0abeee8a5ea6eecd5ec"
+                                 },
+                                 {
+                                 "adcode": "620200",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/jiayuguan.zip",
+                                 "name": "嘉峪关市",
+                                 "citycode": "",
+                                 "pinyin": "jiayuguan",
+                                 "jianpin": "jyg",
+                                 "version": "20160314",
+                                 "size": 485512,
+                                 "md5": "039d2b6ff041df698d96e42e8c484f4d"
+                                 },
+                                 {
+                                 "adcode": "620300",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/jinchang.zip",
+                                 "name": "金昌市",
+                                 "citycode": "",
+                                 "pinyin": "jinchang",
+                                 "jianpin": "jc",
+                                 "version": "20160314",
+                                 "size": 1025737,
+                                 "md5": "4d4b7171621b3e57c506677814e68b14"
+                                 },
+                                 {
+                                 "adcode": "620400",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/baiyin.zip",
+                                 "name": "白银市",
+                                 "citycode": "",
+                                 "pinyin": "baiyin",
+                                 "jianpin": "by",
+                                 "version": "20160314",
+                                 "size": 3049053,
+                                 "md5": "9c55e59e2fcf752bad5f119c5d7be86d"
+                                 },
+                                 {
+                                 "adcode": "620500",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/tianshui.zip",
+                                 "name": "天水市",
+                                 "citycode": "",
+                                 "pinyin": "tianshui",
+                                 "jianpin": "ts",
+                                 "version": "20160314",
+                                 "size": 4286532,
+                                 "md5": "6b36c19613e4ad293caa9c810b9ec064"
+                                 },
+                                 {
+                                 "adcode": "620600",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/wuwei.zip",
+                                 "name": "武威市",
+                                 "citycode": "",
+                                 "pinyin": "wuwei",
+                                 "jianpin": "ww",
+                                 "version": "20160314",
+                                 "size": 2883984,
+                                 "md5": "47fb01fc1a5e5a5fa19a050a55f5bec7"
+                                 },
+                                 {
+                                 "adcode": "620700",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/zhangye.zip",
+                                 "name": "张掖市",
+                                 "citycode": "",
+                                 "pinyin": "zhangye",
+                                 "jianpin": "zy",
+                                 "version": "20160314",
+                                 "size": 3243108,
+                                 "md5": "52f530741508905be8be3e874931ea23"
+                                 },
+                                 {
+                                 "adcode": "620800",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/pingliang.zip",
+                                 "name": "平凉市",
+                                 "citycode": "",
+                                 "pinyin": "pingliang",
+                                 "jianpin": "pl",
+                                 "version": "20160314",
+                                 "size": 4386938,
+                                 "md5": "359d95e413cebfa878ae75007c106926"
+                                 },
+                                 {
+                                 "adcode": "620900",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/jiuquan.zip",
+                                 "name": "酒泉市",
+                                 "citycode": "",
+                                 "pinyin": "jiuquan",
+                                 "jianpin": "jq",
+                                 "version": "20160314",
+                                 "size": 4437755,
+                                 "md5": "6b44279958007d9972737fa144ca340a"
+                                 },
+                                 {
+                                 "adcode": "621000",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/qingyang.zip",
+                                 "name": "庆阳市",
+                                 "citycode": "",
+                                 "pinyin": "qingyang",
+                                 "jianpin": "qy",
+                                 "version": "20160314",
+                                 "size": 5221247,
+                                 "md5": "20eff5e02884352155896d18a625dc69"
+                                 },
+                                 {
+                                 "adcode": "621100",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/dingxi.zip",
+                                 "name": "定西市",
+                                 "citycode": "",
+                                 "pinyin": "dingxi",
+                                 "jianpin": "dx",
+                                 "version": "20160314",
+                                 "size": 4620736,
+                                 "md5": "79ae886b13fbd414ca3171b6282534b8"
+                                 },
+                                 {
+                                 "adcode": "621200",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/longnan.zip",
+                                 "name": "陇南市",
+                                 "citycode": "",
+                                 "pinyin": "longnan",
+                                 "jianpin": "ln",
+                                 "version": "20160314",
+                                 "size": 4530456,
+                                 "md5": "9c6eb5166f2f05f2e2706b3bc7d4c95d"
+                                 },
+                                 {
+                                 "adcode": "622900",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/linxia.zip",
+                                 "name": "临夏回族自治州",
+                                 "citycode": "",
+                                 "pinyin": "linxia",
+                                 "jianpin": "lx",
+                                 "version": "20160314",
+                                 "size": 2196098,
+                                 "md5": "1fbf092f5a2dc5ef8e4e69c61f3db2fd"
+                                 },
+                                 {
+                                 "adcode": "623000",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/gannan.zip",
+                                 "name": "甘南藏族自治州",
+                                 "citycode": "",
+                                 "pinyin": "gannan",
+                                 "jianpin": "gn",
+                                 "version": "20160314",
+                                 "size": 3399493,
+                                 "md5": "3aeda9826ec0730792f2e213a05cc291"
+                                 }
+                                 ]
+                      },
+                      {
+                      "url": "",
+                      "name": "广东省",
+                      "jianpin": "gds",
+                      "pinyin": "guangdongsheng",
+                      "adcode": "440000",
+                      "version": "20160314",
+                      "size": 145996846,
+                      "cities": [
+                                 {
+                                 "adcode": "440100",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/guangzhou.zip",
+                                 "name": "广州市",
+                                 "citycode": "",
+                                 "pinyin": "guangzhou",
+                                 "jianpin": "gz",
+                                 "version": "20160314",
+                                 "size": 19398102,
+                                 "md5": "43cb83fd0159e1772ea5c1692e97816f"
+                                 },
+                                 {
+                                 "adcode": "440200",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/shaoguan.zip",
+                                 "name": "韶关市",
+                                 "citycode": "",
+                                 "pinyin": "shaoguan",
+                                 "jianpin": "sg",
+                                 "version": "20160314",
+                                 "size": 5744921,
+                                 "md5": "2a0e0335486f177c3057ec8ccf09694a"
+                                 },
+                                 {
+                                 "adcode": "440300",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/shenzhen.zip",
+                                 "name": "深圳市",
+                                 "citycode": "",
+                                 "pinyin": "shenzhen",
+                                 "jianpin": "sz",
+                                 "version": "20160314",
+                                 "size": 14282687,
+                                 "md5": "076a1d9bbd690d067be62c39db9b2c2f"
+                                 },
+                                 {
+                                 "adcode": "440400",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/zhuhai.zip",
+                                 "name": "珠海市",
+                                 "citycode": "",
+                                 "pinyin": "zhuhai",
+                                 "jianpin": "zh",
+                                 "version": "20160314",
+                                 "size": 4116571,
+                                 "md5": "43e6846130bed01ef6c6cefb7d5c8dca"
+                                 },
+                                 {
+                                 "adcode": "440500",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/shantou.zip",
+                                 "name": "汕头市",
+                                 "citycode": "",
+                                 "pinyin": "shantou",
+                                 "jianpin": "st",
+                                 "version": "20160314",
+                                 "size": 4052788,
+                                 "md5": "0708aef663f72f2219e2a2c8e74e80d9"
+                                 },
+                                 {
+                                 "adcode": "440600",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/foshan.zip",
+                                 "name": "佛山市",
+                                 "citycode": "",
+                                 "pinyin": "foshan",
+                                 "jianpin": "fs",
+                                 "version": "20160314",
+                                 "size": 13461338,
+                                 "md5": "ca2d55bdcd51bb113d876582da25d2e9"
+                                 },
+                                 {
+                                 "adcode": "440700",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/jiangmen.zip",
+                                 "name": "江门市",
+                                 "citycode": "",
+                                 "pinyin": "jiangmen",
+                                 "jianpin": "jm",
+                                 "version": "20160314",
+                                 "size": 6520902,
+                                 "md5": "fc7287b8fc8e39641c22a71e5ff34f61"
+                                 },
+                                 {
+                                 "adcode": "440800",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/zhanjiang.zip",
+                                 "name": "湛江市",
+                                 "citycode": "",
+                                 "pinyin": "zhanjiang",
+                                 "jianpin": "zj",
+                                 "version": "20160314",
+                                 "size": 6565082,
+                                 "md5": "54ae97ee48a70319ded688f3e28aa82a"
+                                 },
+                                 {
+                                 "adcode": "440900",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/maoming.zip",
+                                 "name": "茂名市",
+                                 "citycode": "",
+                                 "pinyin": "maoming",
+                                 "jianpin": "mm",
+                                 "version": "20160314",
+                                 "size": 5857998,
+                                 "md5": "9041eccf8f9b7a4b3866445dc9584c19"
+                                 },
+                                 {
+                                 "adcode": "441200",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/zhaoqing.zip",
+                                 "name": "肇庆市",
+                                 "citycode": "",
+                                 "pinyin": "zhaoqing",
+                                 "jianpin": "zq",
+                                 "version": "20160314",
+                                 "size": 5427718,
+                                 "md5": "3dd2941763afff3e3a7136e2b56223ea"
+                                 },
+                                 {
+                                 "adcode": "441300",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/huizhou.zip",
+                                 "name": "惠州市",
+                                 "citycode": "",
+                                 "pinyin": "huizhou",
+                                 "jianpin": "hz",
+                                 "version": "20160314",
+                                 "size": 8228629,
+                                 "md5": "93dc7e812c43bb1408dc5ca9e8f30e70"
+                                 },
+                                 {
+                                 "adcode": "441400",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/meizhou.zip",
+                                 "name": "梅州市",
+                                 "citycode": "",
+                                 "pinyin": "meizhou",
+                                 "jianpin": "mz",
+                                 "version": "20160314",
+                                 "size": 6150912,
+                                 "md5": "87cf0260d4fce995f6f3d62c9a00b7ed"
+                                 },
+                                 {
+                                 "adcode": "441500",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/shanwei.zip",
+                                 "name": "汕尾市",
+                                 "citycode": "",
+                                 "pinyin": "shanwei",
+                                 "jianpin": "sw",
+                                 "version": "20160314",
+                                 "size": 2342868,
+                                 "md5": "a465045acfa2ed849f061beb8547f2a2"
+                                 },
+                                 {
+                                 "adcode": "441600",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/heyuan.zip",
+                                 "name": "河源市",
+                                 "citycode": "",
+                                 "pinyin": "heyuan",
+                                 "jianpin": "hy",
+                                 "version": "20160314",
+                                 "size": 4940410,
+                                 "md5": "50db05d566d4a7f6817ff110367fb100"
+                                 },
+                                 {
+                                 "adcode": "441700",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/yangjiang.zip",
+                                 "name": "阳江市",
+                                 "citycode": "",
+                                 "pinyin": "yangjiang",
+                                 "jianpin": "yj",
+                                 "version": "20160314",
+                                 "size": 3457842,
+                                 "md5": "24096415f347e42b181137ae37c848cc"
+                                 },
+                                 {
+                                 "adcode": "441800",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/qingyuan.zip",
+                                 "name": "清远市",
+                                 "citycode": "",
+                                 "pinyin": "qingyuan",
+                                 "jianpin": "qy",
+                                 "version": "20160314",
+                                 "size": 6210558,
+                                 "md5": "c0e5fd47237f105891ef93e5a2a27916"
+                                 },
+                                 {
+                                 "adcode": "441900",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/dongguan.zip",
+                                 "name": "东莞市",
+                                 "citycode": "",
+                                 "pinyin": "dongguan",
+                                 "jianpin": "dg",
+                                 "version": "20160314",
+                                 "size": 14228360,
+                                 "md5": "0f35c73d517e48aa802cc6650e1bef79"
+                                 },
+                                 {
+                                 "adcode": "442000",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/zhongshan.zip",
+                                 "name": "中山市",
+                                 "citycode": "",
+                                 "pinyin": "zhongshan",
+                                 "jianpin": "zs",
+                                 "version": "20160314",
+                                 "size": 5629514,
+                                 "md5": "71380949e8efc9607bda8c7efa607712"
+                                 },
+                                 {
+                                 "adcode": "445100",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/chaozhou.zip",
+                                 "name": "潮州市",
+                                 "citycode": "",
+                                 "pinyin": "chaozhou",
+                                 "jianpin": "cz",
+                                 "version": "20160314",
+                                 "size": 2322848,
+                                 "md5": "a4aa1db5eb46c18cee58c130abefabab"
+                                 },
+                                 {
+                                 "adcode": "445200",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/jieyang.zip",
+                                 "name": "揭阳市",
+                                 "citycode": "",
+                                 "pinyin": "jieyang",
+                                 "jianpin": "jy",
+                                 "version": "20160314",
+                                 "size": 3662420,
+                                 "md5": "f90db60cc6d92abe10e89c8e9e53ceaa"
+                                 },
+                                 {
+                                 "adcode": "445300",
+                                 "url": "http://vmapdownload.ishowchina.com/vmap/mapdata/20160314/yunfu.zip",
+                                 "name": "云浮市",
+                                 "citycode": "",
+                                 "pinyin": "yunfu",
+                                 "jianpin": "yf",
+                                 "version": "20160314",
+                                 "size": 3394378,
+                                 "md5": "eac73f6887141e1c80256153edc49bef"
+                                 }
+                                 ]
+                      }
+                      ]
+    }
+}
