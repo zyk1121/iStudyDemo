@@ -202,6 +202,7 @@
 		76737A881CC38910008AEC1C /* SwiftUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A871CC38910008AEC1C /* SwiftUIViewController.m */; };
 		76737A8B1CC38920008AEC1C /* SwiftProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A8A1CC38920008AEC1C /* SwiftProjectViewController.m */; };
 		76737A8F1CC38C0C008AEC1C /* SwiftThirdPartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A8E1CC38C0C008AEC1C /* SwiftThirdPartViewController.m */; };
+		76737A911CC3D7E4008AEC1C /* SwiftBasicPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76737A901CC3D7E4008AEC1C /* SwiftBasicPart.swift */; };
 		7681A80D1C9588ED00FC6843 /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7681A80B1C9588ED00FC6843 /* User.xcdatamodeld */; };
 		7681A81E1C958A1B00FC6843 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7681A81B1C958A1B00FC6843 /* User+CoreDataProperties.m */; };
 		7681A81F1C958A1B00FC6843 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 7681A81D1C958A1B00FC6843 /* User.m */; };
@@ -730,6 +731,7 @@
 		76737A8A1CC38920008AEC1C /* SwiftProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftProjectViewController.m; sourceTree = "<group>"; };
 		76737A8D1CC38C0C008AEC1C /* SwiftThirdPartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftThirdPartViewController.h; sourceTree = "<group>"; };
 		76737A8E1CC38C0C008AEC1C /* SwiftThirdPartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftThirdPartViewController.m; sourceTree = "<group>"; };
+		76737A901CC3D7E4008AEC1C /* SwiftBasicPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftBasicPart.swift; sourceTree = "<group>"; };
 		7681A80C1C9588ED00FC6843 /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
 		7681A81A1C958A1B00FC6843 /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
 		7681A81B1C958A1B00FC6843 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
@@ -1801,6 +1803,7 @@
 			children = (
 				76737A721CC3860A008AEC1C /* SwiftBasicPartViewController.h */,
 				76737A731CC3860A008AEC1C /* SwiftBasicPartViewController.m */,
+				76737A901CC3D7E4008AEC1C /* SwiftBasicPart.swift */,
 			);
 			path = SwiftBasicPart;
 			sourceTree = "<group>";
@@ -3266,6 +3269,7 @@
 				769718381C9D440E00D0AC63 /* SHCZSideTableView.m in Sources */,
 				7681A81E1C958A1B00FC6843 /* User+CoreDataProperties.m in Sources */,
 				76C035D61CAA9969002241E5 /* AlbumViewController.m in Sources */,
+				76737A911CC3D7E4008AEC1C /* SwiftBasicPart.swift in Sources */,
 				76C035781CA68507002241E5 /* CustomControlViewController.m in Sources */,
 				76C0358B1CA68954002241E5 /* RunLoopViewController.m in Sources */,
 				76E903891C9ED53E003AC33A /* NavMenuScrollView.m in Sources */,

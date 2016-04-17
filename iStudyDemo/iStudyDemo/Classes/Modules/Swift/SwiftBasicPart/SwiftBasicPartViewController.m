@@ -63,7 +63,17 @@
     _listViewControllers = [[NSMutableArray alloc] init];
     
     // 1.OC 语法
-    [_listData addObject:@"OC语法"];
+    [_listData addObject:@"标志符，关键字,常量和变量,注释和表达式"];
+    // 2.OC 基本运算符
+    [_listData addObject:@"基本运算符"];
+    // 3.基本数据类型
+    [_listData addObject:@"基本数据类型"];
+    // 4.字符和字符串
+    [_listData addObject:@"字符和字符串"];
+    // 5.控制语句
+    [_listData addObject:@"控制语句"];
+    // 6.集合
+    [_listData addObject:@"集合"];
 }
 
 
@@ -118,7 +128,34 @@
 // 基本语法
 - (void)OC_test0
 {
-    NSLog(@"ddd");
+    SwiftBasicPart *basicPart = [[SwiftBasicPart alloc] init];
+    [basicPart test0];
+}
+- (void)OC_test1
+{
+    SwiftBasicPart *basicPart = [[SwiftBasicPart alloc] init];
+    [basicPart test1];
+}
+- (void)OC_test2
+{
+    SwiftBasicPart *basicPart = [[SwiftBasicPart alloc] init];
+    [basicPart test2];
+}
+//
+- (void)OC_test3
+{
+    SwiftBasicPart *basicPart = [[SwiftBasicPart alloc] init];
+    [basicPart test0];
+}
+- (void)OC_test4
+{
+    SwiftBasicPart *basicPart = [[SwiftBasicPart alloc] init];
+    [basicPart test1];
+}
+- (void)OC_test5
+{
+    SwiftBasicPart *basicPart = [[SwiftBasicPart alloc] init];
+    [basicPart test2];
 }
 
 @end
