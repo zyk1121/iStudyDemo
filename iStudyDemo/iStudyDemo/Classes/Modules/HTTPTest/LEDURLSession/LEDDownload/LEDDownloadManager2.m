@@ -184,8 +184,13 @@
     NSString *ttt = [task.currentRequest.URL absoluteString];
     NSLog(@"3-------%@",[task.currentRequest.URL absoluteString]);
     
+    NSString *str = @"下载完成";
+    if (error) {
+        str = @"下载失败";
+    }
+    
     dispatch_async(dispatch_get_main_queue(), ^{
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"下载完成" message:ttt  delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:str message:ttt  delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
         [alertView show];
     });
     [self.downloadTaskDic removeObjectForKey:ttt];

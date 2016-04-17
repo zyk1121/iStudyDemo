@@ -190,6 +190,18 @@
 		763FE3871C8DC9AB00CE67FF /* LEDDomainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE3861C8DC9AB00CE67FF /* LEDDomainObject.m */; };
 		763FE38D1C8DCB6100CE67FF /* LEDDomainPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE38C1C8DCB6100CE67FF /* LEDDomainPredicate.m */; };
 		763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE38F1C8DD03000CE67FF /* TestDomainObject.m */; };
+		76737A6F1CC385DA008AEC1C /* SwiftBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76737A641CC385DA008AEC1C /* SwiftBasic.swift */; };
+		76737A701CC385DA008AEC1C /* SwiftBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A661CC385DA008AEC1C /* SwiftBasicViewController.m */; };
+		76737A711CC385DA008AEC1C /* SwiftCallOCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A681CC385DA008AEC1C /* SwiftCallOCObject.m */; };
+		76737A741CC3860A008AEC1C /* SwiftBasicPartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A731CC3860A008AEC1C /* SwiftBasicPartViewController.m */; };
+		76737A781CC3889B008AEC1C /* SwiftClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A771CC3889B008AEC1C /* SwiftClassViewController.m */; };
+		76737A7B1CC388AD008AEC1C /* SwfitExtensionProtocolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A7A1CC388AD008AEC1C /* SwfitExtensionProtocolViewController.m */; };
+		76737A7E1CC388BF008AEC1C /* SwiftFoundationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A7D1CC388BF008AEC1C /* SwiftFoundationViewController.m */; };
+		76737A821CC388E6008AEC1C /* SwiftMemoryManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A811CC388E6008AEC1C /* SwiftMemoryManagerViewController.m */; };
+		76737A851CC388F7008AEC1C /* SwiftFunctionClosureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A841CC388F7008AEC1C /* SwiftFunctionClosureViewController.m */; };
+		76737A881CC38910008AEC1C /* SwiftUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A871CC38910008AEC1C /* SwiftUIViewController.m */; };
+		76737A8B1CC38920008AEC1C /* SwiftProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A8A1CC38920008AEC1C /* SwiftProjectViewController.m */; };
+		76737A8F1CC38C0C008AEC1C /* SwiftThirdPartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A8E1CC38C0C008AEC1C /* SwiftThirdPartViewController.m */; };
 		7681A80D1C9588ED00FC6843 /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7681A80B1C9588ED00FC6843 /* User.xcdatamodeld */; };
 		7681A81E1C958A1B00FC6843 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7681A81B1C958A1B00FC6843 /* User+CoreDataProperties.m */; };
 		7681A81F1C958A1B00FC6843 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 7681A81D1C958A1B00FC6843 /* User.m */; };
@@ -694,6 +706,30 @@
 		763FE38C1C8DCB6100CE67FF /* LEDDomainPredicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDDomainPredicate.m; sourceTree = "<group>"; };
 		763FE38E1C8DD03000CE67FF /* TestDomainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDomainObject.h; sourceTree = "<group>"; };
 		763FE38F1C8DD03000CE67FF /* TestDomainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDomainObject.m; sourceTree = "<group>"; };
+		76737A631CC385DA008AEC1C /* iStudyDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iStudyDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		76737A641CC385DA008AEC1C /* SwiftBasic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftBasic.swift; sourceTree = "<group>"; };
+		76737A651CC385DA008AEC1C /* SwiftBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftBasicViewController.h; sourceTree = "<group>"; };
+		76737A661CC385DA008AEC1C /* SwiftBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftBasicViewController.m; sourceTree = "<group>"; };
+		76737A671CC385DA008AEC1C /* SwiftCallOCObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftCallOCObject.h; sourceTree = "<group>"; };
+		76737A681CC385DA008AEC1C /* SwiftCallOCObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftCallOCObject.m; sourceTree = "<group>"; };
+		76737A721CC3860A008AEC1C /* SwiftBasicPartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftBasicPartViewController.h; sourceTree = "<group>"; };
+		76737A731CC3860A008AEC1C /* SwiftBasicPartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftBasicPartViewController.m; sourceTree = "<group>"; };
+		76737A761CC3889B008AEC1C /* SwiftClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftClassViewController.h; sourceTree = "<group>"; };
+		76737A771CC3889B008AEC1C /* SwiftClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftClassViewController.m; sourceTree = "<group>"; };
+		76737A791CC388AD008AEC1C /* SwfitExtensionProtocolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwfitExtensionProtocolViewController.h; sourceTree = "<group>"; };
+		76737A7A1CC388AD008AEC1C /* SwfitExtensionProtocolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwfitExtensionProtocolViewController.m; sourceTree = "<group>"; };
+		76737A7C1CC388BF008AEC1C /* SwiftFoundationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftFoundationViewController.h; sourceTree = "<group>"; };
+		76737A7D1CC388BF008AEC1C /* SwiftFoundationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftFoundationViewController.m; sourceTree = "<group>"; };
+		76737A801CC388E6008AEC1C /* SwiftMemoryManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftMemoryManagerViewController.h; sourceTree = "<group>"; };
+		76737A811CC388E6008AEC1C /* SwiftMemoryManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftMemoryManagerViewController.m; sourceTree = "<group>"; };
+		76737A831CC388F7008AEC1C /* SwiftFunctionClosureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftFunctionClosureViewController.h; sourceTree = "<group>"; };
+		76737A841CC388F7008AEC1C /* SwiftFunctionClosureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftFunctionClosureViewController.m; sourceTree = "<group>"; };
+		76737A861CC38910008AEC1C /* SwiftUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftUIViewController.h; sourceTree = "<group>"; };
+		76737A871CC38910008AEC1C /* SwiftUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftUIViewController.m; sourceTree = "<group>"; };
+		76737A891CC38920008AEC1C /* SwiftProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftProjectViewController.h; sourceTree = "<group>"; };
+		76737A8A1CC38920008AEC1C /* SwiftProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftProjectViewController.m; sourceTree = "<group>"; };
+		76737A8D1CC38C0C008AEC1C /* SwiftThirdPartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftThirdPartViewController.h; sourceTree = "<group>"; };
+		76737A8E1CC38C0C008AEC1C /* SwiftThirdPartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftThirdPartViewController.m; sourceTree = "<group>"; };
 		7681A80C1C9588ED00FC6843 /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
 		7681A81A1C958A1B00FC6843 /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
 		7681A81B1C958A1B00FC6843 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
@@ -1738,6 +1774,100 @@
 			path = Mantle;
 			sourceTree = "<group>";
 		};
+		76737A611CC385DA008AEC1C /* SwfitExtensionProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				76737A791CC388AD008AEC1C /* SwfitExtensionProtocolViewController.h */,
+				76737A7A1CC388AD008AEC1C /* SwfitExtensionProtocolViewController.m */,
+			);
+			path = SwfitExtensionProtocol;
+			sourceTree = "<group>";
+		};
+		76737A621CC385DA008AEC1C /* Swift-OC */ = {
+			isa = PBXGroup;
+			children = (
+				76737A631CC385DA008AEC1C /* iStudyDemo-Bridging-Header.h */,
+				76737A641CC385DA008AEC1C /* SwiftBasic.swift */,
+				76737A651CC385DA008AEC1C /* SwiftBasicViewController.h */,
+				76737A661CC385DA008AEC1C /* SwiftBasicViewController.m */,
+				76737A671CC385DA008AEC1C /* SwiftCallOCObject.h */,
+				76737A681CC385DA008AEC1C /* SwiftCallOCObject.m */,
+			);
+			path = "Swift-OC";
+			sourceTree = "<group>";
+		};
+		76737A691CC385DA008AEC1C /* SwiftBasicPart */ = {
+			isa = PBXGroup;
+			children = (
+				76737A721CC3860A008AEC1C /* SwiftBasicPartViewController.h */,
+				76737A731CC3860A008AEC1C /* SwiftBasicPartViewController.m */,
+			);
+			path = SwiftBasicPart;
+			sourceTree = "<group>";
+		};
+		76737A6A1CC385DA008AEC1C /* SwiftFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				76737A7C1CC388BF008AEC1C /* SwiftFoundationViewController.h */,
+				76737A7D1CC388BF008AEC1C /* SwiftFoundationViewController.m */,
+			);
+			path = SwiftFoundation;
+			sourceTree = "<group>";
+		};
+		76737A6C1CC385DA008AEC1C /* SwiftMemoryManager */ = {
+			isa = PBXGroup;
+			children = (
+				76737A801CC388E6008AEC1C /* SwiftMemoryManagerViewController.h */,
+				76737A811CC388E6008AEC1C /* SwiftMemoryManagerViewController.m */,
+			);
+			path = SwiftMemoryManager;
+			sourceTree = "<group>";
+		};
+		76737A6D1CC385DA008AEC1C /* SwiftProject */ = {
+			isa = PBXGroup;
+			children = (
+				76737A891CC38920008AEC1C /* SwiftProjectViewController.h */,
+				76737A8A1CC38920008AEC1C /* SwiftProjectViewController.m */,
+			);
+			path = SwiftProject;
+			sourceTree = "<group>";
+		};
+		76737A6E1CC385DA008AEC1C /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				76737A861CC38910008AEC1C /* SwiftUIViewController.h */,
+				76737A871CC38910008AEC1C /* SwiftUIViewController.m */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		76737A751CC38885008AEC1C /* SwfitClass */ = {
+			isa = PBXGroup;
+			children = (
+				76737A761CC3889B008AEC1C /* SwiftClassViewController.h */,
+				76737A771CC3889B008AEC1C /* SwiftClassViewController.m */,
+			);
+			path = SwfitClass;
+			sourceTree = "<group>";
+		};
+		76737A7F1CC388D6008AEC1C /* SwiftFunctionClosure */ = {
+			isa = PBXGroup;
+			children = (
+				76737A831CC388F7008AEC1C /* SwiftFunctionClosureViewController.h */,
+				76737A841CC388F7008AEC1C /* SwiftFunctionClosureViewController.m */,
+			);
+			path = SwiftFunctionClosure;
+			sourceTree = "<group>";
+		};
+		76737A8C1CC38BFB008AEC1C /* SwiftThirdPart */ = {
+			isa = PBXGroup;
+			children = (
+				76737A8D1CC38C0C008AEC1C /* SwiftThirdPartViewController.h */,
+				76737A8E1CC38C0C008AEC1C /* SwiftThirdPartViewController.m */,
+			);
+			path = SwiftThirdPart;
+			sourceTree = "<group>";
+		};
 		7681A8201C959FFD00FC6843 /* ObjectManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -2245,6 +2375,16 @@
 		76C035951CA68CBC002241E5 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				76737A751CC38885008AEC1C /* SwfitClass */,
+				76737A611CC385DA008AEC1C /* SwfitExtensionProtocol */,
+				76737A621CC385DA008AEC1C /* Swift-OC */,
+				76737A691CC385DA008AEC1C /* SwiftBasicPart */,
+				76737A6A1CC385DA008AEC1C /* SwiftFoundation */,
+				76737A6C1CC385DA008AEC1C /* SwiftMemoryManager */,
+				76737A7F1CC388D6008AEC1C /* SwiftFunctionClosure */,
+				76737A6E1CC385DA008AEC1C /* SwiftUI */,
+				76737A6D1CC385DA008AEC1C /* SwiftProject */,
+				76737A8C1CC38BFB008AEC1C /* SwiftThirdPart */,
 				76C035961CA68CCC002241E5 /* SwiftViewController.h */,
 				76C035971CA68CCC002241E5 /* SwiftViewController.m */,
 			);
@@ -2638,6 +2778,7 @@
 		761931611C8BC5120022A311 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = zhangyuanke;
 				TargetAttributes = {
@@ -2990,6 +3131,7 @@
 				76E9164C1CAC219600C8C63A /* TestPortalViewController.m in Sources */,
 				7697189B1C9E466C00D0AC63 /* QQSideBarViewController.m in Sources */,
 				76C035E21CAA99AE002241E5 /* PhotoViewController.m in Sources */,
+				76737A781CC3889B008AEC1C /* SwiftClassViewController.m in Sources */,
 				76C035CD1CA9795A002241E5 /* XMPPTestViewController.m in Sources */,
 				76C035C01CA7ECB8002241E5 /* LDKTimer.m in Sources */,
 				760AF1231CB11A5D00A0D242 /* LEDDigest.m in Sources */,
@@ -3003,6 +3145,7 @@
 				760AF0FB1CB0F3ED00A0D242 /* LEDWebViewControllerJavascriptBridgeHelper.m in Sources */,
 				76BD6BDE1CA189A900708977 /* NewfeatureViewController.m in Sources */,
 				761931D21C8C5DF70022A311 /* CC3GLMatrix.m in Sources */,
+				76737A881CC38910008AEC1C /* SwiftUIViewController.m in Sources */,
 				76C0355B1CA6776E002241E5 /* MessageCell.m in Sources */,
 				76C035881CA68943002241E5 /* MVVMViewController.m in Sources */,
 				76C0359D1CA68FD6002241E5 /* RACViewController.m in Sources */,
@@ -3019,10 +3162,12 @@
 				76C034C11CA40EC7002241E5 /* SPKBannerPagingView.m in Sources */,
 				763E4E991CA3B03F00470FCA /* ZFBTableViewCell.m in Sources */,
 				760CBEB41CC1FF830087A9AA /* LEDDownloadManager.m in Sources */,
+				76737A701CC385DA008AEC1C /* SwiftBasicViewController.m in Sources */,
 				76C034C61CA411BF002241E5 /* UIViewAdditions.m in Sources */,
 				76213BDE1C97048C001DAA53 /* ThirdShareViewController.m in Sources */,
 				76C479A11C8F248F00EAE07E /* coreData.xcdatamodeld in Sources */,
 				76C0358E1CA68964002241E5 /* RunTimeViewController.m in Sources */,
+				76737A6F1CC385DA008AEC1C /* SwiftBasic.swift in Sources */,
 				769717E91C992C1B00D0AC63 /* QQMainViewController.m in Sources */,
 				76C035E81CAAD54A002241E5 /* CustomTakePhotoViewController.m in Sources */,
 				760AF11F1CB11A5D00A0D242 /* LEDAESCrypto+File.m in Sources */,
@@ -3046,6 +3191,7 @@
 				76C035691CA681C2002241E5 /* PortalViewController.m in Sources */,
 				76C0355C1CA6776E002241E5 /* MessageFrame.m in Sources */,
 				76C035801CA68792002241E5 /* DrawLayerViewController.m in Sources */,
+				76737A851CC388F7008AEC1C /* SwiftFunctionClosureViewController.m in Sources */,
 				76BD6BD11CA1120E00708977 /* UIBarButtonItem+Extension.m in Sources */,
 				76C035B11CA79051002241E5 /* QRCodeCreateViewController.m in Sources */,
 				761931A71C8BC8A20022A311 /* MainViewController.m in Sources */,
@@ -3056,6 +3202,7 @@
 				76C035131CA44337002241E5 /* UIScrollRollView.m in Sources */,
 				7601D8DE1CB9FC6300E6F6E7 /* LEDStubManager.m in Sources */,
 				76C035B81CA79EFD002241E5 /* AddressBookViewController.m in Sources */,
+				76737A741CC3860A008AEC1C /* SwiftBasicPartViewController.m in Sources */,
 				761931AB1C8BCC3F0022A311 /* main.mm in Sources */,
 				760AF1341CB13A4500A0D242 /* SecurityUtil.m in Sources */,
 				76213BDA1C97029A001DAA53 /* ThirdPartViewController.m in Sources */,
@@ -3073,19 +3220,23 @@
 				76BD6BC71CA1106100708977 /* WeiboMainViewController.m in Sources */,
 				7601D9261CBD42BD00E6F6E7 /* LEDGLView.m in Sources */,
 				76E903991C9F0089003AC33A /* AliPayViewController.m in Sources */,
+				76737A8B1CC38920008AEC1C /* SwiftProjectViewController.m in Sources */,
 				763FE3641C8D8BFA00CE67FF /* HTTPTestViewController.m in Sources */,
 				76BD6BD21CA1120E00708977 /* UIView+Extension.m in Sources */,
 				76C035741CA683A9002241E5 /* EncryptDecryptViewController.m in Sources */,
 				760AF13B1CB238D200A0D242 /* CCModalViewViewController.m in Sources */,
 				76C479951C8EF51600EAE07E /* DataStorageViewController.m in Sources */,
 				763E4E951CA2F6E600470FCA /* WD2ViewController.m in Sources */,
+				76737A821CC388E6008AEC1C /* SwiftMemoryManagerViewController.m in Sources */,
 				760AF1331CB13A4500A0D242 /* NSString+MD5.m in Sources */,
 				769717DC1C986A6B00D0AC63 /* OpenGLViewController.m in Sources */,
 				76C0351B1CA63C97002241E5 /* SimpleAnimationViewController.m in Sources */,
+				76737A7E1CC388BF008AEC1C /* SwiftFoundationViewController.m in Sources */,
 				763E4E9C1CA3B9B200470FCA /* ZFBCollectionViewCell.m in Sources */,
 				76C035B41CA79061002241E5 /* QRCodeScanViewController.m in Sources */,
 				763E4DF61CA25E1D00470FCA /* ZFBViewController.m in Sources */,
 				76C035941CA689A7002241E5 /* UnitTestStubMockViewController.m in Sources */,
+				76737A8F1CC38C0C008AEC1C /* SwiftThirdPartViewController.m in Sources */,
 				76C0355A1CA6776E002241E5 /* Message.m in Sources */,
 				76C034BF1CA40EC7002241E5 /* SPKBanner.m in Sources */,
 				76C035611CA67FD9002241E5 /* MediaViewController.m in Sources */,
@@ -3123,6 +3274,8 @@
 				76C035981CA68CCC002241E5 /* SwiftViewController.m in Sources */,
 				760AF1061CB1141200A0D242 /* PushNotificationViewController.m in Sources */,
 				76C0351E1CA655F8002241E5 /* BasicAnimationViewController.m in Sources */,
+				76737A711CC385DA008AEC1C /* SwiftCallOCObject.m in Sources */,
+				76737A7B1CC388AD008AEC1C /* SwfitExtensionProtocolViewController.m in Sources */,
 				761931D11C8C5DF70022A311 /* CC3Foundation.m in Sources */,
 				7697189E1C9E994900D0AC63 /* QQSettingViewController.m in Sources */,
 				760AF11E1CB11A5D00A0D242 /* NSString+LEDDigest.m in Sources */,
@@ -3270,6 +3423,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3281,6 +3435,7 @@
 					"$(PROJECT_DIR)/iStudyDemo/Classes/Modules/ThirdPart/ThirdShare/ShareSDK",
 					"$(PROJECT_DIR)/iStudyDemo/Classes/Modules/ThirdPart/ThirdShare/ShareSDK/UI",
 				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				INFOPLIST_FILE = iStudyDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -3292,6 +3447,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.puny.iStudyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "iStudyDemo/Classes/Modules/Swift/Swift-OC/iStudyDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -3301,6 +3458,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3312,6 +3470,7 @@
 					"$(PROJECT_DIR)/iStudyDemo/Classes/Modules/ThirdPart/ThirdShare/ShareSDK",
 					"$(PROJECT_DIR)/iStudyDemo/Classes/Modules/ThirdPart/ThirdShare/ShareSDK/UI",
 				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				INFOPLIST_FILE = iStudyDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -3323,6 +3482,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.puny.iStudyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "iStudyDemo/Classes/Modules/Swift/Swift-OC/iStudyDemo-Bridging-Header.h";
 			};
 			name = Release;
 		};
