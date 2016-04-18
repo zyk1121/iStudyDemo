@@ -145,17 +145,17 @@
 - (void)OC_test3
 {
     SwiftBasicPart *basicPart = [[SwiftBasicPart alloc] init];
-    [basicPart test0];
+    [basicPart test3];
 }
 - (void)OC_test4
 {
     SwiftBasicPart *basicPart = [[SwiftBasicPart alloc] init];
-    [basicPart test1];
+    [basicPart test4];
 }
 - (void)OC_test5
 {
     SwiftBasicPart *basicPart = [[SwiftBasicPart alloc] init];
-    [basicPart test2];
+    [basicPart test5];
 }
 
 @end

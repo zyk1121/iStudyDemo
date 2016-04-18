@@ -190,6 +190,7 @@
 		763FE3871C8DC9AB00CE67FF /* LEDDomainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE3861C8DC9AB00CE67FF /* LEDDomainObject.m */; };
 		763FE38D1C8DCB6100CE67FF /* LEDDomainPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE38C1C8DCB6100CE67FF /* LEDDomainPredicate.m */; };
 		763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE38F1C8DD03000CE67FF /* TestDomainObject.m */; };
+		765F83401CC49ADD00D87D7F /* LDDataExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 765F833F1CC49ADD00D87D7F /* LDDataExtension.m */; };
 		76737A6F1CC385DA008AEC1C /* SwiftBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76737A641CC385DA008AEC1C /* SwiftBasic.swift */; };
 		76737A701CC385DA008AEC1C /* SwiftBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A661CC385DA008AEC1C /* SwiftBasicViewController.m */; };
 		76737A711CC385DA008AEC1C /* SwiftCallOCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A681CC385DA008AEC1C /* SwiftCallOCObject.m */; };
@@ -707,6 +708,8 @@
 		763FE38C1C8DCB6100CE67FF /* LEDDomainPredicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDDomainPredicate.m; sourceTree = "<group>"; };
 		763FE38E1C8DD03000CE67FF /* TestDomainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDomainObject.h; sourceTree = "<group>"; };
 		763FE38F1C8DD03000CE67FF /* TestDomainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDomainObject.m; sourceTree = "<group>"; };
+		765F833E1CC49ADD00D87D7F /* LDDataExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDataExtension.h; sourceTree = "<group>"; };
+		765F833F1CC49ADD00D87D7F /* LDDataExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDataExtension.m; sourceTree = "<group>"; };
 		76737A631CC385DA008AEC1C /* iStudyDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iStudyDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		76737A641CC385DA008AEC1C /* SwiftBasic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftBasic.swift; sourceTree = "<group>"; };
 		76737A651CC385DA008AEC1C /* SwiftBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftBasicViewController.h; sourceTree = "<group>"; };
@@ -2278,6 +2281,8 @@
 		76C035711CA68394002241E5 /* EncryptDecrypt */ = {
 			isa = PBXGroup;
 			children = (
+				765F833E1CC49ADD00D87D7F /* LDDataExtension.h */,
+				765F833F1CC49ADD00D87D7F /* LDDataExtension.m */,
 				760AF1261CB13A4500A0D242 /* Security */,
 				760AF10A1CB11A5D00A0D242 /* Classes */,
 				760AF1071CB1142500A0D242 /* NSData+Base64.h */,
@@ -3119,6 +3124,7 @@
 				7697181B1C9AF63A00D0AC63 /* QQDynamicViewController.m in Sources */,
 				763FE3871C8DC9AB00CE67FF /* LEDDomainObject.m in Sources */,
 				760CBEB71CC25C1F0087A9AA /* LEDDownloadManager2.m in Sources */,
+				765F83401CC49ADD00D87D7F /* LDDataExtension.m in Sources */,
 				760AF1201CB11A5D00A0D242 /* LEDAESCrypto.m in Sources */,
 				76E903941C9EFC2B003AC33A /* QQChatViewController.m in Sources */,
 				760AF13F1CB23BB500A0D242 /* LEDModalView.m in Sources */,

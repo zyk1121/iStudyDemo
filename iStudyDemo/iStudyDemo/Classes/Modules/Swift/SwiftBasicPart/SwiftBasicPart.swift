@@ -8,6 +8,8 @@
 
 import Foundation
 
+// http://www.runoob.com/swift/swift-strings.html
+
 class SwiftBasicPart: NSObject {
     
     //  标识符 & 关键字 & 常量 & 变量
@@ -112,4 +114,217 @@ class SwiftBasicPart: NSObject {
         // 把不需要的字段使用下划线代替
         
     }
+    
+    // 字符和字符串,Swift 采用unicode编码，它的字符几乎涵盖了我们所知道的一切字符
+    // 字符,在C和OC中，字符是放在‘’中的，Swift中的字符是放在“”中的，
+    func test3() {
+        let andSign1:Character = "&"
+        let andSign2 = "$"
+        NSLog("\(andSign1)\(andSign2)")
+        // 字符串
+        
+        let str1 = "123456"
+        let str2:String = "abcdef"
+        let str3 = String()
+        NSLog("\(str1)\(str2)\(str3)")
+        // var 声明的字符串是可变的，let声明的字符串是不可变的
+        
+//        str3 = "ddd";// error
+//        var str4:String = String()
+        var str4 = String() //  可变字符串
+        str4 += "1"
+        str4 += "a"
+        str4 += "2"
+         NSLog("\(str4)")
+        
+        // 字符串比较
+        if str1 < str4 {
+            NSLog("str1 < str4")
+        }
+        
+        if str1 == str4 {
+            NSLog("str1 == str4")
+        } else {
+            NSLog("str1 != str4")
+
+        }
+        NSLog("String 和 Character 类型支持== 和!=     “===   !==”是用于引用类型的判断的")
+        // String 和 Character 类型支持== 和!=     “===   !==”是用于引用类型的判断的
+        
+        // 前缀和后缀
+        let docFolder = [
+            "java.docx",
+            "JavaBean.docx",
+            "Objective-C.xlsx",
+            "Swift.docx"
+        ]
+        var wordCount = 0
+        for doc in docFolder {
+            if doc.hasSuffix(".docx") {
+                wordCount += 1
+            }
+        }
+        print("文件夹中word文档的个数：\(wordCount)")
+        
+        var javaDocCount = 0
+        for doc in docFolder {
+            let lowercaseDoc = doc.lowercaseString
+            if lowercaseDoc.hasPrefix("java") {
+                javaDocCount += 1
+            }
+        }
+        print("文件夹中java文档的个数：\(javaDocCount)")
+        print("string count字符串长度:\(str4.characters.count)")
+    }
+    
+    // 控制语句
+    func test4() {
+        // 分支 if else 
+        // switch,可以使用整数，浮点数，字符，字符串，元组类型，而且它的值可以是离散的也可以是连续的，语句执行完直接跳出，不需要braak
+        /*
+        let testScore = 86
+        var grade:Character
+        switch testScore / 10 {
+        case 9:
+            grade = "优"
+        case 8:
+            grade = "良"
+        case 7,6:
+            grade = "中"
+        default:
+            grade = "差"
+        }
+        print("\(testScore):\(grade)")
+        
+        let value = 1.00
+        var desc:String
+        switch value {
+        case 0.0:
+            desc = "最小值"
+        case 0.5:
+            desc = "中值"
+        case 1.0:
+            desc = "最大值"
+        default:
+            desc = "其他值"
+        }
+        
+        print("\(desc)")
+ */
+        
+        // swift 中使用范围 (...) (..<) (<..<)
+//        let testScore = 90
+//        var grade:Character
+//        switch testScore {
+//        case 90...100:
+//            grade = "优"
+//        case 80..<90:
+//            grade = "良"
+//        case 60..<80:
+//            grade = "中"
+//        default:
+//            grade = "差"
+//        }
+//        print("\(testScore):\(grade)")
+        
+        // 元组 where
+      
+        let student = (id:"1002",name:"李四",age:32,chineseScore:90,EnglishScore:91)
+        var desc:String
+        
+        switch student {
+        case (_,_,let age,90...100,90...100) where age > 0:
+            desc = "优"
+        case (_,_,_,80..<90,80..<90):
+            desc = "良"
+        case (_,_,_,60..<80,60..<80):
+            desc = "优"
+        default:
+            desc = "差"
+        }
+        
+        print("\(desc)")
+        
+        
+        // 循环语句
+//        while true {
+//            //
+//        }
+////
+//        var i = 0
+//        
+//        repeat {
+//            NSLog("\(i)");
+//            i += 1;
+//        } while i < 10
+        let numbers = [1,2,3,4,5,6,7,8]
+        for item in numbers {
+            NSLog("\(item)")
+        }
+        
+        // break 可以用于while ，do while，for，forin,强行退出（当前循环层）循环，可以带标签
+        // continue,跳出本次循环
+        // fallthrough 贯通语句，只能在switch中使用
+        
+        var j = 1
+        let x = 4
+        switch x {
+        case 1:
+            j += 1;
+        case 2:
+            j += 1;
+        case 3:
+            j += 1;
+        case 4:
+            j += 1;
+            fallthrough
+        case 5:
+            j += 1;
+            fallthrough
+        default:
+            j += 1
+        }
+        print("j=\(j)")
+    }
+    
+    // 集合，Array ，Dictionry
+    func test5() {
+        // Array
+//        var strArray = String()
+//        var strArray2:Array<String> = []
+//        var strArray:[String] = ["12","34"]
+//        var strArray:[String] = String();
+//        var strArray = [String]()
+        
+        
+        
+        var strArray:[String] = ["111"]
+        strArray.append("123")
+        strArray.append("234")
+        strArray += ["avc","345dd"]
+        strArray.insert("bbbb", atIndex: 0)
+        print(strArray.count)
+        print(strArray)
+        
+        let ff = strArray.removeAtIndex(0)
+        strArray[0] = "hello"
+        print(strArray.count)
+        print(strArray)
+        
+        // 数组遍历
+        for item in strArray {
+            print(item)
+        }
+        
+//        for (index,item) in enumerate(strArray) {
+//            print("Item\(index + 1):\(item)")
+//        }
+        
+        
+        
+        
+        // dictionry
+        
+    }
+    
 }
