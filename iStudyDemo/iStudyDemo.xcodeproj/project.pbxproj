@@ -190,6 +190,7 @@
 		763FE3871C8DC9AB00CE67FF /* LEDDomainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE3861C8DC9AB00CE67FF /* LEDDomainObject.m */; };
 		763FE38D1C8DCB6100CE67FF /* LEDDomainPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE38C1C8DCB6100CE67FF /* LEDDomainPredicate.m */; };
 		763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE38F1C8DD03000CE67FF /* TestDomainObject.m */; };
+		7653A4C71CC682CC005A27E2 /* SwiftFunctionClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653A4C61CC682CC005A27E2 /* SwiftFunctionClosure.swift */; };
 		765F83401CC49ADD00D87D7F /* LDDataExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 765F833F1CC49ADD00D87D7F /* LDDataExtension.m */; };
 		76737A6F1CC385DA008AEC1C /* SwiftBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76737A641CC385DA008AEC1C /* SwiftBasic.swift */; };
 		76737A701CC385DA008AEC1C /* SwiftBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A661CC385DA008AEC1C /* SwiftBasicViewController.m */; };
@@ -708,6 +709,7 @@
 		763FE38C1C8DCB6100CE67FF /* LEDDomainPredicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDDomainPredicate.m; sourceTree = "<group>"; };
 		763FE38E1C8DD03000CE67FF /* TestDomainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDomainObject.h; sourceTree = "<group>"; };
 		763FE38F1C8DD03000CE67FF /* TestDomainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDomainObject.m; sourceTree = "<group>"; };
+		7653A4C61CC682CC005A27E2 /* SwiftFunctionClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftFunctionClosure.swift; sourceTree = "<group>"; };
 		765F833E1CC49ADD00D87D7F /* LDDataExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDataExtension.h; sourceTree = "<group>"; };
 		765F833F1CC49ADD00D87D7F /* LDDataExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDataExtension.m; sourceTree = "<group>"; };
 		76737A631CC385DA008AEC1C /* iStudyDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iStudyDemo-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -1861,6 +1863,7 @@
 			children = (
 				76737A831CC388F7008AEC1C /* SwiftFunctionClosureViewController.h */,
 				76737A841CC388F7008AEC1C /* SwiftFunctionClosureViewController.m */,
+				7653A4C61CC682CC005A27E2 /* SwiftFunctionClosure.swift */,
 			);
 			path = SwiftFunctionClosure;
 			sourceTree = "<group>";
@@ -3217,6 +3220,7 @@
 				76213BDA1C97029A001DAA53 /* ThirdPartViewController.m in Sources */,
 				76C034BE1CA40EC7002241E5 /* SPKADViewController.m in Sources */,
 				76C4799C1C8EF67B00EAE07E /* QuartzCoreViewController.m in Sources */,
+				7653A4C71CC682CC005A27E2 /* SwiftFunctionClosure.swift in Sources */,
 				76E9037E1C9ED4B4003AC33A /* NaviMenuViewController.m in Sources */,
 				763E4DFC1CA25E3500470FCA /* PYViewController.m in Sources */,
 				76C034C21CA40EC7002241E5 /* SPKBannerView.m in Sources */,

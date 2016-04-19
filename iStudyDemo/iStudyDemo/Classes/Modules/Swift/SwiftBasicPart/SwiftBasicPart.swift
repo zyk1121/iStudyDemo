@@ -295,7 +295,7 @@ class SwiftBasicPart: NSObject {
 //        var strArray:[String] = ["12","34"]
 //        var strArray:[String] = String();
 //        var strArray = [String]()
-        
+        /*
         
         
         var strArray:[String] = ["111"]
@@ -319,12 +319,78 @@ class SwiftBasicPart: NSObject {
 //        for (index,item) in enumerate(strArray) {
 //            print("Item\(index + 1):\(item)")
 //        }
+        let itemArray = [String](count: 3, repeatedValue:"12345")
+        print(itemArray)
+//        var someInts:[Int] = [10, 20, 30]
+ 
         
+        var someInts = [Int]()
         
+        someInts.append(20)
+        someInts.append(30)
+        someInts += [40]
         
+        var someVar = someInts[0]
+        
+        print( "第一个元素的值 \(someVar)" )
+        print( "第二个元素的值 \(someInts[1])" )
+        print( "第三个元素的值 \(someInts[2])" )
+        */
+        
+        /*
+        var intsA = [Int](count:2, repeatedValue: 2)
+        var intsB = [Int](count:3, repeatedValue: 1)
+        var intsC = [Int]()
+        
+        print("intsA.isEmpty = \(intsA.isEmpty)")
+        print("intsB.isEmpty = \(intsB.isEmpty)")
+        print("intsC.isEmpty = \(intsC.isEmpty)")
+ 
+        
+        var intsA = [Int](count:2, repeatedValue: 2)
+        var intsB = [Int](count:3, repeatedValue: 1)
+        
+        var intsC = intsA + intsB
+        
+        print("intsA 元素个数为 \(intsA.count)")
+        print("intsB 元素个数为 \(intsB.count)")
+        print("intsC 元素个数为 \(intsC.count)")
+          */
         
         // dictionry
         
+        /*
+        var studentDic1:Dictionary<Int, String> = [102:"zhangsan",105:"lisi",109:"wangwu"]
+        var student2 = [102:"zhangsan",105:"lisi",109:"wangwu"]
+        let student3 = [102:"zhangsan",105:"lisi",109:"wangwu"]
+        var student4 = Dictionary<Int,String>()
+        */
+        var studentDic1:Dictionary<Int, String> = [102:"zhangsan",105:"lisi",109:"wangwu"]
+        print(studentDic1)
+        studentDic1[110] = "lll"
+        print(studentDic1)
+        studentDic1[102] = "hello"
+        print(studentDic1)
+        
+        let dismisStud = studentDic1.removeValueForKey(102)
+        print(dismisStud!)
+        print(studentDic1)
+        
+        studentDic1.updateValue("abcdefg", forKey: 109)
+        print(studentDic1)
+        
+        // 字典的遍历
+        print("字典的遍历----")
+        for item in studentDic1 {
+            print(item)
+        }
+        for item in studentDic1.keys {
+            print(item)
+        }
+        print("字典的遍历----")
+        for (studentid,studentname) in studentDic1 {
+            print("name:\(studentname) id:\(studentid)")
+        }
     }
     
 }

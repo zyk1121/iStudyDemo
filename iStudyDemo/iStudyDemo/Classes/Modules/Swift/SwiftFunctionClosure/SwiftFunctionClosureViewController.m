@@ -62,8 +62,10 @@
     _listData = [[NSMutableArray alloc] init];
     _listViewControllers = [[NSMutableArray alloc] init];
     
-    // 1.OC 语法
-    [_listData addObject:@"OC语法"];
+    // 1.OC函数
+    [_listData addObject:@"函数"];
+    // 2.OC闭包
+    [_listData addObject:@"闭包"];
 }
 
 
@@ -115,10 +117,18 @@
     [self performSelector:NSSelectorFromString(methodName)];
 }
 
-// 基本语法
+// 函数
 - (void)OC_test0
 {
-    NSLog(@"ddd");
+    SwiftFunctionClosure *functionClosure = [[SwiftFunctionClosure alloc] init];
+    [functionClosure test1];
+}
+
+// 闭包
+- (void)OC_test1
+{
+    SwiftFunctionClosure *functionClosure = [[SwiftFunctionClosure alloc] init];
+    [functionClosure test2];
 }
 
 @end
