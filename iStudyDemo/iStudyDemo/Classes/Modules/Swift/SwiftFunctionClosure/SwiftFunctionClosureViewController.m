@@ -66,6 +66,8 @@
     [_listData addObject:@"函数"];
     // 2.OC闭包
     [_listData addObject:@"闭包"];
+    // 3.Optional
+    [_listData addObject:@"可选类型(Optional)"];
 }
 
 
@@ -129,6 +131,13 @@
 {
     SwiftFunctionClosure *functionClosure = [[SwiftFunctionClosure alloc] init];
     [functionClosure test2];
+}
+
+// 可选类型
+- (void)OC_test2
+{
+    SwiftFunctionClosure *functionClosure = [[SwiftFunctionClosure alloc] init];
+    [functionClosure test3];
 }
 
 @end

@@ -408,6 +408,11 @@
 		76C479A71C8F264100EAE07E /* TestCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C479A51C8F264100EAE07E /* TestCoreData.m */; };
 		76CDEB9A1CB95ABD00DFCB16 /* LEDProvincesDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CDEB991CB95ABD00DFCB16 /* LEDProvincesDomain.m */; };
 		76CDEB9D1CB95AE700DFCB16 /* LEDCities.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CDEB9C1CB95AE700DFCB16 /* LEDCities.m */; };
+		76E1B8B01CC9215300C71338 /* SearchVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E1B8AF1CC9215300C71338 /* SearchVCViewController.m */; };
+		76E1B8BB1CC9260400C71338 /* GzipUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E1B8B31CC9260400C71338 /* GzipUtility.m */; };
+		76E1B8BC1CC9260400C71338 /* LDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E1B8B51CC9260400C71338 /* LDViewController.m */; };
+		76E1B8BD1CC9260400C71338 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E1B8B71CC9260400C71338 /* RSA.m */; };
+		76E1B8BE1CC9260400C71338 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E1B8BA1CC9260400C71338 /* NSString+Hash.m */; };
 		76E9037E1C9ED4B4003AC33A /* NaviMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9037D1C9ED4B4003AC33A /* NaviMenuViewController.m */; };
 		76E903891C9ED53E003AC33A /* NavMenuScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903811C9ED53E003AC33A /* NavMenuScrollView.m */; };
 		76E9038A1C9ED53E003AC33A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903831C9ED53E003AC33A /* UIView+Extension.m */; };
@@ -1022,6 +1027,16 @@
 		76CDEB991CB95ABD00DFCB16 /* LEDProvincesDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDProvincesDomain.m; sourceTree = "<group>"; };
 		76CDEB9B1CB95AE700DFCB16 /* LEDCities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDCities.h; sourceTree = "<group>"; };
 		76CDEB9C1CB95AE700DFCB16 /* LEDCities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDCities.m; sourceTree = "<group>"; };
+		76E1B8AE1CC9215300C71338 /* SearchVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchVCViewController.h; sourceTree = "<group>"; };
+		76E1B8AF1CC9215300C71338 /* SearchVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchVCViewController.m; sourceTree = "<group>"; };
+		76E1B8B21CC9260400C71338 /* GzipUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GzipUtility.h; sourceTree = "<group>"; };
+		76E1B8B31CC9260400C71338 /* GzipUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GzipUtility.m; sourceTree = "<group>"; };
+		76E1B8B41CC9260400C71338 /* LDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDViewController.h; sourceTree = "<group>"; };
+		76E1B8B51CC9260400C71338 /* LDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDViewController.m; sourceTree = "<group>"; };
+		76E1B8B61CC9260400C71338 /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
+		76E1B8B71CC9260400C71338 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
+		76E1B8B91CC9260400C71338 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		76E1B8BA1CC9260400C71338 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 		76E9037C1C9ED4B4003AC33A /* NaviMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaviMenuViewController.h; sourceTree = "<group>"; };
 		76E9037D1C9ED4B4003AC33A /* NaviMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaviMenuViewController.m; sourceTree = "<group>"; };
 		76E903801C9ED53E003AC33A /* NavMenuScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavMenuScrollView.h; sourceTree = "<group>"; };
@@ -1907,6 +1922,7 @@
 				76E903911C9EFC1C003AC33A /* QQChat */,
 				76E9038D1C9EFB44003AC33A /* SinaWeiBo */,
 				76E9037B1C9ED4A0003AC33A /* NavMenu */,
+				76E1B8AD1CC9213A00C71338 /* SearchVC */,
 				769717E61C992C0400D0AC63 /* QQVC */,
 				769717E31C992AC600D0AC63 /* CustomUIViewController.h */,
 				769717E41C992AC600D0AC63 /* CustomUIViewController.m */,
@@ -2284,6 +2300,7 @@
 		76C035711CA68394002241E5 /* EncryptDecrypt */ = {
 			isa = PBXGroup;
 			children = (
+				76E1B8B11CC9260400C71338 /* RSA */,
 				765F833E1CC49ADD00D87D7F /* LDDataExtension.h */,
 				765F833F1CC49ADD00D87D7F /* LDDataExtension.m */,
 				760AF1261CB13A4500A0D242 /* Security */,
@@ -2611,6 +2628,39 @@
 				7601D8D01CB9610A00E6F6E7 /* LEDProvince.m */,
 			);
 			name = Domain;
+			sourceTree = "<group>";
+		};
+		76E1B8AD1CC9213A00C71338 /* SearchVC */ = {
+			isa = PBXGroup;
+			children = (
+				76E1B8AE1CC9215300C71338 /* SearchVCViewController.h */,
+				76E1B8AF1CC9215300C71338 /* SearchVCViewController.m */,
+			);
+			name = SearchVC;
+			path = QQVC/SearchVC;
+			sourceTree = "<group>";
+		};
+		76E1B8B11CC9260400C71338 /* RSA */ = {
+			isa = PBXGroup;
+			children = (
+				76E1B8B21CC9260400C71338 /* GzipUtility.h */,
+				76E1B8B31CC9260400C71338 /* GzipUtility.m */,
+				76E1B8B41CC9260400C71338 /* LDViewController.h */,
+				76E1B8B51CC9260400C71338 /* LDViewController.m */,
+				76E1B8B61CC9260400C71338 /* RSA.h */,
+				76E1B8B71CC9260400C71338 /* RSA.m */,
+				76E1B8B81CC9260400C71338 /* Security */,
+			);
+			path = RSA;
+			sourceTree = "<group>";
+		};
+		76E1B8B81CC9260400C71338 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				76E1B8B91CC9260400C71338 /* NSString+Hash.h */,
+				76E1B8BA1CC9260400C71338 /* NSString+Hash.m */,
+			);
+			path = Security;
 			sourceTree = "<group>";
 		};
 		76E9037B1C9ED4A0003AC33A /* NavMenu */ = {
@@ -3144,6 +3194,7 @@
 				7697189B1C9E466C00D0AC63 /* QQSideBarViewController.m in Sources */,
 				76C035E21CAA99AE002241E5 /* PhotoViewController.m in Sources */,
 				76737A781CC3889B008AEC1C /* SwiftClassViewController.m in Sources */,
+				76E1B8BC1CC9260400C71338 /* LDViewController.m in Sources */,
 				76C035CD1CA9795A002241E5 /* XMPPTestViewController.m in Sources */,
 				76C035C01CA7ECB8002241E5 /* LDKTimer.m in Sources */,
 				760AF1231CB11A5D00A0D242 /* LEDDigest.m in Sources */,
@@ -3163,6 +3214,7 @@
 				76C0359D1CA68FD6002241E5 /* RACViewController.m in Sources */,
 				76C035241CA663E5002241E5 /* TransitionViewController.m in Sources */,
 				760AF11D1CB11A5D00A0D242 /* NSData+LEDDigest.m in Sources */,
+				76E1B8B01CC9215300C71338 /* SearchVCViewController.m in Sources */,
 				76213BD61C96BE42001DAA53 /* DeviceInfoViewController.m in Sources */,
 				760AF0EE1CB0E30800A0D242 /* NSStringAdditions.m in Sources */,
 				769718371C9D440E00D0AC63 /* SHCZMainView.m in Sources */,
@@ -3171,6 +3223,7 @@
 				76C035DF1CAA999D002241E5 /* CustomPlayerViewController.m in Sources */,
 				76C035701CA68288002241E5 /* QRCodeViewController.m in Sources */,
 				76E916491CABFA9E00C8C63A /* LEDPortal.m in Sources */,
+				76E1B8BE1CC9260400C71338 /* NSString+Hash.m in Sources */,
 				76C034C11CA40EC7002241E5 /* SPKBannerPagingView.m in Sources */,
 				763E4E991CA3B03F00470FCA /* ZFBTableViewCell.m in Sources */,
 				760CBEB41CC1FF830087A9AA /* LEDDownloadManager.m in Sources */,
@@ -3209,6 +3262,7 @@
 				761931A71C8BC8A20022A311 /* MainViewController.m in Sources */,
 				769717E11C986A7B00D0AC63 /* OpenGLMainViewController.m in Sources */,
 				76C035211CA65D62002241E5 /* KeyFrameViewController.m in Sources */,
+				76E1B8BB1CC9260400C71338 /* GzipUtility.m in Sources */,
 				76C0352B1CA6713C002241E5 /* TouchIDManager.m in Sources */,
 				7601D9291CBE0CB800E6F6E7 /* EAGLView.m in Sources */,
 				76C035131CA44337002241E5 /* UIScrollRollView.m in Sources */,
@@ -3231,6 +3285,7 @@
 				7601D8D71CB9EB2500E6F6E7 /* LEDMVVMModel.m in Sources */,
 				76BD6BDA1CA15CAD00708977 /* WeiboSearchViewController.m in Sources */,
 				76BD6BC71CA1106100708977 /* WeiboMainViewController.m in Sources */,
+				76E1B8BD1CC9260400C71338 /* RSA.m in Sources */,
 				7601D9261CBD42BD00E6F6E7 /* LEDGLView.m in Sources */,
 				76E903991C9F0089003AC33A /* AliPayViewController.m in Sources */,
 				76737A8B1CC38920008AEC1C /* SwiftProjectViewController.m in Sources */,
