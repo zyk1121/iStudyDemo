@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SnapKit
 
 class SwiftTableViewTest2: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -277,9 +278,10 @@ class SwiftTableViewTest3: UIViewController {
         
         box.backgroundColor = UIColor.redColor()
         self.view.addSubview(box)
-//        box.
-//        box.snp_makeConstraints { (make) -> Void in
-//            make.width.height.equalTo(50)
-//            make.center.equalTo(self.view)
+        
+        box.snp_makeConstraints { (make) -> Void in
+            make.width.height.equalTo(50)
+            make.center.equalTo(self.view)
         }
+    }
 }

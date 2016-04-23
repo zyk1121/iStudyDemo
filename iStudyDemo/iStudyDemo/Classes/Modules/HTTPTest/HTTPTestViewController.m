@@ -7,7 +7,7 @@
 //
 
 #import "HTTPTestViewController.h"
-#import <AFNetworking.h>
+#import "AFNetworking.h"
 #import "TestDomainObject.h"
 #import "JSONKit.h"
 #import "ObjectStorageManager.h"

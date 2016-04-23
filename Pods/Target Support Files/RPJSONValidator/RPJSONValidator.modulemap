@@ -1,0 +1,6 @@
+framework module RPJSONValidator {
+  umbrella header "RPJSONValidator-umbrella.h"
+
+  export *
+  module * { export * }
+}

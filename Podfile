@@ -1,6 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, "8.0"
+use_frameworks!
 
 xcodeproj 'iStudyDemo/iStudyDemo.xcodeproj'
 
@@ -22,6 +23,7 @@ target "iStudyDemo" do
   pod 'ASIHTTPRequest', '~> 1.8.2'
   pod 'JSONModel', '~> 1.2.0'
   pod 'OHHTTPStubs', '~> 4.7.1'
+  pod 'SnapKit', '~> 0.15.0'
 end
 
 target "iStudyDemoTests" do

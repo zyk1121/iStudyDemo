@@ -9,7 +9,7 @@
 
 #import "LEDWebViewController+Progress.h"
 #import "UIViewAdditions.h"
-#import <ReactiveCocoa.h>
+#import "ReactiveCocoa.h"
 #import "UIKitMacros.h"
 
 static BOOL progressEnabled = NO;
