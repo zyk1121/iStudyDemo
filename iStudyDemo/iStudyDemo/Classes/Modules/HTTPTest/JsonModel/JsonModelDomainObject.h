@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <JSONModel.h>
+#import "JSONModel.h"
 
 // http://m.blog.csdn.net/article/details?id=40432287
 /*

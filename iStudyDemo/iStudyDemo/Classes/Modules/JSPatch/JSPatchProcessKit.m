@@ -8,7 +8,7 @@
 
 #import "JSPatchProcessKit.h"
 #import "JPEngine.h"
-#import <AFNetworking.h>
+#import "AFNetworking.h"
 
 // https://github.com/bang590/JSPatch/wiki/%E5%9F%BA%E7%A1%80%E7%94%A8%E6%B3%95
 

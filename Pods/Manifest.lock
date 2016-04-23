@@ -120,6 +120,7 @@ PODS:
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
+  - SnapKit (0.15.0)
   - Specta (0.2.1)
   - WebViewJavascriptBridge (5.0.5)
   - XMPPFramework (3.6.6):
@@ -283,6 +284,7 @@ DEPENDENCIES:
   - ReactiveCocoa (~> 2.5)
   - RPJSONValidator (~> 0.2.0)
   - SDWebImage (~> 3.7.5)
+  - SnapKit (~> 0.15.0)
   - Specta (~> 0.2.1)
   - WebViewJavascriptBridge
   - XMPPFramework (~> 3.6.6)
@@ -308,6 +310,7 @@ SPEC CHECKSUMS:
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RPJSONValidator: a079b234c0f87833b657708adb80531dc45dbe83
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  SnapKit: 4962eed2ee18e48cbd2b2292fffc57efe7235f87
   Specta: 15a276a6343867b426d5ed135d5aa4d04123a573
   WebViewJavascriptBridge: a4d502315f1b8d9a51cd6a9174147ed567ec3bc5
   XMPPFramework: b06c210b0b71c08aa41a646bffd2021fa43bb43b

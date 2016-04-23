@@ -10,7 +10,7 @@
 #import "ReactiveCocoa/ReactiveCocoa.h"
 #import "masonry.h"
 #import "UIKitMacros.h"
-#import <XMPPFramework.h>
+#import "XMPPFramework.h"
 #import "XMPPRoster.h"
 #import "XMPPRosterCoreDataStorage.h"
 #import "XMPPRoom.h"

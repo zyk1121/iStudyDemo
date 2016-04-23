@@ -23,6 +23,7 @@
 #import "QQChatViewController.h"
 #import "WeiChatViewController.h"
 #import "AliPayViewController.h"
+#import "SearchVCViewController.h"
 
 @interface CustomUIViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -108,6 +109,11 @@
     [_listData addObject:@"仿支付宝"];
     AliPayViewController *alipayVC = [[AliPayViewController alloc] init];
     [_listViewControllers addObject:alipayVC];
+    
+    // 7.搜索界面
+    [_listData addObject:@"搜索界面"];
+    SearchVCViewController *searchVC = [[SearchVCViewController alloc] init];
+    [_listViewControllers addObject:searchVC];
     
     /*
      自定义view

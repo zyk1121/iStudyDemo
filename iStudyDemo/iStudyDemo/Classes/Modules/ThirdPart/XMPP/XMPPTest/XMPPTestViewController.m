@@ -10,7 +10,7 @@
 #import "ReactiveCocoa/ReactiveCocoa.h"
 #import "masonry.h"
 #import "UIKitMacros.h"
-#import <XMPPFramework.h>
+#import "XMPPFramework.h"
 
 @implementation XMPPTestViewController
 
