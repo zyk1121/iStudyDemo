@@ -63,7 +63,7 @@
     _listViewControllers = [[NSMutableArray alloc] init];
     
     // 1.OC 语法
-    [_listData addObject:@"OC语法"];
+    [_listData addObject:@"项目实战"];
 }
 
 
@@ -118,7 +118,9 @@
 // 基本语法
 - (void)OC_test0
 {
-    NSLog(@"ddd");
+    SwiftTableViewTest2 *uiVC = [[SwiftTableViewTest2 alloc] init];
+    
+    [self.navigationController pushViewController:uiVC animated:YES];
 }
 
 @end

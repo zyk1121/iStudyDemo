@@ -276,6 +276,10 @@
 		76A2E9DA1CCB790100536E5D /* SwiftExtensionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E9D91CCB790100536E5D /* SwiftExtensionProtocol.swift */; };
 		76A2E9DC1CCB83A000536E5D /* SwiftMemoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E9DB1CCB83A000536E5D /* SwiftMemoryManager.swift */; };
 		76A2E9DE1CCB8EC000536E5D /* SwiftFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E9DD1CCB8EC000536E5D /* SwiftFoundation.swift */; };
+		76A2E9E01CCBC1FD00536E5D /* SwiftUIViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E9DF1CCBC1FD00536E5D /* SwiftUIViewControllerTest.swift */; };
+		76A2E9E21CCBDC4100536E5D /* test_.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76A2E9E11CCBDC4100536E5D /* test_.plist */; };
+		76A2E9E41CCBDF9A00536E5D /* SwiftProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E9E31CCBDF9A00536E5D /* SwiftProjectViewController.swift */; };
+		76A2E9E61CCBE0F400536E5D /* SwiftThirdPartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E9E51CCBE0F400536E5D /* SwiftThirdPartViewController.swift */; };
 		76BD6BC71CA1106100708977 /* WeiboMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BD6BC61CA1106100708977 /* WeiboMainViewController.m */; };
 		76BD6BCB1CA1118900708977 /* ZTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BD6BCA1CA1118900708977 /* ZTTabBar.m */; };
 		76BD6BD11CA1120E00708977 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BD6BCE1CA1120E00708977 /* UIBarButtonItem+Extension.m */; };
@@ -836,6 +840,10 @@
 		76A2E9D91CCB790100536E5D /* SwiftExtensionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftExtensionProtocol.swift; sourceTree = "<group>"; };
 		76A2E9DB1CCB83A000536E5D /* SwiftMemoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMemoryManager.swift; sourceTree = "<group>"; };
 		76A2E9DD1CCB8EC000536E5D /* SwiftFoundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftFoundation.swift; sourceTree = "<group>"; };
+		76A2E9DF1CCBC1FD00536E5D /* SwiftUIViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIViewControllerTest.swift; sourceTree = "<group>"; };
+		76A2E9E11CCBDC4100536E5D /* test_.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test_.plist; sourceTree = "<group>"; };
+		76A2E9E31CCBDF9A00536E5D /* SwiftProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftProjectViewController.swift; sourceTree = "<group>"; };
+		76A2E9E51CCBE0F400536E5D /* SwiftThirdPartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftThirdPartViewController.swift; sourceTree = "<group>"; };
 		76BD6BC51CA1106100708977 /* WeiboMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboMainViewController.h; sourceTree = "<group>"; };
 		76BD6BC61CA1106100708977 /* WeiboMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboMainViewController.m; sourceTree = "<group>"; };
 		76BD6BC91CA1118900708977 /* ZTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTTabBar.h; sourceTree = "<group>"; };
@@ -1862,6 +1870,7 @@
 			children = (
 				76737A891CC38920008AEC1C /* SwiftProjectViewController.h */,
 				76737A8A1CC38920008AEC1C /* SwiftProjectViewController.m */,
+				76A2E9E31CCBDF9A00536E5D /* SwiftProjectViewController.swift */,
 			);
 			path = SwiftProject;
 			sourceTree = "<group>";
@@ -1871,6 +1880,8 @@
 			children = (
 				76737A861CC38910008AEC1C /* SwiftUIViewController.h */,
 				76737A871CC38910008AEC1C /* SwiftUIViewController.m */,
+				76A2E9DF1CCBC1FD00536E5D /* SwiftUIViewControllerTest.swift */,
+				76A2E9E11CCBDC4100536E5D /* test_.plist */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -1900,6 +1911,7 @@
 			children = (
 				76737A8D1CC38C0C008AEC1C /* SwiftThirdPartViewController.h */,
 				76737A8E1CC38C0C008AEC1C /* SwiftThirdPartViewController.m */,
+				76A2E9E51CCBE0F400536E5D /* SwiftThirdPartViewController.swift */,
 			);
 			path = SwiftThirdPart;
 			sourceTree = "<group>";
@@ -2975,6 +2987,7 @@
 				763E4E671CA2B7F500470FCA /* 11000002.png in Resources */,
 				763E4E821CA2B7F500470FCA /* TitleBar_BG@2x.png in Resources */,
 				76C035531CA675F0002241E5 /* toolbar_bottom_bar.png in Resources */,
+				76A2E9E21CCBDC4100536E5D /* test_.plist in Resources */,
 				769718781C9D466E00D0AC63 /* sidebar_favorite@3x.png.jpg in Resources */,
 				763E4E7A1CA2B7F500470FCA /* ap_home_top_icon_scan_new_highlight@2x.png in Resources */,
 				769718771C9D466E00D0AC63 /* sidebar_favorite@3x.png in Resources */,
@@ -3218,6 +3231,7 @@
 				760AF1321CB13A4500A0D242 /* NSData+AES.m in Sources */,
 				76C035D91CAA997A002241E5 /* AudioViewController.m in Sources */,
 				76BD6BCB1CA1118900708977 /* ZTTabBar.m in Sources */,
+				76A2E9E41CCBDF9A00536E5D /* SwiftProjectViewController.swift in Sources */,
 				760AF0FB1CB0F3ED00A0D242 /* LEDWebViewControllerJavascriptBridgeHelper.m in Sources */,
 				76BD6BDE1CA189A900708977 /* NewfeatureViewController.m in Sources */,
 				761931D21C8C5DF70022A311 /* CC3GLMatrix.m in Sources */,
@@ -3272,7 +3286,9 @@
 				76737A851CC388F7008AEC1C /* SwiftFunctionClosureViewController.m in Sources */,
 				76BD6BD11CA1120E00708977 /* UIBarButtonItem+Extension.m in Sources */,
 				76C035B11CA79051002241E5 /* QRCodeCreateViewController.m in Sources */,
+				76A2E9E01CCBC1FD00536E5D /* SwiftUIViewControllerTest.swift in Sources */,
 				761931A71C8BC8A20022A311 /* MainViewController.m in Sources */,
+				76A2E9E61CCBE0F400536E5D /* SwiftThirdPartViewController.swift in Sources */,
 				769717E11C986A7B00D0AC63 /* OpenGLMainViewController.m in Sources */,
 				76C035211CA65D62002241E5 /* KeyFrameViewController.m in Sources */,
 				76E1B8BB1CC9260400C71338 /* GzipUtility.m in Sources */,
@@ -3519,6 +3535,7 @@
 					"$(PROJECT_DIR)/iStudyDemo/Classes/Modules/ThirdPart/ThirdShare/ShareSDK/Extend/QQConnectSDK",
 					"$(PROJECT_DIR)/iStudyDemo/Classes/Modules/ThirdPart/ThirdShare/ShareSDK",
 					"$(PROJECT_DIR)/iStudyDemo/Classes/Modules/ThirdPart/ThirdShare/ShareSDK/UI",
+					"$(PROJECT_DIR)/iStudyDemo/Classes/Modules/Swift/SwiftThirdPart",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				INFOPLIST_FILE = iStudyDemo/Info.plist;
@@ -3528,6 +3545,68 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/iStudyDemo/Classes/Modules/ThirdPart/ThirdShare/ShareSDK/Extend/SinaWeiboSDK",
 					"$(PROJECT_DIR)/iStudyDemo/Classes/Modules/ThirdPart/ThirdShare/ShareSDK/Extend/WeChatSDK",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"ASIHTTPRequest\"",
+					"-l\"CocoaAsyncSocket\"",
+					"-l\"CocoaLumberjack\"",
+					"-l\"FMDB\"",
+					"-l\"JSONKit\"",
+					"-l\"JSONModel\"",
+					"-l\"JSPatch\"",
+					"-l\"Mantle\"",
+					"-l\"Masonry\"",
+					"-l\"OHHTTPStubs\"",
+					"-l\"RPJSONValidator\"",
+					"-l\"Reachability\"",
+					"-l\"ReactiveCocoa\"",
+					"-l\"SDWebImage\"",
+					"-l\"WebViewJavascriptBridge\"",
+					"-l\"XMPPFramework\"",
+					"-l\"ZBarSDK\"",
+					"-l\"crypto\"",
+					"-l\"iconv\"",
+					"-l\"idn\"",
+					"-l\"libextobjc\"",
+					"-l\"resolv\"",
+					"-l\"sqlite3\"",
+					"-l\"ssl\"",
+					"-l\"xml2\"",
+					"-l\"xml2.2\"",
+					"-l\"z.1\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.puny.iStudyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3554,6 +3633,7 @@
 					"$(PROJECT_DIR)/iStudyDemo/Classes/Modules/ThirdPart/ThirdShare/ShareSDK/Extend/QQConnectSDK",
 					"$(PROJECT_DIR)/iStudyDemo/Classes/Modules/ThirdPart/ThirdShare/ShareSDK",
 					"$(PROJECT_DIR)/iStudyDemo/Classes/Modules/ThirdPart/ThirdShare/ShareSDK/UI",
+					"$(PROJECT_DIR)/iStudyDemo/Classes/Modules/Swift/SwiftThirdPart",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				INFOPLIST_FILE = iStudyDemo/Info.plist;
@@ -3563,6 +3643,68 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/iStudyDemo/Classes/Modules/ThirdPart/ThirdShare/ShareSDK/Extend/SinaWeiboSDK",
 					"$(PROJECT_DIR)/iStudyDemo/Classes/Modules/ThirdPart/ThirdShare/ShareSDK/Extend/WeChatSDK",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"ASIHTTPRequest\"",
+					"-l\"CocoaAsyncSocket\"",
+					"-l\"CocoaLumberjack\"",
+					"-l\"FMDB\"",
+					"-l\"JSONKit\"",
+					"-l\"JSONModel\"",
+					"-l\"JSPatch\"",
+					"-l\"Mantle\"",
+					"-l\"Masonry\"",
+					"-l\"OHHTTPStubs\"",
+					"-l\"RPJSONValidator\"",
+					"-l\"Reachability\"",
+					"-l\"ReactiveCocoa\"",
+					"-l\"SDWebImage\"",
+					"-l\"WebViewJavascriptBridge\"",
+					"-l\"XMPPFramework\"",
+					"-l\"ZBarSDK\"",
+					"-l\"crypto\"",
+					"-l\"iconv\"",
+					"-l\"idn\"",
+					"-l\"libextobjc\"",
+					"-l\"resolv\"",
+					"-l\"sqlite3\"",
+					"-l\"ssl\"",
+					"-l\"xml2\"",
+					"-l\"xml2.2\"",
+					"-l\"z.1\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.puny.iStudyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

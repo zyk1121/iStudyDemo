@@ -63,7 +63,9 @@
     _listViewControllers = [[NSMutableArray alloc] init];
     
     // 1.OC 语法
-    [_listData addObject:@"OC语法"];
+    [_listData addObject:@"简单界面"];
+    [_listData addObject:@"TableView单列表"];
+    [_listData addObject:@"TableView 分组列表"];
 }
 
 
@@ -118,7 +120,24 @@
 // 基本语法
 - (void)OC_test0
 {
-    NSLog(@"ddd");
+    SwiftUIViewControllerTest *uiVC = [[SwiftUIViewControllerTest alloc] init];
+    
+    [self.navigationController pushViewController:uiVC animated:YES];
+}
+
+- (void)OC_test1
+{
+    SwiftTableViewTest *uiVC = [[SwiftTableViewTest alloc] init];
+    
+    [self.navigationController pushViewController:uiVC animated:YES];
+}
+
+- (void)OC_test2
+{
+    SwiftTableGroupedViewController *uiVC = [[SwiftTableGroupedViewController alloc] init];
+    
+    [self.navigationController pushViewController:uiVC animated:YES];
+
 }
 
 @end

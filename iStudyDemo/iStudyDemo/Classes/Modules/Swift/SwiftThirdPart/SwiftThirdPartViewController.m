@@ -63,7 +63,10 @@
     _listViewControllers = [[NSMutableArray alloc] init];
     
     // 1.OC 语法
-    [_listData addObject:@"OC语法"];
+    // http://www.hangge.com/index.html
+    
+    [_listData addObject:@"第三方"];
+    [_listData addObject:@"SnapKit自动布局"];
 }
 
 
@@ -118,7 +121,16 @@
 // 基本语法
 - (void)OC_test0
 {
-    NSLog(@"ddd");
+    SwiftTableViewTest2 *uiVC = [[SwiftTableViewTest2 alloc] init];
+    
+    [self.navigationController pushViewController:uiVC animated:YES];
+}
+
+- (void)OC_test1
+{
+    SwiftTableViewTest3 *uiVC = [[SwiftTableViewTest3 alloc] init];
+    
+    [self.navigationController pushViewController:uiVC animated:YES];
 }
 
 @end
