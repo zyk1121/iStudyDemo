@@ -62,8 +62,11 @@
     _listData = [[NSMutableArray alloc] init];
     _listViewControllers = [[NSMutableArray alloc] init];
     
-    // 1.OC 语法
-    [_listData addObject:@"OC语法"];
+    // 循环引用
+    [_listData addObject:@"强循环引用"];
+    [_listData addObject:@"弱引用weak"];
+    [_listData addObject:@"无主引用unowned"];
+    [_listData addObject:@"闭包中的强循环引用"];
 }
 
 
@@ -115,10 +118,26 @@
     [self performSelector:NSSelectorFromString(methodName)];
 }
 
-// 基本语法
+//
 - (void)OC_test0
 {
-    NSLog(@"ddd");
+    SwiftMemoryManager *mem = [[SwiftMemoryManager alloc] init];
+    [mem test1];
+}
+- (void)OC_test1
+{
+    SwiftMemoryManager *mem = [[SwiftMemoryManager alloc] init];
+    [mem test2];
+}
+- (void)OC_test2
+{
+    SwiftMemoryManager *mem = [[SwiftMemoryManager alloc] init];
+    [mem test3];
+}
+- (void)OC_test3
+{
+    SwiftMemoryManager *mem = [[SwiftMemoryManager alloc] init];
+    [mem test4];
 }
 
 @end

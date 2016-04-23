@@ -62,8 +62,15 @@
     _listData = [[NSMutableArray alloc] init];
     _listViewControllers = [[NSMutableArray alloc] init];
     
-    // 1.OC 语法
-    [_listData addObject:@"OC语法"];
+    // 1.枚举
+    [_listData addObject:@"枚举enum"];
+    [_listData addObject:@"结构体和类定义struct－class"];
+    [_listData addObject:@"可选类型与可选链"];
+    [_listData addObject:@"属性和下标"];
+    [_listData addObject:@"方法"];
+    [_listData addObject:@"构造与析构"];
+    [_listData addObject:@"继承"];
+    
 }
 
 
@@ -115,10 +122,53 @@
     [self performSelector:NSSelectorFromString(methodName)];
 }
 
-// 基本语法
+// 枚举
 - (void)OC_test0
 {
-    NSLog(@"ddd");
+    SwiftClassClass *testSwift = [[SwiftClassClass alloc] init];
+    [testSwift test1];
+}
+
+// 结构体和类定义
+- (void)OC_test1
+{
+    SwiftClassClass *testSwift = [[SwiftClassClass alloc] init];
+    [testSwift test2];
+}
+
+// 可选类型与可选链
+- (void)OC_test2
+{
+    SwiftClassClass *testSwift = [[SwiftClassClass alloc] init];
+    [testSwift test3];
+}
+
+// 属性和下标
+- (void)OC_test3
+{
+    SwiftClassClass *testSwift = [[SwiftClassClass alloc] init];
+    [testSwift test4];
+}
+
+// 方法
+- (void)OC_test4
+{
+    SwiftClassClass *testSwift = [[SwiftClassClass alloc] init];
+    [testSwift test5];
+}
+
+// 构造与析构
+- (void)OC_test5
+{
+    SwiftClassClass *testSwift = [[SwiftClassClass alloc] init];
+    [testSwift test6];
+}
+
+// 继承
+- (void)OC_test6
+{
+    SwiftClassClass *testSwift = [[SwiftClassClass alloc] init];
+    [testSwift test7];
 }
 
 @end

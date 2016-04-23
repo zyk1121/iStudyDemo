@@ -272,6 +272,10 @@
 		769718951C9D53BA00D0AC63 /* tabwithinpage_cursor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 769718941C9D53BA00D0AC63 /* tabwithinpage_cursor@2x.png */; };
 		7697189B1C9E466C00D0AC63 /* QQSideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7697189A1C9E466C00D0AC63 /* QQSideBarViewController.m */; };
 		7697189E1C9E994900D0AC63 /* QQSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7697189D1C9E994900D0AC63 /* QQSettingViewController.m */; };
+		76A2E9D81CCB3FF800536E5D /* SwiftClassClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E9D71CCB3FF800536E5D /* SwiftClassClass.swift */; };
+		76A2E9DA1CCB790100536E5D /* SwiftExtensionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E9D91CCB790100536E5D /* SwiftExtensionProtocol.swift */; };
+		76A2E9DC1CCB83A000536E5D /* SwiftMemoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E9DB1CCB83A000536E5D /* SwiftMemoryManager.swift */; };
+		76A2E9DE1CCB8EC000536E5D /* SwiftFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E9DD1CCB8EC000536E5D /* SwiftFoundation.swift */; };
 		76BD6BC71CA1106100708977 /* WeiboMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BD6BC61CA1106100708977 /* WeiboMainViewController.m */; };
 		76BD6BCB1CA1118900708977 /* ZTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BD6BCA1CA1118900708977 /* ZTTabBar.m */; };
 		76BD6BD11CA1120E00708977 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BD6BCE1CA1120E00708977 /* UIBarButtonItem+Extension.m */; };
@@ -828,6 +832,10 @@
 		7697189A1C9E466C00D0AC63 /* QQSideBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQSideBarViewController.m; sourceTree = "<group>"; };
 		7697189C1C9E994900D0AC63 /* QQSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQSettingViewController.h; sourceTree = "<group>"; };
 		7697189D1C9E994900D0AC63 /* QQSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQSettingViewController.m; sourceTree = "<group>"; };
+		76A2E9D71CCB3FF800536E5D /* SwiftClassClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftClassClass.swift; sourceTree = "<group>"; };
+		76A2E9D91CCB790100536E5D /* SwiftExtensionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftExtensionProtocol.swift; sourceTree = "<group>"; };
+		76A2E9DB1CCB83A000536E5D /* SwiftMemoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMemoryManager.swift; sourceTree = "<group>"; };
+		76A2E9DD1CCB8EC000536E5D /* SwiftFoundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftFoundation.swift; sourceTree = "<group>"; };
 		76BD6BC51CA1106100708977 /* WeiboMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboMainViewController.h; sourceTree = "<group>"; };
 		76BD6BC61CA1106100708977 /* WeiboMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboMainViewController.m; sourceTree = "<group>"; };
 		76BD6BC91CA1118900708977 /* ZTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTTabBar.h; sourceTree = "<group>"; };
@@ -1801,6 +1809,7 @@
 			children = (
 				76737A791CC388AD008AEC1C /* SwfitExtensionProtocolViewController.h */,
 				76737A7A1CC388AD008AEC1C /* SwfitExtensionProtocolViewController.m */,
+				76A2E9D91CCB790100536E5D /* SwiftExtensionProtocol.swift */,
 			);
 			path = SwfitExtensionProtocol;
 			sourceTree = "<group>";
@@ -1833,6 +1842,7 @@
 			children = (
 				76737A7C1CC388BF008AEC1C /* SwiftFoundationViewController.h */,
 				76737A7D1CC388BF008AEC1C /* SwiftFoundationViewController.m */,
+				76A2E9DD1CCB8EC000536E5D /* SwiftFoundation.swift */,
 			);
 			path = SwiftFoundation;
 			sourceTree = "<group>";
@@ -1842,6 +1852,7 @@
 			children = (
 				76737A801CC388E6008AEC1C /* SwiftMemoryManagerViewController.h */,
 				76737A811CC388E6008AEC1C /* SwiftMemoryManagerViewController.m */,
+				76A2E9DB1CCB83A000536E5D /* SwiftMemoryManager.swift */,
 			);
 			path = SwiftMemoryManager;
 			sourceTree = "<group>";
@@ -1869,6 +1880,7 @@
 			children = (
 				76737A761CC3889B008AEC1C /* SwiftClassViewController.h */,
 				76737A771CC3889B008AEC1C /* SwiftClassViewController.m */,
+				76A2E9D71CCB3FF800536E5D /* SwiftClassClass.swift */,
 			);
 			path = SwfitClass;
 			sourceTree = "<group>";
@@ -3188,6 +3200,7 @@
 				760AF1211CB11A5D00A0D242 /* LEDCrypto.m in Sources */,
 				761931A51C8BC8A20022A311 /* AppDelegate.m in Sources */,
 				769718931C9D50D900D0AC63 /* QQTabbarViewController.m in Sources */,
+				76A2E9DC1CCB83A000536E5D /* SwiftMemoryManager.swift in Sources */,
 				763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */,
 				76E903901C9EFB5A003AC33A /* SinaWeiboViewController.m in Sources */,
 				76E9164C1CAC219600C8C63A /* TestPortalViewController.m in Sources */,
@@ -3304,6 +3317,7 @@
 				76C035B41CA79061002241E5 /* QRCodeScanViewController.m in Sources */,
 				763E4DF61CA25E1D00470FCA /* ZFBViewController.m in Sources */,
 				76C035941CA689A7002241E5 /* UnitTestStubMockViewController.m in Sources */,
+				76A2E9D81CCB3FF800536E5D /* SwiftClassClass.swift in Sources */,
 				76737A8F1CC38C0C008AEC1C /* SwiftThirdPartViewController.m in Sources */,
 				76C0355A1CA6776E002241E5 /* Message.m in Sources */,
 				76C034BF1CA40EC7002241E5 /* SPKBanner.m in Sources */,
@@ -3314,6 +3328,7 @@
 				760AF0F11CB0E35600A0D242 /* NSArray+LEDFoundation.m in Sources */,
 				76CDEB9A1CB95ABD00DFCB16 /* LEDProvincesDomain.m in Sources */,
 				7681A8231C95A04500FC6843 /* ObjectStorageManager.m in Sources */,
+				76A2E9DE1CCB8EC000536E5D /* SwiftFoundation.swift in Sources */,
 				76C479A71C8F264100EAE07E /* TestCoreData.m in Sources */,
 				76E9164F1CAC2FA300C8C63A /* LEDWebViewController.m in Sources */,
 				76E9038B1C9ED53E003AC33A /* YBNavMenuController.m in Sources */,
@@ -3336,6 +3351,7 @@
 				76C035D61CAA9969002241E5 /* AlbumViewController.m in Sources */,
 				76737A911CC3D7E4008AEC1C /* SwiftBasicPart.swift in Sources */,
 				76C035781CA68507002241E5 /* CustomControlViewController.m in Sources */,
+				76A2E9DA1CCB790100536E5D /* SwiftExtensionProtocol.swift in Sources */,
 				76C0358B1CA68954002241E5 /* RunLoopViewController.m in Sources */,
 				76E903891C9ED53E003AC33A /* NavMenuScrollView.m in Sources */,
 				769717EC1C99792C00D0AC63 /* JSPatchProcessKit.m in Sources */,

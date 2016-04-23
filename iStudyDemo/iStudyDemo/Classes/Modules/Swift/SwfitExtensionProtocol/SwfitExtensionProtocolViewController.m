@@ -62,8 +62,9 @@
     _listData = [[NSMutableArray alloc] init];
     _listViewControllers = [[NSMutableArray alloc] init];
     
-    // 1.OC 语法
-    [_listData addObject:@"OC语法"];
+    // 扩展和协议
+    [_listData addObject:@"扩展"];
+    [_listData addObject:@"协议"];
 }
 
 
@@ -115,10 +116,17 @@
     [self performSelector:NSSelectorFromString(methodName)];
 }
 
-// 基本语法
+// SwiftExtensionProtocol
 - (void)OC_test0
 {
-    NSLog(@"ddd");
+    SwiftExtensionProtocol *extension = [[SwiftExtensionProtocol alloc] init];
+    [extension test1];
+}
+
+- (void)OC_test1
+{
+    SwiftExtensionProtocol *extension = [[SwiftExtensionProtocol alloc] init];
+    [extension test2];
 }
 
 @end

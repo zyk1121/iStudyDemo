@@ -62,8 +62,11 @@
     _listData = [[NSMutableArray alloc] init];
     _listViewControllers = [[NSMutableArray alloc] init];
     
-    // 1.OC 语法
-    [_listData addObject:@"OC语法"];
+    // 1.
+    [_listData addObject:@"NSNumber"];
+    [_listData addObject:@"NSString & NSMutableString"];
+    [_listData addObject:@"NSArray & NSMutableArray"];
+    [_listData addObject:@"NSDictionry & NSMutableDictionry"];
 }
 
 
@@ -118,7 +121,23 @@
 // 基本语法
 - (void)OC_test0
 {
-    NSLog(@"ddd");
+    SwiftFoundation *basicPart = [[SwiftFoundation alloc] init];
+    [basicPart test1];
+}
+- (void)OC_test1
+{
+    SwiftFoundation *basicPart = [[SwiftFoundation alloc] init];
+    [basicPart test2];
+}
+- (void)OC_test2
+{
+    SwiftFoundation *basicPart = [[SwiftFoundation alloc] init];
+    [basicPart test3];
+}
+- (void)OC_test3
+{
+    SwiftFoundation *basicPart = [[SwiftFoundation alloc] init];
+    [basicPart test4];
 }
 
 @end
