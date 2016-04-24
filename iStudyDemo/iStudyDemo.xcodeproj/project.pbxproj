@@ -281,6 +281,7 @@
 		76A2E9E41CCBDF9A00536E5D /* SwiftProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E9E31CCBDF9A00536E5D /* SwiftProjectViewController.swift */; };
 		76A2E9E61CCBE0F400536E5D /* SwiftThirdPartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E9E51CCBE0F400536E5D /* SwiftThirdPartViewController.swift */; };
 		76A2E9EA1CCBF00E00536E5D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A2E9E91CCBF00E00536E5D /* SnapKit.framework */; };
+		76A2E9EE1CCC954800536E5D /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A2E9ED1CCC954800536E5D /* AFNetworking.framework */; };
 		76BD6BC71CA1106100708977 /* WeiboMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BD6BC61CA1106100708977 /* WeiboMainViewController.m */; };
 		76BD6BCB1CA1118900708977 /* ZTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BD6BCA1CA1118900708977 /* ZTTabBar.m */; };
 		76BD6BD11CA1120E00708977 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BD6BCE1CA1120E00708977 /* UIBarButtonItem+Extension.m */; };
@@ -847,6 +848,7 @@
 		76A2E9E31CCBDF9A00536E5D /* SwiftProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftProjectViewController.swift; sourceTree = "<group>"; };
 		76A2E9E51CCBE0F400536E5D /* SwiftThirdPartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftThirdPartViewController.swift; sourceTree = "<group>"; };
 		76A2E9E91CCBF00E00536E5D /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/iStudyDemo-grkdddiygapdfhcjaqgvlnexnhnk/Build/Products/Debug-iphonesimulator/SnapKit.framework"; sourceTree = "<group>"; };
+		76A2E9ED1CCC954800536E5D /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/iStudyDemo-grkdddiygapdfhcjaqgvlnexnhnk/Build/Products/Debug-iphoneos/AFNetworking.framework"; sourceTree = "<group>"; };
 		76BD6BC51CA1106100708977 /* WeiboMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboMainViewController.h; sourceTree = "<group>"; };
 		76BD6BC61CA1106100708977 /* WeiboMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboMainViewController.m; sourceTree = "<group>"; };
 		76BD6BC91CA1118900708977 /* ZTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTTabBar.h; sourceTree = "<group>"; };
@@ -1094,6 +1096,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76A2E9EE1CCC954800536E5D /* AFNetworking.framework in Frameworks */,
 				76A2E9EA1CCBF00E00536E5D /* SnapKit.framework in Frameworks */,
 				7601D9331CBEA56800E6F6E7 /* CoreGraphics.framework in Frameworks */,
 				76C035F41CAB940B002241E5 /* MediaPlayer.framework in Frameworks */,
@@ -1871,6 +1874,7 @@
 		76737A6D1CC385DA008AEC1C /* SwiftProject */ = {
 			isa = PBXGroup;
 			children = (
+				76A2E9EC1CCC910400536E5D /* hangge */,
 				76737A891CC38920008AEC1C /* SwiftProjectViewController.h */,
 				76737A8A1CC38920008AEC1C /* SwiftProjectViewController.m */,
 				76A2E9E31CCBDF9A00536E5D /* SwiftProjectViewController.swift */,
@@ -2044,6 +2048,13 @@
 				769718201C9B0DDA00D0AC63 /* PopViewLikeQQView.m */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		76A2E9EC1CCC910400536E5D /* hangge */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = hangge;
 			sourceTree = "<group>";
 		};
 		76BD6BC41CA1103C00708977 /* Main */ = {
@@ -2772,6 +2783,7 @@
 		DF399414AD08488BE365F5E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76A2E9ED1CCC954800536E5D /* AFNetworking.framework */,
 				76A2E9E91CCBF00E00536E5D /* SnapKit.framework */,
 				7601D9321CBEA56800E6F6E7 /* CoreGraphics.framework */,
 				76C035F31CAB940B002241E5 /* MediaPlayer.framework */,
@@ -3585,34 +3597,6 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
-					"-l\"AFNetworking\"",
-					"-l\"ASIHTTPRequest\"",
-					"-l\"CocoaAsyncSocket\"",
-					"-l\"CocoaLumberjack\"",
-					"-l\"FMDB\"",
-					"-l\"JSONKit\"",
-					"-l\"JSONModel\"",
-					"-l\"JSPatch\"",
-					"-l\"Mantle\"",
-					"-l\"Masonry\"",
-					"-l\"OHHTTPStubs\"",
-					"-l\"RPJSONValidator\"",
-					"-l\"Reachability\"",
-					"-l\"ReactiveCocoa\"",
-					"-l\"SDWebImage\"",
-					"-l\"WebViewJavascriptBridge\"",
-					"-l\"XMPPFramework\"",
-					"-l\"ZBarSDK\"",
-					"-l\"crypto\"",
-					"-l\"iconv\"",
-					"-l\"idn\"",
-					"-l\"libextobjc\"",
-					"-l\"resolv\"",
-					"-l\"sqlite3\"",
-					"-l\"ssl\"",
-					"-l\"xml2\"",
-					"-l\"xml2.2\"",
-					"-l\"z.1\"",
 					"-framework",
 					"\"AVFoundation\"",
 					"-framework",
@@ -3683,34 +3667,6 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
-					"-l\"AFNetworking\"",
-					"-l\"ASIHTTPRequest\"",
-					"-l\"CocoaAsyncSocket\"",
-					"-l\"CocoaLumberjack\"",
-					"-l\"FMDB\"",
-					"-l\"JSONKit\"",
-					"-l\"JSONModel\"",
-					"-l\"JSPatch\"",
-					"-l\"Mantle\"",
-					"-l\"Masonry\"",
-					"-l\"OHHTTPStubs\"",
-					"-l\"RPJSONValidator\"",
-					"-l\"Reachability\"",
-					"-l\"ReactiveCocoa\"",
-					"-l\"SDWebImage\"",
-					"-l\"WebViewJavascriptBridge\"",
-					"-l\"XMPPFramework\"",
-					"-l\"ZBarSDK\"",
-					"-l\"crypto\"",
-					"-l\"iconv\"",
-					"-l\"idn\"",
-					"-l\"libextobjc\"",
-					"-l\"resolv\"",
-					"-l\"sqlite3\"",
-					"-l\"ssl\"",
-					"-l\"xml2\"",
-					"-l\"xml2.2\"",
-					"-l\"z.1\"",
 					"-framework",
 					"\"AVFoundation\"",
 					"-framework",
