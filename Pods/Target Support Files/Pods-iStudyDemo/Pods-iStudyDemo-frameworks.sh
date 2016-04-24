@@ -54,6 +54,7 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-iStudyDemo/AFNetworking.framework'
   install_framework 'Pods-iStudyDemo/ASIHTTPRequest.framework'
+  install_framework 'Pods-iStudyDemo/Alamofire.framework'
   install_framework 'Pods-iStudyDemo/CocoaAsyncSocket.framework'
   install_framework 'Pods-iStudyDemo/CocoaLumberjack.framework'
   install_framework 'Pods-iStudyDemo/FMDB.framework'
@@ -68,6 +69,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-iStudyDemo/ReactiveCocoa.framework'
   install_framework 'Pods-iStudyDemo/SDWebImage.framework'
   install_framework 'Pods-iStudyDemo/SnapKit.framework'
+  install_framework 'Pods-iStudyDemo/SwiftHTTP.framework'
   install_framework 'Pods-iStudyDemo/WebViewJavascriptBridge.framework'
   install_framework 'Pods-iStudyDemo/XMPPFramework.framework'
   install_framework 'Pods-iStudyDemo/ZBarSDK.framework'
@@ -76,6 +78,7 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-iStudyDemo/AFNetworking.framework'
   install_framework 'Pods-iStudyDemo/ASIHTTPRequest.framework'
+  install_framework 'Pods-iStudyDemo/Alamofire.framework'
   install_framework 'Pods-iStudyDemo/CocoaAsyncSocket.framework'
   install_framework 'Pods-iStudyDemo/CocoaLumberjack.framework'
   install_framework 'Pods-iStudyDemo/FMDB.framework'
@@ -90,6 +93,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-iStudyDemo/ReactiveCocoa.framework'
   install_framework 'Pods-iStudyDemo/SDWebImage.framework'
   install_framework 'Pods-iStudyDemo/SnapKit.framework'
+  install_framework 'Pods-iStudyDemo/SwiftHTTP.framework'
   install_framework 'Pods-iStudyDemo/WebViewJavascriptBridge.framework'
   install_framework 'Pods-iStudyDemo/XMPPFramework.framework'
   install_framework 'Pods-iStudyDemo/ZBarSDK.framework'

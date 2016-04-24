@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 import SnapKit
+import Alamofire
+import SwiftHTTP
 
 class SwiftTableViewTest2: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -33,6 +35,8 @@ class SwiftTableViewTest2: UIViewController, UITableViewDelegate, UITableViewDat
         self.ctrlnames?.append("Json解析－NSJSONSerialization")
         self.ctrlnames?.append("SwiftyJSON")
         self.ctrlnames?.append("NSURL")
+        self.ctrlnames?.append("Alamofire")
+        self.ctrlnames?.append("SwiftHTTP")
         
         //创建表视图
         self.tableView = UITableView(frame: self.view.frame, style:UITableViewStyle.Plain)
@@ -133,7 +137,10 @@ class SwiftTableViewTest2: UIViewController, UITableViewDelegate, UITableViewDat
             self.SwiftyJSON()
         case 2:
             self.NSURLPostGet()
-            
+        case 3:
+            self.testAlamofire()
+        case 4:
+            self.testSwiftHTTP()
             
         default:
             print("nothing")
@@ -263,6 +270,218 @@ class SwiftTableViewTest2: UIViewController, UITableViewDelegate, UITableViewDat
         
         // http://www.hangge.com/blog/cache/detail_670.html
     }
+    
+    
+    
+    // Alamofire
+    /*1，什么是Alamofire
+     （1）Alamofire 的前身是 AFNetworking。AFNetworking 是 iOS 和 OS X 上很受欢迎的第三方HTTP网络基础库。
+     （2）其实 AFNetwork 的前缀 AF 便是 Alamofire 的缩写。
+     （3）Swift发布后，AFNetworking的作者又用Swift语言写了个相同功能的库，这便是 Alamofire。
+     （4）Alamofire 本质是基于`NSURLSession`，并做了封装。使用 Alamofire 可以让我们网络请求相关代码（如获取数据，提交数据，上传文件，下载文件等）更加简洁易用。
+     
+     原文出自：www.hangge.com  转载请保留原文链接：http://www.hangge.com/blog/cache/detail_970.html
+     */
+    func testAlamofire() {
+//        Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"]).responseJSON { response in
+//            print(response.request)// original URL request
+//            print(response.response) // URL response
+//            print(response.data)// server data
+//            print(response.result)// result of response serialization
+//            
+//            if let JSON = response.result.value {
+//                print("JSON: \(JSON)") //具体如何解析json内容可看下方“响应处理”部分
+//            }
+//        }
+        
+        /*
+        Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
+            .response { request, response, data, error in
+                            print(request)// original URL request
+                            print(response) // URL response
+                            print(data)// server data
+                           //  print(result)// result of response serialization
+        }
+ */
+        
+        /*
+        Alamofire.request(.GET, "http://www.hangge.com/jsonData.php")
+            .responseJSON { response in
+                switch response.result {
+                case .Success:
+                    //把得到的JSON数据转为数组
+                    if let items = response.result.value as? NSArray{
+                        //遍历数组得到每一个字典模型
+                        for dict in items{
+                            print(dict)
+                        }
+                    }
+                case .Failure(let error):
+                    print(error)
+                }
+        }
+ */
+        
+        /*
+        Alamofire.request(.GET, "https://httpbin.org/get")
+            .responseString { response in
+                print("Response String: \(response.result.value)")
+            }
+            .responseJSON { response in
+                print("Response JSON: \(response.result.value)")
+        }
+ */
+        Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
+            .validate()
+            .responseJSON { response in
+                switch response.result {
+                case .Success:
+                    print("数据获取成功!")
+                case .Failure(let error):
+                    print(error)
+                }
+        }
+        
+        /*
+         
+         3，请求类型（HTTP Methods）
+         除了上面使用的 .Get 类型。Alamofire还定义了许多其他的HTTP 方法（HTTP Medthods）可以使用。
+         1
+         2
+         3
+         public enum Method: String {
+         case OPTIONS, GET, HEAD, POST, PUT, PATCH, DELETE, TRACE, CONNECT
+         }
+         比如要使用 POST 请求，把 Alamofire.request 第一个参数做修改即可：
+         1
+         Alamofire.request(.POST, "http://httpbin.org/post")
+         
+         */
+    }
+    
+    
+    // SwiftHTTP
+    func testSwiftHTTP() {
+//        do {
+//            let opt = try HTTP.GET("http://hangge.com")
+//            opt.start { response in
+//                //进行具体的响应操作...
+//                print("请求成功")
+//                print(response)
+//                
+//            }
+//        } catch let error {
+//            print("请求失败: \(error)")
+//        }
+        
+        /*
+        
+        do {
+            //实际的url是: http://www.hangge.com/test.php?hello=world&param2=1&ids[]=1&ids[]=2
+            let opt = try HTTP.GET("http://www.hangge.com/test.php",
+                                   parameters: ["hello": "world", "param2": 1, "ids": [1,2]])
+            opt.start { response in
+                //进行具体的响应操作...
+                                print("请求成功")
+                                print(response)
+            }
+        } catch let error {
+            print("请求失败: \(error)")
+        }
+ */
+        
+        // POST
+        /*
+        let params = ["param": "param1",
+                      "array": ["first array element","second","third"],
+                      "num": 23,
+                      "dict": ["someKey": "someVal"]]
+        
+        do {
+            let opt = try HTTP.POST("http://www.hangge.com/test.php", parameters: params)
+            opt.start { response in
+                //进行具体的响应操作...
+                print("ok")
+            }
+        } catch let error {
+            print("请求失败: \(error)")
+        }
+ */
+        /*
+        
+        do {
+            let opt = try HTTP.GET("http://hangge.com")
+            opt.start { response in
+                if let err = response.error {
+                    print("error: \(err.localizedDescription)")
+                    return
+                }
+                print("获取到数据: \(response.text)")
+            }
+        } catch let error {
+            print("请求失败: \(error)")
+        }
+ */
+        /*
+        do {
+            let opt = try HTTP.GET("http://hangge.com")
+            opt.start { response in
+                print("statusCode: \(response.statusCode)\n")
+                print("headers: \(response.headers)")
+            }
+        } catch let error {
+            print("请求失败: \(error)")
+        }
+ */
+        
+        
+        let operationQueue = NSOperationQueue()
+        operationQueue.maxConcurrentOperationCount = 2 //最大任务数
+        
+        do {
+            let opt1 = try HTTP.New("http://www.hangge.com", method: .GET)
+            opt1.onFinish = { response in
+                //进行具体的响应操作...
+                print("ok 1")
+            }
+            operationQueue.addOperation(opt1)
+            
+            let opt2 = try HTTP.New("http://www.baidu.com", method: .GET)
+            opt2.onFinish = { response in
+                //进行具体的响应操作...
+                 print("ok 2")
+            }
+            operationQueue.addOperation(opt2)
+            
+            let opt3 = try HTTP.New("http://www.iteye.com", method: .GET)
+            opt3.onFinish = { response in
+                //进行具体的响应操作...
+                 print("ok 3")
+            }
+            operationQueue.addOperation(opt3)
+            // 下面的操作没有效果
+//            opt2.cancel()
+//            operationQueue.cancelAllOperations()
+            
+        } catch let error {
+            print("请求失败: \(error)")
+        }
+        
+        /*
+         
+         可以使用 cancel() 方法停止单个任务：
+         1
+         opt2.cancel() //取消这个请求任务
+         也可以通过 NSOperationQueue 的 cancelAllOperations() 方法取消所有的任务：
+         1
+         operationQueue.cancelAllOperations() //取消所有线程操作
+         */
+
+        // http://www.hangge.com/blog/cache/detail_1032.html
+    }
+    
+    
+    
 }
 
 
