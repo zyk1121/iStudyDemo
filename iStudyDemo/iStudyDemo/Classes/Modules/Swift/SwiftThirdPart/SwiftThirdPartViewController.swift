@@ -285,3 +285,123 @@ class SwiftTableViewTest3: UIViewController {
         }
     }
 }
+
+
+// snapkit自动布局
+
+class SwiftTableViewTest4: UIViewController {
+    
+    var box:UIView?
+    var labelUserName : UILabel?
+    var labelPassword : UILabel?
+    
+    var textFieldUserName : UITextField?
+    var textFieldPassword : UITextField?
+    
+    var loginButton : UIButton?
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = UIColor.whiteColor()
+        
+        self.setupUI()
+    }
+    
+    func setupUI() {
+        self.box = UIView()
+//        self.box!.backgroundColor = UIColor.lightGrayColor()
+        self.view.addSubview(self.box!)
+        
+        self.labelUserName = UILabel.init()
+        self.labelUserName?.text = "用户名"
+        self.labelUserName?.backgroundColor = UIColor.grayColor()
+        self.labelUserName?.textColor = UIColor.blueColor()
+        self.box?.addSubview(self.labelUserName!)
+        
+        self.textFieldUserName = UITextField()
+        self.textFieldUserName?.borderStyle = .RoundedRect
+//        self.textFieldUserName?.backgroundColor = UIColor.grayColor()
+        self.box?.addSubview(self.textFieldUserName!)
+        
+        self.labelPassword = UILabel.init()
+        self.labelPassword?.text = "密码"
+        self.labelPassword?.backgroundColor = UIColor.grayColor()
+        self.labelPassword?.textColor = UIColor.blueColor()
+        self.box?.addSubview(self.labelPassword!)
+        
+        self.textFieldPassword = UITextField()
+        self.textFieldPassword?.borderStyle = .RoundedRect
+        //        self.textFieldUserName?.backgroundColor = UIColor.grayColor()
+        self.box?.addSubview(self.textFieldPassword!)
+        
+        
+        loginButton = UIButton.init()
+//        loginButton?.frame = CGRectMake(0, 64, 100, 40)
+        loginButton?.backgroundColor = UIColor.lightGrayColor()
+        loginButton?.setTitle("登录", forState: UIControlState.Normal)
+        loginButton?.setTitle("登录", forState: UIControlState.Highlighted)
+        loginButton?.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)
+        loginButton?.setTitleColor(UIColor.lightGrayColor(), forState: UIControlState.Highlighted)
+        //        button1?.addTarget(self, action:#selector(buttonClicked) , forControlEvents:.TouchUpInside)
+//        loginButton?.addTarget(self, action: #selector(buttonClicked(_:)), forControlEvents:.TouchUpInside)
+        loginButton?.addTarget(self, action: #selector(SwiftTableViewTest4.buttonClicked(_:)), forControlEvents: .TouchUpInside)
+        self.view.addSubview(loginButton!)
+
+    }
+    
+    // 自动布局
+    override func updateViewConstraints() {
+        super.updateViewConstraints()
+//        print("updateViewConstraints")
+        
+        self.box?.snp_updateConstraints(closure: { (make) in
+            make.center.equalTo(self.view)
+        })
+        
+        self.labelUserName?.snp_updateConstraints(closure: { (make) in
+            make.top.equalTo(self.box!)
+            make.left.equalTo(self.box!)
+            make.height.equalTo(40)
+            make.width.equalTo(60)
+        })
+        
+        self.labelPassword?.snp_updateConstraints(closure: { (make) in
+            make.top.equalTo((self.labelUserName?.snp_bottom)!).offset(15)
+            make.left.equalTo(self.box!)
+            make.height.equalTo(40)
+            make.width.equalTo(60)
+            make.bottom.equalTo(self.box!)
+        })
+        
+        self.textFieldUserName?.snp_updateConstraints(closure: { (make) in
+            make.top.equalTo(self.box!)
+            make.left.equalTo((self.labelUserName?.snp_right)!).offset(15)
+            make.right.equalTo(self.box!)
+            make.width.equalTo(160)
+            make.bottom.equalTo(self.labelUserName!)
+        })
+        
+        self.textFieldPassword?.snp_updateConstraints(closure: { (make) in
+            make.top.equalTo((self.labelPassword?.snp_top)!)
+            make.left.equalTo((self.labelUserName?.snp_right)!).offset(15)
+            make.right.equalTo(self.box!)
+            make.width.equalTo(160)
+            make.bottom.equalTo(self.box!)
+        })
+        
+        self.loginButton?.snp_updateConstraints(closure: { (make) in
+            make.top.equalTo((self.box?.snp_bottom)!).offset(15)
+            make.left.equalTo(self.box!)
+            make.right.equalTo(self.box!)
+            make.height.equalTo(50)
+        })
+    }
+    
+    
+    // 事件
+    func buttonClicked(button : UIButton) {
+        
+    }
+    
+}
