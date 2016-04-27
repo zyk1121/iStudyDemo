@@ -1,0 +1,63 @@
+<!-- http://www.w3school.com.cn/html/index.asp -->
+<!--
+ CSS 概述
+ CSS 指层叠样式表 (Cascading Style Sheets)
+ 样式定义如何显示 HTML 元素
+ 样式通常存储在样式表中
+ 把样式添加到 HTML 4.0 中，是为了解决内容与表现分离的问题
+ 外部样式表可以极大提高工作效率
+ 外部样式表通常存储在 CSS 文件中
+ 多个样式定义可层叠为一
+ 
+ 
+ 层叠次序
+ 当同一个 HTML 元素被不止一个样式定义时，会使用哪个样式呢？
+ 一般而言，所有的样式会根据下面的规则层叠于一个新的虚拟样式表中，其中数字 4 拥有最高的优先权。
+ 浏览器缺省设置
+ 外部样式表
+ 内部样式表（位于 <head> 标签内部）
+ 内联样式（在 HTML 元素内部）
+ 因此，内联样式（在 HTML 元素内部）拥有最高的优先权，这意味着它将优先于以下的样式声明：<head> 标签中的样式声明，外部样式表中的样式声明，或者浏览器中的样式声明（缺省值）。
+ 
+ -->
+
+
+<!--
+ <html>
+ <meta charset="utf-8">
+ <title>菜鸟教程－样式</title>
+ 
+ <style type="text/css">
+ h1 {color: red}
+ p {color: blue;font-size: 50px;}
+ </style>
+ <body>
+ <h1>the head text</h1>
+ <p>the paragraph text</p>
+ 
+ </body>
+ </html>
+ 
+ -->
+<html>
+<meta charset="utf-8">
+<!--		<title>菜鸟教程－样式</title>-->
+<!---->
+<!--		<style type="text/css">-->
+<!--		h1 {color: red}-->
+<!--		p {color: blue;font-size: 50px;}-->
+<!--		</style>-->
+<link rel="stylesheet" type="text/css" href="csstest.css">
+    <body>
+        <h1 class=center>the head text</h1>
+        <p>the paragraph text</p>
+        
+        <h1 class="center">
+            This heading will be center-aligned
+        </h1>
+        
+        <p class="center">
+        This paragraph will also be center-aligned.
+        </p>
+    </body>
+</html>

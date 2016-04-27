@@ -110,6 +110,8 @@
 		76213C4C1C970D14001DAA53 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76213C4B1C970D14001DAA53 /* Social.framework */; };
 		76213C4E1C970D98001DAA53 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76213C4D1C970D98001DAA53 /* ImageIO.framework */; };
 		763263971CD10FA100F56D9D /* LayoutConstraintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763263961CD10FA100F56D9D /* LayoutConstraintViewController.m */; };
+		763263991CD111A100F56D9D /* htmlcss.html in Resources */ = {isa = PBXBuildFile; fileRef = 763263981CD111A100F56D9D /* htmlcss.html */; };
+		7632639B1CD1170B00F56D9D /* csstest.css in Resources */ = {isa = PBXBuildFile; fileRef = 7632639A1CD1170B00F56D9D /* csstest.css */; };
 		763D45F21CCFB4A500BB88AA /* HTMLCSSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763D45F11CCFB4A500BB88AA /* HTMLCSSViewController.m */; };
 		763D45F51CCFB4C000BB88AA /* JavaScriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763D45F41CCFB4C000BB88AA /* JavaScriptViewController.m */; };
 		763D45F71CCFB75600BB88AA /* htmltest.html in Resources */ = {isa = PBXBuildFile; fileRef = 763D45F61CCFB75600BB88AA /* htmltest.html */; };
@@ -639,6 +641,8 @@
 		76213C4D1C970D98001DAA53 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		763263951CD10FA100F56D9D /* LayoutConstraintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutConstraintViewController.h; sourceTree = "<group>"; };
 		763263961CD10FA100F56D9D /* LayoutConstraintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutConstraintViewController.m; sourceTree = "<group>"; };
+		763263981CD111A100F56D9D /* htmlcss.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = htmlcss.html; path = html/htmlcss.html; sourceTree = "<group>"; };
+		7632639A1CD1170B00F56D9D /* csstest.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = csstest.css; path = html/csstest.css; sourceTree = "<group>"; };
 		763D45F01CCFB4A500BB88AA /* HTMLCSSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLCSSViewController.h; sourceTree = "<group>"; };
 		763D45F11CCFB4A500BB88AA /* HTMLCSSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLCSSViewController.m; sourceTree = "<group>"; };
 		763D45F31CCFB4C000BB88AA /* JavaScriptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptViewController.h; sourceTree = "<group>"; };
@@ -1636,6 +1640,8 @@
 		763D45EE1CCFB46C00BB88AA /* HTML_CSS */ = {
 			isa = PBXGroup;
 			children = (
+				7632639A1CD1170B00F56D9D /* csstest.css */,
+				763263981CD111A100F56D9D /* htmlcss.html */,
 				763D45F61CCFB75600BB88AA /* htmltest.html */,
 				763D45F81CCFBB8700BB88AA /* htmltesticon.png */,
 				763D45F01CCFB4A500BB88AA /* HTMLCSSViewController.h */,
@@ -2975,6 +2981,7 @@
 				76C036031CAB98F5002241E5 /* 情非得已.mp3 in Resources */,
 				763E4E6D1CA2B7F500470FCA /* 2013112800002214@2x.png in Resources */,
 				7601D9421CBFF5D000E6F6E7 /* metal.png in Resources */,
+				763263991CD111A100F56D9D /* htmlcss.html in Resources */,
 				763E4E861CA2B7F500470FCA /* USE_MOBILETRANSFER.png in Resources */,
 				763E4E7E1CA2B7F500470FCA /* Home_checkingRing@2x.png in Resources */,
 				763E4E641CA2B7F500470FCA /* 10000008.png in Resources */,
@@ -2982,6 +2989,7 @@
 				763E4E711CA2B7F500470FCA /* Home_appfrag_credit.png in Resources */,
 				76C035AB1CA78FEA002241E5 /* line@2x.png in Resources */,
 				7697186E1C9D466E00D0AC63 /* qvip_ps_template_gray@2x.png in Resources */,
+				7632639B1CD1170B00F56D9D /* csstest.css in Resources */,
 				763E4E101CA2609A00470FCA /* zfb_sel@2x.png in Resources */,
 				76C034EC1CA41258002241E5 /* bg_keyboard_selected@2x.png in Resources */,
 				763E4E7F1CA2B7F500470FCA /* Home_refresh_bg.jpg in Resources */,

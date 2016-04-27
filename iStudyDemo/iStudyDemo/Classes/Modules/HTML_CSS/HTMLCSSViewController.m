@@ -131,6 +131,12 @@
 - (void)test1
 {
     // CSS
+    NSURL *urlPath = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"htmlcss" ofType:@"html"]];
+    LEDWebViewController *vc = [[LEDWebViewController alloc] initWithURL:urlPath];
+    [self.navigationController pushViewController:vc animated:YES];
+    //    NSURL *urlPath = [NSURL fileURLWithPath:@"/Users/zhangyuanke/Desktop/Projects/iOS/iStudyDemo/iStudyDemo/iStudyDemo/Classes/Modules/HTML_CSS/html/htmlcss.html"];
+    //    LEDWebViewController *vc = [[LEDWebViewController alloc] initWithURL:urlPath];
+    //    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
