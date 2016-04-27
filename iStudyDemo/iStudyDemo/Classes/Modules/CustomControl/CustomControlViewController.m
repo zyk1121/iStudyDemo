@@ -11,6 +11,7 @@
 #import "masonry.h"
 #import "UIKitMacros.h"
 #import "CCModalViewViewController.h"
+#import "LayoutConstraintViewController.h"
 
 // 可以考虑封装UItableview 和  UICollectionView ，视图弹窗，modal 等
 
@@ -66,6 +67,9 @@
     [_listData addObject:@"ModalView弹窗"];
     CCModalViewViewController *modalViewVC = [[CCModalViewViewController alloc] init];
     [_listViewControllers addObject:modalViewVC];
+    [_listData addObject:@"NSLayoutConstraint布局"];
+    LayoutConstraintViewController *VC2 = [[LayoutConstraintViewController alloc] init];
+    [_listViewControllers addObject:VC2];
 }
 
 

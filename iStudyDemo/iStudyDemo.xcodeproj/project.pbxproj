@@ -109,6 +109,7 @@
 		76213C4A1C970CEB001DAA53 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76213C491C970CEB001DAA53 /* Accounts.framework */; };
 		76213C4C1C970D14001DAA53 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76213C4B1C970D14001DAA53 /* Social.framework */; };
 		76213C4E1C970D98001DAA53 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76213C4D1C970D98001DAA53 /* ImageIO.framework */; };
+		763263971CD10FA100F56D9D /* LayoutConstraintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763263961CD10FA100F56D9D /* LayoutConstraintViewController.m */; };
 		763D45F21CCFB4A500BB88AA /* HTMLCSSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763D45F11CCFB4A500BB88AA /* HTMLCSSViewController.m */; };
 		763D45F51CCFB4C000BB88AA /* JavaScriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763D45F41CCFB4C000BB88AA /* JavaScriptViewController.m */; };
 		763D45F71CCFB75600BB88AA /* htmltest.html in Resources */ = {isa = PBXBuildFile; fileRef = 763D45F61CCFB75600BB88AA /* htmltest.html */; };
@@ -636,6 +637,8 @@
 		76213C491C970CEB001DAA53 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		76213C4B1C970D14001DAA53 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		76213C4D1C970D98001DAA53 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		763263951CD10FA100F56D9D /* LayoutConstraintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutConstraintViewController.h; sourceTree = "<group>"; };
+		763263961CD10FA100F56D9D /* LayoutConstraintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutConstraintViewController.m; sourceTree = "<group>"; };
 		763D45F01CCFB4A500BB88AA /* HTMLCSSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLCSSViewController.h; sourceTree = "<group>"; };
 		763D45F11CCFB4A500BB88AA /* HTMLCSSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLCSSViewController.m; sourceTree = "<group>"; };
 		763D45F31CCFB4C000BB88AA /* JavaScriptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptViewController.h; sourceTree = "<group>"; };
@@ -2391,6 +2394,8 @@
 				76C035771CA68507002241E5 /* CustomControlViewController.m */,
 				760AF1391CB238D200A0D242 /* CCModalViewViewController.h */,
 				760AF13A1CB238D200A0D242 /* CCModalViewViewController.m */,
+				763263951CD10FA100F56D9D /* LayoutConstraintViewController.h */,
+				763263961CD10FA100F56D9D /* LayoutConstraintViewController.m */,
 			);
 			path = CustomControl;
 			sourceTree = "<group>";
@@ -3323,6 +3328,7 @@
 				76C035881CA68943002241E5 /* MVVMViewController.m in Sources */,
 				76C0359D1CA68FD6002241E5 /* RACViewController.m in Sources */,
 				76C035241CA663E5002241E5 /* TransitionViewController.m in Sources */,
+				763263971CD10FA100F56D9D /* LayoutConstraintViewController.m in Sources */,
 				760AF11D1CB11A5D00A0D242 /* NSData+LEDDigest.m in Sources */,
 				76E1B8B01CC9215300C71338 /* SearchVCViewController.m in Sources */,
 				76213BD61C96BE42001DAA53 /* DeviceInfoViewController.m in Sources */,
