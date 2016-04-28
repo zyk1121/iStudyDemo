@@ -11,6 +11,7 @@
 #import "ReactiveCocoa/ReactiveCocoa.h"
 #import "masonry.h"
 #import "UIKitMacros.h"
+#import "LEDWebViewController.h"
 
 @interface JavaScriptViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -144,26 +145,62 @@
 - (void)test0
 {
     //
+//    NSURL *urlPath = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"jstest1" ofType:@"html"]];
+//    LEDWebViewController *vc = [[LEDWebViewController alloc] initWithURL:urlPath];
+//    [self.navigationController pushViewController:vc animated:YES];
+        NSURL *urlPath = [NSURL fileURLWithPath:@"/Users/zhangyuanke/Desktop/Projects/iOS/iStudyDemo/iStudyDemo/iStudyDemo/Classes/Modules/JavaScript/js/jstest1.html"];
+        LEDWebViewController *vc = [[LEDWebViewController alloc] initWithURL:urlPath];
+        [self.navigationController pushViewController:vc animated:YES];
 }
 - (void)test1
 {
     //
+    //    NSURL *urlPath = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"jstest2" ofType:@"html"]];
+    //    LEDWebViewController *vc = [[LEDWebViewController alloc] initWithURL:urlPath];
+    //    [self.navigationController pushViewController:vc animated:YES];
+    NSURL *urlPath = [NSURL fileURLWithPath:@"/Users/zhangyuanke/Desktop/Projects/iOS/iStudyDemo/iStudyDemo/iStudyDemo/Classes/Modules/JavaScript/js/jstest2.html"];
+    LEDWebViewController *vc = [[LEDWebViewController alloc] initWithURL:urlPath];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 - (void)test2
 {
     //
+    //    NSURL *urlPath = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"jstest3" ofType:@"html"]];
+    //    LEDWebViewController *vc = [[LEDWebViewController alloc] initWithURL:urlPath];
+    //    [self.navigationController pushViewController:vc animated:YES];
+    NSURL *urlPath = [NSURL fileURLWithPath:@"/Users/zhangyuanke/Desktop/Projects/iOS/iStudyDemo/iStudyDemo/iStudyDemo/Classes/Modules/JavaScript/js/jstest3.html"];
+    LEDWebViewController *vc = [[LEDWebViewController alloc] initWithURL:urlPath];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 - (void)test3
 {
     //
+    //    NSURL *urlPath = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"jstest4" ofType:@"html"]];
+    //    LEDWebViewController *vc = [[LEDWebViewController alloc] initWithURL:urlPath];
+    //    [self.navigationController pushViewController:vc animated:YES];
+    NSURL *urlPath = [NSURL fileURLWithPath:@"/Users/zhangyuanke/Desktop/Projects/iOS/iStudyDemo/iStudyDemo/iStudyDemo/Classes/Modules/JavaScript/js/jstest4.html"];
+    LEDWebViewController *vc = [[LEDWebViewController alloc] initWithURL:urlPath];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 - (void)test4
 {
     //
+    //    NSURL *urlPath = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"jstest5" ofType:@"html"]];
+    //    LEDWebViewController *vc = [[LEDWebViewController alloc] initWithURL:urlPath];
+    //    [self.navigationController pushViewController:vc animated:YES];
+    NSURL *urlPath = [NSURL fileURLWithPath:@"/Users/zhangyuanke/Desktop/Projects/iOS/iStudyDemo/iStudyDemo/iStudyDemo/Classes/Modules/JavaScript/js/jstest5.html"];
+    LEDWebViewController *vc = [[LEDWebViewController alloc] initWithURL:urlPath];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 - (void)test5
 {
     //
+    //    NSURL *urlPath = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"jstest6" ofType:@"html"]];
+    //    LEDWebViewController *vc = [[LEDWebViewController alloc] initWithURL:urlPath];
+    //    [self.navigationController pushViewController:vc animated:YES];
+    NSURL *urlPath = [NSURL fileURLWithPath:@"/Users/zhangyuanke/Desktop/Projects/iOS/iStudyDemo/iStudyDemo/iStudyDemo/Classes/Modules/JavaScript/js/jstest6.html"];
+    LEDWebViewController *vc = [[LEDWebViewController alloc] initWithURL:urlPath];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

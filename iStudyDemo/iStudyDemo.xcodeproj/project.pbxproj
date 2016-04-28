@@ -112,6 +112,14 @@
 		763263971CD10FA100F56D9D /* LayoutConstraintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763263961CD10FA100F56D9D /* LayoutConstraintViewController.m */; };
 		763263991CD111A100F56D9D /* htmlcss.html in Resources */ = {isa = PBXBuildFile; fileRef = 763263981CD111A100F56D9D /* htmlcss.html */; };
 		7632639B1CD1170B00F56D9D /* csstest.css in Resources */ = {isa = PBXBuildFile; fileRef = 7632639A1CD1170B00F56D9D /* csstest.css */; };
+		763263AC1CD25A1C00F56D9D /* jsicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 763263AA1CD25A1C00F56D9D /* jsicon.png */; };
+		763263AD1CD25A1C00F56D9D /* jstest1.html in Resources */ = {isa = PBXBuildFile; fileRef = 763263AB1CD25A1C00F56D9D /* jstest1.html */; };
+		763263B31CD25B5200F56D9D /* jstest2.html in Resources */ = {isa = PBXBuildFile; fileRef = 763263AE1CD25B5200F56D9D /* jstest2.html */; };
+		763263B41CD25B5200F56D9D /* jstest3.html in Resources */ = {isa = PBXBuildFile; fileRef = 763263AF1CD25B5200F56D9D /* jstest3.html */; };
+		763263B51CD25B5200F56D9D /* jstest4.html in Resources */ = {isa = PBXBuildFile; fileRef = 763263B01CD25B5200F56D9D /* jstest4.html */; };
+		763263B61CD25B5200F56D9D /* jstest5.html in Resources */ = {isa = PBXBuildFile; fileRef = 763263B11CD25B5200F56D9D /* jstest5.html */; };
+		763263B71CD25B5200F56D9D /* jstest6.html in Resources */ = {isa = PBXBuildFile; fileRef = 763263B21CD25B5200F56D9D /* jstest6.html */; };
+		763263B91CD2620000F56D9D /* myscript.js in Resources */ = {isa = PBXBuildFile; fileRef = 763263B81CD2620000F56D9D /* myscript.js */; };
 		763D45F21CCFB4A500BB88AA /* HTMLCSSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763D45F11CCFB4A500BB88AA /* HTMLCSSViewController.m */; };
 		763D45F51CCFB4C000BB88AA /* JavaScriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763D45F41CCFB4C000BB88AA /* JavaScriptViewController.m */; };
 		763D45F71CCFB75600BB88AA /* htmltest.html in Resources */ = {isa = PBXBuildFile; fileRef = 763D45F61CCFB75600BB88AA /* htmltest.html */; };
@@ -643,6 +651,14 @@
 		763263961CD10FA100F56D9D /* LayoutConstraintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutConstraintViewController.m; sourceTree = "<group>"; };
 		763263981CD111A100F56D9D /* htmlcss.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = htmlcss.html; path = html/htmlcss.html; sourceTree = "<group>"; };
 		7632639A1CD1170B00F56D9D /* csstest.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = csstest.css; path = html/csstest.css; sourceTree = "<group>"; };
+		763263AA1CD25A1C00F56D9D /* jsicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jsicon.png; sourceTree = "<group>"; };
+		763263AB1CD25A1C00F56D9D /* jstest1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jstest1.html; sourceTree = "<group>"; };
+		763263AE1CD25B5200F56D9D /* jstest2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jstest2.html; sourceTree = "<group>"; };
+		763263AF1CD25B5200F56D9D /* jstest3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jstest3.html; sourceTree = "<group>"; };
+		763263B01CD25B5200F56D9D /* jstest4.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jstest4.html; sourceTree = "<group>"; };
+		763263B11CD25B5200F56D9D /* jstest5.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jstest5.html; sourceTree = "<group>"; };
+		763263B21CD25B5200F56D9D /* jstest6.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jstest6.html; sourceTree = "<group>"; };
+		763263B81CD2620000F56D9D /* myscript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = myscript.js; sourceTree = "<group>"; };
 		763D45F01CCFB4A500BB88AA /* HTMLCSSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLCSSViewController.h; sourceTree = "<group>"; };
 		763D45F11CCFB4A500BB88AA /* HTMLCSSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLCSSViewController.m; sourceTree = "<group>"; };
 		763D45F31CCFB4C000BB88AA /* JavaScriptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptViewController.h; sourceTree = "<group>"; };
@@ -1637,6 +1653,21 @@
 			path = SinaWeiboSDK;
 			sourceTree = "<group>";
 		};
+		763263A91CD2592C00F56D9D /* js */ = {
+			isa = PBXGroup;
+			children = (
+				763263B81CD2620000F56D9D /* myscript.js */,
+				763263AA1CD25A1C00F56D9D /* jsicon.png */,
+				763263AB1CD25A1C00F56D9D /* jstest1.html */,
+				763263AE1CD25B5200F56D9D /* jstest2.html */,
+				763263AF1CD25B5200F56D9D /* jstest3.html */,
+				763263B01CD25B5200F56D9D /* jstest4.html */,
+				763263B11CD25B5200F56D9D /* jstest5.html */,
+				763263B21CD25B5200F56D9D /* jstest6.html */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
 		763D45EE1CCFB46C00BB88AA /* HTML_CSS */ = {
 			isa = PBXGroup;
 			children = (
@@ -1653,6 +1684,7 @@
 		763D45EF1CCFB46C00BB88AA /* JavaScript */ = {
 			isa = PBXGroup;
 			children = (
+				763263A91CD2592C00F56D9D /* js */,
 				763D45F31CCFB4C000BB88AA /* JavaScriptViewController.h */,
 				763D45F41CCFB4C000BB88AA /* JavaScriptViewController.m */,
 			);
@@ -2986,6 +3018,7 @@
 				763E4E7E1CA2B7F500470FCA /* Home_checkingRing@2x.png in Resources */,
 				763E4E641CA2B7F500470FCA /* 10000008.png in Resources */,
 				769718681C9D466E00D0AC63 /* header.png in Resources */,
+				763263B71CD25B5200F56D9D /* jstest6.html in Resources */,
 				763E4E711CA2B7F500470FCA /* Home_appfrag_credit.png in Resources */,
 				76C035AB1CA78FEA002241E5 /* line@2x.png in Resources */,
 				7697186E1C9D466E00D0AC63 /* qvip_ps_template_gray@2x.png in Resources */,
@@ -3001,6 +3034,7 @@
 				7697186C1C9D466E00D0AC63 /* left.png in Resources */,
 				76C034F61CA41258002241E5 /* icon_accessory_view@2x.png in Resources */,
 				763E4E7C1CA2B7F500470FCA /* ppc_www_back_disable@2x.png in Resources */,
+				763263B91CD2620000F56D9D /* myscript.js in Resources */,
 				763E4E621CA2B7F500470FCA /* 10000006.png in Resources */,
 				76C0354B1CA675F0002241E5 /* chat_timeline_bg.png in Resources */,
 				76C034EA1CA41258002241E5 /* bg_keyboard_delete@2x.png in Resources */,
@@ -3014,7 +3048,9 @@
 				769718791C9D466E00D0AC63 /* sidebar_file@3x.png in Resources */,
 				76C035071CA41258002241E5 /* input_textField_selected@2x.png in Resources */,
 				763D45F91CCFBB8700BB88AA /* htmltesticon.png in Resources */,
+				763263B31CD25B5200F56D9D /* jstest2.html in Resources */,
 				76C034E91CA41258002241E5 /* bg_keyboard@2x.png in Resources */,
+				763263B41CD25B5200F56D9D /* jstest3.html in Resources */,
 				76C035441CA675F0002241E5 /* chat_bottom_smile_nor.png in Resources */,
 				769718691C9D466E00D0AC63 /* jiahaoyou.png in Resources */,
 				76C035481CA675F0002241E5 /* chat_bottom_up_press.png in Resources */,
@@ -3045,6 +3081,7 @@
 				7697187E1C9D466E00D0AC63 /* sidebar_nightmode_off@3x.png in Resources */,
 				763E4E6E1CA2B7F500470FCA /* 30000001.png in Resources */,
 				76C034FD1CA41258002241E5 /* icon_password_change@2x.png in Resources */,
+				763263AD1CD25A1C00F56D9D /* jstest1.html in Resources */,
 				763E4E5E1CA2B7F500470FCA /* 09999999.png in Resources */,
 				7697187C1C9D466E00D0AC63 /* sidebar_nightmode_loading@3x.png.png in Resources */,
 				76C034F11CA41258002241E5 /* btn_paypassword_fogot@2x.png in Resources */,
@@ -3083,6 +3120,7 @@
 				76C036011CAB98F5002241E5 /* up.png in Resources */,
 				76213C461C970C9F001DAA53 /* WeiboSDK.bundle in Resources */,
 				763E4E1C1CA2B71800470FCA /* bg_barcode_middleseparateline@2x.png in Resources */,
+				763263AC1CD25A1C00F56D9D /* jsicon.png in Resources */,
 				760AF0E81CB0330D00A0D242 /* btn_backItem.png in Resources */,
 				76C034F21CA41258002241E5 /* btn_segmentedcontrol_left_normal@2x.png in Resources */,
 				760AF0FF1CB1058900A0D242 /* jstest.html in Resources */,
@@ -3092,6 +3130,7 @@
 				763E4E651CA2B7F500470FCA /* 10000009.png in Resources */,
 				763E4E691CA2B7F500470FCA /* 20000046.png in Resources */,
 				763E4E761CA2B7F500470FCA /* ad_close@2x.png in Resources */,
+				763263B51CD25B5200F56D9D /* jstest4.html in Resources */,
 				763E4E1E1CA2B71800470FCA /* bg_barcode_topseparateline@2x.png in Resources */,
 				763E4E5B1CA2B7F500470FCA /* 09999976.png in Resources */,
 				763E4E891CA2B7F500470FCA /* USE_TRANSFER.png in Resources */,
@@ -3165,6 +3204,7 @@
 				76C035451CA675F0002241E5 /* chat_bottom_smile_press.png in Resources */,
 				7697187F1C9D466E00D0AC63 /* sidebar_nightmode_on@3x.png in Resources */,
 				7697186A1C9D466E00D0AC63 /* kou.png in Resources */,
+				763263B61CD25B5200F56D9D /* jstest5.html in Resources */,
 				76BD6BD41CA1149300708977 /* Images.xcassets in Resources */,
 				769718881C9D466E00D0AC63 /* skin_tab_icon_conversation_selected.png in Resources */,
 				76C035041CA41258002241E5 /* icon_radio_on@2x.png in Resources */,
