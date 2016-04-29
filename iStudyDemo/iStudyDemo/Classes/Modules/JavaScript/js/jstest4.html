@@ -1,11 +1,101 @@
 <!-- http://www.w3school.com.cn/html/index.asp -->
 <html>
+<meta charset="utf-8">
+<title>菜鸟教程－样式</title>
+<style type="text/css">
+		body {color: red;font-size: 50px}
+		</style>
 	<body>
-		<h1>the head</h1>
+		<script type="text/javascript">
+			document.write("Window 对象\
+所有浏览器都支持 window 对象。它表示浏览器窗口。\
+所有 JavaScript 全局对象、函数以及变量均自动成为 window 对象的成员\
+全局变量是 window 对象的属性。\
+全局函数是 window 对象的方法。");
+			var height = document.body.clientHeight
+			var width = document.body.clientWidth
+
+			var ttt = width
+			document.write("<br>")
+			document.write(ttt)
+			document.write("<br>")
+			document.write("width:" + window.innerWidth)
+			document.write("<br>")
+			document.write("height:" + window.innerHeight)
+document.write("<br>")
+document.write("screen.availWidth - 可用的屏幕宽度 screen.availHeight - 可用的屏幕高度" + "<br>");
+document.write("screen.availWidth:" + screen.availWidth + "<br>")
+document.write("screen.availWidth:" + screen.availWidth + "<br>")
+
+// window.location 对象用于获得当前页面的地址 (URL)，并把浏览器重定向到新的页面。
+document.write(location.href + "<br>");
+document.write(location.pathname + "<br>");
+
+/*Window History
+window.history 对象在编写时可不使用 window 这个前缀。
+为了保护用户隐私，对 JavaScript 访问该对象的方法做出了限制。
+一些方法：
+history.back() - 与在浏览器点击后退按钮相同
+history.forward() - 与在浏览器中点击按钮向前相同
+*/
+		// window.back()
+
+
+		</script>
+
+
+		<div id="example"></div>
+
+<script>
+
+txt = "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
+txt+= "<p>Browser Name: " + navigator.appName + "</p>";
+txt+= "<p>Browser Version: " + navigator.appVersion + "</p>";
+txt+= "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>";
+txt+= "<p>Platform: " + navigator.platform + "</p>";
+txt+= "<p>User-agent header: " + navigator.userAgent + "</p>";
+txt+= "<p>User-agent language: " + navigator.systemLanguage + "</p>";
+
+document.getElementById("example").innerHTML=txt;
+
+</script>
+
+<script type="text/javascript">
+alert("alert")
+// comfirm("文本")
+confirm("文本")
+prompt("文本","默认值")
+</script>
+
+<script type="text/javascript">
+function timedMsg()
+ {
+ var t=setTimeout("alert('5 seconds!')",5000)
+ }
+ timedMsg()
+
+ document.write("<br>" + "什么是cookie? cookie 是存储于访问者的计算机中的变量。每当同一台计算机通过浏览器请求某个页面时，就会发送这个 cookie。你可以使用 JavaScript 来创建和取回 cookie 的值。")
+</script>
+</head>
+
+
 	</body>
+
 </html>
 
-
+<!--
+有三种方法能够确定浏览器窗口的尺寸（浏览器的视口，不包括工具栏和滚动条）。
+对于Internet Explorer、Chrome、Firefox、Opera 以及 Safari：
+window.innerHeight - 浏览器窗口的内部高度
+window.innerWidth - 浏览器窗口的内部宽度
+对于 Internet Explorer 8、7、6、5：
+document.documentElement.clientHeight
+document.documentElement.clientWidth
+或者
+document.body.clientHeight
+document.body.clientWidth
+实用的 JavaScript 方案（涵盖所有浏览器）
+-->
 
 <!--
 <html>

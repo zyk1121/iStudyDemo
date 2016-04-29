@@ -1,8 +1,52 @@
 <!-- http://www.w3school.com.cn/html/index.asp -->
+
+<!--JavaScript 库 - jQuery、Prototype、MooTools。-->
 <html>
-	<body>
-		<h1>the head</h1>
+<meta charset="utf-8">
+<title>菜鸟教程－样式</title>
+<style type="text/css">
+		body {color: red; font-size: 48px}
+		</style>
+	<body  onload="detectBrowser()">
+		<script type="text/javascript">
+		// var oObject = new Object;
+// do something with the object here
+// oObject = null;
+			document.write("JavaScript 库 - jQuery、Prototype、MooTools。")
+		</script>
+
+	<script type="text/javascript">
+
+function person(firstname,lastname,age,eyecolor)
+{
+this.firstname=firstname
+this.lastname=lastname
+this.age=age
+this.eyecolor=eyecolor
+}
+
+myFather=new person("John","Adams",35,"black")
+
+document.write(myFather.firstname + " 的年龄是 " + myFather.age + " 岁。")
+
+</script>
+
+<script type="text/javascript">
+function detectBrowser()
+{
+var browser=navigator.appName
+var b_version=navigator.appVersion
+var version=parseFloat(b_version)
+if ((browser=="Netscape"||browser=="Microsoft Internet Explorer") && (version>=4))
+  {alert("您的浏览器够先进了！")}
+else
+  {alert("是时候升级您的浏览器了！")}
+}
+</script>
+
+
 	</body>
+
 </html>
 
 

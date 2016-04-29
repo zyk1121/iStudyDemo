@@ -1,7 +1,109 @@
 <!-- http://www.w3school.com.cn/html/index.asp -->
+<!--通过 HTML DOM，可访问 JavaScript HTML 文档的所有元素。
+通过可编程的对象模型，JavaScript 获得了足够的能力来创建动态的 HTML。
+JavaScript 能够改变页面中的所有 HTML 元素
+JavaScript 能够改变页面中的所有 HTML 属性
+JavaScript 能够改变页面中的所有 CSS 样式
+JavaScript 能够对页面中的所有事件做出反应
+
+查找 HTML 元素
+通常，通过 JavaScript，您需要操作 HTML 元素。
+为了做到这件事情，您必须首先找到该元素。有三种方法来做这件事：
+通过 id 找到 HTML 元素
+通过标签名找到 HTML 元素
+通过类名找到 HTML 元素
+
+
+onload 和 onunload 事件
+onload 和 onunload 事件会在用户进入或离开页面时被触发。
+onload 事件可用于检测访问者的浏览器类型和浏览器版本，并基于这些信息来加载网页的正确版本。
+onload 和 onunload 事件可用于处理 cookie。
+
+
+-->
 <html>
-	<body>
-		<h1>the head</h1>
+<meta charset="utf-8">
+<title>菜鸟教程－样式</title>
+	<body onload="mymessage()">
+		<h1 id="head">the head</h1>
+		<img id="image" src="test.png">
+		<script type="text/javascript">
+			document.write(Date())
+			document.getElementById("head").innerHTML = "hello world !"
+			document.getElementById("image").src = "jsicon.png"
+			document.getElementById("head").style.color="red"
+		</script>
+		<button type="button" onclick="document.getElementById('head').style.color='green'"> 点击这里哈哈哈</button>
+		<button onclick="displayDate()">点击这里</button>
+
+		<div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:green;width:120px;height:20px;padding:40px;color:#ffffff;">把鼠标移到上面</div>
+
+		<div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color:green;color:#ffffff;width:90px;height:20px;padding:40px;font-size:12px;">请点击这里</div>
+
+		<script>
+function mymessage()
+{
+alert("这段消息由 onload 事件触发");
+}
+</script>
+</head>
+
+
+
+
+
+<script>
+function mDown(obj)
+{
+obj.style.backgroundColor="#1ec5e5";
+obj.innerHTML="请释放鼠标按钮"
+}
+
+function mUp(obj)
+{
+obj.style.backgroundColor="green";
+obj.innerHTML="请按下鼠标按钮"
+}
+</script>
+
+
+<script>
+function mOver(obj)
+{
+obj.innerHTML="谢谢"
+}
+
+function mOut(obj)
+{
+obj.innerHTML="把鼠标移到上面"
+}
+</script>
+
+
+<div id="div1">
+<p id="p1">这是一个段落</p>
+<p id="p2">这是另一个段落</p>
+</div>
+
+<script>
+var para=document.createElement("p");
+var node=document.createTextNode("这是新段落。");
+para.appendChild(node);
+
+var element=document.getElementById("div1");
+element.appendChild(para);
+</script>
+
+
+
+<script>
+var parent=document.getElementById("div1");
+var child=document.getElementById("p1");
+parent.removeChild(child);
+</script>
+
+
+
 	</body>
 </html>
 

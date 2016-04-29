@@ -64,7 +64,7 @@
     [_listData addObject:@"JavaScript对象"];
     [_listData addObject:@"JS Window"];
     [_listData addObject:@"JS 库"];
-    [_listData addObject:@"JavaScript高级"];
+    [_listData addObject:@"JavaScript函数和闭包"];
     
 }
 
@@ -139,7 +139,7 @@
  [_listData addObject:@"JavaScript对象"];
  [_listData addObject:@"JS Window"];
  [_listData addObject:@"JS 库"];
- [_listData addObject:@"JavaScript高级"];
+ [_listData addObject:@"JavaScript函数和闭包"];
  
  */
 - (void)test0

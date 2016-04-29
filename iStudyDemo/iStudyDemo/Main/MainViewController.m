@@ -42,6 +42,7 @@
 #import "PushNotificationViewController.h"
 #import "HTMLCSSViewController.h"
 #import "JavaScriptViewController.h"
+#import "NodeDotJSViewController.h"
 
 // http://www.cocoachina.com/ios/20150825/13195.html
 
@@ -218,6 +219,10 @@
     [_listData addObject:@"JavaScript"];
     JavaScriptViewController *jsViewController = [[JavaScriptViewController alloc] init];
     [_listViewControllers addObject:jsViewController];
+    // 25.Node.js
+    [_listData addObject:@"Node.js"];
+    NodeDotJSViewController *nodejsViewController = [[NodeDotJSViewController alloc] init];
+    [_listViewControllers addObject:nodejsViewController];
     
     
 }
