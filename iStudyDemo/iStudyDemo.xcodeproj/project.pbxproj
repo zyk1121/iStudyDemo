@@ -121,6 +121,7 @@
 		763263B71CD25B5200F56D9D /* jstest6.html in Resources */ = {isa = PBXBuildFile; fileRef = 763263B21CD25B5200F56D9D /* jstest6.html */; };
 		763263B91CD2620000F56D9D /* myscript.js in Resources */ = {isa = PBXBuildFile; fileRef = 763263B81CD2620000F56D9D /* myscript.js */; };
 		763263BD1CD3B5E800F56D9D /* NodeDotJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763263BC1CD3B5E800F56D9D /* NodeDotJSViewController.m */; };
+		763263C01CD465B000F56D9D /* node.js in Resources */ = {isa = PBXBuildFile; fileRef = 763263BF1CD465B000F56D9D /* node.js */; };
 		763D45F21CCFB4A500BB88AA /* HTMLCSSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763D45F11CCFB4A500BB88AA /* HTMLCSSViewController.m */; };
 		763D45F51CCFB4C000BB88AA /* JavaScriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763D45F41CCFB4C000BB88AA /* JavaScriptViewController.m */; };
 		763D45F71CCFB75600BB88AA /* htmltest.html in Resources */ = {isa = PBXBuildFile; fileRef = 763D45F61CCFB75600BB88AA /* htmltest.html */; };
@@ -662,6 +663,7 @@
 		763263B81CD2620000F56D9D /* myscript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = myscript.js; sourceTree = "<group>"; };
 		763263BB1CD3B5E800F56D9D /* NodeDotJSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeDotJSViewController.h; sourceTree = "<group>"; };
 		763263BC1CD3B5E800F56D9D /* NodeDotJSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeDotJSViewController.m; sourceTree = "<group>"; };
+		763263BF1CD465B000F56D9D /* node.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = node.js; sourceTree = "<group>"; };
 		763D45F01CCFB4A500BB88AA /* HTMLCSSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLCSSViewController.h; sourceTree = "<group>"; };
 		763D45F11CCFB4A500BB88AA /* HTMLCSSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLCSSViewController.m; sourceTree = "<group>"; };
 		763D45F31CCFB4C000BB88AA /* JavaScriptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptViewController.h; sourceTree = "<group>"; };
@@ -1675,10 +1677,19 @@
 		763263BA1CD3B5C400F56D9D /* NodeDotJS */ = {
 			isa = PBXGroup;
 			children = (
+				763263BE1CD4654B00F56D9D /* Node */,
 				763263BB1CD3B5E800F56D9D /* NodeDotJSViewController.h */,
 				763263BC1CD3B5E800F56D9D /* NodeDotJSViewController.m */,
 			);
 			path = NodeDotJS;
+			sourceTree = "<group>";
+		};
+		763263BE1CD4654B00F56D9D /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				763263BF1CD465B000F56D9D /* node.js */,
+			);
+			path = Node;
 			sourceTree = "<group>";
 		};
 		763D45EE1CCFB46C00BB88AA /* HTML_CSS */ = {
@@ -3037,6 +3048,7 @@
 				7697186E1C9D466E00D0AC63 /* qvip_ps_template_gray@2x.png in Resources */,
 				7632639B1CD1170B00F56D9D /* csstest.css in Resources */,
 				763E4E101CA2609A00470FCA /* zfb_sel@2x.png in Resources */,
+				763263C01CD465B000F56D9D /* node.js in Resources */,
 				76C034EC1CA41258002241E5 /* bg_keyboard_selected@2x.png in Resources */,
 				763E4E7F1CA2B7F500470FCA /* Home_refresh_bg.jpg in Resources */,
 				76C036001CAB98F5002241E5 /* play.png in Resources */,
