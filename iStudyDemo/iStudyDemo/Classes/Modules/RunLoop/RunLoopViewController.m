@@ -11,6 +11,8 @@
 #import "masonry.h"
 #import "UIKitMacros.h"
 #import "LDKTimer.h"
+#import "LEDEventHandler.h"
+#import "LEDListener.h"
 
 // http://www.cocoachina.com/ios/20150601/11970.html
 
@@ -73,6 +75,8 @@
     [_listData addObject:@"RunLoop常用mode"];
     [_listData addObject:@"子线程RunLoop定时器"];
     [_listData addObject:@"子线程通知&KVO"];
+    
+    [_listData addObject:@"EventHandler异步事件队列"];
     
     
 }
@@ -378,5 +382,21 @@
  
 
  */
+
+
+- (void)test4
+{
+    NSLog(@"EventHandler异步事件队列测试开始^^^^^^^^^^^^????????########:");
+    LEDListener *listener1 = [[LEDListener alloc] init];
+    [[LEDEventHandler sharedEventHandler] addEventListener:listener1];
+    LEDListener *listener2 = [[LEDListener alloc] init];
+    [[LEDEventHandler sharedEventHandler] addEventListener:listener2];
+    [[LEDEventHandler sharedEventHandler] addEventToQueue:1 message:@"123"];
+    [[LEDEventHandler sharedEventHandler] addEventToQueue:2 message:@"456"];
+    [[LEDEventHandler sharedEventHandler] addEventToQueue:3 message:@"789"];
+    
+//    [[LEDEventHandler sharedEventHandler] removeAllEventListener];
+    
+}
 
 @end
