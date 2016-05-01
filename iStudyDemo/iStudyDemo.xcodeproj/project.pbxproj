@@ -128,6 +128,10 @@
 		7632661F1CD4C9B000F56D9D /* t1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 763265131CD4C9B000F56D9D /* t1.txt */; };
 		763266221CD4CA8C00F56D9D /* LEDEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 763266211CD4CA8C00F56D9D /* LEDEventHandler.m */; };
 		763266281CD4D04400F56D9D /* LEDListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 763266271CD4D04400F56D9D /* LEDListener.m */; };
+		763266301CD6652200F56D9D /* framework.py in Resources */ = {isa = PBXBuildFile; fileRef = 7632662C1CD6652200F56D9D /* framework.py */; };
+		763266311CD6652200F56D9D /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7632662D1CD6652200F56D9D /* readme.txt */; };
+		763266321CD6652200F56D9D /* framework.py in Resources */ = {isa = PBXBuildFile; fileRef = 7632662E1CD6652200F56D9D /* framework.py */; };
+		763266331CD6652200F56D9D /* test.py in Resources */ = {isa = PBXBuildFile; fileRef = 7632662F1CD6652200F56D9D /* test.py */; };
 		763D45F21CCFB4A500BB88AA /* HTMLCSSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763D45F11CCFB4A500BB88AA /* HTMLCSSViewController.m */; };
 		763D45F51CCFB4C000BB88AA /* JavaScriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763D45F41CCFB4C000BB88AA /* JavaScriptViewController.m */; };
 		763D45F71CCFB75600BB88AA /* htmltest.html in Resources */ = {isa = PBXBuildFile; fileRef = 763D45F61CCFB75600BB88AA /* htmltest.html */; };
@@ -679,6 +683,10 @@
 		763266231CD4CD7E00F56D9D /* LEDEventProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDEventProtocol.h; sourceTree = "<group>"; };
 		763266261CD4D04400F56D9D /* LEDListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDListener.h; sourceTree = "<group>"; };
 		763266271CD4D04400F56D9D /* LEDListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDListener.m; sourceTree = "<group>"; };
+		7632662C1CD6652200F56D9D /* framework.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = framework.py; sourceTree = "<group>"; };
+		7632662D1CD6652200F56D9D /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		7632662E1CD6652200F56D9D /* framework.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = framework.py; sourceTree = "<group>"; };
+		7632662F1CD6652200F56D9D /* test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test.py; sourceTree = "<group>"; };
 		763D45F01CCFB4A500BB88AA /* HTMLCSSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLCSSViewController.h; sourceTree = "<group>"; };
 		763D45F11CCFB4A500BB88AA /* HTMLCSSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLCSSViewController.m; sourceTree = "<group>"; };
 		763D45F31CCFB4C000BB88AA /* JavaScriptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptViewController.h; sourceTree = "<group>"; };
@@ -1454,6 +1462,7 @@
 		761931AD1C8BCD010022A311 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				763266291CD6652100F56D9D /* Python */,
 				763263BA1CD3B5C400F56D9D /* NodeDotJS */,
 				763D45EE1CCFB46C00BB88AA /* HTML_CSS */,
 				763D45EF1CCFB46C00BB88AA /* JavaScript */,
@@ -1733,6 +1742,33 @@
 				763265121CD4C9B000F56D9D /* nodeicon.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		763266291CD6652100F56D9D /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				7632662A1CD6652200F56D9D /* framework */,
+				7632662E1CD6652200F56D9D /* framework.py */,
+				7632662F1CD6652200F56D9D /* test.py */,
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
+		7632662A1CD6652200F56D9D /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				7632662B1CD6652200F56D9D /* framework */,
+				7632662C1CD6652200F56D9D /* framework.py */,
+				7632662D1CD6652200F56D9D /* readme.txt */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		7632662B1CD6652200F56D9D /* framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = framework;
 			sourceTree = "<group>";
 		};
 		763D45EE1CCFB46C00BB88AA /* HTML_CSS */ = {
@@ -3085,6 +3121,7 @@
 				76C036031CAB98F5002241E5 /* 情非得已.mp3 in Resources */,
 				763E4E6D1CA2B7F500470FCA /* 2013112800002214@2x.png in Resources */,
 				7601D9421CBFF5D000E6F6E7 /* metal.png in Resources */,
+				763266301CD6652200F56D9D /* framework.py in Resources */,
 				763263991CD111A100F56D9D /* htmlcss.html in Resources */,
 				763E4E861CA2B7F500470FCA /* USE_MOBILETRANSFER.png in Resources */,
 				763E4E7E1CA2B7F500470FCA /* Home_checkingRing@2x.png in Resources */,
@@ -3161,6 +3198,7 @@
 				76C034F11CA41258002241E5 /* btn_paypassword_fogot@2x.png in Resources */,
 				76C0350E1CA43103002241E5 /* 3.jpg in Resources */,
 				763E4E671CA2B7F500470FCA /* 11000002.png in Resources */,
+				763266311CD6652200F56D9D /* readme.txt in Resources */,
 				763E4E821CA2B7F500470FCA /* TitleBar_BG@2x.png in Resources */,
 				76C035531CA675F0002241E5 /* toolbar_bottom_bar.png in Resources */,
 				76A2E9E21CCBDC4100536E5D /* test_.plist in Resources */,
@@ -3205,6 +3243,7 @@
 				769718831C9D466E00D0AC63 /* sidebar_signature_nor@2x.png in Resources */,
 				763E4E651CA2B7F500470FCA /* 10000009.png in Resources */,
 				763E4E691CA2B7F500470FCA /* 20000046.png in Resources */,
+				763266321CD6652200F56D9D /* framework.py in Resources */,
 				763E4E761CA2B7F500470FCA /* ad_close@2x.png in Resources */,
 				763263B51CD25B5200F56D9D /* jstest4.html in Resources */,
 				763E4E1E1CA2B71800470FCA /* bg_barcode_topseparateline@2x.png in Resources */,
@@ -3259,6 +3298,7 @@
 				7697188D1C9D466E00D0AC63 /* taolun.png in Resources */,
 				76C034F91CA41258002241E5 /* icon_login_password@2x.png in Resources */,
 				76C0354C1CA675F0002241E5 /* chatfrom_bg_focused.png in Resources */,
+				763266331CD6652200F56D9D /* test.py in Resources */,
 				76C0354A1CA675F0002241E5 /* chat_bottom_voice_press.png in Resources */,
 				769717D31C98609E00D0AC63 /* test.png in Resources */,
 				763E4E921CA2F61300470FCA /* icon.jpg in Resources */,

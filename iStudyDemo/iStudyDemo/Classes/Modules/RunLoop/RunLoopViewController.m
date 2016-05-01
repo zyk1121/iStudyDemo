@@ -386,6 +386,7 @@
 
 - (void)test4
 {
+    
     NSLog(@"EventHandler异步事件队列测试开始^^^^^^^^^^^^????????########:");
     LEDListener *listener1 = [[LEDListener alloc] init];
     [[LEDEventHandler sharedEventHandler] addEventListener:listener1];
@@ -395,8 +396,45 @@
     [[LEDEventHandler sharedEventHandler] addEventToQueue:2 message:@"456"];
     [[LEDEventHandler sharedEventHandler] addEventToQueue:3 message:@"789"];
     
-//    [[LEDEventHandler sharedEventHandler] removeAllEventListener];
     
+//    [[LEDEventHandler sharedEventHandler] removeAllEventListener];
+//    [self testTTT];
+}
+
+// 测试依赖也只是在block中的代码是同步执行的时候才ok
+- (void)testTTT
+{
+    //1.任务一：下载图片
+    NSBlockOperation *operation1 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"下载图片 - %@", [NSThread currentThread]);
+//        dispatch_async(dispatch_get_main_queue(), ^{
+           [NSThread sleepForTimeInterval:1.0];
+//        });
+    }];
+    
+    //2.任务二：打水印
+    NSBlockOperation *operation2 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"打水印   - %@", [NSThread currentThread]);
+//        dispatch_async(dispatch_get_main_queue(), ^{
+            [NSThread sleepForTimeInterval:1.0];
+//        });
+    }];
+    
+    //3.任务三：上传图片
+    NSBlockOperation *operation3 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"上传图片 - %@", [NSThread currentThread]);
+//        dispatch_async(dispatch_get_main_queue(), ^{
+            [NSThread sleepForTimeInterval:1.0];
+//        });
+    }];
+    
+    //4.设置依赖
+    [operation2 addDependency:operation1];      //任务二依赖任务一
+    [operation3 addDependency:operation2];      //任务三依赖任务二
+    
+    //5.创建队列并加入任务
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    [queue addOperations:@[operation3, operation2, operation1] waitUntilFinished:NO];
 }
 
 @end
