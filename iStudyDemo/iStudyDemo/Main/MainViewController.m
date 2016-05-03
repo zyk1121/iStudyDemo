@@ -43,6 +43,7 @@
 #import "HTMLCSSViewController.h"
 #import "JavaScriptViewController.h"
 #import "NodeDotJSViewController.h"
+#import "DesignPatternsViewController.h"
 
 // http://www.cocoachina.com/ios/20150825/13195.html
 
@@ -223,8 +224,11 @@
     [_listData addObject:@"Node.js"];
     NodeDotJSViewController *nodejsViewController = [[NodeDotJSViewController alloc] init];
     [_listViewControllers addObject:nodejsViewController];
-    
-    
+    // 26.Design pattern
+    [_listData addObject:@"DesignPatterns"];
+     DesignPatternsViewController *designViewController = [[DesignPatternsViewController alloc] init];
+    [_listViewControllers addObject:designViewController];
+
 }
 
 #pragma mark - UITableViewDelegate & UITableViewDataSource
