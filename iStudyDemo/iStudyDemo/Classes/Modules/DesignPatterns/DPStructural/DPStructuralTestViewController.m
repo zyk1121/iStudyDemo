@@ -1,27 +1,27 @@
 //
-//  DPCreationalTestViewController.m
+//  DPStructuralTestViewController.m
 //  iStudyDemo
 //
 //  Created by zhangyuanke on 16/5/5.
 //  Copyright © 2016年 zhangyuanke. All rights reserved.
 //
 
-#import "DPCreationalTestViewController.h"
+#import "DPStructuralTestViewController.h"
 #import "ReactiveCocoa/ReactiveCocoa.h"
 #import "masonry.h"
 #import "UIKitMacros.h"
 #import "LEDWebViewController.h"
 
-@interface DPCreationalTestViewController ()
+@interface DPStructuralTestViewController ()
 
-@property (nonatomic, assign) DPCreationalType type;
+@property (nonatomic, assign) DPStructuralType type;
 @property (nonatomic, strong) UITextView *textView;
 
 @end
 
-@implementation DPCreationalTestViewController
+@implementation DPStructuralTestViewController
 
-- (instancetype)initWithType:(DPCreationalType)type
+- (instancetype)initWithType:(DPStructuralType)type
 {
     self = [super init];
     if (self) {

@@ -1,27 +1,27 @@
 //
-//  DPCreationalTestViewController.m
+//  DPBehavioralTestViewController.m
 //  iStudyDemo
 //
 //  Created by zhangyuanke on 16/5/5.
 //  Copyright © 2016年 zhangyuanke. All rights reserved.
 //
 
-#import "DPCreationalTestViewController.h"
+#import "DPBehavioralTestViewController.h"
 #import "ReactiveCocoa/ReactiveCocoa.h"
 #import "masonry.h"
 #import "UIKitMacros.h"
 #import "LEDWebViewController.h"
 
-@interface DPCreationalTestViewController ()
+@interface DPBehavioralTestViewController ()
 
-@property (nonatomic, assign) DPCreationalType type;
+@property (nonatomic, assign) DPBehavioralType type;
 @property (nonatomic, strong) UITextView *textView;
 
 @end
 
-@implementation DPCreationalTestViewController
+@implementation DPBehavioralTestViewController
 
-- (instancetype)initWithType:(DPCreationalType)type
+- (instancetype)initWithType:(DPBehavioralType)type
 {
     self = [super init];
     if (self) {
@@ -79,3 +79,4 @@ dddd\
 }
 
 @end
+

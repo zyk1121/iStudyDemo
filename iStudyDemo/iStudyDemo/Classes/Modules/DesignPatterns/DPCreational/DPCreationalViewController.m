@@ -61,6 +61,9 @@
     
     [_listData addObject:@"简单工厂模式"];
     [_listData addObject:@"抽象工厂模式"];
+    [_listData addObject:@"单例模式"];
+    [_listData addObject:@"建造者模式"];
+    [_listData addObject:@"原型模式"];
 }
 
 

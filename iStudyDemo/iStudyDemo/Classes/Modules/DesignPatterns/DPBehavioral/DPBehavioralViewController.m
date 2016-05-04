@@ -11,6 +11,7 @@
 #import "masonry.h"
 #import "UIKitMacros.h"
 #import "LEDWebViewController.h"
+#import "DPBehavioralTestViewController.h"
 
 @interface DPBehavioralViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -58,8 +59,18 @@
 {
     _listData = [[NSMutableArray alloc] init];
     
-    [_listData addObject:@"1"];
-    [_listData addObject:@"2"];
+    [_listData addObject:@"责任链模式"];
+    [_listData addObject:@"命令模式"];
+    [_listData addObject:@"解释器模式"];
+    [_listData addObject:@"迭代器模式"];
+    [_listData addObject:@"中介者模式"];
+    [_listData addObject:@"备忘录模式"];
+    [_listData addObject:@"空对象模式"];
+    [_listData addObject:@"观察者模式"];
+    [_listData addObject:@"状态模式"];
+    [_listData addObject:@"策略模式"];
+    [_listData addObject:@"模版模式"];
+    [_listData addObject:@"访问者模式"];
 }
 
 
@@ -78,8 +89,8 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSString *methodName = [NSString stringWithFormat:@"test%ld",indexPath.row];
-    [self performSelector:NSSelectorFromString(methodName) withObject:nil afterDelay:0];
+    DPBehavioralTestViewController *vc = [[DPBehavioralTestViewController alloc] initWithType:(DPBehavioralType)indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -102,19 +113,6 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 60;
-}
-
-#pragma mark - private method
-
-- (void)test0
-{
-    NSLog(@"1");
-}
-
-- (void)test1
-{
-    NSLog(@"2");
-    
 }
 
 @end

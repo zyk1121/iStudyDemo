@@ -11,6 +11,7 @@
 #import "masonry.h"
 #import "UIKitMacros.h"
 #import "LEDWebViewController.h"
+#import "DPStructuralTestViewController.h"
 
 @interface DPStructuralViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -58,8 +59,14 @@
 {
     _listData = [[NSMutableArray alloc] init];
     
-    [_listData addObject:@"1"];
-    [_listData addObject:@"2"];
+    [_listData addObject:@"适配器模式"];
+    [_listData addObject:@"桥接模式"];
+    [_listData addObject:@"组合模式"];
+    [_listData addObject:@"装饰器模式"];
+    [_listData addObject:@"外观模式"];
+    [_listData addObject:@"过滤器模式"];
+    [_listData addObject:@"享元模式"];
+    [_listData addObject:@"代理模式"];
 }
 
 
@@ -78,8 +85,8 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSString *methodName = [NSString stringWithFormat:@"test%ld",indexPath.row];
-    [self performSelector:NSSelectorFromString(methodName) withObject:nil afterDelay:0];
+    DPStructuralTestViewController *vc = [[DPStructuralTestViewController alloc] initWithType:(DPStructuralType)indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -102,19 +109,6 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 60;
-}
-
-#pragma mark - private method
-
-- (void)test0
-{
-    NSLog(@"1");
-}
-
-- (void)test1
-{
-    NSLog(@"2");
-    
 }
 
 @end
