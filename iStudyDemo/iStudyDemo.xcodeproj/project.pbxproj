@@ -109,6 +109,35 @@
 		76213C4A1C970CEB001DAA53 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76213C491C970CEB001DAA53 /* Accounts.framework */; };
 		76213C4C1C970D14001DAA53 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76213C4B1C970D14001DAA53 /* Social.framework */; };
 		76213C4E1C970D98001DAA53 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76213C4D1C970D98001DAA53 /* ImageIO.framework */; };
+		763263971CD10FA100F56D9D /* LayoutConstraintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763263961CD10FA100F56D9D /* LayoutConstraintViewController.m */; };
+		763263991CD111A100F56D9D /* htmlcss.html in Resources */ = {isa = PBXBuildFile; fileRef = 763263981CD111A100F56D9D /* htmlcss.html */; };
+		7632639B1CD1170B00F56D9D /* csstest.css in Resources */ = {isa = PBXBuildFile; fileRef = 7632639A1CD1170B00F56D9D /* csstest.css */; };
+		763263AC1CD25A1C00F56D9D /* jsicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 763263AA1CD25A1C00F56D9D /* jsicon.png */; };
+		763263AD1CD25A1C00F56D9D /* jstest1.html in Resources */ = {isa = PBXBuildFile; fileRef = 763263AB1CD25A1C00F56D9D /* jstest1.html */; };
+		763263B31CD25B5200F56D9D /* jstest2.html in Resources */ = {isa = PBXBuildFile; fileRef = 763263AE1CD25B5200F56D9D /* jstest2.html */; };
+		763263B41CD25B5200F56D9D /* jstest3.html in Resources */ = {isa = PBXBuildFile; fileRef = 763263AF1CD25B5200F56D9D /* jstest3.html */; };
+		763263B51CD25B5200F56D9D /* jstest4.html in Resources */ = {isa = PBXBuildFile; fileRef = 763263B01CD25B5200F56D9D /* jstest4.html */; };
+		763263B61CD25B5200F56D9D /* jstest5.html in Resources */ = {isa = PBXBuildFile; fileRef = 763263B11CD25B5200F56D9D /* jstest5.html */; };
+		763263B71CD25B5200F56D9D /* jstest6.html in Resources */ = {isa = PBXBuildFile; fileRef = 763263B21CD25B5200F56D9D /* jstest6.html */; };
+		763263B91CD2620000F56D9D /* myscript.js in Resources */ = {isa = PBXBuildFile; fileRef = 763263B81CD2620000F56D9D /* myscript.js */; };
+		763263BD1CD3B5E800F56D9D /* NodeDotJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763263BC1CD3B5E800F56D9D /* NodeDotJSViewController.m */; };
+		763263C01CD465B000F56D9D /* node.js in Resources */ = {isa = PBXBuildFile; fileRef = 763263BF1CD465B000F56D9D /* node.js */; };
+		7632661C1CD4C9B000F56D9D /* node1.js in Resources */ = {isa = PBXBuildFile; fileRef = 7632650E1CD4C9B000F56D9D /* node1.js */; };
+		7632661D1CD4C9B000F56D9D /* nodetest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7632650F1CD4C9B000F56D9D /* nodetest.txt */; };
+		7632661E1CD4C9B000F56D9D /* nodeicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 763265121CD4C9B000F56D9D /* nodeicon.png */; };
+		7632661F1CD4C9B000F56D9D /* t1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 763265131CD4C9B000F56D9D /* t1.txt */; };
+		763266221CD4CA8C00F56D9D /* LEDEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 763266211CD4CA8C00F56D9D /* LEDEventHandler.m */; };
+		763266281CD4D04400F56D9D /* LEDListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 763266271CD4D04400F56D9D /* LEDListener.m */; };
+		763266301CD6652200F56D9D /* framework.py in Resources */ = {isa = PBXBuildFile; fileRef = 7632662C1CD6652200F56D9D /* framework.py */; };
+		763266311CD6652200F56D9D /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7632662D1CD6652200F56D9D /* readme.txt */; };
+		763266321CD6652200F56D9D /* framework.py in Resources */ = {isa = PBXBuildFile; fileRef = 7632662E1CD6652200F56D9D /* framework.py */; };
+		763266331CD6652200F56D9D /* test.py in Resources */ = {isa = PBXBuildFile; fileRef = 7632662F1CD6652200F56D9D /* test.py */; };
+		7632663C1CD8F4B700F56D9D /* DesignPatternsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7632663B1CD8F4B700F56D9D /* DesignPatternsViewController.m */; };
+		763266401CD8F69B00F56D9D /* DPPrincipleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7632663F1CD8F69B00F56D9D /* DPPrincipleViewController.m */; };
+		763D45F21CCFB4A500BB88AA /* HTMLCSSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763D45F11CCFB4A500BB88AA /* HTMLCSSViewController.m */; };
+		763D45F51CCFB4C000BB88AA /* JavaScriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763D45F41CCFB4C000BB88AA /* JavaScriptViewController.m */; };
+		763D45F71CCFB75600BB88AA /* htmltest.html in Resources */ = {isa = PBXBuildFile; fileRef = 763D45F61CCFB75600BB88AA /* htmltest.html */; };
+		763D45F91CCFBB8700BB88AA /* htmltesticon.png in Resources */ = {isa = PBXBuildFile; fileRef = 763D45F81CCFBB8700BB88AA /* htmltesticon.png */; };
 		763E4DF61CA25E1D00470FCA /* ZFBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763E4DF51CA25E1D00470FCA /* ZFBViewController.m */; };
 		763E4DF91CA25E2900470FCA /* WDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763E4DF81CA25E2900470FCA /* WDViewController.m */; };
 		763E4DFC1CA25E3500470FCA /* PYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763E4DFB1CA25E3500470FCA /* PYViewController.m */; };
@@ -191,6 +220,12 @@
 		763FE38D1C8DCB6100CE67FF /* LEDDomainPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE38C1C8DCB6100CE67FF /* LEDDomainPredicate.m */; };
 		763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE38F1C8DD03000CE67FF /* TestDomainObject.m */; };
 		7653A4C71CC682CC005A27E2 /* SwiftFunctionClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653A4C61CC682CC005A27E2 /* SwiftFunctionClosure.swift */; };
+		76573D341CDA4E4D00F38585 /* DPCreationalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D331CDA4E4D00F38585 /* DPCreationalViewController.m */; };
+		76573D371CDA4E5E00F38585 /* DPBehavioralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D361CDA4E5E00F38585 /* DPBehavioralViewController.m */; };
+		76573D3A1CDA4E6D00F38585 /* DPStructuralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D391CDA4E6D00F38585 /* DPStructuralViewController.m */; };
+		76573D581CDA54F800F38585 /* DPCreationalTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D571CDA54F800F38585 /* DPCreationalTestViewController.m */; };
+		76573D5B1CDA57B400F38585 /* DPStructuralTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D5A1CDA57B400F38585 /* DPStructuralTestViewController.m */; };
+		76573D5E1CDA59B100F38585 /* DPBehavioralTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D5D1CDA59B100F38585 /* DPBehavioralTestViewController.m */; };
 		765F83401CC49ADD00D87D7F /* LDDataExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 765F833F1CC49ADD00D87D7F /* LDDataExtension.m */; };
 		76737A6F1CC385DA008AEC1C /* SwiftBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76737A641CC385DA008AEC1C /* SwiftBasic.swift */; };
 		76737A701CC385DA008AEC1C /* SwiftBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A661CC385DA008AEC1C /* SwiftBasicViewController.m */; };
@@ -281,6 +316,7 @@
 		76A2E9E41CCBDF9A00536E5D /* SwiftProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E9E31CCBDF9A00536E5D /* SwiftProjectViewController.swift */; };
 		76A2E9E61CCBE0F400536E5D /* SwiftThirdPartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E9E51CCBE0F400536E5D /* SwiftThirdPartViewController.swift */; };
 		76A2E9EA1CCBF00E00536E5D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A2E9E91CCBF00E00536E5D /* SnapKit.framework */; };
+		76A2E9EE1CCC954800536E5D /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A2E9ED1CCC954800536E5D /* AFNetworking.framework */; };
 		76BD6BC71CA1106100708977 /* WeiboMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BD6BC61CA1106100708977 /* WeiboMainViewController.m */; };
 		76BD6BCB1CA1118900708977 /* ZTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BD6BCA1CA1118900708977 /* ZTTabBar.m */; };
 		76BD6BD11CA1120E00708977 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BD6BCE1CA1120E00708977 /* UIBarButtonItem+Extension.m */; };
@@ -631,6 +667,44 @@
 		76213C491C970CEB001DAA53 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		76213C4B1C970D14001DAA53 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		76213C4D1C970D98001DAA53 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		763263951CD10FA100F56D9D /* LayoutConstraintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutConstraintViewController.h; sourceTree = "<group>"; };
+		763263961CD10FA100F56D9D /* LayoutConstraintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutConstraintViewController.m; sourceTree = "<group>"; };
+		763263981CD111A100F56D9D /* htmlcss.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = htmlcss.html; path = html/htmlcss.html; sourceTree = "<group>"; };
+		7632639A1CD1170B00F56D9D /* csstest.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = csstest.css; path = html/csstest.css; sourceTree = "<group>"; };
+		763263AA1CD25A1C00F56D9D /* jsicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jsicon.png; sourceTree = "<group>"; };
+		763263AB1CD25A1C00F56D9D /* jstest1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jstest1.html; sourceTree = "<group>"; };
+		763263AE1CD25B5200F56D9D /* jstest2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jstest2.html; sourceTree = "<group>"; };
+		763263AF1CD25B5200F56D9D /* jstest3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jstest3.html; sourceTree = "<group>"; };
+		763263B01CD25B5200F56D9D /* jstest4.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jstest4.html; sourceTree = "<group>"; };
+		763263B11CD25B5200F56D9D /* jstest5.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jstest5.html; sourceTree = "<group>"; };
+		763263B21CD25B5200F56D9D /* jstest6.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jstest6.html; sourceTree = "<group>"; };
+		763263B81CD2620000F56D9D /* myscript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = myscript.js; sourceTree = "<group>"; };
+		763263BB1CD3B5E800F56D9D /* NodeDotJSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeDotJSViewController.h; sourceTree = "<group>"; };
+		763263BC1CD3B5E800F56D9D /* NodeDotJSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeDotJSViewController.m; sourceTree = "<group>"; };
+		763263BF1CD465B000F56D9D /* node.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = node.js; sourceTree = "<group>"; };
+		7632650E1CD4C9B000F56D9D /* node1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = node1.js; sourceTree = "<group>"; };
+		7632650F1CD4C9B000F56D9D /* nodetest.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nodetest.txt; sourceTree = "<group>"; };
+		763265121CD4C9B000F56D9D /* nodeicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nodeicon.png; sourceTree = "<group>"; };
+		763265131CD4C9B000F56D9D /* t1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = t1.txt; sourceTree = "<group>"; };
+		763266201CD4CA8C00F56D9D /* LEDEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDEventHandler.h; sourceTree = "<group>"; };
+		763266211CD4CA8C00F56D9D /* LEDEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDEventHandler.m; sourceTree = "<group>"; };
+		763266231CD4CD7E00F56D9D /* LEDEventProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDEventProtocol.h; sourceTree = "<group>"; };
+		763266261CD4D04400F56D9D /* LEDListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDListener.h; sourceTree = "<group>"; };
+		763266271CD4D04400F56D9D /* LEDListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDListener.m; sourceTree = "<group>"; };
+		7632662C1CD6652200F56D9D /* framework.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = framework.py; sourceTree = "<group>"; };
+		7632662D1CD6652200F56D9D /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		7632662E1CD6652200F56D9D /* framework.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = framework.py; sourceTree = "<group>"; };
+		7632662F1CD6652200F56D9D /* test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test.py; sourceTree = "<group>"; };
+		7632663A1CD8F4B700F56D9D /* DesignPatternsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignPatternsViewController.h; sourceTree = "<group>"; };
+		7632663B1CD8F4B700F56D9D /* DesignPatternsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignPatternsViewController.m; sourceTree = "<group>"; };
+		7632663E1CD8F69B00F56D9D /* DPPrincipleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPPrincipleViewController.h; sourceTree = "<group>"; };
+		7632663F1CD8F69B00F56D9D /* DPPrincipleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPPrincipleViewController.m; sourceTree = "<group>"; };
+		763D45F01CCFB4A500BB88AA /* HTMLCSSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLCSSViewController.h; sourceTree = "<group>"; };
+		763D45F11CCFB4A500BB88AA /* HTMLCSSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLCSSViewController.m; sourceTree = "<group>"; };
+		763D45F31CCFB4C000BB88AA /* JavaScriptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptViewController.h; sourceTree = "<group>"; };
+		763D45F41CCFB4C000BB88AA /* JavaScriptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavaScriptViewController.m; sourceTree = "<group>"; };
+		763D45F61CCFB75600BB88AA /* htmltest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = htmltest.html; path = html/htmltest.html; sourceTree = "<group>"; };
+		763D45F81CCFBB8700BB88AA /* htmltesticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = htmltesticon.png; path = html/htmltesticon.png; sourceTree = "<group>"; };
 		763E4DF41CA25E1D00470FCA /* ZFBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBViewController.h; sourceTree = "<group>"; };
 		763E4DF51CA25E1D00470FCA /* ZFBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBViewController.m; sourceTree = "<group>"; };
 		763E4DF71CA25E2900470FCA /* WDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDViewController.h; sourceTree = "<group>"; };
@@ -725,6 +799,18 @@
 		763FE38E1C8DD03000CE67FF /* TestDomainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDomainObject.h; sourceTree = "<group>"; };
 		763FE38F1C8DD03000CE67FF /* TestDomainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDomainObject.m; sourceTree = "<group>"; };
 		7653A4C61CC682CC005A27E2 /* SwiftFunctionClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftFunctionClosure.swift; sourceTree = "<group>"; };
+		76573D321CDA4E4D00F38585 /* DPCreationalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPCreationalViewController.h; sourceTree = "<group>"; };
+		76573D331CDA4E4D00F38585 /* DPCreationalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCreationalViewController.m; sourceTree = "<group>"; };
+		76573D351CDA4E5E00F38585 /* DPBehavioralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPBehavioralViewController.h; sourceTree = "<group>"; };
+		76573D361CDA4E5E00F38585 /* DPBehavioralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPBehavioralViewController.m; sourceTree = "<group>"; };
+		76573D381CDA4E6D00F38585 /* DPStructuralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPStructuralViewController.h; sourceTree = "<group>"; };
+		76573D391CDA4E6D00F38585 /* DPStructuralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPStructuralViewController.m; sourceTree = "<group>"; };
+		76573D561CDA54F800F38585 /* DPCreationalTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPCreationalTestViewController.h; sourceTree = "<group>"; };
+		76573D571CDA54F800F38585 /* DPCreationalTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCreationalTestViewController.m; sourceTree = "<group>"; };
+		76573D591CDA57B400F38585 /* DPStructuralTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPStructuralTestViewController.h; sourceTree = "<group>"; };
+		76573D5A1CDA57B400F38585 /* DPStructuralTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPStructuralTestViewController.m; sourceTree = "<group>"; };
+		76573D5C1CDA59B100F38585 /* DPBehavioralTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPBehavioralTestViewController.h; sourceTree = "<group>"; };
+		76573D5D1CDA59B100F38585 /* DPBehavioralTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPBehavioralTestViewController.m; sourceTree = "<group>"; };
 		765F833E1CC49ADD00D87D7F /* LDDataExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDataExtension.h; sourceTree = "<group>"; };
 		765F833F1CC49ADD00D87D7F /* LDDataExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDataExtension.m; sourceTree = "<group>"; };
 		76737A631CC385DA008AEC1C /* iStudyDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iStudyDemo-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -847,6 +933,7 @@
 		76A2E9E31CCBDF9A00536E5D /* SwiftProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftProjectViewController.swift; sourceTree = "<group>"; };
 		76A2E9E51CCBE0F400536E5D /* SwiftThirdPartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftThirdPartViewController.swift; sourceTree = "<group>"; };
 		76A2E9E91CCBF00E00536E5D /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/iStudyDemo-grkdddiygapdfhcjaqgvlnexnhnk/Build/Products/Debug-iphonesimulator/SnapKit.framework"; sourceTree = "<group>"; };
+		76A2E9ED1CCC954800536E5D /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/iStudyDemo-grkdddiygapdfhcjaqgvlnexnhnk/Build/Products/Debug-iphoneos/AFNetworking.framework"; sourceTree = "<group>"; };
 		76BD6BC51CA1106100708977 /* WeiboMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboMainViewController.h; sourceTree = "<group>"; };
 		76BD6BC61CA1106100708977 /* WeiboMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboMainViewController.m; sourceTree = "<group>"; };
 		76BD6BC91CA1118900708977 /* ZTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTTabBar.h; sourceTree = "<group>"; };
@@ -1094,6 +1181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76A2E9EE1CCC954800536E5D /* AFNetworking.framework in Frameworks */,
 				76A2E9EA1CCBF00E00536E5D /* SnapKit.framework in Frameworks */,
 				7601D9331CBEA56800E6F6E7 /* CoreGraphics.framework in Frameworks */,
 				76C035F41CAB940B002241E5 /* MediaPlayer.framework in Frameworks */,
@@ -1398,6 +1486,11 @@
 		761931AD1C8BCD010022A311 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				763266391CD8F49300F56D9D /* DesignPatterns */,
+				763266291CD6652100F56D9D /* Python */,
+				763263BA1CD3B5C400F56D9D /* NodeDotJS */,
+				763D45EE1CCFB46C00BB88AA /* HTML_CSS */,
+				763D45EF1CCFB46C00BB88AA /* JavaScript */,
 				760AF1031CB1141200A0D242 /* PushNotification */,
 				76C035991CA68FC7002241E5 /* RAC */,
 				76C035811CA68923002241E5 /* MVVM */,
@@ -1615,6 +1708,139 @@
 			path = SinaWeiboSDK;
 			sourceTree = "<group>";
 		};
+		763263A91CD2592C00F56D9D /* js */ = {
+			isa = PBXGroup;
+			children = (
+				763263B81CD2620000F56D9D /* myscript.js */,
+				763263AA1CD25A1C00F56D9D /* jsicon.png */,
+				763263AB1CD25A1C00F56D9D /* jstest1.html */,
+				763263AE1CD25B5200F56D9D /* jstest2.html */,
+				763263AF1CD25B5200F56D9D /* jstest3.html */,
+				763263B01CD25B5200F56D9D /* jstest4.html */,
+				763263B11CD25B5200F56D9D /* jstest5.html */,
+				763263B21CD25B5200F56D9D /* jstest6.html */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		763263BA1CD3B5C400F56D9D /* NodeDotJS */ = {
+			isa = PBXGroup;
+			children = (
+				763263BE1CD4654B00F56D9D /* Node */,
+				763263BB1CD3B5E800F56D9D /* NodeDotJSViewController.h */,
+				763263BC1CD3B5E800F56D9D /* NodeDotJSViewController.m */,
+			);
+			path = NodeDotJS;
+			sourceTree = "<group>";
+		};
+		763263BE1CD4654B00F56D9D /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				763263C11CD4C9B000F56D9D /* node_modules */,
+				7632650E1CD4C9B000F56D9D /* node1.js */,
+				7632650F1CD4C9B000F56D9D /* nodetest.txt */,
+				763265101CD4C9B000F56D9D /* public */,
+				763263BF1CD465B000F56D9D /* node.js */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		763263C11CD4C9B000F56D9D /* node_modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = node_modules;
+			sourceTree = "<group>";
+		};
+		763265101CD4C9B000F56D9D /* public */ = {
+			isa = PBXGroup;
+			children = (
+				763265111CD4C9B000F56D9D /* images */,
+				763265131CD4C9B000F56D9D /* t1.txt */,
+			);
+			path = public;
+			sourceTree = "<group>";
+		};
+		763265111CD4C9B000F56D9D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				763265121CD4C9B000F56D9D /* nodeicon.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		763266291CD6652100F56D9D /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				7632662A1CD6652200F56D9D /* framework */,
+				7632662E1CD6652200F56D9D /* framework.py */,
+				7632662F1CD6652200F56D9D /* test.py */,
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
+		7632662A1CD6652200F56D9D /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				7632662B1CD6652200F56D9D /* framework */,
+				7632662C1CD6652200F56D9D /* framework.py */,
+				7632662D1CD6652200F56D9D /* readme.txt */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		7632662B1CD6652200F56D9D /* framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		763266391CD8F49300F56D9D /* DesignPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				76573D2F1CDA4DEE00F38585 /* DPCreational */,
+				76573D311CDA4DEE00F38585 /* DPStructural */,
+				76573D2E1CDA4DEE00F38585 /* DPBehavioral */,
+				7632663D1CD8F68A00F56D9D /* DPPrinciple */,
+				7632663A1CD8F4B700F56D9D /* DesignPatternsViewController.h */,
+				7632663B1CD8F4B700F56D9D /* DesignPatternsViewController.m */,
+			);
+			path = DesignPatterns;
+			sourceTree = "<group>";
+		};
+		7632663D1CD8F68A00F56D9D /* DPPrinciple */ = {
+			isa = PBXGroup;
+			children = (
+				7632663E1CD8F69B00F56D9D /* DPPrincipleViewController.h */,
+				7632663F1CD8F69B00F56D9D /* DPPrincipleViewController.m */,
+			);
+			path = DPPrinciple;
+			sourceTree = "<group>";
+		};
+		763D45EE1CCFB46C00BB88AA /* HTML_CSS */ = {
+			isa = PBXGroup;
+			children = (
+				7632639A1CD1170B00F56D9D /* csstest.css */,
+				763263981CD111A100F56D9D /* htmlcss.html */,
+				763D45F61CCFB75600BB88AA /* htmltest.html */,
+				763D45F81CCFBB8700BB88AA /* htmltesticon.png */,
+				763D45F01CCFB4A500BB88AA /* HTMLCSSViewController.h */,
+				763D45F11CCFB4A500BB88AA /* HTMLCSSViewController.m */,
+			);
+			path = HTML_CSS;
+			sourceTree = "<group>";
+		};
+		763D45EF1CCFB46C00BB88AA /* JavaScript */ = {
+			isa = PBXGroup;
+			children = (
+				763263A91CD2592C00F56D9D /* js */,
+				763D45F31CCFB4C000BB88AA /* JavaScriptViewController.h */,
+				763D45F41CCFB4C000BB88AA /* JavaScriptViewController.m */,
+			);
+			path = JavaScript;
+			sourceTree = "<group>";
+		};
 		763E4DF01CA25DAF00470FCA /* KB */ = {
 			isa = PBXGroup;
 			children = (
@@ -1815,6 +2041,239 @@
 			path = Mantle;
 			sourceTree = "<group>";
 		};
+		76573D2E1CDA4DEE00F38585 /* DPBehavioral */ = {
+			isa = PBXGroup;
+			children = (
+				76573D3E1CDA535000F38585 /* DPChainResponsibility */,
+				76573D3F1CDA535000F38585 /* DPCommand */,
+				76573D401CDA535000F38585 /* DPInterpreter */,
+				76573D411CDA535000F38585 /* DPIterator */,
+				76573D421CDA535000F38585 /* DPMediator */,
+				76573D431CDA535000F38585 /* DPMemento */,
+				76573D441CDA535000F38585 /* DPNULLObject */,
+				76573D451CDA535000F38585 /* DPObserver */,
+				76573D461CDA535000F38585 /* DPState */,
+				76573D471CDA535000F38585 /* DPStrategy */,
+				76573D481CDA535000F38585 /* DPTemplate */,
+				76573D491CDA535000F38585 /* DPVisitor */,
+				76573D351CDA4E5E00F38585 /* DPBehavioralViewController.h */,
+				76573D361CDA4E5E00F38585 /* DPBehavioralViewController.m */,
+				76573D5C1CDA59B100F38585 /* DPBehavioralTestViewController.h */,
+				76573D5D1CDA59B100F38585 /* DPBehavioralTestViewController.m */,
+			);
+			path = DPBehavioral;
+			sourceTree = "<group>";
+		};
+		76573D2F1CDA4DEE00F38585 /* DPCreational */ = {
+			isa = PBXGroup;
+			children = (
+				76573D4A1CDA535F00F38585 /* DPAbstractFactory */,
+				76573D4B1CDA535F00F38585 /* DPBuilder */,
+				76573D4C1CDA535F00F38585 /* DPPrototype */,
+				76573D4D1CDA535F00F38585 /* DPSingleton */,
+				76573D301CDA4DEE00F38585 /* DPSimpleFactory */,
+				76573D321CDA4E4D00F38585 /* DPCreationalViewController.h */,
+				76573D331CDA4E4D00F38585 /* DPCreationalViewController.m */,
+				76573D561CDA54F800F38585 /* DPCreationalTestViewController.h */,
+				76573D571CDA54F800F38585 /* DPCreationalTestViewController.m */,
+			);
+			path = DPCreational;
+			sourceTree = "<group>";
+		};
+		76573D301CDA4DEE00F38585 /* DPSimpleFactory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPSimpleFactory;
+			sourceTree = "<group>";
+		};
+		76573D311CDA4DEE00F38585 /* DPStructural */ = {
+			isa = PBXGroup;
+			children = (
+				76573D4E1CDA537000F38585 /* DPAdapter */,
+				76573D4F1CDA537000F38585 /* DPBridge */,
+				76573D501CDA537000F38585 /* DPComposite */,
+				76573D511CDA537000F38585 /* DPDecorator */,
+				76573D521CDA537000F38585 /* DPFacade */,
+				76573D531CDA537000F38585 /* DPFilter */,
+				76573D541CDA537000F38585 /* DPFlyweight */,
+				76573D551CDA537000F38585 /* DPProxy */,
+				76573D381CDA4E6D00F38585 /* DPStructuralViewController.h */,
+				76573D391CDA4E6D00F38585 /* DPStructuralViewController.m */,
+				76573D591CDA57B400F38585 /* DPStructuralTestViewController.h */,
+				76573D5A1CDA57B400F38585 /* DPStructuralTestViewController.m */,
+			);
+			path = DPStructural;
+			sourceTree = "<group>";
+		};
+		76573D3E1CDA535000F38585 /* DPChainResponsibility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPChainResponsibility;
+			sourceTree = "<group>";
+		};
+		76573D3F1CDA535000F38585 /* DPCommand */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPCommand;
+			sourceTree = "<group>";
+		};
+		76573D401CDA535000F38585 /* DPInterpreter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPInterpreter;
+			sourceTree = "<group>";
+		};
+		76573D411CDA535000F38585 /* DPIterator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPIterator;
+			sourceTree = "<group>";
+		};
+		76573D421CDA535000F38585 /* DPMediator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPMediator;
+			sourceTree = "<group>";
+		};
+		76573D431CDA535000F38585 /* DPMemento */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPMemento;
+			sourceTree = "<group>";
+		};
+		76573D441CDA535000F38585 /* DPNULLObject */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPNULLObject;
+			sourceTree = "<group>";
+		};
+		76573D451CDA535000F38585 /* DPObserver */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPObserver;
+			sourceTree = "<group>";
+		};
+		76573D461CDA535000F38585 /* DPState */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPState;
+			sourceTree = "<group>";
+		};
+		76573D471CDA535000F38585 /* DPStrategy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPStrategy;
+			sourceTree = "<group>";
+		};
+		76573D481CDA535000F38585 /* DPTemplate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPTemplate;
+			sourceTree = "<group>";
+		};
+		76573D491CDA535000F38585 /* DPVisitor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPVisitor;
+			sourceTree = "<group>";
+		};
+		76573D4A1CDA535F00F38585 /* DPAbstractFactory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPAbstractFactory;
+			sourceTree = "<group>";
+		};
+		76573D4B1CDA535F00F38585 /* DPBuilder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPBuilder;
+			sourceTree = "<group>";
+		};
+		76573D4C1CDA535F00F38585 /* DPPrototype */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPPrototype;
+			sourceTree = "<group>";
+		};
+		76573D4D1CDA535F00F38585 /* DPSingleton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPSingleton;
+			sourceTree = "<group>";
+		};
+		76573D4E1CDA537000F38585 /* DPAdapter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPAdapter;
+			sourceTree = "<group>";
+		};
+		76573D4F1CDA537000F38585 /* DPBridge */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPBridge;
+			sourceTree = "<group>";
+		};
+		76573D501CDA537000F38585 /* DPComposite */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPComposite;
+			sourceTree = "<group>";
+		};
+		76573D511CDA537000F38585 /* DPDecorator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPDecorator;
+			sourceTree = "<group>";
+		};
+		76573D521CDA537000F38585 /* DPFacade */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPFacade;
+			sourceTree = "<group>";
+		};
+		76573D531CDA537000F38585 /* DPFilter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPFilter;
+			sourceTree = "<group>";
+		};
+		76573D541CDA537000F38585 /* DPFlyweight */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPFlyweight;
+			sourceTree = "<group>";
+		};
+		76573D551CDA537000F38585 /* DPProxy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPProxy;
+			sourceTree = "<group>";
+		};
 		76737A611CC385DA008AEC1C /* SwfitExtensionProtocol */ = {
 			isa = PBXGroup;
 			children = (
@@ -1871,6 +2330,7 @@
 		76737A6D1CC385DA008AEC1C /* SwiftProject */ = {
 			isa = PBXGroup;
 			children = (
+				76A2E9EC1CCC910400536E5D /* hangge */,
 				76737A891CC38920008AEC1C /* SwiftProjectViewController.h */,
 				76737A8A1CC38920008AEC1C /* SwiftProjectViewController.m */,
 				76A2E9E31CCBDF9A00536E5D /* SwiftProjectViewController.swift */,
@@ -2044,6 +2504,13 @@
 				769718201C9B0DDA00D0AC63 /* PopViewLikeQQView.m */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		76A2E9EC1CCC910400536E5D /* hangge */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = hangge;
 			sourceTree = "<group>";
 		};
 		76BD6BC41CA1103C00708977 /* Main */ = {
@@ -2348,6 +2815,8 @@
 				76C035771CA68507002241E5 /* CustomControlViewController.m */,
 				760AF1391CB238D200A0D242 /* CCModalViewViewController.h */,
 				760AF13A1CB238D200A0D242 /* CCModalViewViewController.m */,
+				763263951CD10FA100F56D9D /* LayoutConstraintViewController.h */,
+				763263961CD10FA100F56D9D /* LayoutConstraintViewController.m */,
 			);
 			path = CustomControl;
 			sourceTree = "<group>";
@@ -2387,6 +2856,11 @@
 			children = (
 				76C035891CA68954002241E5 /* RunLoopViewController.h */,
 				76C0358A1CA68954002241E5 /* RunLoopViewController.m */,
+				763266201CD4CA8C00F56D9D /* LEDEventHandler.h */,
+				763266211CD4CA8C00F56D9D /* LEDEventHandler.m */,
+				763266231CD4CD7E00F56D9D /* LEDEventProtocol.h */,
+				763266261CD4D04400F56D9D /* LEDListener.h */,
+				763266271CD4D04400F56D9D /* LEDListener.m */,
 			);
 			path = RunLoop;
 			sourceTree = "<group>";
@@ -2772,6 +3246,7 @@
 		DF399414AD08488BE365F5E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76A2E9ED1CCC954800536E5D /* AFNetworking.framework */,
 				76A2E9E91CCBF00E00536E5D /* SnapKit.framework */,
 				7601D9321CBEA56800E6F6E7 /* CoreGraphics.framework */,
 				76C035F31CAB940B002241E5 /* MediaPlayer.framework */,
@@ -2926,24 +3401,31 @@
 				76C036031CAB98F5002241E5 /* 情非得已.mp3 in Resources */,
 				763E4E6D1CA2B7F500470FCA /* 2013112800002214@2x.png in Resources */,
 				7601D9421CBFF5D000E6F6E7 /* metal.png in Resources */,
+				763266301CD6652200F56D9D /* framework.py in Resources */,
+				763263991CD111A100F56D9D /* htmlcss.html in Resources */,
 				763E4E861CA2B7F500470FCA /* USE_MOBILETRANSFER.png in Resources */,
 				763E4E7E1CA2B7F500470FCA /* Home_checkingRing@2x.png in Resources */,
 				763E4E641CA2B7F500470FCA /* 10000008.png in Resources */,
 				769718681C9D466E00D0AC63 /* header.png in Resources */,
+				763263B71CD25B5200F56D9D /* jstest6.html in Resources */,
 				763E4E711CA2B7F500470FCA /* Home_appfrag_credit.png in Resources */,
 				76C035AB1CA78FEA002241E5 /* line@2x.png in Resources */,
 				7697186E1C9D466E00D0AC63 /* qvip_ps_template_gray@2x.png in Resources */,
+				7632639B1CD1170B00F56D9D /* csstest.css in Resources */,
 				763E4E101CA2609A00470FCA /* zfb_sel@2x.png in Resources */,
+				763263C01CD465B000F56D9D /* node.js in Resources */,
 				76C034EC1CA41258002241E5 /* bg_keyboard_selected@2x.png in Resources */,
 				763E4E7F1CA2B7F500470FCA /* Home_refresh_bg.jpg in Resources */,
 				76C036001CAB98F5002241E5 /* play.png in Resources */,
 				769718721C9D466E00D0AC63 /* sidebar_ QRcode_normal@2x.png in Resources */,
 				76C035431CA675F0002241E5 /* chat_bottom_keyboard_press.png in Resources */,
+				7632661D1CD4C9B000F56D9D /* nodetest.txt in Resources */,
 				76C479901C8ED8C800EAE07E /* AMap.bundle in Resources */,
 				7619317C1C8BC5120022A311 /* LaunchScreen.storyboard in Resources */,
 				7697186C1C9D466E00D0AC63 /* left.png in Resources */,
 				76C034F61CA41258002241E5 /* icon_accessory_view@2x.png in Resources */,
 				763E4E7C1CA2B7F500470FCA /* ppc_www_back_disable@2x.png in Resources */,
+				763263B91CD2620000F56D9D /* myscript.js in Resources */,
 				763E4E621CA2B7F500470FCA /* 10000006.png in Resources */,
 				76C0354B1CA675F0002241E5 /* chat_timeline_bg.png in Resources */,
 				76C034EA1CA41258002241E5 /* bg_keyboard_delete@2x.png in Resources */,
@@ -2956,7 +3438,10 @@
 				763E4E881CA2B7F500470FCA /* USE_MRECHAREGE.png in Resources */,
 				769718791C9D466E00D0AC63 /* sidebar_file@3x.png in Resources */,
 				76C035071CA41258002241E5 /* input_textField_selected@2x.png in Resources */,
+				763D45F91CCFBB8700BB88AA /* htmltesticon.png in Resources */,
+				763263B31CD25B5200F56D9D /* jstest2.html in Resources */,
 				76C034E91CA41258002241E5 /* bg_keyboard@2x.png in Resources */,
+				763263B41CD25B5200F56D9D /* jstest3.html in Resources */,
 				76C035441CA675F0002241E5 /* chat_bottom_smile_nor.png in Resources */,
 				769718691C9D466E00D0AC63 /* jiahaoyou.png in Resources */,
 				76C035481CA675F0002241E5 /* chat_bottom_up_press.png in Resources */,
@@ -2982,21 +3467,25 @@
 				7697187D1C9D466E00D0AC63 /* sidebar_nightmode_off_press@3x.png in Resources */,
 				76C035461CA675F0002241E5 /* chat_bottom_textfield.png in Resources */,
 				763E4E841CA2B7F500470FCA /* USE_FLB.png in Resources */,
+				763D45F71CCFB75600BB88AA /* htmltest.html in Resources */,
 				763E4E1F1CA2B71800470FCA /* bg_navigationBar@2x.png in Resources */,
 				7697187E1C9D466E00D0AC63 /* sidebar_nightmode_off@3x.png in Resources */,
 				763E4E6E1CA2B7F500470FCA /* 30000001.png in Resources */,
 				76C034FD1CA41258002241E5 /* icon_password_change@2x.png in Resources */,
+				763263AD1CD25A1C00F56D9D /* jstest1.html in Resources */,
 				763E4E5E1CA2B7F500470FCA /* 09999999.png in Resources */,
 				7697187C1C9D466E00D0AC63 /* sidebar_nightmode_loading@3x.png.png in Resources */,
 				76C034F11CA41258002241E5 /* btn_paypassword_fogot@2x.png in Resources */,
 				76C0350E1CA43103002241E5 /* 3.jpg in Resources */,
 				763E4E671CA2B7F500470FCA /* 11000002.png in Resources */,
+				763266311CD6652200F56D9D /* readme.txt in Resources */,
 				763E4E821CA2B7F500470FCA /* TitleBar_BG@2x.png in Resources */,
 				76C035531CA675F0002241E5 /* toolbar_bottom_bar.png in Resources */,
 				76A2E9E21CCBDC4100536E5D /* test_.plist in Resources */,
 				769718781C9D466E00D0AC63 /* sidebar_favorite@3x.png.jpg in Resources */,
 				763E4E7A1CA2B7F500470FCA /* ap_home_top_icon_scan_new_highlight@2x.png in Resources */,
 				769718771C9D466E00D0AC63 /* sidebar_favorite@3x.png in Resources */,
+				7632661E1CD4C9B000F56D9D /* nodeicon.png in Resources */,
 				763E4E6C1CA2B7F500470FCA /* 2013080300000698.png in Resources */,
 				769718651C9D466E00D0AC63 /* diannao.png in Resources */,
 				76C0350C1CA43103002241E5 /* 1.jpg in Resources */,
@@ -3021,9 +3510,11 @@
 				769718751C9D466E00D0AC63 /* sidebar_decoration@3x.png in Resources */,
 				763E4E0B1CA2609A00470FCA /* py@2x.png in Resources */,
 				763E4E831CA2B7F500470FCA /* USE_CARDTRANSFER.png in Resources */,
+				7632661F1CD4C9B000F56D9D /* t1.txt in Resources */,
 				76C036011CAB98F5002241E5 /* up.png in Resources */,
 				76213C461C970C9F001DAA53 /* WeiboSDK.bundle in Resources */,
 				763E4E1C1CA2B71800470FCA /* bg_barcode_middleseparateline@2x.png in Resources */,
+				763263AC1CD25A1C00F56D9D /* jsicon.png in Resources */,
 				760AF0E81CB0330D00A0D242 /* btn_backItem.png in Resources */,
 				76C034F21CA41258002241E5 /* btn_segmentedcontrol_left_normal@2x.png in Resources */,
 				760AF0FF1CB1058900A0D242 /* jstest.html in Resources */,
@@ -3032,7 +3523,9 @@
 				769718831C9D466E00D0AC63 /* sidebar_signature_nor@2x.png in Resources */,
 				763E4E651CA2B7F500470FCA /* 10000009.png in Resources */,
 				763E4E691CA2B7F500470FCA /* 20000046.png in Resources */,
+				763266321CD6652200F56D9D /* framework.py in Resources */,
 				763E4E761CA2B7F500470FCA /* ad_close@2x.png in Resources */,
+				763263B51CD25B5200F56D9D /* jstest4.html in Resources */,
 				763E4E1E1CA2B71800470FCA /* bg_barcode_topseparateline@2x.png in Resources */,
 				763E4E5B1CA2B7F500470FCA /* 09999976.png in Resources */,
 				763E4E891CA2B7F500470FCA /* USE_TRANSFER.png in Resources */,
@@ -3085,6 +3578,7 @@
 				7697188D1C9D466E00D0AC63 /* taolun.png in Resources */,
 				76C034F91CA41258002241E5 /* icon_login_password@2x.png in Resources */,
 				76C0354C1CA675F0002241E5 /* chatfrom_bg_focused.png in Resources */,
+				763266331CD6652200F56D9D /* test.py in Resources */,
 				76C0354A1CA675F0002241E5 /* chat_bottom_voice_press.png in Resources */,
 				769717D31C98609E00D0AC63 /* test.png in Resources */,
 				763E4E921CA2F61300470FCA /* icon.jpg in Resources */,
@@ -3098,6 +3592,7 @@
 				769717DD1C986A6B00D0AC63 /* SimpleFragment.glsl in Resources */,
 				76C035471CA675F0002241E5 /* chat_bottom_up_nor.png in Resources */,
 				763E4E701CA2B7F500470FCA /* Home_appfrag_blance.png in Resources */,
+				7632661C1CD4C9B000F56D9D /* node1.js in Resources */,
 				76C034E81CA41258002241E5 /* bg_contractinfo_firstsection_readonly@2x.png in Resources */,
 				763E4E251CA2B71800470FCA /* icon_paymentselected_selectedbutton@2x.png in Resources */,
 				7697186B1C9D466E00D0AC63 /* kov.png in Resources */,
@@ -3106,6 +3601,7 @@
 				76C035451CA675F0002241E5 /* chat_bottom_smile_press.png in Resources */,
 				7697187F1C9D466E00D0AC63 /* sidebar_nightmode_on@3x.png in Resources */,
 				7697186A1C9D466E00D0AC63 /* kou.png in Resources */,
+				763263B61CD25B5200F56D9D /* jstest5.html in Resources */,
 				76BD6BD41CA1149300708977 /* Images.xcassets in Resources */,
 				769718881C9D466E00D0AC63 /* skin_tab_icon_conversation_selected.png in Resources */,
 				76C035041CA41258002241E5 /* icon_radio_on@2x.png in Resources */,
@@ -3250,9 +3746,11 @@
 				761931A51C8BC8A20022A311 /* AppDelegate.m in Sources */,
 				769718931C9D50D900D0AC63 /* QQTabbarViewController.m in Sources */,
 				76A2E9DC1CCB83A000536E5D /* SwiftMemoryManager.swift in Sources */,
+				763D45F21CCFB4A500BB88AA /* HTMLCSSViewController.m in Sources */,
 				763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */,
 				76E903901C9EFB5A003AC33A /* SinaWeiboViewController.m in Sources */,
 				76E9164C1CAC219600C8C63A /* TestPortalViewController.m in Sources */,
+				7632663C1CD8F4B700F56D9D /* DesignPatternsViewController.m in Sources */,
 				7697189B1C9E466C00D0AC63 /* QQSideBarViewController.m in Sources */,
 				76C035E21CAA99AE002241E5 /* PhotoViewController.m in Sources */,
 				76737A781CC3889B008AEC1C /* SwiftClassViewController.m in Sources */,
@@ -3276,6 +3774,8 @@
 				76C035881CA68943002241E5 /* MVVMViewController.m in Sources */,
 				76C0359D1CA68FD6002241E5 /* RACViewController.m in Sources */,
 				76C035241CA663E5002241E5 /* TransitionViewController.m in Sources */,
+				76573D371CDA4E5E00F38585 /* DPBehavioralViewController.m in Sources */,
+				763263971CD10FA100F56D9D /* LayoutConstraintViewController.m in Sources */,
 				760AF11D1CB11A5D00A0D242 /* NSData+LEDDigest.m in Sources */,
 				76E1B8B01CC9215300C71338 /* SearchVCViewController.m in Sources */,
 				76213BD61C96BE42001DAA53 /* DeviceInfoViewController.m in Sources */,
@@ -3292,11 +3792,14 @@
 				760CBEB41CC1FF830087A9AA /* LEDDownloadManager.m in Sources */,
 				76737A701CC385DA008AEC1C /* SwiftBasicViewController.m in Sources */,
 				76C034C61CA411BF002241E5 /* UIViewAdditions.m in Sources */,
+				763266401CD8F69B00F56D9D /* DPPrincipleViewController.m in Sources */,
 				76213BDE1C97048C001DAA53 /* ThirdShareViewController.m in Sources */,
 				76C479A11C8F248F00EAE07E /* coreData.xcdatamodeld in Sources */,
 				76C0358E1CA68964002241E5 /* RunTimeViewController.m in Sources */,
+				76573D581CDA54F800F38585 /* DPCreationalTestViewController.m in Sources */,
 				76737A6F1CC385DA008AEC1C /* SwiftBasic.swift in Sources */,
 				769717E91C992C1B00D0AC63 /* QQMainViewController.m in Sources */,
+				76573D3A1CDA4E6D00F38585 /* DPStructuralViewController.m in Sources */,
 				76C035E81CAAD54A002241E5 /* CustomTakePhotoViewController.m in Sources */,
 				760AF11F1CB11A5D00A0D242 /* LEDAESCrypto+File.m in Sources */,
 				76E9039C1C9F009F003AC33A /* WeiChatViewController.m in Sources */,
@@ -3316,6 +3819,7 @@
 				769718211C9B0DDA00D0AC63 /* PopViewLikeQQView.m in Sources */,
 				7601D8D11CB9610A00E6F6E7 /* LEDProvince.m in Sources */,
 				7601D8F01CBA4E1C00E6F6E7 /* LEDStudent.m in Sources */,
+				763266281CD4D04400F56D9D /* LEDListener.m in Sources */,
 				76C035691CA681C2002241E5 /* PortalViewController.m in Sources */,
 				76C0355C1CA6776E002241E5 /* MessageFrame.m in Sources */,
 				76C035801CA68792002241E5 /* DrawLayerViewController.m in Sources */,
@@ -3326,6 +3830,7 @@
 				761931A71C8BC8A20022A311 /* MainViewController.m in Sources */,
 				76A2E9E61CCBE0F400536E5D /* SwiftThirdPartViewController.swift in Sources */,
 				769717E11C986A7B00D0AC63 /* OpenGLMainViewController.m in Sources */,
+				76573D5E1CDA59B100F38585 /* DPBehavioralTestViewController.m in Sources */,
 				76C035211CA65D62002241E5 /* KeyFrameViewController.m in Sources */,
 				76E1B8BB1CC9260400C71338 /* GzipUtility.m in Sources */,
 				76C0352B1CA6713C002241E5 /* TouchIDManager.m in Sources */,
@@ -3339,6 +3844,7 @@
 				76213BDA1C97029A001DAA53 /* ThirdPartViewController.m in Sources */,
 				76C034BE1CA40EC7002241E5 /* SPKADViewController.m in Sources */,
 				76C4799C1C8EF67B00EAE07E /* QuartzCoreViewController.m in Sources */,
+				76573D5B1CDA57B400F38585 /* DPStructuralTestViewController.m in Sources */,
 				7653A4C71CC682CC005A27E2 /* SwiftFunctionClosure.swift in Sources */,
 				76E9037E1C9ED4B4003AC33A /* NaviMenuViewController.m in Sources */,
 				763E4DFC1CA25E3500470FCA /* PYViewController.m in Sources */,
@@ -3352,6 +3858,7 @@
 				76BD6BC71CA1106100708977 /* WeiboMainViewController.m in Sources */,
 				76E1B8BD1CC9260400C71338 /* RSA.m in Sources */,
 				7601D9261CBD42BD00E6F6E7 /* LEDGLView.m in Sources */,
+				763D45F51CCFB4C000BB88AA /* JavaScriptViewController.m in Sources */,
 				76E903991C9F0089003AC33A /* AliPayViewController.m in Sources */,
 				76737A8B1CC38920008AEC1C /* SwiftProjectViewController.m in Sources */,
 				763FE3641C8D8BFA00CE67FF /* HTTPTestViewController.m in Sources */,
@@ -3379,11 +3886,13 @@
 				76C035A01CA68FF0002241E5 /* ReactNativeViewController.m in Sources */,
 				760AF0F11CB0E35600A0D242 /* NSArray+LEDFoundation.m in Sources */,
 				76CDEB9A1CB95ABD00DFCB16 /* LEDProvincesDomain.m in Sources */,
+				763266221CD4CA8C00F56D9D /* LEDEventHandler.m in Sources */,
 				7681A8231C95A04500FC6843 /* ObjectStorageManager.m in Sources */,
 				76A2E9DE1CCB8EC000536E5D /* SwiftFoundation.swift in Sources */,
 				76C479A71C8F264100EAE07E /* TestCoreData.m in Sources */,
 				76E9164F1CAC2FA300C8C63A /* LEDWebViewController.m in Sources */,
 				76E9038B1C9ED53E003AC33A /* YBNavMenuController.m in Sources */,
+				763263BD1CD3B5E800F56D9D /* NodeDotJSViewController.m in Sources */,
 				76C035DC1CAA998C002241E5 /* CustomPhotoViewController.m in Sources */,
 				769717DB1C986A6B00D0AC63 /* OpenGLTestView.m in Sources */,
 				76C035281CA6709F002241E5 /* TouchIDViewController.m in Sources */,
@@ -3403,6 +3912,7 @@
 				76C035D61CAA9969002241E5 /* AlbumViewController.m in Sources */,
 				76737A911CC3D7E4008AEC1C /* SwiftBasicPart.swift in Sources */,
 				76C035781CA68507002241E5 /* CustomControlViewController.m in Sources */,
+				76573D341CDA4E4D00F38585 /* DPCreationalViewController.m in Sources */,
 				76A2E9DA1CCB790100536E5D /* SwiftExtensionProtocol.swift in Sources */,
 				76C0358B1CA68954002241E5 /* RunLoopViewController.m in Sources */,
 				76E903891C9ED53E003AC33A /* NavMenuScrollView.m in Sources */,
@@ -3585,34 +4095,6 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
-					"-l\"AFNetworking\"",
-					"-l\"ASIHTTPRequest\"",
-					"-l\"CocoaAsyncSocket\"",
-					"-l\"CocoaLumberjack\"",
-					"-l\"FMDB\"",
-					"-l\"JSONKit\"",
-					"-l\"JSONModel\"",
-					"-l\"JSPatch\"",
-					"-l\"Mantle\"",
-					"-l\"Masonry\"",
-					"-l\"OHHTTPStubs\"",
-					"-l\"RPJSONValidator\"",
-					"-l\"Reachability\"",
-					"-l\"ReactiveCocoa\"",
-					"-l\"SDWebImage\"",
-					"-l\"WebViewJavascriptBridge\"",
-					"-l\"XMPPFramework\"",
-					"-l\"ZBarSDK\"",
-					"-l\"crypto\"",
-					"-l\"iconv\"",
-					"-l\"idn\"",
-					"-l\"libextobjc\"",
-					"-l\"resolv\"",
-					"-l\"sqlite3\"",
-					"-l\"ssl\"",
-					"-l\"xml2\"",
-					"-l\"xml2.2\"",
-					"-l\"z.1\"",
 					"-framework",
 					"\"AVFoundation\"",
 					"-framework",
@@ -3683,34 +4165,6 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
-					"-l\"AFNetworking\"",
-					"-l\"ASIHTTPRequest\"",
-					"-l\"CocoaAsyncSocket\"",
-					"-l\"CocoaLumberjack\"",
-					"-l\"FMDB\"",
-					"-l\"JSONKit\"",
-					"-l\"JSONModel\"",
-					"-l\"JSPatch\"",
-					"-l\"Mantle\"",
-					"-l\"Masonry\"",
-					"-l\"OHHTTPStubs\"",
-					"-l\"RPJSONValidator\"",
-					"-l\"Reachability\"",
-					"-l\"ReactiveCocoa\"",
-					"-l\"SDWebImage\"",
-					"-l\"WebViewJavascriptBridge\"",
-					"-l\"XMPPFramework\"",
-					"-l\"ZBarSDK\"",
-					"-l\"crypto\"",
-					"-l\"iconv\"",
-					"-l\"idn\"",
-					"-l\"libextobjc\"",
-					"-l\"resolv\"",
-					"-l\"sqlite3\"",
-					"-l\"ssl\"",
-					"-l\"xml2\"",
-					"-l\"xml2.2\"",
-					"-l\"z.1\"",
 					"-framework",
 					"\"AVFoundation\"",
 					"-framework",

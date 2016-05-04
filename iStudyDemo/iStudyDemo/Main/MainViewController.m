@@ -40,6 +40,10 @@
 #import "RACViewController.h"
 #import "ReactNativeViewController.h"
 #import "PushNotificationViewController.h"
+#import "HTMLCSSViewController.h"
+#import "JavaScriptViewController.h"
+#import "NodeDotJSViewController.h"
+#import "DesignPatternsViewController.h"
 
 // http://www.cocoachina.com/ios/20150825/13195.html
 
@@ -208,7 +212,23 @@
     ReactNativeViewController *reactnativeViewController = [[ReactNativeViewController alloc] init];
     [_listViewControllers addObject:reactnativeViewController];
     
-    
+    // 23.HTML_CSS
+    [_listData addObject:@"HTML CSS"];
+    HTMLCSSViewController *htmlcssViewController = [[HTMLCSSViewController alloc] init];
+    [_listViewControllers addObject:htmlcssViewController];
+    // 24.JavaScript
+    [_listData addObject:@"JavaScript"];
+    JavaScriptViewController *jsViewController = [[JavaScriptViewController alloc] init];
+    [_listViewControllers addObject:jsViewController];
+    // 25.Node.js
+    [_listData addObject:@"Node.js"];
+    NodeDotJSViewController *nodejsViewController = [[NodeDotJSViewController alloc] init];
+    [_listViewControllers addObject:nodejsViewController];
+    // 26.Design pattern
+    [_listData addObject:@"DesignPatterns"];
+     DesignPatternsViewController *designViewController = [[DesignPatternsViewController alloc] init];
+    [_listViewControllers addObject:designViewController];
+
 }
 
 #pragma mark - UITableViewDelegate & UITableViewDataSource

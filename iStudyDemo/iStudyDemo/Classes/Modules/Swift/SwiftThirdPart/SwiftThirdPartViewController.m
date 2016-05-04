@@ -66,7 +66,8 @@
     // http://www.hangge.com/index.html
     
     [_listData addObject:@"第三方"];
-    [_listData addObject:@"SnapKit自动布局"];
+    [_listData addObject:@"SnapKit自动布局1"];
+    [_listData addObject:@"SnapKit自动布局2"];
 }
 
 
@@ -129,6 +130,12 @@
 - (void)OC_test1
 {
     SwiftTableViewTest3 *uiVC = [[SwiftTableViewTest3 alloc] init];
+    
+    [self.navigationController pushViewController:uiVC animated:YES];
+}
+- (void)OC_test2
+{
+    SwiftTableViewTest4 *uiVC = [[SwiftTableViewTest4 alloc] init];
     
     [self.navigationController pushViewController:uiVC animated:YES];
 }

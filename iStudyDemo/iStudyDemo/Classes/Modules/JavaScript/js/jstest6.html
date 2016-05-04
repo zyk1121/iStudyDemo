@@ -1,0 +1,77 @@
+<!-- http://www.w3school.com.cn/html/index.asp -->
+<html>
+<meta charset="utf-8">
+<title>菜鸟教程－样式</title>
+<style type="text/css">
+		body {color: red; font-size: 48px}
+		</style>
+	<body>
+		<script type="text/javascript">
+		function myFunction(a, b) {
+    				return a * b;
+				}
+			var x = function (a, b) {return a * b};
+			document.write(myFunction(10,20))
+			document.write("<br>"+x(10,10))
+
+			var myFunction = new Function("a", "b", "return a * b");
+
+			var x = myFunction(4, 3);
+
+			document.write("<br>"+x)
+
+/*
+			(function () {
+    				var x2 = "Hello!!";      // 我将调用自己
+    				document.write("<br>"+x2)
+			})();
+*/
+/*
+函数是对象
+在 JavaScript 中使用 typeof 操作符判断函数类型将返回 "function" 。
+但是JavaScript 函数描述为一个对象更加准确。
+JavaScript 函数有 属性 和 方法。
+arguments.length 属性返回函数调用过程接收到的参数个数：
+*/
+
+function myFunction2(a, b) {
+    return arguments.length;
+}
+
+			var add = (function () {
+    var counter = 0;
+    return function () {return counter += 1;}
+})();
+
+add();
+add();
+add();
+		document.write("<br>"+add())
+
+
+		</script>
+	</body>
+</html>
+
+
+
+<!--
+<html>
+<meta charset="utf-8">
+		<title>菜鸟教程－样式</title>
+
+		<style type="text/css">
+		h1 {color: red}
+		p {color: blue}
+		</style>
+<body>
+<p>您也可以把图像作为链接来使用：
+<a href="http://www.baidu.com">
+<img border="0" src="jsicon.png" />
+</a>
+</p>
+
+</body>
+</html>
+-->
+

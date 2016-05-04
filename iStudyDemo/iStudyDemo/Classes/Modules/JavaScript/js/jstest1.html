@@ -1,0 +1,327 @@
+<!-- http://www.w3school.com.cn/html/index.asp -->
+<!--
+JavaScript 简介
+JavaScript 是互联网上最流行的脚本语言，这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。
+JavaScript 是脚本语言
+JavaScript 是一种轻量级的编程语言。
+JavaScript 是可插入 HTML 页面的编程代码。
+JavaScript 插入 HTML 页面后，可由所有的现代浏览器执行。
+JavaScript 很容易学习。
+-->
+
+<!--
+http://www.runoob.com/js/js-tutorial.html
+-->
+
+<html>
+<meta charset="utf-8">
+	<head>
+		<title>菜鸟教程－JS</title>
+		<script type="text/javascript">
+			function myFunction (argument) {
+				document.getElementById("demo").innerHTML="我的第一个javascript函数"
+			}
+		</script>
+
+	</head>
+	<body>
+		<h1>我的web页面</h1>
+		<p id="demo">一个段落</p>
+		<button type="button1" onclick="myFunction()">尝试一下1</button>
+
+		<script type="text/javascript">
+			function myFunc(){
+				document.getElementById("demo").innerHTML="我的第二个js函数"
+			}
+		</script>
+		<button type="button2" onclick="myFunc()">请再次进行尝试2</button>
+
+		<script type="text/javascript" src="myscript.js">
+
+		</script>
+		<br>
+		<button type="button3" onclick="myFunctionExternal()">请再次进行尝试3</button>
+		<script type="text/javascript">
+			// window.alert(5+6)
+			// window.alert("1234")
+			// window.alert('Hello')
+			// a=5
+			// b=6
+			// c=a+b
+			// console.log(c)
+			var length = 16
+			var points  = length * 10
+			var lastname = "json"
+			var car = ["saa","volvo","BMW"]
+			var person = {firstName:"John",lastName:"doe"}
+			// alert(person.firstName + person.lastName)
+			document.write("世界\
+				你好");
+			/* 多行注释
+			// 输出标题：
+			document.getElementById("myH1").innerHTML="欢迎来到我的主页";// 这样也是注释
+			// 输出段落：
+			document.getElementById("myP").innerHTML="这是我的第一个段落。";
+			*/
+			// JavaScript 数据类型 字符串（String）、数字(Number)、布尔(Boolean)、数组(Array)、对象(Object)、空（Null）、未定义（Undefined）。
+			/* 动态类型
+			var str = 10
+			alert(str)
+			str = "hello"
+			alert(str)
+			str = 3.14
+			alert(str)
+			*/
+			/*
+			var cars=new Array();
+			cars[0]="Saab";
+			cars[1]="Volvo";
+			cars[2]="BMW";
+			alert(cars.length)
+			*/
+			/*  对象
+			var person={
+				firstname : "John",
+				lastname  : "Doe",
+				id        :  5566
+				};
+				alert(person.firstname)
+				alert(person["lastname"])
+				*/
+
+				// var cars = 、空（Null）、未定义（Undefined）。
+				// var vvv = null;
+				// var v2 = undefined
+
+				// var car = {type:"Fiat", model:500, color:"white"};
+				/*function myFunction(var1,var2)
+{
+代码
+}
+function myFunction()
+{
+var x=5;
+return x;
+}
+*/
+// 		// 此处不能调用 carName 变量
+// function myFunction2() {
+//     var carName = "Volvo";
+
+//     // 函数内可调用 carName 变量
+
+// }
+
+/*
+document.white("常见的HTML事件 下面是一些常见的HTML事件的列表:事件	描述\
+	onchange	HTML 元素改变\
+	onclick	用户点击 HTML 元素\
+	onmouseover	用户在一个HTML 元素上移动鼠标\
+	onmouseout	用户从一个HTML元素上移开鼠标\
+	onkeydown	用户按下键盘按键\
+	onload	浏览器已完成页面的加载");
+*/
+
+
+		</script>
+		<button onclick='getElementById("demo").innerHTML=Date()'>The time is?</button>
+
+		<script type="text/javascript">
+			var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			var sln = txt.length;
+			// alert(sln)
+			/*
+			通常， JavaScript 字符串是原始值，可以使用字符创建： var firstName = "John"
+但我们也可以使用 new 关键字将字符串定义为一个对象： var firstName = new String("John")
+*/
+var day=new Date().getDay();
+switch (day)
+{
+case 0:
+  x="Today it's Sunday";
+  break;
+case 1:
+  x="Today it's Monday";
+  break;
+case 2:
+  x="Today it's Tuesday";
+  break;
+case 3:
+  x="Today it's Wednesday";
+  break;
+case 4:
+  x="Today it's Thursday";
+  break;
+case 5:
+  x="Today it's Friday";
+  break;
+case 6:
+  x="Today it's Saturday";
+  break;
+}
+alert(x)
+		</script>
+
+		<script type="text/javascript">
+			for (var i=0;i<5;i++)
+				{ 
+					document.write("hello循环" + "<br>");
+				}
+
+				var person={fname:"John",lname:"Doe",age:25}; 
+
+					for (x in person)
+					  {
+					  txt=txt + person[x];
+					  }
+					  document.write(txt)
+
+// 					  typeof "John"                // 返回 string 
+// typeof 3.14                  // 返回 number
+// typeof false                 // 返回 boolean
+// typeof [1,2,3,4]             // 返回 object
+// typeof {name:'John', age:34} // 返回 object
+
+/*
+JavaScript 数据类型
+在 JavaScript 中有 5 中不同的数据类型：
+string
+number
+boolean
+object
+function
+3 种对象类型：
+Object
+Date
+Array
+2 个不包含任何值的数据类型：
+null
+undefined
+*/
+
+// 正则表达式
+/*
+var str = "Visit w3cschool";
+var n = str.search(/w3cschool/i);
+alert(n)
+
+var str = "Visit w3cschool!";
+var n = str.search("w3cschool");
+
+var	str = "Visit Microsoft!";
+var res = str.replace(/microsoft/i, "w3cschool");
+*/
+
+/*
+function message()
+{
+try
+  {
+  adddlert("Welcome guest!");
+  }
+catch(err)
+  {
+  txt="本页有一个错误。\n\n";
+  txt+="错误描述：" + err.message + "\n\n";
+  txt+="点击确定继续。\n\n";
+  alert(txt);
+  }
+}
+
+<script>
+function myFunction()
+{
+try
+  { 
+  var x=document.getElementById("demo").value;
+  if(x=="")    throw "empty";
+  if(isNaN(x)) throw "not a number";
+  if(x>10)     throw "too high";
+  if(x<5)      throw "too low";
+  }
+catch(err)
+  {
+  var y=document.getElementById("mess");
+  y.innerHTML="Error: " + err + ".";
+  }
+}
+
+		</script>
+
+
+		<script type="text/javascript">
+			// JSON 字符串转换为 JavaScript 对象
+			var text = '{ "employees" : [' +
+'{ "firstName":"John" , "lastName":"Doe" },' +
+'{ "firstName":"Anna" , "lastName":"Smith" },' +
+'{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+var obj = JSON.parse(text);
+// alert(obj.employees[1].firstName + obj.employees[2].lastName)
+
+/*
+相关函数
+函数	描述
+JSON.parse()	用于将一个 JSON 字符串转换为 JavaScript 对象。
+JSON.stringify()	用于将 JavaScript 值转换为 JSON 字符串。
+*/
+		</script>
+
+	</body>
+</html>
+
+
+<!--
+<html>
+<meta charset="utf-8">
+	<head>
+		<title>菜鸟教程－JS</title>
+	</head>
+	<body>
+		<button type="button" onclick="alert('欢迎!')">点我</button>
+	</body>
+</html>
+
+x=document.getElementById("demo")  //查找元素
+x.innerHTML="Hello JavaScript";    //改变内容
+x=document.getElementById("demo")  //找到元素 
+x.style.color="#ff0000";           //改变样式-->
+
+
+<!--
+
+<html>
+<meta charset="utf-8">
+	<head>
+		<title>菜鸟教程－JS</title>
+	</head>
+	<body>
+		<script>
+		document.write("<h1>这是一个标题</h1>");
+		document.write("<p>这是一个段落</p>");
+		</script>
+	</body>
+</html>
+
+-->
+
+
+<!--
+<html>
+<meta charset="utf-8">
+		<title>菜鸟教程－样式</title>
+
+		<style type="text/css">
+		h1 {color: red}
+		p {color: blue}
+		</style>
+<body>
+<p>您也可以把图像作为链接来使用：
+<a href="http://www.baidu.com">
+<img border="0" src="jsicon.png" />
+</a>
+</p>
+
+</body>
+</html>
+-->
+

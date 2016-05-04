@@ -1,0 +1,5 @@
+node test
+hello world
+zhongguo
+哈哈
+1234

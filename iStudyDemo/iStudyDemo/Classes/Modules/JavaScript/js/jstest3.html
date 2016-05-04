@@ -1,0 +1,124 @@
+<!-- http://www.w3school.com.cn/html/index.asp -->
+<!--JavaScript 中的所有事物都是对象：字符串、数值、数组、函数...
+此外，JavaScript 允许自定义对象。-->
+<html>
+<meta charset="utf-8">
+<title>菜鸟教程－样式</title>
+
+	<body>
+		<script type="text/javascript">
+			var message = "hello world";
+			var x = message.length
+			// alert(x)
+			var upCase = message.toUpperCase()
+			// alert(upCase)
+
+// 创建直接的实例
+// person={firstname:"John",lastname:"Doe",age:50,eyecolor:"blue"};
+// var myFather=new person("Bill","Gates",56,"blue");
+// var myMother=new person("Steve","Jobs",48,"green");
+			person=new Object();
+			person.firstname="Bill";
+			person.lastname="Gates";
+			person.age=56;
+			person.eyecolor="blue";
+
+			// alert(person.firstname)
+			var text=""
+			for (x in person)
+			{
+				text = text + person[x]
+			}
+			// alert(text)
+			/*
+
+			JavaScript Date（日期）对象 实例
+返回当日的日期和时间
+如何使用 Date() 方法获得当日的日期。
+getTime()
+getTime() 返回从 1970 年 1 月 1 日至今的毫秒数。
+setFullYear()
+如何使用 setFullYear() 设置具体的日期。
+toUTCString()
+如何使用 toUTCString() 将当日的日期（根据 UTC）转换为字符串。
+getDay()
+如何使用 getDay() 和数组来显示星期，而不仅仅是数字。
+显示一个钟表
+如何在网页上显示一个钟表。
+
+*/
+// var myDate=new Date();
+// myDate.setFullYear(2008,8,9);
+
+// var today = new Date();
+
+// if (myDate>today)
+// {
+// alert("Today is before 9th August 2008");
+// }
+// else
+// {
+// alert("Today is after 9th August 2008");
+// }
+// var t = getTime()
+// alert(t)
+
+// var mycars=new Array("Saab","Volvo","BMW")
+
+/*
+var myBoolean=new Boolean();
+var myBoolean=new Boolean(0);
+var myBoolean=new Boolean(null);
+var myBoolean=new Boolean("");
+var myBoolean=new Boolean(false);
+var myBoolean=new Boolean(NaN);
+
+var myBoolean=new Boolean(1);
+var myBoolean=new Boolean(true);
+var myBoolean=new Boolean("true");
+var myBoolean=new Boolean("false");
+var myBoolean=new Boolean("Bill Gates");
+
+*/
+			var mycars=new Array()
+			mycars[0]="Saab"
+			mycars[1]="Volvo"
+			mycars[2]="BMW"
+			document.write(mycars[0])
+			document.write("</br>")
+			document.write(mycars[1])
+			document.write("</br>")
+			document.write(mycars[2])
+
+			var patt1=new RegExp("e");
+			document.write("<br>")
+
+document.write(patt1.test("The best things in life are free")); 
+document.write("<br>")
+document.write("JavaScript 中的所有事物都是对象：字符串、数值、数组、函数...此外，JavaScript 允许自定义对象.")
+		</script>
+	</body>
+</html>
+
+
+
+<!--
+<html>
+<meta charset="utf-8">
+		<title>菜鸟教程－样式</title>
+
+		<style type="text/css">
+		h1 {color: red}
+		p {color: blue}
+		</style>
+<body>
+<p>您也可以把图像作为链接来使用：
+<a href="http://www.baidu.com">
+<img border="0" src="jsicon.png" />
+</a>
+</p>
+
+</body>
+</html>
+-->
+
