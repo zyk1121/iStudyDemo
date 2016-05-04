@@ -1,29 +1,25 @@
 //
-//  DesignPatternsViewController.m
+//  DPBehavioralViewController.m
 //  iStudyDemo
 //
-//  Created by zhangyuanke on 16/5/3.
+//  Created by zhangyuanke on 16/5/4.
 //  Copyright © 2016年 zhangyuanke. All rights reserved.
 //
 
-#import "DesignPatternsViewController.h"
+#import "DPBehavioralViewController.h"
 #import "ReactiveCocoa/ReactiveCocoa.h"
 #import "masonry.h"
 #import "UIKitMacros.h"
 #import "LEDWebViewController.h"
-#import "DPPrincipleViewController.h"
-#import "DPStructuralViewController.h"
-#import "DPCreationalViewController.h"
-#import "DPBehavioralViewController.h"
 
-@interface DesignPatternsViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface DPBehavioralViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *listData;
 
 @end
 
-@implementation DesignPatternsViewController
+@implementation DPBehavioralViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -62,11 +58,8 @@
 {
     _listData = [[NSMutableArray alloc] init];
     
-    [_listData addObject:@"设计模式六大原则"];
-    [_listData addObject:@"创建型模式(Creational Patterns)"];
-    [_listData addObject:@"结构型模式(Structual Patterns)"];
-    [_listData addObject:@"行为型模式(Behavioral Patterns)"];
-    
+    [_listData addObject:@"1"];
+    [_listData addObject:@"2"];
 }
 
 
@@ -115,26 +108,12 @@
 
 - (void)test0
 {
-    DPPrincipleViewController *vc = [[DPPrincipleViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    NSLog(@"1");
 }
 
 - (void)test1
 {
-    DPCreationalViewController *vc = [[DPCreationalViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-    
-}
-- (void)test2
-{
-    DPStructuralViewController *vc = [[DPStructuralViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-    
-}
-- (void)test3
-{
-    DPBehavioralViewController *vc = [[DPBehavioralViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    NSLog(@"2");
     
 }
 

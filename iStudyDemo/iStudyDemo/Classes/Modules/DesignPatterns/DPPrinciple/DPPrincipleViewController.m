@@ -12,10 +12,7 @@
 #import "UIKitMacros.h"
 #import "LEDWebViewController.h"
 
-@interface DPPrincipleViewController ()<UITableViewDataSource, UITableViewDelegate>
-
-//@property (nonatomic, strong) UITableView *tableView;
-//@property (nonatomic, strong) NSMutableArray *listData;
+@interface DPPrincipleViewController ()
 
 @property (nonatomic, strong) UITextView *textView;
 
@@ -75,7 +72,14 @@
 五，迪米特法则（最少知道原则）（Demeter Principle）：\n\
     最少知道原则是指：一个实体应当尽量少地与其它实体发生相互作用，使得系统功能模块相对独立。\n\
 六，合成复用原则（Composite Reuse Principle）：\n\
-    合成复用原则是指：尽量使用合成／聚合的方式，而不是使用继承。\n\
+    合成复用原则是指：尽量使用合成／聚合的方式，而不是使用继承。\n\n\n\n\
+软件设计思想：\n\
+    1.可维护。\n\
+    2.可复用。\n\
+    3.可扩展。\n\
+    4.灵活性好。\n\
+    \
+高内聚，低耦合!\n\
     ";
 }
 

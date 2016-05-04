@@ -1,29 +1,26 @@
 //
-//  DesignPatternsViewController.m
+//  DPCreationalViewController.m
 //  iStudyDemo
 //
-//  Created by zhangyuanke on 16/5/3.
+//  Created by zhangyuanke on 16/5/4.
 //  Copyright © 2016年 zhangyuanke. All rights reserved.
 //
 
-#import "DesignPatternsViewController.h"
+#import "DPCreationalViewController.h"
 #import "ReactiveCocoa/ReactiveCocoa.h"
 #import "masonry.h"
 #import "UIKitMacros.h"
 #import "LEDWebViewController.h"
-#import "DPPrincipleViewController.h"
-#import "DPStructuralViewController.h"
-#import "DPCreationalViewController.h"
-#import "DPBehavioralViewController.h"
+#import "DPCreationalTestViewController.h"
 
-@interface DesignPatternsViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface DPCreationalViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *listData;
 
 @end
 
-@implementation DesignPatternsViewController
+@implementation DPCreationalViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -62,11 +59,8 @@
 {
     _listData = [[NSMutableArray alloc] init];
     
-    [_listData addObject:@"设计模式六大原则"];
-    [_listData addObject:@"创建型模式(Creational Patterns)"];
-    [_listData addObject:@"结构型模式(Structual Patterns)"];
-    [_listData addObject:@"行为型模式(Behavioral Patterns)"];
-    
+    [_listData addObject:@"简单工厂模式"];
+    [_listData addObject:@"抽象工厂模式"];
 }
 
 
@@ -85,8 +79,8 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSString *methodName = [NSString stringWithFormat:@"test%ld",indexPath.row];
-    [self performSelector:NSSelectorFromString(methodName) withObject:nil afterDelay:0];
+    DPCreationalTestViewController *vc = [[DPCreationalTestViewController alloc] initWithType:(DPCreationalType)indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -109,33 +103,6 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 60;
-}
-
-#pragma mark - private method
-
-- (void)test0
-{
-    DPPrincipleViewController *vc = [[DPPrincipleViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-
-- (void)test1
-{
-    DPCreationalViewController *vc = [[DPCreationalViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-    
-}
-- (void)test2
-{
-    DPStructuralViewController *vc = [[DPStructuralViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-    
-}
-- (void)test3
-{
-    DPBehavioralViewController *vc = [[DPBehavioralViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-    
 }
 
 @end

@@ -220,6 +220,10 @@
 		763FE38D1C8DCB6100CE67FF /* LEDDomainPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE38C1C8DCB6100CE67FF /* LEDDomainPredicate.m */; };
 		763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE38F1C8DD03000CE67FF /* TestDomainObject.m */; };
 		7653A4C71CC682CC005A27E2 /* SwiftFunctionClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653A4C61CC682CC005A27E2 /* SwiftFunctionClosure.swift */; };
+		76573D341CDA4E4D00F38585 /* DPCreationalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D331CDA4E4D00F38585 /* DPCreationalViewController.m */; };
+		76573D371CDA4E5E00F38585 /* DPBehavioralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D361CDA4E5E00F38585 /* DPBehavioralViewController.m */; };
+		76573D3A1CDA4E6D00F38585 /* DPStructuralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D391CDA4E6D00F38585 /* DPStructuralViewController.m */; };
+		76573D581CDA54F800F38585 /* DPCreationalTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D571CDA54F800F38585 /* DPCreationalTestViewController.m */; };
 		765F83401CC49ADD00D87D7F /* LDDataExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 765F833F1CC49ADD00D87D7F /* LDDataExtension.m */; };
 		76737A6F1CC385DA008AEC1C /* SwiftBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76737A641CC385DA008AEC1C /* SwiftBasic.swift */; };
 		76737A701CC385DA008AEC1C /* SwiftBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A661CC385DA008AEC1C /* SwiftBasicViewController.m */; };
@@ -793,6 +797,14 @@
 		763FE38E1C8DD03000CE67FF /* TestDomainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDomainObject.h; sourceTree = "<group>"; };
 		763FE38F1C8DD03000CE67FF /* TestDomainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDomainObject.m; sourceTree = "<group>"; };
 		7653A4C61CC682CC005A27E2 /* SwiftFunctionClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftFunctionClosure.swift; sourceTree = "<group>"; };
+		76573D321CDA4E4D00F38585 /* DPCreationalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPCreationalViewController.h; sourceTree = "<group>"; };
+		76573D331CDA4E4D00F38585 /* DPCreationalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCreationalViewController.m; sourceTree = "<group>"; };
+		76573D351CDA4E5E00F38585 /* DPBehavioralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPBehavioralViewController.h; sourceTree = "<group>"; };
+		76573D361CDA4E5E00F38585 /* DPBehavioralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPBehavioralViewController.m; sourceTree = "<group>"; };
+		76573D381CDA4E6D00F38585 /* DPStructuralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPStructuralViewController.h; sourceTree = "<group>"; };
+		76573D391CDA4E6D00F38585 /* DPStructuralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPStructuralViewController.m; sourceTree = "<group>"; };
+		76573D561CDA54F800F38585 /* DPCreationalTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPCreationalTestViewController.h; sourceTree = "<group>"; };
+		76573D571CDA54F800F38585 /* DPCreationalTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCreationalTestViewController.m; sourceTree = "<group>"; };
 		765F833E1CC49ADD00D87D7F /* LDDataExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDataExtension.h; sourceTree = "<group>"; };
 		765F833F1CC49ADD00D87D7F /* LDDataExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDataExtension.m; sourceTree = "<group>"; };
 		76737A631CC385DA008AEC1C /* iStudyDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iStudyDemo-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -1781,6 +1793,9 @@
 		763266391CD8F49300F56D9D /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				76573D2F1CDA4DEE00F38585 /* DPCreational */,
+				76573D311CDA4DEE00F38585 /* DPStructural */,
+				76573D2E1CDA4DEE00F38585 /* DPBehavioral */,
 				7632663D1CD8F68A00F56D9D /* DPPrinciple */,
 				7632663A1CD8F4B700F56D9D /* DesignPatternsViewController.h */,
 				7632663B1CD8F4B700F56D9D /* DesignPatternsViewController.m */,
@@ -2018,6 +2033,235 @@
 				763FE38C1C8DCB6100CE67FF /* LEDDomainPredicate.m */,
 			);
 			path = Mantle;
+			sourceTree = "<group>";
+		};
+		76573D2E1CDA4DEE00F38585 /* DPBehavioral */ = {
+			isa = PBXGroup;
+			children = (
+				76573D3E1CDA535000F38585 /* DPChainResponsibility */,
+				76573D3F1CDA535000F38585 /* DPCommand */,
+				76573D401CDA535000F38585 /* DPInterpreter */,
+				76573D411CDA535000F38585 /* DPIterator */,
+				76573D421CDA535000F38585 /* DPMediator */,
+				76573D431CDA535000F38585 /* DPMemento */,
+				76573D441CDA535000F38585 /* DPNULLObject */,
+				76573D451CDA535000F38585 /* DPObserver */,
+				76573D461CDA535000F38585 /* DPState */,
+				76573D471CDA535000F38585 /* DPStrategy */,
+				76573D481CDA535000F38585 /* DPTemplate */,
+				76573D491CDA535000F38585 /* DPVisitor */,
+				76573D351CDA4E5E00F38585 /* DPBehavioralViewController.h */,
+				76573D361CDA4E5E00F38585 /* DPBehavioralViewController.m */,
+			);
+			path = DPBehavioral;
+			sourceTree = "<group>";
+		};
+		76573D2F1CDA4DEE00F38585 /* DPCreational */ = {
+			isa = PBXGroup;
+			children = (
+				76573D4A1CDA535F00F38585 /* DPAbstractFactory */,
+				76573D4B1CDA535F00F38585 /* DPBuilder */,
+				76573D4C1CDA535F00F38585 /* DPPrototype */,
+				76573D4D1CDA535F00F38585 /* DPSingleton */,
+				76573D301CDA4DEE00F38585 /* DPSimpleFactory */,
+				76573D321CDA4E4D00F38585 /* DPCreationalViewController.h */,
+				76573D331CDA4E4D00F38585 /* DPCreationalViewController.m */,
+				76573D561CDA54F800F38585 /* DPCreationalTestViewController.h */,
+				76573D571CDA54F800F38585 /* DPCreationalTestViewController.m */,
+			);
+			path = DPCreational;
+			sourceTree = "<group>";
+		};
+		76573D301CDA4DEE00F38585 /* DPSimpleFactory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPSimpleFactory;
+			sourceTree = "<group>";
+		};
+		76573D311CDA4DEE00F38585 /* DPStructural */ = {
+			isa = PBXGroup;
+			children = (
+				76573D4E1CDA537000F38585 /* DPAdapter */,
+				76573D4F1CDA537000F38585 /* DPBridge */,
+				76573D501CDA537000F38585 /* DPComposite */,
+				76573D511CDA537000F38585 /* DPDecorator */,
+				76573D521CDA537000F38585 /* DPFacade */,
+				76573D531CDA537000F38585 /* DPFilter */,
+				76573D541CDA537000F38585 /* DPFlyweight */,
+				76573D551CDA537000F38585 /* DPProxy */,
+				76573D381CDA4E6D00F38585 /* DPStructuralViewController.h */,
+				76573D391CDA4E6D00F38585 /* DPStructuralViewController.m */,
+			);
+			path = DPStructural;
+			sourceTree = "<group>";
+		};
+		76573D3E1CDA535000F38585 /* DPChainResponsibility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPChainResponsibility;
+			sourceTree = "<group>";
+		};
+		76573D3F1CDA535000F38585 /* DPCommand */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPCommand;
+			sourceTree = "<group>";
+		};
+		76573D401CDA535000F38585 /* DPInterpreter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPInterpreter;
+			sourceTree = "<group>";
+		};
+		76573D411CDA535000F38585 /* DPIterator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPIterator;
+			sourceTree = "<group>";
+		};
+		76573D421CDA535000F38585 /* DPMediator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPMediator;
+			sourceTree = "<group>";
+		};
+		76573D431CDA535000F38585 /* DPMemento */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPMemento;
+			sourceTree = "<group>";
+		};
+		76573D441CDA535000F38585 /* DPNULLObject */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPNULLObject;
+			sourceTree = "<group>";
+		};
+		76573D451CDA535000F38585 /* DPObserver */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPObserver;
+			sourceTree = "<group>";
+		};
+		76573D461CDA535000F38585 /* DPState */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPState;
+			sourceTree = "<group>";
+		};
+		76573D471CDA535000F38585 /* DPStrategy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPStrategy;
+			sourceTree = "<group>";
+		};
+		76573D481CDA535000F38585 /* DPTemplate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPTemplate;
+			sourceTree = "<group>";
+		};
+		76573D491CDA535000F38585 /* DPVisitor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPVisitor;
+			sourceTree = "<group>";
+		};
+		76573D4A1CDA535F00F38585 /* DPAbstractFactory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPAbstractFactory;
+			sourceTree = "<group>";
+		};
+		76573D4B1CDA535F00F38585 /* DPBuilder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPBuilder;
+			sourceTree = "<group>";
+		};
+		76573D4C1CDA535F00F38585 /* DPPrototype */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPPrototype;
+			sourceTree = "<group>";
+		};
+		76573D4D1CDA535F00F38585 /* DPSingleton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPSingleton;
+			sourceTree = "<group>";
+		};
+		76573D4E1CDA537000F38585 /* DPAdapter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPAdapter;
+			sourceTree = "<group>";
+		};
+		76573D4F1CDA537000F38585 /* DPBridge */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPBridge;
+			sourceTree = "<group>";
+		};
+		76573D501CDA537000F38585 /* DPComposite */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPComposite;
+			sourceTree = "<group>";
+		};
+		76573D511CDA537000F38585 /* DPDecorator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPDecorator;
+			sourceTree = "<group>";
+		};
+		76573D521CDA537000F38585 /* DPFacade */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPFacade;
+			sourceTree = "<group>";
+		};
+		76573D531CDA537000F38585 /* DPFilter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPFilter;
+			sourceTree = "<group>";
+		};
+		76573D541CDA537000F38585 /* DPFlyweight */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPFlyweight;
+			sourceTree = "<group>";
+		};
+		76573D551CDA537000F38585 /* DPProxy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DPProxy;
 			sourceTree = "<group>";
 		};
 		76737A611CC385DA008AEC1C /* SwfitExtensionProtocol */ = {
@@ -3520,6 +3764,7 @@
 				76C035881CA68943002241E5 /* MVVMViewController.m in Sources */,
 				76C0359D1CA68FD6002241E5 /* RACViewController.m in Sources */,
 				76C035241CA663E5002241E5 /* TransitionViewController.m in Sources */,
+				76573D371CDA4E5E00F38585 /* DPBehavioralViewController.m in Sources */,
 				763263971CD10FA100F56D9D /* LayoutConstraintViewController.m in Sources */,
 				760AF11D1CB11A5D00A0D242 /* NSData+LEDDigest.m in Sources */,
 				76E1B8B01CC9215300C71338 /* SearchVCViewController.m in Sources */,
@@ -3541,8 +3786,10 @@
 				76213BDE1C97048C001DAA53 /* ThirdShareViewController.m in Sources */,
 				76C479A11C8F248F00EAE07E /* coreData.xcdatamodeld in Sources */,
 				76C0358E1CA68964002241E5 /* RunTimeViewController.m in Sources */,
+				76573D581CDA54F800F38585 /* DPCreationalTestViewController.m in Sources */,
 				76737A6F1CC385DA008AEC1C /* SwiftBasic.swift in Sources */,
 				769717E91C992C1B00D0AC63 /* QQMainViewController.m in Sources */,
+				76573D3A1CDA4E6D00F38585 /* DPStructuralViewController.m in Sources */,
 				76C035E81CAAD54A002241E5 /* CustomTakePhotoViewController.m in Sources */,
 				760AF11F1CB11A5D00A0D242 /* LEDAESCrypto+File.m in Sources */,
 				76E9039C1C9F009F003AC33A /* WeiChatViewController.m in Sources */,
@@ -3653,6 +3900,7 @@
 				76C035D61CAA9969002241E5 /* AlbumViewController.m in Sources */,
 				76737A911CC3D7E4008AEC1C /* SwiftBasicPart.swift in Sources */,
 				76C035781CA68507002241E5 /* CustomControlViewController.m in Sources */,
+				76573D341CDA4E4D00F38585 /* DPCreationalViewController.m in Sources */,
 				76A2E9DA1CCB790100536E5D /* SwiftExtensionProtocol.swift in Sources */,
 				76C0358B1CA68954002241E5 /* RunLoopViewController.m in Sources */,
 				76E903891C9ED53E003AC33A /* NavMenuScrollView.m in Sources */,
