@@ -226,6 +226,8 @@
 		76573D581CDA54F800F38585 /* DPCreationalTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D571CDA54F800F38585 /* DPCreationalTestViewController.m */; };
 		76573D5B1CDA57B400F38585 /* DPStructuralTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D5A1CDA57B400F38585 /* DPStructuralTestViewController.m */; };
 		76573D5E1CDA59B100F38585 /* DPBehavioralTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D5D1CDA59B100F38585 /* DPBehavioralTestViewController.m */; };
+		76573D771CDB95BC00F38585 /* DPSFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D761CDB95BC00F38585 /* DPSFObject.m */; };
+		76573D7A1CDB9C8E00F38585 /* DPAFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D791CDB9C8E00F38585 /* DPAFObject.m */; };
 		765F83401CC49ADD00D87D7F /* LDDataExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 765F833F1CC49ADD00D87D7F /* LDDataExtension.m */; };
 		76737A6F1CC385DA008AEC1C /* SwiftBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76737A641CC385DA008AEC1C /* SwiftBasic.swift */; };
 		76737A701CC385DA008AEC1C /* SwiftBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A661CC385DA008AEC1C /* SwiftBasicViewController.m */; };
@@ -811,6 +813,10 @@
 		76573D5A1CDA57B400F38585 /* DPStructuralTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPStructuralTestViewController.m; sourceTree = "<group>"; };
 		76573D5C1CDA59B100F38585 /* DPBehavioralTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPBehavioralTestViewController.h; sourceTree = "<group>"; };
 		76573D5D1CDA59B100F38585 /* DPBehavioralTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPBehavioralTestViewController.m; sourceTree = "<group>"; };
+		76573D751CDB95BC00F38585 /* DPSFObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSFObject.h; sourceTree = "<group>"; };
+		76573D761CDB95BC00F38585 /* DPSFObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSFObject.m; sourceTree = "<group>"; };
+		76573D781CDB9C8E00F38585 /* DPAFObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAFObject.h; sourceTree = "<group>"; };
+		76573D791CDB9C8E00F38585 /* DPAFObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAFObject.m; sourceTree = "<group>"; };
 		765F833E1CC49ADD00D87D7F /* LDDataExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDataExtension.h; sourceTree = "<group>"; };
 		765F833F1CC49ADD00D87D7F /* LDDataExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDataExtension.m; sourceTree = "<group>"; };
 		76737A631CC385DA008AEC1C /* iStudyDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iStudyDemo-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -2083,6 +2089,8 @@
 		76573D301CDA4DEE00F38585 /* DPSimpleFactory */ = {
 			isa = PBXGroup;
 			children = (
+				76573D751CDB95BC00F38585 /* DPSFObject.h */,
+				76573D761CDB95BC00F38585 /* DPSFObject.m */,
 			);
 			path = DPSimpleFactory;
 			sourceTree = "<group>";
@@ -2193,6 +2201,8 @@
 		76573D4A1CDA535F00F38585 /* DPAbstractFactory */ = {
 			isa = PBXGroup;
 			children = (
+				76573D781CDB9C8E00F38585 /* DPAFObject.h */,
+				76573D791CDB9C8E00F38585 /* DPAFObject.m */,
 			);
 			path = DPAbstractFactory;
 			sourceTree = "<group>";
@@ -3781,7 +3791,9 @@
 				76213BD61C96BE42001DAA53 /* DeviceInfoViewController.m in Sources */,
 				760AF0EE1CB0E30800A0D242 /* NSStringAdditions.m in Sources */,
 				769718371C9D440E00D0AC63 /* SHCZMainView.m in Sources */,
+				76573D7A1CDB9C8E00F38585 /* DPAFObject.m in Sources */,
 				763E4E8E1CA2F25200470FCA /* ZFBTestViewController.m in Sources */,
+				76573D771CDB95BC00F38585 /* DPSFObject.m in Sources */,
 				760AF1381CB176E400A0D242 /* JsonModelDomainObject.m in Sources */,
 				76C035DF1CAA999D002241E5 /* CustomPlayerViewController.m in Sources */,
 				76C035701CA68288002241E5 /* QRCodeViewController.m in Sources */,

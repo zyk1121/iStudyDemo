@@ -59,7 +59,7 @@
 {
     _listData = [[NSMutableArray alloc] init];
     
-    [_listData addObject:@"简单工厂模式"];
+    [_listData addObject:@"工厂方法模式（简单工厂模式）"];
     [_listData addObject:@"抽象工厂模式"];
     [_listData addObject:@"单例模式"];
     [_listData addObject:@"建造者模式"];

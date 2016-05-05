@@ -16,6 +16,9 @@
 #import "DPCreationalViewController.h"
 #import "DPBehavioralViewController.h"
 
+// http://m.blog.csdn.net/article/details?id=9159589
+// http://www.runoob.com/design-pattern/abstract-factory-pattern.html
+
 @interface DesignPatternsViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
