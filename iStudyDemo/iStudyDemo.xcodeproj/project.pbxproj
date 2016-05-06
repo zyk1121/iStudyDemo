@@ -229,6 +229,8 @@
 		76573D771CDB95BC00F38585 /* DPSFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D761CDB95BC00F38585 /* DPSFObject.m */; };
 		76573D7A1CDB9C8E00F38585 /* DPAFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D791CDB9C8E00F38585 /* DPAFObject.m */; };
 		76573D811CDCEEA000F38585 /* DPBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D801CDCEEA000F38585 /* DPBObject.m */; };
+		76573D841CDCFCD600F38585 /* UINavigationController+Weixin.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D831CDCFCD600F38585 /* UINavigationController+Weixin.m */; };
+		76573D871CDD02F300F38585 /* WeixinView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D861CDD02F300F38585 /* WeixinView.m */; };
 		765F83401CC49ADD00D87D7F /* LDDataExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 765F833F1CC49ADD00D87D7F /* LDDataExtension.m */; };
 		76737A6F1CC385DA008AEC1C /* SwiftBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76737A641CC385DA008AEC1C /* SwiftBasic.swift */; };
 		76737A701CC385DA008AEC1C /* SwiftBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A661CC385DA008AEC1C /* SwiftBasicViewController.m */; };
@@ -820,6 +822,10 @@
 		76573D791CDB9C8E00F38585 /* DPAFObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAFObject.m; sourceTree = "<group>"; };
 		76573D7F1CDCEEA000F38585 /* DPBObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPBObject.h; sourceTree = "<group>"; };
 		76573D801CDCEEA000F38585 /* DPBObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPBObject.m; sourceTree = "<group>"; };
+		76573D821CDCFCD600F38585 /* UINavigationController+Weixin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Weixin.h"; sourceTree = "<group>"; };
+		76573D831CDCFCD600F38585 /* UINavigationController+Weixin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Weixin.m"; sourceTree = "<group>"; };
+		76573D851CDD02F300F38585 /* WeixinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeixinView.h; sourceTree = "<group>"; };
+		76573D861CDD02F300F38585 /* WeixinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeixinView.m; sourceTree = "<group>"; };
 		765F833E1CC49ADD00D87D7F /* LDDataExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDataExtension.h; sourceTree = "<group>"; };
 		765F833F1CC49ADD00D87D7F /* LDDataExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDataExtension.m; sourceTree = "<group>"; };
 		76737A631CC385DA008AEC1C /* iStudyDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iStudyDemo-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -3244,6 +3250,10 @@
 			children = (
 				76E9039A1C9F009F003AC33A /* WeiChatViewController.h */,
 				76E9039B1C9F009F003AC33A /* WeiChatViewController.m */,
+				76573D821CDCFCD600F38585 /* UINavigationController+Weixin.h */,
+				76573D831CDCFCD600F38585 /* UINavigationController+Weixin.m */,
+				76573D851CDD02F300F38585 /* WeixinView.h */,
+				76573D861CDD02F300F38585 /* WeixinView.m */,
 			);
 			path = WeiChat;
 			sourceTree = "<group>";
@@ -3877,8 +3887,10 @@
 				76E1B8BD1CC9260400C71338 /* RSA.m in Sources */,
 				7601D9261CBD42BD00E6F6E7 /* LEDGLView.m in Sources */,
 				763D45F51CCFB4C000BB88AA /* JavaScriptViewController.m in Sources */,
+				76573D841CDCFCD600F38585 /* UINavigationController+Weixin.m in Sources */,
 				76E903991C9F0089003AC33A /* AliPayViewController.m in Sources */,
 				76737A8B1CC38920008AEC1C /* SwiftProjectViewController.m in Sources */,
+				76573D871CDD02F300F38585 /* WeixinView.m in Sources */,
 				763FE3641C8D8BFA00CE67FF /* HTTPTestViewController.m in Sources */,
 				76BD6BD21CA1120E00708977 /* UIView+Extension.m in Sources */,
 				76C035741CA683A9002241E5 /* EncryptDecryptViewController.m in Sources */,

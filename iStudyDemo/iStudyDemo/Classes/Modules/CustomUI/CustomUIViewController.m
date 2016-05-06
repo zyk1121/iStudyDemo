@@ -100,7 +100,7 @@
     [_listViewControllers addObject:qqChatVC];
     
     // 5.仿微信
-    [_listData addObject:@"仿微信"];
+    [_listData addObject:@"仿微信(屏幕旋转,渐变颜色线)"];
      WeiChatViewController *weiChatVC = [[WeiChatViewController alloc] init];
     [_listViewControllers addObject:weiChatVC];
     
