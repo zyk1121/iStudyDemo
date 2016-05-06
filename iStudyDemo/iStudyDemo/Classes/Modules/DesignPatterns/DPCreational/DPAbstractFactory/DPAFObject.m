@@ -7,6 +7,7 @@
 //
 
 #import "DPAFObject.h"
+#import <UIKit/UIKit.h>
 
 @implementation DPRectangle
 
@@ -129,6 +130,38 @@
         return [DPColorFactory new];
     }
     return nil;
+}
+
+@end
+
+
+
+@implementation DPSSingleton
+
++ (instancetype)defaultSingleton
+{
+    static DPSSingleton *_sharedSingleton = nil;
+    static dispatch_once_t oncePredicate;
+    dispatch_once(&oncePredicate, ^{
+        _sharedSingleton = [[self alloc] init];
+    });
+    
+    return _sharedSingleton;
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
+}
+
+- (void)test
+{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"title" message:@"单例模式" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确认", nil];
+    [alertView show];
 }
 
 @end

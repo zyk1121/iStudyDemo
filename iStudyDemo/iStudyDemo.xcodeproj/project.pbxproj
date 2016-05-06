@@ -228,6 +228,7 @@
 		76573D5E1CDA59B100F38585 /* DPBehavioralTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D5D1CDA59B100F38585 /* DPBehavioralTestViewController.m */; };
 		76573D771CDB95BC00F38585 /* DPSFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D761CDB95BC00F38585 /* DPSFObject.m */; };
 		76573D7A1CDB9C8E00F38585 /* DPAFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D791CDB9C8E00F38585 /* DPAFObject.m */; };
+		76573D811CDCEEA000F38585 /* DPBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D801CDCEEA000F38585 /* DPBObject.m */; };
 		765F83401CC49ADD00D87D7F /* LDDataExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 765F833F1CC49ADD00D87D7F /* LDDataExtension.m */; };
 		76737A6F1CC385DA008AEC1C /* SwiftBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76737A641CC385DA008AEC1C /* SwiftBasic.swift */; };
 		76737A701CC385DA008AEC1C /* SwiftBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A661CC385DA008AEC1C /* SwiftBasicViewController.m */; };
@@ -817,6 +818,8 @@
 		76573D761CDB95BC00F38585 /* DPSFObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSFObject.m; sourceTree = "<group>"; };
 		76573D781CDB9C8E00F38585 /* DPAFObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAFObject.h; sourceTree = "<group>"; };
 		76573D791CDB9C8E00F38585 /* DPAFObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAFObject.m; sourceTree = "<group>"; };
+		76573D7F1CDCEEA000F38585 /* DPBObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPBObject.h; sourceTree = "<group>"; };
+		76573D801CDCEEA000F38585 /* DPBObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPBObject.m; sourceTree = "<group>"; };
 		765F833E1CC49ADD00D87D7F /* LDDataExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDataExtension.h; sourceTree = "<group>"; };
 		765F833F1CC49ADD00D87D7F /* LDDataExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDataExtension.m; sourceTree = "<group>"; };
 		76737A631CC385DA008AEC1C /* iStudyDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iStudyDemo-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -2210,6 +2213,8 @@
 		76573D4B1CDA535F00F38585 /* DPBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				76573D7F1CDCEEA000F38585 /* DPBObject.h */,
+				76573D801CDCEEA000F38585 /* DPBObject.m */,
 			);
 			path = DPBuilder;
 			sourceTree = "<group>";
@@ -3852,6 +3857,7 @@
 				76C035B81CA79EFD002241E5 /* AddressBookViewController.m in Sources */,
 				76737A741CC3860A008AEC1C /* SwiftBasicPartViewController.m in Sources */,
 				761931AB1C8BCC3F0022A311 /* main.mm in Sources */,
+				76573D811CDCEEA000F38585 /* DPBObject.m in Sources */,
 				760AF1341CB13A4500A0D242 /* SecurityUtil.m in Sources */,
 				76213BDA1C97029A001DAA53 /* ThirdPartViewController.m in Sources */,
 				76C034BE1CA40EC7002241E5 /* SPKADViewController.m in Sources */,

@@ -82,3 +82,12 @@
 
 @end
 
+
+@interface DPSSingleton : NSObject
+
++ (instancetype)defaultSingleton;
+
+- (void)test;
+
+@end
+
