@@ -231,6 +231,9 @@
 		76573D811CDCEEA000F38585 /* DPBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D801CDCEEA000F38585 /* DPBObject.m */; };
 		76573D841CDCFCD600F38585 /* UINavigationController+Weixin.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D831CDCFCD600F38585 /* UINavigationController+Weixin.m */; };
 		76573D871CDD02F300F38585 /* WeixinView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D861CDD02F300F38585 /* WeixinView.m */; };
+		76573D8A1CDDE0B100F38585 /* DPUMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D891CDDE0B100F38585 /* DPUMLViewController.m */; };
+		76573D8C1CDDE1BD00F38585 /* UMLFigure.png in Resources */ = {isa = PBXBuildFile; fileRef = 76573D8B1CDDE1BD00F38585 /* UMLFigure.png */; };
+		76573D931CDDF75C00F38585 /* LMKDownLoader2.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D921CDDF75C00F38585 /* LMKDownLoader2.m */; };
 		765F83401CC49ADD00D87D7F /* LDDataExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 765F833F1CC49ADD00D87D7F /* LDDataExtension.m */; };
 		76737A6F1CC385DA008AEC1C /* SwiftBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76737A641CC385DA008AEC1C /* SwiftBasic.swift */; };
 		76737A701CC385DA008AEC1C /* SwiftBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A661CC385DA008AEC1C /* SwiftBasicViewController.m */; };
@@ -826,6 +829,11 @@
 		76573D831CDCFCD600F38585 /* UINavigationController+Weixin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Weixin.m"; sourceTree = "<group>"; };
 		76573D851CDD02F300F38585 /* WeixinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeixinView.h; sourceTree = "<group>"; };
 		76573D861CDD02F300F38585 /* WeixinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeixinView.m; sourceTree = "<group>"; };
+		76573D881CDDE0B100F38585 /* DPUMLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUMLViewController.h; sourceTree = "<group>"; };
+		76573D891CDDE0B100F38585 /* DPUMLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPUMLViewController.m; sourceTree = "<group>"; };
+		76573D8B1CDDE1BD00F38585 /* UMLFigure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UMLFigure.png; sourceTree = "<group>"; };
+		76573D911CDDF75C00F38585 /* LMKDownLoader2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMKDownLoader2.h; sourceTree = "<group>"; };
+		76573D921CDDF75C00F38585 /* LMKDownLoader2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMKDownLoader2.m; sourceTree = "<group>"; };
 		765F833E1CC49ADD00D87D7F /* LDDataExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDataExtension.h; sourceTree = "<group>"; };
 		765F833F1CC49ADD00D87D7F /* LDDataExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDataExtension.m; sourceTree = "<group>"; };
 		76737A631CC385DA008AEC1C /* iStudyDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iStudyDemo-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -1402,6 +1410,8 @@
 		760CBEB11CC1FF670087A9AA /* LEDDownload */ = {
 			isa = PBXGroup;
 			children = (
+				76573D911CDDF75C00F38585 /* LMKDownLoader2.h */,
+				76573D921CDDF75C00F38585 /* LMKDownLoader2.m */,
 				760CBEB21CC1FF830087A9AA /* LEDDownloadManager.h */,
 				760CBEB31CC1FF830087A9AA /* LEDDownloadManager.m */,
 				760CBEB51CC25C1F0087A9AA /* LEDDownloadManager2.h */,
@@ -2119,6 +2129,9 @@
 				76573D391CDA4E6D00F38585 /* DPStructuralViewController.m */,
 				76573D591CDA57B400F38585 /* DPStructuralTestViewController.h */,
 				76573D5A1CDA57B400F38585 /* DPStructuralTestViewController.m */,
+				76573D881CDDE0B100F38585 /* DPUMLViewController.h */,
+				76573D891CDDE0B100F38585 /* DPUMLViewController.m */,
+				76573D8B1CDDE1BD00F38585 /* UMLFigure.png */,
 			);
 			path = DPStructural;
 			sourceTree = "<group>";
@@ -3515,6 +3528,7 @@
 				769718651C9D466E00D0AC63 /* diannao.png in Resources */,
 				76C0350C1CA43103002241E5 /* 1.jpg in Resources */,
 				769718711C9D466E00D0AC63 /* shouqian.png in Resources */,
+				76573D8C1CDDE1BD00F38585 /* UMLFigure.png in Resources */,
 				761931791C8BC5120022A311 /* Assets.xcassets in Resources */,
 				769718701C9D466E00D0AC63 /* shanchuan.png in Resources */,
 				76C035051CA41258002241E5 /* icon_tips@2x.png in Resources */,
@@ -3776,6 +3790,7 @@
 				76E903901C9EFB5A003AC33A /* SinaWeiboViewController.m in Sources */,
 				76E9164C1CAC219600C8C63A /* TestPortalViewController.m in Sources */,
 				7632663C1CD8F4B700F56D9D /* DesignPatternsViewController.m in Sources */,
+				76573D8A1CDDE0B100F38585 /* DPUMLViewController.m in Sources */,
 				7697189B1C9E466C00D0AC63 /* QQSideBarViewController.m in Sources */,
 				76C035E21CAA99AE002241E5 /* PhotoViewController.m in Sources */,
 				76737A781CC3889B008AEC1C /* SwiftClassViewController.m in Sources */,
@@ -3825,6 +3840,7 @@
 				76C0358E1CA68964002241E5 /* RunTimeViewController.m in Sources */,
 				76573D581CDA54F800F38585 /* DPCreationalTestViewController.m in Sources */,
 				76737A6F1CC385DA008AEC1C /* SwiftBasic.swift in Sources */,
+				76573D931CDDF75C00F38585 /* LMKDownLoader2.m in Sources */,
 				769717E91C992C1B00D0AC63 /* QQMainViewController.m in Sources */,
 				76573D3A1CDA4E6D00F38585 /* DPStructuralViewController.m in Sources */,
 				76C035E81CAAD54A002241E5 /* CustomTakePhotoViewController.m in Sources */,

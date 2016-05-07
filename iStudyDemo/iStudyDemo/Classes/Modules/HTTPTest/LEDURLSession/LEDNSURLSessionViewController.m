@@ -22,14 +22,16 @@
 #import "LEDMVVMViewModel.h"
 #import "LEDDownload/LEDDownloadManager.h"
 #import "LEDDownload/LEDDownloadManager2.h"
+#import "LMKDownLoader2.h"
 
-@interface LEDNSURLSessionViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface LEDNSURLSessionViewController () <UITableViewDataSource, UITableViewDelegate, LMKDownLoaderProtocol>
 
 @property (nonatomic, strong) LEDMVVMViewModel* viewModel;
 
 @property (nonatomic, strong) UITableView* tableView;
 @property (nonatomic, strong) NSMutableArray* listData;
 @property (nonatomic, strong) NSMutableArray* listProvinceData;
+@property (nonatomic, strong) NSMutableDictionary *dict;
 
 @end
 
@@ -52,6 +54,7 @@
     self = [super init];
     if (self) {
         _viewModel = [[LEDMVVMViewModel alloc] init];
+        [LMKDownLoader2 sharedManager].delegate = self;
     }
     return self;
 }
@@ -102,6 +105,7 @@
 {
     _listData = [[NSMutableArray alloc] init];
     _listProvinceData = [[NSMutableArray alloc] init];
+    _dict = [NSMutableDictionary dictionary];
 }
 - (void)bindViewModel
 {
@@ -116,6 +120,7 @@
                 if (province && [province isKindOfClass:[LEDProvince class]]) {
                     [self.listData addObject:province.name];
                     [self.listProvinceData addObject:province];
+                    [self.dict setObject:@(0) forKey:province.url.absoluteString];
                 }
             }];
             [self.tableView reloadData];
@@ -153,7 +158,23 @@
     if (province.url && [[province.url absoluteString] length]) {
 //        [[LEDDownloadManager sharedManager] addDownloadWithURL:province.url];
 //        [[LEDDownloadManager sharedManager] startDownloadWithURL:province.url];
-        [[LEDDownloadManager2 sharedManager] startDownloadWithURL:province.url];
+//        [[LEDDownloadManager2 sharedManager] startDownloadWithURL:province.url];
+        
+        
+        NSNumber *num = [self.dict objectForKey:province.url.absoluteString];
+        if (![num boolValue]) {
+                 [[LMKDownLoader2 sharedManager] startDownloadWithURL:province.url];
+            [self.dict setObject:@(1) forKey:province.url.absoluteString];
+        } else {
+         [[LMKDownLoader2 sharedManager] cancelDownloadWithURL:province.url];
+            [self.dict setObject:@(0) forKey:province.url.absoluteString];
+        }
+        
+        
+        
+        
+        
+        
     } else {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"title" message:@"没有要下载的数据" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
         [alertView show];
@@ -184,6 +205,43 @@
 - (void)dealloc
 {
     [[LEDDownloadManager2 sharedManager] cancelAll];
+    [[LMKDownLoader2 sharedManager] cancelAll];
+}
+
+#pragma mark -
+
+/**
+ *  下载进度
+ *
+ *  @param url         下载的URL
+ *  @param currentSize 当前的数据大小
+ */
+- (void)downLoaderProgressWithURL:(NSURL *)url progress:(LMKDownLoaderItemProgress *)progress
+{
+    NSLog(@"%@,进度：current:%ld,total:%ld",url.absoluteString,progress.currentSize,progress.totalSize);
+}
+
+/**
+ *  下载完成
+ *
+ *  @param url 下载的URL
+ */
+- (void)downLoaderCompletionWithURL:(NSURL *)url
+{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"title" message:@"下载完成" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+    [alertView show];
+}
+
+/**
+ *  下载出错
+ *
+ *  @param url           下载的URL
+ *  @param downloadError 错误信息
+ */
+- (void)downLoaderErrorWithURL:(NSURL *)url error:(NSError *)downloadError
+{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"title" message:@"下载错误" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+    [alertView show];
 }
 
 @end

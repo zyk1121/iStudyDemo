@@ -64,13 +64,24 @@
 
 - (void)setupData
 {
-    // 根据不同的type生成不同的描述
     self.textView.text =
     @"\
-简单工厂模式描述：\n\
-    简单工厂模式是。。。。。\
-dddd\
+http://www.runoob.com/design-pattern/design-pattern-tutorial.html\n\n\
+http://m.blog.csdn.net/article/details?id=9159589\
     ";
+    /*
+    // 根据不同的type生成不同的描述
+    switch (_type) {
+        case DPStructuralTypeDPAdapter:
+            self.textView.text =
+            @"\
+http://www.runoob.com/design-pattern/design-pattern-tutorial.html\
+            ";
+            break;
+            default:
+            break;
+    }
+     */
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event

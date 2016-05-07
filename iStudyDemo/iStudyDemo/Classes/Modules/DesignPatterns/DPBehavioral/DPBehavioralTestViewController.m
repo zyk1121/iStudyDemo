@@ -67,9 +67,8 @@
     // 根据不同的type生成不同的描述
     self.textView.text =
     @"\
-简单工厂模式描述：\n\
-    简单工厂模式是。。。。。\
-dddd\
+http://www.runoob.com/design-pattern/design-pattern-tutorial.html\n\n\
+http://m.blog.csdn.net/article/details?id=9159589\
     ";
 }
 

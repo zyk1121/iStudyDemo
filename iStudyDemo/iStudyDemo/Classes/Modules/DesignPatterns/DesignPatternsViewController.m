@@ -15,6 +15,7 @@
 #import "DPStructuralViewController.h"
 #import "DPCreationalViewController.h"
 #import "DPBehavioralViewController.h"
+#import "DPUMLViewController.h"
 
 // http://m.blog.csdn.net/article/details?id=9159589
 // http://www.runoob.com/design-pattern/abstract-factory-pattern.html
@@ -69,6 +70,7 @@
     [_listData addObject:@"创建型模式(Creational Patterns)"];
     [_listData addObject:@"结构型模式(Structual Patterns)"];
     [_listData addObject:@"行为型模式(Behavioral Patterns)"];
+    [_listData addObject:@"UML类图示例"];
     
 }
 
@@ -137,6 +139,13 @@
 - (void)test3
 {
     DPBehavioralViewController *vc = [[DPBehavioralViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+
+- (void)test4
+{
+    DPUMLViewController *vc = [[DPUMLViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
     
 }
