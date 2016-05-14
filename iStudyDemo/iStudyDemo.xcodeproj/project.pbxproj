@@ -3327,6 +3327,7 @@
 				761931671C8BC5120022A311 /* Resources */,
 				47A42F9504B4CE3BDE563CD6 /* Copy Pods Resources */,
 				7D53B823EBA1815559C1F380 /* Embed Pods Frameworks */,
+				76DBE16B1CE7166900036BB9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -3717,6 +3718,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		76DBE16B1CE7166900036BB9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\"\necho \"${SRCROOT}\"\n#1、第一行打印在你运行你的项目后的问佳佳路径，包含最后一个图标。\n#2、第二行打印项目文件所在的文件夹路径。\nIFS=$'\\n'\necho $(find ${SRCROOT} -name \"IconBeta.png\")\n";
 		};
 		7D53B823EBA1815559C1F380 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -4116,6 +4130,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -4186,6 +4201,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
