@@ -19,7 +19,36 @@ brew doctor
 
 这些是所有你需要安装的，以在本教程中使用。
 
+#echo "${SRCROOT}"
+#1、第一行打印在你运行你的项目后的问佳佳路径，包含最后一个图标。
+#2、第二行打印项目文件所在的文件夹路径。
+IFS=$'\n'
+#1
+PATH=${PATH}:/usr/local/bin
 
+function generateIcon () {
+    BASE_IMAGE_NAME=$1
+#2
+TARGET_PATH="${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/${BASE_IMAGE_NAME}"
+BASE_IMAGE_PATH=$(find ${SRCROOT} -name ${BASE_IMAGE_NAME})
+WIDTH=$(identify -format %w ${BASE_IMAGE_PATH})
+#3
+convert IconBeta.png -resize $WIDTHx$WIDTH resizedIconBeta.png
+#4
+convert ${BASE_IMAGE_PATH} -fill red -font Times-Bold -pointsize 32 -gravity south -annotate 0 "Hello" - | composite resizedIconBeta.png - ${TARGET_PATH}
+}
+generateIcon "AppIcon60x60@2x.png"
+#generateIcon "AppIcon60x60@3x.png"
+#generateIcon "AppIcon76x76~ipad.png"
+#generateIcon "AppIcon76x76@2x~ipad.png"
+#generateIcon "AppIcon29x29.png"
+#generateIcon "AppIcon29x29@2x.png"
+#generateIcon "AppIcon29x29@3x.png"
+#generateIcon "AppIcon40x40.png"
+#generateIcon "AppIcon40x40@2x.png"
+#generateIcon "AppIcon40x40@3x.png"
+
+#rm resizedIconBeta.png
 
 convert Icon.png -fill black -font Times-Bold -pointsize 28 -gravity south -annotate 0 "iStudyDemo" test.png
 

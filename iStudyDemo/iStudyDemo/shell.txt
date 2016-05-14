@@ -1,0 +1,49 @@
+IFS=$'\n'
+PATH=${PATH}:/usr/local/bin
+function generateIcon () {
+    BASE_IMAGE_NAME=$1
+    WIDTH=$2
+#2
+TARGET_PATH="${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/${BASE_IMAGE_NAME}"
+BASE_IMAGE_PATH="${SRCROOT}/output/${BASE_IMAGE_NAME}"
+#3
+convert IconBeta.png -resize ${WIDTH}x${WIDTH}! resizedIconBeta.png
+#4
+#FONT_SIZE=$(echo "$WIDTH * .15" | bc -l)
+#构建号码
+#1.0.1
+ver=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" "${PROJECT_DIR}/${INFOPLIST_FILE}")
+#1
+buildNumber=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" "${PROJECT_DIR}/${INFOPLIST_FILE}")
+// 注意空格
+CONFIG="Beta"
+if [ "${CONFIGURATION}" == "Debug" ]
+then
+CONFIG="Debug"
+else
+CONFIG="Release"
+fi
+
+pointSize=${WIDTH}
+let "pointSize/=5"
+echo ${pointSize}
+
+convert ${BASE_IMAGE_PATH} -fill red -font Times-Bold -pointsize ${pointSize} -gravity south -annotate 0 ${CONFIG} test.png
+composite resizedIconBeta.png test.png ${TARGET_PATH}
+rm resizedIconBeta.png
+rm test.png
+}
+
+
+#Dubug配置将是调试版本，Beta配置将是测试版本，Release配置将是释放发布版本。
+
+generateIcon "AppIcon60x60@2x.png" 120
+generateIcon "AppIcon60x60@3x.png" 180
+#generateIcon "AppIcon76x76~ipad.png"
+#generateIcon "AppIcon76x76@2x~ipad.png"
+#generateIcon "AppIcon29x29.png"
+generateIcon "AppIcon29x29@2x.png" 58
+generateIcon "AppIcon29x29@3x.png" 87
+#generateIcon "AppIcon40x40.png"
+generateIcon "AppIcon40x40@2x.png" 80
+generateIcon "AppIcon40x40@3x.png" 120
