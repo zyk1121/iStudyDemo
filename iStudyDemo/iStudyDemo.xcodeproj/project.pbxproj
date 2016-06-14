@@ -461,6 +461,12 @@
 		76C479A71C8F264100EAE07E /* TestCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C479A51C8F264100EAE07E /* TestCoreData.m */; };
 		76CDEB9A1CB95ABD00DFCB16 /* LEDProvincesDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CDEB991CB95ABD00DFCB16 /* LEDProvincesDomain.m */; };
 		76CDEB9D1CB95AE700DFCB16 /* LEDCities.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CDEB9C1CB95AE700DFCB16 /* LEDCities.m */; };
+		76DE57B51D105C9F00DB4A46 /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 76DE57B01D105C9F00DB4A46 /* 1.gif */; };
+		76DE57B61D105C9F00DB4A46 /* GifView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DE57B21D105C9F00DB4A46 /* GifView.m */; };
+		76DE57B71D105C9F00DB4A46 /* GIFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DE57B41D105C9F00DB4A46 /* GIFViewController.m */; };
+		76DE57BF1D1063FE00DB4A46 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DE57BB1D1063FE00DB4A46 /* UIImage+ImageEffects.m */; };
+		76DE57C01D1063FE00DB4A46 /* ImageEffects.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76DE57BC1D1063FE00DB4A46 /* ImageEffects.jpg */; };
+		76DE57C11D1063FE00DB4A46 /* ImageEffectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DE57BE1D1063FE00DB4A46 /* ImageEffectsViewController.m */; };
 		76E1B8B01CC9215300C71338 /* SearchVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E1B8AF1CC9215300C71338 /* SearchVCViewController.m */; };
 		76E1B8BB1CC9260400C71338 /* GzipUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E1B8B31CC9260400C71338 /* GzipUtility.m */; };
 		76E1B8BC1CC9260400C71338 /* LDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E1B8B51CC9260400C71338 /* LDViewController.m */; };
@@ -1156,6 +1162,16 @@
 		76CDEB991CB95ABD00DFCB16 /* LEDProvincesDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDProvincesDomain.m; sourceTree = "<group>"; };
 		76CDEB9B1CB95AE700DFCB16 /* LEDCities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDCities.h; sourceTree = "<group>"; };
 		76CDEB9C1CB95AE700DFCB16 /* LEDCities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDCities.m; sourceTree = "<group>"; };
+		76DE57B01D105C9F00DB4A46 /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1.gif; sourceTree = "<group>"; };
+		76DE57B11D105C9F00DB4A46 /* GifView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifView.h; sourceTree = "<group>"; };
+		76DE57B21D105C9F00DB4A46 /* GifView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifView.m; sourceTree = "<group>"; };
+		76DE57B31D105C9F00DB4A46 /* GIFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFViewController.h; sourceTree = "<group>"; };
+		76DE57B41D105C9F00DB4A46 /* GIFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFViewController.m; sourceTree = "<group>"; };
+		76DE57BA1D1063FE00DB4A46 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		76DE57BB1D1063FE00DB4A46 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		76DE57BC1D1063FE00DB4A46 /* ImageEffects.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ImageEffects.jpg; sourceTree = "<group>"; };
+		76DE57BD1D1063FE00DB4A46 /* ImageEffectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageEffectsViewController.h; sourceTree = "<group>"; };
+		76DE57BE1D1063FE00DB4A46 /* ImageEffectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageEffectsViewController.m; sourceTree = "<group>"; };
 		76E1B8AE1CC9215300C71338 /* SearchVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchVCViewController.h; sourceTree = "<group>"; };
 		76E1B8AF1CC9215300C71338 /* SearchVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchVCViewController.m; sourceTree = "<group>"; };
 		76E1B8B21CC9260400C71338 /* GzipUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GzipUtility.h; sourceTree = "<group>"; };
@@ -2447,6 +2463,8 @@
 				769717E61C992C0400D0AC63 /* QQVC */,
 				769717E31C992AC600D0AC63 /* CustomUIViewController.h */,
 				769717E41C992AC600D0AC63 /* CustomUIViewController.m */,
+				76DE57AF1D105C9F00DB4A46 /* GIF */,
+				76DE57B81D1063FE00DB4A46 /* ImageBlur */,
 			);
 			path = CustomUI;
 			sourceTree = "<group>";
@@ -3165,6 +3183,38 @@
 			name = Domain;
 			sourceTree = "<group>";
 		};
+		76DE57AF1D105C9F00DB4A46 /* GIF */ = {
+			isa = PBXGroup;
+			children = (
+				76DE57B01D105C9F00DB4A46 /* 1.gif */,
+				76DE57B11D105C9F00DB4A46 /* GifView.h */,
+				76DE57B21D105C9F00DB4A46 /* GifView.m */,
+				76DE57B31D105C9F00DB4A46 /* GIFViewController.h */,
+				76DE57B41D105C9F00DB4A46 /* GIFViewController.m */,
+			);
+			path = GIF;
+			sourceTree = "<group>";
+		};
+		76DE57B81D1063FE00DB4A46 /* ImageBlur */ = {
+			isa = PBXGroup;
+			children = (
+				76DE57B91D1063FE00DB4A46 /* ImageEffects */,
+				76DE57BC1D1063FE00DB4A46 /* ImageEffects.jpg */,
+				76DE57BD1D1063FE00DB4A46 /* ImageEffectsViewController.h */,
+				76DE57BE1D1063FE00DB4A46 /* ImageEffectsViewController.m */,
+			);
+			path = ImageBlur;
+			sourceTree = "<group>";
+		};
+		76DE57B91D1063FE00DB4A46 /* ImageEffects */ = {
+			isa = PBXGroup;
+			children = (
+				76DE57BA1D1063FE00DB4A46 /* UIImage+ImageEffects.h */,
+				76DE57BB1D1063FE00DB4A46 /* UIImage+ImageEffects.m */,
+			);
+			path = ImageEffects;
+			sourceTree = "<group>";
+		};
 		76E1B8AD1CC9213A00C71338 /* SearchVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -3445,6 +3495,7 @@
 				763E4E861CA2B7F500470FCA /* USE_MOBILETRANSFER.png in Resources */,
 				763E4E7E1CA2B7F500470FCA /* Home_checkingRing@2x.png in Resources */,
 				763E4E641CA2B7F500470FCA /* 10000008.png in Resources */,
+				76DE57C01D1063FE00DB4A46 /* ImageEffects.jpg in Resources */,
 				769718681C9D466E00D0AC63 /* header.png in Resources */,
 				763263B71CD25B5200F56D9D /* jstest6.html in Resources */,
 				763E4E711CA2B7F500470FCA /* Home_appfrag_credit.png in Resources */,
@@ -3627,6 +3678,7 @@
 				769718891C9D466E00D0AC63 /* skin_tab_icon_plugin_normal.png in Resources */,
 				76C034FB1CA41258002241E5 /* icon_pagecontrol_active@2x.png in Resources */,
 				7601D93F1CBFF5D000E6F6E7 /* flowers.png in Resources */,
+				76DE57B51D105C9F00DB4A46 /* 1.gif in Resources */,
 				769718761C9D466E00D0AC63 /* sidebar_favorit@3x.png in Resources */,
 				76C035491CA675F0002241E5 /* chat_bottom_voice_nor.png in Resources */,
 				769717DD1C986A6B00D0AC63 /* SimpleFragment.glsl in Resources */,
@@ -3855,6 +3907,7 @@
 				76573D581CDA54F800F38585 /* DPCreationalTestViewController.m in Sources */,
 				76737A6F1CC385DA008AEC1C /* SwiftBasic.swift in Sources */,
 				76573D931CDDF75C00F38585 /* LMKDownLoader2.m in Sources */,
+				76DE57B71D105C9F00DB4A46 /* GIFViewController.m in Sources */,
 				769717E91C992C1B00D0AC63 /* QQMainViewController.m in Sources */,
 				76573D3A1CDA4E6D00F38585 /* DPStructuralViewController.m in Sources */,
 				76C035E81CAAD54A002241E5 /* CustomTakePhotoViewController.m in Sources */,
@@ -3881,6 +3934,7 @@
 				76C0355C1CA6776E002241E5 /* MessageFrame.m in Sources */,
 				76C035801CA68792002241E5 /* DrawLayerViewController.m in Sources */,
 				76737A851CC388F7008AEC1C /* SwiftFunctionClosureViewController.m in Sources */,
+				76DE57B61D105C9F00DB4A46 /* GifView.m in Sources */,
 				76BD6BD11CA1120E00708977 /* UIBarButtonItem+Extension.m in Sources */,
 				76C035B11CA79051002241E5 /* QRCodeCreateViewController.m in Sources */,
 				76A2E9E01CCBC1FD00536E5D /* SwiftUIViewControllerTest.swift in Sources */,
@@ -3903,6 +3957,8 @@
 				76C034BE1CA40EC7002241E5 /* SPKADViewController.m in Sources */,
 				76C4799C1C8EF67B00EAE07E /* QuartzCoreViewController.m in Sources */,
 				76573D5B1CDA57B400F38585 /* DPStructuralTestViewController.m in Sources */,
+				76DE57C11D1063FE00DB4A46 /* ImageEffectsViewController.m in Sources */,
+				76DE57BF1D1063FE00DB4A46 /* UIImage+ImageEffects.m in Sources */,
 				7653A4C71CC682CC005A27E2 /* SwiftFunctionClosure.swift in Sources */,
 				76E9037E1C9ED4B4003AC33A /* NaviMenuViewController.m in Sources */,
 				763E4DFC1CA25E3500470FCA /* PYViewController.m in Sources */,

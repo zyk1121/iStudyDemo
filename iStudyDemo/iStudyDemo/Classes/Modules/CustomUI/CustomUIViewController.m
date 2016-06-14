@@ -24,6 +24,8 @@
 #import "WeiChatViewController.h"
 #import "AliPayViewController.h"
 #import "SearchVCViewController.h"
+#import "GIFViewController.h"
+#import "ImageEffectsViewController.h"
 
 @interface CustomUIViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -114,6 +116,16 @@
     [_listData addObject:@"搜索界面"];
     SearchVCViewController *searchVC = [[SearchVCViewController alloc] init];
     [_listViewControllers addObject:searchVC];
+    
+    // 8.GIF
+    [_listData addObject:@"GIF"];
+    GIFViewController *gifVC = [[GIFViewController alloc] init];
+    [_listViewControllers addObject:gifVC];
+    
+    // 9.毛玻璃效果
+    [_listData addObject:@"毛玻璃效果"];
+    ImageEffectsViewController *imageEffectsVC = [[ImageEffectsViewController alloc] init];
+    [_listViewControllers addObject:imageEffectsVC];
     
     /*
      自定义view
