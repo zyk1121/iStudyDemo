@@ -6,5 +6,10 @@
 	<array>
 		<string>group.com.ishowchina</string>
 	</array>
+	<key>keychain-access-groups</key>
+	<array>
+		<string>$(AppIdentifierPrefix)com.ishowchina.map1</string>
+		<string>$(AppIdentifierPrefix)com.ishowchina.map1</string>
+	</array>
 </dict>
 </plist>

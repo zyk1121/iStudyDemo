@@ -220,6 +220,8 @@
 		763FE38D1C8DCB6100CE67FF /* LEDDomainPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE38C1C8DCB6100CE67FF /* LEDDomainPredicate.m */; };
 		763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE38F1C8DD03000CE67FF /* TestDomainObject.m */; };
 		764153011D11AAD90078D3BA /* APPShareDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764153001D11AAD90078D3BA /* APPShareDataViewController.m */; };
+		764153081D11B3040078D3BA /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 764153051D11B3040078D3BA /* SSKeychain.m */; };
+		764153091D11B3040078D3BA /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 764153071D11B3040078D3BA /* SSKeychainQuery.m */; };
 		7653A4C71CC682CC005A27E2 /* SwiftFunctionClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653A4C61CC682CC005A27E2 /* SwiftFunctionClosure.swift */; };
 		76573D341CDA4E4D00F38585 /* DPCreationalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D331CDA4E4D00F38585 /* DPCreationalViewController.m */; };
 		76573D371CDA4E5E00F38585 /* DPBehavioralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D361CDA4E5E00F38585 /* DPBehavioralViewController.m */; };
@@ -816,6 +818,10 @@
 		764152FD1D11A9500078D3BA /* iStudyDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = iStudyDemo.entitlements; sourceTree = "<group>"; };
 		764152FF1D11AAD90078D3BA /* APPShareDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPShareDataViewController.h; sourceTree = "<group>"; };
 		764153001D11AAD90078D3BA /* APPShareDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPShareDataViewController.m; sourceTree = "<group>"; };
+		764153041D11B3040078D3BA /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		764153051D11B3040078D3BA /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		764153061D11B3040078D3BA /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychainQuery.h; sourceTree = "<group>"; };
+		764153071D11B3040078D3BA /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainQuery.m; sourceTree = "<group>"; };
 		7653A4C61CC682CC005A27E2 /* SwiftFunctionClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftFunctionClosure.swift; sourceTree = "<group>"; };
 		76573D321CDA4E4D00F38585 /* DPCreationalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPCreationalViewController.h; sourceTree = "<group>"; };
 		76573D331CDA4E4D00F38585 /* DPCreationalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCreationalViewController.m; sourceTree = "<group>"; };
@@ -2091,10 +2097,22 @@
 		764152FE1D11AA9D0078D3BA /* APPShareData */ = {
 			isa = PBXGroup;
 			children = (
+				764153031D11B3040078D3BA /* KeychainSources */,
 				764152FF1D11AAD90078D3BA /* APPShareDataViewController.h */,
 				764153001D11AAD90078D3BA /* APPShareDataViewController.m */,
 			);
 			path = APPShareData;
+			sourceTree = "<group>";
+		};
+		764153031D11B3040078D3BA /* KeychainSources */ = {
+			isa = PBXGroup;
+			children = (
+				764153041D11B3040078D3BA /* SSKeychain.h */,
+				764153051D11B3040078D3BA /* SSKeychain.m */,
+				764153061D11B3040078D3BA /* SSKeychainQuery.h */,
+				764153071D11B3040078D3BA /* SSKeychainQuery.m */,
+			);
+			path = KeychainSources;
 			sourceTree = "<group>";
 		};
 		76573D2E1CDA4DEE00F38585 /* DPBehavioral */ = {
@@ -3459,6 +3477,9 @@
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
 							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
 						};
 					};
 					761931811C8BC5120022A311 = {
@@ -3913,6 +3934,7 @@
 				760AF1381CB176E400A0D242 /* JsonModelDomainObject.m in Sources */,
 				76C035DF1CAA999D002241E5 /* CustomPlayerViewController.m in Sources */,
 				76C035701CA68288002241E5 /* QRCodeViewController.m in Sources */,
+				764153081D11B3040078D3BA /* SSKeychain.m in Sources */,
 				76E916491CABFA9E00C8C63A /* LEDPortal.m in Sources */,
 				76E1B8BE1CC9260400C71338 /* NSString+Hash.m in Sources */,
 				76C034C11CA40EC7002241E5 /* SPKBannerPagingView.m in Sources */,
@@ -4021,6 +4043,7 @@
 				76C479A61C8F264100EAE07E /* TestCoreData+CoreDataProperties.m in Sources */,
 				763E4DF91CA25E2900470FCA /* WDViewController.m in Sources */,
 				76C035A01CA68FF0002241E5 /* ReactNativeViewController.m in Sources */,
+				764153091D11B3040078D3BA /* SSKeychainQuery.m in Sources */,
 				760AF0F11CB0E35600A0D242 /* NSArray+LEDFoundation.m in Sources */,
 				76CDEB9A1CB95ABD00DFCB16 /* LEDProvincesDomain.m in Sources */,
 				763266221CD4CA8C00F56D9D /* LEDEventHandler.m in Sources */,
