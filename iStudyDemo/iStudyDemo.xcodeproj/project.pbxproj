@@ -219,6 +219,7 @@
 		763FE3871C8DC9AB00CE67FF /* LEDDomainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE3861C8DC9AB00CE67FF /* LEDDomainObject.m */; };
 		763FE38D1C8DCB6100CE67FF /* LEDDomainPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE38C1C8DCB6100CE67FF /* LEDDomainPredicate.m */; };
 		763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 763FE38F1C8DD03000CE67FF /* TestDomainObject.m */; };
+		764153011D11AAD90078D3BA /* APPShareDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764153001D11AAD90078D3BA /* APPShareDataViewController.m */; };
 		7653A4C71CC682CC005A27E2 /* SwiftFunctionClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653A4C61CC682CC005A27E2 /* SwiftFunctionClosure.swift */; };
 		76573D341CDA4E4D00F38585 /* DPCreationalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D331CDA4E4D00F38585 /* DPCreationalViewController.m */; };
 		76573D371CDA4E5E00F38585 /* DPBehavioralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D361CDA4E5E00F38585 /* DPBehavioralViewController.m */; };
@@ -812,6 +813,9 @@
 		763FE38C1C8DCB6100CE67FF /* LEDDomainPredicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDDomainPredicate.m; sourceTree = "<group>"; };
 		763FE38E1C8DD03000CE67FF /* TestDomainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDomainObject.h; sourceTree = "<group>"; };
 		763FE38F1C8DD03000CE67FF /* TestDomainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDomainObject.m; sourceTree = "<group>"; };
+		764152FD1D11A9500078D3BA /* iStudyDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = iStudyDemo.entitlements; sourceTree = "<group>"; };
+		764152FF1D11AAD90078D3BA /* APPShareDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPShareDataViewController.h; sourceTree = "<group>"; };
+		764153001D11AAD90078D3BA /* APPShareDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPShareDataViewController.m; sourceTree = "<group>"; };
 		7653A4C61CC682CC005A27E2 /* SwiftFunctionClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftFunctionClosure.swift; sourceTree = "<group>"; };
 		76573D321CDA4E4D00F38585 /* DPCreationalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPCreationalViewController.h; sourceTree = "<group>"; };
 		76573D331CDA4E4D00F38585 /* DPCreationalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCreationalViewController.m; sourceTree = "<group>"; };
@@ -1461,6 +1465,7 @@
 		7619316B1C8BC5120022A311 /* iStudyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				764152FD1D11A9500078D3BA /* iStudyDemo.entitlements */,
 				761931AC1C8BCCDA0022A311 /* Classes */,
 				7619319F1C8BC8A20022A311 /* Main */,
 				761931781C8BC5120022A311 /* Assets.xcassets */,
@@ -1556,6 +1561,7 @@
 				761931B71C8BD7820022A311 /* MapDemo */,
 				761931B31C8BD4FF0022A311 /* OpenGL */,
 				76C035951CA68CBC002241E5 /* Swift */,
+				764152FE1D11AA9D0078D3BA /* APPShareData */,
 				76C0359A1CA68FC7002241E5 /* ReactNative */,
 			);
 			path = Modules;
@@ -2080,6 +2086,15 @@
 				763FE38C1C8DCB6100CE67FF /* LEDDomainPredicate.m */,
 			);
 			path = Mantle;
+			sourceTree = "<group>";
+		};
+		764152FE1D11AA9D0078D3BA /* APPShareData */ = {
+			isa = PBXGroup;
+			children = (
+				764152FF1D11AAD90078D3BA /* APPShareDataViewController.h */,
+				764153001D11AAD90078D3BA /* APPShareDataViewController.m */,
+			);
+			path = APPShareData;
 			sourceTree = "<group>";
 		};
 		76573D2E1CDA4DEE00F38585 /* DPBehavioral */ = {
@@ -3439,7 +3454,12 @@
 				TargetAttributes = {
 					761931681C8BC5120022A311 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = N7EEUK4SF6;
+						DevelopmentTeam = 7Q62N6S7X8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					761931811C8BC5120022A311 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -3917,6 +3937,7 @@
 				76C035641CA67FF0002241E5 /* SystemFunctionViewController.m in Sources */,
 				76C0357C1CA68619002241E5 /* XMPPViewController.m in Sources */,
 				76E9038C1C9ED53E003AC33A /* YBTableView.m in Sources */,
+				764153011D11AAD90078D3BA /* APPShareDataViewController.m in Sources */,
 				76C035BD1CA7E737002241E5 /* NSTimerTestViewController.m in Sources */,
 				769718181C9AF62100D0AC63 /* QQContractViewController.m in Sources */,
 				761931D41C8C5DF70022A311 /* CC3Math.m in Sources */,
@@ -4188,6 +4209,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = iStudyDemo/iStudyDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -4243,7 +4265,7 @@
 					"-weak_framework",
 					"\"JavaScriptCore\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.puny.iStudyDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ishowchina.map1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iStudyDemo/Classes/Modules/Swift/Swift-OC/iStudyDemo-Bridging-Header.h";
@@ -4259,6 +4281,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = iStudyDemo/iStudyDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -4314,7 +4337,7 @@
 					"-weak_framework",
 					"\"JavaScriptCore\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.puny.iStudyDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ishowchina.map1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iStudyDemo/Classes/Modules/Swift/Swift-OC/iStudyDemo-Bridging-Header.h";

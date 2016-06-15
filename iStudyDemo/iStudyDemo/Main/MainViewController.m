@@ -44,6 +44,7 @@
 #import "JavaScriptViewController.h"
 #import "NodeDotJSViewController.h"
 #import "DesignPatternsViewController.h"
+#import "APPShareDataViewController.h"
 
 // http://www.cocoachina.com/ios/20150825/13195.html
 
@@ -228,6 +229,10 @@
     [_listData addObject:@"DesignPatterns"];
      DesignPatternsViewController *designViewController = [[DesignPatternsViewController alloc] init];
     [_listViewControllers addObject:designViewController];
+    // 27.App Shared Data
+    [_listData addObject:@"App Shared Data"];
+    APPShareDataViewController *appgroupViewController = [[APPShareDataViewController alloc] init];
+    [_listViewControllers addObject:appgroupViewController];
 
 }
 
