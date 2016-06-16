@@ -417,6 +417,43 @@
  1、快捷标签最多可以创建四个，包括静态的和动态的。
  
  2、每个标签的题目和icon最多两行，多出的会用...省略
+ 
+ - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void(^)(BOOL succeeded))completionHandler
+ {
+ if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0 &&self.window.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable)
+ {
+ YPYDLog(@"你的手机支持3D Touch!");
+ YPYDNetCountManager * sharedNetCountManager = [YPYDNetCountManager sharedNetCountManager];
+ sharedNetCountManager.applicationShortcutItemTitle = shortcutItem.type;
+ 
+ 
+ //首页
+ if([shortcutItem.type isEqualToString:@"YPYD.UITouchText.home"])
+ {
+ [[NSNotificationCenter defaultCenter] postNotificationName:@"YPYD.UITouchText.home" object:nil userInfo:nil];
+ }
+ //搜索商品
+ if([shortcutItem.type isEqualToString:@"YPYD.UITouchText.search"])
+ {
+ [[NSNotificationCenter defaultCenter] postNotificationName:@"YPYD.UITouchText.search" object:nil userInfo:nil];
+ }
+ //购物车
+ if([shortcutItem.type isEqualToString:@"YPYD.UITouchText.cart"])
+ {
+ [[NSNotificationCenter defaultCenter] postNotificationName:@"YPYD.UITouchText.cart" object:nil userInfo:nil];
+ }
+ //我的U
+ if([shortcutItem.type isEqualToString:@"YPYD.UITouchText.myU"])
+ {
+ [[NSNotificationCenter defaultCenter] postNotificationName:@"YPYD.UITouchText.home" object:nil userInfo:nil];
+ }
+ }
+ else
+ {
+ YPYDLog(@"你的手机暂不支持3D Touch!");
+ }
+ }
+ 
  */
 
  - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void(^)(BOOL succeeded))completionHandler NS_AVAILABLE_IOS(9_0)
@@ -425,5 +462,21 @@
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"3Dtouch" message:shortcutItem.localizedTitle delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
     [alertView show];
 }
+/*
+ #pragma mark 获取压力的大小非常简单，我们可以通过UITouch类中的一些属性来完成。我们只需要在ToucheMoved的事件中捕获这些信息，请注意，不用判断 x,y 值变化
+ //我这里 只做了一个简单的  压力感应示例，如需更复杂的效果，可以自行编制。
+ - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+ {
+ //宣告一个UITouch的指标来存放事件触发时所撷取到的状态
+ UITouch *touch = [[event allTouches] anyObject];
+ _forceLab.text = [NSString stringWithFormat:@"当前压力值为: %f",touch.force];
+ //   YPYDLog(@"最大压力值  %f",touch.maximumPossibleForce);最大压力值  6.666667
+ if (touch.force>0.2)
+ {
+ _lab.font = [UIFont systemFontOfSize:20*touch.force];
+ _lab.textColor = YPYDColor(255*touch.force/6.5, 0, 0, 1);
+ }
+ }  
+ */
 
 @end
