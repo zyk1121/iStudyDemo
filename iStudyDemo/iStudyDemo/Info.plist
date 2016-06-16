@@ -59,6 +59,17 @@
 	<string>为了能让你更好的使用地图服务，请允许</string>
 	<key>NSLocationWhenInUseDescription</key>
 	<string>为了能让你更好的使用地图服务，请允许</string>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortcutIconTypeShare</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>ShareTitle</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>UITouchText.shareType</string>
+		</dict>
+	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

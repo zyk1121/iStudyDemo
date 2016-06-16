@@ -396,4 +396,34 @@
     }  
 }
 
+/*3、响应标签的行为
+ 
+ 类似推送，当我们点击标签进入应用程序时，也可以进行一些操作，我们可以看到，在applocation中增加了这样一个方法：
+ 
+ 
+ - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void(^)(BOOL succeeded))completionHandler NS_AVAILABLE_IOS(9_0);
+ 
+ 当我们通过标签进入app时，就会在appdelegate中调用这样一个回调，我们可以获取shortcutItem的信息进行相关逻辑操作。
+ 
+ 这里有一点需要注意：我们在app的入口函数：
+ 
+ 
+ - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
+ 
+ 也需要进行一下判断，在launchOptions中有UIApplicationLaunchOptionsShortcutItemKey这样一个键，通过它，我们可以区别是否是从标签进入的app，如果是则处理结束逻辑后，返回NO，防止处理逻辑被反复回调。
+ 
+ 几点注意：
+ 
+ 1、快捷标签最多可以创建四个，包括静态的和动态的。
+ 
+ 2、每个标签的题目和icon最多两行，多出的会用...省略
+ */
+
+ - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void(^)(BOOL succeeded))completionHandler NS_AVAILABLE_IOS(9_0)
+{
+//    NSLog(@"%@",shortcutItem.localizedTitle);
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"3Dtouch" message:shortcutItem.localizedTitle delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+    [alertView show];
+}
+
 @end

@@ -71,6 +71,14 @@
     [self setupData];
     [self setupUI];
     [self.view setNeedsUpdateConstraints];
+    
+    // Do any additional setup after loading the view, typically from a nib.
+    //动态 创建 3Dtouch 标签
+//    UIApplicationShortcutItem * item = [[UIApplicationShortcutItem alloc]initWithType:@"two" localizedTitle:@"第二个标签" localizedSubtitle:@"hello" icon:[UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypePlay] userInfo:nil];
+
+//    [UIApplication sharedApplication].shortcutItems = @[item];
+    // 标签会一直存在，重新启动也会存在
+     [UIApplication sharedApplication].shortcutItems = nil;// 删除动态标签，good，每次
 }
 
 #pragma mark - masonry
