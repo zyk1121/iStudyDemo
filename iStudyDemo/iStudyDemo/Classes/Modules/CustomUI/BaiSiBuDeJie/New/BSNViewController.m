@@ -16,6 +16,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationItem.title = @"百思不得姐";
+    [self setupUI];
+}
+
+- (void)setupUI
+{
+
 }
 
 @end

@@ -309,3 +309,10 @@ return self; \
 #else
 #define ZYKLog(...)
 #endif
+
+// .m文件都会定义这个宏__OBJC__
+#ifdef __OBJC__
+
+// 
+
+#endif
