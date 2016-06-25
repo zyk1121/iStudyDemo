@@ -31,7 +31,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        
+        self.backgroundColor = [UIColor lightGrayColor];
     }
     return self;
 }
@@ -65,7 +65,7 @@
 - (void)setupScrollView
 {
     UIScrollView *scrollView = [[UIScrollView alloc] init];
-    scrollView.frame = self.bounds;
+    scrollView.frame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
     scrollView.delegate = self;
     [self addSubview:scrollView];
     

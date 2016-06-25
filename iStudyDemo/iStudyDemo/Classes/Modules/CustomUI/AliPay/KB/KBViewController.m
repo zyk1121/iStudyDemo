@@ -12,6 +12,7 @@
 #import "UIKitMacros.h"
 #import "UIScrollRollView.h"
 #import "KBScrollView.h"
+#import "KBScrollView2.h"
 
 #define MyColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 
@@ -55,9 +56,14 @@
     [self.view addSubview:rollView];
     
     KBScrollView *sv = [[KBScrollView alloc] init];
-    sv.frame=CGRectMake(0, 300, SCREEN_WIDTH, 100);
+    sv.frame=CGRectMake(0, 210, SCREEN_WIDTH, 100);
     [sv setupScroollArray:imageArray isAutoRun:NO];
     [self.view addSubview:sv];
+    
+    KBScrollView2 *sv2 = [[KBScrollView2 alloc] init];
+    sv2.frame=CGRectMake(0, 320, SCREEN_WIDTH, 180);
+    [sv2 setupScroollArray:imageArray isAutoRun:NO];
+    [self.view addSubview:sv2];
 }
 
 @end

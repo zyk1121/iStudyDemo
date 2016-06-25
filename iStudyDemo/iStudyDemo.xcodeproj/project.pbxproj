@@ -224,6 +224,8 @@
 		764153091D11B3040078D3BA /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 764153071D11B3040078D3BA /* SSKeychainQuery.m */; };
 		7653A4C71CC682CC005A27E2 /* SwiftFunctionClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653A4C61CC682CC005A27E2 /* SwiftFunctionClosure.swift */; };
 		7656C3301D1D8AAD00024B01 /* KBScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7656C32F1D1D8AAD00024B01 /* KBScrollView.m */; };
+		7656C3321D1E2E1D00024B01 /* route_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7656C3311D1E2E1D00024B01 /* route_selected.png */; };
+		7656C3351D1E2F3B00024B01 /* KBScrollView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 7656C3341D1E2F3B00024B01 /* KBScrollView2.m */; };
 		76573D341CDA4E4D00F38585 /* DPCreationalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D331CDA4E4D00F38585 /* DPCreationalViewController.m */; };
 		76573D371CDA4E5E00F38585 /* DPBehavioralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D361CDA4E5E00F38585 /* DPBehavioralViewController.m */; };
 		76573D3A1CDA4E6D00F38585 /* DPStructuralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D391CDA4E6D00F38585 /* DPStructuralViewController.m */; };
@@ -826,6 +828,9 @@
 		7653A4C61CC682CC005A27E2 /* SwiftFunctionClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftFunctionClosure.swift; sourceTree = "<group>"; };
 		7656C32E1D1D8AAD00024B01 /* KBScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBScrollView.h; sourceTree = "<group>"; };
 		7656C32F1D1D8AAD00024B01 /* KBScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBScrollView.m; sourceTree = "<group>"; };
+		7656C3311D1E2E1D00024B01 /* route_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = route_selected.png; sourceTree = "<group>"; };
+		7656C3331D1E2F3B00024B01 /* KBScrollView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBScrollView2.h; sourceTree = "<group>"; };
+		7656C3341D1E2F3B00024B01 /* KBScrollView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBScrollView2.m; sourceTree = "<group>"; };
 		76573D321CDA4E4D00F38585 /* DPCreationalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPCreationalViewController.h; sourceTree = "<group>"; };
 		76573D331CDA4E4D00F38585 /* DPCreationalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCreationalViewController.m; sourceTree = "<group>"; };
 		76573D351CDA4E5E00F38585 /* DPBehavioralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPBehavioralViewController.h; sourceTree = "<group>"; };
@@ -1903,6 +1908,9 @@
 				76C035101CA44337002241E5 /* UIScrollRollView */,
 				763E4DFD1CA25E4100470FCA /* KBViewController.h */,
 				763E4DFE1CA25E4100470FCA /* KBViewController.m */,
+				7656C3311D1E2E1D00024B01 /* route_selected.png */,
+				7656C3331D1E2F3B00024B01 /* KBScrollView2.h */,
+				7656C3341D1E2F3B00024B01 /* KBScrollView2.m */,
 				7656C32E1D1D8AAD00024B01 /* KBScrollView.h */,
 				7656C32F1D1D8AAD00024B01 /* KBScrollView.m */,
 			);
@@ -3615,6 +3623,7 @@
 				76C0350E1CA43103002241E5 /* 3.jpg in Resources */,
 				763E4E671CA2B7F500470FCA /* 11000002.png in Resources */,
 				763266311CD6652200F56D9D /* readme.txt in Resources */,
+				7656C3321D1E2E1D00024B01 /* route_selected.png in Resources */,
 				763E4E821CA2B7F500470FCA /* TitleBar_BG@2x.png in Resources */,
 				76C035531CA675F0002241E5 /* toolbar_bottom_bar.png in Resources */,
 				76A2E9E21CCBDC4100536E5D /* test_.plist in Resources */,
@@ -3888,6 +3897,7 @@
 				765F83401CC49ADD00D87D7F /* LDDataExtension.m in Sources */,
 				760AF1201CB11A5D00A0D242 /* LEDAESCrypto.m in Sources */,
 				76E903941C9EFC2B003AC33A /* QQChatViewController.m in Sources */,
+				7656C3351D1E2F3B00024B01 /* KBScrollView2.m in Sources */,
 				760AF13F1CB23BB500A0D242 /* LEDModalView.m in Sources */,
 				76E9038A1C9ED53E003AC33A /* UIView+Extension.m in Sources */,
 				7601D8D41CB9EA5100E6F6E7 /* LEDMVVMViewModel.m in Sources */,
