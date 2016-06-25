@@ -11,6 +11,7 @@
 #import "masonry.h"
 #import "UIKitMacros.h"
 #import "UIScrollRollView.h"
+#import "KBScrollView.h"
 
 #define MyColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 
@@ -52,6 +53,11 @@
     NSMutableArray *imageArray=[NSMutableArray arrayWithObjects:@"1.jpg",@"2.jpg",@"3.jpg", nil];
     [rollView setupScroollArray:imageArray isAutoRun:NO];
     [self.view addSubview:rollView];
+    
+    KBScrollView *sv = [[KBScrollView alloc] init];
+    sv.frame=CGRectMake(0, 300, SCREEN_WIDTH, 100);
+    [sv setupScroollArray:imageArray isAutoRun:NO];
+    [self.view addSubview:sv];
 }
 
 @end

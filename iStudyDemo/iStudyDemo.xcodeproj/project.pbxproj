@@ -223,6 +223,7 @@
 		764153081D11B3040078D3BA /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 764153051D11B3040078D3BA /* SSKeychain.m */; };
 		764153091D11B3040078D3BA /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 764153071D11B3040078D3BA /* SSKeychainQuery.m */; };
 		7653A4C71CC682CC005A27E2 /* SwiftFunctionClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653A4C61CC682CC005A27E2 /* SwiftFunctionClosure.swift */; };
+		7656C3301D1D8AAD00024B01 /* KBScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7656C32F1D1D8AAD00024B01 /* KBScrollView.m */; };
 		76573D341CDA4E4D00F38585 /* DPCreationalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D331CDA4E4D00F38585 /* DPCreationalViewController.m */; };
 		76573D371CDA4E5E00F38585 /* DPBehavioralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D361CDA4E5E00F38585 /* DPBehavioralViewController.m */; };
 		76573D3A1CDA4E6D00F38585 /* DPStructuralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D391CDA4E6D00F38585 /* DPStructuralViewController.m */; };
@@ -823,6 +824,8 @@
 		764153061D11B3040078D3BA /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychainQuery.h; sourceTree = "<group>"; };
 		764153071D11B3040078D3BA /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainQuery.m; sourceTree = "<group>"; };
 		7653A4C61CC682CC005A27E2 /* SwiftFunctionClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftFunctionClosure.swift; sourceTree = "<group>"; };
+		7656C32E1D1D8AAD00024B01 /* KBScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBScrollView.h; sourceTree = "<group>"; };
+		7656C32F1D1D8AAD00024B01 /* KBScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBScrollView.m; sourceTree = "<group>"; };
 		76573D321CDA4E4D00F38585 /* DPCreationalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPCreationalViewController.h; sourceTree = "<group>"; };
 		76573D331CDA4E4D00F38585 /* DPCreationalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCreationalViewController.m; sourceTree = "<group>"; };
 		76573D351CDA4E5E00F38585 /* DPBehavioralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPBehavioralViewController.h; sourceTree = "<group>"; };
@@ -1900,6 +1903,8 @@
 				76C035101CA44337002241E5 /* UIScrollRollView */,
 				763E4DFD1CA25E4100470FCA /* KBViewController.h */,
 				763E4DFE1CA25E4100470FCA /* KBViewController.m */,
+				7656C32E1D1D8AAD00024B01 /* KBScrollView.h */,
+				7656C32F1D1D8AAD00024B01 /* KBScrollView.m */,
 			);
 			path = KB;
 			sourceTree = "<group>";
@@ -3915,6 +3920,7 @@
 				76A2E9E41CCBDF9A00536E5D /* SwiftProjectViewController.swift in Sources */,
 				760AF0FB1CB0F3ED00A0D242 /* LEDWebViewControllerJavascriptBridgeHelper.m in Sources */,
 				76BD6BDE1CA189A900708977 /* NewfeatureViewController.m in Sources */,
+				7656C3301D1D8AAD00024B01 /* KBScrollView.m in Sources */,
 				761931D21C8C5DF70022A311 /* CC3GLMatrix.m in Sources */,
 				76737A881CC38910008AEC1C /* SwiftUIViewController.m in Sources */,
 				76C0355B1CA6776E002241E5 /* MessageCell.m in Sources */,

@@ -22,6 +22,7 @@
 //将带密码的data转成string
 + (NSString*)decryptAESData:(NSData*)data;
 
+
 #pragma mark - MD5加密
 /**
  *	@brief	对string进行md5加密

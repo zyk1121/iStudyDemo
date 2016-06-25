@@ -60,8 +60,10 @@
     scrollView.bounces = NO;
     _scrollView=scrollView;
     
-    if(self.isRun)
-      [self addScrollTimer];
+    if(*(self.isRun))
+    {
+        [self addScrollTimer];
+    }
 }
 
 /*定时器设置  begin*/
