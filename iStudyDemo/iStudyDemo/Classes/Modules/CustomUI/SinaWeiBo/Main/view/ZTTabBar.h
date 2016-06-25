@@ -25,3 +25,10 @@
 @property (nonatomic, weak) id<ZTTabBarDelegate> delegate;
 
 @end
+
+
+@interface ZTTabBar2 : UITabBar
+
+@property (nonatomic, weak) id<ZTTabBarDelegate> delegate;
+
+@end

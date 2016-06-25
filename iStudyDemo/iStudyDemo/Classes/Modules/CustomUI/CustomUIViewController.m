@@ -26,6 +26,7 @@
 #import "SearchVCViewController.h"
 #import "GIFViewController.h"
 #import "ImageEffectsViewController.h"
+#import "BSMainViewController.h"
 
 @interface CustomUIViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -127,6 +128,12 @@
     ImageEffectsViewController *imageEffectsVC = [[ImageEffectsViewController alloc] init];
     [_listViewControllers addObject:imageEffectsVC];
     
+    // 10.百思不得姐
+    [_listData addObject:@"百思不得姐"];
+    BSMainViewController *bsVC = [[BSMainViewController alloc] init];
+    [_listViewControllers addObject:bsVC];
+    
+    
     /*
      自定义view
      
@@ -176,7 +183,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UIViewController *vc = [self.listViewControllers objectAtIndex:indexPath.row];
     vc.title = [self.listData objectAtIndex:indexPath.row];
-    if (indexPath.row == 0  || indexPath.row == 3 || indexPath.row == 5) {
+    if (indexPath.row == 0  || indexPath.row == 3 || indexPath.row == 5 || indexPath.row == 9) {
 //        QQSideBarViewController *sideBarVC = [[QQSideBarViewController alloc] init];
         [self.navigationController presentViewController:vc animated:YES completion:^{
             
