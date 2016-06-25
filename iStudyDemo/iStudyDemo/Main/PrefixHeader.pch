@@ -304,4 +304,8 @@ return self; \
 #define TICK NSDate *startTime = [NSDate date];
 #define TOCK NSLog(@"Time:%f", -[startTime timeIntervalSinceNow]);
 
-
+#ifdef DEBUG
+#define ZYKLog(...) NSLog(__VA_ARGS__)
+#else
+#define ZYKLog(...)
+#endif

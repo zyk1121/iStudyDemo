@@ -100,8 +100,10 @@
  */
 - (void)tabBarDidClickPlusButton:(ZTTabBar *)tabBar
 {
-
-    NSLog(@"ddd");
+    BSPViewController *bspVC = [[BSPViewController alloc] init];
+    [self presentViewController:bspVC animated:YES completion:^{
+        
+    }];
 }
 
 
