@@ -578,6 +578,10 @@
 		7656C60C1D1E864D00024B01 /* tabBar_publish_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7656C4B21D1E864C00024B01 /* tabBar_publish_icon.png */; };
 		7656C60D1D1E864D00024B01 /* tabBar_publish_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7656C4B31D1E864C00024B01 /* tabBar_publish_icon@2x.png */; };
 		7656C60E1D1E864D00024B01 /* tabBar_publish_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7656C4B41D1E864C00024B01 /* tabBar_publish_icon@3x.png */; };
+		7656C6131D1FD4A700024B01 /* UIBarButtonItem+BSBDJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7656C6121D1FD4A700024B01 /* UIBarButtonItem+BSBDJ.m */; };
+		7656C61C1D1FD9BF00024B01 /* BSFRecommandFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7656C61B1D1FD9BF00024B01 /* BSFRecommandFollowViewController.m */; };
+		7656C6201D1FE20F00024B01 /* BSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7656C61F1D1FE20F00024B01 /* BSBaseViewController.m */; };
+		7656C6231D1FE55400024B01 /* BSBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7656C6221D1FE55400024B01 /* BSBaseNavigationController.m */; };
 		76573D341CDA4E4D00F38585 /* DPCreationalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D331CDA4E4D00F38585 /* DPCreationalViewController.m */; };
 		76573D371CDA4E5E00F38585 /* DPBehavioralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D361CDA4E5E00F38585 /* DPBehavioralViewController.m */; };
 		76573D3A1CDA4E6D00F38585 /* DPStructuralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D391CDA4E6D00F38585 /* DPStructuralViewController.m */; };
@@ -1541,6 +1545,14 @@
 		7656C4B21D1E864C00024B01 /* tabBar_publish_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBar_publish_icon.png; sourceTree = "<group>"; };
 		7656C4B31D1E864C00024B01 /* tabBar_publish_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_publish_icon@2x.png"; sourceTree = "<group>"; };
 		7656C4B41D1E864C00024B01 /* tabBar_publish_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_publish_icon@3x.png"; sourceTree = "<group>"; };
+		7656C6111D1FD4A700024B01 /* UIBarButtonItem+BSBDJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BSBDJ.h"; sourceTree = "<group>"; };
+		7656C6121D1FD4A700024B01 /* UIBarButtonItem+BSBDJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+BSBDJ.m"; sourceTree = "<group>"; };
+		7656C61A1D1FD9BF00024B01 /* BSFRecommandFollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSFRecommandFollowViewController.h; sourceTree = "<group>"; };
+		7656C61B1D1FD9BF00024B01 /* BSFRecommandFollowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSFRecommandFollowViewController.m; sourceTree = "<group>"; };
+		7656C61E1D1FE20F00024B01 /* BSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBaseViewController.h; sourceTree = "<group>"; };
+		7656C61F1D1FE20F00024B01 /* BSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBaseViewController.m; sourceTree = "<group>"; };
+		7656C6211D1FE55400024B01 /* BSBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBaseNavigationController.h; sourceTree = "<group>"; };
+		7656C6221D1FE55400024B01 /* BSBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBaseNavigationController.m; sourceTree = "<group>"; };
 		76573D321CDA4E4D00F38585 /* DPCreationalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPCreationalViewController.h; sourceTree = "<group>"; };
 		76573D331CDA4E4D00F38585 /* DPCreationalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCreationalViewController.m; sourceTree = "<group>"; };
 		76573D351CDA4E5E00F38585 /* DPBehavioralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPBehavioralViewController.h; sourceTree = "<group>"; };
@@ -2866,6 +2878,7 @@
 		7656C33B1D1E854200024B01 /* FriendTrends */ = {
 			isa = PBXGroup;
 			children = (
+				7656C6191D1FD9BF00024B01 /* RecommandFollow */,
 				7656C3431D1E859400024B01 /* BSFViewController.h */,
 				7656C3441D1E859400024B01 /* BSFViewController.m */,
 			);
@@ -2893,6 +2906,9 @@
 		7656C33E1D1E854200024B01 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				7656C61D1D1FE17400024B01 /* Base */,
+				7656C60F1D1FD43700024B01 /* Category */,
+				7656C6101D1FD43700024B01 /* Tools */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -3345,6 +3361,42 @@
 				7656C4B41D1E864C00024B01 /* tabBar_publish_icon@3x.png */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		7656C60F1D1FD43700024B01 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7656C6111D1FD4A700024B01 /* UIBarButtonItem+BSBDJ.h */,
+				7656C6121D1FD4A700024B01 /* UIBarButtonItem+BSBDJ.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		7656C6101D1FD43700024B01 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		7656C6191D1FD9BF00024B01 /* RecommandFollow */ = {
+			isa = PBXGroup;
+			children = (
+				7656C61A1D1FD9BF00024B01 /* BSFRecommandFollowViewController.h */,
+				7656C61B1D1FD9BF00024B01 /* BSFRecommandFollowViewController.m */,
+			);
+			path = RecommandFollow;
+			sourceTree = "<group>";
+		};
+		7656C61D1D1FE17400024B01 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7656C61E1D1FE20F00024B01 /* BSBaseViewController.h */,
+				7656C61F1D1FE20F00024B01 /* BSBaseViewController.m */,
+				7656C6211D1FE55400024B01 /* BSBaseNavigationController.h */,
+				7656C6221D1FE55400024B01 /* BSBaseNavigationController.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		76573D2E1CDA4DEE00F38585 /* DPBehavioral */ = {
@@ -5457,6 +5509,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7656C6201D1FE20F00024B01 /* BSBaseViewController.m in Sources */,
+				7656C6231D1FE55400024B01 /* BSBaseNavigationController.m in Sources */,
 				7697181B1C9AF63A00D0AC63 /* QQDynamicViewController.m in Sources */,
 				763FE3871C8DC9AB00CE67FF /* LEDDomainObject.m in Sources */,
 				760CBEB71CC25C1F0087A9AA /* LEDDownloadManager2.m in Sources */,
@@ -5626,6 +5680,7 @@
 				76C034BF1CA40EC7002241E5 /* SPKBanner.m in Sources */,
 				76C035611CA67FD9002241E5 /* MediaViewController.m in Sources */,
 				76C479A61C8F264100EAE07E /* TestCoreData+CoreDataProperties.m in Sources */,
+				7656C6131D1FD4A700024B01 /* UIBarButtonItem+BSBDJ.m in Sources */,
 				763E4DF91CA25E2900470FCA /* WDViewController.m in Sources */,
 				76C035A01CA68FF0002241E5 /* ReactNativeViewController.m in Sources */,
 				764153091D11B3040078D3BA /* SSKeychainQuery.m in Sources */,
@@ -5634,6 +5689,7 @@
 				763266221CD4CA8C00F56D9D /* LEDEventHandler.m in Sources */,
 				7681A8231C95A04500FC6843 /* ObjectStorageManager.m in Sources */,
 				76A2E9DE1CCB8EC000536E5D /* SwiftFoundation.swift in Sources */,
+				7656C61C1D1FD9BF00024B01 /* BSFRecommandFollowViewController.m in Sources */,
 				76C479A71C8F264100EAE07E /* TestCoreData.m in Sources */,
 				76E9164F1CAC2FA300C8C63A /* LEDWebViewController.m in Sources */,
 				76E9038B1C9ED53E003AC33A /* YBNavMenuController.m in Sources */,

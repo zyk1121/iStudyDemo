@@ -10,6 +10,7 @@
 #import "ReactiveCocoa/ReactiveCocoa.h"
 #import "masonry.h"
 #import "UIKitMacros.h"
+#import "BSFRecommandFollowViewController.h"
 
 @implementation BSFViewController
 
@@ -46,6 +47,10 @@
 - (void)leftBarButtonClicked
 {
     // 推荐关注
+    BSFRecommandFollowViewController *vc = [[BSFRecommandFollowViewController alloc] init];
+//    vc.tabBarItem
+//    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

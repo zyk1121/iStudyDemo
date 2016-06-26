@@ -171,6 +171,9 @@
         [self addSubview:plusBtn];
         self.plusBtn = plusBtn;
         
+        // 设置背景图片
+        self.backgroundImage = [UIImage imageNamed:@"tabbar-light"];
+        
     }
     return self;
 }

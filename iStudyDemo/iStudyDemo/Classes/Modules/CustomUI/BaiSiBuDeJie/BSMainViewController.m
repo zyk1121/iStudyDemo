@@ -14,6 +14,7 @@
 #import "BSPViewController.h"
 #import "ZTTabBar.h"
 #import "UIKitMacros.h"
+#import "BSBaseNavigationController.h"
 
 @interface BSMainViewController ()<ZTTabBarDelegate>
 
@@ -78,7 +79,7 @@
     //    childVc.view.backgroundColor = RandomColor; // 这句代码会自动加载主页，消息，发现，我四个控制器的view，但是view要在我们用的时候去提前加载
     
     // 为子控制器包装导航控/Users/zhangyuanke/Desktop/Projects/iOS/iStudyDemo/iStudyDemo/iStudyDemo/Images.xcassets制器
-    UINavigationController *navigationVc = [[UINavigationController alloc] initWithRootViewController:childVc];
+    BSBaseNavigationController *navigationVc = [[BSBaseNavigationController alloc] initWithRootViewController:childVc];
     // 添加子控制器
     [self addChildViewController:navigationVc];
 }
