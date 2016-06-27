@@ -222,6 +222,9 @@
 		764153011D11AAD90078D3BA /* APPShareDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764153001D11AAD90078D3BA /* APPShareDataViewController.m */; };
 		764153081D11B3040078D3BA /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 764153051D11B3040078D3BA /* SSKeychain.m */; };
 		764153091D11B3040078D3BA /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 764153071D11B3040078D3BA /* SSKeychainQuery.m */; };
+		7643C9921D2182310019DD14 /* BSLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7643C9911D2182310019DD14 /* BSLoginRegisterViewController.m */; };
+		7643C9951D2185960019DD14 /* BSThirdLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7643C9941D2185960019DD14 /* BSThirdLoginView.m */; };
+		7643C9981D218CC40019DD14 /* BSQuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7643C9971D218CC40019DD14 /* BSQuickLoginButton.m */; };
 		7653A4C71CC682CC005A27E2 /* SwiftFunctionClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7653A4C61CC682CC005A27E2 /* SwiftFunctionClosure.swift */; };
 		7656C3301D1D8AAD00024B01 /* KBScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7656C32F1D1D8AAD00024B01 /* KBScrollView.m */; };
 		7656C3321D1E2E1D00024B01 /* route_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7656C3311D1E2E1D00024B01 /* route_selected.png */; };
@@ -1181,6 +1184,12 @@
 		764153051D11B3040078D3BA /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
 		764153061D11B3040078D3BA /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychainQuery.h; sourceTree = "<group>"; };
 		764153071D11B3040078D3BA /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainQuery.m; sourceTree = "<group>"; };
+		7643C9901D2182310019DD14 /* BSLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSLoginRegisterViewController.h; sourceTree = "<group>"; };
+		7643C9911D2182310019DD14 /* BSLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSLoginRegisterViewController.m; sourceTree = "<group>"; };
+		7643C9931D2185960019DD14 /* BSThirdLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSThirdLoginView.h; sourceTree = "<group>"; };
+		7643C9941D2185960019DD14 /* BSThirdLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSThirdLoginView.m; sourceTree = "<group>"; };
+		7643C9961D218CC40019DD14 /* BSQuickLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSQuickLoginButton.h; sourceTree = "<group>"; };
+		7643C9971D218CC40019DD14 /* BSQuickLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSQuickLoginButton.m; sourceTree = "<group>"; };
 		7653A4C61CC682CC005A27E2 /* SwiftFunctionClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftFunctionClosure.swift; sourceTree = "<group>"; };
 		7656C32E1D1D8AAD00024B01 /* KBScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBScrollView.h; sourceTree = "<group>"; };
 		7656C32F1D1D8AAD00024B01 /* KBScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBScrollView.m; sourceTree = "<group>"; };
@@ -2850,6 +2859,19 @@
 			path = KeychainSources;
 			sourceTree = "<group>";
 		};
+		7643C98F1D2182090019DD14 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				7643C9901D2182310019DD14 /* BSLoginRegisterViewController.h */,
+				7643C9911D2182310019DD14 /* BSLoginRegisterViewController.m */,
+				7643C9931D2185960019DD14 /* BSThirdLoginView.h */,
+				7643C9941D2185960019DD14 /* BSThirdLoginView.m */,
+				7643C9961D218CC40019DD14 /* BSQuickLoginButton.h */,
+				7643C9971D218CC40019DD14 /* BSQuickLoginButton.m */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 		7656C3361D1E835900024B01 /* BaiSiBuDeJie */ = {
 			isa = PBXGroup;
 			children = (
@@ -2906,6 +2928,7 @@
 		7656C33E1D1E854200024B01 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				7643C98F1D2182090019DD14 /* Account */,
 				7656C61D1D1FE17400024B01 /* Base */,
 				7656C60F1D1FD43700024B01 /* Category */,
 				7656C6101D1FD43700024B01 /* Tools */,
@@ -5531,6 +5554,7 @@
 				763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */,
 				76E903901C9EFB5A003AC33A /* SinaWeiboViewController.m in Sources */,
 				76E9164C1CAC219600C8C63A /* TestPortalViewController.m in Sources */,
+				7643C9981D218CC40019DD14 /* BSQuickLoginButton.m in Sources */,
 				7632663C1CD8F4B700F56D9D /* DesignPatternsViewController.m in Sources */,
 				76573D8A1CDDE0B100F38585 /* DPUMLViewController.m in Sources */,
 				7697189B1C9E466C00D0AC63 /* QQSideBarViewController.m in Sources */,
@@ -5659,6 +5683,7 @@
 				76737A8B1CC38920008AEC1C /* SwiftProjectViewController.m in Sources */,
 				76573D871CDD02F300F38585 /* WeixinView.m in Sources */,
 				763FE3641C8D8BFA00CE67FF /* HTTPTestViewController.m in Sources */,
+				7643C9951D2185960019DD14 /* BSThirdLoginView.m in Sources */,
 				76BD6BD21CA1120E00708977 /* UIView+Extension.m in Sources */,
 				76C035741CA683A9002241E5 /* EncryptDecryptViewController.m in Sources */,
 				760AF13B1CB238D200A0D242 /* CCModalViewViewController.m in Sources */,
@@ -5701,6 +5726,7 @@
 				76C035281CA6709F002241E5 /* TouchIDViewController.m in Sources */,
 				769717F31C9A73E000D0AC63 /* UIView+SHCZExt.m in Sources */,
 				76C035E51CAA99BE002241E5 /* VideoViewController.m in Sources */,
+				7643C9921D2182310019DD14 /* BSLoginRegisterViewController.m in Sources */,
 				7601D8DA1CB9F2AF00E6F6E7 /* DSActivityView.m in Sources */,
 				763FE38D1C8DCB6100CE67FF /* LEDDomainPredicate.m in Sources */,
 				7656C3481D1E85A900024B01 /* BSMViewController.m in Sources */,
