@@ -76,6 +76,7 @@
 		761931D21C8C5DF70022A311 /* CC3GLMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931CA1C8C5DF70022A311 /* CC3GLMatrix.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		761931D31C8C5DF70022A311 /* CC3Kazmath.c in Sources */ = {isa = PBXBuildFile; fileRef = 761931CB1C8C5DF70022A311 /* CC3Kazmath.c */; };
 		761931D41C8C5DF70022A311 /* CC3Math.m in Sources */ = {isa = PBXBuildFile; fileRef = 761931CF1C8C5DF70022A311 /* CC3Math.m */; };
+		761FAA2D1D22BD4B00B84E10 /* BSLoginRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 761FAA2C1D22BD4B00B84E10 /* BSLoginRegisterView.m */; };
 		76213BD61C96BE42001DAA53 /* DeviceInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76213BD51C96BE42001DAA53 /* DeviceInfoViewController.m */; };
 		76213BDA1C97029A001DAA53 /* ThirdPartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76213BD91C97029A001DAA53 /* ThirdPartViewController.m */; };
 		76213BDE1C97048C001DAA53 /* ThirdShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76213BDD1C97048C001DAA53 /* ThirdShareViewController.m */; };
@@ -995,6 +996,8 @@
 		761931CE1C8C5DF70022A311 /* CC3Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Math.h; sourceTree = "<group>"; };
 		761931CF1C8C5DF70022A311 /* CC3Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3Math.m; sourceTree = "<group>"; };
 		761931D01C8C5DF70022A311 /* ccTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccTypes.h; sourceTree = "<group>"; };
+		761FAA2B1D22BD4B00B84E10 /* BSLoginRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSLoginRegisterView.h; sourceTree = "<group>"; };
+		761FAA2C1D22BD4B00B84E10 /* BSLoginRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSLoginRegisterView.m; sourceTree = "<group>"; };
 		76213BD41C96BE42001DAA53 /* DeviceInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfoViewController.h; sourceTree = "<group>"; };
 		76213BD51C96BE42001DAA53 /* DeviceInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfoViewController.m; sourceTree = "<group>"; };
 		76213BD81C97029A001DAA53 /* ThirdPartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdPartViewController.h; sourceTree = "<group>"; };
@@ -2868,6 +2871,8 @@
 				7643C9941D2185960019DD14 /* BSThirdLoginView.m */,
 				7643C9961D218CC40019DD14 /* BSQuickLoginButton.h */,
 				7643C9971D218CC40019DD14 /* BSQuickLoginButton.m */,
+				761FAA2B1D22BD4B00B84E10 /* BSLoginRegisterView.h */,
+				761FAA2C1D22BD4B00B84E10 /* BSLoginRegisterView.m */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -5696,6 +5701,7 @@
 				76737A7E1CC388BF008AEC1C /* SwiftFoundationViewController.m in Sources */,
 				763E4E9C1CA3B9B200470FCA /* ZFBCollectionViewCell.m in Sources */,
 				76C035B41CA79061002241E5 /* QRCodeScanViewController.m in Sources */,
+				761FAA2D1D22BD4B00B84E10 /* BSLoginRegisterView.m in Sources */,
 				763E4DF61CA25E1D00470FCA /* ZFBViewController.m in Sources */,
 				76C035941CA689A7002241E5 /* UnitTestStubMockViewController.m in Sources */,
 				7656C34E1D1E85D200024B01 /* BSPViewController.m in Sources */,
