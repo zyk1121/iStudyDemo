@@ -600,6 +600,7 @@
 		76573D8A1CDDE0B100F38585 /* DPUMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D891CDDE0B100F38585 /* DPUMLViewController.m */; };
 		76573D8C1CDDE1BD00F38585 /* UMLFigure.png in Resources */ = {isa = PBXBuildFile; fileRef = 76573D8B1CDDE1BD00F38585 /* UMLFigure.png */; };
 		76573D931CDDF75C00F38585 /* LMKDownLoader2.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D921CDDF75C00F38585 /* LMKDownLoader2.m */; };
+		7657D7771D25757C00DBA3ED /* BSMeFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7657D7761D25757C00DBA3ED /* BSMeFootView.m */; };
 		765F83401CC49ADD00D87D7F /* LDDataExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 765F833F1CC49ADD00D87D7F /* LDDataExtension.m */; };
 		76737A6F1CC385DA008AEC1C /* SwiftBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76737A641CC385DA008AEC1C /* SwiftBasic.swift */; };
 		76737A701CC385DA008AEC1C /* SwiftBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A661CC385DA008AEC1C /* SwiftBasicViewController.m */; };
@@ -1592,6 +1593,8 @@
 		76573D8B1CDDE1BD00F38585 /* UMLFigure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UMLFigure.png; sourceTree = "<group>"; };
 		76573D911CDDF75C00F38585 /* LMKDownLoader2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMKDownLoader2.h; sourceTree = "<group>"; };
 		76573D921CDDF75C00F38585 /* LMKDownLoader2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMKDownLoader2.m; sourceTree = "<group>"; };
+		7657D7751D25757C00DBA3ED /* BSMeFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSMeFootView.h; sourceTree = "<group>"; };
+		7657D7761D25757C00DBA3ED /* BSMeFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSMeFootView.m; sourceTree = "<group>"; };
 		765F833E1CC49ADD00D87D7F /* LDDataExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDataExtension.h; sourceTree = "<group>"; };
 		765F833F1CC49ADD00D87D7F /* LDDataExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDataExtension.m; sourceTree = "<group>"; };
 		76737A631CC385DA008AEC1C /* iStudyDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iStudyDemo-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -2915,8 +2918,12 @@
 		7656C33C1D1E854200024B01 /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				7657D7781D257BD600DBA3ED /* Model */,
+				7657D7791D257BD600DBA3ED /* View */,
 				7656C3461D1E85A900024B01 /* BSMViewController.h */,
 				7656C3471D1E85A900024B01 /* BSMViewController.m */,
+				7657D7751D25757C00DBA3ED /* BSMeFootView.h */,
+				7657D7761D25757C00DBA3ED /* BSMeFootView.m */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -3667,6 +3674,20 @@
 			children = (
 			);
 			path = DPProxy;
+			sourceTree = "<group>";
+		};
+		7657D7781D257BD600DBA3ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7657D7791D257BD600DBA3ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		76737A611CC385DA008AEC1C /* SwfitExtensionProtocol */ = {
@@ -5560,6 +5581,7 @@
 				76E903901C9EFB5A003AC33A /* SinaWeiboViewController.m in Sources */,
 				76E9164C1CAC219600C8C63A /* TestPortalViewController.m in Sources */,
 				7643C9981D218CC40019DD14 /* BSQuickLoginButton.m in Sources */,
+				7657D7771D25757C00DBA3ED /* BSMeFootView.m in Sources */,
 				7632663C1CD8F4B700F56D9D /* DesignPatternsViewController.m in Sources */,
 				76573D8A1CDDE0B100F38585 /* DPUMLViewController.m in Sources */,
 				7697189B1C9E466C00D0AC63 /* QQSideBarViewController.m in Sources */,
