@@ -8,6 +8,7 @@
 
 #import "LEDDomainPredicate.h"
 #import "Mantle.h"
+#import <libextobjc/extobjc.h>
 
 @interface LEDDomainObject : MTLModel <MTLJSONSerializing>
 

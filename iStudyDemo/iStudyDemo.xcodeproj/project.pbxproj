@@ -692,6 +692,8 @@
 		76A2E9E61CCBE0F400536E5D /* SwiftThirdPartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E9E51CCBE0F400536E5D /* SwiftThirdPartViewController.swift */; };
 		76A2E9EA1CCBF00E00536E5D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A2E9E91CCBF00E00536E5D /* SnapKit.framework */; };
 		76A2E9EE1CCC954800536E5D /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A2E9ED1CCC954800536E5D /* AFNetworking.framework */; };
+		76BC548D1D26B01F00A76CE1 /* BSMeSequare.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BC548C1D26B01F00A76CE1 /* BSMeSequare.m */; };
+		76BC54901D26BC5000A76CE1 /* BSMeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BC548F1D26BC5000A76CE1 /* BSMeButton.m */; };
 		76BD6BC71CA1106100708977 /* WeiboMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BD6BC61CA1106100708977 /* WeiboMainViewController.m */; };
 		76BD6BCB1CA1118900708977 /* ZTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BD6BCA1CA1118900708977 /* ZTTabBar.m */; };
 		76BD6BD11CA1120E00708977 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BD6BCE1CA1120E00708977 /* UIBarButtonItem+Extension.m */; };
@@ -1718,6 +1720,10 @@
 		76A2E9E51CCBE0F400536E5D /* SwiftThirdPartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftThirdPartViewController.swift; sourceTree = "<group>"; };
 		76A2E9E91CCBF00E00536E5D /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/iStudyDemo-grkdddiygapdfhcjaqgvlnexnhnk/Build/Products/Debug-iphonesimulator/SnapKit.framework"; sourceTree = "<group>"; };
 		76A2E9ED1CCC954800536E5D /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/iStudyDemo-grkdddiygapdfhcjaqgvlnexnhnk/Build/Products/Debug-iphoneos/AFNetworking.framework"; sourceTree = "<group>"; };
+		76BC548B1D26B01F00A76CE1 /* BSMeSequare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSMeSequare.h; sourceTree = "<group>"; };
+		76BC548C1D26B01F00A76CE1 /* BSMeSequare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSMeSequare.m; sourceTree = "<group>"; };
+		76BC548E1D26BC5000A76CE1 /* BSMeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSMeButton.h; sourceTree = "<group>"; };
+		76BC548F1D26BC5000A76CE1 /* BSMeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSMeButton.m; sourceTree = "<group>"; };
 		76BD6BC51CA1106100708977 /* WeiboMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboMainViewController.h; sourceTree = "<group>"; };
 		76BD6BC61CA1106100708977 /* WeiboMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboMainViewController.m; sourceTree = "<group>"; };
 		76BD6BC91CA1118900708977 /* ZTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTTabBar.h; sourceTree = "<group>"; };
@@ -3679,6 +3685,8 @@
 		7657D7781D257BD600DBA3ED /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				76BC548B1D26B01F00A76CE1 /* BSMeSequare.h */,
+				76BC548C1D26B01F00A76CE1 /* BSMeSequare.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -3686,6 +3694,8 @@
 		7657D7791D257BD600DBA3ED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				76BC548E1D26BC5000A76CE1 /* BSMeButton.h */,
+				76BC548F1D26BC5000A76CE1 /* BSMeButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -5667,6 +5677,7 @@
 				76C035801CA68792002241E5 /* DrawLayerViewController.m in Sources */,
 				76737A851CC388F7008AEC1C /* SwiftFunctionClosureViewController.m in Sources */,
 				76DE57B61D105C9F00DB4A46 /* GifView.m in Sources */,
+				76BC548D1D26B01F00A76CE1 /* BSMeSequare.m in Sources */,
 				76BD6BD11CA1120E00708977 /* UIBarButtonItem+Extension.m in Sources */,
 				76C035B11CA79051002241E5 /* QRCodeCreateViewController.m in Sources */,
 				76A2E9E01CCBC1FD00536E5D /* SwiftUIViewControllerTest.swift in Sources */,
@@ -5707,6 +5718,7 @@
 				763D45F51CCFB4C000BB88AA /* JavaScriptViewController.m in Sources */,
 				76573D841CDCFCD600F38585 /* UINavigationController+Weixin.m in Sources */,
 				76E903991C9F0089003AC33A /* AliPayViewController.m in Sources */,
+				76BC54901D26BC5000A76CE1 /* BSMeButton.m in Sources */,
 				76737A8B1CC38920008AEC1C /* SwiftProjectViewController.m in Sources */,
 				76573D871CDD02F300F38585 /* WeixinView.m in Sources */,
 				763FE3641C8D8BFA00CE67FF /* HTTPTestViewController.m in Sources */,

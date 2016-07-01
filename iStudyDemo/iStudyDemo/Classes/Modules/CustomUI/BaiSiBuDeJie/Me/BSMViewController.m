@@ -69,8 +69,9 @@
     });
     
     BSMeFootView *footView = [[BSMeFootView alloc] init];
-    footView.backgroundColor = [UIColor lightGrayColor];
-    footView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 200);
+    footView.backgroundColor = [UIColor clearColor];
+    footView.vc = self;
+//    footView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 0);
     self.tableView.tableFooterView = footView;
     
 }

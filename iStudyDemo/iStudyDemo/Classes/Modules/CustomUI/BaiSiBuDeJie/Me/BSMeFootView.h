@@ -10,4 +10,6 @@
 
 @interface BSMeFootView : UIView
 
+@property (nonatomic, weak) UIViewController *vc;
+
 @end
