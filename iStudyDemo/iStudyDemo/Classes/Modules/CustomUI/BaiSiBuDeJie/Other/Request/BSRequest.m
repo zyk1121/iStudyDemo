@@ -16,6 +16,7 @@
 #import "BSMeButton.h"
 #import "LEDPortal.h"
 #import "BSTopic.h"
+#import "MJExtension.h"
 
 @implementation BSRequest
 
@@ -40,17 +41,18 @@
 + (NSArray *)convertFromResponseToData:(NSDictionary *)dicResponse
 {
     if (dicResponse) {
-        NSMutableArray *retArray = [[NSMutableArray alloc] init];
+        NSMutableArray *retArray = nil;
         NSArray *tempArray = dicResponse[@"list"];
-        if (tempArray) {
-            [tempArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                NSDictionary *dict = (NSDictionary *)obj;
-                BSTopic *topic = [BSTopic domainWithJSONDictionary:dict];
-                if (topic) {
-                    [retArray addObject:topic];
-                }
-            }];
-        }
+        retArray = [BSTopic mj_objectArrayWithKeyValuesArray:tempArray];
+//        if (tempArray) {
+//            [tempArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//                NSDictionary *dict = (NSDictionary *)obj;
+//                BSTopic *topic = [BSTopic mj_objectArrayWithKeyValuesArray:tempArray];
+//                if (topic) {
+//                    [retArray addObject:topic];
+//                }
+//            }];
+//        }
         return retArray;
     }
     return nil;

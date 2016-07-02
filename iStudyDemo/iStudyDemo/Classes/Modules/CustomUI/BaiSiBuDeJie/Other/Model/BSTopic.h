@@ -8,7 +8,7 @@
 
 #import "LEDDomainObject.h"
 
-@interface BSTopic : LEDDomainObject
+@interface BSTopic : NSObject
 
 /** 用户的名字 */
 @property (nonatomic, copy) NSString *name;
@@ -26,5 +26,7 @@
 @property (nonatomic, assign) NSInteger repost;
 /** 评论数量 */
 @property (nonatomic, assign) NSInteger comment;
+
+@property (nonatomic, copy) NSString *maxtime;
 
 @end

@@ -25,6 +25,7 @@ target "iStudyDemo" do
   pod 'SVProgressHUD', '~> 1.1.3'
   pod 'OHHTTPStubs', '~> 4.7.1'
   pod 'MJRefresh', '~> 3.1.0'
+  pod 'MJExtension', '~> 3.0.10'
   
   pod 'SnapKit', '~> 0.15.0'
   pod 'Alamofire', '~> 3.2.1'
