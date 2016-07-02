@@ -12,10 +12,15 @@
 #import "UIKitMacros.h"
 #import "BSETitleButton.h"
 #import "UIView+Extension.h"
+#import "BSTopic.h"
+#import "BSRequest.h"
+#import "SVProgressHUD.h"
 
 static NSString *commonReuseIdentifier = @"commonReuseIdentifier";
 
 @interface BSEAllTableViewController ()
+
+@property (nonatomic, strong) NSArray *topicData;
 
 @end
 
@@ -33,6 +38,25 @@ static NSString *commonReuseIdentifier = @"commonReuseIdentifier";
     // 内边距
     self.tableView.contentInset = UIEdgeInsetsMake(64 + 44, 0, 49, 0);
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
+    
+    // do request
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    [params setObject:@"list" forKey:@"a"];
+    [params setObject:@"data" forKey:@"c"];
+    [params setObject:@"0" forKey:@"page"];
+//    [params setObject:@"1" forKey:@"type"];
+    [SVProgressHUD showWithStatus:@"加载中..."];
+    [BSRequest doRequestWithParams:params success:^(NSArray *response) {
+        [SVProgressHUD dismiss];
+        if (response) {
+            self.topicData = response;
+            [self.tableView reloadData];
+        }
+    } failure:^(NSError *error) {
+        [SVProgressHUD dismiss];
+        self.topicData = nil;
+    }];
+    
 }
 
 - (void)setupUI
@@ -47,7 +71,7 @@ static NSString *commonReuseIdentifier = @"commonReuseIdentifier";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 50;
+    return [self.topicData count];
 }
 
 
@@ -58,7 +82,8 @@ static NSString *commonReuseIdentifier = @"commonReuseIdentifier";
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:commonReuseIdentifier];
     }
     // Configure the cell...
-    cell.textLabel.text = [NSString stringWithFormat:@"%d",indexPath.row];
+    BSTopic *topic = self.topicData[indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@",topic.name];
     
     return cell;
 }
