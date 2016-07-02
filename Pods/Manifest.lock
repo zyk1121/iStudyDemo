@@ -94,6 +94,7 @@ PODS:
     - Mantle/extobjc (= 2.0.6)
   - Mantle/extobjc (2.0.6)
   - Masonry (0.6.4)
+  - MJRefresh (3.1.0)
   - OCMock (3.1.5)
   - OHHTTPStubs (4.7.1):
     - OHHTTPStubs/Default (= 4.7.1)
@@ -123,6 +124,7 @@ PODS:
   - SDWebImage/Core (3.7.5)
   - SnapKit (0.15.0)
   - Specta (0.2.1)
+  - SVProgressHUD (1.1.3)
   - SwiftHTTP (1.0.4)
   - WebViewJavascriptBridge (5.0.5)
   - XMPPFramework (3.6.6):
@@ -281,6 +283,7 @@ DEPENDENCIES:
   - libextobjc (~> 0.4.1)
   - Mantle (~> 2.0)
   - Masonry (~> 0.6.2)
+  - MJRefresh (~> 3.1.0)
   - OCMock (~> 3.1.2)
   - OHHTTPStubs (~> 4.7.1)
   - OpenSSL-Universal
@@ -289,6 +292,7 @@ DEPENDENCIES:
   - SDWebImage (~> 3.7.5)
   - SnapKit (~> 0.15.0)
   - Specta (~> 0.2.1)
+  - SVProgressHUD (~> 1.1.3)
   - SwiftHTTP (~> 1.0.4)
   - WebViewJavascriptBridge
   - XMPPFramework (~> 3.6.6)
@@ -308,6 +312,7 @@ SPEC CHECKSUMS:
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   Mantle: 299966b00759634931699f69cb6a30b9239b944d
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   OCMock: 4c2925291f80407c3738dd1db14d21d0cc278864
   OHHTTPStubs: f7d1604d04d37d055460c0ef9af01bb249ded0fa
   OpenSSL-Universal: b3c4ab9bbc3e4978caf9e838c8589f1f537244b4
@@ -317,6 +322,7 @@ SPEC CHECKSUMS:
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SnapKit: 4962eed2ee18e48cbd2b2292fffc57efe7235f87
   Specta: 15a276a6343867b426d5ed135d5aa4d04123a573
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
   SwiftHTTP: 7e084af3bf628b17589c7b61a9df8750947a9813
   WebViewJavascriptBridge: a4d502315f1b8d9a51cd6a9174147ed567ec3bc5
   XMPPFramework: b06c210b0b71c08aa41a646bffd2021fa43bb43b

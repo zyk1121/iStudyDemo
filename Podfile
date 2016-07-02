@@ -22,7 +22,9 @@ target "iStudyDemo" do
   pod 'OpenSSL-Universal'
   pod 'ASIHTTPRequest', '~> 1.8.2'
   pod 'JSONModel', '~> 1.2.0'
+  pod 'SVProgressHUD', '~> 1.1.3'
   pod 'OHHTTPStubs', '~> 4.7.1'
+  pod 'MJRefresh', '~> 3.1.0'
   
   pod 'SnapKit', '~> 0.15.0'
   pod 'Alamofire', '~> 3.2.1'
