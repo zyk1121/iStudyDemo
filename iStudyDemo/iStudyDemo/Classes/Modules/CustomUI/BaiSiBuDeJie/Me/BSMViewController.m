@@ -12,6 +12,7 @@
 #import "UIKitMacros.h"
 #import "UIBarButtonItem+BSBDJ.h"
 #import "BSMeFootView.h"
+#import "BSMSettingViewController.h"
 
 @interface BSMViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -149,7 +150,7 @@
 - (void)settingBtnClicked
 {
     // 设置按钮点击
-    UIViewController *vc = [[UIViewController alloc] init];
+    BSMSettingViewController *vc = [[BSMSettingViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

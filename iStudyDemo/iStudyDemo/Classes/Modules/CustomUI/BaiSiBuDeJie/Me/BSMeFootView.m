@@ -16,6 +16,7 @@
 #import "BSMeButton.h"
 #import "LEDPortal.h"
 #import "LEDWebViewController.h"
+#import <SafariServices/SFSafariViewController.h>
 
 @interface BSMeFootView ()
 {
@@ -95,7 +96,12 @@
                           forState:UIControlStateNormal
                   placeholderImage:[UIImage imageNamed:@"setup-head-default"]];
     }
-    self.height = self.subviews.lastObject.y + self.subviews.lastObject.height;
+//    self.height = self.subviews.lastObject.y + self.subviews.lastObject.height;
+    
+    // 总行数
+    // 行数 = （总个数 + 每行数 - 1） / (每行数)
+    NSUInteger rowCount = (count + 3) / maxColsCount;
+    self.height = rowCount * buttonH;
     
     // 重设tableFootView
     UITableView *tableView = (UITableView *)self.superview;
@@ -108,9 +114,19 @@
 {
     BSMeSequare *sequare = _sequares[button.tag];
     NSString *url = @"http://www.baidu.com";
-    if ([sequare.linkURL length] && [sequare.linkURL containsString:@"http"]) {
+//    if ([sequare.linkURL length] && [sequare.linkURL containsString:@"http"]) {
+//        url = sequare.linkURL;
+//    }
+    
+    if ([sequare.linkURL length] && [sequare.linkURL hasPrefix:@"http"]) {
         url = sequare.linkURL;
     }
+//    
+//    SFSafariViewController *webView = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:url]];
+////    [self.vc.navigationController pushViewController:webView animated:YES];
+//    // 带有进度的
+//    [self.vc presentViewController:webView animated:YES completion:nil];
+    
     LEDWebViewController *webView = [[LEDWebViewController alloc] initWithURL:[NSURL URLWithString:url]];
     [self.vc.navigationController pushViewController:webView animated:YES];
 }

@@ -694,6 +694,7 @@
 		76A2E9EE1CCC954800536E5D /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A2E9ED1CCC954800536E5D /* AFNetworking.framework */; };
 		76BC548D1D26B01F00A76CE1 /* BSMeSequare.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BC548C1D26B01F00A76CE1 /* BSMeSequare.m */; };
 		76BC54901D26BC5000A76CE1 /* BSMeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BC548F1D26BC5000A76CE1 /* BSMeButton.m */; };
+		76BC54931D27760D00A76CE1 /* BSMSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BC54921D27760D00A76CE1 /* BSMSettingViewController.m */; };
 		76BD6BC71CA1106100708977 /* WeiboMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BD6BC61CA1106100708977 /* WeiboMainViewController.m */; };
 		76BD6BCB1CA1118900708977 /* ZTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BD6BCA1CA1118900708977 /* ZTTabBar.m */; };
 		76BD6BD11CA1120E00708977 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BD6BCE1CA1120E00708977 /* UIBarButtonItem+Extension.m */; };
@@ -1724,6 +1725,8 @@
 		76BC548C1D26B01F00A76CE1 /* BSMeSequare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSMeSequare.m; sourceTree = "<group>"; };
 		76BC548E1D26BC5000A76CE1 /* BSMeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSMeButton.h; sourceTree = "<group>"; };
 		76BC548F1D26BC5000A76CE1 /* BSMeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSMeButton.m; sourceTree = "<group>"; };
+		76BC54911D27760D00A76CE1 /* BSMSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSMSettingViewController.h; sourceTree = "<group>"; };
+		76BC54921D27760D00A76CE1 /* BSMSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSMSettingViewController.m; sourceTree = "<group>"; };
 		76BD6BC51CA1106100708977 /* WeiboMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboMainViewController.h; sourceTree = "<group>"; };
 		76BD6BC61CA1106100708977 /* WeiboMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboMainViewController.m; sourceTree = "<group>"; };
 		76BD6BC91CA1118900708977 /* ZTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTTabBar.h; sourceTree = "<group>"; };
@@ -2930,6 +2933,8 @@
 				7656C3471D1E85A900024B01 /* BSMViewController.m */,
 				7657D7751D25757C00DBA3ED /* BSMeFootView.h */,
 				7657D7761D25757C00DBA3ED /* BSMeFootView.m */,
+				76BC54911D27760D00A76CE1 /* BSMSettingViewController.h */,
+				76BC54921D27760D00A76CE1 /* BSMSettingViewController.m */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -5618,6 +5623,7 @@
 				76C0355B1CA6776E002241E5 /* MessageCell.m in Sources */,
 				76C035881CA68943002241E5 /* MVVMViewController.m in Sources */,
 				76C0359D1CA68FD6002241E5 /* RACViewController.m in Sources */,
+				76BC54931D27760D00A76CE1 /* BSMSettingViewController.m in Sources */,
 				76C035241CA663E5002241E5 /* TransitionViewController.m in Sources */,
 				76573D371CDA4E5E00F38585 /* DPBehavioralViewController.m in Sources */,
 				763263971CD10FA100F56D9D /* LayoutConstraintViewController.m in Sources */,
