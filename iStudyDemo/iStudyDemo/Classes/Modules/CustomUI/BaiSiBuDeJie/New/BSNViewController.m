@@ -22,7 +22,25 @@
 
 - (void)setupUI
 {
+    // 导航栏左边按钮
+    UIButton *leftBarButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [leftBarButton setImage:[UIImage imageNamed:@"MainTagSubIcon"] forState:UIControlStateNormal];
+    [leftBarButton setImage:[UIImage imageNamed:@"MainTagSubIconClick"] forState:UIControlStateHighlighted];
+    UIImage *image = [leftBarButton imageForState:UIControlStateNormal];
+    leftBarButton.frame = CGRectMake(0, 0, image.size.width, image.size.height);
+    [leftBarButton sizeToFit];
+    [leftBarButton addTarget:self action:@selector(leftBarButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBarButton];
 
 }
+
+#pragma mark - event
+
+
+- (void)leftBarButtonClicked
+{
+    
+}
+
 
 @end

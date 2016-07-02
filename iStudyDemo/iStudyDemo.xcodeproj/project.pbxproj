@@ -32,6 +32,12 @@
 		7601D9411CBFF5D000E6F6E7 /* lino.png in Resources */ = {isa = PBXBuildFile; fileRef = 7601D93B1CBFF5D000E6F6E7 /* lino.png */; };
 		7601D9421CBFF5D000E6F6E7 /* metal.png in Resources */ = {isa = PBXBuildFile; fileRef = 7601D93C1CBFF5D000E6F6E7 /* metal.png */; };
 		7601D9431CBFF5D000E6F6E7 /* schematic.png in Resources */ = {isa = PBXBuildFile; fileRef = 7601D93D1CBFF5D000E6F6E7 /* schematic.png */; };
+		7606655E1D27B12800CCF539 /* BSETitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7606655D1D27B12800CCF539 /* BSETitleButton.m */; };
+		760665621D27B6C900CCF539 /* BSEAllTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 760665611D27B6C900CCF539 /* BSEAllTableViewController.m */; };
+		760665651D27B6DA00CCF539 /* BSEVideoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 760665641D27B6DA00CCF539 /* BSEVideoTableViewController.m */; };
+		760665681D27B6EF00CCF539 /* BSEAudioTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 760665671D27B6EF00CCF539 /* BSEAudioTableViewController.m */; };
+		7606656B1D27B70400CCF539 /* BSEPictureTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7606656A1D27B70400CCF539 /* BSEPictureTableViewController.m */; };
+		7606656E1D27B71A00CCF539 /* BSEWordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7606656D1D27B71A00CCF539 /* BSEWordTableViewController.m */; };
 		760AF0E71CB0330D00A0D242 /* btn_backItem_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 760AF0E51CB0330D00A0D242 /* btn_backItem_highlighted.png */; };
 		760AF0E81CB0330D00A0D242 /* btn_backItem.png in Resources */ = {isa = PBXBuildFile; fileRef = 760AF0E61CB0330D00A0D242 /* btn_backItem.png */; };
 		760AF0EB1CB0DA5500A0D242 /* LEDWebViewController+Progress.m in Sources */ = {isa = PBXBuildFile; fileRef = 760AF0EA1CB0DA5500A0D242 /* LEDWebViewController+Progress.m */; };
@@ -914,6 +920,18 @@
 		7601D93B1CBFF5D000E6F6E7 /* lino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lino.png; sourceTree = "<group>"; };
 		7601D93C1CBFF5D000E6F6E7 /* metal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metal.png; sourceTree = "<group>"; };
 		7601D93D1CBFF5D000E6F6E7 /* schematic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = schematic.png; sourceTree = "<group>"; };
+		7606655C1D27B12800CCF539 /* BSETitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSETitleButton.h; sourceTree = "<group>"; };
+		7606655D1D27B12800CCF539 /* BSETitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSETitleButton.m; sourceTree = "<group>"; };
+		760665601D27B6C900CCF539 /* BSEAllTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSEAllTableViewController.h; sourceTree = "<group>"; };
+		760665611D27B6C900CCF539 /* BSEAllTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSEAllTableViewController.m; sourceTree = "<group>"; };
+		760665631D27B6DA00CCF539 /* BSEVideoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSEVideoTableViewController.h; sourceTree = "<group>"; };
+		760665641D27B6DA00CCF539 /* BSEVideoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSEVideoTableViewController.m; sourceTree = "<group>"; };
+		760665661D27B6EF00CCF539 /* BSEAudioTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSEAudioTableViewController.h; sourceTree = "<group>"; };
+		760665671D27B6EF00CCF539 /* BSEAudioTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSEAudioTableViewController.m; sourceTree = "<group>"; };
+		760665691D27B70400CCF539 /* BSEPictureTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSEPictureTableViewController.h; sourceTree = "<group>"; };
+		7606656A1D27B70400CCF539 /* BSEPictureTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSEPictureTableViewController.m; sourceTree = "<group>"; };
+		7606656C1D27B71A00CCF539 /* BSEWordTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSEWordTableViewController.h; sourceTree = "<group>"; };
+		7606656D1D27B71A00CCF539 /* BSEWordTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSEWordTableViewController.m; sourceTree = "<group>"; };
 		760AF0E51CB0330D00A0D242 /* btn_backItem_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_backItem_highlighted.png; sourceTree = "<group>"; };
 		760AF0E61CB0330D00A0D242 /* btn_backItem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_backItem.png; sourceTree = "<group>"; };
 		760AF0E91CB0DA5500A0D242 /* LEDWebViewController+Progress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LEDWebViewController+Progress.h"; sourceTree = "<group>"; };
@@ -2103,6 +2121,39 @@
 			path = XiMeng;
 			sourceTree = "<group>";
 		};
+		7606655A1D27B11100CCF539 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7606655B1D27B11100CCF539 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7606655C1D27B12800CCF539 /* BSETitleButton.h */,
+				7606655D1D27B12800CCF539 /* BSETitleButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7606655F1D27B6A100CCF539 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				760665601D27B6C900CCF539 /* BSEAllTableViewController.h */,
+				760665611D27B6C900CCF539 /* BSEAllTableViewController.m */,
+				760665631D27B6DA00CCF539 /* BSEVideoTableViewController.h */,
+				760665641D27B6DA00CCF539 /* BSEVideoTableViewController.m */,
+				760665661D27B6EF00CCF539 /* BSEAudioTableViewController.h */,
+				760665671D27B6EF00CCF539 /* BSEAudioTableViewController.m */,
+				760665691D27B70400CCF539 /* BSEPictureTableViewController.h */,
+				7606656A1D27B70400CCF539 /* BSEPictureTableViewController.m */,
+				7606656C1D27B71A00CCF539 /* BSEWordTableViewController.h */,
+				7606656D1D27B71A00CCF539 /* BSEWordTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		760AF1031CB1141200A0D242 /* PushNotification */ = {
 			isa = PBXGroup;
 			children = (
@@ -2908,6 +2959,9 @@
 		7656C33A1D1E854200024B01 /* Essence */ = {
 			isa = PBXGroup;
 			children = (
+				7606655F1D27B6A100CCF539 /* Controller */,
+				7606655A1D27B11100CCF539 /* Model */,
+				7606655B1D27B11100CCF539 /* View */,
 				7656C3401D1E857E00024B01 /* BSEViewController.h */,
 				7656C3411D1E857E00024B01 /* BSEViewController.m */,
 			);
@@ -5633,11 +5687,13 @@
 				760AF0EE1CB0E30800A0D242 /* NSStringAdditions.m in Sources */,
 				769718371C9D440E00D0AC63 /* SHCZMainView.m in Sources */,
 				76573D7A1CDB9C8E00F38585 /* DPAFObject.m in Sources */,
+				760665681D27B6EF00CCF539 /* BSEAudioTableViewController.m in Sources */,
 				763E4E8E1CA2F25200470FCA /* ZFBTestViewController.m in Sources */,
 				76573D771CDB95BC00F38585 /* DPSFObject.m in Sources */,
 				760AF1381CB176E400A0D242 /* JsonModelDomainObject.m in Sources */,
 				76C035DF1CAA999D002241E5 /* CustomPlayerViewController.m in Sources */,
 				76C035701CA68288002241E5 /* QRCodeViewController.m in Sources */,
+				760665621D27B6C900CCF539 /* BSEAllTableViewController.m in Sources */,
 				764153081D11B3040078D3BA /* SSKeychain.m in Sources */,
 				76E916491CABFA9E00C8C63A /* LEDPortal.m in Sources */,
 				76E1B8BE1CC9260400C71338 /* NSString+Hash.m in Sources */,
@@ -5652,8 +5708,10 @@
 				76C0358E1CA68964002241E5 /* RunTimeViewController.m in Sources */,
 				76573D581CDA54F800F38585 /* DPCreationalTestViewController.m in Sources */,
 				76737A6F1CC385DA008AEC1C /* SwiftBasic.swift in Sources */,
+				760665651D27B6DA00CCF539 /* BSEVideoTableViewController.m in Sources */,
 				76573D931CDDF75C00F38585 /* LMKDownLoader2.m in Sources */,
 				76DE57B71D105C9F00DB4A46 /* GIFViewController.m in Sources */,
+				7606656E1D27B71A00CCF539 /* BSEWordTableViewController.m in Sources */,
 				769717E91C992C1B00D0AC63 /* QQMainViewController.m in Sources */,
 				76573D3A1CDA4E6D00F38585 /* DPStructuralViewController.m in Sources */,
 				76C035E81CAAD54A002241E5 /* CustomTakePhotoViewController.m in Sources */,
@@ -5755,6 +5813,7 @@
 				763E4DF91CA25E2900470FCA /* WDViewController.m in Sources */,
 				76C035A01CA68FF0002241E5 /* ReactNativeViewController.m in Sources */,
 				764153091D11B3040078D3BA /* SSKeychainQuery.m in Sources */,
+				7606656B1D27B70400CCF539 /* BSEPictureTableViewController.m in Sources */,
 				760AF0F11CB0E35600A0D242 /* NSArray+LEDFoundation.m in Sources */,
 				76CDEB9A1CB95ABD00DFCB16 /* LEDProvincesDomain.m in Sources */,
 				763266221CD4CA8C00F56D9D /* LEDEventHandler.m in Sources */,
@@ -5782,6 +5841,7 @@
 				7681A81F1C958A1B00FC6843 /* User.m in Sources */,
 				76C034C31CA40EC7002241E5 /* SPKAlertView.m in Sources */,
 				7601D9201CBD3CA400E6F6E7 /* XiMengViewController.m in Sources */,
+				7606655E1D27B12800CCF539 /* BSETitleButton.m in Sources */,
 				76C479981C8EF5AF00EAE07E /* JSPatchViewController.m in Sources */,
 				769718381C9D440E00D0AC63 /* SHCZSideTableView.m in Sources */,
 				7681A81E1C958A1B00FC6843 /* User+CoreDataProperties.m in Sources */,

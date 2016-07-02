@@ -11,11 +11,13 @@
 #import "masonry.h"
 #import "UIKitMacros.h"
 #import "SDImageCache.h"
+#import "SVProgressHUD.h"
 
 @interface BSMSettingViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, assign) NSUInteger cacheSize;
+@property (nonatomic, strong) NSArray *datas;
 
 @end
 
@@ -32,6 +34,7 @@
 
 - (void)setupData
 {
+    _datas = @[@"清空缓存",@"推荐",@"当前版本",@"评分",@"关于"];
     [self getFolderSize];
 }
 
@@ -59,6 +62,7 @@
 
 - (void)clearDiskOnCompletion:(NSString *)diskCachePath
 {
+    [SVProgressHUD showWithStatus:@"清空缓存" maskType:SVProgressHUDMaskTypeBlack];
     dispatch_async(dispatch_get_main_queue(), ^{
         [[NSFileManager defaultManager] removeItemAtPath:diskCachePath error:nil];
         [[NSFileManager defaultManager] createDirectoryAtPath:diskCachePath
@@ -66,6 +70,8 @@
                                  attributes:nil
                                       error:NULL];
         // 执行后续处理，completion回调
+        [NSThread sleepForTimeInterval:1];
+        [SVProgressHUD dismiss];
         [self getFolderSize];
         [self.tableView reloadData];
     });
@@ -102,7 +108,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return 5;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -125,22 +131,40 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *reuseIdetify = @"tableViewCellIdetify";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdetify];
+    if (indexPath.row == 0) {
+        static NSString *reuseIdetify = @"tableViewCellIdetify";
+        
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdetify];
+        if (!cell) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdetify];
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            cell.showsReorderControl = YES;
+        }
+        
+        if (self.cacheSize > 1000 * 1000) {
+            cell.textLabel.text = [NSString stringWithFormat:@"清除缓存(%.1lfMB)", self.cacheSize / (1000.0 * 1000.0)];
+        } else if (self.cacheSize > 1000 ) {
+            cell.textLabel.text = [NSString stringWithFormat:@"清除缓存(%.1lfKB)", self.cacheSize / (1000.0)];
+        } else {
+            cell.textLabel.text = [NSString stringWithFormat:@"清除缓存(%ldB)", self.cacheSize];
+        }
+        
+        cell.imageView.image = nil;// 防止循环利用
+        cell.textLabel.backgroundColor = [UIColor clearColor];
+        
+        return cell;
+    }
+    
+    static NSString *reuseIdetify2 = @"tableViewCellIdetifyddddd";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdetify2];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdetify];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdetify2];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         cell.showsReorderControl = YES;
     }
+    cell.textLabel.text = self.datas[indexPath.row];
     
-    if (self.cacheSize > 1000 * 1000) {
-         cell.textLabel.text = [NSString stringWithFormat:@"清除缓存(%.1lfMB)", self.cacheSize / (1000.0 * 1000.0)];
-    } else if (self.cacheSize > 1000 ) {
-         cell.textLabel.text = [NSString stringWithFormat:@"清除缓存(%.1lfKB)", self.cacheSize / (1000.0)];
-    } else {
-        cell.textLabel.text = [NSString stringWithFormat:@"清除缓存(%ldB)", self.cacheSize];
-    }
-   
     cell.imageView.image = nil;// 防止循环利用
     cell.textLabel.backgroundColor = [UIColor clearColor];
     
@@ -150,14 +174,17 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    // 获得文件夹路径大小
-    NSString *cachePath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
-    NSString *dirPath = [cachePath stringByAppendingPathComponent:@"default"];
-    [self clearDiskOnCompletion:dirPath];
-    [tableView reloadData];
+    if (indexPath.row == 0) {
+        // 获得文件夹路径大小
+        NSString *cachePath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
+        NSString *dirPath = [cachePath stringByAppendingPathComponent:@"default"];
+        [self clearDiskOnCompletion:dirPath];
+        [tableView reloadData];
+        
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"清空缓存" message:@"参考 SDImageCache， 写的很好" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+        [alertView show];
+    }
     
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"清空缓存" message:@"参考 SDImageCache， 写的很好" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
-    [alertView show];
 }
 
 @end
