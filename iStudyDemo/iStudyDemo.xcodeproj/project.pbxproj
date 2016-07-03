@@ -863,6 +863,9 @@
 		76E4C2D91D28E3520041165A /* BSTopicCellProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E4C2D81D28E3520041165A /* BSTopicCellProtocol.m */; };
 		76E4C2DC1D2900070041165A /* BSTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E4C2DB1D2900070041165A /* BSTheme.m */; };
 		76E4C2DF1D29090F0041165A /* BSTopicTopCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E4C2DE1D29090E0041165A /* BSTopicTopCommentView.m */; };
+		76E4C2E21D295E2A0041165A /* BSTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E4C2E11D295E2A0041165A /* BSTopicPictureView.m */; };
+		76E4C2E51D295E440041165A /* BSTopicAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E4C2E41D295E440041165A /* BSTopicAudioView.m */; };
+		76E4C2E81D295E630041165A /* BSTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E4C2E71D295E630041165A /* BSTopicVideoView.m */; };
 		76E9037E1C9ED4B4003AC33A /* NaviMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9037D1C9ED4B4003AC33A /* NaviMenuViewController.m */; };
 		76E903891C9ED53E003AC33A /* NavMenuScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903811C9ED53E003AC33A /* NavMenuScrollView.m */; };
 		76E9038A1C9ED53E003AC33A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903831C9ED53E003AC33A /* UIView+Extension.m */; };
@@ -2009,6 +2012,12 @@
 		76E4C2DB1D2900070041165A /* BSTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTheme.m; sourceTree = "<group>"; };
 		76E4C2DD1D29090E0041165A /* BSTopicTopCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTopicTopCommentView.h; sourceTree = "<group>"; };
 		76E4C2DE1D29090E0041165A /* BSTopicTopCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTopicTopCommentView.m; sourceTree = "<group>"; };
+		76E4C2E01D295E2A0041165A /* BSTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTopicPictureView.h; sourceTree = "<group>"; };
+		76E4C2E11D295E2A0041165A /* BSTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTopicPictureView.m; sourceTree = "<group>"; };
+		76E4C2E31D295E440041165A /* BSTopicAudioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTopicAudioView.h; sourceTree = "<group>"; };
+		76E4C2E41D295E440041165A /* BSTopicAudioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTopicAudioView.m; sourceTree = "<group>"; };
+		76E4C2E61D295E630041165A /* BSTopicVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTopicVideoView.h; sourceTree = "<group>"; };
+		76E4C2E71D295E630041165A /* BSTopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTopicVideoView.m; sourceTree = "<group>"; };
 		76E9037C1C9ED4B4003AC33A /* NaviMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaviMenuViewController.h; sourceTree = "<group>"; };
 		76E9037D1C9ED4B4003AC33A /* NaviMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaviMenuViewController.m; sourceTree = "<group>"; };
 		76E903801C9ED53E003AC33A /* NavMenuScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavMenuScrollView.h; sourceTree = "<group>"; };
@@ -4779,6 +4788,12 @@
 				76E4C2D81D28E3520041165A /* BSTopicCellProtocol.m */,
 				76E4C2DD1D29090E0041165A /* BSTopicTopCommentView.h */,
 				76E4C2DE1D29090E0041165A /* BSTopicTopCommentView.m */,
+				76E4C2E01D295E2A0041165A /* BSTopicPictureView.h */,
+				76E4C2E11D295E2A0041165A /* BSTopicPictureView.m */,
+				76E4C2E31D295E440041165A /* BSTopicAudioView.h */,
+				76E4C2E41D295E440041165A /* BSTopicAudioView.m */,
+				76E4C2E61D295E630041165A /* BSTopicVideoView.h */,
+				76E4C2E71D295E630041165A /* BSTopicVideoView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -5780,6 +5795,7 @@
 				761931D21C8C5DF70022A311 /* CC3GLMatrix.m in Sources */,
 				76737A881CC38910008AEC1C /* SwiftUIViewController.m in Sources */,
 				76C0355B1CA6776E002241E5 /* MessageCell.m in Sources */,
+				76E4C2E51D295E440041165A /* BSTopicAudioView.m in Sources */,
 				76C035881CA68943002241E5 /* MVVMViewController.m in Sources */,
 				76C0359D1CA68FD6002241E5 /* RACViewController.m in Sources */,
 				76BC54931D27760D00A76CE1 /* BSMSettingViewController.m in Sources */,
@@ -5968,6 +5984,7 @@
 				769717EC1C99792C00D0AC63 /* JSPatchProcessKit.m in Sources */,
 				76C0356C1CA681D2002241E5 /* WebJSViewController.m in Sources */,
 				76C035981CA68CCC002241E5 /* SwiftViewController.m in Sources */,
+				76E4C2E81D295E630041165A /* BSTopicVideoView.m in Sources */,
 				760AF1061CB1141200A0D242 /* PushNotificationViewController.m in Sources */,
 				76C0351E1CA655F8002241E5 /* BasicAnimationViewController.m in Sources */,
 				76737A711CC385DA008AEC1C /* SwiftCallOCObject.m in Sources */,
@@ -5976,6 +5993,7 @@
 				7697189E1C9E994900D0AC63 /* QQSettingViewController.m in Sources */,
 				760AF11E1CB11A5D00A0D242 /* NSString+LEDDigest.m in Sources */,
 				76E4C2CF1D28BD270041165A /* BSTag.m in Sources */,
+				76E4C2E21D295E2A0041165A /* BSTopicPictureView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

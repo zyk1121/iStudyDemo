@@ -26,7 +26,7 @@ typedef enum {
     BSTopicTypeWord = 29,
     
     /** 声音 */
-    BSTopicTypeVoice = 31,
+    BSTopicTypeAudio = 31,
     
     /** 视频 */
     BSTopicTypeVideo = 41

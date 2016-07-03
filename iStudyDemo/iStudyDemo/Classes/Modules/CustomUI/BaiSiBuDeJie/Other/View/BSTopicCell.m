@@ -10,12 +10,52 @@
 #import "ReactiveCocoa/ReactiveCocoa.h"
 #import "masonry.h"
 #import "UIKitMacros.h"
+#import "BSTopicPictureView.h"
+#import "BSTopicAudioView.h"
+#import "BSTopicVideoView.h"
 
 @interface BSTopicCell ()
+
+@property (nonatomic, weak) BSTopicPictureView *pictureView;
+@property (nonatomic, weak) BSTopicAudioView *audioView;
+@property (nonatomic, weak) BSTopicVideoView *videoView;
 
 @end
 
 @implementation BSTopicCell
+
+
+// 懒加载
+
+- (BSTopicPictureView *)pictureView
+{
+    if (_pictureView == nil) {
+        BSTopicPictureView *view = [[BSTopicPictureView alloc] init];
+        _pictureView= view;
+        [self addSubview:_pictureView];
+    }
+    return _pictureView;
+}
+
+- (BSTopicAudioView *)audioView
+{
+    if (_audioView == nil) {
+        BSTopicAudioView *view = [[BSTopicAudioView alloc] init];
+        _audioView= view;
+        [self addSubview:_audioView];
+    }
+    return _audioView;
+}
+
+- (BSTopicVideoView *)videoView
+{
+    if (_videoView == nil) {
+        BSTopicVideoView *view = [[BSTopicVideoView alloc] init];
+        _videoView= view;
+        [self addSubview:_videoView];
+    }
+    return _videoView;
+}
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -93,6 +133,40 @@
     self.bottomToolBar.delegate  =self;
     //
     self.topCommentView.dataSource = dataSource;
+    
+    // 添加中间控件
+    if (dataSource.type == BSTopicTypeVideo) {
+        // 视频
+        self.videoView.hidden = NO;
+        self.pictureView.hidden = YES;
+        self.audioView.hidden = YES;
+        
+        self.videoView.dataSource = dataSource;
+        self.videoView.frame = dataSource.contentFrame;
+    } else if(dataSource.type == BSTopicTypeAudio) {
+        // 音频
+        self.videoView.hidden = YES;
+        self.pictureView.hidden = YES;
+        self.audioView.hidden = NO;
+        
+         self.audioView.dataSource = dataSource;
+        self.audioView.frame = dataSource.contentFrame;
+    } else if(dataSource.type == BSTopicTypePicture) {
+        // 图片
+        self.videoView.hidden = YES;
+        self.pictureView.hidden = NO;
+        self.audioView.hidden = YES;
+        
+         self.pictureView.dataSource = dataSource;
+        self.pictureView.frame = dataSource.contentFrame;
+    } else if(dataSource.type == BSTopicTypeWord) {
+        // 文本
+        self.videoView.hidden = YES;
+        self.pictureView.hidden = YES;
+        self.audioView.hidden = YES;
+    } else {
+    
+    }
 }
 
 #pragma mark - autolayout

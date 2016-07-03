@@ -87,9 +87,9 @@ static NSString *commonTopicIdentifier = @"commonTopicIdentifier";
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     [params setObject:@"list" forKey:@"a"];
     [params setObject:@"data" forKey:@"c"];
-    [params setObject:@"repost" forKey:@"order"];
-    [params setObject:@"0" forKey:@"page"];
-    //    [params setObject:@"1" forKey:@"type"];
+//    [params setObject:@"repost" forKey:@"order"];
+//    [params setObject:@"0" forKey:@"page"];
+    [params setObject:@"1" forKey:@"type"];
     [SVProgressHUD showWithStatus:@"加载中..."];
     [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
         [SVProgressHUD dismiss];
@@ -132,17 +132,18 @@ static NSString *commonTopicIdentifier = @"commonTopicIdentifier";
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     [params setObject:@"list" forKey:@"a"];
     [params setObject:@"data" forKey:@"c"];
-     [params setObject:@"repost" forKey:@"order"];
+//     [params setObject:@"repost" forKey:@"order"];
     [params setObject:self.maxtime forKey:@"maxtime"];
-    //    [params setObject:@"1" forKey:@"type"];
+    [params setObject:@"1" forKey:@"type"];
+    
     [SVProgressHUD showWithStatus:@"加载中..."];
     [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
         [SVProgressHUD dismiss];
         [self.tableView.mj_footer endRefreshing];
         if (responseObject) {
             NSArray *tempArray = responseObject[@"list"];
-//            self.topicData = [BSTopic mj_objectArrayWithKeyValuesArray:tempArray];
-            [self.topicData addObjectsFromArray:[BSTopic mj_objectArrayWithKeyValuesArray:tempArray]];
+            self.topicData = [BSTopic mj_objectArrayWithKeyValuesArray:tempArray];
+//            [self.topicData addObjectsFromArray:[BSTopic mj_objectArrayWithKeyValuesArray:tempArray]];
             self.maxtime = responseObject[@"info"][@"maxtime"];
             [self.tableView reloadData];
         }

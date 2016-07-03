@@ -20,7 +20,10 @@
 
 + (NSDictionary *)mj_replacedKeyFromPropertyName
 {
-    return @{@"topComment":@"top_cmt[0]"};
+    return @{@"topComment":@"top_cmt[0]",
+             @"small_image":@"image0",
+             @"large_image":@"image1",
+             @"middle_image":@"image2"};
 }
 
 #pragma mark - getter
