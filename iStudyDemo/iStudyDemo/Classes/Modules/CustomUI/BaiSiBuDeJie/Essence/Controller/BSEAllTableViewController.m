@@ -22,8 +22,10 @@
 #import "UIButton+WebCache.h"
 #import "BSTopic.h"
 #import "MJExtension.h"
+#import "BSTopicCell.h"
 
 static NSString *commonReuseIdentifier = @"commonReuseIdentifier";
+static NSString *commonTopicIdentifier = @"commonTopicIdentifier";
 
 @interface BSEAllTableViewController ()
 
@@ -64,6 +66,8 @@ static NSString *commonReuseIdentifier = @"commonReuseIdentifier";
 {
     // register cell
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:commonReuseIdentifier];
+    // register cell
+    [self.tableView registerClass:[BSTopicCell class] forCellReuseIdentifier:commonTopicIdentifier];
     
     // 内边距
     self.tableView.contentInset = UIEdgeInsetsMake(64 + 44, 0, 49, 0);
@@ -167,16 +171,22 @@ static NSString *commonReuseIdentifier = @"commonReuseIdentifier";
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:commonReuseIdentifier forIndexPath:indexPath];
+    // 根据type获取不同类型的cell
+    BSTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:commonTopicIdentifier forIndexPath:indexPath];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:commonReuseIdentifier];
+        cell = [[BSTopicCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:commonTopicIdentifier];
     }
     // Configure the cell...
     BSTopic *topic = self.topicData[indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@",topic.name];
+    cell.dataSource = topic;
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
