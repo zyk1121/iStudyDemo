@@ -12,6 +12,8 @@
 #define SCREEN_WIDTH  ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
+#define CommonMargin 10
+
 #define Font(x)                         [UIFont systemFontOfSize : x]
 #define ItalicFont(x)                   [UIFont italicSystemFontOfSize:x]
 #define BoldFont(x)                     [UIFont boldSystemFontOfSize : x]

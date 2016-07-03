@@ -861,6 +861,8 @@
 		76E4C2D31D28C5370041165A /* BSTopicHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E4C2D21D28C5370041165A /* BSTopicHeaderView.m */; };
 		76E4C2D61D28C5540041165A /* BSTopicToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E4C2D51D28C5540041165A /* BSTopicToolBarView.m */; };
 		76E4C2D91D28E3520041165A /* BSTopicCellProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E4C2D81D28E3520041165A /* BSTopicCellProtocol.m */; };
+		76E4C2DC1D2900070041165A /* BSTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E4C2DB1D2900070041165A /* BSTheme.m */; };
+		76E4C2DF1D29090F0041165A /* BSTopicTopCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E4C2DE1D29090E0041165A /* BSTopicTopCommentView.m */; };
 		76E9037E1C9ED4B4003AC33A /* NaviMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9037D1C9ED4B4003AC33A /* NaviMenuViewController.m */; };
 		76E903891C9ED53E003AC33A /* NavMenuScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903811C9ED53E003AC33A /* NavMenuScrollView.m */; };
 		76E9038A1C9ED53E003AC33A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903831C9ED53E003AC33A /* UIView+Extension.m */; };
@@ -2003,6 +2005,10 @@
 		76E4C2D51D28C5540041165A /* BSTopicToolBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTopicToolBarView.m; sourceTree = "<group>"; };
 		76E4C2D71D28E3520041165A /* BSTopicCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTopicCellProtocol.h; sourceTree = "<group>"; };
 		76E4C2D81D28E3520041165A /* BSTopicCellProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTopicCellProtocol.m; sourceTree = "<group>"; };
+		76E4C2DA1D2900070041165A /* BSTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTheme.h; sourceTree = "<group>"; };
+		76E4C2DB1D2900070041165A /* BSTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTheme.m; sourceTree = "<group>"; };
+		76E4C2DD1D29090E0041165A /* BSTopicTopCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTopicTopCommentView.h; sourceTree = "<group>"; };
+		76E4C2DE1D29090E0041165A /* BSTopicTopCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTopicTopCommentView.m; sourceTree = "<group>"; };
 		76E9037C1C9ED4B4003AC33A /* NaviMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaviMenuViewController.h; sourceTree = "<group>"; };
 		76E9037D1C9ED4B4003AC33A /* NaviMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaviMenuViewController.m; sourceTree = "<group>"; };
 		76E903801C9ED53E003AC33A /* NavMenuScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavMenuScrollView.h; sourceTree = "<group>"; };
@@ -2204,6 +2210,8 @@
 				76E4C2CD1D28BD270041165A /* BSUser.m */,
 				760665701D27ED5400CCF539 /* BSTopic.h */,
 				760665711D27ED5400CCF539 /* BSTopic.m */,
+				76E4C2DA1D2900070041165A /* BSTheme.h */,
+				76E4C2DB1D2900070041165A /* BSTheme.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -4769,6 +4777,8 @@
 				76E4C2D51D28C5540041165A /* BSTopicToolBarView.m */,
 				76E4C2D71D28E3520041165A /* BSTopicCellProtocol.h */,
 				76E4C2D81D28E3520041165A /* BSTopicCellProtocol.m */,
+				76E4C2DD1D29090E0041165A /* BSTopicTopCommentView.h */,
+				76E4C2DE1D29090E0041165A /* BSTopicTopCommentView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -5719,6 +5729,7 @@
 				7656C6201D1FE20F00024B01 /* BSBaseViewController.m in Sources */,
 				7656C6231D1FE55400024B01 /* BSBaseNavigationController.m in Sources */,
 				7697181B1C9AF63A00D0AC63 /* QQDynamicViewController.m in Sources */,
+				76E4C2DF1D29090F0041165A /* BSTopicTopCommentView.m in Sources */,
 				763FE3871C8DC9AB00CE67FF /* LEDDomainObject.m in Sources */,
 				760CBEB71CC25C1F0087A9AA /* LEDDownloadManager2.m in Sources */,
 				765F83401CC49ADD00D87D7F /* LDDataExtension.m in Sources */,
@@ -5780,6 +5791,7 @@
 				76213BD61C96BE42001DAA53 /* DeviceInfoViewController.m in Sources */,
 				760AF0EE1CB0E30800A0D242 /* NSStringAdditions.m in Sources */,
 				769718371C9D440E00D0AC63 /* SHCZMainView.m in Sources */,
+				76E4C2DC1D2900070041165A /* BSTheme.m in Sources */,
 				76573D7A1CDB9C8E00F38585 /* DPAFObject.m in Sources */,
 				760665681D27B6EF00CCF539 /* BSEAudioTableViewController.m in Sources */,
 				763E4E8E1CA2F25200470FCA /* ZFBTestViewController.m in Sources */,

@@ -12,6 +12,7 @@
 #import "BSComment.h"
 #import "BSUser.h"
 #import "BSTag.h"
+#import "BSTheme.h"
 
 
 typedef enum {
@@ -59,6 +60,9 @@ typedef enum {
 /** 图片的高度 */
 @property (nonatomic, assign) CGFloat height;
 
+/** 主题 */
+@property (nonatomic, copy) NSArray<BSTheme *>* themes;
+
 /** 小图 */
 @property (nonatomic, copy) NSString *small_image; // image0
 /** 大图 */
@@ -77,7 +81,10 @@ typedef enum {
 @property (nonatomic, assign) NSInteger playcount;
 
 /** 最热评论 */
+//@property (nonatomic, strong) NSArray<BSComment *> *topComment;
 @property (nonatomic, strong) BSComment *topComment;
+
+
 
 /***** 额外增加的属性 ******/
 /** cell的高度 */

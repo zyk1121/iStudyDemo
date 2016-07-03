@@ -148,7 +148,7 @@
     [self.commentButton setTitle:[NSString stringWithFormat:@"%zd", _dataSource.comment] forState:UIControlStateSelected];
     [self.commentButton setTitle:[NSString stringWithFormat:@"%zd", _dataSource.comment] forState:UIControlStateHighlighted];
     
-    _dataSource.cellHeight += 35;
+//    _dataSource.cellHeight += 35;
     [self updateConstraintsIfNeeded];
 }
 

@@ -11,6 +11,7 @@
 #import "BSTopicHeaderView.h"
 #import "BSTopicToolBarView.h"
 #import "BSTopicCellProtocol.h"
+#import "BSTopicTopCommentView.h"
 
 //@protocol BSTopicCellDatasource <NSObject>
 //
@@ -26,6 +27,7 @@
 
 @property (nonatomic, strong) BSTopicHeaderView *topHeader;
 @property (nonatomic, strong) UILabel *contentLabel;
+@property (nonatomic, strong) BSTopicTopCommentView *topCommentView;
 @property (nonatomic, strong) BSTopicToolBarView *bottomToolBar;
 
 @property (nonatomic, strong) BSTopic *dataSource;

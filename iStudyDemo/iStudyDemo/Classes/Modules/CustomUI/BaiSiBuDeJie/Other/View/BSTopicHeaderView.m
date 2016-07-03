@@ -5,8 +5,6 @@
 //  Created by zhangyuanke on 16/7/3.
 //  Copyright © 2016年 zhangyuanke. All rights reserved.
 //
-
-#import "BSTopicHeaderView.h"
 #import "ReactiveCocoa/ReactiveCocoa.h"
 #import "masonry.h"
 #import "UIKitMacros.h"
@@ -15,6 +13,8 @@
 #import "UIImageView+WebCache.h"
 #import "UIView+Extension.h"
 #import "UIButton+WebCache.h"
+#import "BSTopicHeaderView.h"
+
 
 @interface BSTopicHeaderView ()
 
@@ -93,7 +93,7 @@
     self.nameLabel.text = _dataSource.name;
     self.timeLabel.text = _dataSource.created_at;
     
-    _dataSource.cellHeight += 44;
+//    _dataSource.cellHeight += 44;
     [self updateConstraintsIfNeeded];
 }
 

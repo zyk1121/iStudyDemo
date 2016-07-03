@@ -87,6 +87,7 @@ static NSString *commonTopicIdentifier = @"commonTopicIdentifier";
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     [params setObject:@"list" forKey:@"a"];
     [params setObject:@"data" forKey:@"c"];
+    [params setObject:@"repost" forKey:@"order"];
     [params setObject:@"0" forKey:@"page"];
     //    [params setObject:@"1" forKey:@"type"];
     [SVProgressHUD showWithStatus:@"加载中..."];
@@ -131,6 +132,7 @@ static NSString *commonTopicIdentifier = @"commonTopicIdentifier";
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     [params setObject:@"list" forKey:@"a"];
     [params setObject:@"data" forKey:@"c"];
+     [params setObject:@"repost" forKey:@"order"];
     [params setObject:self.maxtime forKey:@"maxtime"];
     //    [params setObject:@"1" forKey:@"type"];
     [SVProgressHUD showWithStatus:@"加载中..."];
@@ -185,6 +187,10 @@ static NSString *commonTopicIdentifier = @"commonTopicIdentifier";
     cell.delegate = self;
     // Configure the cell...
     BSTopic *topic = self.topicData[indexPath.row];
+
+//    if (topic.topComment) {
+//        NSLog(@"dd");
+//    }
     topic.cellHeight  = 0;
     cell.dataSource = topic;
     

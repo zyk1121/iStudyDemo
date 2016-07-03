@@ -58,6 +58,21 @@
         view;
     });
     
+    _contentLabel = ({
+        UILabel *label = [[UILabel alloc] init];
+        label.numberOfLines = 0;
+        label.font = [UIFont systemFontOfSize:15];
+        label.textColor = [UIColor blackColor];
+        [self addSubview:label];
+        label;
+    });
+    
+    _topCommentView = ({
+        BSTopicTopCommentView *view = [[BSTopicTopCommentView alloc] init];
+        [self addSubview:view];
+        view;
+    });
+    
     [self updateConstraints];
 }
 
@@ -72,8 +87,12 @@
     self.topHeader.dataSource = dataSource;
     self.topHeader.delegate = self;
     //
+    self.contentLabel.text = dataSource.text;
+    //
     self.bottomToolBar.dataSource  =dataSource;
     self.bottomToolBar.delegate  =self;
+    //
+    self.topCommentView.dataSource = dataSource;
 }
 
 #pragma mark - autolayout
@@ -84,8 +103,20 @@
         make.left.top.right.equalTo(self);
     }];
     
+    [self.contentLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self).offset(CommonMargin);
+        make.top.equalTo(self.topHeader.mas_bottom).offset(CommonMargin);
+    }];
+//    
+//    self.bottomToolBar.backgroundColor = [UIColor redColor];
+//    self.topCommentView.backgroundColor = [UIColor redColor];
     [self.bottomToolBar mas_updateConstraints:^(MASConstraintMaker *make) {
         make.left.right.bottom.equalTo(self);
+    }];
+    
+    [self.topCommentView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self);
+        make.bottom.equalTo(self.bottomToolBar.mas_top).offset(-CommonMargin);
     }];
     [super updateConstraints];
 }
