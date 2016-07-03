@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UITopicTableViewController.h"
 
-@interface BSEAudioTableViewController : UITableViewController
+@interface BSEAudioTableViewController : UITopicTableViewController
 
 @end

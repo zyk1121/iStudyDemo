@@ -866,6 +866,7 @@
 		76E4C2E21D295E2A0041165A /* BSTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E4C2E11D295E2A0041165A /* BSTopicPictureView.m */; };
 		76E4C2E51D295E440041165A /* BSTopicAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E4C2E41D295E440041165A /* BSTopicAudioView.m */; };
 		76E4C2E81D295E630041165A /* BSTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E4C2E71D295E630041165A /* BSTopicVideoView.m */; };
+		76E4C2EB1D297AF90041165A /* UITopicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E4C2EA1D297AF90041165A /* UITopicTableViewController.m */; };
 		76E9037E1C9ED4B4003AC33A /* NaviMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9037D1C9ED4B4003AC33A /* NaviMenuViewController.m */; };
 		76E903891C9ED53E003AC33A /* NavMenuScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903811C9ED53E003AC33A /* NavMenuScrollView.m */; };
 		76E9038A1C9ED53E003AC33A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903831C9ED53E003AC33A /* UIView+Extension.m */; };
@@ -2018,6 +2019,8 @@
 		76E4C2E41D295E440041165A /* BSTopicAudioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTopicAudioView.m; sourceTree = "<group>"; };
 		76E4C2E61D295E630041165A /* BSTopicVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTopicVideoView.h; sourceTree = "<group>"; };
 		76E4C2E71D295E630041165A /* BSTopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTopicVideoView.m; sourceTree = "<group>"; };
+		76E4C2E91D297AF90041165A /* UITopicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITopicTableViewController.h; sourceTree = "<group>"; };
+		76E4C2EA1D297AF90041165A /* UITopicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITopicTableViewController.m; sourceTree = "<group>"; };
 		76E9037C1C9ED4B4003AC33A /* NaviMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaviMenuViewController.h; sourceTree = "<group>"; };
 		76E9037D1C9ED4B4003AC33A /* NaviMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaviMenuViewController.m; sourceTree = "<group>"; };
 		76E903801C9ED53E003AC33A /* NavMenuScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavMenuScrollView.h; sourceTree = "<group>"; };
@@ -2204,6 +2207,8 @@
 				7606656A1D27B70400CCF539 /* BSEPictureTableViewController.m */,
 				7606656C1D27B71A00CCF539 /* BSEWordTableViewController.h */,
 				7606656D1D27B71A00CCF539 /* BSEWordTableViewController.m */,
+				76E4C2E91D297AF90041165A /* UITopicTableViewController.h */,
+				76E4C2EA1D297AF90041165A /* UITopicTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -5752,6 +5757,7 @@
 				76E4C2BE1D28BAAB0041165A /* BSWordTopicCell.m in Sources */,
 				76E903941C9EFC2B003AC33A /* QQChatViewController.m in Sources */,
 				7656C3351D1E2F3B00024B01 /* KBScrollView2.m in Sources */,
+				76E4C2EB1D297AF90041165A /* UITopicTableViewController.m in Sources */,
 				760AF13F1CB23BB500A0D242 /* LEDModalView.m in Sources */,
 				76E9038A1C9ED53E003AC33A /* UIView+Extension.m in Sources */,
 				7601D8D41CB9EA5100E6F6E7 /* LEDMVVMViewModel.m in Sources */,

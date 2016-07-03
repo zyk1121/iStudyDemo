@@ -16,12 +16,16 @@
 #import "UIView+Extension.h"
 #import "UIButton+WebCache.h"
 #import "AFNetworking.h"
+#import "DACircularProgressView.h"
+#import "DALabeledCircularProgressView.h"
 
 @interface BSTopicPictureView ()
 
 @property (nonatomic, strong) UIImageView *pictureImageView;
 @property (nonatomic, strong) UIImageView *gifImageView;
 @property (nonatomic, strong) UIButton *seeBigPictureButton;
+
+@property (nonatomic, strong) DALabeledCircularProgressView *progressView;
 
 @end
 
@@ -72,6 +76,14 @@
         [self addSubview:button];
         button;
     });
+    
+    _progressView = ({
+        DALabeledCircularProgressView *view = [[DALabeledCircularProgressView alloc] init];
+        [self addSubview:view];
+        view.progressLabel.textColor = [UIColor redColor];
+        view;
+    });
+    
     [self updateConstraintsIfNeeded];
 }
 
@@ -100,9 +112,20 @@
 //        self.pictureImageView.image = nil;
 //    }
     
-    self.pictureImageView.image = nil;
+//    self.pictureImageView.image = nil;
+//    [self.pictureImageView sd_setImageWithURL:[NSURL URLWithString:_dataSource.large_image]
+//                             placeholderImage:nil];
+//    self.progressView.progress = 0.5;
+//    self.progressView.progress = 0;
     [self.pictureImageView sd_setImageWithURL:[NSURL URLWithString:_dataSource.large_image]
-                             placeholderImage:nil];
+                             placeholderImage:nil options:SDWebImageProgressiveDownload progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+//                                 sleep(0.3);
+                                 self.progressView.hidden = NO;
+                                 self.progressView.progress = 1.0 *receivedSize / expectedSize;
+//                                 self.progressView.progressLabel.text = [NSString stringWithFormat:@"%lf%%",100.0 *receivedSize / expectedSize];
+                             } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+                                 self.progressView.hidden = YES;
+                             }];
     
     // gif
     if (dataSource.is_gif) {
@@ -139,6 +162,11 @@
     
     [self.seeBigPictureButton mas_updateConstraints:^(MASConstraintMaker *make) {
         make.left.right.bottom.equalTo(self);
+    }];
+    
+    [self.progressView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.width.height.equalTo(@80);
+        make.center.equalTo(self);
     }];
     
     [super updateConstraints];
