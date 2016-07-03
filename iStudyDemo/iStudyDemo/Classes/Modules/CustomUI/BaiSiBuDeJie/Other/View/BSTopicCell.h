@@ -10,6 +10,7 @@
 #import "BSTopic.h"
 #import "BSTopicHeaderView.h"
 #import "BSTopicToolBarView.h"
+#import "BSTopicCellProtocol.h"
 
 //@protocol BSTopicCellDatasource <NSObject>
 //
@@ -18,9 +19,10 @@
 //
 //@end
 
-@interface BSTopicCell : UITableViewCell
+@interface BSTopicCell : UITableViewCell<BSTopicHeaderViewDelegate, BSTopicToolBarViewDelegate>
 
 //@property (nonatomic, weak) id<BSTopicCellDatasource> datasource;
+@property (nonatomic, weak) id<BSTopicCellDelegate> delegate;
 
 @property (nonatomic, strong) BSTopicHeaderView *topHeader;
 @property (nonatomic, strong) UILabel *contentLabel;

@@ -27,7 +27,7 @@
 static NSString *commonReuseIdentifier = @"commonReuseIdentifier";
 static NSString *commonTopicIdentifier = @"commonTopicIdentifier";
 
-@interface BSEAllTableViewController ()
+@interface BSEAllTableViewController ()<BSTopicCellDelegate>
 
 @property (nonatomic, strong) NSMutableArray *topicData;
 @property (nonatomic, copy) NSString *maxtime;
@@ -169,6 +169,11 @@ static NSString *commonTopicIdentifier = @"commonTopicIdentifier";
     return [self.topicData count];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    BSTopic *topic = self.topicData[indexPath.row];
+    return topic.cellHeight;
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     // 根据type获取不同类型的cell
@@ -177,8 +182,10 @@ static NSString *commonTopicIdentifier = @"commonTopicIdentifier";
     if (cell == nil) {
         cell = [[BSTopicCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:commonTopicIdentifier];
     }
+    cell.delegate = self;
     // Configure the cell...
     BSTopic *topic = self.topicData[indexPath.row];
+    topic.cellHeight  = 0;
     cell.dataSource = topic;
     
     return cell;
@@ -187,6 +194,31 @@ static NSString *commonTopicIdentifier = @"commonTopicIdentifier";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+#pragma mark - BSTopicCellDelegate
+
+- (void)preformActionForType:(BSTopicEventType)type andTopicData:(BSTopic *)topic
+{
+    if (type == BSTopicEventTypeMoreButtonClick) {
+            UIAlertController *alertController = [[UIAlertController alloc] init];
+            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消"style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+                NSLog(@"取消");
+            }];
+        
+            UIAlertAction *shoucangAction = [UIAlertAction actionWithTitle:@"收藏"style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                NSLog(@"收藏");
+            }];
+        
+            UIAlertAction *jubaoAction = [UIAlertAction actionWithTitle:@"举报"style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                NSLog(@"举报");
+            }];
+        
+            [alertController addAction:cancelAction];
+            [alertController addAction:shoucangAction];
+            [alertController addAction:jubaoAction];
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
 }
 
 @end

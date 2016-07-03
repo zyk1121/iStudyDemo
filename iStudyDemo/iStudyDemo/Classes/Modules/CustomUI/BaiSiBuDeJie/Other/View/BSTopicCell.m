@@ -52,6 +52,12 @@
         view;
     });
     
+    _bottomToolBar = ({
+        BSTopicToolBarView *view = [[BSTopicToolBarView alloc] init];
+        [self addSubview:view];
+        view;
+    });
+    
     [self updateConstraints];
 }
 
@@ -64,7 +70,10 @@
     }
     // 跟新ui数据
     self.topHeader.dataSource = dataSource;
+    self.topHeader.delegate = self;
     //
+    self.bottomToolBar.dataSource  =dataSource;
+    self.bottomToolBar.delegate  =self;
 }
 
 #pragma mark - autolayout
@@ -72,9 +81,29 @@
 - (void)updateConstraints
 {
     [self.topHeader mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self);
+        make.left.top.right.equalTo(self);
+    }];
+    
+    [self.bottomToolBar mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.equalTo(self);
     }];
     [super updateConstraints];
+}
+
+#pragma mark - BSTopicHeaderViewDelegate
+
+- (void)moreButtonClicked
+{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(preformActionForType:andTopicData:)]) {
+        [self.delegate preformActionForType:BSTopicEventTypeMoreButtonClick andTopicData:self.dataSource];
+    }
+}
+
+#pragma mark - BSTopicToolBarViewDelegate
+
+- (void)toolButtonClicked:(BSTopicToolBarButtonType)buttonType
+{
+    NSLog(@"ddddd:%d",buttonType);
 }
 
 @end

@@ -92,6 +92,8 @@
               placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
     self.nameLabel.text = _dataSource.name;
     self.timeLabel.text = _dataSource.created_at;
+    
+    _dataSource.cellHeight += 44;
     [self updateConstraintsIfNeeded];
 }
 
@@ -128,7 +130,25 @@
 
 - (void)moreButtonClicked
 {
+    if ([self.delegate respondsToSelector:@selector(moreButtonClicked)]) {
+        [self.delegate moreButtonClicked];
+    }
+//    UIAlertController *alertController = [[UIAlertController alloc] init];
+//    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消"style:UIAlertActionStyleCancel handler:nil];
+//    
+//    UIAlertAction *deleteAction = [UIAlertAction actionWithTitle:@"删除"style:UIAlertActionStyleDestructive handler:nil];
+//    
+//    UIAlertAction *archiveAction = [UIAlertAction actionWithTitle:@"保存"style:UIAlertActionStyleDefault handler:nil];
+//    
+//    [alertController addAction:cancelAction];
+//    [alertController addAction:deleteAction];
+//    [alertController addAction:archiveAction];
     
+    /*
+ [self.window.rootViewController presentViewController:vc animated:YES completion:^{
+     
+ }];
+     */
 }
 
 @end

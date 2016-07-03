@@ -9,8 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "BSTopic.h"
 
+@protocol BSTopicHeaderViewDelegate <NSObject>
+
+@optional
+- (void)moreButtonClicked;
+
+@end
+
 @interface BSTopicHeaderView : UIView
 
+@property (nonatomic, weak) id<BSTopicHeaderViewDelegate> delegate;
 @property (nonatomic, strong) BSTopic *dataSource;
 
 @end
