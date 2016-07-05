@@ -100,6 +100,8 @@
     // 支付处理（后台）
     if (payFlag) {
         //
+        NSLog(@"%@",payment.token);
+        NSLog(@"%@",payment.token.paymentData);
         completion(PKPaymentAuthorizationStatusSuccess);
     } else {
         completion(PKPaymentAuthorizationStatusFailure);
