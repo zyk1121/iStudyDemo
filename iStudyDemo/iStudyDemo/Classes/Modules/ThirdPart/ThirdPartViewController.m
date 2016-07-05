@@ -13,6 +13,7 @@
 #import "ThirdShareViewController.h"
 #import "QRCodeViewController.h"
 #import "XMPPViewController.h"
+#import <PassKit/PassKit.h>
 
 @interface ThirdPartViewController () <UITableViewDataSource, UITableViewDelegate>
 

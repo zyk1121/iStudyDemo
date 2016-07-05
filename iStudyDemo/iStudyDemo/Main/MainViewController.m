@@ -45,6 +45,7 @@
 #import "NodeDotJSViewController.h"
 #import "DesignPatternsViewController.h"
 #import "APPShareDataViewController.h"
+#import "LDAPPLEPayViewController.h"
 
 // http://www.cocoachina.com/ios/20150825/13195.html
 
@@ -241,6 +242,10 @@
     [_listData addObject:@"App Shared Data"];
     APPShareDataViewController *appgroupViewController = [[APPShareDataViewController alloc] init];
     [_listViewControllers addObject:appgroupViewController];
+    // 28.Apple Pay
+    [_listData addObject:@"Apple Pay"];
+    LDAPPLEPayViewController *ldVC = [[LDAPPLEPayViewController alloc] init];
+    [_listViewControllers addObject:ldVC];
 
 }
 
