@@ -46,10 +46,11 @@
 #import "DesignPatternsViewController.h"
 #import "APPShareDataViewController.h"
 #import "LDAPPLEPayViewController.h"
+#import "IShowTraceSDK.h"
 
 // http://www.cocoachina.com/ios/20150825/13195.html
 
-@interface MainViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface MainViewController () <UITableViewDataSource, UITableViewDelegate, IShowTraceServiceDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *listData;
@@ -246,6 +247,11 @@
     [_listData addObject:@"Apple Pay"];
     LDAPPLEPayViewController *ldVC = [[LDAPPLEPayViewController alloc] init];
     [_listViewControllers addObject:ldVC];
+    
+    // 29.GPS 实时后台定位
+    [_listData addObject:@"GPS 实时后台定位"];
+    UIViewController *vcvc = [[UIViewController alloc] init];
+    [_listViewControllers addObject:vcvc];
 
 }
 
@@ -273,6 +279,12 @@
     } else {
         vc = [self.listViewControllers objectAtIndex:indexPath.row];
         vc.title = [self.listData objectAtIndex:indexPath.row];
+    }
+    
+    if ([[self.listData objectAtIndex:indexPath.row] isEqualToString:@"GPS 实时后台定位"]) {
+        [[IShowTraceAction sharedAction] startTrace:self trace:[[IShowTrace alloc] initWithAk:@"dd" serviceId:123 entityName:@"abc"]];
+        [[[UIAlertView alloc] initWithTitle:@"" message:@"已经开启后台持续定位模式" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil] show];
+        return;
     }
     
     

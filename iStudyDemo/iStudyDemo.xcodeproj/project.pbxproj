@@ -610,6 +610,10 @@
 		76573D931CDDF75C00F38585 /* LMKDownLoader2.m in Sources */ = {isa = PBXBuildFile; fileRef = 76573D921CDDF75C00F38585 /* LMKDownLoader2.m */; };
 		7657D7771D25757C00DBA3ED /* BSMeFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7657D7761D25757C00DBA3ED /* BSMeFootView.m */; };
 		765F83401CC49ADD00D87D7F /* LDDataExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 765F833F1CC49ADD00D87D7F /* LDDataExtension.m */; };
+		7669C2F61D37C6120016F554 /* IShowReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7669C2EE1D37C6120016F554 /* IShowReachability.m */; };
+		7669C2F71D37C6120016F554 /* IShowTraceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7669C2F01D37C6120016F554 /* IShowTraceObject.m */; };
+		7669C2F81D37C6120016F554 /* IShowTraceSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 7669C2F21D37C6120016F554 /* IShowTraceSDK.m */; };
+		7669C2F91D37C6120016F554 /* IShowTraceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7669C2F51D37C6120016F554 /* IShowTraceManager.m */; };
 		76737A6F1CC385DA008AEC1C /* SwiftBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76737A641CC385DA008AEC1C /* SwiftBasic.swift */; };
 		76737A701CC385DA008AEC1C /* SwiftBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A661CC385DA008AEC1C /* SwiftBasicViewController.m */; };
 		76737A711CC385DA008AEC1C /* SwiftCallOCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 76737A681CC385DA008AEC1C /* SwiftCallOCObject.m */; };
@@ -1643,6 +1647,14 @@
 		7657D7761D25757C00DBA3ED /* BSMeFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSMeFootView.m; sourceTree = "<group>"; };
 		765F833E1CC49ADD00D87D7F /* LDDataExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDataExtension.h; sourceTree = "<group>"; };
 		765F833F1CC49ADD00D87D7F /* LDDataExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDataExtension.m; sourceTree = "<group>"; };
+		7669C2ED1D37C6120016F554 /* IShowReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IShowReachability.h; path = Modules/Trace/IShowTraceSDK/IShowReachability.h; sourceTree = "<group>"; };
+		7669C2EE1D37C6120016F554 /* IShowReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IShowReachability.m; path = Modules/Trace/IShowTraceSDK/IShowReachability.m; sourceTree = "<group>"; };
+		7669C2EF1D37C6120016F554 /* IShowTraceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IShowTraceObject.h; path = Modules/Trace/IShowTraceSDK/IShowTraceObject.h; sourceTree = "<group>"; };
+		7669C2F01D37C6120016F554 /* IShowTraceObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IShowTraceObject.m; path = Modules/Trace/IShowTraceSDK/IShowTraceObject.m; sourceTree = "<group>"; };
+		7669C2F11D37C6120016F554 /* IShowTraceSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IShowTraceSDK.h; path = Modules/Trace/IShowTraceSDK/IShowTraceSDK.h; sourceTree = "<group>"; };
+		7669C2F21D37C6120016F554 /* IShowTraceSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IShowTraceSDK.m; path = Modules/Trace/IShowTraceSDK/IShowTraceSDK.m; sourceTree = "<group>"; };
+		7669C2F41D37C6120016F554 /* IShowTraceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IShowTraceManager.h; sourceTree = "<group>"; };
+		7669C2F51D37C6120016F554 /* IShowTraceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IShowTraceManager.m; sourceTree = "<group>"; };
 		76737A631CC385DA008AEC1C /* iStudyDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iStudyDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		76737A641CC385DA008AEC1C /* SwiftBasic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftBasic.swift; sourceTree = "<group>"; };
 		76737A651CC385DA008AEC1C /* SwiftBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftBasicViewController.h; sourceTree = "<group>"; };
@@ -2424,6 +2436,7 @@
 		761931AC1C8BCCDA0022A311 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7669C2EC1D37C5FB0016F554 /* Trace */,
 				761931AE1C8BCE500022A311 /* Basic */,
 				761931AF1C8BCE500022A311 /* Utils */,
 				761931AD1C8BCD010022A311 /* Modules */,
@@ -3854,6 +3867,30 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		7669C2EC1D37C5FB0016F554 /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				7669C2ED1D37C6120016F554 /* IShowReachability.h */,
+				7669C2EE1D37C6120016F554 /* IShowReachability.m */,
+				7669C2EF1D37C6120016F554 /* IShowTraceObject.h */,
+				7669C2F01D37C6120016F554 /* IShowTraceObject.m */,
+				7669C2F11D37C6120016F554 /* IShowTraceSDK.h */,
+				7669C2F21D37C6120016F554 /* IShowTraceSDK.m */,
+				7669C2F31D37C6120016F554 /* TraceManager */,
+			);
+			name = Trace;
+			sourceTree = "<group>";
+		};
+		7669C2F31D37C6120016F554 /* TraceManager */ = {
+			isa = PBXGroup;
+			children = (
+				7669C2F41D37C6120016F554 /* IShowTraceManager.h */,
+				7669C2F51D37C6120016F554 /* IShowTraceManager.m */,
+			);
+			name = TraceManager;
+			path = Modules/Trace/IShowTraceSDK/TraceManager;
+			sourceTree = "<group>";
+		};
 		76737A611CC385DA008AEC1C /* SwfitExtensionProtocol */ = {
 			isa = PBXGroup;
 			children = (
@@ -5016,6 +5053,9 @@
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
 							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Keychain = {
 								enabled = 1;
 							};
@@ -5860,10 +5900,12 @@
 				76737A6F1CC385DA008AEC1C /* SwiftBasic.swift in Sources */,
 				760665651D27B6DA00CCF539 /* BSEVideoTableViewController.m in Sources */,
 				76573D931CDDF75C00F38585 /* LMKDownLoader2.m in Sources */,
+				7669C2F91D37C6120016F554 /* IShowTraceManager.m in Sources */,
 				76DE57B71D105C9F00DB4A46 /* GIFViewController.m in Sources */,
 				7606656E1D27B71A00CCF539 /* BSEWordTableViewController.m in Sources */,
 				769717E91C992C1B00D0AC63 /* QQMainViewController.m in Sources */,
 				76573D3A1CDA4E6D00F38585 /* DPStructuralViewController.m in Sources */,
+				7669C2F71D37C6120016F554 /* IShowTraceObject.m in Sources */,
 				76C035E81CAAD54A002241E5 /* CustomTakePhotoViewController.m in Sources */,
 				760AF11F1CB11A5D00A0D242 /* LEDAESCrypto+File.m in Sources */,
 				76E9039C1C9F009F003AC33A /* WeiChatViewController.m in Sources */,
@@ -5871,6 +5913,7 @@
 				76C035641CA67FF0002241E5 /* SystemFunctionViewController.m in Sources */,
 				76C0357C1CA68619002241E5 /* XMPPViewController.m in Sources */,
 				76E4C2C71D28BAE10041165A /* BSPictureTopicCell.m in Sources */,
+				7669C2F61D37C6120016F554 /* IShowReachability.m in Sources */,
 				76E9038C1C9ED53E003AC33A /* YBTableView.m in Sources */,
 				764153011D11AAD90078D3BA /* APPShareDataViewController.m in Sources */,
 				76C035BD1CA7E737002241E5 /* NSTimerTestViewController.m in Sources */,
@@ -5913,6 +5956,7 @@
 				760AF1341CB13A4500A0D242 /* SecurityUtil.m in Sources */,
 				76213BDA1C97029A001DAA53 /* ThirdPartViewController.m in Sources */,
 				76E4C2D01D28BD270041165A /* BSUser.m in Sources */,
+				7669C2F81D37C6120016F554 /* IShowTraceSDK.m in Sources */,
 				76C034BE1CA40EC7002241E5 /* SPKADViewController.m in Sources */,
 				76C4799C1C8EF67B00EAE07E /* QuartzCoreViewController.m in Sources */,
 				76573D5B1CDA57B400F38585 /* DPStructuralTestViewController.m in Sources */,
