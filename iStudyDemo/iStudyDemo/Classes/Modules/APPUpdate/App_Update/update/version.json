@@ -1,0 +1,7 @@
+{
+    "ver": 124,
+	"min_ver":89,
+    "url": "http://buscollection.amap.com/Bus_System/update.jsp",
+    "forceUpgrade": true,
+    "desc": "1.新推倒计时，超量和LV等级加价，提供更多赚钱玩法；\n2.新下发任务提醒，抢单更轻松；\n3.性能加固，做任务更安心；"
+}

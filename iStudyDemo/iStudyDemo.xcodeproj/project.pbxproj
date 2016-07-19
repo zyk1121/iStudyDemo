@@ -886,6 +886,7 @@
 		76E916491CABFA9E00C8C63A /* LEDPortal.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E916481CABFA9E00C8C63A /* LEDPortal.m */; };
 		76E9164C1CAC219600C8C63A /* TestPortalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9164B1CAC219600C8C63A /* TestPortalViewController.m */; };
 		76E9164F1CAC2FA300C8C63A /* LEDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9164E1CAC2FA300C8C63A /* LEDWebViewController.m */; };
+		76ECD43A1D3E79FD00A8CFEE /* APPUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76ECD4391D3E79FD00A8CFEE /* APPUpdateViewController.m */; };
 		CC59FCDD8DE06A72EFD6590B /* Pods_iStudyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C1A63DECC49025BDB27446 /* Pods_iStudyDemo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -2065,6 +2066,8 @@
 		76E9164B1CAC219600C8C63A /* TestPortalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPortalViewController.m; sourceTree = "<group>"; };
 		76E9164D1CAC2FA300C8C63A /* LEDWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDWebViewController.h; sourceTree = "<group>"; };
 		76E9164E1CAC2FA300C8C63A /* LEDWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDWebViewController.m; sourceTree = "<group>"; };
+		76ECD4381D3E79FD00A8CFEE /* APPUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPUpdateViewController.h; sourceTree = "<group>"; };
+		76ECD4391D3E79FD00A8CFEE /* APPUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPUpdateViewController.m; sourceTree = "<group>"; };
 		90FA3B05F4B54A1BADB47EE5 /* Pods_iStudyDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iStudyDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A143A5F8268C343472EB18 /* Pods-iStudyDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemoTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemoTests/Pods-iStudyDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCBEED3EEE298D40EA18BCD8 /* Pods-iStudyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudyDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-iStudyDemo/Pods-iStudyDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -2447,6 +2450,7 @@
 		761931AD1C8BCD010022A311 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				76ECD4291D3E79D400A8CFEE /* APPUpdate */,
 				76A645B31D2C0D4D00B6CA53 /* ApplePay */,
 				763266391CD8F49300F56D9D /* DesignPatterns */,
 				763266291CD6652100F56D9D /* Python */,
@@ -4939,6 +4943,15 @@
 			path = Album/ScreenShot;
 			sourceTree = "<group>";
 		};
+		76ECD4291D3E79D400A8CFEE /* APPUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				76ECD4381D3E79FD00A8CFEE /* APPUpdateViewController.h */,
+				76ECD4391D3E79FD00A8CFEE /* APPUpdateViewController.m */,
+			);
+			path = APPUpdate;
+			sourceTree = "<group>";
+		};
 		DF399414AD08488BE365F5E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -5825,6 +5838,7 @@
 				760AF1221CB11A5D00A0D242 /* LEDDESCrypto.m in Sources */,
 				76E4C2BB1D28BA6F0041165A /* BSTopicCell.m in Sources */,
 				76E4C2D31D28C5370041165A /* BSTopicHeaderView.m in Sources */,
+				76ECD43A1D3E79FD00A8CFEE /* APPUpdateViewController.m in Sources */,
 				760AF1211CB11A5D00A0D242 /* LEDCrypto.m in Sources */,
 				761931A51C8BC8A20022A311 /* AppDelegate.m in Sources */,
 				769718931C9D50D900D0AC63 /* QQTabbarViewController.m in Sources */,

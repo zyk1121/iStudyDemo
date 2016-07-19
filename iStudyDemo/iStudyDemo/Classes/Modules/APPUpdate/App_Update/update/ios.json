@@ -1,0 +1,14 @@
+{
+    "memo": 
+        {
+            "force": "",
+            "app_name": "我秀地图",
+            "code": "1.2.3",
+            "title": "更新",
+            "build": "2016",
+            "url": "http://192.168.120.26:58080/Leador_App_Update/update.jsp",
+           "info": "版本号：V1.0.1\n版本大小：18.40M\n新版特性：\n新版本更新！！",
+            "div": "20160629"
+        }
+    
+}

@@ -47,6 +47,7 @@
 #import "APPShareDataViewController.h"
 #import "LDAPPLEPayViewController.h"
 #import "IShowTraceSDK.h"
+#import "APPUpdateViewController.h"
 
 // http://www.cocoachina.com/ios/20150825/13195.html
 
@@ -252,6 +253,10 @@
     [_listData addObject:@"GPS 实时后台定位"];
     UIViewController *vcvc = [[UIViewController alloc] init];
     [_listViewControllers addObject:vcvc];
+    // 30.APP 更新
+    [_listData addObject:@"APP Update"];
+    APPUpdateViewController *updateVC = [[APPUpdateViewController alloc] init];
+    [_listViewControllers addObject:updateVC];
 
 }
 

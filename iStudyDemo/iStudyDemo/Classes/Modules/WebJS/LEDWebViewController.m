@@ -263,6 +263,13 @@ static NSString *const kLEDMainURLString = @"leador://www.ishowchina.com/web";
     NSString *scheme = [request.URL.scheme lowercaseString];
     BOOL shouldLoad = YES;
     
+    // 判断是否是跳转APPStore
+    if ([scheme isEqualToString:@"itms-apps"]) {
+        [self backAction];
+        return YES;
+    }
+
+    
     // 判断是否是内部协议
     if([scheme isEqualToString:@"ipuny"])
     {
