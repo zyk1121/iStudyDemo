@@ -176,6 +176,7 @@
 
 - (void)test1
 {
+//       [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/app/id461703208"]];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://itunes.apple.com/app/id461703208"]];
     //    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://192.168.0.101:8080/update.jsp"]];
     /*

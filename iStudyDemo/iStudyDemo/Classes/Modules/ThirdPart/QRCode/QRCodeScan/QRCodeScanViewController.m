@@ -11,6 +11,7 @@
 #import "masonry.h"
 #import "UIKitMacros.h"
 #import <AVFoundation/AVFoundation.h>
+#import "LEDWebViewController.h"
 
 @interface QRCodeScanViewController () <AVCaptureMetadataOutputObjectsDelegate>
 {
@@ -145,9 +146,13 @@
     
     [self.preview removeFromSuperlayer];
     [_session stopRunning];
+//    LEDWebViewController *vc = [[LEDWebViewController alloc] initWithURL:[NSURL URLWithString:stringValue]];
+//    [self.navigationController pushViewController:vc animated:NO];
+
     [self dismissViewControllerAnimated:YES completion:^
      {
          [timer invalidate];
+         
          NSLog(@"%@",stringValue);
      }];
 }
