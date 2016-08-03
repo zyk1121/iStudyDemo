@@ -29,7 +29,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor lightGrayColor];
     [self setupUI];
-    [self.view setNeedsUpdateConstraints];
+//    [self.view setNeedsUpdateConstraints];
 }
 
 #pragma mark - private method

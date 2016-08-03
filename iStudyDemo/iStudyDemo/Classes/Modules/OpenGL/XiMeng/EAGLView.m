@@ -35,7 +35,7 @@
 @synthesize animationInterval;
 
 
-// You must implement this method
+// You mus(nonatomic) t implement this method
 + (Class)layerClass {
     return [CAEAGLLayer class];
 }
@@ -170,7 +170,7 @@
     glFrustumf(-size, size, -size / (rect.size.width / rect.size.height), size / (rect.size.width / rect.size.height), zNear, zFar);
     glViewport(0, 0, rect.size.width, rect.size.height);
 	
-    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);	
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 }
 
 - (void)destroyFramebuffer {

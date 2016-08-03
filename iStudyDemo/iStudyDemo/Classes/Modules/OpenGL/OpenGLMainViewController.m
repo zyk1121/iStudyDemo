@@ -12,6 +12,7 @@
 #import "UIKitMacros.h"
 #import "OpenGLViewController.h"
 #import "XiMengViewController.h"
+#import "FiveStarViewController.h"
 
 // http://www.cppblog.com/doing5552/archive/2009/01/08/71532.html
 // http://blog.csdn.net/tangaowen/article/details/7981838
@@ -73,6 +74,11 @@
     [_listData addObject:@"西蒙教程－三角形"];
     XiMengViewController *ximengVC = [[XiMengViewController alloc] init];
     [_listViewControllers addObject:ximengVC];
+    
+    // 3.OpenGL旋转和贴图
+    [_listData addObject:@"OpenGL旋转和贴图"];
+    FiveStarViewController *fiveVC = [[FiveStarViewController alloc] init];
+    [_listViewControllers addObject:fiveVC];
 }
 
 
@@ -127,6 +133,6 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 40;
+    return 60;
 }
 @end

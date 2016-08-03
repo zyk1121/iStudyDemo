@@ -1,31 +1,24 @@
 //
-//  XiMengGLView.m
+//  FiveStarGLView.m
 //  iStudyDemo
 //
-//  Created by zhangyuanke on 16/4/12.
+//  Created by zhangyuanke on 16/8/3.
 //  Copyright © 2016年 zhangyuanke. All rights reserved.
 //
 
-#import "XiMengGLView.h"
-#import <QuartzCore/QuartzCore.h>
-#import <OpenGLES/ES1/gl.h>
-#import <OpenGLES/ES1/glext.h>
-#import "CC3GLMatrix.h"
-#import <OpenGLES/EAGL.h>
+#import "FiveStarGLView.h"
 
 #define USE_DEPTH_BUFFER 1
 #define DEGREES_TO_RADIANS(__ANGLE) ((__ANGLE) / 180.0 * M_PI)
 
-// http://www.cocoachina.com/bbs/read.php?tid-5586-fpage-10.html
-
-@interface XiMengGLView ()
+@interface FiveStarGLView ()
 
 @property (nonatomic, strong) CADisplayLink *displayLink;
 @property (nonatomic, assign) GLuint textureID;
 
 @end
 
-@implementation XiMengGLView
+@implementation FiveStarGLView
 
 #pragma mark - life cycle
 
@@ -47,34 +40,16 @@
 
 - (void)setupView {
     
-    const GLfloat zNear = 0.1, zFar = 1000.0, fieldOfView = 60.0;
-    GLfloat size;
-    
-    glEnable(GL_DEPTH_TEST);
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    size = zNear * tanf(DEGREES_TO_RADIANS(fieldOfView) / 2.0);
+//    const GLfloat zNear = 0.1, zFar = 1000.0, fieldOfView = 60.0;
+//    GLfloat size;
+//    
+//    glEnable(GL_DEPTH_TEST);
+//    glMatrixMode(GL_PROJECTION);
+//    glLoadIdentity();
+//    size = zNear * tanf(DEGREES_TO_RADIANS(fieldOfView) / 2.0);
     // This give us the size of the iPhone display
     CGRect rect = self.bounds;
     // 默认投影为正交投影，单位立方体
-//    size = 0.1;
-    /*
-     GLfloat trangleVerts[] = {
-     -0.1, 0.1, -0.1,
-     -0.1, -0.1, -0.1,
-     0.1, -0.1, -0.1,
-     0.1, 0.1, -0.1
-     };
-     
-     
-     GLfloat trangleVerts[] = {
-     -500, 500, -1000,
-     -500, -500, -1000,
-     500, -500, -1000,
-     500, 500, -1000
-     };
-     */
-    glFrustumf(-size, size, -size / (rect.size.width / rect.size.height), size / (rect.size.width / rect.size.height), zNear, zFar);
     glViewport(0, 0, rect.size.width, rect.size.height);
     
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
@@ -98,6 +73,7 @@
         _displayLink = nil;
     }
     _displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(render:)];
+    _displayLink.frameInterval = 5;
     [_displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes]; // 支持滑动刷新
 }
 
@@ -108,12 +84,14 @@
         [_displayLink invalidate];
         _displayLink = nil;
     }
-    [EAGLContext setCurrentContext:nil];
 }
 
 - (void)render:(CADisplayLink *)displayLink
 {
-    [self trangle];
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);// 清空屏幕
+    glClearColor(0, 0, 0, 1);
+    
+    [self textureTest];
     
     [self display];
 }
@@ -241,7 +219,9 @@
 
 - (void)textureTest
 {
-    glClearColor(0, 0, 0, 1);
+    static float rota = 0;
+    
+    
     GLfloat trangleVerts[] = {
         -0.5, 0.5, 0,
         -0.5, -0.5, 0,
@@ -261,22 +241,39 @@
         _textureID = [self getTextureIDFromImage:image];
     }
     
+    glColor4f(1.0, 0, 0, 1.0);
+    /*
+     二、设置颜色
+     
+     根据需要设置当前颜色。一旦一种颜色被设置为当前颜色，其后所有物体都将用该颜色绘出，直到当前颜色被设置为新的颜色为止。设置颜色的函数是glColor()。
+     */
+    glColor4f(1.0f, 1.0f, 1.0f, 1.0f);// 默认
+//    glClearColor(1.0, 0, 0, 1.0);
+//    glClear(GL_COLOR_BUFFER_BIT);
+//    glFlush();
+    
+//    glMatrixMode(GL_MODELVIEW);
     glEnable(GL_TEXTURE_2D);
     glBindTexture(GL_TEXTURE_2D, _textureID);
     
-    glClear(GL_COLOR_BUFFER_BIT);
+    glLoadIdentity();
+    glRotatef(rota, 1.0, 0.0, 0.0);
+//    glClear(GL_COLOR_BUFFER_BIT);
     
     glEnableClientState(GL_VERTEX_ARRAY);
     glVertexPointer(3, GL_FLOAT, 0, trangleVerts);
     glEnableClientState(GL_TEXTURE_COORD_ARRAY);
     glTexCoordPointer(2, GL_SHORT, 0, squareTextureCoords);     // NEW
-            // NEW
+    // NEW
     glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
     glDisableClientState(GL_VERTEX_ARRAY);
-        glDisableClientState(GL_TEXTURE_COORD_ARRAY);               // NEW
+    glDisableClientState(GL_TEXTURE_COORD_ARRAY);               // NEW
     
     glBindTexture(GL_TEXTURE_2D, 0);
     glDisable(GL_TEXTURE_2D);
+    
+    
+    rota += 1;
     
 }
 
@@ -333,7 +330,7 @@
  glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
  }
  
-
+ 
  */
 - (void)translateAndRotate
 {
@@ -377,7 +374,7 @@
     glEnableClientState(GL_VERTEX_ARRAY);
     glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
     
-
+    
     
     [self display];
     
@@ -392,18 +389,18 @@
     GLfloat by = a * sin(18.0 * M_PI / 180);
     GLfloat cx = a * cos(54.0 * M_PI / 180);
     GLfloat cy = -a * sin(54.0 * M_PI / 180);
-//    GLfloat PointA[2] = { 0, a },
-//    PointB[2] = { bx, by },
-//    PointC[2] = { cx, cy },
-//    PointD[2] = { -cx, cy },
-//    PointE[2] = { -bx, by };
+    //    GLfloat PointA[2] = { 0, a },
+    //    PointB[2] = { bx, by },
+    //    PointC[2] = { cx, cy },
+    //    PointD[2] = { -cx, cy },
+    //    PointE[2] = { -bx, by };
     GLfloat point[] = {0, a, bx, by,cx, cy ,-cx, cy ,-bx, by };
     glEnableClientState(GL_VERTEX_ARRAY);
     glClear(GL_COLOR_BUFFER_BIT);
     glColor4f(1, 0, 0, 1);
     glVertexPointer(2, GL_FLOAT, 0, point);
     glDrawArrays(GL_POINTS, 0, 5);
-//    glDrawArrays(GL_LINE_LOOP, 0, 5);
+    //    glDrawArrays(GL_LINE_LOOP, 0, 5);
     glDisableClientState(GL_VERTEX_ARRAY);
 }
 
@@ -432,12 +429,12 @@
     // 四边形
     glClearColor(0, 0, 0, 1);
     // 绘制
-        GLfloat squareVerts[] = {
-            -0.5, 0.5, 0.0,
-            -0.5, -0.5, 0.0,
-            0.5, -0.5, 0.0,
-            0.5, 0.5, 0.0
-        };
+    GLfloat squareVerts[] = {
+        -0.5, 0.5, 0.0,
+        -0.5, -0.5, 0.0,
+        0.5, -0.5, 0.0,
+        0.5, 0.5, 0.0
+    };
     
     glEnable(GL_BLEND);
     glDisable(GL_DEPTH_TEST);
@@ -451,7 +448,7 @@
     glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
     
     // 绘制end
-     [self display];
+    [self display];
     /* display 可以使得下面的方法重绘
      #pragma mark - GLKViewDelegate
      
@@ -462,3 +459,4 @@
 }
 
 @end
+

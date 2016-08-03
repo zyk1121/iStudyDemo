@@ -706,6 +706,8 @@
 		76A2E9EE1CCC954800536E5D /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A2E9ED1CCC954800536E5D /* AFNetworking.framework */; };
 		76A645B91D2C107D00B6CA53 /* LDAPPLEPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A645B81D2C107D00B6CA53 /* LDAPPLEPayViewController.m */; };
 		76A645BB1D2C129B00B6CA53 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A645BA1D2C129B00B6CA53 /* PassKit.framework */; };
+		76AD5C241D523EB3001490A0 /* FiveStarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76AD5C231D523EB3001490A0 /* FiveStarViewController.m */; };
+		76AD5C271D523F00001490A0 /* FiveStarGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76AD5C261D523F00001490A0 /* FiveStarGLView.m */; };
 		76BC548D1D26B01F00A76CE1 /* BSMeSequare.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BC548C1D26B01F00A76CE1 /* BSMeSequare.m */; };
 		76BC54901D26BC5000A76CE1 /* BSMeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BC548F1D26BC5000A76CE1 /* BSMeButton.m */; };
 		76BC54931D27760D00A76CE1 /* BSMSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BC54921D27760D00A76CE1 /* BSMSettingViewController.m */; };
@@ -1780,6 +1782,10 @@
 		76A645B71D2C107D00B6CA53 /* LDAPPLEPayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDAPPLEPayViewController.h; sourceTree = "<group>"; };
 		76A645B81D2C107D00B6CA53 /* LDAPPLEPayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDAPPLEPayViewController.m; sourceTree = "<group>"; };
 		76A645BA1D2C129B00B6CA53 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		76AD5C221D523EB3001490A0 /* FiveStarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveStarViewController.h; sourceTree = "<group>"; };
+		76AD5C231D523EB3001490A0 /* FiveStarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveStarViewController.m; sourceTree = "<group>"; };
+		76AD5C251D523F00001490A0 /* FiveStarGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveStarGLView.h; sourceTree = "<group>"; };
+		76AD5C261D523F00001490A0 /* FiveStarGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveStarGLView.m; sourceTree = "<group>"; };
 		76BC548B1D26B01F00A76CE1 /* BSMeSequare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSMeSequare.h; sourceTree = "<group>"; };
 		76BC548C1D26B01F00A76CE1 /* BSMeSequare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSMeSequare.m; sourceTree = "<group>"; };
 		76BC548E1D26BC5000A76CE1 /* BSMeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSMeButton.h; sourceTree = "<group>"; };
@@ -2505,6 +2511,7 @@
 		761931B31C8BD4FF0022A311 /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				76AD5C211D523E94001490A0 /* FiveStar */,
 				7601D91D1CBD3C8D00E6F6E7 /* XiMeng */,
 				769717D41C986A6B00D0AC63 /* OpenGLFirst */,
 				761931C61C8C5DF70022A311 /* Cocos3DMathLib */,
@@ -4144,6 +4151,17 @@
 				76A645B81D2C107D00B6CA53 /* LDAPPLEPayViewController.m */,
 			);
 			path = ApplePay;
+			sourceTree = "<group>";
+		};
+		76AD5C211D523E94001490A0 /* FiveStar */ = {
+			isa = PBXGroup;
+			children = (
+				76AD5C221D523EB3001490A0 /* FiveStarViewController.h */,
+				76AD5C231D523EB3001490A0 /* FiveStarViewController.m */,
+				76AD5C251D523F00001490A0 /* FiveStarGLView.h */,
+				76AD5C261D523F00001490A0 /* FiveStarGLView.m */,
+			);
+			path = FiveStar;
 			sourceTree = "<group>";
 		};
 		76BD6BC41CA1103C00708977 /* Main */ = {
@@ -5925,6 +5943,7 @@
 				76E9039C1C9F009F003AC33A /* WeiChatViewController.m in Sources */,
 				7601D9231CBD3E3200E6F6E7 /* XiMengGLView.m in Sources */,
 				76C035641CA67FF0002241E5 /* SystemFunctionViewController.m in Sources */,
+				76AD5C241D523EB3001490A0 /* FiveStarViewController.m in Sources */,
 				76C0357C1CA68619002241E5 /* XMPPViewController.m in Sources */,
 				76E4C2C71D28BAE10041165A /* BSPictureTopicCell.m in Sources */,
 				7669C2F61D37C6120016F554 /* IShowReachability.m in Sources */,
@@ -6001,6 +6020,7 @@
 				76C035741CA683A9002241E5 /* EncryptDecryptViewController.m in Sources */,
 				760AF13B1CB238D200A0D242 /* CCModalViewViewController.m in Sources */,
 				76C479951C8EF51600EAE07E /* DataStorageViewController.m in Sources */,
+				76AD5C271D523F00001490A0 /* FiveStarGLView.m in Sources */,
 				763E4E951CA2F6E600470FCA /* WD2ViewController.m in Sources */,
 				76737A821CC388E6008AEC1C /* SwiftMemoryManagerViewController.m in Sources */,
 				760AF1331CB13A4500A0D242 /* NSString+MD5.m in Sources */,
