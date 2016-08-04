@@ -77,14 +77,18 @@
         data[2*i + 1] = R*sin(2*Pi/n*i);
     }
     
+//     glEnable(GL_LINE_STRIP);
+    
     glEnableClientState(GL_VERTEX_ARRAY);
     glClear(GL_COLOR_BUFFER_BIT);
     glColor4f(1, 0, 0, 1);
     glVertexPointer(2, GL_FLOAT, 0, data);
+    glLineWidth(3);
     glDrawArrays(GL_LINE_LOOP, 0, n);
     //    glDrawArrays(GL_LINE_LOOP, 0, 5);
     glDisableClientState(GL_VERTEX_ARRAY);
     
+//    glDisable(GL_LINE_STRIP);
     
     free(data);
 }
