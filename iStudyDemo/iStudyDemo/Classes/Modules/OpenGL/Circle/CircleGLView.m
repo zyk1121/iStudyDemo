@@ -42,6 +42,13 @@
     CGRect rect = self.bounds;
     // 默认投影为正交投影，单位立方体
     glViewport(0, 0, rect.size.width, rect.size.height);
+    /*
+     
+     gluLookAt()共有九个参数，分别是眼睛的位置，眼睛朝向的位置，以及相机朝向的方向。
+     该函数定义了视点矩阵，并用该矩阵乘以当前矩阵。eyex、eyey、eyez定义了视点的位置；centerx、centery和centerz变量指定了参考点的位置，该点通常为相机所瞄准的场景中心轴线上的点；upx、upy、upz变量指定了向上向量的方向。（注意，这是一个向量，不是一个坐标）
+     
+     */
+    gluLookAt(0,0,0,0,-1,-1,0,1,0);// 在默认情况下，照相机位于原点，指向z轴的负方向，朝上向量为(0,1,0)。
     
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 }

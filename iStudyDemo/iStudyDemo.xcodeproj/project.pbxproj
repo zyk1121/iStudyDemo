@@ -2051,6 +2051,13 @@
 		76E6FB7D1D53857C00263209 /* CircleGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleGLView.m; sourceTree = "<group>"; };
 		76E6FB7F1D53859200263209 /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
 		76E6FB801D53859200263209 /* CircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleViewController.m; sourceTree = "<group>"; };
+		76E6FB831D538F3B00263209 /* glu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glu.h; sourceTree = "<group>"; };
+		76E6FB841D538F3B00263209 /* glues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glues.h; sourceTree = "<group>"; };
+		76E6FB861D538F3B00263209 /* glues_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glues_error.h; sourceTree = "<group>"; };
+		76E6FB881D538F3B00263209 /* glues_mipmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glues_mipmap.h; sourceTree = "<group>"; };
+		76E6FB8A1D538F3B00263209 /* glues_project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glues_project.h; sourceTree = "<group>"; };
+		76E6FB8C1D538F3B00263209 /* glues_quad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glues_quad.h; sourceTree = "<group>"; };
+		76E6FB8E1D538F3B00263209 /* glues_registry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glues_registry.h; sourceTree = "<group>"; };
 		76E9037C1C9ED4B4003AC33A /* NaviMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaviMenuViewController.h; sourceTree = "<group>"; };
 		76E9037D1C9ED4B4003AC33A /* NaviMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaviMenuViewController.m; sourceTree = "<group>"; };
 		76E903801C9ED53E003AC33A /* NavMenuScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavMenuScrollView.h; sourceTree = "<group>"; };
@@ -2517,6 +2524,7 @@
 		761931B31C8BD4FF0022A311 /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				76E6FB821D538F3B00263209 /* glues */,
 				76E6FB7B1D53853800263209 /* Circle */,
 				76AD5C211D523E94001490A0 /* FiveStar */,
 				7601D91D1CBD3C8D00E6F6E7 /* XiMeng */,
@@ -4894,6 +4902,20 @@
 				76E6FB801D53859200263209 /* CircleViewController.m */,
 			);
 			path = Circle;
+			sourceTree = "<group>";
+		};
+		76E6FB821D538F3B00263209 /* glues */ = {
+			isa = PBXGroup;
+			children = (
+				76E6FB831D538F3B00263209 /* glu.h */,
+				76E6FB841D538F3B00263209 /* glues.h */,
+				76E6FB861D538F3B00263209 /* glues_error.h */,
+				76E6FB881D538F3B00263209 /* glues_mipmap.h */,
+				76E6FB8A1D538F3B00263209 /* glues_project.h */,
+				76E6FB8C1D538F3B00263209 /* glues_quad.h */,
+				76E6FB8E1D538F3B00263209 /* glues_registry.h */,
+			);
+			path = glues;
 			sourceTree = "<group>";
 		};
 		76E9037B1C9ED4A0003AC33A /* NavMenu */ = {

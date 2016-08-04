@@ -13,6 +13,7 @@
 #import <OpenGLES/ES1/glext.h>
 #import "CC3GLMatrix.h"
 #import <OpenGLES/EAGL.h>
+#import "glues.h"
 
 @protocol CustomGLViewDelegate <NSObject>
 
