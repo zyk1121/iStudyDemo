@@ -13,6 +13,7 @@
 #import "OpenGLViewController.h"
 #import "XiMengViewController.h"
 #import "FiveStarViewController.h"
+#import "CircleViewController.h"
 
 // http://www.cppblog.com/doing5552/archive/2009/01/08/71532.html
 // http://blog.csdn.net/tangaowen/article/details/7981838
@@ -79,6 +80,11 @@
     [_listData addObject:@"OpenGL旋转和贴图"];
     FiveStarViewController *fiveVC = [[FiveStarViewController alloc] init];
     [_listViewControllers addObject:fiveVC];
+    
+    // 4.Circle
+    [_listData addObject:@"Circle"];
+    CircleViewController *circleVC = [[CircleViewController alloc] init];
+    [_listViewControllers addObject:circleVC];
 }
 
 

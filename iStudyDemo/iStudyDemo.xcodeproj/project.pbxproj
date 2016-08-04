@@ -875,6 +875,8 @@
 		76E4C2E51D295E440041165A /* BSTopicAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E4C2E41D295E440041165A /* BSTopicAudioView.m */; };
 		76E4C2E81D295E630041165A /* BSTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E4C2E71D295E630041165A /* BSTopicVideoView.m */; };
 		76E4C2EB1D297AF90041165A /* UITopicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E4C2EA1D297AF90041165A /* UITopicTableViewController.m */; };
+		76E6FB7E1D53857C00263209 /* CircleGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E6FB7D1D53857C00263209 /* CircleGLView.m */; };
+		76E6FB811D53859200263209 /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E6FB801D53859200263209 /* CircleViewController.m */; };
 		76E9037E1C9ED4B4003AC33A /* NaviMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9037D1C9ED4B4003AC33A /* NaviMenuViewController.m */; };
 		76E903891C9ED53E003AC33A /* NavMenuScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903811C9ED53E003AC33A /* NavMenuScrollView.m */; };
 		76E9038A1C9ED53E003AC33A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E903831C9ED53E003AC33A /* UIView+Extension.m */; };
@@ -2045,6 +2047,10 @@
 		76E4C2E71D295E630041165A /* BSTopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTopicVideoView.m; sourceTree = "<group>"; };
 		76E4C2E91D297AF90041165A /* UITopicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITopicTableViewController.h; sourceTree = "<group>"; };
 		76E4C2EA1D297AF90041165A /* UITopicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITopicTableViewController.m; sourceTree = "<group>"; };
+		76E6FB7C1D53857C00263209 /* CircleGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleGLView.h; sourceTree = "<group>"; };
+		76E6FB7D1D53857C00263209 /* CircleGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleGLView.m; sourceTree = "<group>"; };
+		76E6FB7F1D53859200263209 /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
+		76E6FB801D53859200263209 /* CircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleViewController.m; sourceTree = "<group>"; };
 		76E9037C1C9ED4B4003AC33A /* NaviMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaviMenuViewController.h; sourceTree = "<group>"; };
 		76E9037D1C9ED4B4003AC33A /* NaviMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaviMenuViewController.m; sourceTree = "<group>"; };
 		76E903801C9ED53E003AC33A /* NavMenuScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavMenuScrollView.h; sourceTree = "<group>"; };
@@ -2511,6 +2517,7 @@
 		761931B31C8BD4FF0022A311 /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				76E6FB7B1D53853800263209 /* Circle */,
 				76AD5C211D523E94001490A0 /* FiveStar */,
 				7601D91D1CBD3C8D00E6F6E7 /* XiMeng */,
 				769717D41C986A6B00D0AC63 /* OpenGLFirst */,
@@ -4878,6 +4885,17 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		76E6FB7B1D53853800263209 /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				76E6FB7C1D53857C00263209 /* CircleGLView.h */,
+				76E6FB7D1D53857C00263209 /* CircleGLView.m */,
+				76E6FB7F1D53859200263209 /* CircleViewController.h */,
+				76E6FB801D53859200263209 /* CircleViewController.m */,
+			);
+			path = Circle;
+			sourceTree = "<group>";
+		};
 		76E9037B1C9ED4A0003AC33A /* NavMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -5909,6 +5927,7 @@
 				76573D7A1CDB9C8E00F38585 /* DPAFObject.m in Sources */,
 				760665681D27B6EF00CCF539 /* BSEAudioTableViewController.m in Sources */,
 				76A645B91D2C107D00B6CA53 /* LDAPPLEPayViewController.m in Sources */,
+				76E6FB7E1D53857C00263209 /* CircleGLView.m in Sources */,
 				763E4E8E1CA2F25200470FCA /* ZFBTestViewController.m in Sources */,
 				76573D771CDB95BC00F38585 /* DPSFObject.m in Sources */,
 				760AF1381CB176E400A0D242 /* JsonModelDomainObject.m in Sources */,
@@ -5942,6 +5961,7 @@
 				760AF11F1CB11A5D00A0D242 /* LEDAESCrypto+File.m in Sources */,
 				76E9039C1C9F009F003AC33A /* WeiChatViewController.m in Sources */,
 				7601D9231CBD3E3200E6F6E7 /* XiMengGLView.m in Sources */,
+				76E6FB811D53859200263209 /* CircleViewController.m in Sources */,
 				76C035641CA67FF0002241E5 /* SystemFunctionViewController.m in Sources */,
 				76AD5C241D523EB3001490A0 /* FiveStarViewController.m in Sources */,
 				76C0357C1CA68619002241E5 /* XMPPViewController.m in Sources */,
