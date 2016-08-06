@@ -877,6 +877,8 @@
 		76E4C2EB1D297AF90041165A /* UITopicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E4C2EA1D297AF90041165A /* UITopicTableViewController.m */; };
 		76E6D9651D55C5830076B2CB /* GPUImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E6D9641D55C5830076B2CB /* GPUImageViewController.m */; };
 		76E6D9671D55C7910076B2CB /* lena.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76E6D9661D55C7910076B2CB /* lena.jpg */; };
+		76E6D96B1D55D80A0076B2CB /* FaceDetectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E6D96A1D55D80A0076B2CB /* FaceDetectorViewController.m */; };
+		76E6D96D1D55D89F0076B2CB /* 3430277559670220261.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76E6D96C1D55D89F0076B2CB /* 3430277559670220261.jpg */; };
 		76E6FB7E1D53857C00263209 /* CircleGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E6FB7D1D53857C00263209 /* CircleGLView.m */; };
 		76E6FB811D53859200263209 /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E6FB801D53859200263209 /* CircleViewController.m */; };
 		76E9037E1C9ED4B4003AC33A /* NaviMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9037D1C9ED4B4003AC33A /* NaviMenuViewController.m */; };
@@ -2052,6 +2054,9 @@
 		76E6D9631D55C5830076B2CB /* GPUImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageViewController.h; sourceTree = "<group>"; };
 		76E6D9641D55C5830076B2CB /* GPUImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageViewController.m; sourceTree = "<group>"; };
 		76E6D9661D55C7910076B2CB /* lena.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lena.jpg; sourceTree = "<group>"; };
+		76E6D9691D55D80A0076B2CB /* FaceDetectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetectorViewController.h; sourceTree = "<group>"; };
+		76E6D96A1D55D80A0076B2CB /* FaceDetectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceDetectorViewController.m; sourceTree = "<group>"; };
+		76E6D96C1D55D89F0076B2CB /* 3430277559670220261.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3430277559670220261.jpg; sourceTree = "<group>"; };
 		76E6FB7C1D53857C00263209 /* CircleGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleGLView.h; sourceTree = "<group>"; };
 		76E6FB7D1D53857C00263209 /* CircleGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleGLView.m; sourceTree = "<group>"; };
 		76E6FB7F1D53859200263209 /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
@@ -2474,6 +2479,7 @@
 		761931AD1C8BCD010022A311 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				76E6D9681D55D7ED0076B2CB /* FaceDetector */,
 				76E6D9621D55C5690076B2CB /* GPUImage */,
 				76ECD4291D3E79D400A8CFEE /* APPUpdate */,
 				76A645B31D2C0D4D00B6CA53 /* ApplePay */,
@@ -4909,6 +4915,16 @@
 			path = GPUImage;
 			sourceTree = "<group>";
 		};
+		76E6D9681D55D7ED0076B2CB /* FaceDetector */ = {
+			isa = PBXGroup;
+			children = (
+				76E6D96C1D55D89F0076B2CB /* 3430277559670220261.jpg */,
+				76E6D9691D55D80A0076B2CB /* FaceDetectorViewController.h */,
+				76E6D96A1D55D80A0076B2CB /* FaceDetectorViewController.m */,
+			);
+			path = FaceDetector;
+			sourceTree = "<group>";
+		};
 		76E6FB7B1D53853800263209 /* Circle */ = {
 			isa = PBXGroup;
 			children = (
@@ -5600,6 +5616,7 @@
 				7656C54B1D1E864C00024B01 /* login_tecent_icon.png in Resources */,
 				763E4E5F1CA2B7F500470FCA /* 10000002.png in Resources */,
 				763E4E601CA2B7F500470FCA /* 10000003.png in Resources */,
+				76E6D96D1D55D89F0076B2CB /* 3430277559670220261.jpg in Resources */,
 				7656C5D31D1E864D00024B01 /* publish-picture@3x.png in Resources */,
 				7656C5401D1E864C00024B01 /* login_register_right_line@2x.png in Resources */,
 				76C034EF1CA41258002241E5 /* btn_paypassword_cancel_highlight@2x.png in Resources */,
@@ -5913,6 +5930,7 @@
 				760AF1221CB11A5D00A0D242 /* LEDDESCrypto.m in Sources */,
 				76E4C2BB1D28BA6F0041165A /* BSTopicCell.m in Sources */,
 				76E4C2D31D28C5370041165A /* BSTopicHeaderView.m in Sources */,
+				76E6D96B1D55D80A0076B2CB /* FaceDetectorViewController.m in Sources */,
 				76ECD43A1D3E79FD00A8CFEE /* APPUpdateViewController.m in Sources */,
 				760AF1211CB11A5D00A0D242 /* LEDCrypto.m in Sources */,
 				761931A51C8BC8A20022A311 /* AppDelegate.m in Sources */,

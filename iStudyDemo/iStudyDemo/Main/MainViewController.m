@@ -49,6 +49,7 @@
 #import "IShowTraceSDK.h"
 #import "APPUpdateViewController.h"
 #import "GPUImageViewController.h"
+#import "FaceDetectorViewController.h"
 
 // http://www.cocoachina.com/ios/20150825/13195.html
 
@@ -264,6 +265,10 @@
     [_listData addObject:@"GPUImage"];
     GPUImageViewController *gpuimageVC = [[GPUImageViewController alloc] init];
     [_listViewControllers addObject:gpuimageVC];
+    // 32.FaceDetection
+    [_listData addObject:@"FaceDetection"];
+    FaceDetectorViewController *FaceDetection = [[FaceDetectorViewController alloc] init];
+    [_listViewControllers addObject:FaceDetection];
 
 }
 
