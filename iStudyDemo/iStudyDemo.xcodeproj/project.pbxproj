@@ -875,6 +875,8 @@
 		76E4C2E51D295E440041165A /* BSTopicAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E4C2E41D295E440041165A /* BSTopicAudioView.m */; };
 		76E4C2E81D295E630041165A /* BSTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E4C2E71D295E630041165A /* BSTopicVideoView.m */; };
 		76E4C2EB1D297AF90041165A /* UITopicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E4C2EA1D297AF90041165A /* UITopicTableViewController.m */; };
+		76E6D9651D55C5830076B2CB /* GPUImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E6D9641D55C5830076B2CB /* GPUImageViewController.m */; };
+		76E6D9671D55C7910076B2CB /* lena.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76E6D9661D55C7910076B2CB /* lena.jpg */; };
 		76E6FB7E1D53857C00263209 /* CircleGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E6FB7D1D53857C00263209 /* CircleGLView.m */; };
 		76E6FB811D53859200263209 /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E6FB801D53859200263209 /* CircleViewController.m */; };
 		76E9037E1C9ED4B4003AC33A /* NaviMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9037D1C9ED4B4003AC33A /* NaviMenuViewController.m */; };
@@ -2047,6 +2049,9 @@
 		76E4C2E71D295E630041165A /* BSTopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTopicVideoView.m; sourceTree = "<group>"; };
 		76E4C2E91D297AF90041165A /* UITopicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITopicTableViewController.h; sourceTree = "<group>"; };
 		76E4C2EA1D297AF90041165A /* UITopicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITopicTableViewController.m; sourceTree = "<group>"; };
+		76E6D9631D55C5830076B2CB /* GPUImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageViewController.h; sourceTree = "<group>"; };
+		76E6D9641D55C5830076B2CB /* GPUImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageViewController.m; sourceTree = "<group>"; };
+		76E6D9661D55C7910076B2CB /* lena.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lena.jpg; sourceTree = "<group>"; };
 		76E6FB7C1D53857C00263209 /* CircleGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleGLView.h; sourceTree = "<group>"; };
 		76E6FB7D1D53857C00263209 /* CircleGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleGLView.m; sourceTree = "<group>"; };
 		76E6FB7F1D53859200263209 /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
@@ -2469,6 +2474,7 @@
 		761931AD1C8BCD010022A311 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				76E6D9621D55C5690076B2CB /* GPUImage */,
 				76ECD4291D3E79D400A8CFEE /* APPUpdate */,
 				76A645B31D2C0D4D00B6CA53 /* ApplePay */,
 				763266391CD8F49300F56D9D /* DesignPatterns */,
@@ -4893,6 +4899,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		76E6D9621D55C5690076B2CB /* GPUImage */ = {
+			isa = PBXGroup;
+			children = (
+				76E6D9661D55C7910076B2CB /* lena.jpg */,
+				76E6D9631D55C5830076B2CB /* GPUImageViewController.h */,
+				76E6D9641D55C5830076B2CB /* GPUImageViewController.m */,
+			);
+			path = GPUImage;
+			sourceTree = "<group>";
+		};
 		76E6FB7B1D53853800263209 /* Circle */ = {
 			isa = PBXGroup;
 			children = (
@@ -5177,6 +5193,7 @@
 				7656C5661D1E864C00024B01 /* mine-my-post@2x.png in Resources */,
 				76213C181C970B0D001DAA53 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				769718951C9D53BA00D0AC63 /* tabwithinpage_cursor@2x.png in Resources */,
+				76E6D9671D55C7910076B2CB /* lena.jpg in Resources */,
 				7656C5AD1D1E864D00024B01 /* play-voice-icon-3@2x.png in Resources */,
 				7656C4C71D1E864C00024B01 /* comment-bar-voice@2x.png in Resources */,
 				7656C4D91D1E864C00024B01 /* Profile_manIcon.png in Resources */,
@@ -6065,6 +6082,7 @@
 				76AD5C271D523F00001490A0 /* FiveStarGLView.m in Sources */,
 				763E4E951CA2F6E600470FCA /* WD2ViewController.m in Sources */,
 				76737A821CC388E6008AEC1C /* SwiftMemoryManagerViewController.m in Sources */,
+				76E6D9651D55C5830076B2CB /* GPUImageViewController.m in Sources */,
 				760AF1331CB13A4500A0D242 /* NSString+MD5.m in Sources */,
 				769717DC1C986A6B00D0AC63 /* OpenGLViewController.m in Sources */,
 				76C0351B1CA63C97002241E5 /* SimpleAnimationViewController.m in Sources */,

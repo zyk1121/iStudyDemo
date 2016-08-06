@@ -48,6 +48,7 @@
 #import "LDAPPLEPayViewController.h"
 #import "IShowTraceSDK.h"
 #import "APPUpdateViewController.h"
+#import "GPUImageViewController.h"
 
 // http://www.cocoachina.com/ios/20150825/13195.html
 
@@ -257,6 +258,12 @@
     [_listData addObject:@"APP Update"];
     APPUpdateViewController *updateVC = [[APPUpdateViewController alloc] init];
     [_listViewControllers addObject:updateVC];
+
+    
+    // 31.GPUImage
+    [_listData addObject:@"GPUImage"];
+    GPUImageViewController *gpuimageVC = [[GPUImageViewController alloc] init];
+    [_listViewControllers addObject:gpuimageVC];
 
 }
 
