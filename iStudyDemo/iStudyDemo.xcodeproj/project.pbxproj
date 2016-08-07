@@ -931,6 +931,8 @@
 		76E6DA391D56E8260076B2CB /* rating@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76E6DA001D56E8260076B2CB /* rating@2x.png */; };
 		76E6DA3A1D56E8260076B2CB /* rating_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 76E6DA011D56E8260076B2CB /* rating_gray.png */; };
 		76E6DA3B1D56E8260076B2CB /* rating_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76E6DA021D56E8260076B2CB /* rating_gray@2x.png */; };
+		76E6DA401D56F00E0076B2CB /* YUKModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E6DA3F1D56F00E0076B2CB /* YUKModalViewController.m */; };
+		76E6DA431D56F1AA0076B2CB /* YUKModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E6DA421D56F1AA0076B2CB /* YUKModalView.m */; };
 		76E6FB7E1D53857C00263209 /* CircleGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E6FB7D1D53857C00263209 /* CircleGLView.m */; };
 		76E6FB811D53859200263209 /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E6FB801D53859200263209 /* CircleViewController.m */; };
 		76E9037E1C9ED4B4003AC33A /* NaviMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9037D1C9ED4B4003AC33A /* NaviMenuViewController.m */; };
@@ -2168,6 +2170,10 @@
 		76E6DA001D56E8260076B2CB /* rating@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rating@2x.png"; sourceTree = "<group>"; };
 		76E6DA011D56E8260076B2CB /* rating_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rating_gray.png; sourceTree = "<group>"; };
 		76E6DA021D56E8260076B2CB /* rating_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rating_gray@2x.png"; sourceTree = "<group>"; };
+		76E6DA3E1D56F00E0076B2CB /* YUKModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUKModalViewController.h; sourceTree = "<group>"; };
+		76E6DA3F1D56F00E0076B2CB /* YUKModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUKModalViewController.m; sourceTree = "<group>"; };
+		76E6DA411D56F1AA0076B2CB /* YUKModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUKModalView.h; sourceTree = "<group>"; };
+		76E6DA421D56F1AA0076B2CB /* YUKModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUKModalView.m; sourceTree = "<group>"; };
 		76E6FB7C1D53857C00263209 /* CircleGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleGLView.h; sourceTree = "<group>"; };
 		76E6FB7D1D53857C00263209 /* CircleGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleGLView.m; sourceTree = "<group>"; };
 		76E6FB7F1D53859200263209 /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
@@ -4601,6 +4607,7 @@
 		76C035751CA684F2002241E5 /* CustomControl */ = {
 			isa = PBXGroup;
 			children = (
+				76E6DA3D1D56EFFE0076B2CB /* YUKModalView */,
 				760AF13C1CB23B9F00A0D242 /* ModalView */,
 				76C035761CA68507002241E5 /* CustomControlViewController.h */,
 				76C035771CA68507002241E5 /* CustomControlViewController.m */,
@@ -5253,6 +5260,17 @@
 				76E6DA021D56E8260076B2CB /* rating_gray@2x.png */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		76E6DA3D1D56EFFE0076B2CB /* YUKModalView */ = {
+			isa = PBXGroup;
+			children = (
+				76E6DA3E1D56F00E0076B2CB /* YUKModalViewController.h */,
+				76E6DA3F1D56F00E0076B2CB /* YUKModalViewController.m */,
+				76E6DA411D56F1AA0076B2CB /* YUKModalView.h */,
+				76E6DA421D56F1AA0076B2CB /* YUKModalView.m */,
+			);
+			path = YUKModalView;
 			sourceTree = "<group>";
 		};
 		76E6FB7B1D53853800263209 /* Circle */ = {
@@ -6312,6 +6330,7 @@
 				761931A51C8BC8A20022A311 /* AppDelegate.m in Sources */,
 				769718931C9D50D900D0AC63 /* QQTabbarViewController.m in Sources */,
 				76A2E9DC1CCB83A000536E5D /* SwiftMemoryManager.swift in Sources */,
+				76E6DA401D56F00E0076B2CB /* YUKModalViewController.m in Sources */,
 				763D45F21CCFB4A500BB88AA /* HTMLCSSViewController.m in Sources */,
 				76E4C2D91D28E3520041165A /* BSTopicCellProtocol.m in Sources */,
 				763FE3901C8DD03000CE67FF /* TestDomainObject.m in Sources */,
@@ -6544,6 +6563,7 @@
 				76C035781CA68507002241E5 /* CustomControlViewController.m in Sources */,
 				76573D341CDA4E4D00F38585 /* DPCreationalViewController.m in Sources */,
 				76A2E9DA1CCB790100536E5D /* SwiftExtensionProtocol.swift in Sources */,
+				76E6DA431D56F1AA0076B2CB /* YUKModalView.m in Sources */,
 				76C0358B1CA68954002241E5 /* RunLoopViewController.m in Sources */,
 				76E903891C9ED53E003AC33A /* NavMenuScrollView.m in Sources */,
 				769717EC1C99792C00D0AC63 /* JSPatchProcessKit.m in Sources */,

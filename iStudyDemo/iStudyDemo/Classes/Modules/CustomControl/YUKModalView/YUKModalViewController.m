@@ -1,29 +1,27 @@
 //
-//  CustomControlViewController.m
+//  YUKModalViewController.m
 //  iStudyDemo
 //
-//  Created by zhangyuanke on 16/3/26.
+//  Created by zhangyuanke on 16/8/7.
 //  Copyright © 2016年 zhangyuanke. All rights reserved.
 //
 
-#import "CustomControlViewController.h"
+#import "YUKModalViewController.h"
 #import "ReactiveCocoa/ReactiveCocoa.h"
 #import "masonry.h"
 #import "UIKitMacros.h"
-#import "CCModalViewViewController.h"
-#import "LayoutConstraintViewController.h"
-#import "YUKModalViewController.h"
+#import "YUKModalView.h"
 
 // 可以考虑封装UItableview 和  UICollectionView ，视图弹窗，modal 等
 
-@interface CustomControlViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface YUKModalViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *listData;
 @property (nonatomic, strong) NSMutableArray *listViewControllers;
 @end
 
-@implementation CustomControlViewController
+@implementation YUKModalViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -66,15 +64,6 @@
     
     // 1.ModalView
     [_listData addObject:@"ModalView弹窗"];
-    CCModalViewViewController *modalViewVC = [[CCModalViewViewController alloc] init];
-    [_listViewControllers addObject:modalViewVC];
-    [_listData addObject:@"NSLayoutConstraint布局"];
-    LayoutConstraintViewController *VC2 = [[LayoutConstraintViewController alloc] init];
-    [_listViewControllers addObject:VC2];
-    
-    [_listData addObject:@"YUKModalView弹框"];
-    YUKModalViewController *modalView = [[YUKModalViewController alloc] init];
-    [_listViewControllers addObject:modalView];
 }
 
 
@@ -94,9 +83,11 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    UIViewController *vc = [self.listViewControllers objectAtIndex:indexPath.row];
-    vc.title = [self.listData objectAtIndex:indexPath.row];
-   [self.navigationController pushViewController:vc animated:YES];
+//    UIViewController *vc = [self.listViewControllers objectAtIndex:indexPath.row];
+//    vc.title = [self.listData objectAtIndex:indexPath.row];
+//    [self.navigationController pushViewController:vc animated:YES];
+    
+    [self procssWithRow:indexPath.row];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -119,6 +110,34 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 60;
+}
+
+#pragma mark - private method
+
+- (void)procssWithRow:(NSUInteger)row
+{
+    NSString *methodName = [NSString stringWithFormat:@"test%ld",row];
+    [self performSelector:NSSelectorFromString(methodName) withObject:nil afterDelay:0];
+}
+
+- (void)test0
+{
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH / 2 - 100, SCREEN_HEIGHT / 2 - 100, 200, 200)];
+    view.backgroundColor = [UIColor colorWithWhite:1 alpha:1];
+    view.layer.cornerRadius = 10;
+    [YUKModalView showWithCustomView:view delegate:nil];
+    
+    UIView *view2 = [[UIView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH / 2 - 100, SCREEN_HEIGHT / 2 - 100, 200, 200)];
+//    view2.backgroundColor = [UIColor colorWithWhite:1 alpha:1];
+    view2.layer.cornerRadius = 10;
+    view2.backgroundColor = [UIColor redColor];
+    [YUKModalView showWithCustomView:view2 delegate:nil forced:YES];
+    
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [YUKModalView dismiss];
+    });
+    
 }
 
 @end
