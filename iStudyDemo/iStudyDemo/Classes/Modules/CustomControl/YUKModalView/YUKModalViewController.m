@@ -151,7 +151,10 @@
 
 - (void)test2
 {
-    [YUKAlertView showWithTitle:@"title" message:@"message" delegate:nil buttonTitles:nil];
+//    [YUKAlertView showWithTitle:@"title" message:@"message" delegate:nil buttonTitles:nil];
+    YUKAlertView *alertView = [[YUKAlertView alloc] initWithTitle:@"titletitletitletitletitletitletitletitletitletitle" message:@"message" delegate:nil buttonTitles:nil];
+    [alertView show];
+    
 }
 
 @end

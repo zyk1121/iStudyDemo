@@ -47,7 +47,8 @@ static UIView *gYUKCustomView;                  // 自定义View
 //            gYUKModelView.userInteractionEnabled = NO;
             break;
         case YUKModalViewTypeAlert:
-            
+            [gYUKModelView setCanBackgroundTap:NO];
+            gYUKModelView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
             break;
         case YUKModalViewTypeProgress:
             

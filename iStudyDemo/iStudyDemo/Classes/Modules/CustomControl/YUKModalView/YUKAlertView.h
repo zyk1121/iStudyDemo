@@ -18,9 +18,10 @@
 
 @interface YUKAlertView : UIView
 
-+ (void)showWithTitle:(nullable NSString *)title
-              message:(nullable NSString *)message
-             delegate:(nullable id)delegate
-         buttonTitles:(nullable NSArray *)buttonTitles;
+- (nonnull instancetype)initWithTitle:(nullable NSString *)title
+                              message:(nullable NSString *)message
+                             delegate:(nullable id)delegate
+                         buttonTitles:(nullable NSArray *)buttonTitles;
+- (void)show;
 
 @end
