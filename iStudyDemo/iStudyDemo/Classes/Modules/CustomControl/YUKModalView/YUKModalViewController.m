@@ -11,6 +11,8 @@
 #import "masonry.h"
 #import "UIKitMacros.h"
 #import "YUKModalView.h"
+#import "YUKToastView.h"
+#import "YUKAlertView.h"
 
 // 可以考虑封装UItableview 和  UICollectionView ，视图弹窗，modal 等
 
@@ -64,6 +66,8 @@
     
     // 1.ModalView
     [_listData addObject:@"ModalView弹窗"];
+    [_listData addObject:@"Toast(不适合)"];
+    [_listData addObject:@"AlertView"];
 }
 
 
@@ -125,19 +129,29 @@
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH / 2 - 100, SCREEN_HEIGHT / 2 - 100, 200, 200)];
     view.backgroundColor = [UIColor colorWithWhite:1 alpha:1];
     view.layer.cornerRadius = 10;
-    [YUKModalView showWithCustomView:view delegate:nil];
+    [YUKModalView showWithCustomView:view delegate:nil type:YUKModalViewTypeCustom];
     
     UIView *view2 = [[UIView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH / 2 - 100, SCREEN_HEIGHT / 2 - 100, 200, 200)];
 //    view2.backgroundColor = [UIColor colorWithWhite:1 alpha:1];
     view2.layer.cornerRadius = 10;
     view2.backgroundColor = [UIColor redColor];
-    [YUKModalView showWithCustomView:view2 delegate:nil forced:YES];
+    [YUKModalView showWithCustomView:view2 delegate:nil type:YUKModalViewTypeCustom forced:YES];
     
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [YUKModalView dismiss];
     });
     
+}
+
+- (void)test1
+{
+    [YUKToastView showMessage:@"123456" duration:1 position:YUKToastViewPositionBottom];
+}
+
+- (void)test2
+{
+    [YUKAlertView showWithTitle:@"title" message:@"message" delegate:nil buttonTitles:nil];
 }
 
 @end

@@ -21,7 +21,7 @@ static UIView *gYUKCustomView;                  // 自定义View
 
 @implementation YUKModalView
 
-+ (void)showWithCustomView:(UIView *)customView delegate:(id<YUKModalViewDelegate>)delegate forced:(BOOL)forced
++ (void)showWithCustomView:(UIView *)customView delegate:(id<YUKModalViewDelegate>)delegate type:(YUKModalViewType)type forced:(BOOL)forced
 {
     if (!customView || ![customView isKindOfClass:[UIView class]]) {
         return;
@@ -36,18 +36,42 @@ static UIView *gYUKCustomView;                  // 自定义View
     }
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     gYUKModelView = [[YUKModalView alloc] initWithFrame:window.bounds];
+    switch (type) {
+        case YUKModalViewTypeCustom:
+            [gYUKModelView setCanBackgroundTap:YES];
+            gYUKModelView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
+            break;
+        case YUKModalViewTypeToast:
+            [gYUKModelView setCanBackgroundTap:NO];
+            gYUKModelView.backgroundColor = [UIColor clearColor];
+//            gYUKModelView.userInteractionEnabled = NO;
+            break;
+        case YUKModalViewTypeAlert:
+            
+            break;
+        case YUKModalViewTypeProgress:
+            
+            break;
+            
+        default:
+            break;
+    }
     gYUKModelView.delegate = delegate;
-    gYUKModelView.backgroundColor = [UIColor blackColor];
-    gYUKModelView.alpha = 0.5;
-    [window addSubview:gYUKModelView];
     gYUKCustomView = customView;
+    [window addSubview:gYUKModelView];
     [window addSubview:customView];
-    [gYUKModelView setCanBackgroundTap:YES];
+    /* 动画支持
+    CGRect frame = customView.frame;
+    customView.frame = CGRectMake(frame.origin.x + frame.size.width / 2, frame.origin.y + frame.size.height / 2, 0, 0);
+    [UIView animateWithDuration:0.3 animations:^{
+        customView.frame = frame;
+    }];
+     */
 }
 
-+ (void)showWithCustomView:(UIView *)customView delegate:(id<YUKModalViewDelegate>)delegate
++ (void)showWithCustomView:(UIView *)customView delegate:(id<YUKModalViewDelegate>)delegate type:(YUKModalViewType)type
 {
-    [self showWithCustomView:customView delegate:delegate forced:NO];
+    [self showWithCustomView:customView delegate:delegate type:type forced:NO];
 }
 
 + (void)dismiss

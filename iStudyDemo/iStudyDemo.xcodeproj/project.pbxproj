@@ -933,6 +933,8 @@
 		76E6DA3B1D56E8260076B2CB /* rating_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76E6DA021D56E8260076B2CB /* rating_gray@2x.png */; };
 		76E6DA401D56F00E0076B2CB /* YUKModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E6DA3F1D56F00E0076B2CB /* YUKModalViewController.m */; };
 		76E6DA431D56F1AA0076B2CB /* YUKModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E6DA421D56F1AA0076B2CB /* YUKModalView.m */; };
+		76E6DA461D56FD260076B2CB /* YUKToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E6DA451D56FD260076B2CB /* YUKToastView.m */; };
+		76E6DA491D570A770076B2CB /* YUKAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E6DA481D570A770076B2CB /* YUKAlertView.m */; };
 		76E6FB7E1D53857C00263209 /* CircleGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E6FB7D1D53857C00263209 /* CircleGLView.m */; };
 		76E6FB811D53859200263209 /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E6FB801D53859200263209 /* CircleViewController.m */; };
 		76E9037E1C9ED4B4003AC33A /* NaviMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9037D1C9ED4B4003AC33A /* NaviMenuViewController.m */; };
@@ -2174,6 +2176,10 @@
 		76E6DA3F1D56F00E0076B2CB /* YUKModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUKModalViewController.m; sourceTree = "<group>"; };
 		76E6DA411D56F1AA0076B2CB /* YUKModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUKModalView.h; sourceTree = "<group>"; };
 		76E6DA421D56F1AA0076B2CB /* YUKModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUKModalView.m; sourceTree = "<group>"; };
+		76E6DA441D56FD260076B2CB /* YUKToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUKToastView.h; sourceTree = "<group>"; };
+		76E6DA451D56FD260076B2CB /* YUKToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUKToastView.m; sourceTree = "<group>"; };
+		76E6DA471D570A770076B2CB /* YUKAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUKAlertView.h; sourceTree = "<group>"; };
+		76E6DA481D570A770076B2CB /* YUKAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUKAlertView.m; sourceTree = "<group>"; };
 		76E6FB7C1D53857C00263209 /* CircleGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleGLView.h; sourceTree = "<group>"; };
 		76E6FB7D1D53857C00263209 /* CircleGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleGLView.m; sourceTree = "<group>"; };
 		76E6FB7F1D53859200263209 /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
@@ -5269,6 +5275,10 @@
 				76E6DA3F1D56F00E0076B2CB /* YUKModalViewController.m */,
 				76E6DA411D56F1AA0076B2CB /* YUKModalView.h */,
 				76E6DA421D56F1AA0076B2CB /* YUKModalView.m */,
+				76E6DA441D56FD260076B2CB /* YUKToastView.h */,
+				76E6DA451D56FD260076B2CB /* YUKToastView.m */,
+				76E6DA471D570A770076B2CB /* YUKAlertView.h */,
+				76E6DA481D570A770076B2CB /* YUKAlertView.m */,
 			);
 			path = YUKModalView;
 			sourceTree = "<group>";
@@ -6386,8 +6396,10 @@
 				763E4E8E1CA2F25200470FCA /* ZFBTestViewController.m in Sources */,
 				76573D771CDB95BC00F38585 /* DPSFObject.m in Sources */,
 				760AF1381CB176E400A0D242 /* JsonModelDomainObject.m in Sources */,
+				76E6DA491D570A770076B2CB /* YUKAlertView.m in Sources */,
 				76C035DF1CAA999D002241E5 /* CustomPlayerViewController.m in Sources */,
 				76C035701CA68288002241E5 /* QRCodeViewController.m in Sources */,
+				76E6DA461D56FD260076B2CB /* YUKToastView.m in Sources */,
 				760665621D27B6C900CCF539 /* BSEAllTableViewController.m in Sources */,
 				764153081D11B3040078D3BA /* SSKeychain.m in Sources */,
 				76E916491CABFA9E00C8C63A /* LEDPortal.m in Sources */,
