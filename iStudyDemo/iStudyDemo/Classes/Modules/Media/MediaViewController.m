@@ -18,6 +18,19 @@
 #import "PhotoViewController.h"
 #import "CustomTakePhotoViewController.h"
 #import "ScreenShotViewController.h"
+#import "PlayerController.h"
+#import "MoviePlayerViewController.h"
+
+/*
+ 
+ 视频连接
+ 
+ http://d.api.budejie.com/topic/list/chuanyue/41/baisi_xiaohao-iphone-4.1/0-200.json?appname=baisi_xiaohao&asid=8C66099E-C265-4990-B8EE-8A002E4D84D0&client=iphone&device=iPhone%204S&from=ios&jbk=0&mac=&market=&openudid=f5ff7b5919088e7d120443fcb85a4bc259cc515b&udid=&ver=
+ // http://wvideo.spriteapp.cn/video/2016/0611/575b6c0f4afca_wpd.mp4
+ self.Hls_url = @"http://wvideo.spriteapp.cn/video/2016/0612/a566c31c-3088-11e6-acc4-90b11c479401_wpd.mp4";
+ 
+ */
+
 
 @interface MediaViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -101,6 +114,17 @@
     ScreenShotViewController *screenShotViewController = [[ScreenShotViewController alloc] init];
     [_listViewControllers addObject:screenShotViewController];
     
+    // 自定义视频
+    // 8.斗鱼播放器
+    [_listData addObject:@"斗鱼播放器"];
+    PlayerController *playee = [[PlayerController alloc] init];
+    [_listViewControllers addObject:playee];
+    
+    // 9.简单播放器
+    [_listData addObject:@"简单播放器"];
+    MoviePlayerViewController *playss = [[MoviePlayerViewController alloc] init];
+    [_listViewControllers addObject:playss];
+    
 }
 
 
@@ -124,7 +148,7 @@
     if (indexPath.row == 5) {
         VideoViewController *videoViewController = [[VideoViewController alloc] init];
         [self.navigationController pushViewController:videoViewController animated:YES];
-    } else
+    } else 
     [self.navigationController pushViewController:vc animated:YES];
 }
 
