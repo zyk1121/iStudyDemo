@@ -13,6 +13,7 @@
 #import "YUKModalView.h"
 #import "YUKToastView.h"
 #import "YUKAlertView.h"
+#import "YKAlertView.h"
 
 // 可以考虑封装UItableview 和  UICollectionView ，视图弹窗，modal 等
 
@@ -68,6 +69,7 @@
     [_listData addObject:@"ModalView弹窗"];
     [_listData addObject:@"Toast(不适合)"];
     [_listData addObject:@"AlertView"];
+    [_listData addObject:@"YKAlertView"];
 }
 
 
@@ -155,6 +157,19 @@
     YUKAlertView *alertView = [[YUKAlertView alloc] initWithTitle:@"titletitletitletitletitletitletitletitletitletitle" message:@"message" delegate:nil buttonTitles:nil];
     [alertView show];
     
+}
+
+- (void)test3
+{
+    YKAlertView *alertView = [[YKAlertView alloc] initWithTitle:@"title" message:@"测试Message测试Message测试Message测试Message测试Message测试Message测试Message" delegate:nil cancelButtonTitle:@"cancelcancelcancelcancel" otherButtonTitles:@[@"3"]];
+    //    YKAlertView *alertView = [[YKAlertView alloc] initWithTitle:@"title" message:@"message" delegate:nil cancelButtonTitle:nil otherButtonTitles:nil];
+    //    YKAlertView *alertView = [[YKAlertView alloc] init];
+    [alertView show];
+    
+    
+    //    YKAlertView *alertView2 = [[YKAlertView alloc] initWithTitle:@"title" message:@"message" delegate:nil cancelButtonTitle:@"cancel" otherButtonTitles:@[@"1",@"2",@"3"]];
+    YKAlertView *alertView2 = [[YKAlertView alloc] init];
+    [alertView2 show];
 }
 
 @end

@@ -143,6 +143,7 @@
 		763266331CD6652200F56D9D /* test.py in Resources */ = {isa = PBXBuildFile; fileRef = 7632662F1CD6652200F56D9D /* test.py */; };
 		7632663C1CD8F4B700F56D9D /* DesignPatternsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7632663B1CD8F4B700F56D9D /* DesignPatternsViewController.m */; };
 		763266401CD8F69B00F56D9D /* DPPrincipleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7632663F1CD8F69B00F56D9D /* DPPrincipleViewController.m */; };
+		763503A31D5F7B5900A0A528 /* YKAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 763503A21D5F7B5900A0A528 /* YKAlertView.m */; };
 		763D45F21CCFB4A500BB88AA /* HTMLCSSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763D45F11CCFB4A500BB88AA /* HTMLCSSViewController.m */; };
 		763D45F51CCFB4C000BB88AA /* JavaScriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763D45F41CCFB4C000BB88AA /* JavaScriptViewController.m */; };
 		763D45F71CCFB75600BB88AA /* htmltest.html in Resources */ = {isa = PBXBuildFile; fileRef = 763D45F61CCFB75600BB88AA /* htmltest.html */; };
@@ -1197,6 +1198,8 @@
 		7632663B1CD8F4B700F56D9D /* DesignPatternsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignPatternsViewController.m; sourceTree = "<group>"; };
 		7632663E1CD8F69B00F56D9D /* DPPrincipleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPPrincipleViewController.h; sourceTree = "<group>"; };
 		7632663F1CD8F69B00F56D9D /* DPPrincipleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPPrincipleViewController.m; sourceTree = "<group>"; };
+		763503A11D5F7B5900A0A528 /* YKAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKAlertView.h; sourceTree = "<group>"; };
+		763503A21D5F7B5900A0A528 /* YKAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKAlertView.m; sourceTree = "<group>"; };
 		763D45F01CCFB4A500BB88AA /* HTMLCSSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLCSSViewController.h; sourceTree = "<group>"; };
 		763D45F11CCFB4A500BB88AA /* HTMLCSSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLCSSViewController.m; sourceTree = "<group>"; };
 		763D45F31CCFB4C000BB88AA /* JavaScriptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptViewController.h; sourceTree = "<group>"; };
@@ -2942,6 +2945,16 @@
 			path = DPPrinciple;
 			sourceTree = "<group>";
 		};
+		763503A01D5F7B5900A0A528 /* YKAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				763503A11D5F7B5900A0A528 /* YKAlertView.h */,
+				763503A21D5F7B5900A0A528 /* YKAlertView.m */,
+			);
+			name = YKAlertView;
+			path = YUKModalView/YKAlertView;
+			sourceTree = "<group>";
+		};
 		763D45EE1CCFB46C00BB88AA /* HTML_CSS */ = {
 			isa = PBXGroup;
 			children = (
@@ -4613,6 +4626,7 @@
 		76C035751CA684F2002241E5 /* CustomControl */ = {
 			isa = PBXGroup;
 			children = (
+				763503A01D5F7B5900A0A528 /* YKAlertView */,
 				76E6DA3D1D56EFFE0076B2CB /* YUKModalView */,
 				760AF13C1CB23B9F00A0D242 /* ModalView */,
 				76C035761CA68507002241E5 /* CustomControlViewController.h */,
@@ -6473,6 +6487,7 @@
 				76C035B81CA79EFD002241E5 /* AddressBookViewController.m in Sources */,
 				76737A741CC3860A008AEC1C /* SwiftBasicPartViewController.m in Sources */,
 				761931AB1C8BCC3F0022A311 /* main.mm in Sources */,
+				763503A31D5F7B5900A0A528 /* YKAlertView.m in Sources */,
 				76573D811CDCEEA000F38585 /* DPBObject.m in Sources */,
 				760AF1341CB13A4500A0D242 /* SecurityUtil.m in Sources */,
 				76213BDA1C97029A001DAA53 /* ThirdPartViewController.m in Sources */,
