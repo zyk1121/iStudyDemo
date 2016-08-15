@@ -17,9 +17,10 @@ static UIView                           *kYKCustomView;                     // �
  *  模态对话框
  */
 @interface YKModalPopup ()
-
+{
+    NSMutableDictionary *_kbHeightDic;
+}
 @property (nonatomic, weak) id<YKModalPopupDelegate>    delegate;
-@property (nonatomic, assign) BOOL                      isKeyboardShowed;
 
 @end
 
@@ -90,7 +91,6 @@ static UIView                           *kYKCustomView;                     // �
     [window addSubview:kYKCustomBackgroundView];
     [window addSubview:kYKCustomView];
     
-    kYKModelPopupInstance.isKeyboardShowed = NO;
     [[NSNotificationCenter defaultCenter] addObserver:kYKModelPopupInstance
                                              selector:@selector(_keyboardWillShow:)
                                                  name:UIKeyboardWillShowNotification
@@ -115,6 +115,15 @@ static UIView                           *kYKCustomView;                     // �
 }
 
 #pragma mark - private method
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _kbHeightDic = [NSMutableDictionary dictionary];
+    }
+    return self;
+}
 
 // 移除当前自定义模态对话框
 + (void)removed
@@ -153,6 +162,18 @@ static UIView                           *kYKCustomView;                     // �
     CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
     
     if (kbSize.height > 0) {
+        UIWindow *window = [UIApplication sharedApplication].keyWindow;
+        NSString *kbSizeString = [NSString stringWithFormat:@"%.0lf", kbSize.height];
+        // 解决调用两次_keyboardWillShow问题
+        if ([_kbHeightDic objectForKey:kbSizeString]) {
+            NSString *tempString = [_kbHeightDic objectForKey:kbSizeString];
+            CGFloat winHeightTemp = tempString.floatValue;
+            if (fabs(winHeightTemp - window.bounds.size.height) > 0.01) {
+                return;
+            }
+        }
+        [_kbHeightDic setObject:[NSString stringWithFormat:@"%.0lf", window.bounds.size.height] forKey:kbSizeString];
+        
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"
         if ([kYKCustomView respondsToSelector:@selector(doLayout)]) {
@@ -171,13 +192,11 @@ static UIView                           *kYKCustomView;                     // �
         }
         kYKCustomView.frame = fr;
         [UIView commitAnimations];
-        self.isKeyboardShowed = YES;
     }
 }
 
 - (void)_keyboardWillHide:(NSNotification *)notification
 {
-    if (self.isKeyboardShowed) {
         [UIView animateWithDuration:[notification.userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue] animations:^{
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"
@@ -185,9 +204,7 @@ static UIView                           *kYKCustomView;                     // �
                 [kYKCustomView performSelector:@selector(doLayout)];
             }
 #pragma clang diagnostic pop
-            self.isKeyboardShowed = NO;
         }];
-    }
 }
 
 - (void)_deviceOrientationDidChange:(NSNotification *)notification
